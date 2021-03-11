@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html id="bg">
+
+<head>
+    <meta charset="utf-8" />
+<!--
+    * @Theme Card
+    * @Author admin@itjoker.cn
+    * @Link https://blog.itjoker.cn
+-->
+
+<title>
+    💤YuZhangWang
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta name="author" content="💤YuZhangWang">
+<meta name="description" content="已经没事了。要问为什么？因为我来了！">
+<meta name="keywords" content="YuZhangWang,豫章望,yuzhangwang">
+<meta name="gridea-theme" content="Card">
+<meta name="spider" content="https://nmsl.sbjxw.网址">
+<meta name="UpdateTime" content="1615491030175">
+<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/jquery@3.4.1.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/Card/prism.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.36/CDN/css/Card/prism.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/contrib/auto-render.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.36/CDN/js/Card/script.min.js"></script>-->
+<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.36/CDN/css/Card/main.min.css" />-->
+<script src="http://localhost:4000/media/js/script.min.js"></script>
+<link rel="stylesheet" href="http://localhost:4000/media/css/main.min.css" />
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.36/CDN/css/Card/iconfont.css" />
+<!--link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_410989_wuhl0k5ojvf.css" /-->
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.36/CDN/js/love.min.js"></script>
+<script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+<script>
+    $().ready(
+        function() {
+            var themeIcon = document.getElementById("themeIcon");
+            var currentTheme = window.localStorage.getItem('theme');
+            if (currentTheme == 'dark') {
+                document.getElementsByTagName('html')[0].classList.add('theme-dark');
+                document.getElementsByTagName('html')[0].removeAttribute('id');
+                themeIcon.classList.remove('Card-moon');
+                themeIcon.classList.add('Card-sun');
+            } else {
+                document.getElementsByTagName('html')[0].classList.remove('theme-dark');
+                document.getElementsByTagName('html')[0].setAttribute('id', 'bg');
+                themeIcon.classList.remove('Card-sun');
+                themeIcon.classList.add('Card-moon');
+            }
+        }
+    )
+</script>
+
+    <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+    
+        
+            <script>
+                (function() {
+                    var bp = document.createElement('script');
+                    var curProtocol = window.location.protocol.split(':')[0];
+                    if (curProtocol === 'https') {
+                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                    } else {
+                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                    }
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(bp, s);
+                })();
+            </script>
+            
+                    <style>
+                        .Card-certify {
+                            color: #0091e4 !important;
+                        }
+                        
+                        #foot {
+                            color: #666666;
+                        }
+                        
+                        #menu-item:hover {
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+                            border-bottom-color: rgba(0, 0, 0, .6);
+                        }
+                        
+                        .gray {
+                            -webkit-filter: grayscale(100%);
+                            /* webkit */
+                            -moz-filter: grayscale(100%);
+                            /*firefox*/
+                            -ms-filter: grayscale(100%);
+                            /*ie9*/
+                            -o-filter: grayscale(100%);
+                            /*opera*/
+                            filter: grayscale(100%);
+                            filter: progid: DXImageTransform.Microsoft.BasicImage(grayscale=1);
+                            filter: gray;
+                            /*ie9- */
+                        }
+                        
+                        .lite-item,
+                        #header {
+                            opacity: 1;
+                        }
+                        
+                        .lite-item {
+                            background-color: #fafafa;
+                        }
+                        
+                        #btnStyle:hover {
+                            transition: all .3s ease;
+                            /*color: #fff;*/
+                            /*background-color: #6b6b6b;*/
+                            background-color: #eaeaea;
+                            /*#0092ee*/
+                            /*linear-gradient( rgb(138, 160, 255) 30%, rgb(90, 140, 250) 70%);*/
+                        }
+                        
+                        #btnStyle {
+                            /*background-color: #efefef;*/
+                            font-size: 14px;
+                            transition: all .3s ease;
+                        }
+                        
+                        .link_a:hover {
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            color: #fff;
+                            border-left: 8px solid #6b6b6b;
+                            padding: 5px;
+                            transition: all .3s ease;
+                        }
+                        
+                        html {
+                            width: 100%;
+                            height: 100%;
+                            background-attachment: fixed;
+                            background-repeat: no-repeat;
+                        }
+                    </style>
+</head>
+
+<body>
+    <header id="header">
+
+    <div id="pc-menu">
+        <a id="menu-bar" class="Card Card-menu"></a>
+        <a id="menu-title" href="http://localhost:4000">
+            💤YuZhangWang
+        </a>
+        <nav id="menu-main" class="menu-main">
+            <ul>
+                <li id="menu-item" class="menu-item">
+                    <div id="tp-weather-widget"></div>
+                </li>
+                
+                    <li id="menu-item" class="menu-item">
+                        <a href="http://localhost:4000">
+                            🎈首页
+                        </a>
+                    </li>
+                    
+                    <li id="menu-item" class="menu-item">
+                        <a href="/archives">
+                            📕归档
+                        </a>
+                    </li>
+                    
+                    <li id="menu-item" class="menu-item">
+                        <a href="http://localhost:4000/tags">
+                            🏷标签
+                        </a>
+                    </li>
+                    
+                    <li id="menu-item" class="menu-item">
+                        <a href="/friends">
+                            👨‍💻友链
+                        </a>
+                    </li>
+                    
+                    <li id="menu-item" class="menu-item">
+                        <a href="/post/about">
+                            🙎‍♂️关于
+                        </a>
+                    </li>
+                    
+            </ul>
+        </nav>
+        <form id="gridea-search-form" class="searchform" data-update="1615491030175" action="/search/index.html">
+            <i class="Card Card-search"></i>
+            <input id="s" class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+        </form>
+    </div>
+    <div id="mobile-menu">
+        <form id="gridea-search-form" class="mobile-searchform" data-update="1615491030175" action="/search/index.html">
+            <i class="Card Card-search"></i>
+            <input id="s" class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+        </form>
+        <nav class="menu">
+            <ul style="list-style: none;">
+                
+                    <li class="page_item page-item-2">
+                        <a href="http://localhost:4000">
+                            🎈首页
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="/archives">
+                            📕归档
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="http://localhost:4000/tags">
+                            🏷标签
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="/friends">
+                            👨‍💻友链
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="/post/about">
+                            🙎‍♂️关于
+                        </a>
+                    </li>
+                    
+            </ul>
+        </nav>
+    </div>
+    <a id="theme-btn" class="theme-btn" onclick="App.changeTheme()"><i id="themeIcon" class="Card Card-moon"></i></a>
+</header>
+        <div id="main">
+            <div id="main-part">
+                <div class="lite-item">
+                    <article class="post post-type real-post">
+                        <header class="post-type-header">
+                            
+                                <div class="thumbnail-link" style="background-image: url('https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/7f002ec03648f0b880d6be45e84c2ea6__01.jpg')"></div>
+                                
+                                        <div class="thumbnail-shadow">
+                                            <h1 class="post-title">
+                                                如何管理学习时间
+                                            </h1>
+                                            <div class="post-info">
+                                                <span class="post-category"><i class="Card Card-novel"></i>
+                                        
+                                            <span onclick="javascript:top.location='http://localhost:4000/tag/dopWVAXWp/'">学习</span>
+                                                
+                                            <span onclick="javascript:top.location='http://localhost:4000/tag/YkaIySj74c/'">生活</span>
+                                                
+                                                    </span>
+                                                    <span class="post-view">
+                                                    
+                                                        &nbsp;•&nbsp;
+                                                    <span id="/post/ru-he-guan-li-xue-xi-shi-jian/" class="leancloud_visitors" data-flag-title="如何管理学习时间">
+                                                <i class="Card Card-view"></i>&nbsp;阅读量&nbsp;
+                                                <i class="leancloud-visitors-count">0</i>
+                                            </span>
+
+                                                    
+                                                            </span>&nbsp;•&nbsp;
+
+                                                            <span class="post-readtime">阅读时间:
+                                            5.7分</span>
+                                                            <span class="post-edit"></span></div>
+                                        </div>
+                                        <div class="post-relative">
+                                            <img alt="💤YuZhangWang" src="http://localhost:4000/images/avatar.png?v=1615491030175" srcset="http://localhost:4000/images/avatar.png?v=1615491030175" class="avatar avatar-100 photo" width="100" height="100">
+                                            <span class="post-type-author"><a href="http://localhost:4000" title="由💤YuZhangWang发布" rel="author">💤YuZhangWang<i class="Card Card-certify"></i></a></span>
+                                            <span class="post-publish"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2020-05-14</span>
+                                        </div>
+                        </header>
+                        <div class="post-main post-type-main">
+                            <div class="post-content">
+                                <div class="post-content-real">
+                                    <h1 id="时间管理第一原则效率">时间管理第一原则：效率</h1>
+<p>因为，当我跑去采访这些牛人的时候，他们不约而同地提到的“时间管理第一原则”是：效率。<br>
+在每天啃case的过程中，我也发现了这么一个简单的事实：同样长的case，我可以看上3小时，也可以40分钟-1小时看完，区别在于大脑的运转效率。<br>
+当大脑疲于工作的时候，对着case就开始犯困/发呆/走神，于是拖拖拉拉地看完，也不一定看进去了多少。<br>
+后来我学乖了，上完3节课回来，大脑已经累的不转了，干脆睡个半小时一小时的，起来又是一条好汉，看起case来哗哗的~算下来花的时间还是少的。</p>
+<h2 id="1维持能量">1.维持能量</h2>
+<p>觉当然是一定要好好睡的。白天连续工作太久，发现大脑效率下降的时候，不妨放松或者小憩一下充个电，往往效率曲线就又蹭的一下上去了。</p>
+<h2 id="2提高体力">2.提高体力</h2>
+<p>有没有发现动脑子的时候饿的快?说明脑力工作也是相当耗体力的。所以大脑与身体能持续高效工作多久，体力是基础。腾出时间，去健身房吧。这是对效率的投资，一定不亏本。</p>
+<h2 id="3集中精神">3.集中精神</h2>
+<p>大多数事情在集中精神的状态下都会完成的更快更好，所以尽量一次只做一件事情。抄抄写写这种不动脑子的不在此列。<br>
+为了让你的大脑保证只想一件事情，往往要能够把脑子清空——如果发现有些事情在脑子里转来转去，不妨干脆先写下来，然后分配一个另外的时间再去想。</p>
+<h1 id="时间管理的第二原则设置优先级">时间管理的第二原则：设置优先级</h1>
+<p>列了要做的/想要的list，下一步是排序。检验排序有效的标准：当出现冲突的时候，你能够干脆地放弃优先级低的。<br>
+比如：“对我来说，每天要睡8小时这件事情是第一优先级，绝对没有商量的余地。所以，party虽然不得不去，但一到12点我就会偷偷消失。第二天如果有人问我，怎么昨天party没看到你啊?我就会装傻说，“啊，真的么?我一定是错过你了吧!”——学生E的经验分享。<br>
+所以，关于优先级这一点，想说的是：比决定想要什么更难但也更重要的，也许是决定不要什么。<br>
+我是容易贪心的平凡人，常常觉这个也不能不做，那个也不舍得不要。观察身边的牛人，却发现很多我的第一反应会是“这怎么可以不做”的事情，他们却可以理直气壮地说，我不干。而这种放弃，是非常有策略性的。<br>
+同学Y，discussion group不去，大部分要求的case都不屑读。我并不认同这种做法，但慢慢发现人家不过是想学的东西跟学习的方法不一样。事实上，他会坚持在课后总结整理自己的收获与思考，还从学校图书馆拿了很多其他感兴趣的case和书，并认真地写读书笔记。<br>
+同学K，身为美女流行歌手的乐队鼓手，简直就是学校里的名人。可她偏偏几乎从不出席商学院的主流社交party与大型聚会活动。<br>
+她说，我就不喜欢跟一大群人去吵得要死说话也听不见的地方，特别浅薄，还不如省下来时间跟三两好友喝酒聊天。结果她依然是好友遍天下，第一次到土耳其也迅速找着了当地的音乐知己，聊天逛街抽水烟，不亦乐乎。<br>
+说到底，现在这个花花世界，填满生活还不容易，哪有那么多不能放弃的事情。</p>
+<h1 id="时间管理的第三原则提前计划">时间管理的第三原则：提前计划</h1>
+<p>说起来也不复杂，不过是每天、每周开始之前，拿出一点时间想想要干嘛。可是还是想不起来去做这件事情的。<br>
+所以我们说说不提前计划的坏处是什么吧。除了事情可能恰好堆到一起导致手忙脚乱以外，最典型的负面作用其实是：时间永远不知道花到哪里去了。很忙的过了一周觉得自己好像啥也没干。<br>
+原因是如果不很清晰地知道要做什么，就容易碰到什么是什么。于是哪件事情先找上来就处理了，反正一时也想不起来有什么更应该去做的事。然后过了一阵子发现几件重要的大事一件都没干。</p>
+<p>我对付这个毛病的办法是，在提前计划的时候：<br>
+1.把大事分解成具体的任务<br>
+2.把Calendar（日程表）上用来做这件事情的时间锁定住。这样逼自己先把重要的事情的时间排出来，剩下的时间再处理其他事情。<br>
+反正时间长了就发现，其他事情真做不完也不会死。倒是重要的事情老拖着不做往往后果比较严重——重要的事情之所以“重要”，总是有道理的。</p>
+<h1 id="时间管理的第四原则获得成就感">时间管理的第四原则：获得成就感</h1>
+<p>最后想说一点，这些出色的时间管理者有个共同特点，就是都很喜欢to do list，享受从to do list上划掉一项的成就感。<br>
+这种对成就感的追求，本身也是他们去管理自己的时间的动力。但这未必是每个人喜欢的生活方式。<br>
+有些人从高效的生活中获得满足，也有些人从慢节奏随性的生活中获得满足。<br>
+如果你决定“发呆时间”、“看小说时间”、“看肥皂剧时间”对你来说很重要，我觉得一点问题都没有。只要你知道你的选择同时意味着放弃什么，并觉得值得就好。</p>
+<p>这个人生选择话题就太大了，任谁都是一生的反复权衡与纠结，我们就不说了。😅<br>
+只是不管怎么样，以上说的这些小技巧应该都能对执行过程有所帮助。<br>
+最重要的是立刻开始去做，哪怕只是其中任何一点。应该都能帮助你在同样的24小时里收获更丰富和广阔以及不焦虑的人生吧!</p>
+
+                                </div>
+                            </div>
+                            
+                                <div class="reward ">
+                                    <div class="reward-button ">&yen;
+                                        <span class="reward-code "> 
+                                            <span class="alipay-code "> <img class="alipay-img "  alt = "support " src="https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/1615297259162__01.jpg"><b>Alipay</b>                                                            </span>
+                                        <span class="wechat-code "> <img alt ="support " class="wechat-img " src="https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/mm_facetoface_collect_qrcode_1615297272472__01.png"><b>Wechat</b> </span> </span>
+                                    </div>
+                                </div>
+                                
+                        </div>
+                        <div class="post-footer">
+                            <div class="post-copyright">
+                                作者:
+                                💤YuZhangWang<br>永久链接:
+                                    <a href="http://localhost:4000/post/ru-he-guan-li-xue-xi-shi-jian/" title="如何管理学习时间">
+                                        http://localhost:4000/post/ru-he-guan-li-xue-xi-shi-jian/
+                                    </a><br> 协议: MIT License
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <style>
+                    .prev:hover {
+                        color: #2d96bd;
+                        text-decoration: none;
+                        text-align: center;
+                        transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+                    }
+                    
+                    .next:hover {
+                        color: #2d96bd;
+                        text-decoration: none;
+                        text-align: center;
+                        transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+                    }
+                </style>
+                <div class="lite-item nearby-article">
+                    
+                        <div class="nearby-article-left" style="padding: 10px;">
+                            <a class="prev" rel="prev" href="http://localhost:4000/post/hou-lang/">
+                                <i class="fa fa-chevron-left"></i>
+                                后浪
+                            </a>
+                        </div>
+                        
+                            
+                                <div class="nearby-article-right" style="padding: 10px;">
+                                    <a class="next" rel="next" href="http://localhost:4000/post/say-hello/">
+                                        人脸识别程序在树莓派环境下使用方法(Linux环境使用教程)<i class="fa fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                                
+                </div>
+                <!--Share-->
+                <span style="margin-right:15px">
+    <i class="post-share"></i>
+    <span>&#x5206;&#x4EAB;:</span>
+                <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://localhost:4000/post/ru-he-guan-li-xue-xi-shi-jian/"><i class="fa fa-qrcode"></i></a>
+                <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://localhost:4000/post/ru-he-guan-li-xue-xi-shi-jian/&sharesource=qzone&title=如何管理学习时间&pics=http://localhost:4000/images/avatar.png?v=1615491030175&summary="><i class="fa fa-qq"></i></a>
+                <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=http://localhost:4000/post/ru-he-guan-li-xue-xi-shi-jian/&sharesource=weibo&title=如何管理学习时间 + " - " + &pic="http://localhost:4000/images/avatar.png?v=1615491030175"><i class="fa fa-weibo "></i></a>
+                </span>
+                
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '64V23IDAGP79sI3LaxFHFUm0-gzGzoHsz',
+        appKey: 'lyveE15DB93we2NQW1Hq6Xm5',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+            <div id="sidebar">
+    <ul>
+        
+            <li class="lite-item">
+                <header class="lite-item-header">
+                    <h3 class="lite-item-title"><i class="Card Card-hitokoto"></i>&nbsp;&#x4E00;&#x8A00;</h3>
+                </header>
+                <div class="textwidget">
+                    <p>
+                        <b id="hitokoto"></b>
+                    </p>
+                </div>
+            </li>
+            
+                <!--
+                <li class="lite-item">
+                    <header class="lite-item-header">
+                        <h3 class="lite-item-title"><i class="Card Card-tags">&#x6807;&#x7B7E;</i></h3>
+                    </header>
+                    <div class="textwidget">
+                        
+                            <a href="" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;">
+                                <i class="fa fa-tags" aria-hidden="true"></i>
+                            </a>
+                            
+                    </div>
+                </li>-->
+                <li class="lite-item">
+                    <header class="lite-item-header">
+                        <h3 class="lite-item-title"><i class="Card Card-tags">&#x6807;&#x7B7E;</i></h3>
+                    </header>
+                    <div class="textwidget">
+                        <div id='tags' style="height: auto;width: 360;"></div>
+                        <script src="http://localhost:4000/media/js/svg3dtagcloud.min.js"></script>
+                        <script>
+                            $(document).ready(function() {
+                                var entries = ([
+                                    
+                                     {
+                                        label: '🏷游戏',
+                                        url: 'http://localhost:4000/tag/g2OThi30W/',
+                                        target: '_button'
+                                    },
+                                    
+                                    
+                                     {
+                                        label: '🏷生活',
+                                        url: 'http://localhost:4000/tag/YkaIySj74c/',
+                                        target: '_button'
+                                    },
+                                    
+                                    
+                                     {
+                                        label: '🏷Android',
+                                        url: 'http://localhost:4000/tag/nVt_3FFtf/',
+                                        target: '_button'
+                                    },
+                                    
+                                    
+                                     {
+                                        label: '🏷Java',
+                                        url: 'http://localhost:4000/tag/yJTwqsoBr/',
+                                        target: '_button'
+                                    },
+                                    
+                                    
+                                     {
+                                        label: '🏷黑科技',
+                                        url: 'http://localhost:4000/tag/JC2eYnJ5u/',
+                                        target: '_button'
+                                    },
+                                    
+                                    
+                                     {
+                                        label: '🏷Linux',
+                                        url: 'http://localhost:4000/tag/CtEU7_FnA/',
+                                        target: '_button'
+                                    },
+                                    
+                                    
+                                     {
+                                        label: '🏷学习',
+                                        url: 'http://localhost:4000/tag/dopWVAXWp/',
+                                        target: '_button'
+                                    },
+                                    
+                                    
+                                     {
+                                        label: '🏷人脸识别',
+                                        url: 'http://localhost:4000/tag/zhgRe1hYZ/',
+                                        target: '_button'
+                                    }
+                                    
+                                    
+                                ]);
+                                var settings = {
+                                    entries: entries, //数据
+                                    width: 300, //宽度
+                                    height: 300, //高度
+                                    radius: '50%',
+                                    radiusMin: 50,
+                                    bgDraw: false, //是否显示背景
+                                    bgColor: '#fff', //背景颜色
+                                    opacityOver: 1.00,
+                                    opacityOut: 0.05,
+                                    opacitySpeed: 6,
+                                    fov: 360,
+                                    speed: 0.3, //旋转的速度
+                                    fontFamily: 'Oswald, Arial, sans-serif',
+                                    fontSize: '18', //默认字体大小
+                                    fontColor: '#666', //默认字体颜色
+                                    fontWeight: 'normal', //bold
+                                    fontStyle: 'normal', //italic 
+                                    fontStretch: 'normal', //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+                                    fontToUpperCase: true,
+                                    tooltipFontFamily: 'Oswald, Arial, sans-serif',
+                                    tooltipFontSize: '16',
+                                    tooltipFontColor: 'red',
+                                    tooltipFontWeight: 'normal', //bold
+                                    tooltipFontStyle: 'normal', //italic 
+                                    tooltipFontStretch: 'normal', //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+                                    tooltipFontToUpperCase: false,
+                                    tooltipTextAnchor: 'left',
+                                    tooltipDiffX: 0,
+                                    tooltipDiffY: 5
+
+                                };
+
+                                //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
+                                $('#tags').svg3DTagCloud(settings);
+                            });
+                        </script>
+                    </div>
+                </li>
+                
+                    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    <div id="player"></div>
+                    
+                        <li class="lite-item">
+                            <header class="lite-item-header">
+                                <h3 class="lite-item-title">
+                                    &#x1F3B5;&#x97F3;&#x4E50;
+                                </h3>
+                            </header>
+                            <div class="textwidget">
+                                <p>
+                                    <div id="playerbox"></div>
+                                </p>
+                            </div>
+                        </li>
+                        
+                            <script>
+                                function LoadPlayer() {
+                                    var music_array = [];
+                                    
+                                    music_array.push({
+                                        name: '光之礼',
+                                        url: 'http://music.163.com/song/media/outer/url?id=5256018.mp3',
+                                        artist: '风潮唱片',
+                                        cover: 'http://p2.music.126.net/N_UiOcUFNc6OMYjRyWAUdg==/47279000011457.jpg?param=130y130',
+                                    });
+                                    
+                                    music_array.push({
+                                        name: '写给未来的孩子',
+                                        url: 'http://music.163.com/song/media/outer/url?id=434981391.mp3',
+                                        artist: '华晨宇',
+                                        cover: 'http://p1.music.126.net/UsSAd3Bdf77DjhCuTSEvUw==/109951163077613693.jpg?param=130y130',
+                                    });
+                                    
+                                    music_array.push({
+                                        name: '凡人',
+                                        url: 'http://music.163.com/song/media/outer/url?id=1465290469',
+                                        artist: '段奥娟',
+                                        cover: 'http://p2.music.126.net/lvfb_64QYmbib7ccHgDNJA==/109951165165604312.jpg?param=130y130',
+                                    });
+                                    
+                                    
+                                    const ap = new APlayer({
+                                        container: document.getElementById('playerbox'),
+                                        audio: music_array
+                                    });
+                                    
+                                }
+                                LoadPlayer();
+                            </script>
+                            
+                                
+                                    
+                                        
+                                            <li class="lite-item">
+                                                <header class="lite-item-header">
+                                                    <h3 class="lite-item-title">
+                                                        合作邮箱
+                                                    </h3>
+                                                </header>
+                                                <div class="textwidget">
+                                                    <div id="textwidget-box" style="width:100%; height:auto;">
+                                                        YuZhangWang233@163.com
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                            <li class="lite-item">
+                                                <header class="lite-item-header">
+                                                    <h3 class="lite-item-title">
+                                                        御世制人
+                                                    </h3>
+                                                </header>
+                                                <div class="textwidget">
+                                                    <div id="textwidget-box" style="width:100%; height:auto;">
+                                                        有道是，谋事在人成事在天。
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                                
+                                                    <li class="lite-item">
+                                                        <header class="lite-item-header">
+                                                            <h3 class="lite-item-title">&#x1F468;&#x200D;&#x1F4BB;&#x53CB;&#x94FE;</h3>
+                                                        </header>
+                                                        <div class="textwidget">
+                                                            
+                                                                
+                                                                    <p onclick="javascript:top.location='https://www.lfzxb.top/'"><span class="link_a"><a href="https://www.lfzxb.top/" alt="烟雨迷离半世殇 ">烟雨迷离半世殇 -腾讯Unity员工</a></span></p>
+
+                                                                    
+                                                                    <p onclick="javascript:top.location='http://8.210.6.78/'"><span class="link_a"><a href="http://8.210.6.78/" alt="TIM TIAN的个人博客 ">TIM TIAN的个人博客 -HEU研究生</a></span></p>
+
+                                                                    
+                                                                    <p onclick="javascript:top.location='https://libandhhh.github.io/'"><span class="link_a"><a href="https://libandhhh.github.io/" alt="人生小谈 ">人生小谈 -学霸一枚</a></span></p>
+
+                                                                    
+                                                                        
+                                                        </div>
+                                                    </li>
+    </ul>
+</div>
+        </div>
+
+</body>
+<footer id="foot">
+    <a class="back-to-top" href="#"><i class="Card Card-top" ></i><span class="back-to-top-text">0%</span></a>
+    <div class="copyright">
+        
+            
+                <div style="width:300px;margin:0 auto; padding:0px 0;">
+                    <a target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=没有号" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                        <img src="https://yanxuan.nosdn.127.net/b610ced5ac6a0e25cf6edf5606c69775.png" style="float:left;">
+                        <p id="icpinfo" style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;">
+                            浙公网安备 没有号
+                        </p>
+                    </a>
+                </div>
+                
+                    
+
+                        <div style="font-size:12px">
+                            
+                                        已经建站 <b id='build_time'></b>
+                        </div>
+                        <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/time.min.js"></script>
+                        <script>
+                            buildTime = '2018-8-8'
+                            setInterval(show_date_time, 1000, buildTime);
+                        </script>
+                        
+                            &#x7248;&#x6743;&#x6240;&#x6709; &copy;
+                            <script>
+                                var date = new Date();
+                                data2 = new Date(buildTime.replace(/-/g, "/"));
+                                nowYear = date.getFullYear().toString()
+                                buildYear = data2.getFullYear().toString();
+                                if (buildYear == nowYear) {
+                                    document.write('<span class="my-face">' + nowYear + '</span>');
+                                } else {
+                                    document.write(buildYear + '-<span class="my-face">' + nowYear + '</span>');
+                                }
+                            </script>
+
+                            <a href="http://localhost:4000">
+                                💤YuZhangWang
+                            </a>&nbsp;|&nbsp;Powered by
+                            <a href="https://github.com/YuZhangWang/YuZhangWang.github.io" target="_blank">
+                                Github
+                            </a>
+    </div>
+    <script>
+        let back2TopText = document.querySelector('.back-to-top-text')
+        window.addEventListener('scroll', function(e) {
+            let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+            if (back2TopText) {
+                back2TopText.textContent = Math.floor(percent).toString() + '%';
+            }
+        });
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            document.hidden ? (document.title = "\uD83D\uDE25" + OriginTitile, clearTimeout(titleTime)) : (document.title = "\uD83D\uDE1D" + OriginTitile, titleTime = setTimeout(function() {
+                document.title = OriginTitile
+            }, 2E3))
+        });
+        var OriginTitile = document.title;
+        
+        App.hitokoto();
+        
+        
+        App.weather();
+        
+        App.clearLog();
+        App.outputlog();
+        var logo = '%c💤YuZhangWang\'%cBlog';
+        console.info(
+            logo,
+            'color: #ffffff; background: #000000; padding:5px 10px 5px 10px;font-size:40px;border-radius:12px 0 0 12px;', 'color: #000000; background: #FE9A00; padding:5px 10px;font-size:40px;border-radius:0 12px 12px 0;'
+        );
+        $('img').attr('data-fancybox', 'images');
+    </script>
+</footer>
+    <script>
+        renderMathInElement(document.body, {
+            delimiters: [{
+                left: "$$",
+                right: "$$",
+                display: true
+            }, {
+                left: "$",
+                right: "$",
+                display: false
+            }]
+        });
+    </script>
+
+</html>

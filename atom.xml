@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://localhost:4000</id>
+    <title>💤YuZhangWang</title>
+    <updated>2021-03-11T19:30:33.026Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <subtitle>已经没事了。要问为什么？因为我来了！</subtitle>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
+    <rights>All rights reserved 2021, 💤YuZhangWang</rights>
+    <entry>
+        <title type="html"><![CDATA[此刻正是一枝花]]></title>
+        <id>http://localhost:4000/post/ci-ke-zheng-shi-yi-zhi-hua/</id>
+        <link href="http://localhost:4000/post/ci-ke-zheng-shi-yi-zhi-hua/">
+        </link>
+        <updated>2021-03-11T18:30:08.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[伊甸园献祭平面图]]></title>
+        <id>http://localhost:4000/post/yi-dian-yuan-xian-ji-ping-mian-tu/</id>
+        <link href="http://localhost:4000/post/yi-dian-yuan-xian-ji-ping-mian-tu/">
+        </link>
+        <updated>2020-07-25T19:26:38.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[尧新2考场科三考试流程]]></title>
+        <id>http://localhost:4000/post/yao-xin-2-kao-chang-ke-san-kao-shi-liu-cheng/</id>
+        <link href="http://localhost:4000/post/yao-xin-2-kao-chang-ke-san-kao-shi-liu-cheng/">
+        </link>
+        <updated>2020-07-24T16:01:49.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Android软件应用名、显示文本和图标的修改]]></title>
+        <id>http://localhost:4000/post/android-ruan-jian-ying-yong-ming-xian-shi-wen-ben-he-tu-biao-de-xiu-gai/</id>
+        <link href="http://localhost:4000/post/android-ruan-jian-ying-yong-ming-xian-shi-wen-ben-he-tu-biao-de-xiu-gai/">
+        </link>
+        <updated>2020-05-18T07:52:02.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[第一个Android程序：HelloAndroid]]></title>
+        <id>http://localhost:4000/post/di-yi-ge-android-cheng-xu-helloandroid/</id>
+        <link href="http://localhost:4000/post/di-yi-ge-android-cheng-xu-helloandroid/">
+        </link>
+        <updated>2020-05-18T06:56:07.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在list中正序和倒序删除元素区别]]></title>
+        <id>http://localhost:4000/post/zai-list-zhong-zheng-xu-he-dao-xu-shan-chu-yuan-su-qu-bie/</id>
+        <link href="http://localhost:4000/post/zai-list-zhong-zheng-xu-he-dao-xu-shan-chu-yuan-su-qu-bie/">
+        </link>
+        <updated>2020-05-15T16:48:20.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何利用油猴脚本进行中国MOOC刷课]]></title>
+        <id>http://localhost:4000/post/ru-he-li-yong-you-hou-jiao-ben-jin-xing-zhong-guo-mooc-shua-ke/</id>
+        <link href="http://localhost:4000/post/ru-he-li-yong-you-hou-jiao-ben-jin-xing-zhong-guo-mooc-shua-ke/">
+        </link>
+        <updated>2020-05-14T11:44:32.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[iO流基本概念]]></title>
+        <id>http://localhost:4000/post/io-liu-ji-ben-gai-nian/</id>
+        <link href="http://localhost:4000/post/io-liu-ji-ben-gai-nian/">
+        </link>
+        <updated>2020-05-14T11:07:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux初体验]]></title>
+        <id>http://localhost:4000/post/linux-chu-ti-yan/</id>
+        <link href="http://localhost:4000/post/linux-chu-ti-yan/">
+        </link>
+        <updated>2020-05-13T19:00:34.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2019年离散复习及押题]]></title>
+        <id>http://localhost:4000/post/2019-nian-chi-san-fu-xi-ji-ya-ti/</id>
+        <link href="http://localhost:4000/post/2019-nian-chi-san-fu-xi-ji-ya-ti/">
+        </link>
+        <updated>2020-05-13T18:41:38.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[后浪]]></title>
+        <id>http://localhost:4000/post/hou-lang/</id>
+        <link href="http://localhost:4000/post/hou-lang/">
+        </link>
+        <updated>2020-05-13T18:36:24.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何管理学习时间]]></title>
+        <id>http://localhost:4000/post/ru-he-guan-li-xue-xi-shi-jian/</id>
+        <link href="http://localhost:4000/post/ru-he-guan-li-xue-xi-shi-jian/">
+        </link>
+        <updated>2020-05-13T18:31:52.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[人脸识别程序在树莓派环境下使用方法(Linux环境使用教程)]]></title>
+        <id>http://localhost:4000/post/say-hello/</id>
+        <link href="http://localhost:4000/post/say-hello/">
+        </link>
+        <updated>2020-05-13T08:55:59.000Z</updated>
+    </entry>
+</feed>
