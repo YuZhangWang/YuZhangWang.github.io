@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://YuZhangWang.github.io</id>
-    <title>💤YuZhangWang</title>
-    <updated>2021-03-11T19:35:09.902Z</updated>
+    <title>YuZhangWang的秘密空间</title>
+    <updated>2021-03-12T06:02:11.938Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://YuZhangWang.github.io"/>
     <link rel="self" href="https://YuZhangWang.github.io/atom.xml"/>
-    <subtitle>已经没事了。要问为什么？因为我来了！</subtitle>
     <logo>https://YuZhangWang.github.io/images/avatar.png</logo>
     <icon>https://YuZhangWang.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, 💤YuZhangWang</rights>
+    <rights>All rights reserved 2021, YuZhangWang的秘密空间</rights>
     <entry>
         <title type="html"><![CDATA[此刻正是一枝花]]></title>
         <id>https://YuZhangWang.github.io/post/ci-ke-zheng-shi-yi-zhi-hua/</id>

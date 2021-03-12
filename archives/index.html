@@ -1,728 +1,2267 @@
 <!DOCTYPE html>
-<html id="bg">
+<html>
 
 <head>
-    <meta charset="utf-8" />
-<!--
-    * @Theme Card
-    * @Author admin@itjoker.cn
-    * @Link https://blog.itjoker.cn
--->
+  <meta charset="UTF-8" />
 
-<title>
-    💤YuZhangWang
-</title>
-<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-<meta http-equiv="x-dns-prefetch-control" content="on">
-<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-<meta name="author" content="💤YuZhangWang">
-<meta name="description" content="已经没事了。要问为什么？因为我来了！">
-<meta name="keywords" content="YuZhangWang,豫章望,yuzhangwang">
-<meta name="gridea-theme" content="Card">
-<meta name="spider" content="https://nmsl.sbjxw.网址">
-<meta name="UpdateTime" content="1615491171469">
-<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/jquery@3.4.1.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/Card/prism.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.36/CDN/css/Card/prism.min.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.css">
-<script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/contrib/auto-render.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
-<!--<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.36/CDN/js/Card/script.min.js"></script>-->
-<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.36/CDN/css/Card/main.min.css" />-->
-<script src="https://YuZhangWang.github.io/media/js/script.min.js"></script>
-<link rel="stylesheet" href="https://YuZhangWang.github.io/media/css/main.min.css" />
-<link rel="stylesheet" href="https://YuZhangWang.github.io/styles/main.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.36/CDN/css/Card/iconfont.css" />
-<!--link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_410989_wuhl0k5ojvf.css" /-->
-<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.36/CDN/js/love.min.js"></script>
-<script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="&lt;meta name=&#34;keywords&#34; content=&#34;YuZhangWang&#34;/&gt;">
+<meta name="description" content="">
+<meta name="theme-color" content="#be4bdb">
+<title>YuZhangWang的秘密空间</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1615528927483">
+<link rel="stylesheet" href="/media/css/gemini.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/atom-one-dark.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/main.css">
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
 <script>
-    $().ready(
-        function() {
-            var themeIcon = document.getElementById("themeIcon");
-            var currentTheme = window.localStorage.getItem('theme');
-            if (currentTheme == 'dark') {
-                document.getElementsByTagName('html')[0].classList.add('theme-dark');
-                document.getElementsByTagName('html')[0].removeAttribute('id');
-                themeIcon.classList.remove('Card-moon');
-                themeIcon.classList.add('Card-sun');
-            } else {
-                document.getElementsByTagName('html')[0].classList.remove('theme-dark');
-                document.getElementsByTagName('html')[0].setAttribute('id', 'bg');
-                themeIcon.classList.remove('Card-sun');
-                themeIcon.classList.add('Card-moon');
-            }
-        }
-    )
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      displayMath: [['$$', '$$'], ["\\[", "\\]"]]
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'a', 'annotation', 'annotation-xml'],
+      ignoreHtmlClass: 'tex2jax_ignore|crayon-.*', // 'crayon-' 开头的类，属于Wordpress代码高亮库，这部分不需要处理，否则会导致显示不正确,这部分是正则式，多条之间用'|'分割
+      processHtmlClass: 'tex2jax_process'
+    },
+    //禁用右键菜单	
+    renderActions: {
+      addMenu: [0, '', '']
+    }
+  };
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?08e9f9961f9bf9215b4fd07af6bf1c16";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
 </script>
 
-    <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/hit-kounter-lc-0.3.0.js"></script>
-    
-        
-            <script>
-                (function() {
-                    var bp = document.createElement('script');
-                    var curProtocol = window.location.protocol.split(':')[0];
-                    if (curProtocol === 'https') {
-                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-                    } else {
-                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-                    }
-                    var s = document.getElementsByTagName("script")[0];
-                    s.parentNode.insertBefore(bp, s);
-                })();
-            </script>
-            
-                    <style>
-                        .Card-certify {
-                            color: #0091e4 !important;
-                        }
-                        
-                        #foot {
-                            color: #666666;
-                        }
-                        
-                        #menu-item:hover {
-                            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-                            border-bottom-color: rgba(0, 0, 0, .6);
-                        }
-                        
-                        .gray {
-                            -webkit-filter: grayscale(100%);
-                            /* webkit */
-                            -moz-filter: grayscale(100%);
-                            /*firefox*/
-                            -ms-filter: grayscale(100%);
-                            /*ie9*/
-                            -o-filter: grayscale(100%);
-                            /*opera*/
-                            filter: grayscale(100%);
-                            filter: progid: DXImageTransform.Microsoft.BasicImage(grayscale=1);
-                            filter: gray;
-                            /*ie9- */
-                        }
-                        
-                        .lite-item,
-                        #header {
-                            opacity: 1;
-                        }
-                        
-                        .lite-item {
-                            background-color: #fafafa;
-                        }
-                        
-                        #btnStyle:hover {
-                            transition: all .3s ease;
-                            /*color: #fff;*/
-                            /*background-color: #6b6b6b;*/
-                            background-color: #eaeaea;
-                            /*#0092ee*/
-                            /*linear-gradient( rgb(138, 160, 255) 30%, rgb(90, 140, 250) 70%);*/
-                        }
-                        
-                        #btnStyle {
-                            /*background-color: #efefef;*/
-                            font-size: 14px;
-                            transition: all .3s ease;
-                        }
-                        
-                        .link_a:hover {
-                            margin-top: 10px;
-                            margin-bottom: 10px;
-                            color: #fff;
-                            border-left: 8px solid #6b6b6b;
-                            padding: 5px;
-                            transition: all .3s ease;
-                        }
-                        
-                        html {
-                            width: 100%;
-                            height: 100%;
-                            background-attachment: fixed;
-                            background-repeat: no-repeat;
-                        }
-                    </style>
+
+  <meta name="description" content="">
 </head>
 
 <body>
-    <header id="header">
-
-    <div id="pc-menu">
-        <a id="menu-bar" class="Card Card-menu"></a>
-        <a id="menu-title" href="https://YuZhangWang.github.io">
-            💤YuZhangWang
-        </a>
-        <nav id="menu-main" class="menu-main">
-            <ul>
-                <li id="menu-item" class="menu-item">
-                    <div id="tp-weather-widget"></div>
-                </li>
-                
-                    <li id="menu-item" class="menu-item">
-                        <a href="https://YuZhangWang.github.io">
-                            🎈首页
-                        </a>
-                    </li>
-                    
-                    <li id="menu-item" class="menu-item">
-                        <a href="/archives">
-                            📕归档
-                        </a>
-                    </li>
-                    
-                    <li id="menu-item" class="menu-item">
-                        <a href="https://YuZhangWang.github.io/tags">
-                            🏷标签
-                        </a>
-                    </li>
-                    
-                    <li id="menu-item" class="menu-item">
-                        <a href="/friends">
-                            👨‍💻友链
-                        </a>
-                    </li>
-                    
-                    <li id="menu-item" class="menu-item">
-                        <a href="/post/about">
-                            🙎‍♂️关于
-                        </a>
-                    </li>
-                    
-            </ul>
-        </nav>
-        <form id="gridea-search-form" class="searchform" data-update="1615491171469" action="/search/index.html">
-            <i class="Card Card-search"></i>
-            <input id="s" class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
-        </form>
-    </div>
-    <div id="mobile-menu">
-        <form id="gridea-search-form" class="mobile-searchform" data-update="1615491171469" action="/search/index.html">
-            <i class="Card Card-search"></i>
-            <input id="s" class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
-        </form>
-        <nav class="menu">
-            <ul style="list-style: none;">
-                
-                    <li class="page_item page-item-2">
-                        <a href="https://YuZhangWang.github.io">
-                            🎈首页
-                        </a>
-                    </li>
-                    
-                    <li class="page_item page-item-2">
-                        <a href="/archives">
-                            📕归档
-                        </a>
-                    </li>
-                    
-                    <li class="page_item page-item-2">
-                        <a href="https://YuZhangWang.github.io/tags">
-                            🏷标签
-                        </a>
-                    </li>
-                    
-                    <li class="page_item page-item-2">
-                        <a href="/friends">
-                            👨‍💻友链
-                        </a>
-                    </li>
-                    
-                    <li class="page_item page-item-2">
-                        <a href="/post/about">
-                            🙎‍♂️关于
-                        </a>
-                    </li>
-                    
-            </ul>
-        </nav>
-    </div>
-    <a id="theme-btn" class="theme-btn" onclick="App.changeTheme()"><i id="themeIcon" class="Card Card-moon"></i></a>
-</header>
-        <div id="main">
-            <div id="main-part">
-                <ul class="posts-list">
-                    <li class="lite-item">
-                        <article class="post post-type">
-                            <div class="post-main post-type-main">
-                                <div class="post-content">
-                                    <div class="post-content-real">
-                                        
-                                            
-                                                <h3>
-                                                    2021
-                                                </h3>
-                                                
-                                                    
-                                                        <article class="archive-item">
-                                                            <a class="archive-item-link" href="https://YuZhangWang.github.io/post/ci-ke-zheng-shi-yi-zhi-hua/">
-                                                                此刻正是一枝花
-                                                            </a>
-                                                            <span class="publish-time"> - <i class="fa fa-calendar"aria-hidden="true"></i> 2021-03-12</span></article>
-                                                        
-                                                            
-                                                    
-                                                            
-                                                    
-                                                            
-                                                    
-                                                            
-                                                    
-                                                            
-                                                    
-                                                            
-                                                    
-                                                            
-                                                    
-                                                            
-                                                    
-                                                            
-                                                    
-                                                            
-                                                    
-                                                            
-                                                    
-                                                            
-                                                    
-                                                            
-                                                                
-                                                <h3>
-                                                    2020
-                                                </h3>
-                                                
-                                                    
-                                                            
-                                                    
-                                                        <article class="archive-item">
-                                                            <a class="archive-item-link" href="https://YuZhangWang.github.io/post/yi-dian-yuan-xian-ji-ping-mian-tu/">
-                                                                伊甸园献祭平面图
-                                                            </a>
-                                                            <span class="publish-time"> - <i class="fa fa-calendar"aria-hidden="true"></i> 2020-07-26</span></article>
-                                                        
-                                                            
-                                                    
-                                                        <article class="archive-item">
-                                                            <a class="archive-item-link" href="https://YuZhangWang.github.io/post/yao-xin-2-kao-chang-ke-san-kao-shi-liu-cheng/">
-                                                                尧新2考场科三考试流程
-                                                            </a>
-                                                            <span class="publish-time"> - <i class="fa fa-calendar"aria-hidden="true"></i> 2020-07-25</span></article>
-                                                        
-                                                            
-                                                    
-                                                        <article class="archive-item">
-                                                            <a class="archive-item-link" href="https://YuZhangWang.github.io/post/android-ruan-jian-ying-yong-ming-xian-shi-wen-ben-he-tu-biao-de-xiu-gai/">
-                                                                Android软件应用名、显示文本和图标的修改
-                                                            </a>
-                                                            <span class="publish-time"> - <i class="fa fa-calendar"aria-hidden="true"></i> 2020-05-18</span></article>
-                                                        
-                                                            
-                                                    
-                                                        <article class="archive-item">
-                                                            <a class="archive-item-link" href="https://YuZhangWang.github.io/post/di-yi-ge-android-cheng-xu-helloandroid/">
-                                                                第一个Android程序：HelloAndroid
-                                                            </a>
-                                                            <span class="publish-time"> - <i class="fa fa-calendar"aria-hidden="true"></i> 2020-05-18</span></article>
-                                                        
-                                                            
-                                                    
-                                                        <article class="archive-item">
-                                                            <a class="archive-item-link" href="https://YuZhangWang.github.io/post/zai-list-zhong-zheng-xu-he-dao-xu-shan-chu-yuan-su-qu-bie/">
-                                                                在list中正序和倒序删除元素区别
-                                                            </a>
-                                                            <span class="publish-time"> - <i class="fa fa-calendar"aria-hidden="true"></i> 2020-05-16</span></article>
-                                                        
-                                                            
-                                                    
-                                                        <article class="archive-item">
-                                                            <a class="archive-item-link" href="https://YuZhangWang.github.io/post/ru-he-li-yong-you-hou-jiao-ben-jin-xing-zhong-guo-mooc-shua-ke/">
-                                                                如何利用油猴脚本进行中国MOOC刷课
-                                                            </a>
-                                                            <span class="publish-time"> - <i class="fa fa-calendar"aria-hidden="true"></i> 2020-05-14</span></article>
-                                                        
-                                                            
-                                                    
-                                                        <article class="archive-item">
-                                                            <a class="archive-item-link" href="https://YuZhangWang.github.io/post/io-liu-ji-ben-gai-nian/">
-                                                                iO流基本概念
-                                                            </a>
-                                                            <span class="publish-time"> - <i class="fa fa-calendar"aria-hidden="true"></i> 2020-05-14</span></article>
-                                                        
-                                                            
-                                                    
-                                                        <article class="archive-item">
-                                                            <a class="archive-item-link" href="https://YuZhangWang.github.io/post/linux-chu-ti-yan/">
-                                                                Linux初体验
-                                                            </a>
-                                                            <span class="publish-time"> - <i class="fa fa-calendar"aria-hidden="true"></i> 2020-05-14</span></article>
-                                                        
-                                                            
-                                                    
-                                                        <article class="archive-item">
-                                                            <a class="archive-item-link" href="https://YuZhangWang.github.io/post/2019-nian-chi-san-fu-xi-ji-ya-ti/">
-                                                                2019年离散复习及押题
-                                                            </a>
-                                                            <span class="publish-time"> - <i class="fa fa-calendar"aria-hidden="true"></i> 2020-05-14</span></article>
-                                                        
-                                                            
-                                                    
-                                                        <article class="archive-item">
-                                                            <a class="archive-item-link" href="https://YuZhangWang.github.io/post/hou-lang/">
-                                                                后浪
-                                                            </a>
-                                                            <span class="publish-time"> - <i class="fa fa-calendar"aria-hidden="true"></i> 2020-05-14</span></article>
-                                                        
-                                                            
-                                                    
-                                                        <article class="archive-item">
-                                                            <a class="archive-item-link" href="https://YuZhangWang.github.io/post/ru-he-guan-li-xue-xi-shi-jian/">
-                                                                如何管理学习时间
-                                                            </a>
-                                                            <span class="publish-time"> - <i class="fa fa-calendar"aria-hidden="true"></i> 2020-05-14</span></article>
-                                                        
-                                                            
-                                                    
-                                                        <article class="archive-item">
-                                                            <a class="archive-item-link" href="https://YuZhangWang.github.io/post/say-hello/">
-                                                                人脸识别程序在树莓派环境下使用方法(Linux环境使用教程)
-                                                            </a>
-                                                            <span class="publish-time"> - <i class="fa fa-calendar"aria-hidden="true"></i> 2020-05-13</span></article>
-                                                        
-                                                            
-                                                                
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="post-footer">
-                                
-                                        <span style="display: inline-block;width: 50%;text-align: center;border-right: 1px solid#e3e8e8;font-size: 14px;float: left;"><i class="icon-arrow-ios-back-outline"></i> </span>
-                                        
-                                            
-                            </div>
-                        </article>
-                    </li>
-                </ul>
-            </div>
-            <div id="sidebar">
-    <ul>
-        
-            <li class="lite-item">
-                <header class="lite-item-header">
-                    <h3 class="lite-item-title"><i class="Card Card-hitokoto"></i>&nbsp;&#x4E00;&#x8A00;</h3>
-                </header>
-                <div class="textwidget">
-                    <p>
-                        <b id="hitokoto"></b>
-                    </p>
-                </div>
-            </li>
-            
-                <!--
-                <li class="lite-item">
-                    <header class="lite-item-header">
-                        <h3 class="lite-item-title"><i class="Card Card-tags">&#x6807;&#x7B7E;</i></h3>
-                    </header>
-                    <div class="textwidget">
-                        
-                            <a href="" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;">
-                                <i class="fa fa-tags" aria-hidden="true"></i>
-                            </a>
-                            
-                    </div>
-                </li>-->
-                <li class="lite-item">
-                    <header class="lite-item-header">
-                        <h3 class="lite-item-title"><i class="Card Card-tags">&#x6807;&#x7B7E;</i></h3>
-                    </header>
-                    <div class="textwidget">
-                        <div id='tags' style="height: auto;width: 360;"></div>
-                        <script src="https://YuZhangWang.github.io/media/js/svg3dtagcloud.min.js"></script>
-                        <script>
-                            $(document).ready(function() {
-                                var entries = ([
-                                    
-                                     {
-                                        label: '🏷游戏',
-                                        url: 'https://YuZhangWang.github.io/tag/g2OThi30W/',
-                                        target: '_button'
-                                    },
-                                    
-                                    
-                                     {
-                                        label: '🏷生活',
-                                        url: 'https://YuZhangWang.github.io/tag/YkaIySj74c/',
-                                        target: '_button'
-                                    },
-                                    
-                                    
-                                     {
-                                        label: '🏷Android',
-                                        url: 'https://YuZhangWang.github.io/tag/nVt_3FFtf/',
-                                        target: '_button'
-                                    },
-                                    
-                                    
-                                     {
-                                        label: '🏷Java',
-                                        url: 'https://YuZhangWang.github.io/tag/yJTwqsoBr/',
-                                        target: '_button'
-                                    },
-                                    
-                                    
-                                     {
-                                        label: '🏷黑科技',
-                                        url: 'https://YuZhangWang.github.io/tag/JC2eYnJ5u/',
-                                        target: '_button'
-                                    },
-                                    
-                                    
-                                     {
-                                        label: '🏷Linux',
-                                        url: 'https://YuZhangWang.github.io/tag/CtEU7_FnA/',
-                                        target: '_button'
-                                    },
-                                    
-                                    
-                                     {
-                                        label: '🏷学习',
-                                        url: 'https://YuZhangWang.github.io/tag/dopWVAXWp/',
-                                        target: '_button'
-                                    },
-                                    
-                                    
-                                     {
-                                        label: '🏷人脸识别',
-                                        url: 'https://YuZhangWang.github.io/tag/zhgRe1hYZ/',
-                                        target: '_button'
-                                    }
-                                    
-                                    
-                                ]);
-                                var settings = {
-                                    entries: entries, //数据
-                                    width: 300, //宽度
-                                    height: 300, //高度
-                                    radius: '50%',
-                                    radiusMin: 50,
-                                    bgDraw: false, //是否显示背景
-                                    bgColor: '#fff', //背景颜色
-                                    opacityOver: 1.00,
-                                    opacityOut: 0.05,
-                                    opacitySpeed: 6,
-                                    fov: 360,
-                                    speed: 0.3, //旋转的速度
-                                    fontFamily: 'Oswald, Arial, sans-serif',
-                                    fontSize: '18', //默认字体大小
-                                    fontColor: '#666', //默认字体颜色
-                                    fontWeight: 'normal', //bold
-                                    fontStyle: 'normal', //italic 
-                                    fontStretch: 'normal', //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
-                                    fontToUpperCase: true,
-                                    tooltipFontFamily: 'Oswald, Arial, sans-serif',
-                                    tooltipFontSize: '16',
-                                    tooltipFontColor: 'red',
-                                    tooltipFontWeight: 'normal', //bold
-                                    tooltipFontStyle: 'normal', //italic 
-                                    tooltipFontStretch: 'normal', //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
-                                    tooltipFontToUpperCase: false,
-                                    tooltipTextAnchor: 'left',
-                                    tooltipDiffX: 0,
-                                    tooltipDiffY: 5
-
-                                };
-
-                                //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
-                                $('#tags').svg3DTagCloud(settings);
-                            });
-                        </script>
-                    </div>
-                </li>
-                
-                    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/APlayer.min.js"></script>
-                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-                    <div id="player"></div>
-                    
-                        <li class="lite-item">
-                            <header class="lite-item-header">
-                                <h3 class="lite-item-title">
-                                    &#x1F3B5;&#x97F3;&#x4E50;
-                                </h3>
-                            </header>
-                            <div class="textwidget">
-                                <p>
-                                    <div id="playerbox"></div>
-                                </p>
-                            </div>
-                        </li>
-                        
-                            <script>
-                                function LoadPlayer() {
-                                    var music_array = [];
-                                    
-                                    music_array.push({
-                                        name: '光之礼',
-                                        url: 'http://music.163.com/song/media/outer/url?id=5256018.mp3',
-                                        artist: '风潮唱片',
-                                        cover: 'http://p2.music.126.net/N_UiOcUFNc6OMYjRyWAUdg==/47279000011457.jpg?param=130y130',
-                                    });
-                                    
-                                    music_array.push({
-                                        name: '写给未来的孩子',
-                                        url: 'http://music.163.com/song/media/outer/url?id=434981391.mp3',
-                                        artist: '华晨宇',
-                                        cover: 'http://p1.music.126.net/UsSAd3Bdf77DjhCuTSEvUw==/109951163077613693.jpg?param=130y130',
-                                    });
-                                    
-                                    music_array.push({
-                                        name: '凡人',
-                                        url: 'http://music.163.com/song/media/outer/url?id=1465290469',
-                                        artist: '段奥娟',
-                                        cover: 'http://p2.music.126.net/lvfb_64QYmbib7ccHgDNJA==/109951165165604312.jpg?param=130y130',
-                                    });
-                                    
-                                    
-                                    const ap = new APlayer({
-                                        container: document.getElementById('playerbox'),
-                                        audio: music_array
-                                    });
-                                    
-                                }
-                                LoadPlayer();
-                            </script>
-                            
-                                
-                                    
-                                        
-                                            <li class="lite-item">
-                                                <header class="lite-item-header">
-                                                    <h3 class="lite-item-title">
-                                                        合作邮箱
-                                                    </h3>
-                                                </header>
-                                                <div class="textwidget">
-                                                    <div id="textwidget-box" style="width:100%; height:auto;">
-                                                        YuZhangWang233@163.com
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            
-                                            <li class="lite-item">
-                                                <header class="lite-item-header">
-                                                    <h3 class="lite-item-title">
-                                                        御世制人
-                                                    </h3>
-                                                </header>
-                                                <div class="textwidget">
-                                                    <div id="textwidget-box" style="width:100%; height:auto;">
-                                                        有道是，谋事在人成事在天。
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            
-                                                
-                                                    <li class="lite-item">
-                                                        <header class="lite-item-header">
-                                                            <h3 class="lite-item-title">&#x1F468;&#x200D;&#x1F4BB;&#x53CB;&#x94FE;</h3>
-                                                        </header>
-                                                        <div class="textwidget">
-                                                            
-                                                                
-                                                                    <p onclick="javascript:top.location='https://www.lfzxb.top/'"><span class="link_a"><a href="https://www.lfzxb.top/" alt="烟雨迷离半世殇 ">烟雨迷离半世殇 -腾讯Unity员工</a></span></p>
-
-                                                                    
-                                                                    <p onclick="javascript:top.location='http://8.210.6.78/'"><span class="link_a"><a href="http://8.210.6.78/" alt="TIM TIAN的个人博客 ">TIM TIAN的个人博客 -HEU研究生</a></span></p>
-
-                                                                    
-                                                                    <p onclick="javascript:top.location='https://libandhhh.github.io/'"><span class="link_a"><a href="https://libandhhh.github.io/" alt="人生小谈 ">人生小谈 -学霸一枚</a></span></p>
-
-                                                                    
-                                                                        
-                                                        </div>
-                                                    </li>
-    </ul>
-</div>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
         </div>
-
-</body>
-<footer id="foot">
-    <a class="back-to-top" href="#"><i class="Card Card-top" ></i><span class="back-to-top-text">0%</span></a>
-    <div class="copyright">
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>YuZhangWang的秘密空间</span>
+            </a>  
+          
+        </div>
         
+          <p class="subtitle">已经没事了。要问为什么？因为我来了！</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
             
-                <div style="width:300px;margin:0 auto; padding:0px 0;">
-                    <a target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=没有号" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-                        <img src="https://yanxuan.nosdn.127.net/b610ced5ac6a0e25cf6edf5606c69775.png" style="float:left;">
-                        <p id="icpinfo" style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;">
-                            浙公网安备 没有号
-                        </p>
-                    </a>
-                </div>
-                
-                    
-
-                        <div style="font-size:12px">
-                            
-                                        已经建站 <b id='build_time'></b>
-                        </div>
-                        <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/time.min.js"></script>
-                        <script>
-                            buildTime = '2018-8-8'
-                            setInterval(show_date_time, 1000, buildTime);
-                        </script>
-                        
-                            &#x7248;&#x6743;&#x6240;&#x6709; &copy;
-                            <script>
-                                var date = new Date();
-                                data2 = new Date(buildTime.replace(/-/g, "/"));
-                                nowYear = date.getFullYear().toString()
-                                buildYear = data2.getFullYear().toString();
-                                if (buildYear == nowYear) {
-                                    document.write('<span class="my-face">' + nowYear + '</span>');
-                                } else {
-                                    document.write(buildYear + '-<span class="my-face">' + nowYear + '</span>');
-                                }
-                            </script>
-
-                            <a href="https://YuZhangWang.github.io">
-                                💤YuZhangWang
-                            </a>&nbsp;|&nbsp;Powered by
-                            <a href="https://github.com/YuZhangWang/YuZhangWang.github.io" target="_blank">
-                                Github
-                            </a>
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://YuZhangWang.github.io/" target="_self">
+                  <i class="fa fa-globe"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item nav-item-active">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://YuZhangWang.github.io/tags/" target="_self">
+                  <i class="fa fa-globe"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about/" target="_self">
+                  <i class="fa fa-user"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_blank">
+                  
+                    <i class="fa fa-address-book"></i> 友情链接
+                  
+                </a>
+              </li>
+            
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
     </div>
-    <script>
-        let back2TopText = document.querySelector('.back-to-top-text')
-        window.addEventListener('scroll', function(e) {
-            let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
-            if (back2TopText) {
-                back2TopText.textContent = Math.floor(percent).toString() + '%';
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout  gemini">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">YuZhangWang</p>
+    
+    <div class="site-description right-motion">
+      
+        <p id="binft">2022考研上岸！！！\n诸事皆顺，一战成硕！</p>
+      
+    </div>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">13</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">8</span>
+        <span class="site-item-stat-name language" data-lan="category">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">8</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://YuZhangWang.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
+  
+  
+
+
+
+  <div style="width: 100%; position: relative;">
+    <canvas id="canvasDiyBlock" style="width:100%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+    <script src="/media/js/magic/clock.js"></script>
+  </div>
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'gemini';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box box-shadow-wrapper">
+          <section class="section archives-section bg-color posts-expand">
+            
+
+<div class="bg-color">
+  <div class="archive-timeline-box">
+    <div class="archive-timeline-title">
+      
+        <h2 class="language" data-lan="archives" data-count="13">非常好！目前共计13篇日志，继续努力！</h2>
+      
+    </div>
+    
+      
+      
+        <div class="node-title">
+          <h2 class="tag-year">2021</h2>
+        </div>    
+        
+      
+      <a href="https://YuZhangWang.github.io/post/ci-ke-zheng-shi-yi-zhi-hua/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              03-12
+              <small>此刻正是一枝花</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+        <div class="node-title">
+          <h2 class="tag-year">2020</h2>
+        </div>    
+        
+      
+      <a href="https://YuZhangWang.github.io/post/yi-dian-yuan-xian-ji-ping-mian-tu/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              07-26
+              <small>伊甸园献祭平面图</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://YuZhangWang.github.io/post/yao-xin-2-kao-chang-ke-san-kao-shi-liu-cheng/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              07-25
+              <small>尧新2考场科三考试流程</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://YuZhangWang.github.io/post/android-ruan-jian-ying-yong-ming-xian-shi-wen-ben-he-tu-biao-de-xiu-gai/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              05-18
+              <small>Android软件应用名、显示文本和图标的修改</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://YuZhangWang.github.io/post/di-yi-ge-android-cheng-xu-helloandroid/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              05-18
+              <small>第一个Android程序：HelloAndroid</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://YuZhangWang.github.io/post/zai-list-zhong-zheng-xu-he-dao-xu-shan-chu-yuan-su-qu-bie/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              05-16
+              <small>在list中正序和倒序删除元素区别</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://YuZhangWang.github.io/post/ru-he-li-yong-you-hou-jiao-ben-jin-xing-zhong-guo-mooc-shua-ke/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              05-14
+              <small>如何利用油猴脚本进行中国MOOC刷课</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://YuZhangWang.github.io/post/io-liu-ji-ben-gai-nian/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              05-14
+              <small>iO流基本概念</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://YuZhangWang.github.io/post/linux-chu-ti-yan/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              05-14
+              <small>Linux初体验</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://YuZhangWang.github.io/post/2019-nian-chi-san-fu-xi-ji-ya-ti/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              05-14
+              <small>2019年离散复习及押题</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://YuZhangWang.github.io/post/hou-lang/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              05-14
+              <small>后浪</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://YuZhangWang.github.io/post/ru-he-guan-li-xue-xi-shi-jian/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              05-14
+              <small>如何管理学习时间</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://YuZhangWang.github.io/post/say-hello/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              05-13
+              <small>人脸识别程序在树莓派环境下使用方法(Linux环境使用教程)</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+  </div>
+  
+<div class="page bg-color">
+  <ul class="pagination-ul">
+    
+    
+      
+        <li class="pagination-li pagination-active">
+            <a href="/archives/page/../">
+              1
+            </a>
+        </li>
+      
+    
+    
+  </ul>
+</div>
+</div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a
+        href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      
+    </div>
+  </footer>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+  <div class="bg-img">
+    <img src="https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/11/%E4%B8%BB%E5%B1%8F01.jpg" />
+  </div>
+  
+  
+  
+  
+<link rel="stylesheet" href="/media/live2d/css/live2d.css" />
+<div class="box-scale">
+  <div id="landlord" style="left: 5px;bottom: px;"
+    data-key="">
+    <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
+    
+
+      <div class="message" style="opacity:0"></div>
+      <div class="live_talk_input_body">
+        <div class="live_talk_input_name_body">
+          <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off"
+            placeholder="你的名字" />
+        </div>
+        <div class="live_talk_input_text_body">
+          <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off"
+            placeholder="要和我聊什么呀？" />
+          <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
+        </div>
+      </div>
+      <input name="live_talk" id="live_talk" value="1" type="hidden" />
+      <div class="live_ico_box">
+        <div class="live_ico_item type_info" id="showInfoBtn"></div>
+        <div class="live_ico_item type_talk" id="showTalkBtn"></div>
+        
+        <div class="live_ico_item type_music" id="musicButton"></div>
+        
+        <div class="live_ico_item type_youdu" id="youduButton"></div>
+        <div class="live_ico_item type_quit" id="hideButton"></div>
+        <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
+        <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
+        <input id="duType" value="douqilai" type="hidden">
+        
+        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=5256018.mp3" type="hidden">
+        
+      </div>
+    
+  </div>
+</div>
+<div id="open_live2d">召唤看板娘</div>
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+  var message_Path = 'https://cdn.jsdelivr.net/gh/hsxyhao/live2d.github.io@master/';
+  let landlord = document.querySelector('#landlord');
+  var apiKey = landlord.dataset.key;
+</script>
+<script type="text/javascript" src="/media/live2d/js/live2d.js"></script>
+<script>
+	var home_Path = document.location.protocol + '//' + window.document.location.hostname + ":" + window.document.location.port + '/';
+	var userAgent = window.navigator.userAgent.toLowerCase();
+	var norunAI = ["android", "iphone", "ipod", "ipad", "windows phone", "mqqbrowser", "msie", "trident/7.0"];
+	var norunFlag = false;
+
+	for (var i = 0; i < norunAI.length; i++) {
+		if (userAgent.indexOf(norunAI[i]) > -1) {
+			norunFlag = true;
+			break;
+		}
+	}
+
+	if (!window.WebGLRenderingContext) {
+		norunFlag = true;
+	}
+
+	if (!norunFlag) {
+		var hitFlag = false;
+		var AIFadeFlag = false;
+		var liveTlakTimer = null;
+		var sleepTimer_ = null;
+		var AITalkFlag = false;
+		var talkNum = 0;
+		(function () {
+			function renderTip(template, context) {
+				var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g;
+				return template.replace(tokenReg, function (word, slash1, token, slash2) {
+					if (slash1 || slash2) {
+						return word.replace('\\', '');
+					}
+					var variables = token.replace(/\s/g, '').split('.');
+					var currentObject = context;
+					var i, length, variable;
+					for (i = 0, length = variables.length; i < length; ++i) {
+						variable = variables[i];
+						currentObject = currentObject[variable];
+						if (currentObject === undefined || currentObject === null) return '';
+					}
+					return currentObject;
+				});
+			}
+
+			String.prototype.renderTip = function (context) {
+				return renderTip(this, context);
+			};
+
+			var re = /x/;
+			re.toString = function () {
+				showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000);
+				return '';
+			};
+
+			$(document).on('copy', function () {
+				showMessage('你都复制了些什么呀，转载要记得加上出处哦~~', 5000);
+			});
+
+			function initTips() {
+				$.ajax({
+					cache: true,
+					url: message_Path + 'message.json',
+					dataType: "json",
+					success: function (result) {
+						$.each(result.mouseover, function (index, tips) {
+							$(tips.selector).mouseover(function () {
+								var text = tips.text;
+								if (Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1) - 1];
+								text = text.renderTip({ text: $(this).text() });
+								showMessage(text, 3000);
+								talkValTimer();
+								clearInterval(liveTlakTimer);
+								liveTlakTimer = null;
+							});
+							$(tips.selector).mouseout(function () {
+								showHitokoto();
+								if (liveTlakTimer == null) {
+									liveTlakTimer = window.setInterval(function () {
+										showHitokoto();
+									}, 15000);
+								};
+							});
+						});
+						$.each(result.click, function (index, tips) {
+							$(tips.selector).click(function () {
+								if (hitFlag) {
+									return false
+								}
+								hitFlag = true;
+								setTimeout(function () {
+									hitFlag = false;
+								}, 8000);
+								var text = tips.text;
+								if (Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1) - 1];
+								text = text.renderTip({ text: $(this).text() });
+								showMessage(text, 3000);
+							});
+							clearInterval(liveTlakTimer);
+							liveTlakTimer = null;
+							if (liveTlakTimer == null) {
+								liveTlakTimer = window.setInterval(function () {
+									showHitokoto();
+								}, 15000);
+							};
+						});
+					}
+				});
+			}
+			initTips();
+
+			var text;
+			if (document.referrer !== '') {
+				var referrer = document.createElement('a');
+				referrer.href = document.referrer;
+				text = '嗨！来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友！';
+				var domain = referrer.hostname.split('.')[1];
+				if (domain == 'baidu') {
+					text = '嗨！ 来自 百度搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				} else if (domain == 'so') {
+					text = '嗨！ 来自 360搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				} else if (domain == 'google') {
+					text = '嗨！ 来自 谷歌搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				}
+			} else {
+				if (window.location.href == home_Path) { //主页URL判断，需要斜杠结尾
+					var now = (new Date()).getHours();
+					if (now > 23 || now <= 5) {
+						text = '你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？';
+					} else if (now > 5 && now <= 7) {
+						text = '早上好！一日之计在于晨，美好的一天就要开始了！';
+					} else if (now > 7 && now <= 11) {
+						text = '上午好！工作顺利嘛，不要久坐，多起来走动走动哦！';
+					} else if (now > 11 && now <= 14) {
+						text = '中午了，工作了一个上午，现在是午餐时间！';
+					} else if (now > 14 && now <= 17) {
+						text = '午后很容易犯困呢，今天的运动目标完成了吗？';
+					} else if (now > 17 && now <= 19) {
+						text = '傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红~~';
+					} else if (now > 19 && now <= 21) {
+						text = '晚上好，今天过得怎么样？';
+					} else if (now > 21 && now <= 23) {
+						text = '已经这么晚了呀，早点休息吧，晚安~~';
+					} else {
+						text = '嗨~ 快来逗我玩吧！';
+					}
+				} else {
+					text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				}
+			}
+			showMessage(text, 12000);
+		})();
+
+		liveTlakTimer = setInterval(function () {
+			showHitokoto();
+		}, 15000);
+
+		function showHitokoto() {
+			if (sessionStorage.getItem("Sleepy") !== "1") {
+				if (!AITalkFlag) {
+					$.getJSON('https://v1.hitokoto.cn/', function (result) {
+						talkValTimer();
+						showMessage(result.hitokoto, 0);
+					});
+				}
+			} else {
+				hideMessage(0);
+				if (sleepTimer_ == null) {
+					sleepTimer_ = setInterval(function () {
+						checkSleep();
+					}, 200);
+				}
+			}
+		}
+
+		function checkSleep() {
+			var sleepStatu = sessionStorage.getItem("Sleepy");
+			if (sleepStatu !== '1') {
+				talkValTimer();
+				showMessage('你回来啦~', 0);
+				clearInterval(sleepTimer_);
+				sleepTimer_ = null;
+			}
+		}
+
+		function showMessage(text, timeout) {
+			if (Array.isArray(text)) text = text[Math.floor(Math.random() * text.length + 1) - 1];
+			$('.message').stop();
+			$('.message').html(text);
+			$('.message').fadeTo(200, 1);
+			//if (timeout === null) timeout = 5000;
+			//hideMessage(timeout);
+		}
+		function talkValTimer() {
+			$('#live_talk').val('1');
+		}
+
+		function hideMessage(timeout) {
+			//$('.message').stop().css('opacity',1);
+			if (timeout === null) timeout = 5000;
+			$('.message').delay(timeout).fadeTo(200, 0);
+		}
+
+		function initLive2d() {
+			$('#hideButton').on('click', function () {
+				if (AIFadeFlag) {
+					return false;
+				} else {
+					AIFadeFlag = true;
+					localStorage.setItem("live2dhidden", "0");
+					$('#landlord').fadeOut(200);
+					$('#open_live2d').delay(200).fadeIn(200);
+					setTimeout(function () {
+						AIFadeFlag = false;
+					}, 300);
+				}
+			});
+			$('#open_live2d').on('click', function () {
+				if (AIFadeFlag) {
+					return false;
+				} else {
+					AIFadeFlag = true;
+					localStorage.setItem("live2dhidden", "1");
+					$('#open_live2d').fadeOut(200);
+					$('#landlord').delay(200).fadeIn(200);
+					setTimeout(function () {
+						AIFadeFlag = false;
+					}, 300);
+				}
+			});
+			$('#youduButton').on('click', function () {
+				if ($('#youduButton').hasClass('doudong')) {
+					var typeIs = $('#youduButton').attr('data-type');
+					$('#youduButton').removeClass('doudong');
+					$('body').removeClass(typeIs);
+					$('#youduButton').attr('data-type', '');
+				} else {
+					var duType = $('#duType').val();
+					var duArr = duType.split(",");
+					var dataType = duArr[Math.floor(Math.random() * duArr.length)];
+
+					$('#youduButton').addClass('doudong');
+					$('#youduButton').attr('data-type', dataType);
+					$('body').addClass(dataType);
+				}
+			});
+			if (apiKey) {
+				$('#showInfoBtn').on('click', function () {
+					var live_statu = $('#live_statu_val').val();
+					if (live_statu == "0") {
+						return
+					} else {
+						$('#live_statu_val').val("0");
+						$('.live_talk_input_body').fadeOut(500);
+						AITalkFlag = false;
+						showHitokoto();
+						$('#showTalkBtn').show();
+						$('#showInfoBtn').hide();
+					}
+				});
+				$('#showTalkBtn').on('click', function () {
+					var live_statu = $('#live_statu_val').val();
+					if (live_statu == "1") {
+						return
+					} else {
+						$('#live_statu_val').val("1");
+						$('.live_talk_input_body').fadeIn(500);
+						AITalkFlag = true;
+						$('#showTalkBtn').hide();
+						$('#showInfoBtn').show();
+
+					}
+				});
+				$('#talk_send').on('click', function () {
+					var info_ = $('#AIuserText').val();
+					var userid_ = $('#AIuserName').val();
+					if (info_ == "") {
+						showMessage('写点什么吧！', 0);
+						return;
+					}
+					if (userid_ == "") {
+						showMessage('聊之前请告诉我你的名字吧！', 0);
+						return;
+					}
+					showMessage('思考中~', 0);
+					let protocol = window.location.protocol.indexOf("s") > 0 ? "https" : "http";
+					$.ajax({
+						type: "get",
+						url: `${protocol}://www.tuling123.com/openapi/api?key=${apiKey}&info=${info_}`,
+						dataType: "json",
+						success: function (res) {
+							talkValTimer();
+							showMessage(res.text, 0);
+							$('#AIuserText').val("");
+							sessionStorage.setItem("live2duser", userid_);
+						},
+						error: function (e) {
+							talkValTimer();
+							showMessage('似乎有什么错误，请和站长联系！', 0);
+						}
+					});
+				});
+			} else {
+				$('#showInfoBtn').hide();
+				$('#showTalkBtn').hide();
+			}
+			//获取音乐信息初始化
+			var bgmListInfo = $('input[name=live2dBGM]');
+			if (bgmListInfo.length == 0) {
+				$('#musicButton').hide();
+			} else {
+				var bgmPlayNow = parseInt($('#live2d_bgm').attr('data-bgm'));
+				var bgmPlayTime = 0;
+				var live2dBGM_Num = sessionStorage.getItem("live2dBGM_Num");
+				var live2dBGM_PlayTime = sessionStorage.getItem("live2dBGM_PlayTime");
+				if (live2dBGM_Num) {
+					if (live2dBGM_Num <= $('input[name=live2dBGM]').length - 1) {
+						bgmPlayNow = parseInt(live2dBGM_Num);
+					}
+				}
+				if (live2dBGM_PlayTime) {
+					bgmPlayTime = parseInt(live2dBGM_PlayTime);
+				}
+				var live2dBGMSrc = bgmListInfo.eq(bgmPlayNow).val();
+				$('#live2d_bgm').attr('data-bgm', bgmPlayNow);
+				$('#live2d_bgm').attr('src', live2dBGMSrc);
+				$('#live2d_bgm')[0].currentTime = bgmPlayTime;
+				$('#live2d_bgm')[0].volume = 0.5;
+				var live2dBGM_IsPlay = sessionStorage.getItem("live2dBGM_IsPlay");
+				var live2dBGM_WindowClose = sessionStorage.getItem("live2dBGM_WindowClose");
+				if (live2dBGM_IsPlay == '0' && live2dBGM_WindowClose == '0') {
+					$('#live2d_bgm')[0].play();
+					$('#musicButton').addClass('play');
+				}
+				sessionStorage.setItem("live2dBGM_WindowClose", '1');
+				$('#musicButton').on('click', function () {
+					if ($('#musicButton').hasClass('play')) {
+						$('#live2d_bgm')[0].pause();
+						$('#musicButton').removeClass('play');
+						sessionStorage.setItem("live2dBGM_IsPlay", '1');
+					} else {
+						$('#live2d_bgm')[0].play();
+						$('#musicButton').addClass('play');
+						sessionStorage.setItem("live2dBGM_IsPlay", '0');
+					}
+				});
+				window.onbeforeunload = function () {
+					sessionStorage.setItem("live2dBGM_WindowClose", '0');
+					if ($('#musicButton').hasClass('play')) {
+						sessionStorage.setItem("live2dBGM_IsPlay", '0');
+					}
+				}
+				document.getElementById('live2d_bgm').addEventListener("timeupdate", function () {
+					var live2dBgmPlayTimeNow = document.getElementById('live2d_bgm').currentTime;
+					sessionStorage.setItem("live2dBGM_PlayTime", live2dBgmPlayTimeNow);
+				});
+				document.getElementById('live2d_bgm').addEventListener("ended", function () {
+					var listNow = parseInt($('#live2d_bgm').attr('data-bgm'));
+					listNow++;
+					if (listNow > $('input[name=live2dBGM]').length - 1) {
+						listNow = 0;
+					}
+					var listNewSrc = $('input[name=live2dBGM]').eq(listNow).val();
+					sessionStorage.setItem("live2dBGM_Num", listNow);
+					$('#live2d_bgm').attr('src', listNewSrc);
+					$('#live2d_bgm')[0].play();
+					$('#live2d_bgm').attr('data-bgm', listNow);
+				});
+				document.getElementById('live2d_bgm').addEventListener("error", function () {
+					$('#live2d_bgm')[0].pause();
+					$('#musicButton').removeClass('play');
+					showMessage('音乐似乎加载不出来了呢！', 0);
+				});
+			}
+			//获取用户名
+			var live2dUser = sessionStorage.getItem("live2duser");
+			if (live2dUser !== null) {
+				$('#AIuserName').val(live2dUser);
+			}
+			//获取位置
+			var landL = sessionStorage.getItem("historywidth");
+			var landB = sessionStorage.getItem("historyheight");
+			if (landL == null || landB == null) {
+				landL = '5px'
+				landB = '0px'
+			}
+			$('#landlord').css('left', landL + 'px');
+			$('#landlord').css('bottom', landB + 'px');
+			//移动
+			function getEvent() {
+				return window.event || arguments.callee.caller.arguments[0];
+			}
+			var smcc = document.getElementById("landlord");
+			var moveX = 0;
+			var moveY = 0;
+			var moveBottom = 0;
+			var moveLeft = 0;
+			var moveable = false;
+			var docMouseMoveEvent = document.onmousemove;
+			var docMouseUpEvent = document.onmouseup;
+			smcc.onmousedown = function () {
+				var ent = getEvent();
+				moveable = true;
+				moveX = ent.clientX;
+				moveY = ent.clientY;
+				var obj = smcc;
+				moveBottom = parseInt(obj.style.bottom);
+				moveLeft = parseInt(obj.style.left);
+				if (isFirefox = navigator.userAgent.indexOf("Firefox") > 0) {
+					window.getSelection().removeAllRanges();
+				}
+				document.onmousemove = function () {
+					if (moveable) {
+						var ent = getEvent();
+						var x = moveLeft + ent.clientX - moveX;
+						var y = moveBottom + (moveY - ent.clientY);
+						obj.style.left = x + "px";
+						obj.style.bottom = y + "px";
+					}
+				};
+				document.onmouseup = function () {
+					if (moveable) {
+						var historywidth = obj.style.left;
+						var historyheight = obj.style.bottom;
+						historywidth = historywidth.replace('px', '');
+						historyheight = historyheight.replace('px', '');
+						sessionStorage.setItem("historywidth", historywidth);
+						sessionStorage.setItem("historyheight", historyheight);
+						document.onmousemove = docMouseMoveEvent;
+						document.onmouseup = docMouseUpEvent;
+						moveable = false;
+						moveX = 0;
+						moveY = 0;
+						moveBottom = 0;
+						moveLeft = 0;
+					}
+				};
+			};
+		}
+		$(document).ready(function () {
+			var AIimgSrc = [];
+			let chooseLive2d = 'aoba'
+			if (chooseLive2d === 'histoire') {
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_00.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_01.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_02.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_03.png");
+			} else if (chooseLive2d === 'rem') {
+				AIimgSrc.push(message_Path + "model/rem/remu2048/texture_00.png");
+			} else if (chooseLive2d === 'aoba') {
+				AIimgSrc.push(message_Path + "model/aoba/textures/texture_00.png");
+			} else if (chooseLive2d === 'hijiki') {
+				AIimgSrc.push(message_Path + "model/hijiki/moc/hijiki.2048/texture_00.png");
+			} else if (chooseLive2d === 'tororo') {
+				AIimgSrc.push(message_Path + "model/tororo/moc/tororo.2048/texture_00.png");
+			}
+			var images = [];
+			var imgLength = AIimgSrc.length;
+			var loadingNum = 0;
+			for (var i = 0; i < imgLength; i++) {
+				images[i] = new Image();
+				images[i].src = AIimgSrc[i];
+				images[i].onload = function () {
+					loadingNum++;
+					if (loadingNum === imgLength) {
+						var live2dhidden = localStorage.getItem("live2dhidden");
+						if (live2dhidden === "0") {
+							setTimeout(function () {
+								$('#open_live2d').fadeIn(200);
+							}, 1300);
+						} else {
+							setTimeout(function () {
+								$('#landlord').fadeIn(200);
+							}, 1300);
+						}
+						let model = '';
+						if (chooseLive2d === 'histoire') {
+							model = message_Path + "model/histoire/model.json";
+						} else if (chooseLive2d === 'rem') {
+							model = message_Path + "model/rem/model.json";
+						} else if (chooseLive2d === 'aoba') {
+							model = message_Path + "model/aoba/model.json";
+						} else if (chooseLive2d === 'hijiki') {
+							model = message_Path + "model/hijiki/hijiki.model.json";
+						} else if (chooseLive2d === 'tororo') {
+							model = message_Path + "model/tororo/tororo.model.json";
+						}
+						setTimeout(function () {
+							loadlive2d("live2d", model);
+						}, 1000);
+						initLive2d();
+						images = null;
+					}
+				}
+			}
+		});
+	}
+</script>
+  
+  
+  
+  <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="demo" m="1"></script>
+
+
+  
+</div>
+<script>
+
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+    back2TopText = document.querySelector('#back_to_top_text'),
+    drawerBox = document.querySelector('#drawer_box'),
+    rightSideBar = document.querySelector('.sidebar'),
+    viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener('scroll', function (e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+
+  let hasCacu = false;
+  window.onresize = function () {
+    calcuHeight();
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            window.Velocity(rightMotions, transitionDir, {});
+          }
+        })
+        window.Velocity(viewport, openProp, {
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'true'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target", "_blank");
+      }
+    })
+  }
+
+  let faSearch = document.querySelector('#fa_search');
+  faSearch.addEventListener('click', function () {
+    document.querySelector('#search_mask').style = ''
+  })
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+  
+  // 离开当前页title变化
+  var leaveTitle = "早上好，中午好，晚上好。";
+  if (leaveTitle) {
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState == 'hidden') {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+
+</script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script>
+  let images = document.querySelectorAll('.section img');
+  console.log(images);
+  images.forEach(image => {
+    var parent = image.parentElement;
+    var next = image.nextElementSibling;
+    parent.removeChild(image);
+    var aelem = document.createElement('a');
+    aelem.href = image.src;
+    aelem.dataset['fancybox'] = 'images';
+    aelem.dataset['rel'] = 'fancybox-button';
+    aelem.classList.add('fancybox');
+    aelem.appendChild(image);
+    parent.insertBefore(aelem, next);
+  })
+</script>
+  </div>
+</body>
+
+<div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YuZhangWang.github.io/post/ci-ke-zheng-shi-yi-zhi-hua/"" data-c="
+          &lt;p&gt;由于不可抗力，上学期换了一个宿舍。新宿舍卫生实在是太糟糕，我的床位也实在是过于单调和邋遢，这学期发动部分室友打扫宿舍卫生。同时买了许多东西装饰美化一下我的床位，给自己带来便利，也让接下来的考研生活变得更丰富多彩。&lt;br&gt;
+经过一番整理之后，心情也变得更好。&lt;/p&gt;
+&lt;p&gt;在自己的床位上面下了点功夫，这是最终效果。&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210305_131543.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;首先就是桌纸，感觉有点花了，适合看书听歌，修身养性😄&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210304_223827.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;桌子上的零食盒，一直用个纸箱子，现在换了一个塑料盒子😊&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210305_131742.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;台灯原来是放在桌子上的那种类型，现在买一个吊灯类型，桌子上腾出一点空间了😉&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210305_132109.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;零钱罐原来是个用爆米花盒子装的，太简陋了，干脆买了一个新的存钱罐😋&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210305_132009.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;利用一下墙面空间，买了两个挂钩放手表和耳机🤠&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210305_132139.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;书包和电脑一直就直接放地上，才意识到很脏，买了个盒子放书包和电脑🤡&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210305_131907.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;之前洗衣服都是用自行车前框装衣服去洗的，换了个洗衣筐&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210305_132311.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;之前一直没镜子，头发吹都不知道怎么吹好的，有镜子就舒服多了👋&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210305_132412.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;买了两个夜灯放柜子里，正好打开一靠近就亮，有时候理衣服，拿衣服，看都看不清，上面放了些接下来会用的衣服&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210305_131931.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;下面柜子里放了些夏季衣服&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210305_131938.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;之前鞋子全部是摊在地上的，太邋遢了，买了个鞋架就好多了😐&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210305_132334.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;蚊子🦟快来了，感觉装上蚊帐，这个外面是蚊帐，里面是帘子，架子搭好，套上去就行了，安装比较方便&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210305_131555.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我这堵墙，很不隔音，晚上隔壁又喜欢发神经，干脆买点隔音棉挡挡，效果不错，这两天啥也听不见了，终于可以安稳睡觉了&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210304_204026.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;洗澡间本来这些东西都是放地上的，浴球更是没地方放，只能放脸盆里，买了个置物架好多了&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210304_204126.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;洗漱台这些也一样，有了个置物架，方便很多&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210304_204113.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;原来这里放着的脸盆架是蓝色的，上面全是黑黑的不知道什么东西，感觉买了一个，把原来的扔了，原来那个真是太脏了&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210303_182916.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;洗漱台原来上面都是黄的黑的，和蹲厕里面那种颜色一样，快吐了🤮，发动了一个室友两个人拿刷子好不容易刷干净的&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210303_182910.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;就像上面说的，这里原来比外面的公共厕所还要脏，另外三个室友竟然无动于衷。不过我受不了这么臭，这么脏，把这个搞干净了&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210303_182858.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;原来洗澡间，不知道墙上板上都是些什么，黄黄的，黑黑的，板子上都已经成菌斑了，一大片一大片，一走进去正面这堵墙，全是黄的。那刷子加洗衣液兑水，刷了五六回才干净的(摊上邋遢室友，太难受了🤢)&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210303_182850.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;今年要考研了，问了室友买副对联可以不，都没啥意见，我就买来贴了。最后这段时间了，也不用多理他们，管自己就行，打扫整理纯粹为了自己心情愉悦，有个好的宿舍环境，这样学习动力也多一些。&lt;/p&gt;
+&lt;p&gt;总之祝今年2022考研上岸，诸事皆顺！🙏🙏🙏&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/IMG_20210305_131329__01.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这学期课总体轻松点，刚开始一节Linux，作为酷安基佬，玩Linux不是基本操作，去年已经黑苹果、deepin、ubuntu、centos都玩过一圈了，这学期可以轻松应付。&lt;/p&gt;
+&lt;p&gt;不得不说，黑苹果里装虚拟机，流畅度还是不错的，相比于win流畅许多。用VMware Fusion，网卡声卡硬盘显卡等问题也都能避免出现，好评。&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/11/Snipaste_2021-03-05_14-15-58.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在经过分辨率调整，换源之后，就是最终安装好的成品了&lt;br&gt;
+华为镜像源是真的好看，用镜像速度也是真的快😎&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/11/Snipaste_2021-03-05_14-31-53.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;区块链操作读取也成功运行&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/Snipaste_2021-01-23_02-39-09.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;很早以前，考博的老师就给了我一个树莓派，让我在Linux下编译C++版opencv，从此就踏上了Linux和深度学习这条路，而现在，即将考研，今年形势极其严峻，上海大学等诸多大学的分数线已经什么说明了当今内卷严重，我辈还需努力&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/emoticon_0227_171339.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在如今这个内卷的形势下，我需要捡漏而不是硬钢&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/Screenshot_20210305-115501.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;找了几个研友，四个女生，一个男生，打算在图书馆的位子买在附近，一块备考&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/12/0226_111317.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;此刻正是一枝花，未来虽然布满荆棘，但是只要专注于此刻，做好准备工作，当未来来临之际，也不至于手足无措&lt;/p&gt;
+">此刻正是一枝花</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YuZhangWang.github.io/post/yi-dian-yuan-xian-ji-ping-mian-tu/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/src%3Dhttp___img.tkgame.com_d_file_2020_07_10_24n2lnyhrap.jpg%26refer%3Dhttp___img.tkgame_mh1615302773095.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+">伊甸园献祭平面图</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YuZhangWang.github.io/post/yao-xin-2-kao-chang-ke-san-kao-shi-liu-cheng/"" data-c="
+          &lt;h2 id=&#34;一-灯光考试&#34;&gt;一、灯光考试&lt;/h2&gt;
+&lt;h3 id=&#34;1打开前照灯&#34;&gt;1.打开前照灯&lt;/h3&gt;
+&lt;h3 id=&#34;2交替使用远近光灯&#34;&gt;2.交替使用远近光灯&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;(1)夜间通过急弯&lt;/li&gt;
+&lt;li&gt;(2)夜间通过坡路&lt;/li&gt;
+&lt;li&gt;(3)夜间通过拱桥&lt;/li&gt;
+&lt;li&gt;(4)夜间通过人行横道&lt;/li&gt;
+&lt;li&gt;(5)夜间通过没有交通信号灯控制的路口&lt;/li&gt;
+&lt;li&gt;(6)夜间超车&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3开近光灯&#34;&gt;3.开近光灯&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;(1)夜间近距离跟车行驶&lt;/li&gt;
+&lt;li&gt;(2)夜间会车&lt;/li&gt;
+&lt;li&gt;(3)夜间直行通过路口&lt;/li&gt;
+&lt;li&gt;(4)夜间左右转弯&lt;/li&gt;
+&lt;li&gt;(5)夜间在有灯光的道路上行驶&lt;/li&gt;
+&lt;li&gt;(6)夜间在照明良好的道路上行驶&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4开远光灯&#34;&gt;4.开远光灯&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;(1)夜间在没有路灯的道路上行驶&lt;/li&gt;
+&lt;li&gt;(2)夜间在照明不良的道路上行驶&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;5开示廓灯和危险报警闪光灯&#34;&gt;5.开示廓灯和危险报警闪光灯&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;(1)路边临时停车&lt;/li&gt;
+&lt;li&gt;(2)车辆发生故障和交通事故&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;6关闭所有灯光&#34;&gt;6.关闭所有灯光&lt;/h3&gt;
+&lt;h3 id=&#34;7上车时检查有无打在远光灯未归位如有将其归位&#34;&gt;7.上车时检查有无打在远光灯未归位，如有，将其归位&lt;/h3&gt;
+&lt;h2 id=&#34;二-起步&#34;&gt;二、起步&lt;/h2&gt;
+&lt;h3 id=&#34;1打左转向灯&#34;&gt;1.打左转向灯&lt;/h3&gt;
+&lt;h3 id=&#34;2踩离合-踩脚刹&#34;&gt;2.踩离合、踩脚刹&lt;/h3&gt;
+&lt;h3 id=&#34;3挂1挡&#34;&gt;3.挂1挡&lt;/h3&gt;
+&lt;h3 id=&#34;4松手刹&#34;&gt;4.松手刹&lt;/h3&gt;
+&lt;h3 id=&#34;5侧身四角观察&#34;&gt;5.侧身四角观察&lt;/h3&gt;
+&lt;h3 id=&#34;6抬离合找联动点&#34;&gt;6.抬离合，找联动点&lt;/h3&gt;
+&lt;h3 id=&#34;8关方向灯&#34;&gt;8.关方向灯&lt;/h3&gt;
+&lt;h2 id=&#34;三-通过特殊道路&#34;&gt;三、通过特殊道路&lt;/h2&gt;
+&lt;h3 id=&#34;1通过学校区域&#34;&gt;1.通过学校区域&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;(1)减速至20码，挂2档，左右摆头&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2通过公交站台&#34;&gt;2.通过公交站台&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;(1)轻踩刹车，左右摆头&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3通过人行横道&#34;&gt;3.通过人行横道&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;(1)轻踩刹车，左右摆头&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;四-转弯&#34;&gt;四、转弯&lt;/h2&gt;
+&lt;h3 id=&#34;1听到指令之后打右转向灯&#34;&gt;1.听到指令之后，打右转向灯&lt;/h3&gt;
+&lt;h3 id=&#34;2减档减速挂二档&#34;&gt;2.减档减速，挂二档&lt;/h3&gt;
+&lt;h3 id=&#34;3转弯箭头标志处轻踩刹车左右摆头&#34;&gt;3.转弯箭头标志处轻踩刹车，左右摆头&lt;/h3&gt;
+&lt;h3 id=&#34;4转弯时方向盘尽量打90度回弯时转向灯自动归位&#34;&gt;4.转弯时方向盘尽量打90度，回弯时转向灯自动归位&lt;/h3&gt;
+&lt;h3 id=&#34;5小圈一路口在警局前也需轻踩刹车左右摆台大圈一路口标志牌处以及不远处两处转弯标注处三处地方也需要轻踩刹车左右摆头&#34;&gt;5.小圈一路口，在警局前也需轻踩刹车，左右摆台；大圈一路口，标志牌处以及不远处两处转弯标注处，三处地方也需要轻踩刹车，左右摆头&lt;/h3&gt;
+&lt;h2 id=&#34;五-直行&#34;&gt;五、直行&lt;/h2&gt;
+&lt;h3 id=&#34;1小圈最长道路上有一处人行横道通过时需要轻车刹车左右摆头&#34;&gt;1.小圈最长道路上，有一处人行横道，通过时需要轻车刹车，左右摆头&lt;/h3&gt;
+&lt;h3 id=&#34;2一圈至少需要一次挂到5档&#34;&gt;2.一圈至少需要一次挂到5档&lt;/h3&gt;
+&lt;h3 id=&#34;3靠边停车先打右转向灯减速车头回正停下后挂空挡拉手刹关闭方向灯松离合松刹车&#34;&gt;3.靠边停车，先打右转向灯，减速，车头回正，停下后挂空挡，拉手刹，关闭方向灯，松离合松刹车&lt;/h3&gt;
+&lt;h2 id=&#34;六-为什么要担心紧张如果努力了担心紧张不会让结果变得更好&#34;&gt;六、为什么要担心紧张？如果努力了，担心紧张不会让结果变得更好。&lt;/h2&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://YuZhangWang.github.io/post-images/1595606601811.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+">尧新2考场科三考试流程</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YuZhangWang.github.io/post/android-ruan-jian-ying-yong-ming-xian-shi-wen-ben-he-tu-biao-de-xiu-gai/"" data-c="
+          &lt;p&gt;这些操作都是在app这个文件夹下，具体路径为app-&amp;gt;src-&amp;gt;main-&amp;gt;res&lt;br&gt;
+&lt;strong&gt;app文件夹下存放的是所有的代码和资源&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;res文件夹下存放的是图片、布局、字符串等资源&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;draw开头文件夹存放的是图片&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;layout文件夹存放的是布局文件&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;mipmap开头文件夹存放的是图标内容，其中mipmap-xxhdpi是最主流的设备分辨率目录&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;1应用名修改&#34;&gt;1.应用名修改&lt;/h1&gt;
+&lt;p&gt;应用名在res-&amp;gt;valus下&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;&amp;lt;resources&amp;gt;
+    &amp;lt;string name=&amp;quot;app_name&amp;quot;&amp;gt;HelloAndroid&amp;lt;/string&amp;gt;
+&amp;lt;/resources&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;HelloAndroid就是我们这个应用的名字了，我们可以直接进行修改&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_15-58-42.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;例如修改为&lt;code&gt;张三&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;&amp;lt;resources&amp;gt;
+    &amp;lt;string name=&amp;quot;app_name&amp;quot;&amp;gt;张三&amp;lt;/string&amp;gt;
+&amp;lt;/resources&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我们可以看到，应用名发生了变化&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_16-05-15.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_16-05-20.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;2显示文本修改&#34;&gt;2.显示文本修改&lt;/h1&gt;
+&lt;p&gt;显示文本属于布局文件，存放布局文件的路径为app-&amp;gt;src-&amp;gt;main-&amp;gt;res-&amp;gt;layout&lt;br&gt;
+打开layout下的activity_mian.xml，可以看到以下代码&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;    &amp;lt;TextView
+            android:layout_width=&amp;quot;wrap_content&amp;quot;
+            android:layout_height=&amp;quot;wrap_content&amp;quot;
+            android:text=&amp;quot;HelloAndroid!&amp;quot;
+            app:layout_constraintBottom_toBottomOf=&amp;quot;parent&amp;quot;
+            app:layout_constraintLeft_toLeftOf=&amp;quot;parent&amp;quot;
+            app:layout_constraintRight_toRightOf=&amp;quot;parent&amp;quot;
+            app:layout_constraintTop_toTopOf=&amp;quot;parent&amp;quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;其中&lt;code&gt;android:text=&amp;quot;HelloAndroid!&amp;quot;&lt;/code&gt;就是显示文本的定义，我们可以进行修改，将需要显示的文本改为&lt;code&gt;每个人中心都有一个张三&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_16-13-52.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;3图标修改&#34;&gt;3.图标修改&lt;/h1&gt;
+&lt;p&gt;将一张名为icon的图片移动到最主流的设备分辨率目录mipmap-xxhdpi下&lt;br&gt;
+对图标等应用是在app-&amp;gt;src-&amp;gt;main文件夹下的AndroidManifest.xml文件&lt;br&gt;
+&lt;strong&gt;这里再提一下引用的用法&lt;/strong&gt;&lt;br&gt;
+在代码中引用图标可以用&lt;code&gt;R.mipmap.icon&lt;/code&gt;&lt;br&gt;
+在xml文件中引用图标可以用&lt;code&gt;@minmap/icon&lt;/code&gt;&lt;br&gt;
+在AndroidManifest.xml文件中我们可以找到以下代码&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;&amp;lt;application
+            android:allowBackup=&amp;quot;true&amp;quot;
+            android:icon=&amp;quot;@mipmap/ic_launcher&amp;quot;
+            android:label=&amp;quot;@string/app_name&amp;quot;
+            android:roundIcon=&amp;quot;@mipmap/ic_launcher_round&amp;quot;
+            android:supportsRtl=&amp;quot;true&amp;quot;
+            android:theme=&amp;quot;@style/AppTheme&amp;quot;&amp;gt;
+        &amp;lt;activity android:name=&amp;quot;.MainActivity&amp;quot;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&amp;quot;android.intent.action.MAIN&amp;quot;/&amp;gt;
+
+                &amp;lt;category android:name=&amp;quot;android.intent.category.LAUNCHER&amp;quot;/&amp;gt;
+            &amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/activity&amp;gt;
+    &amp;lt;/application&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;其中&lt;code&gt;android:icon=&amp;quot;@mipmap/ic_launcher&amp;quot;&lt;/code&gt;是对方图标进行修改，&lt;code&gt;android:roundIcon=&amp;quot;@mipmap/ic_launcher_round&amp;quot;&lt;/code&gt;是对圆图标进行修改&lt;/p&gt;
+&lt;p&gt;让我们修改为我们自定义的图标&lt;br&gt;
+将&lt;code&gt;android:icon=&amp;quot;@mipmap/ic_launcher&lt;/code&gt; 修改为&lt;code&gt;android:icon=&amp;quot;@mipmap/icon&lt;/code&gt;&lt;br&gt;
+将&lt;code&gt;android:roundIcon=&amp;quot;@mipmap/ic_launcher_round&lt;/code&gt;修改为 &lt;code&gt;android:icon=&amp;quot;@mipmap/icon&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然后测试一下图标是否修改成功&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_16-32-11.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_16-32-17.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">Android软件应用名、显示文本和图标的修改</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YuZhangWang.github.io/post/di-yi-ge-android-cheng-xu-helloandroid/"" data-c="
+          &lt;h1 id=&#34;1下载开发工具&#34;&gt;1.下载开发工具&lt;/h1&gt;
+&lt;p&gt;有几个选项，Android Studio、IntelliJ IDEA、Eclipse&lt;br&gt;
+由于Android Studio是基于IntelliJ IDEA开发的，所以这里我使用IDEA来进行程序开发&lt;/p&gt;
+&lt;h1 id=&#34;2环境配置&#34;&gt;2.环境配置&lt;/h1&gt;
+&lt;p&gt;如果使用IDEA，那么恭喜你，在配置环境这一步你可以省去很多工夫了&lt;br&gt;
+在官网下载IDEA后安装，打开后首先创建一个Android开发项目&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_15-07-02.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果创建不了，应该是缺少JDK，SDK等的一些开发工具包，根据IDEA跳出的提示进行下载即可&lt;/p&gt;
+&lt;h1 id=&#34;3gradle&#34;&gt;3.Gradle&lt;/h1&gt;
+&lt;p&gt;这是我开始遇到的一个比较大的问题，IDEA报错如下&lt;br&gt;
+&lt;code&gt;Could not initialize class org.codehaus.groovy.classgen.Verifier&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这个问题的解决办法如下&lt;/p&gt;
+&lt;h2 id=&#34;1下载gradle离线包&#34;&gt;(1)下载Gradle离线包&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://gradle.org/install/&#34;&gt;官网下载链接&lt;/a&gt;，Gradle官网还是比较好的，将环境配置和检验环境是否配置成功的方法一同写了上去，按照教程操作即可&lt;/p&gt;
+&lt;h2 id=&#34;2调整设置&#34;&gt;(2)调整设置&lt;/h2&gt;
+&lt;p&gt;依次打开File -&amp;gt; Settings并导航至Gradle设置(Build, Execution, Deployment -&amp;gt; Build Tools -&amp;gt; Gradle）&lt;br&gt;
+将Use Gradle from选项改为Specified location，此时后面会多出一个路径选项，IDEA应该会自动帮你确定位置，如果没有，手动选择Gradle路径即可，之后点击确定即可&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_15-21-21.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3导入依赖包&#34;&gt;(3)导入依赖包&lt;/h2&gt;
+&lt;p&gt;然后就是最最最令人难受的一步，完成这一步，你需要掌握科学上网的方法，这个请自行解决&lt;br&gt;
+在(2)操作完成之后，IDEA下方会出现一些进程，这是因为Gradle在下载所需的依赖包，不科学上网的话等待时间会很长，这里我花费的时间是20多分钟，仅供参考&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_02-19-00(1).png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;等待上述操作全部完成之后，右上方锤子按钮右边会出现一个APP选项，这说明我们可以进行调试运行了&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_15-32-47.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;4安卓手机模拟器&#34;&gt;4.安卓手机模拟器&lt;/h1&gt;
+&lt;p&gt;既然是Android程序，那肯定是要在Android手机上运行的，这里我采用安卓手机模拟器来运行Android软件，在APP按钮右边的选框是设备选择框，我们点击这个选框，并打开Open AVD Manager&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_15-35-44.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在弹出的界面里点击CREATE VIRTUAL DEVICES&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_15-37-18.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;然后选择你喜欢的设备&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_15-41-10.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;下载ROM包&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_15-39-05.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;然后可能会有内存选项，下载之后IDEA会自动帮你配置完成&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_15-39-17.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;之后点击完成即可&lt;/p&gt;
+&lt;h1 id=&#34;5运行&#34;&gt;5.运行&lt;/h1&gt;
+&lt;p&gt;在设备按钮右边的三角形是运行按钮，点击之后，会自动开启你选择的安卓模拟器，然后你的第一个程序就这么完成了&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_15-32-47.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-18_02-28-11.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">第一个Android程序：HelloAndroid</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YuZhangWang.github.io/post/zai-list-zhong-zheng-xu-he-dao-xu-shan-chu-yuan-su-qu-bie/"" data-c="
+          &lt;p&gt;话说有下面这两段代码&lt;br&gt;
+&lt;strong&gt;代码一&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;ArrayList list = new ArrayList();
+        list.add(&amp;quot;java&amp;quot;);
+        list.add(&amp;quot;aaa&amp;quot;);
+        list.add(&amp;quot;java&amp;quot;);
+        list.add(&amp;quot;java&amp;quot;);
+        list.add(&amp;quot;bbb&amp;quot;);
+
+        for(int i = list.size() - 1 ; i &amp;gt;= 0 ; i--){
+            if(&amp;quot;java&amp;quot;.equals(list.get(i))){
+                list.remove(i);
             }
-        });
-        var titleTime;
-        document.addEventListener("visibilitychange", function() {
-            document.hidden ? (document.title = "\uD83D\uDE25" + OriginTitile, clearTimeout(titleTime)) : (document.title = "\uD83D\uDE1D" + OriginTitile, titleTime = setTimeout(function() {
-                document.title = OriginTitile
-            }, 2E3))
-        });
-        var OriginTitile = document.title;
+        }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;代码二&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;ArrayList list = new ArrayList();
+        list.add(&amp;quot;java&amp;quot;);
+        list.add(&amp;quot;aaa&amp;quot;);
+        list.add(&amp;quot;java&amp;quot;);
+        list.add(&amp;quot;java&amp;quot;);
+        list.add(&amp;quot;bbb&amp;quot;);
         
-        App.hitokoto();
-        
-        
-        App.weather();
-        
-        App.clearLog();
-        App.outputlog();
-        var logo = '%c💤YuZhangWang\'%cBlog';
-        console.info(
-            logo,
-            'color: #ffffff; background: #000000; padding:5px 10px 5px 10px;font-size:40px;border-radius:12px 0 0 12px;', 'color: #000000; background: #FE9A00; padding:5px 10px;font-size:40px;border-radius:0 12px 12px 0;'
-        );
-        $('img').attr('data-fancybox', 'images');
-    </script>
-</footer>
+        for(int  i = 0 ; i &amp;lt; list.size() ; i++){
+            if(&amp;quot;java&amp;quot;.equals(list.get(i))){
+                list.remove(i);
+            }
+        }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;请问哪一段代码可以将加入的“java”元素全部删除？&lt;/p&gt;
+&lt;p&gt;答案当然是代码一啦。什么？你不信？那就让我们从实际代码运行来看一下效果吧。&lt;/p&gt;
+&lt;p&gt;代码一测试代码和运行结果如下&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-13_14-33-41.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-13_14-33-52.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;代码二测试代码和运行结果如下&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-13_14-35-47.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-13_14-35-52.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;究其原因，为什么看上去可以实现一样功能的数组会导致结果不同？其实是因为你忽略了一个点，list中对元素进行删除添加操作之后，&lt;code&gt;list会产生动态变化&lt;/code&gt;，删除一个元素，后面的元素会补全上面元素的位置。&lt;/p&gt;
+&lt;p&gt;让我们来分析一下代码二，&lt;strong&gt;代码二是正序删除&lt;/strong&gt;&lt;br&gt;
+当第一个“java”被移除之后，“aaa”位于第一的位置，第二个&amp;quot;java&amp;quot;位于第二的位置，第三个&amp;quot;java&amp;quot;位于第三的位置，&amp;quot;bbb&amp;quot;位于第四的位置。&lt;br&gt;
+然后下标+1，指向上一步操作排列好的第二个位置。于是，位于第二个位置的第二个“java”也能顺利删除，此时&amp;quot;aaa&amp;quot;仍旧在第一的位置，第三个&amp;quot;java&amp;quot;来到了第二的位置，&amp;quot;bbb&amp;quot;来到了第三的位置。&lt;br&gt;
+然后下标再+1，指向上一步操作排列好的第三个位置。但是注意此时，第三个位置是&amp;quot;bbb&amp;quot;，而我们本来想要继续删除的第三个&amp;quot;java&amp;quot;此时却在第二个位置。所以，代码二会导致漏删第三个&amp;quot;java&amp;quot;，致使程序块达不到想要的效果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;代码一是倒序删除&lt;/strong&gt;，每一个&amp;quot;java&amp;quot;删除之后，只对后面的元素产生影响，而后面的元素又都是经过删除操作，确保不存在&amp;quot;java&amp;quot;元素，因此，代码二的倒序删除法可以实现彻底删除所有&amp;quot;java&amp;quot;元素的操作。&lt;/p&gt;
+">在list中正序和倒序删除元素区别</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YuZhangWang.github.io/post/ru-he-li-yong-you-hou-jiao-ben-jin-xing-zhong-guo-mooc-shua-ke/"" data-c="
+          &lt;h1 id=&#34;1下载google浏览器&#34;&gt;1.下载Google浏览器&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;使用火狐浏览器、360浏览器也可以或者Microsoft Edge也可以，不过可以用Google浏览器还是建议首选它&lt;/code&gt;&lt;br&gt;
+我们需要使用的就是扩展程序这个功能，如下图所示&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-14_19-48-31.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这里我已经装了一些插件(没有插件的Google浏览器是没有灵魂的😛)&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-14_19-48-40.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;2访问插件商店进行下载&#34;&gt;2.访问插件商店进行下载&lt;/h1&gt;
+&lt;h2 id=&#34;前提准备&#34;&gt;前提准备&lt;/h2&gt;
+&lt;p&gt;这里可以使用谷歌访问助手插件(百度即可，有很多资源并附上使用方法)&lt;/p&gt;
+&lt;p&gt;或者如果有科学上网可以直接进行访问(科学上网方法自行解决)😊&lt;/p&gt;
+&lt;h2 id=&#34;如何进入插件商店&#34;&gt;如何进入插件商店&lt;/h2&gt;
+&lt;p&gt;点击左上角之后会跳出如下页面，点击Chrome网上商店即可&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-14_19-54-24.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下图为插件商店&lt;/strong&gt;&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-14_19-57-40.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;3下载所需插件&#34;&gt;3.下载所需插件&lt;/h1&gt;
+&lt;h2 id=&#34;tampermonkey油猴脚本&#34;&gt;tampermonkey(油猴脚本)&lt;/h2&gt;
+&lt;p&gt;在左上角搜索即可，弹出的第一个即为所需插件，根据指示一步步安装即可&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-14_20-07-18.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;下载完成无需对该插件进行任何操作&lt;/p&gt;
+&lt;h1 id=&#34;4安装刷课脚本&#34;&gt;4.安装刷课脚本&lt;/h1&gt;
+&lt;p&gt;这里推荐&lt;a href=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-14_20-10-18.png&#34;&gt;Greasy Fork&lt;/a&gt;&lt;br&gt;
+搜索中国大学慕课等其他关键字，找到所需脚本，进行安装即可&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-14_20-10-18.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;推荐脚本&#34;&gt;推荐脚本&lt;/h2&gt;
+&lt;p&gt;推荐一个好用的脚本&lt;a href=&#34;https://greasyfork.org/zh-CN/scripts/399230-%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E6%85%95%E8%AF%BEmooc%E7%AD%94%E9%A2%98-%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE%E8%84%9A%E6%9C%AC-domooc&#34;&gt;中国大学慕课mooc答题/自动播放脚本(domooc)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这个脚本可以实现一键自动刷课、自动答题和自动评论&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-14_20-12-31.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;5设置刷课倍速&#34;&gt;5.设置刷课倍速&lt;/h1&gt;
+&lt;p&gt;在任意网课课件界面，右方会出现一个面板，点击更多，然后将加速倍速设置为16倍&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-14_20-26-18.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Snipaste_2020-05-14_22-43-20.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;6进行愉快的刷课&#34;&gt;6.进行愉快的刷课&lt;/h1&gt;
+&lt;p&gt;点击开始刷课，脚本会自动开始刷课、看文档、完成小测验、完成作业、评论&lt;/p&gt;
+&lt;p&gt;之后静静等待课程刷完即可&lt;/p&gt;
+">如何利用油猴脚本进行中国MOOC刷课</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YuZhangWang.github.io/post/io-liu-ji-ben-gai-nian/"" data-c="
+          &lt;p&gt;1.从中央处理器流向外部设备的数据流称为输出流&lt;/p&gt;
+&lt;p&gt;2.程序读入字符文件时，能够以该文件作为直接参数的类是FileReader&lt;/p&gt;
+&lt;p&gt;3.java.io包的File类是字符流类&lt;/p&gt;
+&lt;p&gt;4.在Serializable接口中没有定义抽象方法，也没有定义常量&lt;/p&gt;
+&lt;p&gt;5.Java中用于创建文件对象的类是File&lt;/p&gt;
+&lt;p&gt;6.在键盘上输入一个字符串创建文件对象，isFile( )方法可以判断对象为目录文件还是数据文件&lt;/p&gt;
+&lt;p&gt;7.InputStream类不对接创建对象&lt;/p&gt;
+&lt;p&gt;8.从键盘上输入多个字符时，为了避免回车换行符的影响，需要使用skip( )流方法&lt;/p&gt;
+&lt;p&gt;9.以对象为单位，把某个对象写入文件，需要使用writeObject( )方法&lt;/p&gt;
+&lt;p&gt;10.ObjectOutputStream类的方法能够直接把简单数据类型写入文件&lt;/p&gt;
+&lt;p&gt;11.若一个类对象能被整体写入文件，则定义该类时必须实现Serializable接口&lt;/p&gt;
+&lt;p&gt;12.String类型的数据能够以对象的形式写入文件&lt;/p&gt;
+&lt;p&gt;13.File类的方法中，用于列举某目录下的子目录及文件的方法是String[] list( )&lt;/p&gt;
+&lt;p&gt;14.能够以字符串为单位写入文件数据的流类是BufferedWriter&lt;/p&gt;
+&lt;p&gt;15.能够向文件输入逻辑型数据的类是DataOutputStream&lt;/p&gt;
+&lt;p&gt;16.flush( )方法只对使用了缓冲的流类起作用&lt;/p&gt;
+&lt;p&gt;17.写出一段程序，要求创建BufferedReader类的对象in，以便读取本机C盘my文件夹下的文件1.txt&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;File f = new File(&amp;quot;c:\\my\\1.txt&amp;quot;);
+file = new FileReader(f);
+in = new BufferedReader(file);
+&lt;/code&gt;&lt;/pre&gt;
+">iO流基本概念</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YuZhangWang.github.io/post/linux-chu-ti-yan/"" data-c="
+          &lt;p&gt;在经过系统换源，安装常用软件，学习基本命令行，三大语言编译环境配置，增加一点窗口特效之后，Deepin终于整成和Win差不多的生产力工具了。不得不说，Python3.8环境真难装，花了三天都没琢磨明白，最后还是装一个Conda解决全部问题。&lt;/p&gt;
+&lt;h1 id=&#34;cc环境配置&#34;&gt;C/C++环境配置&lt;/h1&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/psc.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;java环境配置&#34;&gt;Java环境配置&lt;/h1&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/psc%20(1).jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;python环境配置&#34;&gt;Python环境配置&lt;/h1&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/psc%20(2).jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;目前将这台Linux电脑作为网盘，远程服务器，代码调试工具。作为Debian分支的Linux操作系统，在一些程序调试方面确实比红帽分支的CentOS要解决更多依赖包问题。但是，Deepin好看，果然用个操作系统第一反应都要看颜值&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/psc%20(3).jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">Linux初体验</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YuZhangWang.github.io/post/2019-nian-chi-san-fu-xi-ji-ya-ti/"" data-c="
+          &lt;h1 id=&#34;离散复习及押题综合1213141718年题型&#34;&gt;离散复习及押题(综合12,13,14,17,18年题型)&lt;/h1&gt;
+&lt;h2 id=&#34;第一部分&#34;&gt;第一部分&lt;/h2&gt;
+&lt;h3 id=&#34;1-存在和任意&#34;&gt;1、存在和任意&lt;/h3&gt;
+&lt;h4 id=&#34;1一定与什么喜欢什么有关注意区分存在和任意两种情况即可&#34;&gt;(1)一定与什么喜欢什么有关，注意区分存在和任意两种情况即可&lt;/h4&gt;
+&lt;h4 id=&#34;2近两年与作家写作品有关注意作品是属于存在还是任何情况&#34;&gt;(2)近两年与作家写作品有关，注意作品是属于存在还是任何情况&lt;/h4&gt;
+&lt;h3 id=&#34;2-推理证明&#34;&gt;2、推理证明&lt;/h3&gt;
+&lt;p&gt;一定考假设推理证明，最后两句话，由假设推理过程的定义知······&lt;br&gt;
+由推理定理可得代证公式&lt;/p&gt;
+&lt;h1 id=&#34;3-近两年趋势趋向于函数化标准迭置&#34;&gt;3、近两年趋势趋向于函数化标准迭置&lt;/h1&gt;
+&lt;h2 id=&#34;第二部分&#34;&gt;第二部分&lt;/h2&gt;
+&lt;h3 id=&#34;1-集合&#34;&gt;1、 集合&lt;/h3&gt;
+&lt;h4 id=&#34;1必考写一个集合的子集&#34;&gt;(1)必考写一个集合的子集&lt;/h4&gt;
+&lt;h4 id=&#34;2笛卡尔积集必考1中子集另一个给出集合此类形式&#34;&gt;(2)笛卡尔积集，必考(1)中子集×另一个给出集合此类形式&lt;/h4&gt;
+&lt;h3 id=&#34;2-集合组合&#34;&gt;2、集合组合&lt;/h3&gt;
+&lt;p&gt;简单一点会考集合相关内容，差集并集交集定义；复杂一点会将群和集合放在一起考。&lt;br&gt;
+此题证明过程多用假设法证明&lt;/p&gt;
+&lt;h3 id=&#34;3-偏序和等价&#34;&gt;3、偏序和等价&lt;/h3&gt;
+&lt;p&gt;此题近两年都考偏序关系的证明，注意区分偏序和等价，区别在于对称性和反对称性的证明方法&lt;/p&gt;
+&lt;h3 id=&#34;4-构造关系&#34;&gt;4、构造关系&lt;/h3&gt;
+&lt;p&gt;此题必考构造关系(1)(2)中提到反自反性即为空集，提到自反性即为ΔA&lt;/p&gt;
+&lt;h2 id=&#34;第三部分&#34;&gt;第三部分&lt;/h2&gt;
+&lt;h3 id=&#34;1-图&#34;&gt;1、 图&lt;/h3&gt;
+&lt;h4 id=&#34;1必考画欧拉图而非哈密尔顿图&#34;&gt;(1)必考画欧拉图而非哈密尔顿图&lt;/h4&gt;
+&lt;p&gt;均由下图变化而来&lt;/p&gt;
+&lt;h4 id=&#34;2必考画哈密尔顿图而非欧拉图&#34;&gt;(2)必考画哈密尔顿图而非欧拉图&lt;/h4&gt;
+&lt;p&gt;均由下图变化而来&lt;/p&gt;
+&lt;h3 id=&#34;2-哈密尔顿圈题型&#34;&gt;2、哈密尔顿圈题型&lt;/h3&gt;
+&lt;p&gt;该题先用图论语言构造顶点集边集和图，再证明之&lt;br&gt;
+最后两句话，由哈密尔顿图的定义知，G中存在哈密尔顿圈&lt;br&gt;
+所以按哈密尔顿圈就坐就能使·····&lt;/p&gt;
+&lt;h3 id=&#34;3-握手定理运用&#34;&gt;3、握手定理运用&lt;/h3&gt;
+&lt;p&gt;G中至少存在一个大于等于多少的顶点，用握手定理证明之即可&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;2、3、两题考查内容顺序可能会交换，并不影响押题&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4-握手定理树的定义二部图的定义类型证明题&#34;&gt;4、握手定理，树的定义，二部图的定义类型证明题&lt;/h3&gt;
+&lt;p&gt;搞懂三个概念即可解出。该题今年可能与欧拉公式以及平面图有关面个数r和边数m的关系公式相结合&lt;/p&gt;
+&lt;h3 id=&#34;5-握手定理与简单平面图充分条件类型证明题搞懂三个概念即可解出-该题今年可能与欧拉公式以及平面图有关面个数r和边数m的关系公式相结合&#34;&gt;5、握手定理与简单平面图充分条件类型证明题，搞懂三个概念即可解出。该题今年可能与欧拉公式以及平面图有关面个数r和边数m的关系公式相结合&lt;/h3&gt;
+&lt;h2 id=&#34;第四部分&#34;&gt;第四部分&lt;/h2&gt;
+&lt;h3 id=&#34;1-群&#34;&gt;1、群&lt;/h3&gt;
+&lt;p&gt;已知一群，证明另一群，四大点，闭运算，结合律，幺元，逆元，搞懂即可&lt;/p&gt;
+&lt;h3 id=&#34;2-简单考证明双射复杂考证明自同构映射&#34;&gt;2、简单考证明双射，复杂考证明自同构映射&lt;/h3&gt;
+&lt;h3 id=&#34;3-已知一群结合陪集或者集合有关概念证明另一群预计19年题型与陪集或者正规子群有关&#34;&gt;3、已知一群，结合陪集或者集合有关概念证明另一群，预计19年题型与陪集或者正规子群有关&lt;/h3&gt;
+">2019年离散复习及押题</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YuZhangWang.github.io/post/hou-lang/"" data-c="
+          &lt;p&gt;麻：“师爷，您给翻译翻译，什么叫后浪，翻译翻译，什么，叫后浪”&lt;/p&gt;
+&lt;p&gt;汤：“这还用翻译，年轻人嘛，新一代，都说了......”&lt;/p&gt;
+&lt;p&gt;麻：“我让你翻译给我听，什么叫后浪！”&lt;/p&gt;
+&lt;p&gt;汤：：“不用翻译，就是后浪啊，热爱生活嘛......”&lt;/p&gt;
+&lt;p&gt;黄：“难道你听不懂什么叫后浪？”&lt;/p&gt;
+&lt;p&gt;麻：“我就想让你翻译翻译，什么，叫后浪！！！”&lt;/p&gt;
+&lt;p&gt;汤：“后浪嘛！”&lt;/p&gt;
+&lt;p&gt;麻：“翻译出来给我听，什么TM的叫后浪！什么TM的叫TM的后浪！”&lt;/p&gt;
+&lt;p&gt;汤：“什么TM的叫后浪啊？”&lt;/p&gt;
+&lt;p&gt;黄：“后浪就是新一代青年，可以选择玩单反，开跑车，玩跳伞，在欧洲旅游拍vlog，明白了吗？”&lt;/p&gt;
+&lt;p&gt;汤：“这就是后浪呀！”&lt;/p&gt;
+&lt;p&gt;麻：“翻译翻译”&lt;/p&gt;
+&lt;p&gt;汤，黄：“.....？？？”&lt;/p&gt;
+&lt;p&gt;麻：“翻译翻译！”&lt;/p&gt;
+&lt;p&gt;汤：“后浪，就是前浪的儿子和女儿！”&lt;/p&gt;
+&lt;p&gt;麻：“噢，大哥这TM是后浪啊。”&lt;/p&gt;
+">后浪</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YuZhangWang.github.io/post/ru-he-guan-li-xue-xi-shi-jian/"" data-c="
+          &lt;h1 id=&#34;时间管理第一原则效率&#34;&gt;时间管理第一原则：效率&lt;/h1&gt;
+&lt;p&gt;因为，当我跑去采访这些牛人的时候，他们不约而同地提到的“时间管理第一原则”是：效率。&lt;br&gt;
+在每天啃case的过程中，我也发现了这么一个简单的事实：同样长的case，我可以看上3小时，也可以40分钟-1小时看完，区别在于大脑的运转效率。&lt;br&gt;
+当大脑疲于工作的时候，对着case就开始犯困/发呆/走神，于是拖拖拉拉地看完，也不一定看进去了多少。&lt;br&gt;
+后来我学乖了，上完3节课回来，大脑已经累的不转了，干脆睡个半小时一小时的，起来又是一条好汉，看起case来哗哗的~算下来花的时间还是少的。&lt;/p&gt;
+&lt;h2 id=&#34;1维持能量&#34;&gt;1.维持能量&lt;/h2&gt;
+&lt;p&gt;觉当然是一定要好好睡的。白天连续工作太久，发现大脑效率下降的时候，不妨放松或者小憩一下充个电，往往效率曲线就又蹭的一下上去了。&lt;/p&gt;
+&lt;h2 id=&#34;2提高体力&#34;&gt;2.提高体力&lt;/h2&gt;
+&lt;p&gt;有没有发现动脑子的时候饿的快?说明脑力工作也是相当耗体力的。所以大脑与身体能持续高效工作多久，体力是基础。腾出时间，去健身房吧。这是对效率的投资，一定不亏本。&lt;/p&gt;
+&lt;h2 id=&#34;3集中精神&#34;&gt;3.集中精神&lt;/h2&gt;
+&lt;p&gt;大多数事情在集中精神的状态下都会完成的更快更好，所以尽量一次只做一件事情。抄抄写写这种不动脑子的不在此列。&lt;br&gt;
+为了让你的大脑保证只想一件事情，往往要能够把脑子清空——如果发现有些事情在脑子里转来转去，不妨干脆先写下来，然后分配一个另外的时间再去想。&lt;/p&gt;
+&lt;h1 id=&#34;时间管理的第二原则设置优先级&#34;&gt;时间管理的第二原则：设置优先级&lt;/h1&gt;
+&lt;p&gt;列了要做的/想要的list，下一步是排序。检验排序有效的标准：当出现冲突的时候，你能够干脆地放弃优先级低的。&lt;br&gt;
+比如：“对我来说，每天要睡8小时这件事情是第一优先级，绝对没有商量的余地。所以，party虽然不得不去，但一到12点我就会偷偷消失。第二天如果有人问我，怎么昨天party没看到你啊?我就会装傻说，“啊，真的么?我一定是错过你了吧!”——学生E的经验分享。&lt;br&gt;
+所以，关于优先级这一点，想说的是：比决定想要什么更难但也更重要的，也许是决定不要什么。&lt;br&gt;
+我是容易贪心的平凡人，常常觉这个也不能不做，那个也不舍得不要。观察身边的牛人，却发现很多我的第一反应会是“这怎么可以不做”的事情，他们却可以理直气壮地说，我不干。而这种放弃，是非常有策略性的。&lt;br&gt;
+同学Y，discussion group不去，大部分要求的case都不屑读。我并不认同这种做法，但慢慢发现人家不过是想学的东西跟学习的方法不一样。事实上，他会坚持在课后总结整理自己的收获与思考，还从学校图书馆拿了很多其他感兴趣的case和书，并认真地写读书笔记。&lt;br&gt;
+同学K，身为美女流行歌手的乐队鼓手，简直就是学校里的名人。可她偏偏几乎从不出席商学院的主流社交party与大型聚会活动。&lt;br&gt;
+她说，我就不喜欢跟一大群人去吵得要死说话也听不见的地方，特别浅薄，还不如省下来时间跟三两好友喝酒聊天。结果她依然是好友遍天下，第一次到土耳其也迅速找着了当地的音乐知己，聊天逛街抽水烟，不亦乐乎。&lt;br&gt;
+说到底，现在这个花花世界，填满生活还不容易，哪有那么多不能放弃的事情。&lt;/p&gt;
+&lt;h1 id=&#34;时间管理的第三原则提前计划&#34;&gt;时间管理的第三原则：提前计划&lt;/h1&gt;
+&lt;p&gt;说起来也不复杂，不过是每天、每周开始之前，拿出一点时间想想要干嘛。可是还是想不起来去做这件事情的。&lt;br&gt;
+所以我们说说不提前计划的坏处是什么吧。除了事情可能恰好堆到一起导致手忙脚乱以外，最典型的负面作用其实是：时间永远不知道花到哪里去了。很忙的过了一周觉得自己好像啥也没干。&lt;br&gt;
+原因是如果不很清晰地知道要做什么，就容易碰到什么是什么。于是哪件事情先找上来就处理了，反正一时也想不起来有什么更应该去做的事。然后过了一阵子发现几件重要的大事一件都没干。&lt;/p&gt;
+&lt;p&gt;我对付这个毛病的办法是，在提前计划的时候：&lt;br&gt;
+1.把大事分解成具体的任务&lt;br&gt;
+2.把Calendar（日程表）上用来做这件事情的时间锁定住。这样逼自己先把重要的事情的时间排出来，剩下的时间再处理其他事情。&lt;br&gt;
+反正时间长了就发现，其他事情真做不完也不会死。倒是重要的事情老拖着不做往往后果比较严重——重要的事情之所以“重要”，总是有道理的。&lt;/p&gt;
+&lt;h1 id=&#34;时间管理的第四原则获得成就感&#34;&gt;时间管理的第四原则：获得成就感&lt;/h1&gt;
+&lt;p&gt;最后想说一点，这些出色的时间管理者有个共同特点，就是都很喜欢to do list，享受从to do list上划掉一项的成就感。&lt;br&gt;
+这种对成就感的追求，本身也是他们去管理自己的时间的动力。但这未必是每个人喜欢的生活方式。&lt;br&gt;
+有些人从高效的生活中获得满足，也有些人从慢节奏随性的生活中获得满足。&lt;br&gt;
+如果你决定“发呆时间”、“看小说时间”、“看肥皂剧时间”对你来说很重要，我觉得一点问题都没有。只要你知道你的选择同时意味着放弃什么，并觉得值得就好。&lt;/p&gt;
+&lt;p&gt;这个人生选择话题就太大了，任谁都是一生的反复权衡与纠结，我们就不说了。😅&lt;br&gt;
+只是不管怎么样，以上说的这些小技巧应该都能对执行过程有所帮助。&lt;br&gt;
+最重要的是立刻开始去做，哪怕只是其中任何一点。应该都能帮助你在同样的24小时里收获更丰富和广阔以及不焦虑的人生吧!&lt;/p&gt;
+">如何管理学习时间</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YuZhangWang.github.io/post/say-hello/"" data-c="
+          &lt;h1 id=&#34;一-安装ncnn神经计算框架&#34;&gt;一、安装ncnn神经计算框架&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装g++&lt;br&gt;
+运行&lt;code&gt;sudo apt-get install g++&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装cmake&lt;br&gt;
+运行&lt;code&gt;sudo apt-get install cmake&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装protobuf&lt;br&gt;
+运行 &lt;code&gt;sudo apt-get install libprotobuf-dev protobuf-compiler&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以下为安装效果图&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/%E5%9B%BE%E7%89%871.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;下载源文件&lt;br&gt;
+运行 &lt;code&gt;git clone --recursive --depth=1 https://github.com/Tencent/ncnn&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入ncnn文件夹&lt;br&gt;
+运行 &lt;code&gt;cd ncnn&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建biuld文件夹&lt;br&gt;
+运行 &lt;code&gt;mkdir -p build&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入build文件夹&lt;br&gt;
+运行 &lt;code&gt;cd build&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进行预编译&lt;br&gt;
+运行 &lt;code&gt;cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/pi3.toolchain.cmake -DPI3=ON ..&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进行编译&lt;br&gt;
+这个过程会持续1-2小时&lt;br&gt;
+运行 &lt;code&gt;make -j4&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装&lt;br&gt;
+运行 &lt;code&gt;make install&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以下为安装效果图&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/%E5%9B%BE%E7%89%872.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;二-解决opencv安装遇到的依赖包问题&#34;&gt;二、解决opencv安装遇到的依赖包问题&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;关闭第上一步骤的终端，新开一个终端&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装依赖包libgtk2.0-dev&lt;br&gt;
+运行 &lt;code&gt;sudo aptitude install libgtk2.0-dev&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装依赖包build-essential&lt;br&gt;
+运行 &lt;code&gt;sudo aptitude install build-essential&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装依赖包libjasper-dev&lt;br&gt;
+运行 &lt;code&gt;sudo aptitude install libjasper-dev&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装依赖包libswscale-dev&lt;br&gt;
+运行 &lt;code&gt;sudo aptitude install libswscale-dev&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装依赖包libavcodec-dev&lt;br&gt;
+运行 &lt;code&gt;sudo aptitude install libavcodec-dev&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装依赖包libavformat-dev&lt;br&gt;
+运行&lt;code&gt;sudo aptitude install libavformat-dev&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装依赖包libjpeg.dev&lt;br&gt;
+运行&lt;code&gt;sudo apt-get install libjpeg.dev&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装依赖包libtiff4.dev&lt;br&gt;
+运行&lt;code&gt;sudo apt-get install libtiff4.dev&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;检查依赖包是否安装成功&lt;br&gt;
+运行&lt;code&gt;sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-dev libjpeg.dev libtiff4.dev libswscale-dev libjasper-dev&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以下为安装效果图&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/%E5%9B%BE%E7%89%873.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;三-安装opencv计算机视觉库&#34;&gt;三、安装opencv计算机视觉库&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;新开一个终端&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下载源文件&lt;br&gt;
+运行&lt;code&gt;git clone --recursive --depth=1 https://github.com/opencv/opencv&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入opencv-3.4.2文件夹&lt;br&gt;
+运行&lt;code&gt;cd opencv-3.4.2&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建build文件夹&lt;br&gt;
+运行&lt;code&gt;mkdir build&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入build文件夹&lt;br&gt;
+运行 &lt;code&gt;cd build&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进行预编译&lt;br&gt;
+运行&lt;code&gt;cmake .. -D CMAKE_BUILD_TYPE=RELEASE -D ENABLE_PRECOMPILED_HEADERS=OFF&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进行编译&lt;br&gt;
+大概花费1-2小时&lt;br&gt;
+运行&lt;code&gt;sudo make -j3&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装&lt;br&gt;
+运行&lt;code&gt;make install&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以下为安装效果图&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/%E5%9B%BE%E7%89%874.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/%E5%9B%BE%E7%89%875.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/%E5%9B%BE%E7%89%876.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/%E5%9B%BE%E7%89%877.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/%E5%9B%BE%E7%89%878.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;四-安装并运行ultra-light-fast-generic-face-detector-1mb轻量级人脸检测模型&#34;&gt;四、安装并运行Ultra-Light-Fast-Generic-Face-Detector-1MB轻量级人脸检测模型&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;新开一个终端&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下载源文件&lt;br&gt;
+运行&lt;code&gt;git clone --recursive --depth=1 https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入ncnn文件夹&lt;br&gt;
+运行&lt;code&gt;cd Ultra-Light-Fast-Generic-Face-Detector-1MB/ncnn&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建build文件夹&lt;br&gt;
+运行&lt;code&gt;mkdir build&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入build文件夹&lt;br&gt;
+运行&lt;code&gt;cd build&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进行预编译&lt;br&gt;
+运行&lt;code&gt;cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/pi3.toolchain.cmake -DPI3=ON ..&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进行编译&lt;br&gt;
+大概花费1-2小时&lt;br&gt;
+运行&lt;code&gt;make -j4&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装&lt;br&gt;
+运行&lt;code&gt;make install&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进行人脸识别&lt;br&gt;
+运行&lt;br&gt;
+&lt;code&gt;./main ../data/version-RFB/RFB-320.bin ../data/version-RFB/RFB-320.param ../data/test.jpg&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以下为安装及运行效果图&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/%E5%9B%BE%E7%89%879.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/%E5%9B%BE%E7%89%8710.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+">人脸识别程序在树莓派环境下使用方法(Linux环境使用教程)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YuZhangWang.github.io/post/about/"" data-c="
+          &lt;p&gt;Here are some blogs about my ideas which about coding,technology and sentiment!&lt;/p&gt;
+&lt;h2 id=&#34;关于本站&#34;&gt;🏠 关于本站&lt;/h2&gt;
+&lt;p&gt;本站使用Github搭建而成，本地撰写博客，再同步到Git仓库中&lt;/p&gt;
+&lt;h2 id=&#34;博主是谁&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;
+&lt;p&gt;YuZhangWang(豫章望)，无名之辈，一个刚上路的极客和程序员。励志成为一名算法工程师，研究深度学习、机器学习，达到算法工程落地的要求；同时前端后端掌握一些内容。&lt;br&gt;
+目前正在着眼于考研这件大事上，祝我考研上岸！！！&lt;/p&gt;
+&lt;h2 id=&#34;兴趣爱好&#34;&gt;⛹ 兴趣爱好&lt;/h2&gt;
+&lt;p&gt;Coding，刷机，折腾ROM，看电影，数码爱好者&lt;/p&gt;
+&lt;h2 id=&#34;联系我呀&#34;&gt;📬 联系我呀&lt;/h2&gt;
+&lt;p&gt;bilibili: &lt;a href=&#34;https://space.bilibili.com/19474542&#34;&gt;YuzhangWang&lt;/a&gt;&lt;br&gt;
+Github:&lt;a href=&#34;https://github.com/YuZhangWang&#34;&gt;YuZhangWang&lt;/a&gt;&lt;br&gt;
+码云:&lt;a href=&#34;https://gitee.com/YuZhangWang233&#34;&gt;YuZhangWang&lt;/a&gt;&lt;br&gt;
+CSDN:&lt;a href=&#34;https://blog.csdn.net/qq_43616274&#34;&gt;YuZhangWang&lt;/a&gt;&lt;br&gt;
+LeetCode:&lt;a href=&#34;https://leetcode-cn.com/u/yuzhangwang/&#34;&gt;YuZhangWang&lt;/a&gt;&lt;br&gt;
+QQ:&lt;a href=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/qrcode_1615295622746.jpg&#34;&gt;YuZhangWang&lt;/a&gt;&lt;br&gt;
+微信:&lt;a href=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/mmqrcode1615295634051.png&#34;&gt;YuZhangWang&lt;/a&gt;&lt;br&gt;
+酷安:&lt;a href=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/IMG_20210309_211618.png&#34;&gt;YuZhangWang&lt;/a&gt;&lt;br&gt;
+网易云:&lt;a href=&#34;https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/Screenshot_20210309-211644__01.jpg&#34;&gt;YuZhangWang&lt;/a&gt;&lt;br&gt;
+微博:&lt;a href=&#34;https://weibo.com/u/5603095987&#34;&gt;YuZhangWang&lt;/a&gt;&lt;/p&gt;
+">关于</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 200
+  });
+</script>
+
+
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/media/js/mouse/fireworks.js"></script>
+
+
+<script src="/media/js/cool.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/lete114/CDN/Sum/sakura.js"></script>
+
 
 </html>
