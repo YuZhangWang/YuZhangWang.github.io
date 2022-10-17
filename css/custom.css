@@ -69,10 +69,10 @@
 .img-alt {}
 
 /* 页面标题和文章标题居中显示 */
-.page-title {
+#page h1.page-title {
     text-align: center;
 }
 
-.post-title {
+#post-info .post-title {
     text-align: center;
 }
