@@ -76,3 +76,12 @@
 #post-info .post-title {
     text-align: center;
 }
+
+/* 文章顶部信息居中显示 */
+#post-info #post-meta .meta-firstline {
+    text-align: center;
+}
+
+#post-info #post-meta .meta-secondline {
+    text-align: center;
+}
