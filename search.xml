@@ -22,38 +22,6 @@
       </tags>
   </entry>
   <entry>
-    <title>高铁站的家乡味道</title>
-    <url>/2019/02/01/002-hometown-flavor-of-high-speed-railway-station/</url>
-    <content><![CDATA[<p>大概有三四年没吃丁莲芳了，没想到在高铁站吃到了这道美味，空空的胃得到了满足</p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213559.jpeg" alt=""></p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213613.jpeg" alt=""></p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213624.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>烹调之道</category>
-        <category>生活感悟</category>
-      </categories>
-      <tags>
-        <tag>丁莲芳</tag>
-        <tag>千张</tag>
-        <tag>高铁</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>除夕好!</title>
-    <url>/2019/02/04/003-good-new-year-eve/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213844.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>生活感悟</category>
-        <category>摄影记录</category>
-      </categories>
-      <tags>
-        <tag>过年</tag>
-        <tag>比心</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>iOS微体验之二</title>
     <url>/2019/03/01/004-ios-micro-experience-2/</url>
     <content><![CDATA[<p>iphone7，A10处理器，iOS12.1.4，128G。<br>
@@ -67,6 +35,19 @@
         <tag>iOS</tag>
         <tag>iphone7</tag>
         <tag>A10</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一加6上手体验</title>
+    <url>/2019/03/09/006-oneplus-six-hands-on-experience/</url>
+    <content><![CDATA[<p>一加6，处理器为骁龙845，系统为安卓9.0，氢OS9.0.2，首先，整机外观非常一体化，握在手里感觉非常舒适，重量适中，适合游戏玩家长时间握持，手机背部的玻璃面板手感非常棒。正面采用了刘海设计，不过可以将刘海进行隐藏，屏幕素质属于中等偏上水平。游戏体验方面吃鸡60帧并不是问题，在拍照上，一加的相机也有所提升。较为可惜的一点是，一加6还是采用了单扬声器设计，但保留了3.5毫米耳机接口，这点给好评。总的来说相较于上一代一加5，有了明显的提升，同时也将一加品牌，全面的带入了全面屏时代。是一款同时兼顾了续航与性能的手机，日常体验完全没有任何问题，对刘海屏不介意的同学，可以试着入手。</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>845</tag>
+        <tag>OnePlus</tag>
       </tags>
   </entry>
   <entry>
@@ -86,19 +67,6 @@
       </tags>
   </entry>
   <entry>
-    <title>一加6上手体验</title>
-    <url>/2019/03/09/006-oneplus-six-hands-on-experience/</url>
-    <content><![CDATA[<p>一加6，处理器为骁龙845，系统为安卓9.0，氢OS9.0.2，首先，整机外观非常一体化，握在手里感觉非常舒适，重量适中，适合游戏玩家长时间握持，手机背部的玻璃面板手感非常棒。正面采用了刘海设计，不过可以将刘海进行隐藏，屏幕素质属于中等偏上水平。游戏体验方面吃鸡60帧并不是问题，在拍照上，一加的相机也有所提升。较为可惜的一点是，一加6还是采用了单扬声器设计，但保留了3.5毫米耳机接口，这点给好评。总的来说相较于上一代一加5，有了明显的提升，同时也将一加品牌，全面的带入了全面屏时代。是一款同时兼顾了续航与性能的手机，日常体验完全没有任何问题，对刘海屏不介意的同学，可以试着入手。</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>845</tag>
-        <tag>OnePlus</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>乘凉猫猫</title>
     <url>/2019/04/16/007-cool-cat/</url>
     <content><![CDATA[<p>一只神奇的猫，嘴巴上有一圈白毛<br>
@@ -106,8 +74,8 @@
 <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826214752.jpeg" alt=""></p>
 ]]></content>
       <categories>
-        <category>摄影记录</category>
         <category>动物大赏</category>
+        <category>摄影记录</category>
       </categories>
       <tags>
         <tag>黑猫</tag>
@@ -143,6 +111,48 @@
       </tags>
   </entry>
   <entry>
+    <title>折腾windows</title>
+    <url>/2019/08/11/011-toss-windows/</url>
+    <content><![CDATA[<p>软件层面进行了一些升级工作，将教育版改为专业版，升级版本为1903；使用VS编译VC，Java和python，减少软件数量；将音频剪辑与PDF阅读器换为Adobe软件；更换了左侧应用图标；例行升级了各类软件；添加bilibilifans实时监控窗口。舒服了！<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826215354.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>VS2019</tag>
+        <tag>Adobe</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>吸猫</title>
+    <url>/2019/06/13/010-stroke-a-cat/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826215138.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>动物大赏</category>
+        <category>摄影记录</category>
+      </categories>
+      <tags>
+        <tag>白猫</tag>
+        <tag>小奶猫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>除夕好!</title>
+    <url>/2019/02/04/003-good-new-year-eve/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213844.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>生活感悟</category>
+        <category>摄影记录</category>
+      </categories>
+      <tags>
+        <tag>过年</tag>
+        <tag>比心</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>在路上ing</title>
     <url>/2019/09/12/012-on-the-way/</url>
     <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826215616.jpeg" alt=""></p>
@@ -166,20 +176,6 @@
       </categories>
       <tags>
         <tag>树莓派</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>吸猫</title>
-    <url>/2019/06/13/010-stroke-a-cat/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826215138.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>摄影记录</category>
-        <category>动物大赏</category>
-      </categories>
-      <tags>
-        <tag>白猫</tag>
-        <tag>小奶猫</tag>
       </tags>
   </entry>
   <entry>
@@ -243,19 +239,6 @@
       </tags>
   </entry>
   <entry>
-    <title>打卡一加南京店</title>
-    <url>/2019/11/23/019-punch-in-oneplus-nanjing-store/</url>
-    <content><![CDATA[<p>一加南京店，给我的感觉就是精致和体贴的服务。在微博大佬处看到有网友投稿一加屏幕的一个问题，在解锁的时候会发出一些声音。正好我自己也有类似的问题存在，于是在昨天预约了一加的维修，对比之后，感觉一家的服务确实比其他厂家要体贴，来到了一家的店里之后，发现展示的只有7系列和7t系列，以及一加背包。在维修的时候可以坐在座位上看着激光电视，对于一个加油来说，这是非常体贴的服务，很人性化，如果给售后做一个评价的话，iphone和一加，是市面上主流厂家中排名较高规格的。很赞很舒服。</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>OnePlus</tag>
-        <tag>南京</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>霸气外漏喵</title>
     <url>/2019/10/30/017-domineering-side-leakage-meow/</url>
     <content><![CDATA[<p>这猫太有气势了，我撸它，竟然被打了！还好打在衣服上，没被挠到<br>
@@ -263,8 +246,8 @@
 <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826220527.jpeg" alt=""></p>
 ]]></content>
       <categories>
-        <category>摄影记录</category>
         <category>动物大赏</category>
+        <category>摄影记录</category>
       </categories>
       <tags>
         <tag>豹纹</tag>
@@ -293,6 +276,24 @@
       </tags>
   </entry>
   <entry>
+    <title>高铁站的家乡味道</title>
+    <url>/2019/02/01/002-hometown-flavor-of-high-speed-railway-station/</url>
+    <content><![CDATA[<p>大概有三四年没吃丁莲芳了，没想到在高铁站吃到了这道美味，空空的胃得到了满足</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213559.jpeg" alt=""></p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213613.jpeg" alt=""></p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213624.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>生活感悟</category>
+        <category>烹调之道</category>
+      </categories>
+      <tags>
+        <tag>丁莲芳</tag>
+        <tag>千张</tag>
+        <tag>高铁</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>小黑猫</title>
     <url>/2019/12/06/020-little-black-cat/</url>
     <content><![CDATA[<p>它又来了,飞天大盗,翻窗直入<br>
@@ -307,17 +308,16 @@
       </tags>
   </entry>
   <entry>
-    <title>折腾windows</title>
-    <url>/2019/08/11/011-toss-windows/</url>
-    <content><![CDATA[<p>软件层面进行了一些升级工作，将教育版改为专业版，升级版本为1903；使用VS编译VC，Java和python，减少软件数量；将音频剪辑与PDF阅读器换为Adobe软件；更换了左侧应用图标；例行升级了各类软件；添加bilibilifans实时监控窗口。舒服了！<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826215354.jpeg" alt=""></p>
+    <title>打卡一加南京店</title>
+    <url>/2019/11/23/019-punch-in-oneplus-nanjing-store/</url>
+    <content><![CDATA[<p>一加南京店，给我的感觉就是精致和体贴的服务。在微博大佬处看到有网友投稿一加屏幕的一个问题，在解锁的时候会发出一些声音。正好我自己也有类似的问题存在，于是在昨天预约了一加的维修，对比之后，感觉一家的服务确实比其他厂家要体贴，来到了一家的店里之后，发现展示的只有7系列和7t系列，以及一加背包。在维修的时候可以坐在座位上看着激光电视，对于一个加油来说，这是非常体贴的服务，很人性化，如果给售后做一个评价的话，iphone和一加，是市面上主流厂家中排名较高规格的。很赞很舒服。</p>
 ]]></content>
       <categories>
         <category>极客之旅</category>
       </categories>
       <tags>
-        <tag>VS2019</tag>
-        <tag>Adobe</tag>
+        <tag>OnePlus</tag>
+        <tag>南京</tag>
       </tags>
   </entry>
   <entry>
@@ -335,6 +335,18 @@
       </tags>
   </entry>
   <entry>
+    <title>2020/0202/2020</title>
+    <url>/2020/02/02/023-2020-0202-2020/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/26/20210826221616535.jpeg" alt="2020/0202/2020"></p>
+]]></content>
+      <categories>
+        <category>摄影记录</category>
+      </categories>
+      <tags>
+        <tag>月亮</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>斯通纳</title>
     <url>/2020/01/22/022-stone/</url>
     <content><![CDATA[<p>名著散文诗词读的少，小说倒是会读一些，斯通纳五六年前读过，写得就像一杯水，写得很平淡，没有浓墨重彩的地方，全书都没有诗词散文里面深奥的道理，也没有名人传记里面让人惊叹的故事，就是很平凡的一个人，一生的故事，但就是能吸引我看下去，因为写的很真实，很现实。<br>
@@ -349,44 +361,19 @@
       </tags>
   </entry>
   <entry>
-    <title>2020/0202/2020</title>
-    <url>/2020/02/02/023-2020-0202-2020/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/26/20210826221616535.jpeg" alt="2020/0202/2020"></p>
-]]></content>
-      <categories>
-        <category>摄影记录</category>
-      </categories>
-      <tags>
-        <tag>月亮</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一加新功能</title>
-    <url>/2020/04/06/026-a-new-function-of-oneplus/</url>
-    <content><![CDATA[<p>一加在通讯录加入了类似Face Time的功能，一加手机之间可以通过Wifi、5G、4G进行聊天视频通话，界面的交互也和Face Time比较类似。使用下来，或可与Face Time相比，是一个很不错的功能</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>OnePlus</tag>
-        <tag>通讯录</tag>
-        <tag>FaceTime</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>炉石的同步策略</title>
-    <url>/2020/04/12/027-synchronization-strategy-of-furnace-stone/</url>
-    <content><![CDATA[<p>炉石在Android，PC，iPhone，iPad都共用一个服务器，数据都可以同步共享。暴雪这波操作简直把腾讯系游戏以及苹果官方的脸都吊起来打。而作为一个用户，真是拍手叫好。<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222306.webp" alt=""></p>
+    <title>开罗金字塔游戏</title>
+    <url>/2020/02/05/024-cairo-pyramid-games/</url>
+    <content><![CDATA[<p>开罗游戏真是个打发时间的好去处<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826221742.png" alt=""></p>
 ]]></content>
       <categories>
         <category>极客之旅</category>
         <category>游戏体验</category>
       </categories>
       <tags>
-        <tag>炉石</tag>
-        <tag>云同步</tag>
+        <tag>开罗游戏</tag>
+        <tag>GameGuardian</tag>
+        <tag>VMOS Pro</tag>
       </tags>
   </entry>
   <entry>
@@ -443,19 +430,32 @@
       </tags>
   </entry>
   <entry>
-    <title>开罗金字塔游戏</title>
-    <url>/2020/02/05/024-cairo-pyramid-games/</url>
-    <content><![CDATA[<p>开罗游戏真是个打发时间的好去处<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826221742.png" alt=""></p>
+    <title>炉石的同步策略</title>
+    <url>/2020/04/12/027-synchronization-strategy-of-furnace-stone/</url>
+    <content><![CDATA[<p>炉石在Android，PC，iPhone，iPad都共用一个服务器，数据都可以同步共享。暴雪这波操作简直把腾讯系游戏以及苹果官方的脸都吊起来打。而作为一个用户，真是拍手叫好。<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222306.webp" alt=""></p>
 ]]></content>
       <categories>
         <category>极客之旅</category>
         <category>游戏体验</category>
       </categories>
       <tags>
-        <tag>开罗游戏</tag>
-        <tag>GameGuardian</tag>
-        <tag>VMOS Pro</tag>
+        <tag>炉石</tag>
+        <tag>云同步</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一加新功能</title>
+    <url>/2020/04/06/026-a-new-function-of-oneplus/</url>
+    <content><![CDATA[<p>一加在通讯录加入了类似Face Time的功能，一加手机之间可以通过Wifi、5G、4G进行聊天视频通话，界面的交互也和Face Time比较类似。使用下来，或可与Face Time相比，是一个很不错的功能</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>OnePlus</tag>
+        <tag>通讯录</tag>
+        <tag>FaceTime</tag>
       </tags>
   </entry>
   <entry>
@@ -652,22 +652,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Deepin初体验</title>
-    <url>/2020/04/26/029-deepin-first-experience/</url>
-    <content><![CDATA[<p>在经过系统换源，安装常用软件，学习基本命令行，三大语言编译环境配置，增加一点窗口特效之后，Deepin终于整成和Win差不多的生产力工具了。不得不说，Python3.8环境真难装，花了三天都没琢磨明白，最后还是装一个Conda解决全部问题。<br>
-目前将这台Linux电脑作为网盘，远程服务器，代码调试工具。作为Debian分支的Linux操作系统，在一些程序调试方面确实比红帽分支的CentOS要解决更多依赖包问题。但是，Deepin好看，果然用个操作系统第一反应都要看颜值</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>DeepinV20</tag>
-        <tag>CentOS</tag>
-        <tag>Conda</tag>
-        <tag>Debian</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>告别微软计划</title>
     <url>/2020/04/15/028-bid-farewell-to-microsoft-plan/</url>
     <content><![CDATA[<p>1.彻底卸载VS2019</p>
@@ -681,10 +665,26 @@
       </categories>
       <tags>
         <tag>VS2019</tag>
-        <tag>DeepinV20</tag>
         <tag>Clion</tag>
         <tag>Pycharm</tag>
+        <tag>DeepinV20</tag>
         <tag>MacOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Deepin初体验</title>
+    <url>/2020/04/26/029-deepin-first-experience/</url>
+    <content><![CDATA[<p>在经过系统换源，安装常用软件，学习基本命令行，三大语言编译环境配置，增加一点窗口特效之后，Deepin终于整成和Win差不多的生产力工具了。不得不说，Python3.8环境真难装，花了三天都没琢磨明白，最后还是装一个Conda解决全部问题。<br>
+目前将这台Linux电脑作为网盘，远程服务器，代码调试工具。作为Debian分支的Linux操作系统，在一些程序调试方面确实比红帽分支的CentOS要解决更多依赖包问题。但是，Deepin好看，果然用个操作系统第一反应都要看颜值</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>DeepinV20</tag>
+        <tag>CentOS</tag>
+        <tag>Conda</tag>
+        <tag>Debian</tag>
       </tags>
   </entry>
   <entry>
@@ -764,27 +764,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux初体验</title>
-    <url>/2020/05/14/034-linux-first-experience/</url>
-    <content><![CDATA[<p>在经过系统换源，安装常用软件，学习基本命令行，三大语言编译环境配置，增加一点窗口特效之后，Deepin终于整成和Win差不多的生产力工具了。不得不说，Python3.8环境真难装，花了三天都没琢磨明白，最后还是装一个Conda解决全部问题。</p>
-<h1>C/C++环境配置</h1>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/psc.jpg" alt=""></p>
-<h1>Java环境配置</h1>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/psc%20(1).jpg" alt=""></p>
-<h1>Python环境配置</h1>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/psc%20(2).jpg" alt=""></p>
-<p>目前将这台Linux电脑作为网盘，远程服务器，代码调试工具。作为Debian分支的Linux操作系统，在一些程序调试方面确实比红帽分支的CentOS要解决更多依赖包问题。但是，Deepin好看，果然用个操作系统第一反应都要看颜值<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/psc%20(3).jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>Debian</tag>
-        <tag>Deepin</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2019学年离散复习及押题</title>
     <url>/2020/05/14/033-2019-discrete-review-and-escort/</url>
     <content><![CDATA[<p>离散复习及押题(综合12,13,14,17,18年题型)</p>
@@ -840,6 +819,56 @@
       </tags>
   </entry>
   <entry>
+    <title>iO流基本概念</title>
+    <url>/2020/05/14/035-basic-concepts-of-io-flow/</url>
+    <content><![CDATA[<p>1.从中央处理器流向外部设备的数据流称为输出流</p>
+<p>2.程序读入字符文件时，能够以该文件作为直接参数的类是FileReader</p>
+<p>3.java.io包的File类是字符流类</p>
+<p>4.在Serializable接口中没有定义抽象方法，也没有定义常量</p>
+<p>5.Java中用于创建文件对象的类是File</p>
+<p>6.在键盘上输入一个字符串创建文件对象，isFile( )方法可以判断对象为目录文件还是数据文件</p>
+<p>7.InputStream类不对接创建对象</p>
+<p>8.从键盘上输入多个字符时，为了避免回车换行符的影响，需要使用skip( )流方法</p>
+<p>9.以对象为单位，把某个对象写入文件，需要使用writeObject( )方法</p>
+<p>10.ObjectOutputStream类的方法能够直接把简单数据类型写入文件</p>
+<p>11.若一个类对象能被整体写入文件，则定义该类时必须实现Serializable接口</p>
+<p>12.String类型的数据能够以对象的形式写入文件</p>
+<p>13.File类的方法中，用于列举某目录下的子目录及文件的方法是String[] list( )</p>
+<p>14.能够以字符串为单位写入文件数据的流类是BufferedWriter</p>
+<p>15.能够向文件输入逻辑型数据的类是DataOutputStream</p>
+<p>16.flush( )方法只对使用了缓冲的流类起作用</p>
+<p>17.写出一段程序，要求创建BufferedReader类的对象in，以便读取本机C盘my文件夹下的文件1.txt</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">File</span> <span class="variable">f</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(<span class="string">&quot;c:\\my\\1.txt&quot;</span>);</span><br><span class="line">file = <span class="keyword">new</span> <span class="title class_">FileReader</span>(f);</span><br><span class="line">in = <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(file);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Java学习笔记</category>
+      </categories>
+      <tags>
+        <tag>中央处理</tag>
+        <tag>IO流</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux初体验</title>
+    <url>/2020/05/14/034-linux-first-experience/</url>
+    <content><![CDATA[<p>在经过系统换源，安装常用软件，学习基本命令行，三大语言编译环境配置，增加一点窗口特效之后，Deepin终于整成和Win差不多的生产力工具了。不得不说，Python3.8环境真难装，花了三天都没琢磨明白，最后还是装一个Conda解决全部问题。</p>
+<h1>C/C++环境配置</h1>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/psc.jpg" alt=""></p>
+<h1>Java环境配置</h1>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/psc%20(1).jpg" alt=""></p>
+<h1>Python环境配置</h1>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/psc%20(2).jpg" alt=""></p>
+<p>目前将这台Linux电脑作为网盘，远程服务器，代码调试工具。作为Debian分支的Linux操作系统，在一些程序调试方面确实比红帽分支的CentOS要解决更多依赖包问题。但是，Deepin好看，果然用个操作系统第一反应都要看颜值<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/psc%20(3).jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>Debian</tag>
+        <tag>Deepin</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何利用油猴脚本进行中国MOOC刷课</title>
     <url>/2020/05/14/036-how-to-use-oil-monkey-script-to-brush-chinese-mooc-lessons/</url>
     <content><![CDATA[<h1>1.下载Google浏览器</h1>
@@ -886,35 +915,6 @@
         <tag>油猴脚本</tag>
         <tag>Chrome</tag>
         <tag>插件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iO流基本概念</title>
-    <url>/2020/05/14/035-basic-concepts-of-io-flow/</url>
-    <content><![CDATA[<p>1.从中央处理器流向外部设备的数据流称为输出流</p>
-<p>2.程序读入字符文件时，能够以该文件作为直接参数的类是FileReader</p>
-<p>3.java.io包的File类是字符流类</p>
-<p>4.在Serializable接口中没有定义抽象方法，也没有定义常量</p>
-<p>5.Java中用于创建文件对象的类是File</p>
-<p>6.在键盘上输入一个字符串创建文件对象，isFile( )方法可以判断对象为目录文件还是数据文件</p>
-<p>7.InputStream类不对接创建对象</p>
-<p>8.从键盘上输入多个字符时，为了避免回车换行符的影响，需要使用skip( )流方法</p>
-<p>9.以对象为单位，把某个对象写入文件，需要使用writeObject( )方法</p>
-<p>10.ObjectOutputStream类的方法能够直接把简单数据类型写入文件</p>
-<p>11.若一个类对象能被整体写入文件，则定义该类时必须实现Serializable接口</p>
-<p>12.String类型的数据能够以对象的形式写入文件</p>
-<p>13.File类的方法中，用于列举某目录下的子目录及文件的方法是String[] list( )</p>
-<p>14.能够以字符串为单位写入文件数据的流类是BufferedWriter</p>
-<p>15.能够向文件输入逻辑型数据的类是DataOutputStream</p>
-<p>16.flush( )方法只对使用了缓冲的流类起作用</p>
-<p>17.写出一段程序，要求创建BufferedReader类的对象in，以便读取本机C盘my文件夹下的文件1.txt</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">File</span> <span class="variable">f</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(<span class="string">&quot;c:\\my\\1.txt&quot;</span>);</span><br><span class="line">file = <span class="keyword">new</span> <span class="title class_">FileReader</span>(f);</span><br><span class="line">in = <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(file);</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Java学习笔记</category>
-      </categories>
-      <tags>
-        <tag>中央处理</tag>
-        <tag>IO流</tag>
       </tags>
   </entry>
   <entry>
@@ -969,37 +969,6 @@
         <tag>IDEA</tag>
         <tag>Eclipse</tag>
         <tag>Gradle</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在list中正序和倒序删除元素区别</title>
-    <url>/2020/05/16/037-the-difference-between-deleting-elements-in-positive-order-and-in-reverse-order-in-the-list/</url>
-    <content><![CDATA[<p>话说有下面这两段代码<br>
-<strong>代码一</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>();</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> list.size() - <span class="number">1</span> ; i &gt;= <span class="number">0</span> ; i--)&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="string">&quot;java&quot;</span>.equals(list.get(i)))&#123;</span><br><span class="line">                list.remove(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-<p><strong>代码二</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>();</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span>  <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i &lt; list.size() ; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="string">&quot;java&quot;</span>.equals(list.get(i)))&#123;</span><br><span class="line">                list.remove(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-<p>请问哪一段代码可以将加入的“java”元素全部删除？</p>
-<p>答案当然是代码一啦。什么？你不信？那就让我们从实际代码运行来看一下效果吧。</p>
-<p>代码一测试代码和运行结果如下<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-33-41.png" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-33-52.png" alt=""></p>
-<p>代码二测试代码和运行结果如下<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-35-47.png" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-35-52.png" alt=""></p>
-<p>究其原因，为什么看上去可以实现一样功能的数组会导致结果不同？其实是因为你忽略了一个点，list中对元素进行删除添加操作之后，<code>list会产生动态变化</code>，删除一个元素，后面的元素会补全上面元素的位置。</p>
-<p>让我们来分析一下代码二，<strong>代码二是正序删除</strong><br>
-当第一个“java”被移除之后，“aaa”位于第一的位置，第二个&quot;java&quot;位于第二的位置，第三个&quot;java&quot;位于第三的位置，“bbb&quot;位于第四的位置。<br>
-然后下标+1，指向上一步操作排列好的第二个位置。于是，位于第二个位置的第二个“java”也能顺利删除，此时&quot;aaa&quot;仍旧在第一的位置，第三个&quot;java&quot;来到了第二的位置，“bbb&quot;来到了第三的位置。<br>
-然后下标再+1，指向上一步操作排列好的第三个位置。但是注意此时，第三个位置是&quot;bbb”，而我们本来想要继续删除的第三个&quot;java&quot;此时却在第二个位置。所以，代码二会导致漏删第三个&quot;java”，致使程序块达不到想要的效果。</p>
-<p><strong>代码一是倒序删除</strong>，每一个&quot;java&quot;删除之后，只对后面的元素产生影响，而后面的元素又都是经过删除操作，确保不存在&quot;java&quot;元素，因此，代码二的倒序删除法可以实现彻底删除所有&quot;java&quot;元素的操作。</p>
-]]></content>
-      <categories>
-        <category>Java学习笔记</category>
-      </categories>
-      <tags>
-        <tag>正序</tag>
-        <tag>倒序</tag>
       </tags>
   </entry>
   <entry>
@@ -1065,6 +1034,85 @@
         <tag>IDE</tag>
         <tag>VSCode</tag>
         <tag>JetBrains</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>路边小橘猫</title>
+    <url>/2020/06/05/041-roadside-orange-cat/</url>
+    <content><![CDATA[<p>路边看到只猫就挪不动了<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222836.webp" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222846.webp" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222900.webp" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222910.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>动物大赏</category>
+        <category>摄影记录</category>
+      </categories>
+      <tags>
+        <tag>小黄猫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在list中正序和倒序删除元素区别</title>
+    <url>/2020/05/16/037-the-difference-between-deleting-elements-in-positive-order-and-in-reverse-order-in-the-list/</url>
+    <content><![CDATA[<p>话说有下面这两段代码<br>
+<strong>代码一</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>();</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> list.size() - <span class="number">1</span> ; i &gt;= <span class="number">0</span> ; i--)&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="string">&quot;java&quot;</span>.equals(list.get(i)))&#123;</span><br><span class="line">                list.remove(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p><strong>代码二</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>();</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span>  <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i &lt; list.size() ; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="string">&quot;java&quot;</span>.equals(list.get(i)))&#123;</span><br><span class="line">                list.remove(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p>请问哪一段代码可以将加入的“java”元素全部删除？</p>
+<p>答案当然是代码一啦。什么？你不信？那就让我们从实际代码运行来看一下效果吧。</p>
+<p>代码一测试代码和运行结果如下<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-33-41.png" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-33-52.png" alt=""></p>
+<p>代码二测试代码和运行结果如下<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-35-47.png" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-35-52.png" alt=""></p>
+<p>究其原因，为什么看上去可以实现一样功能的数组会导致结果不同？其实是因为你忽略了一个点，list中对元素进行删除添加操作之后，<code>list会产生动态变化</code>，删除一个元素，后面的元素会补全上面元素的位置。</p>
+<p>让我们来分析一下代码二，<strong>代码二是正序删除</strong><br>
+当第一个“java”被移除之后，“aaa”位于第一的位置，第二个&quot;java&quot;位于第二的位置，第三个&quot;java&quot;位于第三的位置，“bbb&quot;位于第四的位置。<br>
+然后下标+1，指向上一步操作排列好的第二个位置。于是，位于第二个位置的第二个“java”也能顺利删除，此时&quot;aaa&quot;仍旧在第一的位置，第三个&quot;java&quot;来到了第二的位置，“bbb&quot;来到了第三的位置。<br>
+然后下标再+1，指向上一步操作排列好的第三个位置。但是注意此时，第三个位置是&quot;bbb”，而我们本来想要继续删除的第三个&quot;java&quot;此时却在第二个位置。所以，代码二会导致漏删第三个&quot;java”，致使程序块达不到想要的效果。</p>
+<p><strong>代码一是倒序删除</strong>，每一个&quot;java&quot;删除之后，只对后面的元素产生影响，而后面的元素又都是经过删除操作，确保不存在&quot;java&quot;元素，因此，代码二的倒序删除法可以实现彻底删除所有&quot;java&quot;元素的操作。</p>
+]]></content>
+      <categories>
+        <category>Java学习笔记</category>
+      </categories>
+      <tags>
+        <tag>正序</tag>
+        <tag>倒序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ARM架构</title>
+    <url>/2020/06/23/042-arm-architecture/</url>
+    <content><![CDATA[<p>Mac转为arm架构，A12Z牛逼！</p>
+<p>底层直接实现MacOS,iPhone,iPadOS软件互相使用！</p>
+<p>Surface直接当场去世</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>MacOS</tag>
+        <tag>ARM</tag>
+        <tag>芯片</tag>
+        <tag>iPhone</tag>
+        <tag>iPadOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>伊甸园献祭平面图</title>
+    <url>/2020/07/26/044-sacrifice-plan-of-eden/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/src%3Dhttp___img.tkgame.com_d_file_2020_07_10_24n2lnyhrap.jpg%26refer%3Dhttp___img.tkgame_mh1615302773095.jpg" alt="伊甸园献祭平面图"></p>
+]]></content>
+      <categories>
+        <category>游戏体验</category>
+      </categories>
+      <tags>
+        <tag>光遇</tag>
       </tags>
   </entry>
   <entry>
@@ -1144,54 +1192,6 @@
       </tags>
   </entry>
   <entry>
-    <title>ARM架构</title>
-    <url>/2020/06/23/042-arm-architecture/</url>
-    <content><![CDATA[<p>Mac转为arm架构，A12Z牛逼！</p>
-<p>底层直接实现MacOS,iPhone,iPadOS软件互相使用！</p>
-<p>Surface直接当场去世</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>iOS</tag>
-        <tag>MacOS</tag>
-        <tag>ARM</tag>
-        <tag>芯片</tag>
-        <tag>iPhone</tag>
-        <tag>iPadOS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>路边小橘猫</title>
-    <url>/2020/06/05/041-roadside-orange-cat/</url>
-    <content><![CDATA[<p>路边看到只猫就挪不动了<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222836.webp" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222846.webp" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222900.webp" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222910.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>摄影记录</category>
-        <category>动物大赏</category>
-      </categories>
-      <tags>
-        <tag>小黄猫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>伊甸园献祭平面图</title>
-    <url>/2020/07/26/044-sacrifice-plan-of-eden/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/src%3Dhttp___img.tkgame.com_d_file_2020_07_10_24n2lnyhrap.jpg%26refer%3Dhttp___img.tkgame_mh1615302773095.jpg" alt="伊甸园献祭平面图"></p>
-]]></content>
-      <categories>
-        <category>游戏体验</category>
-      </categories>
-      <tags>
-        <tag>光遇</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>白夜</title>
     <url>/2020/08/01/045-white-night/</url>
     <content><![CDATA[<p>白夜：我的世界里本就没有太阳，只是有些东西代替了太阳，给我光芒。<br>
@@ -1222,6 +1222,21 @@
       </tags>
   </entry>
   <entry>
+    <title>怎么把走廊拍出高级感</title>
+    <url>/2020/09/09/048-how-to-make-the-corridor-feel-high/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223555.webp" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223605.webp" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223616.webp" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223626.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>摄影记录</category>
+      </categories>
+      <tags>
+        <tag>走廊</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>生活在Fibonacci堆上</title>
     <url>/2020/09/04/047-living-on-the-fibonacci-pile/</url>
     <content><![CDATA[<p>现代计算机科学以哈罗德·埃布尔森的“代码是为人类阅读而写，只是顺便能被机器执行罢了。”为嚆矢。滥觞于哲学与数学的期望正失去它们的借鉴意义。但面对看似无垠的未来天空，我想循林纳斯·托瓦兹“懦夫才用磁带备份：真男人把重要的东西传到ftp，然后世界会帮他备份。”好过过早地振翮。<br>
@@ -1241,21 +1256,6 @@
       </tags>
   </entry>
   <entry>
-    <title>怎么把走廊拍出高级感</title>
-    <url>/2020/09/09/048-how-to-make-the-corridor-feel-high/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223555.webp" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223605.webp" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223616.webp" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223626.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>摄影记录</category>
-      </categories>
-      <tags>
-        <tag>走廊</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>iPad编程初步实现</title>
     <url>/2020/09/10/049-preliminary-implementation-of-ipad-programming/</url>
     <content><![CDATA[<p>iPad+TeamViewer，远程访问宿舍电脑<br>
@@ -1264,6 +1264,19 @@
 ]]></content>
       <tags>
         <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>闪电五连鞭&amp;凡人修仙传</title>
+    <url>/2020/10/15/051-lightning-with-five-lashes/</url>
+    <content><![CDATA[<p>朋友们好啊，我是血色禁地二级妖兽墨蛟。<br>
+刚才有个朋友问我墨老师发生什么事了，我说怎么回事，给我发了一几张截图，我一看！嗷！原来是昨天，有两个年轻人，一个二十多岁相貌平平练气期，一个几百岁结丹期。上来就是二打一，偷袭！还用符宝砸我，年轻人不讲武德。修仙界要以和为贵，好自为之！</p>
+]]></content>
+      <categories>
+        <category>影视观赏</category>
+      </categories>
+      <tags>
+        <tag>整活</tag>
       </tags>
   </entry>
   <entry>
@@ -1283,19 +1296,6 @@
       </tags>
   </entry>
   <entry>
-    <title>闪电五连鞭&amp;凡人修仙传</title>
-    <url>/2020/10/15/051-lightning-with-five-lashes/</url>
-    <content><![CDATA[<p>朋友们好啊，我是血色禁地二级妖兽墨蛟。<br>
-刚才有个朋友问我墨老师发生什么事了，我说怎么回事，给我发了一几张截图，我一看！嗷！原来是昨天，有两个年轻人，一个二十多岁相貌平平练气期，一个几百岁结丹期。上来就是二打一，偷袭！还用符宝砸我，年轻人不讲武德。修仙界要以和为贵，好自为之！</p>
-]]></content>
-      <categories>
-        <category>影视观赏</category>
-      </categories>
-      <tags>
-        <tag>整活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>蒲公英</title>
     <url>/2020/10/18/052-dandelion/</url>
     <content><![CDATA[<p>好像平常白色的植物看到的都少<br>
@@ -1306,21 +1306,6 @@
       </categories>
       <tags>
         <tag>蒲公英</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>初遇2077</title>
-    <url>/2020/12/12/053-first-encounter-2077/</url>
-    <content><![CDATA[<p>今晚和基努里维斯血洗夜之城<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224332.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>游戏体验</category>
-      </categories>
-      <tags>
-        <tag>赛博朋克2077</tag>
-        <tag>捏脸</tag>
-        <tag>V</tag>
       </tags>
   </entry>
   <entry>
@@ -1340,6 +1325,21 @@
         <tag>赛博朋克2077</tag>
         <tag>鹅城</tag>
         <tag>夜之城</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>初遇2077</title>
+    <url>/2020/12/12/053-first-encounter-2077/</url>
+    <content><![CDATA[<p>今晚和基努里维斯血洗夜之城<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224332.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>游戏体验</category>
+      </categories>
+      <tags>
+        <tag>赛博朋克2077</tag>
+        <tag>捏脸</tag>
+        <tag>V</tag>
       </tags>
   </entry>
   <entry>
@@ -1484,19 +1484,6 @@
       </tags>
   </entry>
   <entry>
-    <title>小米无线充电桩惊了我</title>
-    <url>/2021/01/29/058-xiaomi-wireless-charging-pile-surprised-me/</url>
-    <content><![CDATA[<p>有5m以内5w充电，就会有20m以内100w充电。好家伙，以后直接偷邻居电用。<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224829.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>充电桩</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>喵喵侄子</title>
     <url>/2021/02/21/060-meow-nephew/</url>
     <content><![CDATA[<p>安详<br>
@@ -1508,6 +1495,19 @@
       <tags>
         <tag>养猪</tag>
         <tag>安逸</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小米无线充电桩惊了我</title>
+    <url>/2021/01/29/058-xiaomi-wireless-charging-pile-surprised-me/</url>
+    <content><![CDATA[<p>有5m以内5w充电，就会有20m以内100w充电。好家伙，以后直接偷邻居电用。<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224829.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>充电桩</tag>
       </tags>
   </entry>
   <entry>
@@ -1550,26 +1550,6 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
-    <title>路由信息协议Rip</title>
-    <url>/2021/02/28/063-routing-information-protocol-rip/</url>
-    <content><![CDATA[<p>路由信息协议是基于向量-距离选择算法的协议，设置了周期更新定时器、延迟定时器、超时定时器与清除定时器。对照自己的路由表，没有的话接收； 有的话比较度量值，大了就忽略，小了就接收；（说明：当更新来源于同一个R时，不论度量值大小与否，都将接收。）<br>
-①RIP周期更新定时器：路由器设置一个周期更新定时器，每隔30秒在相邻路由器之间交换一次路由更新信息，路由器以广播的方发送路由信息。<br>
-②为了防止因触发更新而引起的广播风暴，RIp增加了一个延迟定时器。延迟定时器为每次路由更新延迟一个随机时间。<br>
-③每个路由表增加一个超时定时器，当路由信息中一个表项修改算起，超过180秒没有收到刷新信息，则认为该路径已经出现故障，路由表将该项记录设置为“无效”，而不是立即清除。<br>
-④设置一个清除定时器，如果路由表中的一个路由记录设置为“无效”超过120秒没有收到更新信息，则立即从路由表中删除该项记录。<br>
-⑤为了防止路由更新过程中，某个路径出现故障，而出现路由环路的情况，使得Rip产生慢收敛。有四种解决方式：设置路径的最大跳数为16； 如果路由器R1从R2处获得距离信息，R1不再给R2发送距离信息，称为“水平分割”；三是路由器在得知目的网络不可达信息之后的60秒时间内，不接受任何关于目的网络可达的信息；毒性逆转：当某条路径出现故障，最早广播该路由的路由器将距离定为16,，于此同时出发路由更新，立即广播刷新信息。<br>
-⑥由于防止引起广播风暴以及最大跳数的限制，Rip只适用于比较小的系统。</p>
-]]></content>
-      <categories>
-        <category>考试资料</category>
-        <category>计算机网络学习笔记</category>
-      </categories>
-      <tags>
-        <tag>路由信息协议</tag>
-        <tag>Rip</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>大物2考试复习一图到底</title>
     <url>/2021/02/28/064-review-the-picture-to-the-end-in-the-big-physics-2-exam/</url>
     <content><![CDATA[<h1>一、填空题（20分，10空，每空2分）</h1>
@@ -1604,6 +1584,26 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </categories>
       <tags>
         <tag>大物</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>路由信息协议Rip</title>
+    <url>/2021/02/28/063-routing-information-protocol-rip/</url>
+    <content><![CDATA[<p>路由信息协议是基于向量-距离选择算法的协议，设置了周期更新定时器、延迟定时器、超时定时器与清除定时器。对照自己的路由表，没有的话接收； 有的话比较度量值，大了就忽略，小了就接收；（说明：当更新来源于同一个R时，不论度量值大小与否，都将接收。）<br>
+①RIP周期更新定时器：路由器设置一个周期更新定时器，每隔30秒在相邻路由器之间交换一次路由更新信息，路由器以广播的方发送路由信息。<br>
+②为了防止因触发更新而引起的广播风暴，RIp增加了一个延迟定时器。延迟定时器为每次路由更新延迟一个随机时间。<br>
+③每个路由表增加一个超时定时器，当路由信息中一个表项修改算起，超过180秒没有收到刷新信息，则认为该路径已经出现故障，路由表将该项记录设置为“无效”，而不是立即清除。<br>
+④设置一个清除定时器，如果路由表中的一个路由记录设置为“无效”超过120秒没有收到更新信息，则立即从路由表中删除该项记录。<br>
+⑤为了防止路由更新过程中，某个路径出现故障，而出现路由环路的情况，使得Rip产生慢收敛。有四种解决方式：设置路径的最大跳数为16； 如果路由器R1从R2处获得距离信息，R1不再给R2发送距离信息，称为“水平分割”；三是路由器在得知目的网络不可达信息之后的60秒时间内，不接受任何关于目的网络可达的信息；毒性逆转：当某条路径出现故障，最早广播该路由的路由器将距离定为16,，于此同时出发路由更新，立即广播刷新信息。<br>
+⑥由于防止引起广播风暴以及最大跳数的限制，Rip只适用于比较小的系统。</p>
+]]></content>
+      <categories>
+        <category>考试资料</category>
+        <category>计算机网络学习笔记</category>
+      </categories>
+      <tags>
+        <tag>路由信息协议</tag>
+        <tag>Rip</tag>
       </tags>
   </entry>
   <entry>
@@ -1661,6 +1661,40 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       <tags>
         <tag>赛博朋克2077</tag>
         <tag>捏脸</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>正联导剪版第一观感</title>
+    <url>/2021/03/18/069-first-impression-of-justice-league-cutting-version/</url>
+    <content><![CDATA[<p>什么他妈的叫他妈的正义联盟，扎克施奈德牛逼！！！！！！！！！<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225225.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>影视观赏</category>
+      </categories>
+      <tags>
+        <tag>正义联盟</tag>
+        <tag>扎斯林</tag>
+        <tag>扎克施耐德</tag>
+        <tag>扎导</tag>
+        <tag>DC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研初记录</title>
+    <url>/2021/03/20/070-preliminary-record-of-postgraduate-entrance-examination/</url>
+    <content><![CDATA[<p>吃完饭在图书馆下面遇到只猫，顺手就拍了下来</p>
+<p>图书馆买的ViP位子很舒服，安静、有插头，iPad配的是18w的快充头，一加8T用的是以前一加7pro的头，65W原装的放宿舍。两根线往理线口一放，整洁很多，iPad插根耳机(无线的会用的没电，耐久不行)听课，手机放旁边用CoStudy记录时间，氛围蛮有感觉的</p>
+<p>现在用全书+660，积分还没看到，大题没做过，过两天看看1k题里的大题。泰勒用的不多，没有仔细记，明天上午看看，函数定义的题都比较难，找了隔壁的大佬看了下他的归纳，他也说难，多做点题就行了，建议现在再刷刷题，过两天再看看</p>
+<p>英语背了快5个月了，词汇量从荒废的3k提升到近7k了，做完英一09年第一篇阅读，全对很高兴，做完想背下里面的生词，墨墨云词库一搜，发现英一英二真题都有归纳，好评！做完第二天背的时候可以复习下生词，比较有效率</p>
+<p>做阅读相当于看小说了，对里面的观点还是比较认同的</p>
+<p>总之任重道远，吾辈还需加油</p>
+]]></content>
+      <categories>
+        <category>考研复盘</category>
+      </categories>
+      <tags>
+        <tag>考研</tag>
       </tags>
   </entry>
   <entry>
@@ -1736,54 +1770,6 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
-    <title>正联导剪版第一观感</title>
-    <url>/2021/03/18/069-first-impression-of-justice-league-cutting-version/</url>
-    <content><![CDATA[<p>什么他妈的叫他妈的正义联盟，扎克施奈德牛逼！！！！！！！！！<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225225.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>影视观赏</category>
-      </categories>
-      <tags>
-        <tag>正义联盟</tag>
-        <tag>扎斯林</tag>
-        <tag>扎克施耐德</tag>
-        <tag>扎导</tag>
-        <tag>DC</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>千山暮雪向谁去</title>
-    <url>/2021/03/25/071-who-does-the-snow-go-to/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225338.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>生活感悟</category>
-        <category>摄影记录</category>
-        <category>植物欣赏</category>
-      </categories>
-      <tags>
-        <tag>桃花</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考研初记录</title>
-    <url>/2021/03/20/070-preliminary-record-of-postgraduate-entrance-examination/</url>
-    <content><![CDATA[<p>吃完饭在图书馆下面遇到只猫，顺手就拍了下来</p>
-<p>图书馆买的ViP位子很舒服，安静、有插头，iPad配的是18w的快充头，一加8T用的是以前一加7pro的头，65W原装的放宿舍。两根线往理线口一放，整洁很多，iPad插根耳机(无线的会用的没电，耐久不行)听课，手机放旁边用CoStudy记录时间，氛围蛮有感觉的</p>
-<p>现在用全书+660，积分还没看到，大题没做过，过两天看看1k题里的大题。泰勒用的不多，没有仔细记，明天上午看看，函数定义的题都比较难，找了隔壁的大佬看了下他的归纳，他也说难，多做点题就行了，建议现在再刷刷题，过两天再看看</p>
-<p>英语背了快5个月了，词汇量从荒废的3k提升到近7k了，做完英一09年第一篇阅读，全对很高兴，做完想背下里面的生词，墨墨云词库一搜，发现英一英二真题都有归纳，好评！做完第二天背的时候可以复习下生词，比较有效率</p>
-<p>做阅读相当于看小说了，对里面的观点还是比较认同的</p>
-<p>总之任重道远，吾辈还需加油</p>
-]]></content>
-      <categories>
-        <category>考研复盘</category>
-      </categories>
-      <tags>
-        <tag>考研</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>考研三月复盘</title>
     <url>/2021/04/04/072-march-resumption-of-postgraduate-entrance-examination/</url>
     <content><![CDATA[<p>路过操场，一抹红叶倒是格外的引人注意。</p>
@@ -1800,6 +1786,20 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </categories>
       <tags>
         <tag>考研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>千山暮雪向谁去</title>
+    <url>/2021/03/25/071-who-does-the-snow-go-to/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225338.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>生活感悟</category>
+        <category>摄影记录</category>
+        <category>植物欣赏</category>
+      </categories>
+      <tags>
+        <tag>桃花</tag>
       </tags>
   </entry>
   <entry>
@@ -1878,70 +1878,6 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
         <tag>IDE</tag>
         <tag>VIM</tag>
         <tag>Ubuntu</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>泰勒公式速记</title>
-    <url>/2021/04/30/079-taylor-formula-shorthand/</url>
-    <content><![CDATA[<p>指对函数123，正弦函数135，正弦对数隔一换，正弦指数有感叹。<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/28/20210828235903071.jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>考研复盘</category>
-      </categories>
-      <tags>
-        <tag>考研</tag>
-        <tag>泰勒</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>记五四</title>
-    <url>/2021/05/04/080-may-4th/</url>
-    <content><![CDATA[<p>我们当初之所以达到了今天的高度，靠的正是放低姿态，不放过任何一个知识点，和提高自己的机会。我们一切行动力的来源，正是来源于内心对目标的渴望和追求。<br>
-——记五四青年节</p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225851.png" alt=""></p>
-]]></content>
-      <categories>
-        <category>考研复盘</category>
-      </categories>
-      <tags>
-        <tag>考研</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>人生不易 且行且珍惜</title>
-    <url>/2021/05/20/082-life-is-not-easy-to-do-and-cherish/</url>
-    <content><![CDATA[<p>打在胎里就随时有可能流产</p>
-<p>当妈的一口烟就可能长成畸形</p>
-<p>长慢了心脏缺陷 长快了就六指</p>
-<p>好容易扛过十个月生出来了</p>
-<p>一不留神 还得让产夹钳把脑袋夹扁了</p>
-<p>都多过去了 小儿麻痹 百日咳</p>
-<p>猩红热 大脑炎 还在前边等着呢</p>
-<p>哭起来呛奶 走起来摔跤</p>
-<p>摸水水烫 碰火火燎</p>
-<p>是个东西撞上 咱就是个半死</p>
-<p>钙多了不长个 钙少了吧罗圈腿</p>
-<p>总算混到会吃饭能出门了</p>
-<p>天上下雹子 地下跑骑车</p>
-<p>大街小巷是个暗处就躲着坏人</p>
-<p>你说赶上谁都是个九死一生</p>
-<p>不送命也得落个残疾</p>
-<p>这都是明枪 还有暗箭呢</p>
-<p>势利眼 冷脸子 闲言碎语 指桑骂槐</p>
-<p>好了遭人嫉妒 差了让人瞧不起</p>
-<p>忠厚人家说你傻 精明了人家说你奸</p>
-<p>冷淡了大伙说你傲 热情了群众说你浪</p>
-<p>走到前边挨闷棍 走到后边全没份</p>
-<p>但是生而为人 我很精彩！就凭这九死一生我也得打起精神去走一走那非线性人生</p>
-]]></content>
-      <categories>
-        <category>生活感悟</category>
-      </categories>
-      <tags>
-        <tag>百日咳</tag>
-        <tag>挨闷棍</tag>
-        <tag>非线性人生</tag>
       </tags>
   </entry>
   <entry>
@@ -2062,6 +1998,34 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
+    <title>泰勒公式速记</title>
+    <url>/2021/04/30/079-taylor-formula-shorthand/</url>
+    <content><![CDATA[<p>指对函数123，正弦函数135，正弦对数隔一换，正弦指数有感叹。<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/28/20210828235903071.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>考研复盘</category>
+      </categories>
+      <tags>
+        <tag>考研</tag>
+        <tag>泰勒</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记五四</title>
+    <url>/2021/05/04/080-may-4th/</url>
+    <content><![CDATA[<p>我们当初之所以达到了今天的高度，靠的正是放低姿态，不放过任何一个知识点，和提高自己的机会。我们一切行动力的来源，正是来源于内心对目标的渴望和追求。<br>
+——记五四青年节</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225851.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>考研复盘</category>
+      </categories>
+      <tags>
+        <tag>考研</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《一枝花·不伏老》</title>
     <url>/2021/05/20/083-a-flower-never-grows-old/</url>
     <content><![CDATA[<p>我是个蒸不烂、煮不熟、捶不匾、炒不爆、响珰珰一粒铜豌豆，恁子弟每谁教你钻入他锄不断、斫不下、解不开、顿不脱、慢腾腾千层锦套头？我玩的是梁园月，饮的是东京酒，赏的是洛阳花，攀的是章台柳。</p>
@@ -2075,6 +2039,56 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
         <tag>铜豌豆</tag>
         <tag>锦套头</tag>
         <tag>章台柳</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人生不易 且行且珍惜</title>
+    <url>/2021/05/20/082-life-is-not-easy-to-do-and-cherish/</url>
+    <content><![CDATA[<p>打在胎里就随时有可能流产</p>
+<p>当妈的一口烟就可能长成畸形</p>
+<p>长慢了心脏缺陷 长快了就六指</p>
+<p>好容易扛过十个月生出来了</p>
+<p>一不留神 还得让产夹钳把脑袋夹扁了</p>
+<p>都多过去了 小儿麻痹 百日咳</p>
+<p>猩红热 大脑炎 还在前边等着呢</p>
+<p>哭起来呛奶 走起来摔跤</p>
+<p>摸水水烫 碰火火燎</p>
+<p>是个东西撞上 咱就是个半死</p>
+<p>钙多了不长个 钙少了吧罗圈腿</p>
+<p>总算混到会吃饭能出门了</p>
+<p>天上下雹子 地下跑骑车</p>
+<p>大街小巷是个暗处就躲着坏人</p>
+<p>你说赶上谁都是个九死一生</p>
+<p>不送命也得落个残疾</p>
+<p>这都是明枪 还有暗箭呢</p>
+<p>势利眼 冷脸子 闲言碎语 指桑骂槐</p>
+<p>好了遭人嫉妒 差了让人瞧不起</p>
+<p>忠厚人家说你傻 精明了人家说你奸</p>
+<p>冷淡了大伙说你傲 热情了群众说你浪</p>
+<p>走到前边挨闷棍 走到后边全没份</p>
+<p>但是生而为人 我很精彩！就凭这九死一生我也得打起精神去走一走那非线性人生</p>
+]]></content>
+      <categories>
+        <category>生活感悟</category>
+      </categories>
+      <tags>
+        <tag>百日咳</tag>
+        <tag>挨闷棍</tag>
+        <tag>非线性人生</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记国士无双</title>
+    <url>/2021/05/22/085-remember-that-the-country-is-unparalleled/</url>
+    <content><![CDATA[<p>上午有多坚定，这是假新闻；下午就有多难以置信，这是真消息。<br>
+一代人影响一代人，可谓国士无双，我也要做一粒好种子。<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826230221.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>生活感悟</category>
+      </categories>
+      <tags>
+        <tag>种子</tag>
       </tags>
   </entry>
   <entry>
@@ -2234,17 +2248,18 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
-    <title>记国士无双</title>
-    <url>/2021/05/22/085-remember-that-the-country-is-unparalleled/</url>
-    <content><![CDATA[<p>上午有多坚定，这是假新闻；下午就有多难以置信，这是真消息。<br>
-一代人影响一代人，可谓国士无双，我也要做一粒好种子。<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826230221.webp" alt=""></p>
+    <title>放假回家咯</title>
+    <url>/2021/06/18/090-go-home-on-vacation/</url>
+    <content><![CDATA[<p>“我辞别了山，度过了江，划着一条小船，独自驶向人间的海洋。海风吹打我的面，海浪拍打我的船，却不曾淹没过我。”<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826230619.webp" alt=""></p>
 ]]></content>
       <categories>
         <category>生活感悟</category>
+        <category>摄影记录</category>
       </categories>
       <tags>
-        <tag>种子</tag>
+        <tag>在路上</tag>
+        <tag>回家</tag>
       </tags>
   </entry>
   <entry>
@@ -2261,31 +2276,23 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
-    <title>放假回家咯</title>
-    <url>/2021/06/18/090-go-home-on-vacation/</url>
-    <content><![CDATA[<p>“我辞别了山，度过了江，划着一条小船，独自驶向人间的海洋。海风吹打我的面，海浪拍打我的船，却不曾淹没过我。”<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826230619.webp" alt=""></p>
+    <title>996ICU</title>
+    <url>/2021/08/23/098-996icu/</url>
+    <content><![CDATA[<p>加入了反996活动 难以想象 这场运动已经在Github如此声势浩大了<br>
+主页添加了一些资料 反996活动的主办方 各种衍生链接 还有最重要的黑名单和白名单公司<br>
+所有项目都在GPL证书的前提下加入了Anti 996 License<br>
+一方面是提前给自己踩踩坑 了解一下996<br>
+另外一方面在自由开源的影响下 希望能够在这场活动中尽一份力<br>
+打算加入另外一个开源代码组织 已经提交了申请资料 在等审核通过<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826231226.webp" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826231238.webp" alt=""></p>
 ]]></content>
       <categories>
+        <category>极客之旅</category>
         <category>生活感悟</category>
-        <category>摄影记录</category>
       </categories>
       <tags>
-        <tag>在路上</tag>
-        <tag>回家</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>难为知己难为敌</title>
-    <url>/2021/07/31/095-hard-to-be-a-confidant-than-an-enemy/</url>
-    <content><![CDATA[<p>古语有云「难为知己难为敌」，从策略上讲，你和最大敌人若在一段时间内无法杀死对方，到最后反而会不舍得离开他，皆因彼此熟门熟路，相斗相倚。</p>
-<p>这个人很冷漠很生人勿近，你怎么看也看不穿他的心的，更甭说想当他的朋友了；他同时又是个很厉害的角色，你肯定不能轻易嬴过他，所以当他的敌人也绝非一件好事。所以你和他之间皆非知己亦非敌人，是一种很微妙的关系。</p>
-]]></content>
-      <categories>
-        <category>好句摘抄</category>
-      </categories>
-      <tags>
-        <tag>难为知己难为敌</tag>
+        <tag>Anti996</tag>
       </tags>
   </entry>
   <entry>
@@ -2312,42 +2319,6 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
-    <title>年轻人的第一篇期刊</title>
-    <url>/2021/08/08/097-the-first-journal/</url>
-    <content><![CDATA[<p>不动声色 安心蛰伏 第一篇期刊get<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/24/20210824174622936.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>项目展示</category>
-        <category>学术研究</category>
-      </categories>
-      <tags>
-        <tag>期刊</tag>
-        <tag>论文</tag>
-        <tag>数字技术与应用</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>996ICU</title>
-    <url>/2021/08/23/098-996icu/</url>
-    <content><![CDATA[<p>加入了反996活动 难以想象 这场运动已经在Github如此声势浩大了<br>
-主页添加了一些资料 反996活动的主办方 各种衍生链接 还有最重要的黑名单和白名单公司<br>
-所有项目都在GPL证书的前提下加入了Anti 996 License<br>
-一方面是提前给自己踩踩坑 了解一下996<br>
-另外一方面在自由开源的影响下 希望能够在这场活动中尽一份力<br>
-打算加入另外一个开源代码组织 已经提交了申请资料 在等审核通过<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826231226.webp" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826231238.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-        <category>生活感悟</category>
-      </categories>
-      <tags>
-        <tag>Anti996</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一些句子</title>
     <url>/2021/08/29/099-some-sentences/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
@@ -2371,6 +2342,19 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
+    <title>难为知己难为敌</title>
+    <url>/2021/07/31/095-hard-to-be-a-confidant-than-an-enemy/</url>
+    <content><![CDATA[<p>古语有云「难为知己难为敌」，从策略上讲，你和最大敌人若在一段时间内无法杀死对方，到最后反而会不舍得离开他，皆因彼此熟门熟路，相斗相倚。</p>
+<p>这个人很冷漠很生人勿近，你怎么看也看不穿他的心的，更甭说想当他的朋友了；他同时又是个很厉害的角色，你肯定不能轻易嬴过他，所以当他的敌人也绝非一件好事。所以你和他之间皆非知己亦非敌人，是一种很微妙的关系。</p>
+]]></content>
+      <categories>
+        <category>好句摘抄</category>
+      </categories>
+      <tags>
+        <tag>难为知己难为敌</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>自个做饭,贼舒服~</title>
     <url>/2021/09/03/100-comfortable-to-cook-by-myself/</url>
     <content><![CDATA[<p>做的都是焖饭系列,做法也比较简单<br>
@@ -2387,60 +2371,19 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
-    <title>年轻人的头两份软著</title>
-    <url>/2022/01/20/103-young-man-first-two-soft-copies/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01/2022/01/20/20220120192413837.jpg" alt=""></p>
-<p>在一篇期刊之后，又是两份软著。软著获得难度不高，代码方面不是最复杂的地方，最头疼的地方在于申请。</p>
-<p>申请有两种方式，，一种是直接去官网进行申请，另外一种是通过阿里云帮助申请，我采用的方式是阿里云代为申请，会方便许多，然后就是等待证书批来下，大概需要2-4个月时间。两份证书，用了3个多月的时间审核，在1月份批下来，整体还算流畅。</p>
+    <title>年轻人的第一篇期刊</title>
+    <url>/2021/08/08/097-the-first-journal/</url>
+    <content><![CDATA[<p>不动声色 安心蛰伏 第一篇期刊get<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/24/20210824174622936.jpeg" alt=""></p>
 ]]></content>
       <categories>
-        <category>极客之旅</category>
         <category>项目展示</category>
         <category>学术研究</category>
       </categories>
       <tags>
-        <tag>软件著作</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>选题说明</title>
-    <url>/2022/03/10/104-select-topic/</url>
-    <content><![CDATA[<h1>课题简介</h1>
-<p>财务行业的发票识别及财务做账问题一直是会计行业关注的焦点问题，在这其中发票信息填录尤其重要。近年来随着企业之间财务交易越来越频繁，企业中财务处理也日趋频繁，但传统的人工填录方法效率较低，而且易于出错；在这样的背景下，社会急需一整套发票自动填录系统来解决这些问题。本课题使用Python构建增值<strong>税发票识别系统</strong>，具有一定的工程意义。</p>
-<h1>课题应完成的任务和要求</h1>
-<p>设计与实现一款增值税发票自动识别系统。<br>
-在做课题的过程中需要掌握：Python开发技术、机器学习、深度学习</p>
-<h1>达到的目的</h1>
-<p>通过查阅资料和自主学习，动手设计和实现一个增值税发票自动识别系统，在Python、机器学习和深度学习等技术基础上，完成系统的功能设计。本课题应达到如下目的：</p>
-<ul>
-<li>掌握文献检索、资料查询的基本方法，提高自己获取新知识的能力。</li>
-<li>设计并开发一个增值税发票自动识别系统。</li>
-<li>通过软件项目的完整训练，提高软件系统的设计、开发、测试等技能。<br>
-通过论文的撰写，对大学期间学习的知识进行系统的梳理和回顾，深入了解软件工程流程，提高解<br>
-决实际问题的能力。</li>
-</ul>
-<h1>内容和要求</h1>
-<h2 id="任务内容：">任务内容：</h2>
-<p>从实际需求出发对增值税发票自动识别系统进行设计与实现。</p>
-<h2 id="任务要求：">任务要求：</h2>
-<ul>
-<li>增值税电子普通发票，增值税普通发票，增值税专用发票；识别字段为：发票代码、发票号码、开票日期、校验码、税后金额等。</li>
-<li>论文写作思路清晰，对相关概念理解准确，逻辑严密，文字通顺，有自己的独立见解，结论恰如其分。</li>
-<li>软件架构实现合理，模块划分恰当，流程清晰。对于函数、变量等的命名能够做到望文知意，复杂的算法实现需要有清晰的代码注释，整体编码符合规范。<br>
-严格按照毕业设计计划进行，在不同阶段及时提交相关文档和测试用例等资料。</li>
-</ul>
-<h1>成果的要求</h1>
-<ul>
-<li>毕业设计论文。</li>
-<li>提交可运行的完整系统及其源代码和有关设计的详细说明。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>CV学习笔记</category>
-        <category>学术研究</category>
-      </categories>
-      <tags>
-        <tag>选题</tag>
+        <tag>期刊</tag>
+        <tag>论文</tag>
+        <tag>数字技术与应用</tag>
       </tags>
   </entry>
   <entry>
@@ -2513,6 +2456,22 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
+    <title>年轻人的头两份软著</title>
+    <url>/2022/01/20/103-young-man-first-two-soft-copies/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01/2022/01/20/20220120192413837.jpg" alt=""></p>
+<p>在一篇期刊之后，又是两份软著。软著获得难度不高，代码方面不是最复杂的地方，最头疼的地方在于申请。</p>
+<p>申请有两种方式，，一种是直接去官网进行申请，另外一种是通过阿里云帮助申请，我采用的方式是阿里云代为申请，会方便许多，然后就是等待证书批来下，大概需要2-4个月时间。两份证书，用了3个多月的时间审核，在1月份批下来，整体还算流畅。</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+        <category>项目展示</category>
+        <category>学术研究</category>
+      </categories>
+      <tags>
+        <tag>软件著作</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>开题报告</title>
     <url>/2022/03/10/105-opening-report/</url>
     <content><![CDATA[<h1>文献综述</h1>
@@ -2566,6 +2525,47 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
         <tag>CRNN</tag>
         <tag>CTPN</tag>
         <tag>CTC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>选题说明</title>
+    <url>/2022/03/10/104-select-topic/</url>
+    <content><![CDATA[<h1>课题简介</h1>
+<p>财务行业的发票识别及财务做账问题一直是会计行业关注的焦点问题，在这其中发票信息填录尤其重要。近年来随着企业之间财务交易越来越频繁，企业中财务处理也日趋频繁，但传统的人工填录方法效率较低，而且易于出错；在这样的背景下，社会急需一整套发票自动填录系统来解决这些问题。本课题使用Python构建增值<strong>税发票识别系统</strong>，具有一定的工程意义。</p>
+<h1>课题应完成的任务和要求</h1>
+<p>设计与实现一款增值税发票自动识别系统。<br>
+在做课题的过程中需要掌握：Python开发技术、机器学习、深度学习</p>
+<h1>达到的目的</h1>
+<p>通过查阅资料和自主学习，动手设计和实现一个增值税发票自动识别系统，在Python、机器学习和深度学习等技术基础上，完成系统的功能设计。本课题应达到如下目的：</p>
+<ul>
+<li>掌握文献检索、资料查询的基本方法，提高自己获取新知识的能力。</li>
+<li>设计并开发一个增值税发票自动识别系统。</li>
+<li>通过软件项目的完整训练，提高软件系统的设计、开发、测试等技能。<br>
+通过论文的撰写，对大学期间学习的知识进行系统的梳理和回顾，深入了解软件工程流程，提高解<br>
+决实际问题的能力。</li>
+</ul>
+<h1>内容和要求</h1>
+<h2 id="任务内容：">任务内容：</h2>
+<p>从实际需求出发对增值税发票自动识别系统进行设计与实现。</p>
+<h2 id="任务要求：">任务要求：</h2>
+<ul>
+<li>增值税电子普通发票，增值税普通发票，增值税专用发票；识别字段为：发票代码、发票号码、开票日期、校验码、税后金额等。</li>
+<li>论文写作思路清晰，对相关概念理解准确，逻辑严密，文字通顺，有自己的独立见解，结论恰如其分。</li>
+<li>软件架构实现合理，模块划分恰当，流程清晰。对于函数、变量等的命名能够做到望文知意，复杂的算法实现需要有清晰的代码注释，整体编码符合规范。<br>
+严格按照毕业设计计划进行，在不同阶段及时提交相关文档和测试用例等资料。</li>
+</ul>
+<h1>成果的要求</h1>
+<ul>
+<li>毕业设计论文。</li>
+<li>提交可运行的完整系统及其源代码和有关设计的详细说明。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>CV学习笔记</category>
+        <category>学术研究</category>
+      </categories>
+      <tags>
+        <tag>选题</tag>
       </tags>
   </entry>
   <entry>
@@ -2752,43 +2752,6 @@ D-->>A: Dashed open arrow</textarea><textarea id="sequence-1-options" style="dis
       </tags>
   </entry>
   <entry>
-    <title>如何在Hexo中用Gulp脚本进行静态资源渲染压缩和解决MathJax数学公式重复问题</title>
-    <url>/2022/03/11/109-how-to-do-static-resource-rendering-compression-and-solve-mathjax-math-formula-duplication-problem-in-hexo-with-gulp-script/</url>
-    <content><![CDATA[<h1>Gulp脚本</h1>
-<p>如何下载、配置，这里我给出一个我跟着来的教程<a href="https://www.voidking.com/dev-hexo-gulp/">Hexo使用Gulp压缩静态资源</a>，2操作是必须的，3操作我使用了，4-5我并没有参考</p>
-<p>这里着重说明一下，关于脚本执行顺序，以及精简代码</p>
-<h2 id="脚本执行顺序">脚本执行顺序</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 执行顺序： 清除public目录 -&gt; 产生原始博客内容 -&gt; 执行压缩混淆 -&gt; 部署到服务器</span><br><span class="line">gulp.task(</span><br><span class="line">    &quot;default&quot;,</span><br><span class="line">  gulp.series(</span><br><span class="line">        &quot;clean&quot;,</span><br><span class="line">        &quot;generate&quot;,</span><br><span class="line">        &quot;compressHtml&quot;,</span><br><span class="line">        &quot;compressCss&quot;,</span><br><span class="line">        &quot;compressJs&quot;,</span><br><span class="line">        gulp.parallel(&quot;deploy&quot;)</span><br><span class="line">    )</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-<ul>
-<li>先是clean，清除已经创建的public文件夹</li>
-<li>之后是生成页面</li>
-<li>接下来分别是压缩HTML文件、CSS文件、JS文件</li>
-<li>最后是将本地部署到GitHubPage仓库当中去</li>
-</ul>
-<h2 id="精简代码">精简代码</h2>
-<p>原本我们需要<code>hexo clean -&gt; hexo g -&gt; hexo d</code>三个命令才能完成部署上去这个任务，不过在gulp中，我们可以自定义task，也就是上面给出的代码，不仅能自定义顺序，还能自定义这个任务触发的命令，比如这里我使用默认的<code>default</code>设置，当设置为<code>default</code>的时候，我们只需要在终端中，输入gulp，就可以直接开始上面提到的脚本执行顺序，这样可以使得一个命令，集成多步操作，稍微“偷懒”一下</p>
-<h2 id="代码提供">代码提供</h2>
-<p>先在hexo目录下创建gulpfile.js文件</p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203111425445.png" alt=""></p>
-<p>如果本来就有这个文件，直接打开，把里面的代码替换成下面我提供的就行了</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">&quot;gulp&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> debug = <span class="built_in">require</span>(<span class="string">&quot;gulp-debug&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> cleancss = <span class="built_in">require</span>(<span class="string">&quot;gulp-clean-css&quot;</span>); <span class="comment">//css压缩组件</span></span><br><span class="line"><span class="keyword">var</span> uglify = <span class="built_in">require</span>(<span class="string">&quot;gulp-uglify&quot;</span>); <span class="comment">//js压缩组件</span></span><br><span class="line"><span class="keyword">var</span> htmlmin = <span class="built_in">require</span>(<span class="string">&quot;gulp-htmlmin&quot;</span>); <span class="comment">//html压缩组件</span></span><br><span class="line"><span class="keyword">var</span> htmlclean = <span class="built_in">require</span>(<span class="string">&quot;gulp-htmlclean&quot;</span>); <span class="comment">//html清理组件</span></span><br><span class="line"><span class="keyword">var</span> changed = <span class="built_in">require</span>(<span class="string">&quot;gulp-changed&quot;</span>); <span class="comment">//文件更改校验组件</span></span><br><span class="line"><span class="keyword">var</span> gulpif = <span class="built_in">require</span>(<span class="string">&quot;gulp-if&quot;</span>); <span class="comment">//任务 帮助调用组件</span></span><br><span class="line"><span class="keyword">var</span> plumber = <span class="built_in">require</span>(<span class="string">&quot;gulp-plumber&quot;</span>); <span class="comment">//容错组件（发生错误不跳出任务，并报出错误内容）</span></span><br><span class="line"><span class="keyword">var</span> isScriptAll = <span class="literal">true</span>; <span class="comment">//是否处理所有文件，(true|处理所有文件)(false|只处理有更改的文件)</span></span><br><span class="line"><span class="keyword">var</span> isDebug = <span class="literal">true</span>; <span class="comment">//是否调试显示 编译通过的文件</span></span><br><span class="line"><span class="keyword">var</span> gulpBabel = <span class="built_in">require</span>(<span class="string">&quot;gulp-babel&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> es2015Preset = <span class="built_in">require</span>(<span class="string">&quot;babel-preset-es2015&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> del = <span class="built_in">require</span>(<span class="string">&quot;del&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> <span class="title class_">Hexo</span> = <span class="built_in">require</span>(<span class="string">&quot;hexo&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> hexo = <span class="keyword">new</span> <span class="title class_">Hexo</span>(process.<span class="title function_">cwd</span>(), &#123;&#125;); <span class="comment">// 初始化一个hexo对象</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 清除public文件夹</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&quot;clean&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title function_">del</span>([<span class="string">&quot;public/**/*&quot;</span>]);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 下面几个跟hexo有关的操作，主要通过hexo.call()去执行，注意return</span></span><br><span class="line"><span class="comment">// 创建静态页面 （等同 hexo generate）</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&quot;generate&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> hexo.<span class="title function_">init</span>().<span class="title function_">then</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> hexo</span><br><span class="line">            .<span class="title function_">call</span>(<span class="string">&quot;generate&quot;</span>, &#123;</span><br><span class="line">                <span class="attr">watch</span>: <span class="literal">false</span></span><br><span class="line">            &#125;)</span><br><span class="line">            .<span class="title function_">then</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> hexo.<span class="title function_">exit</span>();</span><br><span class="line">            &#125;)</span><br><span class="line">            .<span class="title function_">catch</span>(<span class="keyword">function</span> (<span class="params">err</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> hexo.<span class="title function_">exit</span>(err);</span><br><span class="line">            &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 启动Hexo服务器</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&quot;server&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> hexo</span><br><span class="line">        .<span class="title function_">init</span>()</span><br><span class="line">        .<span class="title function_">then</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> hexo.<span class="title function_">call</span>(<span class="string">&quot;server&quot;</span>, &#123;&#125;);</span><br><span class="line">        &#125;)</span><br><span class="line">        .<span class="title function_">catch</span>(<span class="keyword">function</span> (<span class="params">err</span>) &#123;</span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">log</span>(err);</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 部署到服务器</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&quot;deploy&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> hexo.<span class="title function_">init</span>().<span class="title function_">then</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> hexo</span><br><span class="line">            .<span class="title function_">call</span>(<span class="string">&quot;deploy&quot;</span>, &#123;</span><br><span class="line">                <span class="attr">watch</span>: <span class="literal">false</span></span><br><span class="line">            &#125;)</span><br><span class="line">            .<span class="title function_">then</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> hexo.<span class="title function_">exit</span>();</span><br><span class="line">            &#125;)</span><br><span class="line">            .<span class="title function_">catch</span>(<span class="keyword">function</span> (<span class="params">err</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> hexo.<span class="title function_">exit</span>(err);</span><br><span class="line">            &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 压缩public目录下的js文件</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&quot;compressJs&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> gulp</span><br><span class="line">        .<span class="title function_">src</span>([<span class="string">&quot;./public/js/*.js&quot;</span>, <span class="string">&quot;!./public/js/utils.js&quot;</span>]) <span class="comment">//排除的js</span></span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">gulpif</span>(!isScriptAll, <span class="title function_">changed</span>(<span class="string">&quot;./public&quot;</span>)))</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">gulpif</span>(isDebug, <span class="title function_">debug</span>(&#123; <span class="attr">title</span>: <span class="string">&quot;Compress JS:&quot;</span> &#125;)))</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">plumber</span>())</span><br><span class="line">        .<span class="title function_">pipe</span>(</span><br><span class="line">            <span class="title function_">gulpBabel</span>(&#123;</span><br><span class="line">                <span class="attr">presets</span>: [es2015Preset] <span class="comment">// es5检查机制</span></span><br><span class="line">            &#125;)</span><br><span class="line">        )</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">uglify</span>()) <span class="comment">//调用压缩组件方法uglify(),对合并的文件进行压缩</span></span><br><span class="line">        .<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&quot;./public&quot;</span>)); <span class="comment">//输出到目标目录</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 压缩public目录下的css文件</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&quot;compressCss&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> option = &#123;</span><br><span class="line">        <span class="attr">rebase</span>: <span class="literal">false</span>,</span><br><span class="line">        <span class="comment">//advanced: true, //类型：Boolean 默认：true [是否开启高级优化（合并选择器等）]</span></span><br><span class="line">        <span class="attr">compatibility</span>: <span class="string">&quot;ie7&quot;</span> <span class="comment">//保留ie7及以下兼容写法 类型：String 默认：&#x27;&#x27;or&#x27;*&#x27; [启用兼容模式； &#x27;ie7&#x27;：IE7兼容模式，&#x27;ie8&#x27;：IE8兼容模式，&#x27;*&#x27;：IE9+兼容模式]</span></span><br><span class="line">        <span class="comment">//keepBreaks: true, //类型：Boolean 默认：false [是否保留换行]</span></span><br><span class="line">        <span class="comment">//keepSpecialComments: &#x27;*&#x27; //保留所有特殊前缀 当你用autoprefixer生成的浏览器前缀，如果不加这个参数，有可能将会删除你的部分前缀</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">return</span> gulp</span><br><span class="line">        .<span class="title function_">src</span>([<span class="string">&quot;./public/**/*.css&quot;</span>, <span class="string">&quot;!./public/**/*.min.css&quot;</span>]) <span class="comment">//排除的css</span></span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">gulpif</span>(!isScriptAll, <span class="title function_">changed</span>(<span class="string">&quot;./public&quot;</span>)))</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">gulpif</span>(isDebug, <span class="title function_">debug</span>(&#123; <span class="attr">title</span>: <span class="string">&quot;Compress CSS:&quot;</span> &#125;)))</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">plumber</span>())</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">cleancss</span>(option))</span><br><span class="line">        .<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&quot;./public&quot;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 压缩public目录下的html文件</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&quot;compressHtml&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> cleanOptions = &#123;</span><br><span class="line">        <span class="attr">protect</span>: <span class="regexp">/&lt;\!--%fooTemplate\b.*?%--&gt;/g</span>, <span class="comment">//忽略处理</span></span><br><span class="line">        <span class="attr">unprotect</span>: <span class="regexp">/&lt;script [^&gt;]*\btype=&quot;text\/x-handlebars-template&quot;[\s\S]+?&lt;\/script&gt;/gi</span> <span class="comment">//特殊处理</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">var</span> minOption = &#123;</span><br><span class="line">        <span class="attr">collapseWhitespace</span>: <span class="literal">true</span>, <span class="comment">//压缩HTML</span></span><br><span class="line">        <span class="attr">collapseBooleanAttributes</span>: <span class="literal">true</span>, <span class="comment">//省略布尔属性的值 &lt;input checked=&quot;true&quot;/&gt; ==&gt; &lt;input /&gt;</span></span><br><span class="line">        <span class="attr">removeEmptyAttributes</span>: <span class="literal">true</span>, <span class="comment">//删除所有空格作属性值 &lt;input id=&quot;&quot; /&gt; ==&gt; &lt;input /&gt;</span></span><br><span class="line">        <span class="attr">removeScriptTypeAttributes</span>: <span class="literal">true</span>, <span class="comment">//删除&lt;script&gt;的type=&quot;text/javascript&quot;</span></span><br><span class="line">        <span class="attr">removeStyleLinkTypeAttributes</span>: <span class="literal">true</span>, <span class="comment">//删除&lt;style&gt;和&lt;link&gt;的type=&quot;text/css&quot;</span></span><br><span class="line">        <span class="attr">removeComments</span>: <span class="literal">true</span>, <span class="comment">//清除HTML注释</span></span><br><span class="line">        <span class="attr">minifyJS</span>: <span class="literal">true</span>, <span class="comment">//压缩页面JS</span></span><br><span class="line">        <span class="attr">minifyCSS</span>: <span class="literal">true</span>, <span class="comment">//压缩页面CSS</span></span><br><span class="line">        <span class="attr">minifyURLs</span>: <span class="literal">true</span> <span class="comment">//替换页面URL</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">return</span> gulp</span><br><span class="line">        .<span class="title function_">src</span>(<span class="string">&quot;./public/**/*.html&quot;</span>)</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">gulpif</span>(isDebug, <span class="title function_">debug</span>(&#123; <span class="attr">title</span>: <span class="string">&quot;Compress HTML:&quot;</span> &#125;)))</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">plumber</span>())</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">htmlclean</span>(cleanOptions))</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">htmlmin</span>(minOption))</span><br><span class="line">        .<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&quot;./public&quot;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 执行顺序： 清除public目录 -&gt; 产生原始博客内容 -&gt; 执行压缩混淆 -&gt; 部署到服务器</span></span><br><span class="line">gulp.<span class="title function_">task</span>(</span><br><span class="line">    <span class="string">&quot;default&quot;</span>,</span><br><span class="line">  gulp.<span class="title function_">series</span>(</span><br><span class="line">        <span class="string">&quot;clean&quot;</span>,</span><br><span class="line">        <span class="string">&quot;generate&quot;</span>,</span><br><span class="line">        <span class="string">&quot;compressHtml&quot;</span>,</span><br><span class="line">        <span class="string">&quot;compressCss&quot;</span>,</span><br><span class="line">        <span class="string">&quot;compressJs&quot;</span>,</span><br><span class="line">        gulp.<span class="title function_">parallel</span>(<span class="string">&quot;deploy&quot;</span>)</span><br><span class="line">    )</span><br><span class="line">);</span><br><span class="line"><span class="comment">//Gulp4最大的一个改变就是gulp.task函数现在只支持两个参数，分别是任务名和运行任务的函数</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h1>MathJax数学公式重复</h1>
-<p>关于这个问题，我找了几个教程，但都不怎么对，这里我先提供一个，相对完整的教程<a href="https://blog.csdn.net/qq_44846324/article/details/114582328">这次彻底解决在Hexo中渲染MathJax数学公式出现的问题！！！</a><br>
-先跟着上面的教程来设置，基本都是对的，然后还要删除一个文件<br>
-这里我贴一下知乎上的操作<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203111434989.png" alt=""></p>
-<p>在删除这个文件之后，渲染问题才能彻底解决，这个文件可能后面没有-plus，不过没有影响，不带-plus也可以删除</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-        <category>技能学习记录</category>
-      </categories>
-      <tags>
-        <tag>gulp</tag>
-        <tag>MathJax</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown简明语法手册</title>
     <url>/2022/03/11/107-markdown-concise-syntaxsmanual/</url>
     <content><![CDATA[<h3 id="1-斜体和粗体">1. 斜体和粗体</h3>
@@ -2848,6 +2811,43 @@ D-->>A: Dashed open arrow</textarea><textarea id="sequence-1-options" style="dis
       </tags>
   </entry>
   <entry>
+    <title>如何在Hexo中用Gulp脚本进行静态资源渲染压缩和解决MathJax数学公式重复问题</title>
+    <url>/2022/03/11/109-how-to-do-static-resource-rendering-compression-and-solve-mathjax-math-formula-duplication-problem-in-hexo-with-gulp-script/</url>
+    <content><![CDATA[<h1>Gulp脚本</h1>
+<p>如何下载、配置，这里我给出一个我跟着来的教程<a href="https://www.voidking.com/dev-hexo-gulp/">Hexo使用Gulp压缩静态资源</a>，2操作是必须的，3操作我使用了，4-5我并没有参考</p>
+<p>这里着重说明一下，关于脚本执行顺序，以及精简代码</p>
+<h2 id="脚本执行顺序">脚本执行顺序</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 执行顺序： 清除public目录 -&gt; 产生原始博客内容 -&gt; 执行压缩混淆 -&gt; 部署到服务器</span><br><span class="line">gulp.task(</span><br><span class="line">    &quot;default&quot;,</span><br><span class="line">  gulp.series(</span><br><span class="line">        &quot;clean&quot;,</span><br><span class="line">        &quot;generate&quot;,</span><br><span class="line">        &quot;compressHtml&quot;,</span><br><span class="line">        &quot;compressCss&quot;,</span><br><span class="line">        &quot;compressJs&quot;,</span><br><span class="line">        gulp.parallel(&quot;deploy&quot;)</span><br><span class="line">    )</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>先是clean，清除已经创建的public文件夹</li>
+<li>之后是生成页面</li>
+<li>接下来分别是压缩HTML文件、CSS文件、JS文件</li>
+<li>最后是将本地部署到GitHubPage仓库当中去</li>
+</ul>
+<h2 id="精简代码">精简代码</h2>
+<p>原本我们需要<code>hexo clean -&gt; hexo g -&gt; hexo d</code>三个命令才能完成部署上去这个任务，不过在gulp中，我们可以自定义task，也就是上面给出的代码，不仅能自定义顺序，还能自定义这个任务触发的命令，比如这里我使用默认的<code>default</code>设置，当设置为<code>default</code>的时候，我们只需要在终端中，输入gulp，就可以直接开始上面提到的脚本执行顺序，这样可以使得一个命令，集成多步操作，稍微“偷懒”一下</p>
+<h2 id="代码提供">代码提供</h2>
+<p>先在hexo目录下创建gulpfile.js文件</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203111425445.png" alt=""></p>
+<p>如果本来就有这个文件，直接打开，把里面的代码替换成下面我提供的就行了</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">&quot;gulp&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> debug = <span class="built_in">require</span>(<span class="string">&quot;gulp-debug&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> cleancss = <span class="built_in">require</span>(<span class="string">&quot;gulp-clean-css&quot;</span>); <span class="comment">//css压缩组件</span></span><br><span class="line"><span class="keyword">var</span> uglify = <span class="built_in">require</span>(<span class="string">&quot;gulp-uglify&quot;</span>); <span class="comment">//js压缩组件</span></span><br><span class="line"><span class="keyword">var</span> htmlmin = <span class="built_in">require</span>(<span class="string">&quot;gulp-htmlmin&quot;</span>); <span class="comment">//html压缩组件</span></span><br><span class="line"><span class="keyword">var</span> htmlclean = <span class="built_in">require</span>(<span class="string">&quot;gulp-htmlclean&quot;</span>); <span class="comment">//html清理组件</span></span><br><span class="line"><span class="keyword">var</span> changed = <span class="built_in">require</span>(<span class="string">&quot;gulp-changed&quot;</span>); <span class="comment">//文件更改校验组件</span></span><br><span class="line"><span class="keyword">var</span> gulpif = <span class="built_in">require</span>(<span class="string">&quot;gulp-if&quot;</span>); <span class="comment">//任务 帮助调用组件</span></span><br><span class="line"><span class="keyword">var</span> plumber = <span class="built_in">require</span>(<span class="string">&quot;gulp-plumber&quot;</span>); <span class="comment">//容错组件（发生错误不跳出任务，并报出错误内容）</span></span><br><span class="line"><span class="keyword">var</span> isScriptAll = <span class="literal">true</span>; <span class="comment">//是否处理所有文件，(true|处理所有文件)(false|只处理有更改的文件)</span></span><br><span class="line"><span class="keyword">var</span> isDebug = <span class="literal">true</span>; <span class="comment">//是否调试显示 编译通过的文件</span></span><br><span class="line"><span class="keyword">var</span> gulpBabel = <span class="built_in">require</span>(<span class="string">&quot;gulp-babel&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> es2015Preset = <span class="built_in">require</span>(<span class="string">&quot;babel-preset-es2015&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> del = <span class="built_in">require</span>(<span class="string">&quot;del&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> <span class="title class_">Hexo</span> = <span class="built_in">require</span>(<span class="string">&quot;hexo&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> hexo = <span class="keyword">new</span> <span class="title class_">Hexo</span>(process.<span class="title function_">cwd</span>(), &#123;&#125;); <span class="comment">// 初始化一个hexo对象</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 清除public文件夹</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&quot;clean&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title function_">del</span>([<span class="string">&quot;public/**/*&quot;</span>]);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 下面几个跟hexo有关的操作，主要通过hexo.call()去执行，注意return</span></span><br><span class="line"><span class="comment">// 创建静态页面 （等同 hexo generate）</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&quot;generate&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> hexo.<span class="title function_">init</span>().<span class="title function_">then</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> hexo</span><br><span class="line">            .<span class="title function_">call</span>(<span class="string">&quot;generate&quot;</span>, &#123;</span><br><span class="line">                <span class="attr">watch</span>: <span class="literal">false</span></span><br><span class="line">            &#125;)</span><br><span class="line">            .<span class="title function_">then</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> hexo.<span class="title function_">exit</span>();</span><br><span class="line">            &#125;)</span><br><span class="line">            .<span class="title function_">catch</span>(<span class="keyword">function</span> (<span class="params">err</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> hexo.<span class="title function_">exit</span>(err);</span><br><span class="line">            &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 启动Hexo服务器</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&quot;server&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> hexo</span><br><span class="line">        .<span class="title function_">init</span>()</span><br><span class="line">        .<span class="title function_">then</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> hexo.<span class="title function_">call</span>(<span class="string">&quot;server&quot;</span>, &#123;&#125;);</span><br><span class="line">        &#125;)</span><br><span class="line">        .<span class="title function_">catch</span>(<span class="keyword">function</span> (<span class="params">err</span>) &#123;</span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">log</span>(err);</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 部署到服务器</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&quot;deploy&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> hexo.<span class="title function_">init</span>().<span class="title function_">then</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> hexo</span><br><span class="line">            .<span class="title function_">call</span>(<span class="string">&quot;deploy&quot;</span>, &#123;</span><br><span class="line">                <span class="attr">watch</span>: <span class="literal">false</span></span><br><span class="line">            &#125;)</span><br><span class="line">            .<span class="title function_">then</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> hexo.<span class="title function_">exit</span>();</span><br><span class="line">            &#125;)</span><br><span class="line">            .<span class="title function_">catch</span>(<span class="keyword">function</span> (<span class="params">err</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> hexo.<span class="title function_">exit</span>(err);</span><br><span class="line">            &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 压缩public目录下的js文件</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&quot;compressJs&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> gulp</span><br><span class="line">        .<span class="title function_">src</span>([<span class="string">&quot;./public/js/*.js&quot;</span>, <span class="string">&quot;!./public/js/utils.js&quot;</span>]) <span class="comment">//排除的js</span></span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">gulpif</span>(!isScriptAll, <span class="title function_">changed</span>(<span class="string">&quot;./public&quot;</span>)))</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">gulpif</span>(isDebug, <span class="title function_">debug</span>(&#123; <span class="attr">title</span>: <span class="string">&quot;Compress JS:&quot;</span> &#125;)))</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">plumber</span>())</span><br><span class="line">        .<span class="title function_">pipe</span>(</span><br><span class="line">            <span class="title function_">gulpBabel</span>(&#123;</span><br><span class="line">                <span class="attr">presets</span>: [es2015Preset] <span class="comment">// es5检查机制</span></span><br><span class="line">            &#125;)</span><br><span class="line">        )</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">uglify</span>()) <span class="comment">//调用压缩组件方法uglify(),对合并的文件进行压缩</span></span><br><span class="line">        .<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&quot;./public&quot;</span>)); <span class="comment">//输出到目标目录</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 压缩public目录下的css文件</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&quot;compressCss&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> option = &#123;</span><br><span class="line">        <span class="attr">rebase</span>: <span class="literal">false</span>,</span><br><span class="line">        <span class="comment">//advanced: true, //类型：Boolean 默认：true [是否开启高级优化（合并选择器等）]</span></span><br><span class="line">        <span class="attr">compatibility</span>: <span class="string">&quot;ie7&quot;</span> <span class="comment">//保留ie7及以下兼容写法 类型：String 默认：&#x27;&#x27;or&#x27;*&#x27; [启用兼容模式； &#x27;ie7&#x27;：IE7兼容模式，&#x27;ie8&#x27;：IE8兼容模式，&#x27;*&#x27;：IE9+兼容模式]</span></span><br><span class="line">        <span class="comment">//keepBreaks: true, //类型：Boolean 默认：false [是否保留换行]</span></span><br><span class="line">        <span class="comment">//keepSpecialComments: &#x27;*&#x27; //保留所有特殊前缀 当你用autoprefixer生成的浏览器前缀，如果不加这个参数，有可能将会删除你的部分前缀</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">return</span> gulp</span><br><span class="line">        .<span class="title function_">src</span>([<span class="string">&quot;./public/**/*.css&quot;</span>, <span class="string">&quot;!./public/**/*.min.css&quot;</span>]) <span class="comment">//排除的css</span></span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">gulpif</span>(!isScriptAll, <span class="title function_">changed</span>(<span class="string">&quot;./public&quot;</span>)))</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">gulpif</span>(isDebug, <span class="title function_">debug</span>(&#123; <span class="attr">title</span>: <span class="string">&quot;Compress CSS:&quot;</span> &#125;)))</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">plumber</span>())</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">cleancss</span>(option))</span><br><span class="line">        .<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&quot;./public&quot;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 压缩public目录下的html文件</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&quot;compressHtml&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> cleanOptions = &#123;</span><br><span class="line">        <span class="attr">protect</span>: <span class="regexp">/&lt;\!--%fooTemplate\b.*?%--&gt;/g</span>, <span class="comment">//忽略处理</span></span><br><span class="line">        <span class="attr">unprotect</span>: <span class="regexp">/&lt;script [^&gt;]*\btype=&quot;text\/x-handlebars-template&quot;[\s\S]+?&lt;\/script&gt;/gi</span> <span class="comment">//特殊处理</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">var</span> minOption = &#123;</span><br><span class="line">        <span class="attr">collapseWhitespace</span>: <span class="literal">true</span>, <span class="comment">//压缩HTML</span></span><br><span class="line">        <span class="attr">collapseBooleanAttributes</span>: <span class="literal">true</span>, <span class="comment">//省略布尔属性的值 &lt;input checked=&quot;true&quot;/&gt; ==&gt; &lt;input /&gt;</span></span><br><span class="line">        <span class="attr">removeEmptyAttributes</span>: <span class="literal">true</span>, <span class="comment">//删除所有空格作属性值 &lt;input id=&quot;&quot; /&gt; ==&gt; &lt;input /&gt;</span></span><br><span class="line">        <span class="attr">removeScriptTypeAttributes</span>: <span class="literal">true</span>, <span class="comment">//删除&lt;script&gt;的type=&quot;text/javascript&quot;</span></span><br><span class="line">        <span class="attr">removeStyleLinkTypeAttributes</span>: <span class="literal">true</span>, <span class="comment">//删除&lt;style&gt;和&lt;link&gt;的type=&quot;text/css&quot;</span></span><br><span class="line">        <span class="attr">removeComments</span>: <span class="literal">true</span>, <span class="comment">//清除HTML注释</span></span><br><span class="line">        <span class="attr">minifyJS</span>: <span class="literal">true</span>, <span class="comment">//压缩页面JS</span></span><br><span class="line">        <span class="attr">minifyCSS</span>: <span class="literal">true</span>, <span class="comment">//压缩页面CSS</span></span><br><span class="line">        <span class="attr">minifyURLs</span>: <span class="literal">true</span> <span class="comment">//替换页面URL</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">return</span> gulp</span><br><span class="line">        .<span class="title function_">src</span>(<span class="string">&quot;./public/**/*.html&quot;</span>)</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">gulpif</span>(isDebug, <span class="title function_">debug</span>(&#123; <span class="attr">title</span>: <span class="string">&quot;Compress HTML:&quot;</span> &#125;)))</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">plumber</span>())</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">htmlclean</span>(cleanOptions))</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">htmlmin</span>(minOption))</span><br><span class="line">        .<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&quot;./public&quot;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 执行顺序： 清除public目录 -&gt; 产生原始博客内容 -&gt; 执行压缩混淆 -&gt; 部署到服务器</span></span><br><span class="line">gulp.<span class="title function_">task</span>(</span><br><span class="line">    <span class="string">&quot;default&quot;</span>,</span><br><span class="line">  gulp.<span class="title function_">series</span>(</span><br><span class="line">        <span class="string">&quot;clean&quot;</span>,</span><br><span class="line">        <span class="string">&quot;generate&quot;</span>,</span><br><span class="line">        <span class="string">&quot;compressHtml&quot;</span>,</span><br><span class="line">        <span class="string">&quot;compressCss&quot;</span>,</span><br><span class="line">        <span class="string">&quot;compressJs&quot;</span>,</span><br><span class="line">        gulp.<span class="title function_">parallel</span>(<span class="string">&quot;deploy&quot;</span>)</span><br><span class="line">    )</span><br><span class="line">);</span><br><span class="line"><span class="comment">//Gulp4最大的一个改变就是gulp.task函数现在只支持两个参数，分别是任务名和运行任务的函数</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1>MathJax数学公式重复</h1>
+<p>关于这个问题，我找了几个教程，但都不怎么对，这里我先提供一个，相对完整的教程<a href="https://blog.csdn.net/qq_44846324/article/details/114582328">这次彻底解决在Hexo中渲染MathJax数学公式出现的问题！！！</a><br>
+先跟着上面的教程来设置，基本都是对的，然后还要删除一个文件<br>
+这里我贴一下知乎上的操作<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203111434989.png" alt=""></p>
+<p>在删除这个文件之后，渲染问题才能彻底解决，这个文件可能后面没有-plus，不过没有影响，不带-plus也可以删除</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+        <category>技能学习记录</category>
+      </categories>
+      <tags>
+        <tag>gulp</tag>
+        <tag>MathJax</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用labelImg手动标注数据集</title>
     <url>/2022/03/14/111-manual-annotation-of-datasets-using-labelImg/</url>
     <content><![CDATA[<h1>下载项目</h1>
@@ -2894,25 +2894,6 @@ D-->>A: Dashed open arrow</textarea><textarea id="sequence-1-options" style="dis
       </tags>
   </entry>
   <entry>
-    <title>导师给的答辩经验</title>
-    <url>/2022/07/22/114-defense-experience/</url>
-    <content><![CDATA[<p>按照往年答辩经验，我的几个个人建议：</p>
-<p>1、调试好自己的系统，一定不要到时候崩溃，闪退，严重bug</p>
-<p>2、系统中的测试数据准备好，不要很随意，举个例子，如果是类似电商系统，不要出现用户名111,商品名1111，图文不对应，随便放个照片，评论内容随意1111这样实验数据要像模像样，真实可靠</p>
-<p>3、论文再仔细检查不要有明显错误和低级错误，按照打印要求打印，按照装订要求装订，注意顺序，该给成绩个签字的地方请指导老师填好。</p>
-<p>4、该有评语的地方填好不要缺</p>
-<p>5、自己先练习一下讲讲系统，边演示边讲，注意逻辑，和扬长避短。</p>
-<p>6、把自己的核心业务逻辑整理通顺，一般是答辩老师的提问点。举个例子：比如预定的，要考虑到机制的合理性，比如同一时段不能冲突，比如不能别人已经释放的可以被预定，比如过去的历史时间不可以预定</p>
-<p>7、答辩老师提出问题虚心接受，不要和老师顶嘴，也不要说“我不清楚，别人帮忙的”之类的，也不要说“老师任务书没有说”，总之不要让答辩评委觉得你顶嘴、作弊、甩锅。</p>
-]]></content>
-      <categories>
-        <category>学术研究</category>
-      </categories>
-      <tags>
-        <tag>答辩</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>考研6月总结1</title>
     <url>/2022/07/22/115-June-Summary-1/</url>
     <content><![CDATA[<p>1.先把武忠祥，李永乐Youtube上去年没听完的基础课全部结束掉。结束掉之后，直接跟张宇，不会的看张宇基础班理解</p>
@@ -2932,6 +2913,25 @@ D-->>A: Dashed open arrow</textarea><textarea id="sequence-1-options" style="dis
       </categories>
       <tags>
         <tag>考研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>导师给的答辩经验</title>
+    <url>/2022/07/22/114-defense-experience/</url>
+    <content><![CDATA[<p>按照往年答辩经验，我的几个个人建议：</p>
+<p>1、调试好自己的系统，一定不要到时候崩溃，闪退，严重bug</p>
+<p>2、系统中的测试数据准备好，不要很随意，举个例子，如果是类似电商系统，不要出现用户名111,商品名1111，图文不对应，随便放个照片，评论内容随意1111这样实验数据要像模像样，真实可靠</p>
+<p>3、论文再仔细检查不要有明显错误和低级错误，按照打印要求打印，按照装订要求装订，注意顺序，该给成绩个签字的地方请指导老师填好。</p>
+<p>4、该有评语的地方填好不要缺</p>
+<p>5、自己先练习一下讲讲系统，边演示边讲，注意逻辑，和扬长避短。</p>
+<p>6、把自己的核心业务逻辑整理通顺，一般是答辩老师的提问点。举个例子：比如预定的，要考虑到机制的合理性，比如同一时段不能冲突，比如不能别人已经释放的可以被预定，比如过去的历史时间不可以预定</p>
+<p>7、答辩老师提出问题虚心接受，不要和老师顶嘴，也不要说“我不清楚，别人帮忙的”之类的，也不要说“老师任务书没有说”，总之不要让答辩评委觉得你顶嘴、作弊、甩锅。</p>
+]]></content>
+      <categories>
+        <category>学术研究</category>
+      </categories>
+      <tags>
+        <tag>答辩</tag>
       </tags>
   </entry>
   <entry>
@@ -3006,6 +3006,34 @@ D-->>A: Dashed open arrow</textarea><textarea id="sequence-1-options" style="dis
       <tags>
         <tag>雪中悍刀行</tag>
         <tag>文案</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>遍历二叉树</title>
+    <url>/2022/08/05/120-traversing-binary-tree/</url>
+    <content><![CDATA[<p>遍历二叉树中进行的一些操作</p>
+<ul>
+<li>创建二叉树</li>
+<li>先序遍历二叉树</li>
+<li>计算树高</li>
+<li>计算树叶数</li>
+<li>计算结点数</li>
+<li>计算分支点个数</li>
+<li>二叉树拷贝</li>
+<li>二叉树左右子树交换</li>
+</ul>
+<blockquote>
+<p>操作使用C++版的数据结构完成</p>
+</blockquote>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*****************************  </span></span><br><span class="line"><span class="comment"> @author: YuZhangWang  </span></span><br><span class="line"><span class="comment"> @date: 2022/8/4 23:37:36 </span></span><br><span class="line"><span class="comment"> @link: https://yuzhang.wang</span></span><br><span class="line"><span class="comment">******************************/</span>  </span><br><span class="line">  </span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span>  </span></span><br><span class="line">  </span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">bitnode</span>  </span><br><span class="line">&#123;  </span><br><span class="line">    <span class="type">char</span> data;  </span><br><span class="line">    bitnode *lchild, *rchild;  </span><br><span class="line">&#125; bitnode;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">bitt</span>  </span><br><span class="line">&#123;  </span><br><span class="line">    bitnode *bt;  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">create</span><span class="params">(bitnode *&amp;t)</span></span>;<span class="comment">//创建二叉树  </span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">preorder</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//先序历遍  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">high</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//计算树高  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">countleaf</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//计算树叶数  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">countnode</span><span class="params">(bitnode *t)</span></span>; <span class="comment">//计算结点数  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">countpartnode</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//计算分支点个数  </span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">copy</span><span class="params">(bitnode *&amp;t, bitnode *&amp;s)</span></span>;<span class="comment">//二叉树拷贝  </span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">changebit</span><span class="params">(bitnode *&amp;t)</span></span>;<span class="comment">//二叉树左右子树交换  </span></span><br><span class="line"><span class="keyword">public</span>:  </span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">createtree</span><span class="params">()</span></span>;<span class="comment">//创建二叉树  </span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">preordertree</span><span class="params">()</span></span>;<span class="comment">//先序历遍  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">hightree</span><span class="params">()</span></span>;<span class="comment">//计算树高  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">countleaftree</span><span class="params">()</span></span>;<span class="comment">//计算树叶数  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">countnodetree</span><span class="params">()</span></span>;<span class="comment">//计算结点数  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">countpartnodetree</span><span class="params">()</span></span>;<span class="comment">//计算分支点个数  </span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">copytree</span><span class="params">()</span></span>;<span class="comment">//二叉树拷贝  </span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">changebittree</span><span class="params">()</span></span>;<span class="comment">//二叉树左右子树交换  </span></span><br><span class="line">&#125;;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::create</span><span class="params">(bitnode *&amp;t)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="type">char</span> ch;  </span><br><span class="line">    cin &gt;&gt; ch;  </span><br><span class="line">    <span class="keyword">if</span> (ch == <span class="string">&#x27;.&#x27;</span>)  </span><br><span class="line">    &#123;  </span><br><span class="line">        t = <span class="literal">NULL</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">else</span>  </span><br><span class="line">    &#123;  </span><br><span class="line">        t = <span class="keyword">new</span> bitnode;  </span><br><span class="line">        t-&gt;data = ch;  </span><br><span class="line">        <span class="built_in">create</span>(t-&gt;lchild);  </span><br><span class="line">        <span class="built_in">create</span>(t-&gt;rchild);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::createtree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t;  </span><br><span class="line">    <span class="built_in">create</span>(t);  </span><br><span class="line">    bt = t;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::preorder</span><span class="params">(bitnode *t)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (t)  </span><br><span class="line">    &#123;  </span><br><span class="line">        cout &lt;&lt; t-&gt;data;  </span><br><span class="line">        <span class="built_in">preorder</span>(t-&gt;lchild);  </span><br><span class="line">        <span class="built_in">preorder</span>(t-&gt;rchild);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::preordertree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t = bt;  </span><br><span class="line">    <span class="built_in">preorder</span>(t);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::high</span><span class="params">(bitnode *t)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (t == <span class="literal">NULL</span>)  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">else</span>  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="type">int</span> m = <span class="number">1</span> + <span class="built_in">high</span>(t-&gt;lchild);  </span><br><span class="line">        <span class="type">int</span> n = <span class="number">1</span> + <span class="built_in">high</span>(t-&gt;rchild);  </span><br><span class="line">        <span class="keyword">if</span> (m &gt;= n)  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="keyword">return</span> m;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">else</span>  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="keyword">return</span> n;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::hightree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t = bt;  </span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">high</span>(t);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::countleaf</span><span class="params">(bitnode *t)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (t == <span class="literal">NULL</span>)  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">else</span>  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="type">int</span> m = <span class="built_in">countleaf</span>(t-&gt;lchild);  </span><br><span class="line">        <span class="type">int</span> n = <span class="built_in">countleaf</span>(t-&gt;rchild);  </span><br><span class="line">        <span class="keyword">if</span> (m + n == <span class="number">0</span>)  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">else</span>  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="keyword">return</span> m + n;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::countleaftree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t = bt;  </span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">countleaf</span>(t);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::countnode</span><span class="params">(bitnode *t)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (t)  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="type">int</span> m = <span class="built_in">countnode</span>(t-&gt;lchild);  </span><br><span class="line">        <span class="type">int</span> n = <span class="built_in">countnode</span>(t-&gt;rchild);  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span> + m + n;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">else</span>  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::countnodetree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t = bt;  </span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">countnode</span>(t);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::countpartnode</span><span class="params">(bitnode *t)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (t &amp;&amp; (t-&gt;lchild || t-&gt;rchild))  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="type">int</span> m = <span class="built_in">countpartnode</span>(t-&gt;lchild);  </span><br><span class="line">        <span class="type">int</span> n = <span class="built_in">countpartnode</span>(t-&gt;rchild);  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span> + m + n;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">else</span>  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::countpartnodetree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t = bt;  </span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">countpartnode</span>(t);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::copy</span><span class="params">(bitnode *&amp;t, bitnode *&amp;s)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (t == <span class="literal">NULL</span>)  </span><br><span class="line">    &#123;  </span><br><span class="line">        s = <span class="literal">NULL</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">else</span>  </span><br><span class="line">    &#123;  </span><br><span class="line">        s = t;  </span><br><span class="line">        <span class="built_in">copy</span>(t-&gt;lchild, s-&gt;lchild);  </span><br><span class="line">        <span class="built_in">copy</span>(t-&gt;rchild, s-&gt;rchild);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::copytree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t = bt;  </span><br><span class="line">    bitnode *s;  </span><br><span class="line">    <span class="built_in">copy</span>(t, s);  </span><br><span class="line">    <span class="keyword">if</span> (s)  </span><br><span class="line">    &#123;  </span><br><span class="line">        cout &lt;&lt; s-&gt;data;  </span><br><span class="line">        <span class="built_in">preorder</span>(s-&gt;lchild);  </span><br><span class="line">        <span class="built_in">preorder</span>(s-&gt;rchild);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::changebit</span><span class="params">(bitnode *&amp;t)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *temp = <span class="keyword">new</span> bitnode;  </span><br><span class="line">    <span class="keyword">if</span> (t)  </span><br><span class="line">    &#123;  </span><br><span class="line">        temp = t-&gt;lchild;  </span><br><span class="line">        t-&gt;lchild = t-&gt;rchild;  </span><br><span class="line">        t-&gt;rchild = temp;  </span><br><span class="line">        <span class="built_in">changebit</span>(t-&gt;lchild);  </span><br><span class="line">        <span class="built_in">changebit</span>(t-&gt;rchild);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::changebittree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t = bt;  </span><br><span class="line">    <span class="built_in">changebit</span>(t);  </span><br><span class="line">    bt = t;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitt tt;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;请输入需要形成的二叉树:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    tt.<span class="built_in">createtree</span>();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;该二叉树先序历遍结果为:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    tt.<span class="built_in">preordertree</span>();  </span><br><span class="line">    cout &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;该二叉树树高为:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; tt.<span class="built_in">hightree</span>() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;该二叉树树叶数为:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; tt.<span class="built_in">countleaftree</span>() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;该二叉树结点数为:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; tt.<span class="built_in">countnodetree</span>() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;该二叉树分支点数为:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; tt.<span class="built_in">countpartnodetree</span>() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;该二叉树拷贝结果为:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    tt.<span class="built_in">copytree</span>();  </span><br><span class="line">    cout &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;该二叉树左右子树交换结果为:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    tt.<span class="built_in">changebittree</span>();  </span><br><span class="line">    tt.<span class="built_in">preordertree</span>();  </span><br><span class="line">    cout &lt;&lt; endl;  </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>C++学习笔记</category>
+        <category>数据结构学习笔记</category>
+      </categories>
+      <tags>
+        <tag>遍历</tag>
+        <tag>二叉树</tag>
       </tags>
   </entry>
   <entry>
@@ -3783,34 +3811,6 @@ AR2<br>
         <tag>VirtualBox</tag>
         <tag>WinPcap</tag>
         <tag>Wireshark</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>遍历二叉树</title>
-    <url>/2022/08/05/120-traversing-binary-tree/</url>
-    <content><![CDATA[<p>遍历二叉树中进行的一些操作</p>
-<ul>
-<li>创建二叉树</li>
-<li>先序遍历二叉树</li>
-<li>计算树高</li>
-<li>计算树叶数</li>
-<li>计算结点数</li>
-<li>计算分支点个数</li>
-<li>二叉树拷贝</li>
-<li>二叉树左右子树交换</li>
-</ul>
-<blockquote>
-<p>操作使用C++版的数据结构完成</p>
-</blockquote>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*****************************  </span></span><br><span class="line"><span class="comment"> @author: YuZhangWang  </span></span><br><span class="line"><span class="comment"> @date: 2022/8/4 23:37:36 </span></span><br><span class="line"><span class="comment"> @link: https://yuzhang.wang</span></span><br><span class="line"><span class="comment">******************************/</span>  </span><br><span class="line">  </span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span>  </span></span><br><span class="line">  </span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">bitnode</span>  </span><br><span class="line">&#123;  </span><br><span class="line">    <span class="type">char</span> data;  </span><br><span class="line">    bitnode *lchild, *rchild;  </span><br><span class="line">&#125; bitnode;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">bitt</span>  </span><br><span class="line">&#123;  </span><br><span class="line">    bitnode *bt;  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">create</span><span class="params">(bitnode *&amp;t)</span></span>;<span class="comment">//创建二叉树  </span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">preorder</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//先序历遍  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">high</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//计算树高  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">countleaf</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//计算树叶数  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">countnode</span><span class="params">(bitnode *t)</span></span>; <span class="comment">//计算结点数  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">countpartnode</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//计算分支点个数  </span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">copy</span><span class="params">(bitnode *&amp;t, bitnode *&amp;s)</span></span>;<span class="comment">//二叉树拷贝  </span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">changebit</span><span class="params">(bitnode *&amp;t)</span></span>;<span class="comment">//二叉树左右子树交换  </span></span><br><span class="line"><span class="keyword">public</span>:  </span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">createtree</span><span class="params">()</span></span>;<span class="comment">//创建二叉树  </span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">preordertree</span><span class="params">()</span></span>;<span class="comment">//先序历遍  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">hightree</span><span class="params">()</span></span>;<span class="comment">//计算树高  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">countleaftree</span><span class="params">()</span></span>;<span class="comment">//计算树叶数  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">countnodetree</span><span class="params">()</span></span>;<span class="comment">//计算结点数  </span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">countpartnodetree</span><span class="params">()</span></span>;<span class="comment">//计算分支点个数  </span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">copytree</span><span class="params">()</span></span>;<span class="comment">//二叉树拷贝  </span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">changebittree</span><span class="params">()</span></span>;<span class="comment">//二叉树左右子树交换  </span></span><br><span class="line">&#125;;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::create</span><span class="params">(bitnode *&amp;t)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="type">char</span> ch;  </span><br><span class="line">    cin &gt;&gt; ch;  </span><br><span class="line">    <span class="keyword">if</span> (ch == <span class="string">&#x27;.&#x27;</span>)  </span><br><span class="line">    &#123;  </span><br><span class="line">        t = <span class="literal">NULL</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">else</span>  </span><br><span class="line">    &#123;  </span><br><span class="line">        t = <span class="keyword">new</span> bitnode;  </span><br><span class="line">        t-&gt;data = ch;  </span><br><span class="line">        <span class="built_in">create</span>(t-&gt;lchild);  </span><br><span class="line">        <span class="built_in">create</span>(t-&gt;rchild);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::createtree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t;  </span><br><span class="line">    <span class="built_in">create</span>(t);  </span><br><span class="line">    bt = t;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::preorder</span><span class="params">(bitnode *t)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (t)  </span><br><span class="line">    &#123;  </span><br><span class="line">        cout &lt;&lt; t-&gt;data;  </span><br><span class="line">        <span class="built_in">preorder</span>(t-&gt;lchild);  </span><br><span class="line">        <span class="built_in">preorder</span>(t-&gt;rchild);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::preordertree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t = bt;  </span><br><span class="line">    <span class="built_in">preorder</span>(t);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::high</span><span class="params">(bitnode *t)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (t == <span class="literal">NULL</span>)  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">else</span>  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="type">int</span> m = <span class="number">1</span> + <span class="built_in">high</span>(t-&gt;lchild);  </span><br><span class="line">        <span class="type">int</span> n = <span class="number">1</span> + <span class="built_in">high</span>(t-&gt;rchild);  </span><br><span class="line">        <span class="keyword">if</span> (m &gt;= n)  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="keyword">return</span> m;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">else</span>  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="keyword">return</span> n;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::hightree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t = bt;  </span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">high</span>(t);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::countleaf</span><span class="params">(bitnode *t)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (t == <span class="literal">NULL</span>)  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">else</span>  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="type">int</span> m = <span class="built_in">countleaf</span>(t-&gt;lchild);  </span><br><span class="line">        <span class="type">int</span> n = <span class="built_in">countleaf</span>(t-&gt;rchild);  </span><br><span class="line">        <span class="keyword">if</span> (m + n == <span class="number">0</span>)  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">else</span>  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="keyword">return</span> m + n;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::countleaftree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t = bt;  </span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">countleaf</span>(t);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::countnode</span><span class="params">(bitnode *t)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (t)  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="type">int</span> m = <span class="built_in">countnode</span>(t-&gt;lchild);  </span><br><span class="line">        <span class="type">int</span> n = <span class="built_in">countnode</span>(t-&gt;rchild);  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span> + m + n;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">else</span>  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::countnodetree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t = bt;  </span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">countnode</span>(t);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::countpartnode</span><span class="params">(bitnode *t)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (t &amp;&amp; (t-&gt;lchild || t-&gt;rchild))  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="type">int</span> m = <span class="built_in">countpartnode</span>(t-&gt;lchild);  </span><br><span class="line">        <span class="type">int</span> n = <span class="built_in">countpartnode</span>(t-&gt;rchild);  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span> + m + n;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">else</span>  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">bitt::countpartnodetree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t = bt;  </span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">countpartnode</span>(t);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::copy</span><span class="params">(bitnode *&amp;t, bitnode *&amp;s)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (t == <span class="literal">NULL</span>)  </span><br><span class="line">    &#123;  </span><br><span class="line">        s = <span class="literal">NULL</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">else</span>  </span><br><span class="line">    &#123;  </span><br><span class="line">        s = t;  </span><br><span class="line">        <span class="built_in">copy</span>(t-&gt;lchild, s-&gt;lchild);  </span><br><span class="line">        <span class="built_in">copy</span>(t-&gt;rchild, s-&gt;rchild);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::copytree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t = bt;  </span><br><span class="line">    bitnode *s;  </span><br><span class="line">    <span class="built_in">copy</span>(t, s);  </span><br><span class="line">    <span class="keyword">if</span> (s)  </span><br><span class="line">    &#123;  </span><br><span class="line">        cout &lt;&lt; s-&gt;data;  </span><br><span class="line">        <span class="built_in">preorder</span>(s-&gt;lchild);  </span><br><span class="line">        <span class="built_in">preorder</span>(s-&gt;rchild);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::changebit</span><span class="params">(bitnode *&amp;t)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *temp = <span class="keyword">new</span> bitnode;  </span><br><span class="line">    <span class="keyword">if</span> (t)  </span><br><span class="line">    &#123;  </span><br><span class="line">        temp = t-&gt;lchild;  </span><br><span class="line">        t-&gt;lchild = t-&gt;rchild;  </span><br><span class="line">        t-&gt;rchild = temp;  </span><br><span class="line">        <span class="built_in">changebit</span>(t-&gt;lchild);  </span><br><span class="line">        <span class="built_in">changebit</span>(t-&gt;rchild);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">bitt::changebittree</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitnode *t = bt;  </span><br><span class="line">    <span class="built_in">changebit</span>(t);  </span><br><span class="line">    bt = t;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    bitt tt;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;请输入需要形成的二叉树:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    tt.<span class="built_in">createtree</span>();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;该二叉树先序历遍结果为:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    tt.<span class="built_in">preordertree</span>();  </span><br><span class="line">    cout &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;该二叉树树高为:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; tt.<span class="built_in">hightree</span>() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;该二叉树树叶数为:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; tt.<span class="built_in">countleaftree</span>() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;该二叉树结点数为:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; tt.<span class="built_in">countnodetree</span>() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;该二叉树分支点数为:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; tt.<span class="built_in">countpartnodetree</span>() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;该二叉树拷贝结果为:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    tt.<span class="built_in">copytree</span>();  </span><br><span class="line">    cout &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;该二叉树左右子树交换结果为:&quot;</span> &lt;&lt; endl;  </span><br><span class="line">    tt.<span class="built_in">changebittree</span>();  </span><br><span class="line">    tt.<span class="built_in">preordertree</span>();  </span><br><span class="line">    cout &lt;&lt; endl;  </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>C++学习笔记</category>
-        <category>数据结构学习笔记</category>
-      </categories>
-      <tags>
-        <tag>遍历</tag>
-        <tag>二叉树</tag>
       </tags>
   </entry>
   <entry>
@@ -7707,11 +7707,6 @@ fill函数</p>
       </tags>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>影视</title>
     <url>/cinemas/index.html</url>
     <content><![CDATA[]]></content>
@@ -7821,6 +7816,27 @@ fill函数</p>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>友链</title>
+    <url>/link/index.html</url>
+    <content><![CDATA[<h2 id="友链要求">友链要求</h2>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">✅1. 申请前请先加我为友链.</span><br><span class="line">✅2. 有权重优先(当我足够喜欢时此条无用)</span><br><span class="line">✅3. 原创优先，30+文章数，不接受新站链接(3个月以内)</span><br><span class="line">✅4. 百度收录良好</span><br><span class="line">✅5. 较为稳定的更新频率</span><br><span class="line">✅6. 内容正常</span><br><span class="line">✅7. 能够访问，速度正常</span><br><span class="line">✅8. 网站拥有ICP备案优先</span><br><span class="line">✅9. 如需交换友链,可在关于中通过任意联系方式告知我</span><br></pre></td></tr></table></figure>
+<h2 id="反面例子">反面例子</h2>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">❌1. 经常宕机</span><br><span class="line">❌2. 小众域名（有权重、有收录除外）</span><br><span class="line">❌3. 不合法规</span><br><span class="line">❌4. 插边球站</span><br><span class="line">❌5. 红标报毒（QQ，WX）</span><br><span class="line">❌6. 搬砖，复制粘贴，偷文。</span><br></pre></td></tr></table></figure>
+<h2 id="友链格式">友链格式</h2>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">名称:YuZhangWang的领域 </span><br><span class="line">地址:https://yuzhang.wang/</span><br><span class="line">头像:https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418175156528.jpg</span><br><span class="line">描述:PLUSULTRA!</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title></title>
     <url>/css/custom.css</url>
     <content><![CDATA[/* 版权信息下划线去除 */
@@ -7901,22 +7917,6 @@ fill函数</p>
 .post-title {
     text-align: center;
 }]]></content>
-  </entry>
-  <entry>
-    <title>友链</title>
-    <url>/link/index.html</url>
-    <content><![CDATA[<h2 id="友链要求">友链要求</h2>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">✅1. 申请前请先加我为友链.</span><br><span class="line">✅2. 有权重优先(当我足够喜欢时此条无用)</span><br><span class="line">✅3. 原创优先，30+文章数，不接受新站链接(3个月以内)</span><br><span class="line">✅4. 百度收录良好</span><br><span class="line">✅5. 较为稳定的更新频率</span><br><span class="line">✅6. 内容正常</span><br><span class="line">✅7. 能够访问，速度正常</span><br><span class="line">✅8. 网站拥有ICP备案优先</span><br><span class="line">✅9. 如需交换友链,可在关于中通过任意联系方式告知我</span><br></pre></td></tr></table></figure>
-<h2 id="反面例子">反面例子</h2>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">❌1. 经常宕机</span><br><span class="line">❌2. 小众域名（有权重、有收录除外）</span><br><span class="line">❌3. 不合法规</span><br><span class="line">❌4. 插边球站</span><br><span class="line">❌5. 红标报毒（QQ，WX）</span><br><span class="line">❌6. 搬砖，复制粘贴，偷文。</span><br></pre></td></tr></table></figure>
-<h2 id="友链格式">友链格式</h2>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">名称:YuZhangWang的领域 </span><br><span class="line">地址:https://yuzhang.wang/</span><br><span class="line">头像:https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418175156528.jpg</span><br><span class="line">描述:PLUSULTRA!</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title></title>
