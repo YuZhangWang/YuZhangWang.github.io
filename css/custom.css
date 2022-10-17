@@ -73,15 +73,15 @@
     text-align: center;
 }
 
-#post-info .post-title {
+#post-info h1.post-title {
     text-align: center;
 }
 
 /* 文章顶部信息居中显示 */
-#post-info #post-meta .meta-firstline {
+#post-info #post-meta div.meta-firstline {
     text-align: center;
 }
 
-#post-info #post-meta .meta-secondline {
+#post-info #post-meta div.meta-secondline {
     text-align: center;
 }
