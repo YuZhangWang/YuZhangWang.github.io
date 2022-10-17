@@ -1,0 +1,1174 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>个人博客设计 | YuZhangWang的领域</title><meta name="keywords" content="前端,HTML,CSS,JavaScript,WebStorm"><meta name="author" content="YuZhangWang"><meta name="copyright" content="YuZhangWang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一、问题概述 在Internet飞速发展的今天，互联网成为人们快速获取、发布和传递信息的重要渠道，它在人们政治、经济、生活等各个方面发挥着重要的作用。因此网站建设在Internet应用上的地位显而易见，它已成为政府、企事业单位信息化建设中的重要组成部分，从而倍受人们的重视。我们当代大学生更是离不开网络给我们带来的好处与便利，因此掌握网页设计能力以及成为了一门计算机专业学生必不可少的能力。这也与本课">
+<meta property="og:type" content="article">
+<meta property="og:title" content="个人博客设计">
+<meta property="og:url" content="https://yuzhang.wang/2021/02/18/059-personal-blog-design/index.html">
+<meta property="og:site_name" content="YuZhangWang的领域">
+<meta property="og:description" content="一、问题概述 在Internet飞速发展的今天，互联网成为人们快速获取、发布和传递信息的重要渠道，它在人们政治、经济、生活等各个方面发挥着重要的作用。因此网站建设在Internet应用上的地位显而易见，它已成为政府、企事业单位信息化建设中的重要组成部分，从而倍受人们的重视。我们当代大学生更是离不开网络给我们带来的好处与便利，因此掌握网页设计能力以及成为了一门计算机专业学生必不可少的能力。这也与本课">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202208070505646.png">
+<meta property="article:published_time" content="2021-02-18T07:01:50.000Z">
+<meta property="article:modified_time" content="2022-08-06T21:05:51.070Z">
+<meta property="article:author" content="YuZhangWang">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="HTML">
+<meta property="article:tag" content="CSS">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="WebStorm">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202208070505646.png"><link rel="shortcut icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png"><link rel="canonical" href="https://yuzhang.wang/2021/02/18/059-personal-blog-design/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2ed9ec904657094072d5645542b35a76";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":30,"position":"top","messagePrev":"距离上次更新已经过去","messageNext":"天,文章内容可能与实际操作有一定出入"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":666},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":500,"languages":{"author":"作者: YuZhangWang","link":"链接: ","source":"来源: YuZhangWang的领域","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '个人博客设计',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-08-07 05:05:51'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/static-butterfly/dist/css/index.min.css"><link rel="stylesheet" href="/css/categories-style.css"><link rel="stylesheet" href="/css/h1-h6.css"><link rel="stylesheet" href="/css/img.css"><link rel="stylesheet" href="/css/custom.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="YuZhangWang的领域" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">120</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">242</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cinemas"><i class="fa-fw fa fa-film"></i><span> 影视</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/talk"><i class="fa-fw far fa-comment"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">YuZhangWang的领域</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cinemas"><i class="fa-fw fa fa-film"></i><span> 影视</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/talk"><i class="fa-fw far fa-comment"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">个人博客设计</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-02-18T07:01:50.000Z" title="发表于 2021-02-18 15:01:50">2021-02-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-06T21:05:51.070Z" title="更新于 2022-08-07 05:05:51">2022-08-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA/">项目展示</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%89%8D%E7%AB%AF%E4%B8%89%E5%89%91%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">前端三剑客学习笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">10.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>47分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="个人博客设计"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h1>一、问题概述</h1>
+<p>在Internet飞速发展的今天，互联网成为人们快速获取、发布和传递信息的重要渠道，它在人们政治、经济、生活等各个方面发挥着重要的作用。因此网站建设在Internet应用上的地位显而易见，它已成为政府、企事业单位信息化建设中的重要组成部分，从而倍受人们的重视。我们当代大学生更是离不开网络给我们带来的好处与便利，因此掌握网页设计能力以及成为了一门计算机专业学生必不可少的能力。这也与本课程的目的，即通过实践使同学们经历网页制作的全过程，通过设计达到掌握网页设计、制作的技巧不谋而合。<br>
+我们需要了解和熟悉网页设计的基础知识和实现技巧。给出网页设计方案，利用合适图文素材设计制作符合要求的网页设计作品。<br>
+Web设计也有利于我们熟练掌握Dreamweaver、HBuild、WebStorm等软件的的操作和应用。增强动手实践能力，进一步加强自身综合素质。学会独立思考和个人动手能力，逐渐培养做一个完整的项目。</p>
+<h1>二、Web页面设计需求分析</h1>
+<p>本次课程设计大作业的要求是制作一个电商购物网站，不过由于我的个人博客制作，在过去半年当中，已经利用闲暇时间，完成了一个相对较为成熟的个人博客项目，加上最近半个月几门课都开始进行课程设计，临时加了两门课的期中考试，导致制作时间紧张，所以决定以该项目作为本人课程设计提交作业。在整体页面布局，实现方式上，与电商购物网页相差不大，此外，在特效上加入了一些细节，还有一些额外添加的功能，例如音乐的添加，bing每日随机图片接口的调用等等，都为本项目增添了一丝新鲜感。<br>
+设计一个网站，首先要做的就是进行页面布局的设计，如何实现基本的功能，一个网站基本的几个页面设计，加上跳转的实现。其次是进行所需资源的查找获取，将获取的资源与设计好的大概页面进行整合调整；如何美化页面上的内容，使页面更加的一体化，最后呈现给访问的游客效果需要符合访问者的使用感受。最后是额外功能的添加，使网站能更加有特色且有趣。结合以上几点，我开始设计我的个人博客网站。</p>
+<h1>三、Web页面设计概要分析</h1>
+<h2 id="1-Web页面开发环境">1.Web页面开发环境</h2>
+<p>(1)所用设备：机械革命X6Ti版本	<br>
+(2)开发所用OS：Windows 10 专业版<br>
+(3)电脑详细设置：<br>
+设备名称	DESKTOP-7S5VJR1<br>
+处理器	Intel® Core™ i7-6700HQ CPU @ 2.60GHz   2.60 GHz<br>
+机带 RAM	24.0 GB<br>
+设备 ID	6F1D308D-A466-4333-98B4-5D6B7C452A60<br>
+产品 ID	00331-10000-00001-AA926<br>
+系统类型	64 位操作系统, 基于 x64 的处理器<br>
+笔和触控	没有可用于此显示器的笔或触控输入<br>
+(4)开发软件：WebStorm 2020.1 x64<br>
+(5)项目部署平台：Github</p>
+<h2 id="2-Web页面设计技术">2.Web页面设计技术</h2>
+<p>(1)标记符<html>，说明该文件是用超文本标记语言（本标签的中文全称）来描述的，它是文件的开头；而&lt;/html），则表示该文件的结尾，它们是超文本标记语言文件的开始标记和结尾标记。<br>
+超级文本标记语言文档制作不是很复杂，但功能强大，支持不同数据格式的文件镶入，这也是万维网（www）盛行的原因之一。</p>
+<p>(2)CSS层叠样式表（英文全称：Cascading Style Sheets）是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。<br>
+CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。<br>
+CSS能够对网页中元素位置的排版进行像素级精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力。<br>
+(3)Javascript是一种属于网络的脚本语言，已经被广泛用于Web应用开发，常用来为网页添加各式各样的动态功能，为用户提供更流畅美观的浏览效果。通常Javascript脚本是通过嵌入在HTML中来实现自身的功能的。<br>
+是一种解释性脚本语言（代码不进行预编译）。主要用来向HTML（标准通用标记语言下的一个应用）页面添加交互行为。可以直接嵌入HTML页面，但写成单独的js文件有利于结构和行为的分离。跨平台特性，在绝大多数浏览器的支持下，可以在多种平台下运行（如Windows、Linux、Mac.Android、iOS等）Javascript脚本语言同其他语言一样，有它自身的基本数据类型，表达式和算术运算符及程序的基本程序框架。Javascript提供了四种基本的数据类型和两种特殊数据类型用来处理数据和文字。而变量提供存放信息的地方，表达式则可以完成较复杂的信息处理。</p>
+<h2 id="3-Web页面的总体结构设计">3.Web页面的总体结构设计</h2>
+<p>页面总体效果布局<br>
+页面由首页、文章、归档、标签、友链、关于、搜索、暗黑模式组成。每一个部分下又有其各自的组成部分，例如首页的内容比较丰富，最上方有bing每日一图，可以随着每次刷新，随机调用bing的图片；然后是头像，当鼠标移动到上面之后，会进行一次旋转；还有一些跳转链接，悬浮会有动态变化，并在上方跳出链接是指向什么网站平台；下方左边部分，每一个文章板块，都会带有文章标题、文章发布日期、标签、头像、发布人、阅读按钮和二维码分享选项；右边部分，有一言，bing接口的图像一样，可以随着页面的每次刷新，给出经典的一句话；再往下，分别有标签，这里标签采用了一些动态效果，标签会进行移动，当鼠标悬浮在上面时，标签会停止；音乐方面，调用了网易云网页的链接，点击即可进行播放；天气使用的是心知天气的AIP接口；下方还有合作邮箱和朋友链接。详细布局导图如下图所示。<br>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210902150443.png" alt="图3-1 页面总体布局"></p>
+<p>代码总体布局，以主页面为例，其他页面和主页面代码相差不大<br>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210902150509.png" alt="图3-2 代码总体布局"></p>
+<p>主页面最终效果图<br>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210902150534.png" alt="图3-3 主页面最终效果图"></p>
+<h1>四、Web页面详细设计</h1>
+<h2 id="1-主页面">1.主页面</h2>
+<p>在整体布局上可分为 Header部分，Main部分以及Footer部分。<br>
+主页面的Header部分<br>
+主要分成两大部分，一个是PC端菜单(pc-menu)和移动端菜单(mobile-menu)<br>
+整体的页面样式通过id和class来控制，其中包括搜索框＋菜单栏，整体布局由div --&gt; nav --&gt; ul --li<br>
+示例代码:</p>
+<pre><code class="highlight html"><span class="tag">&lt;<span class="name">header</span> <span class="attr">id</span>=<span class="string">&quot;header&quot;</span>&gt;</span>
+
+    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;pc-menu&quot;</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;Card Card-menu&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-bar&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://YuZhangWang.github.io&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-title&quot;</span>&gt;</span>
+            
+        <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">&quot;menu-main&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-main&quot;</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">ul</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://YuZhangWang.github.io&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/posts&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/archives&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://YuZhangWang.github.io/tags&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/friends&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/post/about&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">ul</span>&gt;</span>
+        <span class="tag">&lt;/<span class="name">nav</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;/search/index.html&quot;</span> <span class="attr">class</span>=<span class="string">&quot;searchform&quot;</span> <span class="attr">data-update</span>=<span class="string">&quot;1599741130898&quot;</span> <span class="attr">id</span>=<span class="string">&quot;gridea-search-form&quot;</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;Card Card-search&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">input</span> <span class="attr">autocomplete</span>=<span class="string">&quot;off&quot;</span> <span class="attr">autofocus</span>=<span class="string">&quot;true&quot;</span> <span class="attr">class</span>=<span class="string">&quot;search-input&quot;</span> <span class="attr">id</span>=<span class="string">&quot;s&quot;</span> <span class="attr">name</span>=<span class="string">&quot;q&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Search...&quot;</span></span>
+<span class="tag">                   <span class="attr">spellcheck</span>=<span class="string">&quot;false&quot;</span>&gt;</span>
+        <span class="tag">&lt;/<span class="name">form</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;mobile-menu&quot;</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;/search/index.html&quot;</span> <span class="attr">class</span>=<span class="string">&quot;mobile-searchform&quot;</span> <span class="attr">data-update</span>=<span class="string">&quot;1599741130898&quot;</span> <span class="attr">id</span>=<span class="string">&quot;gridea-search-form&quot;</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;Card Card-search&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">input</span> <span class="attr">autocomplete</span>=<span class="string">&quot;off&quot;</span> <span class="attr">autofocus</span>=<span class="string">&quot;true&quot;</span> <span class="attr">class</span>=<span class="string">&quot;search-input&quot;</span> <span class="attr">id</span>=<span class="string">&quot;s&quot;</span> <span class="attr">name</span>=<span class="string">&quot;q&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Search...&quot;</span></span>
+<span class="tag">                   <span class="attr">spellcheck</span>=<span class="string">&quot;false&quot;</span>&gt;</span>
+        <span class="tag">&lt;/<span class="name">form</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">&quot;menu&quot;</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">ul</span> <span class="attr">style</span>=<span class="string">&quot;list-style: none;&quot;</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;page_item page-item-2&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://YuZhangWang.github.io&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;page_item page-item-2&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/posts&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;page_item page-item-2&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/archives&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;page_item page-item-2&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://YuZhangWang.github.io/tags&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;page_item page-item-2&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/friends&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;page_item page-item-2&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/post/about&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">ul</span>&gt;</span>
+        <span class="tag">&lt;/<span class="name">nav</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;theme-btn&quot;</span> <span class="attr">id</span>=<span class="string">&quot;theme-btn&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;App.changeTheme()&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;Card Card-moon&quot;</span> <span class="attr">id</span>=<span class="string">&quot;themeIcon&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">header</span>&gt;</span></code></pre>
+<h3 id="主页面的Main部分">主页面的Main部分</h3>
+<p>整体分成三大部分，usercard部分、Main-part部分和sidebar部分。usercard部分也就是属于自我介绍的部分，居三大部分的上首，而main-part部分承担着显示文章列表的作用。sidebar部分也就是所谓的侧边栏，来显示一言、天气、友链、标签云、音乐和合作邮箱的显示。在Main部分的整体上，采用<li class=”lite-item”><li>的方式添加一个卡片或者块的方式来显示内容，以此来达到，减少重复性代码，和便于后期维护代码<br>
+其中一言的api,调用的是https://v1.hitokoto.cn网站上的接口，具体实现方法如下:</p>
+<pre><code class="highlight JavaScript"><span class="keyword">function</span> <span class="title function_">getHitokoto</span>(<span class="params"></span>) &#123;
+            <span class="keyword">var</span> xhr = <span class="keyword">new</span> <span class="title class_">XMLHttpRequest</span>();<span class="comment">//新建一个xhr对象</span>
+            xhr.<span class="title function_">open</span>(<span class="string">&#x27;get&#x27;</span>, <span class="string">&#x27;https://v1.hitokoto.cn&#x27;</span>);<span class="comment">//打开https://v1.hitokoto.cn</span>
+            xhr.<span class="property">onreadystatechange</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;
+                <span class="keyword">if</span> (xhr.<span class="property">readyState</span> == <span class="number">4</span>) &#123;   <span class="comment">//如果加载成功</span>
+                    <span class="keyword">var</span> typed = <span class="keyword">new</span> <span class="title class_">Typed</span>(<span class="string">&quot;#hitokoto&quot;</span>, &#123;
+                        <span class="attr">strings</span>: [<span class="title class_">JSON</span>.<span class="title function_">parse</span>(xhr.<span class="property">responseText</span>).<span class="property">hitokoto</span>],  <span class="comment">//解析Json格式的数据</span>
+                        <span class="attr">startDelay</span>: <span class="number">100</span>,
+                        <span class="attr">typeSpeed</span>: <span class="number">200</span>,
+                        <span class="attr">loop</span>: <span class="literal">true</span>,
+                        <span class="attr">backSpeed</span>: <span class="number">100</span>,
+                        <span class="attr">showCursor</span>: <span class="literal">true</span>
+                    &#125;);
+                &#125;
+            &#125;
+            xhr.<span class="title function_">send</span>();
+        &#125;</code></pre>
+<p>天气功能的实现，调用的是心知天气的api，具体代码如下:</p>
+<pre><code class="highlight JavaScript"><span class="keyword">function</span> (<span class="params"></span>) &#123; <span class="comment">//代码来源心知天气示例代码</span>
+        (<span class="keyword">function</span> (<span class="params">a, h, g, f, e, d, c, b</span>) &#123;
+            b = <span class="keyword">function</span> (<span class="params"></span>) &#123;
+                d = h.<span class="title function_">createElement</span>(g);
+                c = h.<span class="title function_">getElementsByTagName</span>(g)[<span class="number">0</span>];
+                d.<span class="property">src</span> = e;
+                d.<span class="property">charset</span> = <span class="string">&quot;utf-8&quot;</span>;
+                d.<span class="property">async</span> = <span class="number">1</span>;
+                c.<span class="property">parentNode</span>.<span class="title function_">insertBefore</span>(d, c)
+            &#125;;
+            a[<span class="string">&quot;SeniverseWeatherWidgetObject&quot;</span>] = f;
+            a[f] || (a[f] = <span class="keyword">function</span> (<span class="params"></span>) &#123;
+                (a[f].<span class="property">q</span> = a[f].<span class="property">q</span> || []).<span class="title function_">push</span>(<span class="variable language_">arguments</span>)
+            &#125;);
+            a[f].<span class="property">l</span> = +<span class="keyword">new</span> <span class="title class_">Date</span>();
+            <span class="keyword">if</span> (a.<span class="property">attachEvent</span>) &#123;
+                a.<span class="title function_">attachEvent</span>(<span class="string">&quot;onload&quot;</span>, b)
+            &#125; <span class="keyword">else</span> &#123;
+                a.<span class="title function_">addEventListener</span>(<span class="string">&quot;load&quot;</span>, b, <span class="literal">false</span>)
+            &#125;
+        &#125;(<span class="variable language_">window</span>, <span class="variable language_">document</span>, <span class="string">&quot;script&quot;</span>, <span class="string">&quot;SeniverseWeatherWidget&quot;</span>, <span class="string">&quot;//cdn.sencdn.com/widget2/static/js/bundle.js?t=&quot;</span> + <span class="built_in">parseInt</span>((<span class="keyword">new</span> <span class="title class_">Date</span>().<span class="title function_">getTime</span>() / <span class="number">100000000</span>).<span class="title function_">toString</span>(), <span class="number">10</span>)));
+        <span class="variable language_">window</span>.<span class="title class_">SeniverseWeatherWidget</span>(<span class="string">&#x27;show&#x27;</span>, &#123;
+            <span class="attr">flavor</span>: <span class="string">&quot;slim&quot;</span>,
+            <span class="attr">location</span>: <span class="string">&quot;WWEFQFPJZ7T8&quot;</span>,
+            <span class="attr">geolocation</span>: <span class="literal">true</span>,
+            <span class="attr">language</span>: <span class="string">&quot;auto&quot;</span>,
+            <span class="attr">unit</span>: <span class="string">&quot;c&quot;</span>,
+            <span class="attr">theme</span>: <span class="string">&quot;auto&quot;</span>,
+            <span class="attr">token</span>: <span class="string">&quot;61bcc333-3305-4728-9465-6785274bb0a3&quot;</span>,/这里填写自己的 t o k e n 
+            <span class="attr">hover</span>: <span class="string">&quot;enabled&quot;</span>,
+            <span class="attr">container</span>: <span class="string">&quot;tp-weather-widget&quot;</span>
+        &#125;)
+    &#125;</code></pre>
+<p>友链部分的实现，具体代码如下:</p>
+<pre><code class="highlight JavaScript">    &lt;li <span class="keyword">class</span>=<span class="string">&quot;lite-item&quot;</span>&gt;
+                    <span class="language-xml"><span class="tag">&lt;<span class="name">header</span> <span class="attr">class</span>=<span class="string">&quot;lite-item-header&quot;</span>&gt;</span></span>
+<span class="language-xml">                        <span class="tag">&lt;<span class="name">h3</span> <span class="attr">class</span>=<span class="string">&quot;lite-item-title&quot;</span>&gt;</span><span class="symbol">&amp;#x1F468;</span><span class="symbol">&amp;#x200D;</span><span class="symbol">&amp;#x1F4BB;</span><span class="symbol">&amp;#x53CB;</span><span class="symbol">&amp;#x94FE;</span><span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span>
+<span class="language-xml">                    <span class="tag">&lt;/<span class="name">header</span>&gt;</span></span>
+                    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;textwidget&quot;</span>&gt;</span></span>
+<span class="language-xml">                        <span class="tag">&lt;<span class="name">p</span> <span class="attr">onclick</span>=<span class="string">&quot;javascript:top.location=&#x27;http://8.210.6.78/&#x27;&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;link_a&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span></span></span>
+<span class="tag"><span class="language-xml">                                <span class="attr">alt</span>=<span class="string">&quot;TIM TIAN的个人博客 &quot;</span> <span class="attr">href</span>=<span class="string">&quot;http://8.210.6.78/&quot;</span>&gt;</span>TIM TIAN的个人博客 -点滴之恩，涌泉相报<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span>
+<span class="language-xml">                        <span class="tag">&lt;<span class="name">p</span> <span class="attr">onclick</span>=<span class="string">&quot;javascript:top.location=&#x27;https://libandhhh.github.io/&#x27;&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;link_a&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span></span></span>
+<span class="tag"><span class="language-xml">                                <span class="attr">alt</span>=<span class="string">&quot;人生小谈 &quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://libandhhh.github.io/&quot;</span>&gt;</span>人生小谈 -人生小谈<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span>
+<span class="language-xml">                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>
+                &lt;/li&gt;
+标签云代码的实现，采用了<span class="title class_">JQuery</span>中的组件svg3dtagcloud。具体实现代码如下:
+<span class="string">``</span><span class="string">` JavaScript</span>
+<span class="string">&lt;div class=&quot;textwidget&quot;&gt;</span>
+<span class="string">                        &lt;div id=&#x27;tags&#x27; style=&quot;height: auto;width: 360;&quot;&gt;&lt;/div&gt;</span>
+<span class="string">                        &lt;script src=&quot;https://YuZhangWang.github.io/media/js/svg3dtagcloud.min.js&quot;&gt;&lt;/script&gt;</span>
+<span class="string">                        &lt;script&gt;</span>
+<span class="string">                            $(document).ready(function () &#123;//在页面加载时执行</span>
+<span class="string">            //新建一个实体</span>
+<span class="string">                                var entries = ([</span>
+<span class="string"></span>
+<span class="string">                                    &#123;</span>
+<span class="string">                                        label: &#x27;&#x27;,</span>
+<span class="string">                                        url: &#x27;https://YuZhangWang.github.io/tag/g2OThi30W/&#x27;,</span>
+<span class="string">                                        target: &#x27;_button&#x27;</span>
+<span class="string">                                    &#125;,</span>
+<span class="string">                                    &#123;</span>
+<span class="string">                                        label: &#x27;&#x27;,</span>
+<span class="string">                                        url: &#x27;https://YuZhangWang.github.io/tag/YkaIySj74c/&#x27;,</span>
+<span class="string">                                        target: &#x27;_button&#x27;</span>
+<span class="string">                                    &#125;,</span>
+<span class="string"></span>
+<span class="string">                                    &#123;</span>
+<span class="string">                                        label: &#x27;&#x27;,</span>
+<span class="string">                                        url: &#x27;https://YuZhangWang.github.io/tag/cZAQUJL4K/&#x27;,</span>
+<span class="string">                                        target: &#x27;_button&#x27;</span>
+<span class="string">                                    &#125;,</span>
+<span class="string">                                    &#123;</span>
+<span class="string">                                        label: &#x27;&#x27;,</span>
+<span class="string">                                        url: &#x27;https://YuZhangWang.github.io/tag/Ru1gggYOwL/&#x27;,</span>
+<span class="string">                                        target: &#x27;_button&#x27;</span>
+<span class="string">                                    &#125;,</span>
+<span class="string">                                    &#123;</span>
+<span class="string">                                        label: &#x27;&#x27;,</span>
+<span class="string">                                        url: &#x27;https://YuZhangWang.github.io/tag/JC2eYnJ5u/&#x27;,</span>
+<span class="string">                                        target: &#x27;_button&#x27;</span>
+<span class="string">                                    &#125;,</span>
+<span class="string">                                    &#123;</span>
+<span class="string">                                        label: &#x27;&#x27;,</span>
+<span class="string">                                        url: &#x27;https://YuZhangWang.github.io/tag/yJTwqsoBr/&#x27;,</span>
+<span class="string">                                        target: &#x27;_button&#x27;</span>
+<span class="string">                                    &#125;,</span>
+<span class="string">                                    &#123;</span>
+<span class="string">                                        label: &#x27;&#x27;,</span>
+<span class="string">                                        url: &#x27;https://YuZhangWang.github.io/tag/dopWVAXWp/&#x27;,</span>
+<span class="string">                                        target: &#x27;_button&#x27;</span>
+<span class="string">                                    &#125;,</span>
+<span class="string">                                    &#123;</span>
+<span class="string">                                        label: &#x27;&#x27;,</span>
+<span class="string">                                        url: &#x27;https://YuZhangWang.github.io/tag/nVt_3FFtf/&#x27;,</span>
+<span class="string">                                        target: &#x27;_button&#x27;</span>
+<span class="string">                                    &#125;,</span>
+<span class="string">                                    &#123;</span>
+<span class="string">                                        label: &#x27;&#x27;,</span>
+<span class="string">                                        url: &#x27;https://YuZhangWang.github.io/tag/CtEU7_FnA/&#x27;,</span>
+<span class="string">                                        target: &#x27;_button&#x27;</span>
+<span class="string">                                    &#125;,</span>
+<span class="string">                                    &#123;</span>
+<span class="string">                                        label: &#x27;&#x27;,</span>
+<span class="string">                                        url: &#x27;https://YuZhangWang.github.io/tag/zhgRe1hYZ/&#x27;,</span>
+<span class="string">                                        target: &#x27;_button&#x27;</span>
+<span class="string">                                    &#125;</span>
+<span class="string">                                ]);</span>
+<span class="string">                                var settings = &#123;</span>
+<span class="string">                                    entries: entries, //数据</span>
+<span class="string">                                    width: 300, //宽度</span>
+<span class="string">                                    height: 300, //高度</span>
+<span class="string">                                    radius: &#x27;50%&#x27;,</span>
+<span class="string">                                    radiusMin: 50,</span>
+<span class="string">                                    bgDraw: false, //是否显示背景</span>
+<span class="string">                                    bgColor: &#x27;#fff&#x27;, //背景颜色</span>
+<span class="string">                                    opacityOver: 1.00,</span>
+<span class="string">                                    opacityOut: 0.05,</span>
+<span class="string">                                    opacitySpeed: 6,</span>
+<span class="string">                                    fov: 360,</span>
+<span class="string">                                    speed: 0.3, //旋转的速度</span>
+<span class="string">                                    fontFamily: &#x27;Oswald, Arial, sans-serif&#x27;,</span>
+<span class="string">                                    fontSize: &#x27;18&#x27;, //默认字体大小</span>
+<span class="string">                                    fontColor: &#x27;#666&#x27;, //默认字体颜色</span>
+<span class="string">                                    fontWeight: &#x27;normal&#x27;, //bold</span>
+<span class="string">                                    fontStyle: &#x27;normal&#x27;, // italic </span>
+<span class="string">                                    fontStretch: &#x27;normal&#x27;, //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded</span>
+<span class="string">                                    fontToUpperCase: true,</span>
+<span class="string">                                    tooltipFontFamily: &#x27;Oswald, Arial, sans-serif&#x27;,</span>
+<span class="string">                                    tooltipFontSize: &#x27;16&#x27;,</span>
+<span class="string">                                    tooltipFontColor: &#x27;red&#x27;,</span>
+<span class="string">                                    tooltipFontWeight: &#x27;normal&#x27;, //bold</span>
+<span class="string">                                    tooltipFontStyle: &#x27;normal&#x27;, //italic </span>
+<span class="string">                                    tooltipFontStretch: &#x27;normal&#x27;, //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded</span>
+<span class="string">                                    tooltipFontToUpperCase: false,</span>
+<span class="string">                                    tooltipTextAnchor: &#x27;left&#x27;,</span>
+<span class="string">                                    tooltipDiffX: 0,</span>
+<span class="string">                                    tooltipDiffY: 5</span>
+<span class="string">                                &#125;;</span>
+<span class="string">                                //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( &#x27;holder&#x27;  ), settings );</span>
+<span class="string">                                $(&#x27;#tags&#x27;).svg3DTagCloud(settings);</span>
+<span class="string">                            &#125;);</span>
+<span class="string">                        &lt;/script&gt;</span>
+<span class="string">                    &lt;/div&gt;</span></code></pre>
+<p>音乐部分的实现，采用了Aplayer Js的引用，根据官方文档的使用方法，最终代码如下:</p>
+<pre><code class="highlight JavaScript">&lt;script src=<span class="string">&quot;https://gcore.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/APlayer.min.js&quot;</span>&gt;&lt;/script&gt;
+                <span class="language-xml"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;https://gcore.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>&gt;</span></span>
+<span class="language-xml">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;player&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>
+<span class="language-xml"></span>
+<span class="language-xml">                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;lite-item&quot;</span>&gt;</span></span>
+<span class="language-xml">                    <span class="tag">&lt;<span class="name">header</span> <span class="attr">class</span>=<span class="string">&quot;lite-item-header&quot;</span>&gt;</span></span>
+<span class="language-xml">                        <span class="tag">&lt;<span class="name">h3</span> <span class="attr">class</span>=<span class="string">&quot;lite-item-title&quot;</span>&gt;</span></span>
+<span class="language-xml">                            <span class="symbol">&amp;#x1F3B5;</span><span class="symbol">&amp;#x97F3;</span><span class="symbol">&amp;#x4E50;</span></span>
+<span class="language-xml">                        <span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span>
+<span class="language-xml">                    <span class="tag">&lt;/<span class="name">header</span>&gt;</span></span>
+<span class="language-xml">                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;textwidget&quot;</span>&gt;</span></span>
+<span class="language-xml">                        <span class="tag">&lt;<span class="name">p</span>&gt;</span></span>
+<span class="language-xml">                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;playerbox&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>
+<span class="language-xml">                        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span>
+<span class="language-xml">                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>
+<span class="language-xml">                <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span>
+<span class="language-xml">                <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span>
+<span class="language-javascript"><span class="language-xml">                    <span class="keyword">function</span> <span class="title function_">LoadPlayer</span>(<span class="params"></span>) &#123;<span class="comment">//加载播放器函数</span></span></span>
+<span class="language-javascript"><span class="language-xml">                        <span class="keyword">var</span> music_array = [];</span></span>
+<span class="language-javascript"><span class="language-xml">                        music_array.<span class="title function_">push</span>(&#123;</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">name</span>: <span class="string">&#x27;高潔なる教皇&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">url</span>: <span class="string">&#x27;http://music.163.com/song/media/outer/url?id=30482372.mp3&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">artist</span>: <span class="string">&#x27;菅野祐悟&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">cover</span>: <span class="string">&#x27;http://p2.music.126.net/S3liZdT3hhoNjIyXdmYAxA==/7873602766692554.jpg?param=130y130&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                        &#125;);</span></span>
+<span class="language-javascript"><span class="language-xml">                        music_array.<span class="title function_">push</span>(&#123;</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">name</span>: <span class="string">&#x27;像我这样的人&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">url</span>: <span class="string">&#x27;http://music.163.com/song/media/outer/url?id=569213220.mp3&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">artist</span>: <span class="string">&#x27;毛不易&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">cover</span>: <span class="string">&#x27;http://p2.music.126.net/vmCcDvD1H04e9gm97xsCqg==/109951163350929740.jpg?param=130y130&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                        &#125;);</span></span>
+<span class="language-javascript"><span class="language-xml">                        music_array.<span class="title function_">push</span>(&#123;</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">name</span>: <span class="string">&#x27;红黑&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">url</span>: <span class="string">&#x27;http://music.163.com/song/media/outer/url?id=1378992201.mp3&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">artist</span>: <span class="string">&#x27;小星星Aurora&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">cover</span>: <span class="string">&#x27;http://p1.music.126.net/1ptq1PGigEuUf1fY8CNazA==/109951164225342779.jpg?param=130y130&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                        &#125;);</span></span>
+<span class="language-javascript"><span class="language-xml">                        music_array.<span class="title function_">push</span>(&#123;</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">name</span>: <span class="string">&#x27;没有理由&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">url</span>: <span class="string">&#x27;http://music.163.com/song/media/outer/url?id=550138197.mp3&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">artist</span>: <span class="string">&#x27;永彬Ryan.B/周延英（英子-effie）&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">cover</span>: <span class="string">&#x27;http://p1.music.126.net/VAux0wpbTJz6timFFHVgLQ==/109951163237307291.jpg?param=130y130&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                        &#125;);</span></span>
+<span class="language-javascript"><span class="language-xml">                        music_array.<span class="title function_">push</span>(&#123;</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">name</span>: <span class="string">&#x27;il vento d&amp;#39;oro（JOJO的奇妙冒险第五部黄金之风 主题处刑BGM）（翻自 菅野佑悟）&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">url</span>: <span class="string">&#x27;http://music.163.com/song/media/outer/url?id=1311263606.mp3&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">artist</span>: <span class="string">&#x27;Kyle Xian&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">cover</span>: <span class="string">&#x27;http://p1.music.126.net/ttrv98op6Mer9W1hydwKZw==/109951163558951996.jpg?param=130y130&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                        &#125;);</span></span>
+<span class="language-javascript"><span class="language-xml">                        music_array.<span class="title function_">push</span>(&#123;</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">name</span>: <span class="string">&#x27;下山&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">url</span>: <span class="string">&#x27;http://music.163.com/song/media/outer/url?id=1404885266.mp3&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">artist</span>: <span class="string">&#x27;要不要买菜&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">cover</span>: <span class="string">&#x27;http://p2.music.126.net/Aj4X1kpV-C2LLi-e_Xhgvg==/109951164499744148.jpg?param=130y130&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                        &#125;);</span></span>
+<span class="language-javascript"><span class="language-xml">                        music_array.<span class="title function_">push</span>(&#123;</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">name</span>: <span class="string">&#x27;Android&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">url</span>: <span class="string">&#x27;http://music.163.com/song/media/outer/url?id=27949350.mp3&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">artist</span>: <span class="string">&#x27;Kraddy&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">cover</span>: <span class="string">&#x27;http://p2.music.126.net/7RF7JaeN7-CfMe2gosMehw==/109951163926995920.jpg?param=130y130&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                        &#125;);</span></span>
+<span class="language-javascript"><span class="language-xml">                        <span class="keyword">const</span> ap = <span class="keyword">new</span> <span class="title class_">APlayer</span>(&#123;</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">container</span>: <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;playerbox&#x27;</span>),</span></span>
+<span class="language-javascript"><span class="language-xml">                            <span class="attr">audio</span>: music_array</span></span>
+<span class="language-javascript"><span class="language-xml">                        &#125;);</span></span>
+<span class="language-javascript"><span class="language-xml">                    &#125;</span></span>
+<span class="language-javascript"><span class="language-xml">                    <span class="title class_">LoadPlayer</span>();</span></span>
+<span class="language-javascript"><span class="language-xml">                </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></code></pre>
+<p>合作邮箱的实现,在前面已经说到，整体使用<li class=”lite-item”><li>的方式添加显示块，因此，代码如下:</p>
+<pre><code class="highlight JavaScript">&lt;li <span class="keyword">class</span>=<span class="string">&quot;lite-item&quot;</span>&gt;
+                   <span class="language-xml"><span class="tag">&lt;<span class="name">header</span> <span class="attr">class</span>=<span class="string">&quot;lite-item-header&quot;</span>&gt;</span></span>
+<span class="language-xml">                       <span class="tag">&lt;<span class="name">h3</span> <span class="attr">class</span>=<span class="string">&quot;lite-item-title&quot;</span>&gt;</span></span>
+<span class="language-xml">                           合作邮箱(快来联系我！！！)</span>
+<span class="language-xml">                       <span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span>
+<span class="language-xml">                   <span class="tag">&lt;/<span class="name">header</span>&gt;</span></span>
+                   <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;textwidget&quot;</span>&gt;</span></span>
+<span class="language-xml">                       <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;textwidget-box&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width:100%; height:auto;&quot;</span>&gt;</span></span>
+<span class="language-xml">                           YuZhangWang233@163.com</span>
+<span class="language-xml">                       <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>
+<span class="language-xml">                   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>
+               &lt;/li&gt;</code></pre>
+<h3 id="主页面的footer部分">主页面的footer部分</h3>
+<p>在footer部分中，有三个部分构成：备案号，页面访问量及建站时间，版权信息显示，整体布局自上而下。因此实现代码简单，整体代码如下:</p>
+<pre><code class="highlight html">div class=&quot;copyright&quot;&gt;
+
+        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;width:300px;margin:0 auto; padding:0px 0;&quot;</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=没有号&quot;</span></span>
+<span class="tag">               <span class="attr">style</span>=<span class="string">&quot;display:inline-block;text-decoration:none;height:20px;line-height:20px;&quot;</span></span>
+<span class="tag">               <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://yanxuan.nosdn.127.net/b610ced5ac6a0e25cf6edf5606c69775.png&quot;</span> <span class="attr">style</span>=<span class="string">&quot;float:left;&quot;</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;icpinfo&quot;</span> <span class="attr">style</span>=<span class="string">&quot;float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;&quot;</span>&gt;</span>
+                    苏公网安备 没有号
+                <span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;font-size:12px&quot;</span>&gt;</span>
+            访问量:
+            <span class="tag">&lt;<span class="name">span</span> <span class="attr">data-hk-page</span>=<span class="string">&quot;current&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="symbol">&amp;nbsp;</span>
+            已经建站 <span class="tag">&lt;<span class="name">b</span> <span class="attr">id</span>=<span class="string">&#x27;build_time&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">b</span>&gt;</span>
+        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://gcore.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/time.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span>
+<span class="language-javascript">            buildTime = <span class="string">&#x27;2020-5-13&#x27;</span></span>
+<span class="language-javascript">            <span class="built_in">setInterval</span>(show_date_time, <span class="number">1000</span>, buildTime);</span>
+<span class="language-javascript">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+        <span class="symbol">&amp;#x7248;</span><span class="symbol">&amp;#x6743;</span><span class="symbol">&amp;#x6240;</span><span class="symbol">&amp;#x6709;</span> <span class="symbol">&amp;copy;</span>
+        <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span>
+<span class="language-javascript">            <span class="keyword">var</span> date = <span class="keyword">new</span> <span class="title class_">Date</span>(); <span class="comment">// 新建一个Date()对象</span></span>
+<span class="language-javascript">            data2 = <span class="keyword">new</span> <span class="title class_">Date</span>(buildTime.<span class="title function_">replace</span>(<span class="regexp">/-/g</span>, <span class="string">&quot;/&quot;</span>));<span class="comment">//将-替换成/ 的时间格式</span></span>
+<span class="language-javascript">            nowYear = date.<span class="title function_">getFullYear</span>().<span class="title function_">toString</span>() <span class="comment">//获取今年年份</span></span>
+<span class="language-javascript">            buildYear = data2.<span class="title function_">getFullYear</span>().<span class="title function_">toString</span>(); <span class="comment">//获取建立年份</span></span>
+<span class="language-javascript">            <span class="keyword">if</span> (buildYear == nowYear) &#123;   <span class="comment">// DOM操作</span></span>
+<span class="language-javascript">                <span class="variable language_">document</span>.<span class="title function_">write</span>(<span class="string">&#x27;&lt;span class=&quot;my-face&quot;&gt;&#x27;</span> + nowYear + <span class="string">&#x27;&lt;/span&gt;&#x27;</span>);</span>
+<span class="language-javascript">            &#125; <span class="keyword">else</span> &#123;</span>
+<span class="language-javascript">                <span class="variable language_">document</span>.<span class="title function_">write</span>(buildYear + <span class="string">&#x27;-&lt;span class=&quot;my-face&quot;&gt;&#x27;</span> + nowYear + <span class="string">&#x27;&lt;/span&gt;&#x27;</span>);</span>
+<span class="language-javascript">            &#125;</span>
+<span class="language-javascript">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://YuZhangWang.github.io&quot;</span>&gt;</span>
+            
+        <span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="symbol">&amp;nbsp;</span>|<span class="symbol">&amp;nbsp;</span>Powered by
+        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://github.com/YuZhangWang/YuZhangWang.github.io&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>
+            Github
+        <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span>
+<span class="language-javascript">        <span class="keyword">let</span> back2TopText = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.back-to-top-text&#x27;</span>)</span>
+<span class="language-javascript">    <span class="comment">//增加个事件，监听滚动</span></span>
+<span class="language-javascript">        <span class="variable language_">window</span>.<span class="title function_">addEventListener</span>(<span class="string">&#x27;scroll&#x27;</span>, <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span>
+<span class="language-javascript">            <span class="keyword">let</span> percent = <span class="variable language_">document</span>.<span class="property">scrollingElement</span>.<span class="property">scrollTop</span> / (<span class="variable language_">document</span>.<span class="property">scrollingElement</span>.<span class="property">scrollHeight</span> - <span class="variable language_">document</span>.<span class="property">scrollingElement</span>.<span class="property">clientHeight</span>) * <span class="number">100</span>;</span>
+<span class="language-javascript">            <span class="keyword">if</span> (back2TopText) &#123;</span>
+<span class="language-javascript">                back2TopText.<span class="property">textContent</span> = <span class="title class_">Math</span>.<span class="title function_">floor</span>(percent).<span class="title function_">toString</span>() + <span class="string">&#x27;%&#x27;</span>;</span>
+<span class="language-javascript">            &#125;</span>
+<span class="language-javascript">        &#125;);</span>
+<span class="language-javascript">        <span class="keyword">var</span> titleTime;</span>
+<span class="language-javascript">    <span class="comment">//增加个事件监听，页面是否被选中</span></span>
+<span class="language-javascript">        <span class="variable language_">document</span>.<span class="title function_">addEventListener</span>(<span class="string">&quot;visibilitychange&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span>
+<span class="language-javascript">            <span class="variable language_">document</span>.<span class="property">hidden</span> ? (<span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">&quot;\uD83D\uDE25&quot;</span> + <span class="title class_">OriginTitile</span>, <span class="built_in">clearTimeout</span>(titleTime)) : (<span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">&quot;\uD83D\uDE1D&quot;</span> + <span class="title class_">OriginTitile</span>, titleTime = <span class="built_in">setTimeout</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span>
+<span class="language-javascript">                <span class="variable language_">document</span>.<span class="property">title</span> = <span class="title class_">OriginTitile</span></span>
+<span class="language-javascript">            &#125;, <span class="number">2E3</span>))</span>
+<span class="language-javascript">        &#125;);</span>
+<span class="language-javascript">        <span class="keyword">var</span> <span class="title class_">OriginTitile</span> = <span class="variable language_">document</span>.<span class="property">title</span>;</span>
+<span class="language-javascript">        <span class="title class_">App</span>.<span class="title function_">hitokoto</span>();<span class="comment">// 执行一言函数</span></span>
+<span class="language-javascript">        <span class="title class_">App</span>.<span class="title function_">clearLog</span>(); <span class="comment">//清空控制台输出</span></span>
+<span class="language-javascript">        <span class="title class_">App</span>.<span class="title function_">outputlog</span>();<span class="comment">//输出B l o g 标识</span></span>
+<span class="language-javascript">        <span class="keyword">var</span> logo = <span class="string">&#x27;%c\&#x27;%cBlog&#x27;</span>;</span>
+<span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">info</span>(</span>
+<span class="language-javascript">            logo,</span>
+<span class="language-javascript">            <span class="string">&#x27;color: #ffffff; background: #000000; padding:5px 10px 5px 10px;font-size:40px;border-radius:12px 0 0 12px;&#x27;</span>, <span class="string">&#x27;color: #000000; background: #FE9A00; padding:5px 10px;font-size:40px;border-radius:0 12px 12px 0;&#x27;</span></span>
+<span class="language-javascript">        );</span>
+<span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">footer</span>&gt;</span></code></pre>
+<h2 id="2-子页面">2.子页面</h2>
+<p>选取其中一个特例，文章页面，其他的页面与这个页面显示的方式类同，均为一个模板。<br>
+文章页面：<br>
+通过最终效果得知，在整体布局上可分为 H e a d e r部分，M a i n部分以及F o o t e r部分。<br>
+文章页面的Header部分<br>
+主要分成两大部分，一个是P C端菜单(p c - m e n u)和移动端菜单(mobile-menu)<br>
+整体的页面样式通过i d和c l a s s来控制<br>
+其中包括搜索框＋菜单栏，整体布局由div --&gt; nav --&gt; ul --li<br>
+示例代码:</p>
+<pre><code class="highlight html"><span class="tag">&lt;<span class="name">header</span> <span class="attr">id</span>=<span class="string">&quot;header&quot;</span>&gt;</span>
+
+    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;pc-menu&quot;</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;Card Card-menu&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-bar&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://YuZhangWang.github.io&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-title&quot;</span>&gt;</span>
+            
+        <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">&quot;menu-main&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-main&quot;</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">ul</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://YuZhangWang.github.io&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/posts&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/archives&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://YuZhangWang.github.io/tags&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/friends&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;menu-item&quot;</span> <span class="attr">id</span>=<span class="string">&quot;menu-item&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/post/about&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">ul</span>&gt;</span>
+        <span class="tag">&lt;/<span class="name">nav</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;/search/index.html&quot;</span> <span class="attr">class</span>=<span class="string">&quot;searchform&quot;</span> <span class="attr">data-update</span>=<span class="string">&quot;1599741130898&quot;</span> <span class="attr">id</span>=<span class="string">&quot;gridea-search-form&quot;</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;Card Card-search&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">input</span> <span class="attr">autocomplete</span>=<span class="string">&quot;off&quot;</span> <span class="attr">autofocus</span>=<span class="string">&quot;true&quot;</span> <span class="attr">class</span>=<span class="string">&quot;search-input&quot;</span> <span class="attr">id</span>=<span class="string">&quot;s&quot;</span> <span class="attr">name</span>=<span class="string">&quot;q&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Search...&quot;</span></span>
+<span class="tag">                   <span class="attr">spellcheck</span>=<span class="string">&quot;false&quot;</span>&gt;</span>
+        <span class="tag">&lt;/<span class="name">form</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;mobile-menu&quot;</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;/search/index.html&quot;</span> <span class="attr">class</span>=<span class="string">&quot;mobile-searchform&quot;</span> <span class="attr">data-update</span>=<span class="string">&quot;1599741130898&quot;</span> <span class="attr">id</span>=<span class="string">&quot;gridea-search-form&quot;</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;Card Card-search&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">input</span> <span class="attr">autocomplete</span>=<span class="string">&quot;off&quot;</span> <span class="attr">autofocus</span>=<span class="string">&quot;true&quot;</span> <span class="attr">class</span>=<span class="string">&quot;search-input&quot;</span> <span class="attr">id</span>=<span class="string">&quot;s&quot;</span> <span class="attr">name</span>=<span class="string">&quot;q&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Search...&quot;</span></span>
+<span class="tag">                   <span class="attr">spellcheck</span>=<span class="string">&quot;false&quot;</span>&gt;</span>
+        <span class="tag">&lt;/<span class="name">form</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">&quot;menu&quot;</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">ul</span> <span class="attr">style</span>=<span class="string">&quot;list-style: none;&quot;</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;page_item page-item-2&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://YuZhangWang.github.io&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;page_item page-item-2&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/posts&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;page_item page-item-2&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/archives&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;page_item page-item-2&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://YuZhangWang.github.io/tags&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;page_item page-item-2&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/friends&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;page_item page-item-2&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/post/about&quot;</span>&gt;</span>
+                        
+                    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">ul</span>&gt;</span>
+        <span class="tag">&lt;/<span class="name">nav</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;theme-btn&quot;</span> <span class="attr">id</span>=<span class="string">&quot;theme-btn&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;App.changeTheme()&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;Card Card-moon&quot;</span> <span class="attr">id</span>=<span class="string">&quot;themeIcon&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="comment">&lt;!--将改变主题的函数change Theme() 赋值给 theme - btn 的onclick事件--&gt;</span>
+<span class="tag">&lt;/<span class="name">header</span>&gt;</span></code></pre>
+<h3 id="文章页面的Main部分">文章页面的Main部分</h3>
+<p>如同主页面一样，类lite-item 从中构成显示文章的部分。布局的结构由 <div id=”main”> --&gt; <div id=”main-part”> --&gt;<div class=”lite-item”> --&gt; <article>。其中在该部分，我们通过最终效果得知，已有三大部分构成，post-header,post-body，post-footer所构成。<br>
+Post-header部分<br>
+作者，发表日期，作者的头像，文章的标题，文章的标签，文章的阅读量，文章阅读的所需时间这几个部分构成。其中显示的图标svg，均来自阿里矢量图。<br>
+因此具体代码如下:</p>
+<pre><code class="highlight html"><span class="tag">&lt;<span class="name">header</span> <span class="attr">class</span>=<span class="string">&quot;post-type-header&quot;</span>&gt;</span>
+
+                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;thumbnail-link&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background-color: transparent;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;thumbnail-shadow&quot;</span>&gt;</span>
+                        <span class="tag">&lt;<span class="name">h1</span> <span class="attr">class</span>=<span class="string">&quot;post-title&quot;</span>&gt;</span>
+                            在list中正序和倒序删除元素区别
+                        <span class="tag">&lt;/<span class="name">h1</span>&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post-info&quot;</span>&gt;</span>
+                                                <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;post-category&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;Card Card-novel&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>
+                                        
+                                            <span class="tag">&lt;<span class="name">span</span> <span class="attr">onclick</span>=<span class="string">&quot;javascript:top.location=&#x27;https://YuZhangWang.github.io/tag/yJTwqsoBr/&#x27;&quot;</span>&gt;</span>Java<span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+                                                
+                                                    <span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;post-view&quot;</span>&gt;</span>
+                                                    
+                                                        <span class="symbol">&amp;nbsp;</span>•<span class="symbol">&amp;nbsp;</span>
+                                                    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;leancloud_visitors&quot;</span></span>
+<span class="tag">                                                          <span class="attr">data-flag-title</span>=<span class="string">&quot;在list中正序和倒序删除元素区别&quot;</span></span>
+<span class="tag">                                                          <span class="attr">id</span>=<span class="string">&quot;/post/zai-list-zhong-zheng-xu-he-dao-xu-shan-chu-yuan-su-qu-bie/&quot;</span>&gt;</span>
+                                                <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;Card Card-view&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="symbol">&amp;nbsp;</span>阅读量<span class="symbol">&amp;nbsp;</span>
+                                                <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;leancloud-visitors-count&quot;</span>&gt;</span>0<span class="tag">&lt;/<span class="name">i</span>&gt;</span>
+                                            <span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+                                                    
+                                                            <span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="symbol">&amp;nbsp;</span>•<span class="symbol">&amp;nbsp;</span>
+                            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;post-readtime&quot;</span>&gt;</span>阅读时间:
+                                            2.4分<span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;post-edit&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post-relative&quot;</span>&gt;</span>
+                        <span class="tag">&lt;<span class="name">img</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span> <span class="attr">class</span>=<span class="string">&quot;avatar avatar-100 photo&quot;</span></span>
+<span class="tag">                             <span class="attr">height</span>=<span class="string">&quot;100&quot;</span></span>
+<span class="tag">                             <span class="attr">src</span>=<span class="string">&quot;https://YuZhangWang.github.io/images/avatar.png?v=1599741130898&quot;</span> <span class="attr">srcset</span>=<span class="string">&quot;https://YuZhangWang.github.io/images/avatar.png?v=1599741130898&quot;</span> <span class="attr">width</span>=<span class="string">&quot;100&quot;</span>&gt;</span>
+                        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;post-type-author&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://YuZhangWang.github.io&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;author&quot;</span></span>
+<span class="tag">                                                          <span class="attr">title</span>=<span class="string">&quot;由&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">i</span></span>
+<span class="tag">                                <span class="attr">class</span>=<span class="string">&quot;Card Card-certify&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+                        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;post-publish&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">aria-hidden</span>=<span class="string">&quot;true&quot;</span></span>
+<span class="tag">                                                      <span class="attr">class</span>=<span class="string">&quot;fa fa-calendar&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="symbol">&amp;nbsp;</span>2020-05-16<span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">header</span>&gt;</span></code></pre>
+<h3 id="Post-body部分">Post-body部分</h3>
+<p>在该部分中，文章的内容为主体，以body部分的尾部添加个打赏功能的显示为辅，其中代码高亮通过prism.js来实现控制。<br>
+具体代码如下:</p>
+<pre><code class="highlight html"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post-main post-type-main&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post-content&quot;</span>&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post-content-real&quot;</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>话说有下面这两段代码<span class="tag">&lt;<span class="name">br</span>&gt;</span>
+                                <span class="tag">&lt;<span class="name">strong</span>&gt;</span>代码一<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span> <span class="attr">class</span>=<span class="string">&quot;language-java&quot;</span>&gt;</span>ArrayList list = new ArrayList();
+        list.add(<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>);
+        list.add(<span class="symbol">&amp;quot;</span>aaa<span class="symbol">&amp;quot;</span>);
+        list.add(<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>);
+        list.add(<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>);
+        list.add(<span class="symbol">&amp;quot;</span>bbb<span class="symbol">&amp;quot;</span>);
+
+        for(int i = list.size() - 1 ; i <span class="symbol">&amp;gt;</span>= 0 ; i--)&#123;
+            if(<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>.equals(list.get(i)))&#123;
+                list.remove(i);
+            &#125;
+        &#125;
+<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">strong</span>&gt;</span>代码二<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span> <span class="attr">class</span>=<span class="string">&quot;language-java&quot;</span>&gt;</span>ArrayList list = new ArrayList();
+        list.add(<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>);
+        list.add(<span class="symbol">&amp;quot;</span>aaa<span class="symbol">&amp;quot;</span>);
+        list.add(<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>);
+        list.add(<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>);
+        list.add(<span class="symbol">&amp;quot;</span>bbb<span class="symbol">&amp;quot;</span>);
+        
+        for(int  i = 0 ; i <span class="symbol">&amp;lt;</span> list.size() ; i++)&#123;
+            if(<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>.equals(list.get(i)))&#123;
+                list.remove(i);
+            &#125;
+        &#125;
+<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>请问哪一段代码可以将加入的“java”元素全部删除？<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>答案当然是代码一啦。什么？你不信？那就让我们从实际代码运行来看一下效果吧。<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>代码一测试代码和运行结果如下<span class="tag">&lt;<span class="name">br</span>&gt;</span>
+                                <span class="tag">&lt;<span class="name">img</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span> <span class="attr">loading</span>=<span class="string">&quot;lazy&quot;</span></span>
+<span class="tag">                                     <span class="attr">src</span>=<span class="string">&quot;https://YuZhangWang.github.io/post-images/1589561613703.png&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span>
+                                <span class="tag">&lt;<span class="name">img</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span> <span class="attr">loading</span>=<span class="string">&quot;lazy&quot;</span></span>
+<span class="tag">                                     <span class="attr">src</span>=<span class="string">&quot;https://YuZhangWang.github.io/post-images/1589561618806.png&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>代码二测试代码和运行结果如下<span class="tag">&lt;<span class="name">br</span>&gt;</span>
+                                <span class="tag">&lt;<span class="name">img</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span> <span class="attr">loading</span>=<span class="string">&quot;lazy&quot;</span></span>
+<span class="tag">                                     <span class="attr">src</span>=<span class="string">&quot;https://YuZhangWang.github.io/post-images/1589561647440.png&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span>
+                                <span class="tag">&lt;<span class="name">img</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span> <span class="attr">loading</span>=<span class="string">&quot;lazy&quot;</span></span>
+<span class="tag">                                     <span class="attr">src</span>=<span class="string">&quot;https://YuZhangWang.github.io/post-images/1589561651052.png&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>究其原因，为什么看上去可以实现一样功能的数组会导致结果不同？其实是因为你忽略了一个点，list中对元素进行删除添加操作之后，<span class="tag">&lt;<span class="name">code</span>&gt;</span>list会产生动态变化<span class="tag">&lt;/<span class="name">code</span>&gt;</span>，删除一个元素，后面的元素会补全上面元素的位置。
+                            <span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>让我们来分析一下代码二，<span class="tag">&lt;<span class="name">strong</span>&gt;</span>代码二是正序删除<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span>
+                                当第一个“java”被移除之后，“aaa”位于第一的位置，第二个<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>位于第二的位置，第三个<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>位于第三的位置，<span class="symbol">&amp;quot;</span>bbb<span class="symbol">&amp;quot;</span>位于第四的位置。<span class="tag">&lt;<span class="name">br</span>&gt;</span>
+                                然后下标+1，指向上一步操作排列好的第二个位置。于是，位于第二个位置的第二个“java”也能顺利删除，此时<span class="symbol">&amp;quot;</span>aaa<span class="symbol">&amp;quot;</span>仍旧在第一的位置，第三个<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>来到了第二的位置，<span class="symbol">&amp;quot;</span>bbb<span class="symbol">&amp;quot;</span>来到了第三的位置。<span class="tag">&lt;<span class="name">br</span>&gt;</span>
+                                然后下标再+1，指向上一步操作排列好的第三个位置。但是注意此时，第三个位置是<span class="symbol">&amp;quot;</span>bbb<span class="symbol">&amp;quot;</span>，而我们本来想要继续删除的第三个<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>此时却在第二个位置。所以，代码二会导致漏删第三个<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>，致使程序块达不到想要的效果。
+                            <span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">strong</span>&gt;</span>代码一是倒序删除<span class="tag">&lt;/<span class="name">strong</span>&gt;</span>，每一个<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>删除之后，只对后面的元素产生影响，而后面的元素又都是经过删除操作，确保不存在<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>元素，因此，代码二的倒序删除法可以实现彻底删除所有<span class="symbol">&amp;quot;</span>java<span class="symbol">&amp;quot;</span>元素的操作。
+                            <span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;reward &quot;</span>&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;reward-button &quot;</span>&gt;</span><span class="symbol">&amp;yen;</span>
+                            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;reward-code &quot;</span>&gt;</span>
+                                            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;alipay-code &quot;</span>&gt;</span> <span class="tag">&lt;<span class="name">img</span> <span class="attr">alt</span>=<span class="string">&quot;support &quot;</span> <span class="attr">class</span>=<span class="string">&quot;alipay-img &quot;</span></span>
+<span class="tag">                                                                             <span class="attr">src</span>=<span class="string">&quot;//yuzhangwang.github.io/支付宝.jpg&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span>Alipay<span class="tag">&lt;/<span class="name">b</span>&gt;</span>                                                            <span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+                                        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;wechat-code &quot;</span>&gt;</span> <span class="tag">&lt;<span class="name">img</span> <span class="attr">alt</span>=<span class="string">&quot;support &quot;</span> <span class="attr">class</span>=<span class="string">&quot;wechat-img &quot;</span></span>
+<span class="tag">                                                                         <span class="attr">src</span>=<span class="string">&quot;//yuzhangwang.github.io/微信.png&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span>Wechat<span class="tag">&lt;/<span class="name">b</span>&gt;</span> <span class="tag">&lt;/<span class="name">span</span>&gt;</span> <span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></code></pre>
+<h3 id="Post-footer部分">Post-footer部分</h3>
+<p>这里主要显示的是文章的版权声明以及所采取的MIT协议<br>
+具体代码如下：</p>
+<pre><code class="highlight html"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post-footer&quot;</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post-copyright&quot;</span>&gt;</span>
+                        作者:
+                        <span class="tag">&lt;<span class="name">br</span>&gt;</span>永久链接:
+                        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://YuZhangWang.github.io/post/zai-list-zhong-zheng-xu-he-dao-xu-shan-chu-yuan-su-qu-bie/&quot;</span></span>
+<span class="tag">                           <span class="attr">title</span>=<span class="string">&quot;在list中正序和倒序删除元素区别&quot;</span>&gt;</span>
+                            https://YuZhangWang.github.io/post/zai-list-zhong-zheng-xu-he-dao-xu-shan-chu-yuan-su-qu-bie/
+                        <span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span> 协议: MIT License
+                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></code></pre>
+<h3 id="文章页面的footer部分">文章页面的footer部分</h3>
+<p>在footer部分中，有三个部分构成：备案号，页面访问量及建站时间，版权信息显示，整体布局自上而下。因此实现代码简单，整体代码如下:</p>
+<pre><code class="highlight html"><span class="tag">&lt;<span class="name">footer</span> <span class="attr">id</span>=<span class="string">&quot;foot&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;back-to-top&quot;</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;Card Card-top&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;back-to-top-text&quot;</span>&gt;</span>0%<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;copyright&quot;</span>&gt;</span>
+
+        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;width:300px;margin:0 auto; padding:0px 0;&quot;</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=没有号&quot;</span></span>
+<span class="tag">               <span class="attr">style</span>=<span class="string">&quot;display:inline-block;text-decoration:none;height:20px;line-height:20px;&quot;</span></span>
+<span class="tag">               <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://yanxuan.nosdn.127.net/b610ced5ac6a0e25cf6edf5606c69775.png&quot;</span> <span class="attr">style</span>=<span class="string">&quot;float:left;&quot;</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;icpinfo&quot;</span> <span class="attr">style</span>=<span class="string">&quot;float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;&quot;</span>&gt;</span>
+                    苏公网安备 没有号
+                <span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;font-size:12px&quot;</span>&gt;</span>
+            访问量:
+            <span class="tag">&lt;<span class="name">span</span> <span class="attr">data-hk-page</span>=<span class="string">&quot;current&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="symbol">&amp;nbsp;</span>
+            已经建站 <span class="tag">&lt;<span class="name">b</span> <span class="attr">id</span>=<span class="string">&#x27;build_time&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">b</span>&gt;</span>
+        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://gcore.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/time.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span>
+<span class="language-javascript">            buildTime = <span class="string">&#x27;2020-5-13&#x27;</span></span>
+<span class="language-javascript">            <span class="built_in">setInterval</span>(show_date_time, <span class="number">1000</span>, buildTime);</span>
+<span class="language-javascript">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+
+        <span class="symbol">&amp;#x7248;</span><span class="symbol">&amp;#x6743;</span><span class="symbol">&amp;#x6240;</span><span class="symbol">&amp;#x6709;</span> <span class="symbol">&amp;copy;</span>
+        <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span>
+<span class="language-javascript">            <span class="keyword">var</span> date = <span class="keyword">new</span> <span class="title class_">Date</span>();  <span class="comment">//获取一个日期对象</span></span>
+<span class="language-javascript">            data2 = <span class="keyword">new</span> <span class="title class_">Date</span>(buildTime.<span class="title function_">replace</span>(<span class="regexp">/-/g</span>, <span class="string">&quot;/&quot;</span>));<span class="comment">//将建立日期的-替换成/ 并转换成时间对象，赋值给 d a t a 2。</span></span>
+<span class="language-javascript">            nowYear = date.<span class="title function_">getFullYear</span>().<span class="title function_">toString</span>() <span class="comment">//将当前日期的完整年份转化为字符串格式，并赋值给now Year。</span></span>
+<span class="language-javascript">            buildYear = data2.<span class="title function_">getFullYear</span>().<span class="title function_">toString</span>(); <span class="comment">//将建立日期的完整年份转化为字符串格式，并赋值给 b u i l d Y e a r .</span></span>
+<span class="language-javascript">            <span class="keyword">if</span> (buildYear == nowYear) &#123;<span class="comment">//判断建立日期和当前日期是否相等，若相等则输出当前日期 n o w Y e a r</span></span>
+<span class="language-javascript">                <span class="variable language_">document</span>.<span class="title function_">write</span>(<span class="string">&#x27;&lt;span class=&quot;my-face&quot;&gt;&#x27;</span> + nowYear + <span class="string">&#x27;&lt;/span&gt;&#x27;</span>);<span class="comment">//操作dom，输出当前年份</span></span>
+<span class="language-javascript">            &#125; <span class="keyword">else</span> &#123;</span>
+<span class="language-javascript">                <span class="variable language_">document</span>.<span class="title function_">write</span>(buildYear + <span class="string">&#x27;-&lt;span class=&quot;my-face&quot;&gt;&#x27;</span> + nowYear + <span class="string">&#x27;&lt;/span&gt;&#x27;</span>);<span class="comment">//操作dom，输出xxxx - 2020 为格式的日期并带有心跳动画的字符串来显示</span></span>
+<span class="language-javascript">            &#125;</span>
+<span class="language-javascript">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://YuZhangWang.github.io&quot;</span>&gt;</span>
+            
+        <span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="symbol">&amp;nbsp;</span>|<span class="symbol">&amp;nbsp;</span>Powered by
+        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://github.com/YuZhangWang/YuZhangWang.github.io&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>
+            Github
+        <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span>
+<span class="language-javascript">        <span class="keyword">let</span> back2TopText = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.back-to-top-text&#x27;</span>)<span class="comment">//搜索c l a s s类名为 back- to- top -text 并赋值给back2TopText</span></span>
+<span class="language-javascript">    <span class="comment">//增加个滚动监听事件，用于显示back2TopText元素</span></span>
+<span class="language-javascript">        <span class="variable language_">window</span>.<span class="title function_">addEventListener</span>(<span class="string">&#x27;scroll&#x27;</span>, <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span>
+<span class="language-javascript">            <span class="keyword">let</span> percent = <span class="variable language_">document</span>.<span class="property">scrollingElement</span>.<span class="property">scrollTop</span> / (<span class="variable language_">document</span>.<span class="property">scrollingElement</span>.<span class="property">scrollHeight</span> - <span class="variable language_">document</span>.<span class="property">scrollingElement</span>.<span class="property">clientHeight</span>) * <span class="number">100</span>;<span class="comment">//通过一系列的运算，得到当前滚动的百分比。</span></span>
+<span class="language-javascript">            <span class="keyword">if</span> (back2TopText) &#123;</span>
+<span class="language-javascript">                back2TopText.<span class="property">textContent</span> = <span class="title class_">Math</span>.<span class="title function_">floor</span>(percent).<span class="title function_">toString</span>() + <span class="string">&#x27;%&#x27;</span>;<span class="comment">//给Back2TopText显示百分比</span></span>
+<span class="language-javascript">            &#125;</span>
+<span class="language-javascript">        &#125;);</span>
+<span class="language-javascript">        <span class="keyword">var</span> titleTime;</span>
+<span class="language-javascript">        <span class="comment">//增加一个监听页面是否被选中的监听事件，以至于动态的改变页面标题，实现美化效果。</span></span>
+<span class="language-javascript"><span class="variable language_">document</span>.<span class="title function_">addEventListener</span>(<span class="string">&quot;visibilitychange&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span>
+<span class="language-javascript">            <span class="variable language_">document</span>.<span class="property">hidden</span> ? (<span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">&quot;\uD83D\uDE25&quot;</span> + <span class="title class_">OriginTitile</span>, <span class="built_in">clearTimeout</span>(titleTime)) : (<span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">&quot;\uD83D\uDE1D&quot;</span> + <span class="title class_">OriginTitile</span>, titleTime = <span class="built_in">setTimeout</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span>
+<span class="language-javascript">                <span class="variable language_">document</span>.<span class="property">title</span> = <span class="title class_">OriginTitile</span></span>
+<span class="language-javascript">            &#125;, <span class="number">2E3</span>))</span>
+<span class="language-javascript">        &#125;);<span class="comment">//通过一系列的判断来实现效果。</span></span>
+<span class="language-javascript">        <span class="keyword">var</span> <span class="title class_">OriginTitile</span> = <span class="variable language_">document</span>.<span class="property">title</span>;</span>
+<span class="language-javascript">        <span class="title class_">App</span>.<span class="title function_">hitokoto</span>();<span class="comment">//执行一言函数</span></span>
+<span class="language-javascript">        <span class="title class_">App</span>.<span class="title function_">clearLog</span>();<span class="comment">//清空错误输出的函数</span></span>
+<span class="language-javascript">        <span class="title class_">App</span>.<span class="title function_">outputlog</span>();<span class="comment">//输出带有B l o g 标识的log</span></span>
+<span class="language-javascript">        <span class="keyword">var</span> logo = <span class="string">&#x27;%c\&#x27;%cBlog&#x27;</span>;</span>
+<span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">info</span>(</span>
+<span class="language-javascript">            logo,</span>
+<span class="language-javascript">            <span class="string">&#x27;color: #ffffff; background: #000000; padding:5px 10px 5px 10px;font-size:40px;border-radius:12px 0 0 12px;&#x27;</span>, <span class="string">&#x27;color: #000000; background: #FE9A00; padding:5px 10px;font-size:40px;border-radius:0 12px 12px 0;&#x27;</span></span>
+<span class="language-javascript">        );<span class="comment">//输出格式</span></span>
+<span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">footer</span>&gt;</span></code></pre>
+<h2 id="3-页面特效的添加">3.	页面特效的添加</h2>
+<h3 id="（1）鼠标点击特效">（1）鼠标点击特效</h3>
+<p>点击显示特效的代码如下:</p>
+<pre><code class="highlight html">&lt; script &gt; //代码来自网络
+    ! function(e, t, a) &#123;
+        function n() &#123; c(&quot;.heart&#123;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);&#125;.heart:after,.heart:before&#123;content: &#x27;&#x27;;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;&#125;.heart:after&#123;top: -5px;&#125;.heart:before&#123;left: -5px;&#125;&quot;), i(), r() &#125;
+
+        function r() &#123;
+            for (var e = 0; e &lt; l.length; e++) l[e].alpha &lt;= 0 ? (t.body.removeChild(l[e].el), l.splice(e, 1)) : (l[e].y--, l[e].scale += .004, l[e].alpha -= .013, l[e].el.style.cssText = &quot;left:&quot; + l[e].x + &quot;px;top:&quot; + l[e].y + &quot;px;opacity:&quot; + l[e].alpha + &quot;;transform:scale(&quot; + l[e].scale + &quot;,&quot; + l[e].scale + &quot;) rotate(45deg);background:&quot; + l[e].color + &quot;;z-index:99999&quot;);
+            requestAnimationFrame(r)
+        &#125;
+        function i() &#123;
+            var t = &quot;function&quot; == typeof e.onclick &amp;&amp; e.onclick;
+            e.onclick = function(e) &#123; t &amp;&amp; t(), o(e) &#125;
+        
+        function o(e) &#123;
+            var a = t.createElement(&quot;div&quot;);
+            a.className = &quot;heart&quot;, l.push(&#123; el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: s() &#125;), t.body.appendChild(a)
+        &#125;
+        function c(e) &#123;
+            var a = t.createElement(&quot;style&quot;);
+            a.type = &quot;text/css&quot;;
+            try &#123; a.appendChild(t.createTextNode(e)) &#125; catch (t) &#123; a.styleSheet.cssText = e &#125;
+            t.getElementsByTagName(&quot;head&quot;)[0].appendChild(a)
+        &#125;
+        function s() &#123; return &quot;rgb(255,0,0)&quot; &#125;
+        var l = [];
+        e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function(e) &#123; setTimeout(e, 1e3 / 60) &#125;, n()
+    &#125;(window, document); 
+<span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
+<h3 id="（2）更改主题配色">（2）更改主题配色</h3>
+<pre><code>实现的原理通过JQuery来控制元素的class的样式增减显示，而配色状态，则存储在localStorge，达到持久化显示该配色。
+</code></pre>
+<p>而暗配色，通过css的滤镜来实现<br>
+具体css代码：</p>
+<pre><code class="highlight css"><span class="selector-class">.theme-dark</span> &#123;
+    <span class="attribute">filter</span>: <span class="built_in">invert</span>(<span class="number">100</span>) <span class="built_in">hue-rotate</span>(<span class="number">180deg</span>);
+    <span class="attribute">isolation</span>: isolate;
+&#125;</code></pre>
+<p>具体js代码：</p>
+<pre><code class="highlight JavaScript">&lt;script&gt;
+<span class="comment">//在加载时，读取LocalStorage中的主体值，来显示主题配色</span>
+        $().<span class="title function_">ready</span>(
+            <span class="keyword">function</span> (<span class="params"></span>) &#123;
+                <span class="keyword">var</span> themeIcon = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;themeIcon&quot;</span>);
+                <span class="keyword">var</span> currentTheme = <span class="variable language_">window</span>.<span class="property">localStorage</span>.<span class="title function_">getItem</span>(<span class="string">&#x27;theme&#x27;</span>);<span class="comment">//获取localStorage中theme的值</span>
+                <span class="keyword">if</span> (currentTheme == <span class="string">&#x27;dark&#x27;</span>) &#123;
+                    <span class="variable language_">document</span>.<span class="title function_">getElementsByTagName</span>(<span class="string">&#x27;html&#x27;</span>)[<span class="number">0</span>].<span class="property">classList</span>.<span class="title function_">add</span>(<span class="string">&#x27;theme-dark&#x27;</span>);<span class="comment">//增加暗色主题的 c l a s s</span>
+                    themeIcon.<span class="property">classList</span>.<span class="title function_">remove</span>(<span class="string">&#x27;Card-moon&#x27;</span>);<span class="comment">//移除月亮的svg</span>
+                    themeIcon.<span class="property">classList</span>.<span class="title function_">add</span>(<span class="string">&#x27;Card-sun&#x27;</span>);<span class="comment">//增加太阳的svg</span>
+                &#125; <span class="keyword">else</span> &#123;
+                    <span class="variable language_">document</span>.<span class="title function_">getElementsByTagName</span>(<span class="string">&#x27;html&#x27;</span>)[<span class="number">0</span>].<span class="property">classList</span>.<span class="title function_">remove</span>(<span class="string">&#x27;theme-dark&#x27;</span>);<span class="comment">//移除暗色主题的c l a s s</span>
+                    themeIcon.<span class="property">classList</span>.<span class="title function_">remove</span>(<span class="string">&#x27;Card-sun&#x27;</span>);移除太阳的svg
+                    themeIcon.<span class="property">classList</span>.<span class="title function_">add</span>(<span class="string">&#x27;Card-moon&#x27;</span>);增加月亮的svg
+                &#125;
+            &#125;
+        )
+    &lt;/script&gt;</code></pre>
+<h3 id="（3）一言的打字特效">（3）一言的打字特效</h3>
+<p>使用了typed.js来实现打字效果，根据官方文档，最终实现代码如下：</p>
+<pre><code class="highlight JavaScript"><span class="keyword">var</span> typed = <span class="keyword">new</span> <span class="title class_">Typed</span>(<span class="string">&quot;#hitokoto&quot;</span>, &#123;
+                        <span class="attr">strings</span>: [<span class="title class_">JSON</span>.<span class="title function_">parse</span>(xhr.<span class="property">responseText</span>).<span class="property">hitokoto</span>],<span class="comment">//将json格式的数据解析成string</span>
+                        <span class="attr">startDelay</span>: <span class="number">100</span>,<span class="comment">//设置开始延迟为100ms	</span>
+                        <span class="attr">typeSpeed</span>: <span class="number">200</span>,<span class="comment">//设置打字延迟为200ms</span>
+                        <span class="attr">loop</span>: <span class="literal">true</span>, <span class="comment">//设置循环打字为t r u e</span>
+                        <span class="attr">backSpeed</span>: <span class="number">100</span>, <span class="comment">//设置删除速度为100ms</span>
+                        <span class="attr">showCursor</span>: <span class="literal">true</span><span class="comment">//设置显示光标为t r u e</span>
+                    &#125;);</code></pre>
+<h3 id="（4）页面标题的自动变化">（4）页面标题的自动变化</h3>
+<p>当界面在浏览器是否被选中时，所带来的页面标题变化特效。<br>
+具体js实现代码如下:</p>
+<pre><code class="highlight JavaScript"><span class="keyword">var</span> titleTime;
+    <span class="comment">//监听页面是否选中事件</span>
+        <span class="variable language_">document</span>.<span class="title function_">addEventListener</span>(<span class="string">&quot;visibilitychange&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;
+            <span class="variable language_">document</span>.<span class="property">hidden</span> ? (<span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">&quot;\uD83D\uDE25&quot;</span> + <span class="title class_">OriginTitile</span>, <span class="built_in">clearTimeout</span>(titleTime)) : (<span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">&quot;\uD83D\uDE1D&quot;</span> + <span class="title class_">OriginTitile</span>, titleTime = <span class="built_in">setTimeout</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;
+                <span class="variable language_">document</span>.<span class="property">title</span> = <span class="title class_">OriginTitile</span>
+            &#125;, <span class="number">2E3</span>))
+        &#125;);<span class="comment">//通过一系列的变换，判断页面是否被选中，然后动态变化。</span></code></pre>
+<h1>4.评论功能添加</h1>
+<p>评论采用开源项目Valine来实现评论功能，首先到leancloud 注册一个账号，并在Github找到开源项目Valine，并部署在leancloud上，获取所需的apikey，最后的具体代码如下:</p>
+<pre><code class="highlight JavaScript">&lt;script src=<span class="string">&quot;//unpkg.com/valine@latest/dist/Valine.min.js&quot;</span> type=<span class="string">&quot;application/javascript&quot;</span>&gt;&lt;/script&gt;
+        <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;vlaine-comment&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>
+        <span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;application/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span>
+<span class="language-javascript"><span class="language-xml"><span class="comment">//代码来源Valine示例修改</span></span></span>
+<span class="language-javascript"><span class="language-xml">            <span class="keyword">new</span> <span class="title class_">Valine</span>(&#123;</span></span>
+<span class="language-javascript"><span class="language-xml">                <span class="attr">el</span>: <span class="string">&#x27;#vlaine-comment&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                <span class="attr">appId</span>: <span class="string">&#x27;64V23IDAGP79sI3LaxFHFUm0-gzGzoHsz&#x27;</span>,<span class="comment">//appid</span></span></span>
+<span class="language-javascript"><span class="language-xml">                <span class="attr">appKey</span>: <span class="string">&#x27;lyveE15DB93we2NQW1Hq6Xm5&#x27;</span>,<span class="comment">//密钥</span></span></span>
+<span class="language-javascript"><span class="language-xml">                <span class="attr">pageSize</span>: <span class="number">10</span>,<span class="comment">//显示页面长度</span></span></span>
+<span class="language-javascript"><span class="language-xml">                <span class="attr">avatar</span>: <span class="string">&#x27;mp&#x27;</span>,<span class="comment">//显示头像格式</span></span></span>
+<span class="language-javascript"><span class="language-xml">                <span class="attr">placeholder</span>: <span class="string">&#x27;来都来了，不妨评论一下&#x27;</span>,</span></span>
+<span class="language-javascript"><span class="language-xml">                <span class="attr">visitor</span>: <span class="literal">true</span>,<span class="comment">//是否支持匿名评论</span></span></span>
+<span class="language-javascript"><span class="language-xml">                <span class="attr">highlight</span>: <span class="literal">true</span>,<span class="comment">//是否高亮</span></span></span>
+<span class="language-javascript"><span class="language-xml">                <span class="attr">recordIP</span>: <span class="literal">true</span>,<span class="comment">//是否支持记录ip</span></span></span>
+<span class="language-javascript"><span class="language-xml">            &#125;)</span></span>
+<span class="language-javascript"><span class="language-xml">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></code></pre>
+<h1>五、Web页面的测试及调试</h1>
+<h2 id="1-运行过程">1.运行过程</h2>
+<p>通过WebStorm的网页调试功能进入本地调试，然后点击各个跳转链接，以检查页面与页面之间的跳转是否完善，此外，对于特效部分，需要进行一定的测试，从而保证功能使用的良好。</p>
+<h2 id="2-调试过程中遇到的问题">2.调试过程中遇到的问题</h2>
+<p>在测试过程中，发现页面加载慢，这个问题是因为本地资源庞大造成的，可以尝试将该项目部署至云端服务器并且进行加速的设置，通过将该静态文件部署到Github，再通过Jsdelivr的CDN方式来加载页面，于是提高了页面的响应速度，使得页面能够相对流畅运行。</p>
+<h1>六、用户访问页面使用手册</h1>
+<p>由于我们将该项目已经部署在了云端服务器上，所以我们自然而然就获得了一个域名。我们可以通过访问网址https://yuzhangwang.github.io/来进行访问，最先出现在访客面前的是主页，主页简单了介绍了一些文章，旁边再加上了小部件。<br>
+访客可以通过直接点击主页面上面的文章阅读选项进行博客文章的阅读，在阅读结束之后，可以选择进行下一篇文章或者上一篇文章的1阅读，还可以点击上方的分类，回到主页或者进入其他页面。例如跳转到关于页面，这里就会出现关于博客作者的相关介绍。<br>
+访客可以在右侧看到诸如每日一言、音乐、天气、友链等一系列选择，在访客浏览网页的时候，增添了一丝趣味。</p>
+<h1>七、总结</h1>
+<p>Web设计跟学习别的东西一样，也需要兴趣，所谓的兴趣也不是三分钟热度，是一种执著。<br>
+WEb设计需要耐心，如果没有耐心，就学不好，应为当你碰到一个问题时，如果不能立刻得到问题的答案，你可能需要很长时间去解决，我就碰到过一个问题，用了很长时间才解决。<br>
+学习需要坚持，坚持不断的学习，因为设计Web的软件在不断的更新，因此我们要不断的学习并且学习Web设计不要掉入技术的陷阱，如果你的网页设计技术一流，并且对软件的掌握程度已经达到一定水平，但是你设计的网页确不堪目睹，这是因为网页设计是介于平面设计和编程技术两者之间的”边缘科学.&quot;不仅涉及到美学，心理学，平面构成，色彩搭配等平面设计的方面的知识，还涉及到html，javascript，css，asp，php等编程语言技术方面的知识.<br>
+只有综合运用多种知识，才能设计出视听特效，动感十足，富于个性的web页面，才能全面展现互联网这一新型媒体的独特魅力和多维空间的超强功能.<br>
+并且我认为网页设计应该注重实用性，因为它是让人浏览的，是用户可以抚摸，可以评论，可以交互的。因此我提倡简单的美。<br>
+对于Web课，老师上课讲解十分细致，在长达11周的教学中，我们逐渐掌握了Html、Css、Javascript等相关技术的使用过方法，并在一次次实验中得到了锻炼和进步。而最后一次的课设大作业，将我们所学到的知识进行了一次整合，我们也可以根据自身的要求，添加课外的内容，丰富我们制作的页面，在实践中不断锻炼自己，在学习中不断充实自己。希望可以在未来学习到更多类似的课程。</p>
+<h1>八、参考文献</h1>
+<p>[1]<a target="_blank" rel="noopener" href="https://www.jsdelivr.com/">https://www.jsdelivr.com/</a> 开源特效获取网站<br>
+[2]胡秘.HTML从入门到精通[M].北京：中国青年出版社，2007.<br>
+[3]赵祖荫，王云翔，胡耀芳，网页设计与制作教程[M].北京：清华大学出版社，2008.<br>
+[4]刘智勇.JavaScript开发技术大全[M].北京：清华大学出版社，2009.<br>
+[5]赵祖荫，王云翔，胡耀芳，网页设计与制作教程[M].北京：清华大学出版社，2008.<br>
+[6]刘智勇.JavaScript开发技术大全[M].北京：清华大学出版社，2009.<br>
+[7]<a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a> 开源代码托管平台</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://yuzhang.wang">YuZhangWang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://yuzhang.wang/2021/02/18/059-personal-blog-design/">https://yuzhang.wang/2021/02/18/059-personal-blog-design/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://yuzhang.wang" target="_blank">YuZhangWang的领域</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a><a class="post-meta__tags" href="/tags/HTML/">HTML</a><a class="post-meta__tags" href="/tags/CSS/">CSS</a><a class="post-meta__tags" href="/tags/JavaScript/">JavaScript</a><a class="post-meta__tags" href="/tags/WebStorm/">WebStorm</a></div><div class="post_share"><div class="social-share" data-image="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202208070505646.png" data-sites="wechat,qq,weibo"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195242695.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195242695.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195556282.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195556282.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/02/21/060-meow-nephew/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225000.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">喵喵侄子</div></div></a></div><div class="next-post pull-right"><a href="/2021/01/29/058-xiaomi-wireless-charging-pile-surprised-me/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224829.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">小米无线充电桩惊了我</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">YuZhangWang</div><div class="author-info__description">PLUSULTRA!</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">120</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">242</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">1.视频发布于B站,文章发布于博客</br> 2.待修复bug:</br> 说说插件+代码渲染+代码行数</br> 3.待优化地方:代码连写</br> 4.Putty本无树，MinGW亦非台</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">一、问题概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">二、Web页面设计需求分析</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">三、Web页面设计概要分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Web%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83"><span class="toc-text">1.Web页面开发环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Web%E9%A1%B5%E9%9D%A2%E8%AE%BE%E8%AE%A1%E6%8A%80%E6%9C%AF"><span class="toc-text">2.Web页面设计技术</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Web%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%80%BB%E4%BD%93%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1"><span class="toc-text">3.Web页面的总体结构设计</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">四、Web页面详细设计</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%B8%BB%E9%A1%B5%E9%9D%A2"><span class="toc-text">1.主页面</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A1%B5%E9%9D%A2%E7%9A%84Main%E9%83%A8%E5%88%86"><span class="toc-text">主页面的Main部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A1%B5%E9%9D%A2%E7%9A%84footer%E9%83%A8%E5%88%86"><span class="toc-text">主页面的footer部分</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AD%90%E9%A1%B5%E9%9D%A2"><span class="toc-text">2.子页面</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E9%A1%B5%E9%9D%A2%E7%9A%84Main%E9%83%A8%E5%88%86"><span class="toc-text">文章页面的Main部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Post-body%E9%83%A8%E5%88%86"><span class="toc-text">Post-body部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Post-footer%E9%83%A8%E5%88%86"><span class="toc-text">Post-footer部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E9%A1%B5%E9%9D%A2%E7%9A%84footer%E9%83%A8%E5%88%86"><span class="toc-text">文章页面的footer部分</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A1%B5%E9%9D%A2%E7%89%B9%E6%95%88%E7%9A%84%E6%B7%BB%E5%8A%A0"><span class="toc-text">3.	页面特效的添加</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E7%89%B9%E6%95%88"><span class="toc-text">（1）鼠标点击特效</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E6%9B%B4%E6%94%B9%E4%B8%BB%E9%A2%98%E9%85%8D%E8%89%B2"><span class="toc-text">（2）更改主题配色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E4%B8%80%E8%A8%80%E7%9A%84%E6%89%93%E5%AD%97%E7%89%B9%E6%95%88"><span class="toc-text">（3）一言的打字特效</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%884%EF%BC%89%E9%A1%B5%E9%9D%A2%E6%A0%87%E9%A2%98%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8F%98%E5%8C%96"><span class="toc-text">（4）页面标题的自动变化</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E2%80%9Dmain-part%E2%80%9D"><span class="toc-text">4.评论功能添加</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E2%80%9Dmain-part%E2%80%9D"><span class="toc-text">五、Web页面的测试及调试</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B"><span class="toc-text">1.运行过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E8%B0%83%E8%AF%95%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-text">2.调试过程中遇到的问题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E2%80%9Dmain-part%E2%80%9D"><span class="toc-text">六、用户访问页面使用手册</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E2%80%9Dmain-part%E2%80%9D"><span class="toc-text">七、总结</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E2%80%9Dmain-part%E2%80%9D"><span class="toc-text">八、参考文献</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/08/05/120-traversing-binary-tree/" title="遍历二叉树"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202208070540906.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="遍历二叉树"/></a><div class="content"><a class="title" href="/2022/08/05/120-traversing-binary-tree/" title="遍历二叉树">遍历二叉树</a><time datetime="2022-08-04T16:57:50.000Z" title="发表于 2022-08-05 00:57:50">2022-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/08/05/119-review-draft/" title="吐槽《雪中》的文案"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202208070539067.7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="吐槽《雪中》的文案"/></a><div class="content"><a class="title" href="/2022/08/05/119-review-draft/" title="吐槽《雪中》的文案">吐槽《雪中》的文案</a><time datetime="2022-08-04T16:04:50.000Z" title="发表于 2022-08-05 00:04:50">2022-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/22/118-stoner-book-transport/" title="《斯通纳》全书搬运"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202208070538360.7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《斯通纳》全书搬运"/></a><div class="content"><a class="title" href="/2022/07/22/118-stoner-book-transport/" title="《斯通纳》全书搬运">《斯通纳》全书搬运</a><time datetime="2022-07-21T17:06:50.000Z" title="发表于 2022-07-22 01:06:50">2022-07-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/22/117-apprenticeship-list/" title="出师表"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202208070538561.7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="出师表"/></a><div class="content"><a class="title" href="/2022/07/22/117-apprenticeship-list/" title="出师表">出师表</a><time datetime="2022-07-21T16:41:50.000Z" title="发表于 2022-07-22 00:41:50">2022-07-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/22/116-June-Summary-2/" title="考研6月总结2"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807053714485.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="考研6月总结2"/></a><div class="content"><a class="title" href="/2022/07/22/116-June-Summary-2/" title="考研6月总结2">考研6月总结2</a><time datetime="2022-07-21T16:37:50.000Z" title="发表于 2022-07-22 00:37:50">2022-07-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/22/115-June-Summary-1/" title="考研6月总结1"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807053637416.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="考研6月总结1"/></a><div class="content"><a class="title" href="/2022/07/22/115-June-Summary-1/" title="考研6月总结1">考研6月总结1</a><time datetime="2022-07-21T16:37:38.000Z" title="发表于 2022-07-22 00:37:38">2022-07-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="footer_custom_text"><div class="copyright">Created by <a href="https://github.com/YuZhangWang" target="_blank">YuZhangWang</a>&nbsp;<i class="fa-fw fas fa-heart card-announcement-animation cc_pointer"></i>&nbsp;©2019-Present&nbsp;&nbsp;|&nbsp;&nbsp;Powered By <a href="https://hexo.io/zh-cn/index.html" target="_blank">Hexo</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme By <a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank">Butterfly</a></div><div align="center"> <a  href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33050202000764" target="_blank"> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195725498.png"  style="height:1.3em">浙公网安备33050202000764号</a>&nbsp;&nbsp;|&nbsp;&nbsp;互联网ICP备案:<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">浙ICP备2021025933号-1</a></div><div align="center"><a href="https://blogwe.com/" target="_blank" alt="博客大全" rel="nofollow"> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195801782.jpg" alt="博客大全" style="height:1.3em"></a>&nbsp;<a href="https://travellings.pages.dev" target="_blank" alt="开往" rel="nofollow"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195840939.jpg" alt="开往" style="height:1.3em"></a>&nbsp;<a href="https://vim-adventures.com/" target="_blank" alt="vim-adventures" rel="nofollow"> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195910376.jpg" alt="vim-adventures" style="height:1.3em"></a>&nbsp;<a href="http://restart.sshh.top/view/" target="_blank" alt="人生重开模拟器" rel="nofollow"> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195940841.png" alt="人生重开模拟器" style="height:1.3em"></a>&nbsp;<a href="https://huanghaibin91.github.io/Reversi/" target="_blank" alt="黑白翻转棋" rel="nofollow"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418200005401.png" alt="黑白翻转棋" style="height:1.3em"></a>&nbsp;<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" alt="又拍云" rel="nofollow"> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418200036086.png" alt="又拍云" style="height:1.3em"></a>&nbsp;<a href="https://cloud.tencent.com/" target="_blank" alt="腾讯云" rel="nofollow"> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826081712.svg" alt="腾讯云" style="height:1.3em"></a>&nbsp;<a href="https://www.jsdelivr.com" target="_blank" alt="Jsdelivr" rel="nofollow"> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/www.jsdelivr.com/4ba9170e9a4174f4cc2a695e978c2ea75acd39d7/img/logo-horizontal.svg" alt="Jsdelivr" style="height:1.3em"></a></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/copy-tex.min.js"></script><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', { class: 'katex-wrap'})
+  })
+})()</script><script>function loadGiscus () {
+  let nowTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
+
+  const config = Object.assign({
+    src: 'https://giscus.app/client.js',
+    'data-repo': 'YuZhangWang/YuZhangWang.github.io',
+    'data-repo-id': 'MDEwOlJlcG9zaXRvcnkzNDY4MTQyNjE=',
+    'data-category-id': 'DIC_kwDOFKv3Nc4CQ6NC',
+    'data-mapping': 'pathname',
+    'data-theme': nowTheme,
+    'data-reactions-enabled': '1',
+    crossorigin: 'anonymous',
+    async: true
+  },{"data-mapping":"title","data-strict":1,"data-reactions-enabled":1,"data-emit-metadata":0,"data-input-position":"top","data-lang":"zh-CN","data-loading":"lazy"})
+
+  let ele = document.createElement('script')
+  for (let key in config) {
+    ele.setAttribute(key, config[key])
+  }
+  document.getElementById('giscus-wrap').insertAdjacentElement('afterbegin',ele)
+}
+
+function changeGiscusTheme () {
+  const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
+
+  function sendMessage(message) {
+    const iframe = document.querySelector('iframe.giscus-frame');
+    if (!iframe) return;
+    iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+  }
+
+  sendMessage({
+    setConfig: {
+      theme: theme
+    }
+  });
+}
+
+if ('Giscus' === 'Giscus' || !true) {
+  if (true) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+  else loadGiscus()
+} else {
+  function loadOtherComment () {
+    loadGiscus()
+  }
+}</script></div><script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://myhkw.cn/api/player/162986644718" id="myhk" key="162986644718" m="1"></script><script>document.addEventListener('visibilitychange', function () {if (document.visibilityState == 'hidden') {normal_title = document.title;document.title = '早上好 中午好 晚上好';}else document.title = normal_title;});</script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script id="canvas_nest" defer="defer" color="177,225,255" opacity="1" zIndex="-1" count="111" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/Python学习笔记/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📚 Python学习笔记 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/CV学习笔记/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📚 CV学习笔记 (9)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/C-学习笔记/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📚 C++学习笔记 (4)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/数据结构学习笔记/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📚 数据结构学习笔记 (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/学术研究/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🐱‍👓 学术研究 (11)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/项目展示/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🐱‍👓 项目展示 (12)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><a class="magnet_link_more"  href="https://yuzhang.wang/categories" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(50% - 5px);background: #f2f2f2;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: rgb(127, 199, 244)}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style>
+  <script data-pjax src="https://gcore.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js"></script>
+  <script data-pjax>
+        function GithubCalendarConfig(){
+            var git_githubapiurl ="https://gitcalendar.zfe.space/api?YuZhangWang";
+            var git_color =['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620'];
+            var git_user ="YuZhangWang";
+            var parent_div_git = document.getElementById('recent-posts');
+            var git_div_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>';
+            if(parent_div_git && location.pathname =='/'){
+                console.log('已挂载github calendar')
+                // parent_div_git.innerHTML=git_div_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",git_div_html) // 有报错，但不影响使用(支持pjax跳转)
+            };
+            GithubCalendar(git_githubapiurl,git_color,git_user)
+        }
+        if(document.getElementById('recent-posts')){
+            GithubCalendarConfig()
+        }
+    </script>
+    <style>#github_container{min-height:280px}@media screen and (max-width:650px) {#github_container{background-image:;min-height:0px}}</style>
+    <style></style><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>历史上的今天</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='/'|| '/' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"feed":null,"type":"atom","path":"atom.xml","limit":20,"hub":null,"content":null,"content_limit":140,"content_limit_delim":" ","order_by":"-date","log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>

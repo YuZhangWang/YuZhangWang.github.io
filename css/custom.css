@@ -1,0 +1,24 @@
+/* 版权信息下划线去除 */
+#post .post-copyright .post-copyright-info a {
+    text-decoration: none;
+}
+
+#aside-content .card-webinfo .webinfo .webinfo-item {
+    padding: 0 0 0 0
+}
+
+#footer {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #000;
+    background: hsla(0, 0%, 100%, .15);
+}
+
+#footer #footer-wrap,
+#footer #footer-wrap a {
+    color: #333;
+}
+
+.fa-heart {
+    color: red
+}
