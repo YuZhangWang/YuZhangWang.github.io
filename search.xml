@@ -1,59 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>iOS微体验</title>
-    <url>/2019/01/30/001-ios-micro-experience-1/</url>
-    <content><![CDATA[<p>iPhone6plus，A8处理器，64G，系统为iOS12.1.3<br>
-作为一个安卓用户，来到了iOS端进行操作，首先想到的是越狱刷机，但是现在的越狱只支持iOS11及以下的系统，并不支持iOS12，并且iOS12已经开启了防回滚模式，也就意味着不能回滚到iOS11进行越狱，不过还是可以在iOS12测试版和稳定版的固件之间进行刷机。<br>
-所以在这几天的体验中有了以下几点<br>
-1.将iOS12.1.3刷成了iOS12.1.1<br>
-2.下载了许多日常的软件，有通过苹果官方商店下载，也有通过爱思助手下载，下载软件的过程中手机会变得非常卡，我相信是由于A8处理器的缘故，不过在下载完之后，软件使用上来说没有太多的卡顿，但是过渡动画会比较长，我相信这也是A8处理器的缘故<br>
-3.前面说到作为一个安卓用户，在体验iOS端的时候，带给我的流畅性确实是一种日常的享受，不过安卓端带给我更多的是一种高效性以及逐步完善的流畅的体验，且不说安卓9.0的横空出世带来的过度动画以及流畅度，使得一大批早年间的旗舰例如835的旗舰恢生机复了以往的，以及达到了像iOS端那样样的流畅度，如今的安卓8.0以及安卓8.1也接近于iOS端的用户体验<br>
-4.让我比较意外的是，在iOS端不能实时显示网速，不过却可以通过一个软件来实现，它的名字是N Stats，安装这个软件在负一屏添加，便可以查看手机的内存，以及实时的上传下载速度。此外还有一款神器，它的前身叫workflow，后来它被苹果公司收购，变成了一款叫捷径的软件，这款软件类似于一步到位，将你需要经过多部操作的诸多步骤集合在一个操作内，你只需点一下即可完成众多繁琐的操作，更为神奇的是它还与siri相结合，使得你在使用siri时便可直接使用捷径一步完成你之前要多步完成的事<br>
-5.这台手机使用的是A8处理器，流畅度方面，相比于如今的安卓旗舰还是有较大的差距的，相信在A11级A12处理器上的流畅度，是不逊于如今的任何旗舰的，如果条件允许，可能未来会购入a11或者22处理器的iOS端手机进行日常体验</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>iOS</tag>
-        <tag>iPhone6plus</tag>
-        <tag>A8</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>高铁站的家乡味道</title>
-    <url>/2019/02/01/002-hometown-flavor-of-high-speed-railway-station/</url>
-    <content><![CDATA[<p>大概有三四年没吃丁莲芳了，没想到在高铁站吃到了这道美味，空空的胃得到了满足</p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213559.jpeg" alt=""></p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213613.jpeg" alt=""></p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213624.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>烹调之道</category>
-        <category>生活感悟</category>
-      </categories>
-      <tags>
-        <tag>丁莲芳</tag>
-        <tag>千张</tag>
-        <tag>高铁</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>除夕好!</title>
-    <url>/2019/02/04/003-good-new-year-eve/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213844.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>生活感悟</category>
-        <category>摄影记录</category>
-      </categories>
-      <tags>
-        <tag>过年</tag>
-        <tag>比心</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>iOS微体验之二</title>
     <url>/2019/03/01/004-ios-micro-experience-2/</url>
     <content><![CDATA[<p>iphone7，A10处理器，iOS12.1.4，128G。<br>
@@ -99,17 +46,21 @@
       </tags>
   </entry>
   <entry>
-    <title>吸猫</title>
-    <url>/2019/06/13/010-stroke-a-cat/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826215138.jpeg" alt=""></p>
+    <title>高铁站的家乡味道</title>
+    <url>/2019/02/01/002-hometown-flavor-of-high-speed-railway-station/</url>
+    <content><![CDATA[<p>大概有三四年没吃丁莲芳了，没想到在高铁站吃到了这道美味，空空的胃得到了满足</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213559.jpeg" alt=""></p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213613.jpeg" alt=""></p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213624.jpeg" alt=""></p>
 ]]></content>
       <categories>
-        <category>动物大赏</category>
-        <category>摄影记录</category>
+        <category>烹调之道</category>
+        <category>生活感悟</category>
       </categories>
       <tags>
-        <tag>白猫</tag>
-        <tag>小奶猫</tag>
+        <tag>丁莲芳</tag>
+        <tag>千张</tag>
+        <tag>高铁</tag>
       </tags>
   </entry>
   <entry>
@@ -126,6 +77,48 @@
       <tags>
         <tag>黑猫</tag>
         <tag>白毛</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>致五四</title>
+    <url>/2019/05/04/008-to-may-4th/</url>
+    <content><![CDATA[<p>愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话。<br>
+能做事的做事，能发声的发声。有一分热，发一分光。就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。<br>
+如若今后没有炬火，你便是唯一的光。           ——鲁迅</p>
+]]></content>
+      <categories>
+        <category>生活感悟</category>
+      </categories>
+      <tags>
+        <tag>炬火</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>坚果pro2返回魔趣8.1</title>
+    <url>/2019/05/12/009-nuts-pro2-return-to-magic-8-1/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826214934.jpeg" alt=""><br>
+9.0的魔趣很好用，但只能通过太极阳使用XP，这使得一部分功能无法完美使用，8.1可以完美兼容</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+        <category>技能学习记录</category>
+      </categories>
+      <tags>
+        <tag>刷机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>吸猫</title>
+    <url>/2019/06/13/010-stroke-a-cat/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826215138.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>动物大赏</category>
+        <category>摄影记录</category>
+      </categories>
+      <tags>
+        <tag>白猫</tag>
+        <tag>小奶猫</tag>
       </tags>
   </entry>
   <entry>
@@ -169,17 +162,24 @@
       </tags>
   </entry>
   <entry>
-    <title>致五四</title>
-    <url>/2019/05/04/008-to-may-4th/</url>
-    <content><![CDATA[<p>愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话。<br>
-能做事的做事，能发声的发声。有一分热，发一分光。就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。<br>
-如若今后没有炬火，你便是唯一的光。           ——鲁迅</p>
+    <title>iOS微体验</title>
+    <url>/2019/01/30/001-ios-micro-experience-1/</url>
+    <content><![CDATA[<p>iPhone6plus，A8处理器，64G，系统为iOS12.1.3<br>
+作为一个安卓用户，来到了iOS端进行操作，首先想到的是越狱刷机，但是现在的越狱只支持iOS11及以下的系统，并不支持iOS12，并且iOS12已经开启了防回滚模式，也就意味着不能回滚到iOS11进行越狱，不过还是可以在iOS12测试版和稳定版的固件之间进行刷机。<br>
+所以在这几天的体验中有了以下几点<br>
+1.将iOS12.1.3刷成了iOS12.1.1<br>
+2.下载了许多日常的软件，有通过苹果官方商店下载，也有通过爱思助手下载，下载软件的过程中手机会变得非常卡，我相信是由于A8处理器的缘故，不过在下载完之后，软件使用上来说没有太多的卡顿，但是过渡动画会比较长，我相信这也是A8处理器的缘故<br>
+3.前面说到作为一个安卓用户，在体验iOS端的时候，带给我的流畅性确实是一种日常的享受，不过安卓端带给我更多的是一种高效性以及逐步完善的流畅的体验，且不说安卓9.0的横空出世带来的过度动画以及流畅度，使得一大批早年间的旗舰例如835的旗舰恢生机复了以往的，以及达到了像iOS端那样样的流畅度，如今的安卓8.0以及安卓8.1也接近于iOS端的用户体验<br>
+4.让我比较意外的是，在iOS端不能实时显示网速，不过却可以通过一个软件来实现，它的名字是N Stats，安装这个软件在负一屏添加，便可以查看手机的内存，以及实时的上传下载速度。此外还有一款神器，它的前身叫workflow，后来它被苹果公司收购，变成了一款叫捷径的软件，这款软件类似于一步到位，将你需要经过多部操作的诸多步骤集合在一个操作内，你只需点一下即可完成众多繁琐的操作，更为神奇的是它还与siri相结合，使得你在使用siri时便可直接使用捷径一步完成你之前要多步完成的事<br>
+5.这台手机使用的是A8处理器，流畅度方面，相比于如今的安卓旗舰还是有较大的差距的，相信在A11级A12处理器上的流畅度，是不逊于如今的任何旗舰的，如果条件允许，可能未来会购入a11或者22处理器的iOS端手机进行日常体验</p>
 ]]></content>
       <categories>
-        <category>生活感悟</category>
+        <category>极客之旅</category>
       </categories>
       <tags>
-        <tag>炬火</tag>
+        <tag>iOS</tag>
+        <tag>iPhone6plus</tag>
+        <tag>A8</tag>
       </tags>
   </entry>
   <entry>
@@ -280,20 +280,6 @@
       </tags>
   </entry>
   <entry>
-    <title>坚果pro2返回魔趣8.1</title>
-    <url>/2019/05/12/009-nuts-pro2-return-to-magic-8-1/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826214934.jpeg" alt=""><br>
-9.0的魔趣很好用，但只能通过太极阳使用XP，这使得一部分功能无法完美使用，8.1可以完美兼容</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-        <category>技能学习记录</category>
-      </categories>
-      <tags>
-        <tag>刷机</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>打卡一加南京店</title>
     <url>/2019/11/23/019-punch-in-oneplus-nanjing-store/</url>
     <content><![CDATA[<p>一加南京店，给我的感觉就是精致和体贴的服务。在微博大佬处看到有网友投稿一加屏幕的一个问题，在解锁的时候会发出一些声音。正好我自己也有类似的问题存在，于是在昨天预约了一加的维修，对比之后，感觉一家的服务确实比其他厂家要体贴，来到了一家的店里之后，发现展示的只有7系列和7t系列，以及一加背包。在维修的时候可以坐在座位上看着激光电视，对于一个加油来说，这是非常体贴的服务，很人性化，如果给售后做一个评价的话，iphone和一加，是市面上主流厂家中排名较高规格的。很赞很舒服。</p>
@@ -377,6 +363,34 @@
       </tags>
   </entry>
   <entry>
+    <title>除夕好!</title>
+    <url>/2019/02/04/003-good-new-year-eve/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213844.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>生活感悟</category>
+        <category>摄影记录</category>
+      </categories>
+      <tags>
+        <tag>过年</tag>
+        <tag>比心</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一加新功能</title>
+    <url>/2020/04/06/026-a-new-function-of-oneplus/</url>
+    <content><![CDATA[<p>一加在通讯录加入了类似Face Time的功能，一加手机之间可以通过Wifi、5G、4G进行聊天视频通话，界面的交互也和Face Time比较类似。使用下来，或可与Face Time相比，是一个很不错的功能</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>OnePlus</tag>
+        <tag>通讯录</tag>
+        <tag>FaceTime</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>纯个人果仁相册使用体验报告(对比画廊)</title>
     <url>/2020/02/15/025-experience-report-on-the-use-of-pure-personal-nuts-photo-album-comparison-gallery/</url>
     <content><![CDATA[<p>在没有发现这款软件之前，在我心目中，一直认为画廊(在酷安名为快图浏览)是Android阵营中最好用的相册软件，每次换手机，我都会放弃使用系统自带相册，使用画廊。但是自从我发现这款软件之后，我认为，它具有超越画廊，成为真正的No.1的强大潜力。<br>
@@ -430,35 +444,6 @@
       </tags>
   </entry>
   <entry>
-    <title>一加新功能</title>
-    <url>/2020/04/06/026-a-new-function-of-oneplus/</url>
-    <content><![CDATA[<p>一加在通讯录加入了类似Face Time的功能，一加手机之间可以通过Wifi、5G、4G进行聊天视频通话，界面的交互也和Face Time比较类似。使用下来，或可与Face Time相比，是一个很不错的功能</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>OnePlus</tag>
-        <tag>通讯录</tag>
-        <tag>FaceTime</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>炉石的同步策略</title>
-    <url>/2020/04/12/027-synchronization-strategy-of-furnace-stone/</url>
-    <content><![CDATA[<p>炉石在Android，PC，iPhone，iPad都共用一个服务器，数据都可以同步共享。暴雪这波操作简直把腾讯系游戏以及苹果官方的脸都吊起来打。而作为一个用户，真是拍手叫好。<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222306.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-        <category>游戏体验</category>
-      </categories>
-      <tags>
-        <tag>炉石</tag>
-        <tag>云同步</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>告别微软计划</title>
     <url>/2020/04/15/028-bid-farewell-to-microsoft-plan/</url>
     <content><![CDATA[<p>1.彻底卸载VS2019</p>
@@ -479,6 +464,21 @@
       </tags>
   </entry>
   <entry>
+    <title>炉石的同步策略</title>
+    <url>/2020/04/12/027-synchronization-strategy-of-furnace-stone/</url>
+    <content><![CDATA[<p>炉石在Android，PC，iPhone，iPad都共用一个服务器，数据都可以同步共享。暴雪这波操作简直把腾讯系游戏以及苹果官方的脸都吊起来打。而作为一个用户，真是拍手叫好。<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222306.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+        <category>游戏体验</category>
+      </categories>
+      <tags>
+        <tag>炉石</tag>
+        <tag>云同步</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Deepin初体验</title>
     <url>/2020/04/26/029-deepin-first-experience/</url>
     <content><![CDATA[<p>在经过系统换源，安装常用软件，学习基本命令行，三大语言编译环境配置，增加一点窗口特效之后，Deepin终于整成和Win差不多的生产力工具了。不得不说，Python3.8环境真难装，花了三天都没琢磨明白，最后还是装一个Conda解决全部问题。<br>
@@ -492,6 +492,55 @@
         <tag>CentOS</tag>
         <tag>Conda</tag>
         <tag>Debian</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何管理学习时间</title>
+    <url>/2020/05/14/031-how-to-manage-learning-time/</url>
+    <content><![CDATA[<h1>时间管理第一原则：效率</h1>
+<p>因为，当我跑去采访这些牛人的时候，他们不约而同地提到的“时间管理第一原则”是：效率。<br>
+在每天啃case的过程中，我也发现了这么一个简单的事实：同样长的case，我可以看上3小时，也可以40分钟-1小时看完，区别在于大脑的运转效率。<br>
+当大脑疲于工作的时候，对着case就开始犯困/发呆/走神，于是拖拖拉拉地看完，也不一定看进去了多少。<br>
+后来我学乖了，上完3节课回来，大脑已经累的不转了，干脆睡个半小时一小时的，起来又是一条好汉，看起case来哗哗的~算下来花的时间还是少的。</p>
+<h2 id="1-维持能量">1.维持能量</h2>
+<p>觉当然是一定要好好睡的。白天连续工作太久，发现大脑效率下降的时候，不妨放松或者小憩一下充个电，往往效率曲线就又蹭的一下上去了。</p>
+<h2 id="2-提高体力">2.提高体力</h2>
+<p>有没有发现动脑子的时候饿的快?说明脑力工作也是相当耗体力的。所以大脑与身体能持续高效工作多久，体力是基础。腾出时间，去健身房吧。这是对效率的投资，一定不亏本。</p>
+<h2 id="3-集中精神">3.集中精神</h2>
+<p>大多数事情在集中精神的状态下都会完成的更快更好，所以尽量一次只做一件事情。抄抄写写这种不动脑子的不在此列。<br>
+为了让你的大脑保证只想一件事情，往往要能够把脑子清空——如果发现有些事情在脑子里转来转去，不妨干脆先写下来，然后分配一个另外的时间再去想。</p>
+<h1>时间管理的第二原则：设置优先级</h1>
+<p>列了要做的/想要的list，下一步是排序。检验排序有效的标准：当出现冲突的时候，你能够干脆地放弃优先级低的。<br>
+比如：“对我来说，每天要睡8小时这件事情是第一优先级，绝对没有商量的余地。所以，party虽然不得不去，但一到12点我就会偷偷消失。第二天如果有人问我，怎么昨天party没看到你啊?我就会装傻说，“啊，真的么?我一定是错过你了吧!”——学生E的经验分享。<br>
+所以，关于优先级这一点，想说的是：比决定想要什么更难但也更重要的，也许是决定不要什么。<br>
+我是容易贪心的平凡人，常常觉这个也不能不做，那个也不舍得不要。观察身边的牛人，却发现很多我的第一反应会是“这怎么可以不做”的事情，他们却可以理直气壮地说，我不干。而这种放弃，是非常有策略性的。<br>
+同学Y，discussion group不去，大部分要求的case都不屑读。我并不认同这种做法，但慢慢发现人家不过是想学的东西跟学习的方法不一样。事实上，他会坚持在课后总结整理自己的收获与思考，还从学校图书馆拿了很多其他感兴趣的case和书，并认真地写读书笔记。<br>
+同学K，身为美女流行歌手的乐队鼓手，简直就是学校里的名人。可她偏偏几乎从不出席商学院的主流社交party与大型聚会活动。<br>
+她说，我就不喜欢跟一大群人去吵得要死说话也听不见的地方，特别浅薄，还不如省下来时间跟三两好友喝酒聊天。结果她依然是好友遍天下，第一次到土耳其也迅速找着了当地的音乐知己，聊天逛街抽水烟，不亦乐乎。<br>
+说到底，现在这个花花世界，填满生活还不容易，哪有那么多不能放弃的事情。</p>
+<h1>时间管理的第三原则：提前计划</h1>
+<p>说起来也不复杂，不过是每天、每周开始之前，拿出一点时间想想要干嘛。可是还是想不起来去做这件事情的。<br>
+所以我们说说不提前计划的坏处是什么吧。除了事情可能恰好堆到一起导致手忙脚乱以外，最典型的负面作用其实是：时间永远不知道花到哪里去了。很忙的过了一周觉得自己好像啥也没干。<br>
+原因是如果不很清晰地知道要做什么，就容易碰到什么是什么。于是哪件事情先找上来就处理了，反正一时也想不起来有什么更应该去做的事。然后过了一阵子发现几件重要的大事一件都没干。</p>
+<p>我对付这个毛病的办法是，在提前计划的时候：<br>
+1.把大事分解成具体的任务<br>
+2.把Calendar（日程表）上用来做这件事情的时间锁定住。这样逼自己先把重要的事情的时间排出来，剩下的时间再处理其他事情。<br>
+反正时间长了就发现，其他事情真做不完也不会死。倒是重要的事情老拖着不做往往后果比较严重——重要的事情之所以“重要”，总是有道理的。</p>
+<h1>时间管理的第四原则：获得成就感</h1>
+<p>最后想说一点，这些出色的时间管理者有个共同特点，就是都很喜欢to do list，享受从to do list上划掉一项的成就感。<br>
+这种对成就感的追求，本身也是他们去管理自己的时间的动力。但这未必是每个人喜欢的生活方式。<br>
+有些人从高效的生活中获得满足，也有些人从慢节奏随性的生活中获得满足。<br>
+如果你决定“发呆时间”、“看小说时间”、“看肥皂剧时间”对你来说很重要，我觉得一点问题都没有。只要你知道你的选择同时意味着放弃什么，并觉得值得就好。</p>
+<p>这个人生选择话题就太大了，任谁都是一生的反复权衡与纠结，我们就不说了。😅<br>
+只是不管怎么样，以上说的这些小技巧应该都能对执行过程有所帮助。<br>
+最重要的是立刻开始去做，哪怕只是其中任何一点。应该都能帮助你在同样的24小时里收获更丰富和广阔以及不焦虑的人生吧!</p>
+]]></content>
+      <categories>
+        <category>技能学习记录</category>
+      </categories>
+      <tags>
+        <tag>效率</tag>
+        <tag>时间管理</tag>
       </tags>
   </entry>
   <entry>
@@ -688,82 +737,6 @@
       </tags>
   </entry>
   <entry>
-    <title>如何管理学习时间</title>
-    <url>/2020/05/14/031-how-to-manage-learning-time/</url>
-    <content><![CDATA[<h1>时间管理第一原则：效率</h1>
-<p>因为，当我跑去采访这些牛人的时候，他们不约而同地提到的“时间管理第一原则”是：效率。<br>
-在每天啃case的过程中，我也发现了这么一个简单的事实：同样长的case，我可以看上3小时，也可以40分钟-1小时看完，区别在于大脑的运转效率。<br>
-当大脑疲于工作的时候，对着case就开始犯困/发呆/走神，于是拖拖拉拉地看完，也不一定看进去了多少。<br>
-后来我学乖了，上完3节课回来，大脑已经累的不转了，干脆睡个半小时一小时的，起来又是一条好汉，看起case来哗哗的~算下来花的时间还是少的。</p>
-<h2 id="1-维持能量">1.维持能量</h2>
-<p>觉当然是一定要好好睡的。白天连续工作太久，发现大脑效率下降的时候，不妨放松或者小憩一下充个电，往往效率曲线就又蹭的一下上去了。</p>
-<h2 id="2-提高体力">2.提高体力</h2>
-<p>有没有发现动脑子的时候饿的快?说明脑力工作也是相当耗体力的。所以大脑与身体能持续高效工作多久，体力是基础。腾出时间，去健身房吧。这是对效率的投资，一定不亏本。</p>
-<h2 id="3-集中精神">3.集中精神</h2>
-<p>大多数事情在集中精神的状态下都会完成的更快更好，所以尽量一次只做一件事情。抄抄写写这种不动脑子的不在此列。<br>
-为了让你的大脑保证只想一件事情，往往要能够把脑子清空——如果发现有些事情在脑子里转来转去，不妨干脆先写下来，然后分配一个另外的时间再去想。</p>
-<h1>时间管理的第二原则：设置优先级</h1>
-<p>列了要做的/想要的list，下一步是排序。检验排序有效的标准：当出现冲突的时候，你能够干脆地放弃优先级低的。<br>
-比如：“对我来说，每天要睡8小时这件事情是第一优先级，绝对没有商量的余地。所以，party虽然不得不去，但一到12点我就会偷偷消失。第二天如果有人问我，怎么昨天party没看到你啊?我就会装傻说，“啊，真的么?我一定是错过你了吧!”——学生E的经验分享。<br>
-所以，关于优先级这一点，想说的是：比决定想要什么更难但也更重要的，也许是决定不要什么。<br>
-我是容易贪心的平凡人，常常觉这个也不能不做，那个也不舍得不要。观察身边的牛人，却发现很多我的第一反应会是“这怎么可以不做”的事情，他们却可以理直气壮地说，我不干。而这种放弃，是非常有策略性的。<br>
-同学Y，discussion group不去，大部分要求的case都不屑读。我并不认同这种做法，但慢慢发现人家不过是想学的东西跟学习的方法不一样。事实上，他会坚持在课后总结整理自己的收获与思考，还从学校图书馆拿了很多其他感兴趣的case和书，并认真地写读书笔记。<br>
-同学K，身为美女流行歌手的乐队鼓手，简直就是学校里的名人。可她偏偏几乎从不出席商学院的主流社交party与大型聚会活动。<br>
-她说，我就不喜欢跟一大群人去吵得要死说话也听不见的地方，特别浅薄，还不如省下来时间跟三两好友喝酒聊天。结果她依然是好友遍天下，第一次到土耳其也迅速找着了当地的音乐知己，聊天逛街抽水烟，不亦乐乎。<br>
-说到底，现在这个花花世界，填满生活还不容易，哪有那么多不能放弃的事情。</p>
-<h1>时间管理的第三原则：提前计划</h1>
-<p>说起来也不复杂，不过是每天、每周开始之前，拿出一点时间想想要干嘛。可是还是想不起来去做这件事情的。<br>
-所以我们说说不提前计划的坏处是什么吧。除了事情可能恰好堆到一起导致手忙脚乱以外，最典型的负面作用其实是：时间永远不知道花到哪里去了。很忙的过了一周觉得自己好像啥也没干。<br>
-原因是如果不很清晰地知道要做什么，就容易碰到什么是什么。于是哪件事情先找上来就处理了，反正一时也想不起来有什么更应该去做的事。然后过了一阵子发现几件重要的大事一件都没干。</p>
-<p>我对付这个毛病的办法是，在提前计划的时候：<br>
-1.把大事分解成具体的任务<br>
-2.把Calendar（日程表）上用来做这件事情的时间锁定住。这样逼自己先把重要的事情的时间排出来，剩下的时间再处理其他事情。<br>
-反正时间长了就发现，其他事情真做不完也不会死。倒是重要的事情老拖着不做往往后果比较严重——重要的事情之所以“重要”，总是有道理的。</p>
-<h1>时间管理的第四原则：获得成就感</h1>
-<p>最后想说一点，这些出色的时间管理者有个共同特点，就是都很喜欢to do list，享受从to do list上划掉一项的成就感。<br>
-这种对成就感的追求，本身也是他们去管理自己的时间的动力。但这未必是每个人喜欢的生活方式。<br>
-有些人从高效的生活中获得满足，也有些人从慢节奏随性的生活中获得满足。<br>
-如果你决定“发呆时间”、“看小说时间”、“看肥皂剧时间”对你来说很重要，我觉得一点问题都没有。只要你知道你的选择同时意味着放弃什么，并觉得值得就好。</p>
-<p>这个人生选择话题就太大了，任谁都是一生的反复权衡与纠结，我们就不说了。😅<br>
-只是不管怎么样，以上说的这些小技巧应该都能对执行过程有所帮助。<br>
-最重要的是立刻开始去做，哪怕只是其中任何一点。应该都能帮助你在同样的24小时里收获更丰富和广阔以及不焦虑的人生吧!</p>
-]]></content>
-      <categories>
-        <category>技能学习记录</category>
-      </categories>
-      <tags>
-        <tag>效率</tag>
-        <tag>时间管理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>后浪</title>
-    <url>/2020/05/14/032-rising-waves/</url>
-    <content><![CDATA[<p>麻：“师爷，您给翻译翻译，什么叫后浪，翻译翻译，什么，叫后浪”</p>
-<p>汤：“这还用翻译，年轻人嘛，新一代，都说了…”</p>
-<p>麻：“我让你翻译给我听，什么叫后浪！”</p>
-<p>汤：：“不用翻译，就是后浪啊，热爱生活嘛…”</p>
-<p>黄：“难道你听不懂什么叫后浪？”</p>
-<p>麻：“我就想让你翻译翻译，什么，叫后浪！！！”</p>
-<p>汤：“后浪嘛！”</p>
-<p>麻：“翻译出来给我听，什么TM的叫后浪！什么TM的叫TM的后浪！”</p>
-<p>汤：“什么TM的叫后浪啊？”</p>
-<p>黄：“后浪就是新一代青年，可以选择玩单反，开跑车，玩跳伞，在欧洲旅游拍vlog，明白了吗？”</p>
-<p>汤：“这就是后浪呀！”</p>
-<p>麻：“翻译翻译”</p>
-<p>汤，黄：“…？？？”</p>
-<p>麻：“翻译翻译！”</p>
-<p>汤：“后浪，就是前浪的儿子和女儿！”</p>
-<p>麻：“噢，大哥这TM是后浪啊。”</p>
-]]></content>
-      <categories>
-        <category>好句摘抄</category>
-      </categories>
-      <tags>
-        <tag>翻译翻译</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2019学年离散复习及押题</title>
     <url>/2020/05/14/033-2019-discrete-review-and-escort/</url>
     <content><![CDATA[<p>离散复习及押题(综合12,13,14,17,18年题型)</p>
@@ -819,6 +792,33 @@
       </tags>
   </entry>
   <entry>
+    <title>后浪</title>
+    <url>/2020/05/14/032-rising-waves/</url>
+    <content><![CDATA[<p>麻：“师爷，您给翻译翻译，什么叫后浪，翻译翻译，什么，叫后浪”</p>
+<p>汤：“这还用翻译，年轻人嘛，新一代，都说了…”</p>
+<p>麻：“我让你翻译给我听，什么叫后浪！”</p>
+<p>汤：：“不用翻译，就是后浪啊，热爱生活嘛…”</p>
+<p>黄：“难道你听不懂什么叫后浪？”</p>
+<p>麻：“我就想让你翻译翻译，什么，叫后浪！！！”</p>
+<p>汤：“后浪嘛！”</p>
+<p>麻：“翻译出来给我听，什么TM的叫后浪！什么TM的叫TM的后浪！”</p>
+<p>汤：“什么TM的叫后浪啊？”</p>
+<p>黄：“后浪就是新一代青年，可以选择玩单反，开跑车，玩跳伞，在欧洲旅游拍vlog，明白了吗？”</p>
+<p>汤：“这就是后浪呀！”</p>
+<p>麻：“翻译翻译”</p>
+<p>汤，黄：“…？？？”</p>
+<p>麻：“翻译翻译！”</p>
+<p>汤：“后浪，就是前浪的儿子和女儿！”</p>
+<p>麻：“噢，大哥这TM是后浪啊。”</p>
+]]></content>
+      <categories>
+        <category>好句摘抄</category>
+      </categories>
+      <tags>
+        <tag>翻译翻译</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux初体验</title>
     <url>/2020/05/14/034-linux-first-experience/</url>
     <content><![CDATA[<p>在经过系统换源，安装常用软件，学习基本命令行，三大语言编译环境配置，增加一点窗口特效之后，Deepin终于整成和Win差不多的生产力工具了。不得不说，Python3.8环境真难装，花了三天都没琢磨明白，最后还是装一个Conda解决全部问题。</p>
@@ -837,6 +837,37 @@
       <tags>
         <tag>Debian</tag>
         <tag>Deepin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iO流基本概念</title>
+    <url>/2020/05/14/035-basic-concepts-of-io-flow/</url>
+    <content><![CDATA[<p>1.从中央处理器流向外部设备的数据流称为输出流</p>
+<p>2.程序读入字符文件时，能够以该文件作为直接参数的类是FileReader</p>
+<p>3.java.io包的File类是字符流类</p>
+<p>4.在Serializable接口中没有定义抽象方法，也没有定义常量</p>
+<p>5.Java中用于创建文件对象的类是File</p>
+<p>6.在键盘上输入一个字符串创建文件对象，isFile( )方法可以判断对象为目录文件还是数据文件</p>
+<p>7.InputStream类不对接创建对象</p>
+<p>8.从键盘上输入多个字符时，为了避免回车换行符的影响，需要使用skip( )流方法</p>
+<p>9.以对象为单位，把某个对象写入文件，需要使用writeObject( )方法</p>
+<p>10.ObjectOutputStream类的方法能够直接把简单数据类型写入文件</p>
+<p>11.若一个类对象能被整体写入文件，则定义该类时必须实现Serializable接口</p>
+<p>12.String类型的数据能够以对象的形式写入文件</p>
+<p>13.File类的方法中，用于列举某目录下的子目录及文件的方法是String[] list( )</p>
+<p>14.能够以字符串为单位写入文件数据的流类是BufferedWriter</p>
+<p>15.能够向文件输入逻辑型数据的类是DataOutputStream</p>
+<p>16.flush( )方法只对使用了缓冲的流类起作用</p>
+<p>17.写出一段程序，要求创建BufferedReader类的对象in，以便读取本机C盘my文件夹下的文件1.txt</p>
+<pre><code class="highlight java"><span class="type">File</span> <span class="variable">f</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(<span class="string">&quot;c:\\my\\1.txt&quot;</span>);
+file = <span class="keyword">new</span> <span class="title class_">FileReader</span>(f);
+in = <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(file);</code></pre>]]></content>
+      <categories>
+        <category>Java学习笔记</category>
+      </categories>
+      <tags>
+        <tag>中央处理</tag>
+        <tag>IO流</tag>
       </tags>
   </entry>
   <entry>
@@ -886,37 +917,6 @@
         <tag>油猴脚本</tag>
         <tag>Chrome</tag>
         <tag>插件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iO流基本概念</title>
-    <url>/2020/05/14/035-basic-concepts-of-io-flow/</url>
-    <content><![CDATA[<p>1.从中央处理器流向外部设备的数据流称为输出流</p>
-<p>2.程序读入字符文件时，能够以该文件作为直接参数的类是FileReader</p>
-<p>3.java.io包的File类是字符流类</p>
-<p>4.在Serializable接口中没有定义抽象方法，也没有定义常量</p>
-<p>5.Java中用于创建文件对象的类是File</p>
-<p>6.在键盘上输入一个字符串创建文件对象，isFile( )方法可以判断对象为目录文件还是数据文件</p>
-<p>7.InputStream类不对接创建对象</p>
-<p>8.从键盘上输入多个字符时，为了避免回车换行符的影响，需要使用skip( )流方法</p>
-<p>9.以对象为单位，把某个对象写入文件，需要使用writeObject( )方法</p>
-<p>10.ObjectOutputStream类的方法能够直接把简单数据类型写入文件</p>
-<p>11.若一个类对象能被整体写入文件，则定义该类时必须实现Serializable接口</p>
-<p>12.String类型的数据能够以对象的形式写入文件</p>
-<p>13.File类的方法中，用于列举某目录下的子目录及文件的方法是String[] list( )</p>
-<p>14.能够以字符串为单位写入文件数据的流类是BufferedWriter</p>
-<p>15.能够向文件输入逻辑型数据的类是DataOutputStream</p>
-<p>16.flush( )方法只对使用了缓冲的流类起作用</p>
-<p>17.写出一段程序，要求创建BufferedReader类的对象in，以便读取本机C盘my文件夹下的文件1.txt</p>
-<pre><code class="highlight java"><span class="type">File</span> <span class="variable">f</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(<span class="string">&quot;c:\\my\\1.txt&quot;</span>);
-file = <span class="keyword">new</span> <span class="title class_">FileReader</span>(f);
-in = <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(file);</code></pre>]]></content>
-      <categories>
-        <category>Java学习笔记</category>
-      </categories>
-      <tags>
-        <tag>中央处理</tag>
-        <tag>IO流</tag>
       </tags>
   </entry>
   <entry>
@@ -1027,6 +1027,23 @@ in = <span class="keyword">new</span> <span class="title class_">BufferedReader<
       </tags>
   </entry>
   <entry>
+    <title>编程IDE的选择</title>
+    <url>/2020/05/21/040-selection-of-programming-ide/</url>
+    <content><![CDATA[<p>VScode一顿操作猛如虎，评论JetBrains真香<br>
+关于编译器选择，我确实也在考虑选择，一开始VC6.0用着都行，后来换了VS2019，觉得又强大又好用。再之后遇到JerBrains就圈粉入手全家桶了<br>
+除此之外，VScode确实也渐入我的视线，VSC优点为支持语言多，插件丰富，这一点总结为综合性强，兼容性高，就相当于各方面都不错的综合生。缺点也很明显，遇到大项目容易卡，一些操作，例如重构处理的就不是很好，综合为虽然各方面不错，但是和一般的编辑器拉开的差距比较小，和专门编写某一语言的IDE还是有些差距<br>
+官方对VScode其定义为编辑器，装上插件之后可以写一些中小型项目。对我来说，我会用VSC代替notepad++，平时写点小项目，研究下算法，不过更多情况下还是偏爱JetBrains全家桶，总体来说VSC还是很不错的，吊打自家VS2019</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>IDE</tag>
+        <tag>VSCode</tag>
+        <tag>JetBrains</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Android软件应用名、显示文本和图标的修改</title>
     <url>/2020/05/18/039-modification-of-android-software-application-name-display-text-and-icon/</url>
     <content><![CDATA[<p>这些操作都是在app这个文件夹下，具体路径为app-&gt;src-&gt;main-&gt;res<br>
@@ -1100,20 +1117,22 @@ in = <span class="keyword">new</span> <span class="title class_">BufferedReader<
       </tags>
   </entry>
   <entry>
-    <title>编程IDE的选择</title>
-    <url>/2020/05/21/040-selection-of-programming-ide/</url>
-    <content><![CDATA[<p>VScode一顿操作猛如虎，评论JetBrains真香<br>
-关于编译器选择，我确实也在考虑选择，一开始VC6.0用着都行，后来换了VS2019，觉得又强大又好用。再之后遇到JerBrains就圈粉入手全家桶了<br>
-除此之外，VScode确实也渐入我的视线，VSC优点为支持语言多，插件丰富，这一点总结为综合性强，兼容性高，就相当于各方面都不错的综合生。缺点也很明显，遇到大项目容易卡，一些操作，例如重构处理的就不是很好，综合为虽然各方面不错，但是和一般的编辑器拉开的差距比较小，和专门编写某一语言的IDE还是有些差距<br>
-官方对VScode其定义为编辑器，装上插件之后可以写一些中小型项目。对我来说，我会用VSC代替notepad++，平时写点小项目，研究下算法，不过更多情况下还是偏爱JetBrains全家桶，总体来说VSC还是很不错的，吊打自家VS2019</p>
+    <title>ARM架构</title>
+    <url>/2020/06/23/042-arm-architecture/</url>
+    <content><![CDATA[<p>Mac转为arm架构，A12Z牛逼！</p>
+<p>底层直接实现MacOS,iPhone,iPadOS软件互相使用！</p>
+<p>Surface直接当场去世</p>
 ]]></content>
       <categories>
         <category>极客之旅</category>
       </categories>
       <tags>
-        <tag>IDE</tag>
-        <tag>VSCode</tag>
-        <tag>JetBrains</tag>
+        <tag>iOS</tag>
+        <tag>MacOS</tag>
+        <tag>ARM</tag>
+        <tag>芯片</tag>
+        <tag>iPhone</tag>
+        <tag>iPadOS</tag>
       </tags>
   </entry>
   <entry>
@@ -1134,22 +1153,29 @@ in = <span class="keyword">new</span> <span class="title class_">BufferedReader<
       </tags>
   </entry>
   <entry>
-    <title>ARM架构</title>
-    <url>/2020/06/23/042-arm-architecture/</url>
-    <content><![CDATA[<p>Mac转为arm架构，A12Z牛逼！</p>
-<p>底层直接实现MacOS,iPhone,iPadOS软件互相使用！</p>
-<p>Surface直接当场去世</p>
+    <title>伊甸园献祭平面图</title>
+    <url>/2020/07/26/044-sacrifice-plan-of-eden/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/src%3Dhttp___img.tkgame.com_d_file_2020_07_10_24n2lnyhrap.jpg%26refer%3Dhttp___img.tkgame_mh1615302773095.jpg" alt="伊甸园献祭平面图"></p>
 ]]></content>
       <categories>
-        <category>极客之旅</category>
+        <category>游戏体验</category>
       </categories>
       <tags>
-        <tag>iOS</tag>
-        <tag>MacOS</tag>
-        <tag>ARM</tag>
-        <tag>芯片</tag>
-        <tag>iPhone</tag>
-        <tag>iPadOS</tag>
+        <tag>光遇</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>白夜</title>
+    <url>/2020/08/01/045-white-night/</url>
+    <content><![CDATA[<p>白夜：我的世界里本就没有太阳，只是有些东西代替了太阳，给我光芒。<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223209.webp" alt="白夜"></p>
+]]></content>
+      <categories>
+        <category>生活感悟</category>
+        <category>摄影记录</category>
+      </categories>
+      <tags>
+        <tag>白夜</tag>
       </tags>
   </entry>
   <entry>
@@ -1229,32 +1255,6 @@ in = <span class="keyword">new</span> <span class="title class_">BufferedReader<
       </tags>
   </entry>
   <entry>
-    <title>伊甸园献祭平面图</title>
-    <url>/2020/07/26/044-sacrifice-plan-of-eden/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/src%3Dhttp___img.tkgame.com_d_file_2020_07_10_24n2lnyhrap.jpg%26refer%3Dhttp___img.tkgame_mh1615302773095.jpg" alt="伊甸园献祭平面图"></p>
-]]></content>
-      <categories>
-        <category>游戏体验</category>
-      </categories>
-      <tags>
-        <tag>光遇</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>白夜</title>
-    <url>/2020/08/01/045-white-night/</url>
-    <content><![CDATA[<p>白夜：我的世界里本就没有太阳，只是有些东西代替了太阳，给我光芒。<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223209.webp" alt="白夜"></p>
-]]></content>
-      <categories>
-        <category>生活感悟</category>
-        <category>摄影记录</category>
-      </categories>
-      <tags>
-        <tag>白夜</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>字节事件感想</title>
     <url>/2020/08/08/046-code-byte-is-traitor/</url>
     <content><![CDATA[<p>字节跳动成功助美国完成在“法国投降前攻占巴黎”的史诗级任务</p>
@@ -1268,21 +1268,6 @@ in = <span class="keyword">new</span> <span class="title class_">BufferedReader<
       <tags>
         <tag>法国行为</tag>
         <tag>耻辱柱</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>怎么把走廊拍出高级感</title>
-    <url>/2020/09/09/048-how-to-make-the-corridor-feel-high/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223555.webp" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223605.webp" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223616.webp" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223626.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>摄影记录</category>
-      </categories>
-      <tags>
-        <tag>走廊</tag>
       </tags>
   </entry>
   <entry>
@@ -1305,6 +1290,32 @@ in = <span class="keyword">new</span> <span class="title class_">BufferedReader<
       </tags>
   </entry>
   <entry>
+    <title>怎么把走廊拍出高级感</title>
+    <url>/2020/09/09/048-how-to-make-the-corridor-feel-high/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223555.webp" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223605.webp" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223616.webp" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223626.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>摄影记录</category>
+      </categories>
+      <tags>
+        <tag>走廊</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iPad编程初步实现</title>
+    <url>/2020/09/10/049-preliminary-implementation-of-ipad-programming/</url>
+    <content><![CDATA[<p>iPad+TeamViewer，远程访问宿舍电脑<br>
+由于游戏本又重续航又差，带不出去宿舍，没法才想到这个方法。iPad和电脑都连Wifi可以大大降低网络延迟。鼠标键盘直接使用蓝牙的，稍微设置一下，体验就可以和电脑相比了<br>
+总体操作使用起来就和电脑没有什么区别，可以应付上课要用到电脑的情况，iPad+鼠标+键盘都比较轻，易于携带，唯一需要注意的是，出门前要检查保证宿舍电脑一定要连上Wifi</p>
+]]></content>
+      <tags>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>初入修仙</title>
     <url>/2020/10/12/050-novice-xiuxian/</url>
     <content><![CDATA[<p>到了庙门，拜了真神，很开心。一声道友尽沧桑，修仙路，一步一层天。<br>
@@ -1321,17 +1332,6 @@ in = <span class="keyword">new</span> <span class="title class_">BufferedReader<
       </tags>
   </entry>
   <entry>
-    <title>iPad编程初步实现</title>
-    <url>/2020/09/10/049-preliminary-implementation-of-ipad-programming/</url>
-    <content><![CDATA[<p>iPad+TeamViewer，远程访问宿舍电脑<br>
-由于游戏本又重续航又差，带不出去宿舍，没法才想到这个方法。iPad和电脑都连Wifi可以大大降低网络延迟。鼠标键盘直接使用蓝牙的，稍微设置一下，体验就可以和电脑相比了<br>
-总体操作使用起来就和电脑没有什么区别，可以应付上课要用到电脑的情况，iPad+鼠标+键盘都比较轻，易于携带，唯一需要注意的是，出门前要检查保证宿舍电脑一定要连上Wifi</p>
-]]></content>
-      <tags>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>闪电五连鞭&amp;凡人修仙传</title>
     <url>/2020/10/15/051-lightning-with-five-lashes/</url>
     <content><![CDATA[<p>朋友们好啊，我是血色禁地二级妖兽墨蛟。<br>
@@ -1342,21 +1342,6 @@ in = <span class="keyword">new</span> <span class="title class_">BufferedReader<
       </categories>
       <tags>
         <tag>整活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>初遇2077</title>
-    <url>/2020/12/12/053-first-encounter-2077/</url>
-    <content><![CDATA[<p>今晚和基努里维斯血洗夜之城<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224332.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>游戏体验</category>
-      </categories>
-      <tags>
-        <tag>赛博朋克2077</tag>
-        <tag>捏脸</tag>
-        <tag>V</tag>
       </tags>
   </entry>
   <entry>
@@ -1373,18 +1358,18 @@ in = <span class="keyword">new</span> <span class="title class_">BufferedReader<
       </tags>
   </entry>
   <entry>
-    <title>身在南方体验北方</title>
-    <url>/2020/12/30/055-experience-the-north-in-the-south/</url>
-    <content><![CDATA[<p>确定了，我在北方<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224607.webp" alt=""></p>
+    <title>初遇2077</title>
+    <url>/2020/12/12/053-first-encounter-2077/</url>
+    <content><![CDATA[<p>今晚和基努里维斯血洗夜之城<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224332.webp" alt=""></p>
 ]]></content>
       <categories>
-        <category>摄影记录</category>
-        <category>植物欣赏</category>
+        <category>游戏体验</category>
       </categories>
       <tags>
-        <tag>鬼天气</tag>
-        <tag>好滤镜</tag>
+        <tag>赛博朋克2077</tag>
+        <tag>捏脸</tag>
+        <tag>V</tag>
       </tags>
   </entry>
   <entry>
@@ -1407,17 +1392,18 @@ in = <span class="keyword">new</span> <span class="title class_">BufferedReader<
       </tags>
   </entry>
   <entry>
-    <title>多做减法</title>
-    <url>/2021/01/27/057-do-more-subtraction/</url>
-    <content><![CDATA[<p>简单选择，艰难生活；艰难选择，简单生活。<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224732.webp" alt=""></p>
+    <title>身在南方体验北方</title>
+    <url>/2020/12/30/055-experience-the-north-in-the-south/</url>
+    <content><![CDATA[<p>确定了，我在北方<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224607.webp" alt=""></p>
 ]]></content>
       <categories>
-        <category>生活感悟</category>
-        <category>好句摘抄</category>
+        <category>摄影记录</category>
+        <category>植物欣赏</category>
       </categories>
       <tags>
-        <tag>以启山林</tag>
+        <tag>鬼天气</tag>
+        <tag>好滤镜</tag>
       </tags>
   </entry>
   <entry>
@@ -1713,6 +1699,20 @@ in = <span class="keyword">new</span> <span class="title class_">BufferedReader<
       </tags>
   </entry>
   <entry>
+    <title>多做减法</title>
+    <url>/2021/01/27/057-do-more-subtraction/</url>
+    <content><![CDATA[<p>简单选择，艰难生活；艰难选择，简单生活。<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224732.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>生活感悟</category>
+        <category>好句摘抄</category>
+      </categories>
+      <tags>
+        <tag>以启山林</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>小米无线充电桩惊了我</title>
     <url>/2021/01/29/058-xiaomi-wireless-charging-pile-surprised-me/</url>
     <content><![CDATA[<p>有5m以内5w充电，就会有20m以内100w充电。好家伙，以后直接偷邻居电用。<br>
@@ -1779,26 +1779,6 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
-    <title>路由信息协议Rip</title>
-    <url>/2021/02/28/063-routing-information-protocol-rip/</url>
-    <content><![CDATA[<p>路由信息协议是基于向量-距离选择算法的协议，设置了周期更新定时器、延迟定时器、超时定时器与清除定时器。对照自己的路由表，没有的话接收； 有的话比较度量值，大了就忽略，小了就接收；（说明：当更新来源于同一个R时，不论度量值大小与否，都将接收。）<br>
-①RIP周期更新定时器：路由器设置一个周期更新定时器，每隔30秒在相邻路由器之间交换一次路由更新信息，路由器以广播的方发送路由信息。<br>
-②为了防止因触发更新而引起的广播风暴，RIp增加了一个延迟定时器。延迟定时器为每次路由更新延迟一个随机时间。<br>
-③每个路由表增加一个超时定时器，当路由信息中一个表项修改算起，超过180秒没有收到刷新信息，则认为该路径已经出现故障，路由表将该项记录设置为“无效”，而不是立即清除。<br>
-④设置一个清除定时器，如果路由表中的一个路由记录设置为“无效”超过120秒没有收到更新信息，则立即从路由表中删除该项记录。<br>
-⑤为了防止路由更新过程中，某个路径出现故障，而出现路由环路的情况，使得Rip产生慢收敛。有四种解决方式：设置路径的最大跳数为16； 如果路由器R1从R2处获得距离信息，R1不再给R2发送距离信息，称为“水平分割”；三是路由器在得知目的网络不可达信息之后的60秒时间内，不接受任何关于目的网络可达的信息；毒性逆转：当某条路径出现故障，最早广播该路由的路由器将距离定为16,，于此同时出发路由更新，立即广播刷新信息。<br>
-⑥由于防止引起广播风暴以及最大跳数的限制，Rip只适用于比较小的系统。</p>
-]]></content>
-      <categories>
-        <category>考试资料</category>
-        <category>计算机网络学习笔记</category>
-      </categories>
-      <tags>
-        <tag>路由信息协议</tag>
-        <tag>Rip</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>大物2考试复习一图到底</title>
     <url>/2021/02/28/064-review-the-picture-to-the-end-in-the-big-physics-2-exam/</url>
     <content><![CDATA[<h1>一、填空题（20分，10空，每空2分）</h1>
@@ -1833,6 +1813,26 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </categories>
       <tags>
         <tag>大物</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>路由信息协议Rip</title>
+    <url>/2021/02/28/063-routing-information-protocol-rip/</url>
+    <content><![CDATA[<p>路由信息协议是基于向量-距离选择算法的协议，设置了周期更新定时器、延迟定时器、超时定时器与清除定时器。对照自己的路由表，没有的话接收； 有的话比较度量值，大了就忽略，小了就接收；（说明：当更新来源于同一个R时，不论度量值大小与否，都将接收。）<br>
+①RIP周期更新定时器：路由器设置一个周期更新定时器，每隔30秒在相邻路由器之间交换一次路由更新信息，路由器以广播的方发送路由信息。<br>
+②为了防止因触发更新而引起的广播风暴，RIp增加了一个延迟定时器。延迟定时器为每次路由更新延迟一个随机时间。<br>
+③每个路由表增加一个超时定时器，当路由信息中一个表项修改算起，超过180秒没有收到刷新信息，则认为该路径已经出现故障，路由表将该项记录设置为“无效”，而不是立即清除。<br>
+④设置一个清除定时器，如果路由表中的一个路由记录设置为“无效”超过120秒没有收到更新信息，则立即从路由表中删除该项记录。<br>
+⑤为了防止路由更新过程中，某个路径出现故障，而出现路由环路的情况，使得Rip产生慢收敛。有四种解决方式：设置路径的最大跳数为16； 如果路由器R1从R2处获得距离信息，R1不再给R2发送距离信息，称为“水平分割”；三是路由器在得知目的网络不可达信息之后的60秒时间内，不接受任何关于目的网络可达的信息；毒性逆转：当某条路径出现故障，最早广播该路由的路由器将距离定为16,，于此同时出发路由更新，立即广播刷新信息。<br>
+⑥由于防止引起广播风暴以及最大跳数的限制，Rip只适用于比较小的系统。</p>
+]]></content>
+      <categories>
+        <category>考试资料</category>
+        <category>计算机网络学习笔记</category>
+      </categories>
+      <tags>
+        <tag>路由信息协议</tag>
+        <tag>Rip</tag>
       </tags>
   </entry>
   <entry>
@@ -2505,19 +2505,6 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
-    <title>难为知己难为敌</title>
-    <url>/2021/07/31/095-hard-to-be-a-confidant-than-an-enemy/</url>
-    <content><![CDATA[<p>古语有云「难为知己难为敌」，从策略上讲，你和最大敌人若在一段时间内无法杀死对方，到最后反而会不舍得离开他，皆因彼此熟门熟路，相斗相倚。</p>
-<p>这个人很冷漠很生人勿近，你怎么看也看不穿他的心的，更甭说想当他的朋友了；他同时又是个很厉害的角色，你肯定不能轻易嬴过他，所以当他的敌人也绝非一件好事。所以你和他之间皆非知己亦非敌人，是一种很微妙的关系。</p>
-]]></content>
-      <categories>
-        <category>好句摘抄</category>
-      </categories>
-      <tags>
-        <tag>难为知己难为敌</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>黑苹果,浏览器,系统</title>
     <url>/2021/08/07/096-blackapple-browser-system/</url>
     <content><![CDATA[<p>1.火狐真好用 win mac Android iOS ubuntu 全能互通 体验又和谷歌一样 插件主题还极其丰富,还能直接装gnome扩展 装dash-to-dock这样的ubuntu桌面工具</p>
@@ -2538,6 +2525,19 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
         <tag>OpenCore</tag>
         <tag>oh-my-zsh</tag>
         <tag>缓冲帧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>难为知己难为敌</title>
+    <url>/2021/07/31/095-hard-to-be-a-confidant-than-an-enemy/</url>
+    <content><![CDATA[<p>古语有云「难为知己难为敌」，从策略上讲，你和最大敌人若在一段时间内无法杀死对方，到最后反而会不舍得离开他，皆因彼此熟门熟路，相斗相倚。</p>
+<p>这个人很冷漠很生人勿近，你怎么看也看不穿他的心的，更甭说想当他的朋友了；他同时又是个很厉害的角色，你肯定不能轻易嬴过他，所以当他的敌人也绝非一件好事。所以你和他之间皆非知己亦非敌人，是一种很微妙的关系。</p>
+]]></content>
+      <categories>
+        <category>好句摘抄</category>
+      </categories>
+      <tags>
+        <tag>难为知己难为敌</tag>
       </tags>
   </entry>
   <entry>
@@ -2574,6 +2574,22 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </categories>
       <tags>
         <tag>Anti996</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自个做饭,贼舒服~</title>
+    <url>/2021/09/03/100-comfortable-to-cook-by-myself/</url>
+    <content><![CDATA[<p>做的都是焖饭系列,做法也比较简单<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/09/07/20210907025934035.jpg" alt="黑椒鸡肉"></p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/09/07/20210907025934067.jpg" alt="豌豆饭"></p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/09/07/20210907025934086.jpg" alt="咖喱鸡+鸡胸肉"></p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/09/07/20210907025934107.jpg" alt="肥牛焖饭"></p>
+]]></content>
+      <categories>
+        <category>烹调之道</category>
+      </categories>
+      <tags>
+        <tag>cooking</tag>
       </tags>
   </entry>
   <entry>
@@ -2910,22 +2926,6 @@ Doing right things!!!</p>
       <tags>
         <tag>谦虚</tag>
         <tag>热爱</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>自个做饭,贼舒服~</title>
-    <url>/2021/09/03/100-comfortable-to-cook-by-myself/</url>
-    <content><![CDATA[<p>做的都是焖饭系列,做法也比较简单<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/09/07/20210907025934035.jpg" alt="黑椒鸡肉"></p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/09/07/20210907025934067.jpg" alt="豌豆饭"></p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/09/07/20210907025934086.jpg" alt="咖喱鸡+鸡胸肉"></p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/09/07/20210907025934107.jpg" alt="肥牛焖饭"></p>
-]]></content>
-      <categories>
-        <category>烹调之道</category>
-      </categories>
-      <tags>
-        <tag>cooking</tag>
       </tags>
   </entry>
   <entry>
@@ -3609,8 +3609,8 @@ gulp.<span class="title function_">task</span>(
 <p>使用跟着给出的教程来即可</p>
 ]]></content>
       <categories>
-        <category>CV学习笔记</category>
         <category>技能学习记录</category>
+        <category>CV学习笔记</category>
       </categories>
       <tags>
         <tag>labelImg</tag>
@@ -3714,6 +3714,43 @@ gulp.<span class="title function_">task</span>(
       </categories>
       <tags>
         <tag>出师表</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>吐槽《雪中》的文案</title>
+    <url>/2022/08/05/119-review-draft/</url>
+    <content><![CDATA[<p>Hi,各位小伙伴大家好,我是YuZhangWang</p>
+<p>前不久,雪中悍刀行第一季已经完结了,在庆余年中的父愁者联盟，陈道明(加图片)等老戏骨们的演技，让我对雪中悍刀行这部电视剧有些许的期待。带着对胡军、杜玉明、王同辉、李解(加图片)这些老师演技的信任,怀着我的期待,追完了这部剧</p>
+<p>但是在这一部剧中,我陷入了失望当中,那么在一起视频当中，让我作为一个非专业的解说者,来聊一聊这一部剧让我比较难受的一些槽点</p>
+<h1>1.贫穷的特效以及动作场景的匮乏</h1>
+<h2 id="1-1韩貂寺的红丝特效">1.1韩貂寺的红丝特效</h2>
+<p>在bing搜索”雪中悍刀行投资多少钱”,并没有给出明确的答案,在知乎搜索同样的问题,前排的两个提到投资、贫穷字眼的问题,点进去一看,分别是一个回答和两个回答,也并没有提到大致的投资金额,所以我也无从考究雪中的投资。不过有一点比较明确,那就是雪中处处透露着贫穷的感觉,这里我举几个例子来说明这一点</p>
+<p>比如大结局38集中,韩貂寺的红丝特效给我的感觉像是学习了一个月的特效练习生做出来的特效,让我们来看一个片段感受一下(几个红丝特效做一个剪辑小片段，37+38集)</p>
+<p>这里的红丝,刚开始韩貂寺遇见袁庭山时,我已经感觉有一丝的不妙,但是那时我以为,韩貂寺的这个红丝会用在小场景,应该不会让杜玉明老师用这个尬演,但是万万没想到在38集中,韩貂寺就是直接用这一堆红丝来开大,直接震惊我的三观。给我感觉就是,一团毛线糊在了我的脸上。如果韩貂寺和陈芝豹一样放光波,效果虽然同样也是不堪入目,但是相对于毛线来说,会好上许多了。总不能因为韩貂寺被人称作人猫,就要对毛线球感兴趣吧。</p>
+<h2 id="1-2李淳罡的网游剑气">1.2李淳罡的网游剑气</h2>
+<p>同样的，陈芝豹和韩貂寺对打的时候，释放的黄色光波和韩貂寺的红丝特效也有异曲同工之处，这里将红丝特效和黄色光波的特效归为一类。然后我们再来对比一下经费较为充足特效，拿李淳罡的特效来举例，让我们来看一个片段（瀑布旁边给徐凤年展示两袖青蛇的片段，第22集），在上面这个片段当中，李淳罡释放两袖青蛇的特效，从细节入手，随手一挥（截图，随手一挥），一道剑气就释放而出，在池底激起一个小爆炸，这里的特效和剑气效果，让我作为一个观众来说，觉得算得上一位顶尖高手应该有的放招式的样子。所以这部剧在中间穿插的特效可以说达到了一部分观众的心理预期，让人期待着最后结尾的特效应该不会太差，就这样一步一步将观众带入到38集的最终冥场面，可以说充分利用了人的好奇和侥幸心理，成功地割了一波流量韭菜。</p>
+<h2 id="1-3慢动作的大量运用">1.3慢动作的大量运用</h2>
+<p>剑九黄和湖底老魁的打斗，作为用来展现一品境界的高手相互对战的场景，整场戏，就是湖底老魁在各个房梁上闪转腾挪。这样操作也不是不行，但是起码在这场戏多加一些特效吧，例如我们来看下下面这一幕（铁链打掉剑，第6集），在湖底老魁击退剑九黄的飞剑时，如果能加上想李淳罡那样的气波，让他们显得高手一些，这样或许能够让两位高手的实力更加立体饱满一些，也能让雪中的武力境界更合理一些。</p>
+<h1>2.演员表演和剧情上有一定冲突</h1>
+<p>原著改编在一些地方不是很合理(引用知乎的回答)</p>
+<h2 id="2-1轩辕敬城的笑">2.1轩辕敬城的笑</h2>
+<p>在原著当中（第139章），轩辕国器在打了儿子轩辕敬城之后，轩辕敬城并没有说什么，而是在眺望龙虎山，等到阁中无人之时，再飞身下龙王江。让我们再来看一下电视剧中是如何处理的（放轩辕敬城笑的片段，第30集），这里轩辕敬城的笑，让我觉得有一丝异样。按照轩辕敬城的人物性格，原著中，他是眺望然后等到四下无人再飞身下去，但是这里，轩辕敬城的笑意，给人的感觉，像是一个反面角色突然要浮出水面的感觉，而不是一位为了妻女而修炼的丈夫角色。如果说，是因为三弟和他说的那些话惹怒了他，他才通过笑意发泄一下的话，那就更说不通了。这么多年来，轩辕敬城都是暗藏城府，背后部署这一切，他隐忍了这么多年，怎么会因为这一时的话语而展露笑意。如果这里轩辕敬城，按照他之前展现出来的读书人形象来说这一段台词，会更符合他这个角色的性格。</p>
+<h2 id="2-2袁庭山的人物处理">2.2袁庭山的人物处理</h2>
+<p>原著中（第159章）在赵楷的牵线搭桥下,袁庭山认识了龙虎山的钓鱼老人赵黄巢。赵黄巢算出来徐凤年将会影响皇室气运,于是，便让袁庭山去杀徐凤年的身边人，削弱徐凤年的气运</p>
+<p>于是袁庭山来到江南卢家，正要对徐脂虎动手的时候，洪洗象一把飞剑赶到,拦下了袁庭山</p>
+<p>原著中关于袁庭山和赵黄巢,其实还有许多的对话设计,通过这些篇幅对人物的描写,刻画出一个有智谋,小心谨慎的袁庭山,而在电视剧中,直接删减大篇幅的人物塑造,使得袁庭山变成了彻头彻尾的工具人,如果说出自影视作品的删改,来不及刻画人物,干脆写成一个工具人,这样处理也说得过去。但是现状是袁庭山属于顾剑棠的麾下,顾剑棠和徐凤年属于同盟,袁庭山没有必要去杀徐脂虎,那么洪洗象骑鹤下江南就缺少了契机,至少因为袁庭山杀徐脂虎而骑鹤下江南这个契机是说不通了。假如雪中悍刀行真的有第二季,那么这个契机的达成,就需要其他的角色或者其他的理由来实现,不知道编剧如何将这故事逻辑给圆回来,我们只能交由时间来证明了。</p>
+<h2 id="2-3赵楷这个喊大师傅小心的时候太迟">2.3赵楷这个喊大师傅小心的时候太迟</h2>
+<p>在38集当中,出现了很多不合理的剧情展现,让我们先来看一个例子（第38集），韩貂寺最后被徐凤年的飞剑斩杀的时候,赵楷喊了一声大师傅小心，这个一句话是不说说的有些太晚了，等自己的师傅被飞剑刺个透心凉之后，再说你小心，当时我看到这里之后，还在想，赵楷是不是希望他师傅死掉，从而达到什么目的，可惜是我想多了，赵楷到后面直接自杀。而这不合理的一幕始终只是人为失误造成的罢了。</p>
+<p>早在雪中悍刀行电视剧之前，我就在B站被推送到了各种雪中悍刀行的剪辑视频，在那些视频当中，描绘了一个权谋，武侠，儿女情长等等美好元素的完美融合体，但是在看完38集之后，我只想给那时的自己一个大嘴巴子，告诉自己别看。</p>
+<p>那么这期视频就到此结束，我是YuZhangWang，我们下期视频再见。</p>
+]]></content>
+      <categories>
+        <category>技能学习记录</category>
+        <category>影视观赏</category>
+      </categories>
+      <tags>
+        <tag>雪中悍刀行</tag>
+        <tag>文案</tag>
       </tags>
   </entry>
   <entry>
@@ -3894,43 +3931,6 @@ gulp.<span class="title function_">task</span>(
         <tag>学术</tag>
         <tag>数据结构</tag>
         <tag>课程设计</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>吐槽《雪中》的文案</title>
-    <url>/2022/08/05/119-review-draft/</url>
-    <content><![CDATA[<p>Hi,各位小伙伴大家好,我是YuZhangWang</p>
-<p>前不久,雪中悍刀行第一季已经完结了,在庆余年中的父愁者联盟，陈道明(加图片)等老戏骨们的演技，让我对雪中悍刀行这部电视剧有些许的期待。带着对胡军、杜玉明、王同辉、李解(加图片)这些老师演技的信任,怀着我的期待,追完了这部剧</p>
-<p>但是在这一部剧中,我陷入了失望当中,那么在一起视频当中，让我作为一个非专业的解说者,来聊一聊这一部剧让我比较难受的一些槽点</p>
-<h1>1.贫穷的特效以及动作场景的匮乏</h1>
-<h2 id="1-1韩貂寺的红丝特效">1.1韩貂寺的红丝特效</h2>
-<p>在bing搜索”雪中悍刀行投资多少钱”,并没有给出明确的答案,在知乎搜索同样的问题,前排的两个提到投资、贫穷字眼的问题,点进去一看,分别是一个回答和两个回答,也并没有提到大致的投资金额,所以我也无从考究雪中的投资。不过有一点比较明确,那就是雪中处处透露着贫穷的感觉,这里我举几个例子来说明这一点</p>
-<p>比如大结局38集中,韩貂寺的红丝特效给我的感觉像是学习了一个月的特效练习生做出来的特效,让我们来看一个片段感受一下(几个红丝特效做一个剪辑小片段，37+38集)</p>
-<p>这里的红丝,刚开始韩貂寺遇见袁庭山时,我已经感觉有一丝的不妙,但是那时我以为,韩貂寺的这个红丝会用在小场景,应该不会让杜玉明老师用这个尬演,但是万万没想到在38集中,韩貂寺就是直接用这一堆红丝来开大,直接震惊我的三观。给我感觉就是,一团毛线糊在了我的脸上。如果韩貂寺和陈芝豹一样放光波,效果虽然同样也是不堪入目,但是相对于毛线来说,会好上许多了。总不能因为韩貂寺被人称作人猫,就要对毛线球感兴趣吧。</p>
-<h2 id="1-2李淳罡的网游剑气">1.2李淳罡的网游剑气</h2>
-<p>同样的，陈芝豹和韩貂寺对打的时候，释放的黄色光波和韩貂寺的红丝特效也有异曲同工之处，这里将红丝特效和黄色光波的特效归为一类。然后我们再来对比一下经费较为充足特效，拿李淳罡的特效来举例，让我们来看一个片段（瀑布旁边给徐凤年展示两袖青蛇的片段，第22集），在上面这个片段当中，李淳罡释放两袖青蛇的特效，从细节入手，随手一挥（截图，随手一挥），一道剑气就释放而出，在池底激起一个小爆炸，这里的特效和剑气效果，让我作为一个观众来说，觉得算得上一位顶尖高手应该有的放招式的样子。所以这部剧在中间穿插的特效可以说达到了一部分观众的心理预期，让人期待着最后结尾的特效应该不会太差，就这样一步一步将观众带入到38集的最终冥场面，可以说充分利用了人的好奇和侥幸心理，成功地割了一波流量韭菜。</p>
-<h2 id="1-3慢动作的大量运用">1.3慢动作的大量运用</h2>
-<p>剑九黄和湖底老魁的打斗，作为用来展现一品境界的高手相互对战的场景，整场戏，就是湖底老魁在各个房梁上闪转腾挪。这样操作也不是不行，但是起码在这场戏多加一些特效吧，例如我们来看下下面这一幕（铁链打掉剑，第6集），在湖底老魁击退剑九黄的飞剑时，如果能加上想李淳罡那样的气波，让他们显得高手一些，这样或许能够让两位高手的实力更加立体饱满一些，也能让雪中的武力境界更合理一些。</p>
-<h1>2.演员表演和剧情上有一定冲突</h1>
-<p>原著改编在一些地方不是很合理(引用知乎的回答)</p>
-<h2 id="2-1轩辕敬城的笑">2.1轩辕敬城的笑</h2>
-<p>在原著当中（第139章），轩辕国器在打了儿子轩辕敬城之后，轩辕敬城并没有说什么，而是在眺望龙虎山，等到阁中无人之时，再飞身下龙王江。让我们再来看一下电视剧中是如何处理的（放轩辕敬城笑的片段，第30集），这里轩辕敬城的笑，让我觉得有一丝异样。按照轩辕敬城的人物性格，原著中，他是眺望然后等到四下无人再飞身下去，但是这里，轩辕敬城的笑意，给人的感觉，像是一个反面角色突然要浮出水面的感觉，而不是一位为了妻女而修炼的丈夫角色。如果说，是因为三弟和他说的那些话惹怒了他，他才通过笑意发泄一下的话，那就更说不通了。这么多年来，轩辕敬城都是暗藏城府，背后部署这一切，他隐忍了这么多年，怎么会因为这一时的话语而展露笑意。如果这里轩辕敬城，按照他之前展现出来的读书人形象来说这一段台词，会更符合他这个角色的性格。</p>
-<h2 id="2-2袁庭山的人物处理">2.2袁庭山的人物处理</h2>
-<p>原著中（第159章）在赵楷的牵线搭桥下,袁庭山认识了龙虎山的钓鱼老人赵黄巢。赵黄巢算出来徐凤年将会影响皇室气运,于是，便让袁庭山去杀徐凤年的身边人，削弱徐凤年的气运</p>
-<p>于是袁庭山来到江南卢家，正要对徐脂虎动手的时候，洪洗象一把飞剑赶到,拦下了袁庭山</p>
-<p>原著中关于袁庭山和赵黄巢,其实还有许多的对话设计,通过这些篇幅对人物的描写,刻画出一个有智谋,小心谨慎的袁庭山,而在电视剧中,直接删减大篇幅的人物塑造,使得袁庭山变成了彻头彻尾的工具人,如果说出自影视作品的删改,来不及刻画人物,干脆写成一个工具人,这样处理也说得过去。但是现状是袁庭山属于顾剑棠的麾下,顾剑棠和徐凤年属于同盟,袁庭山没有必要去杀徐脂虎,那么洪洗象骑鹤下江南就缺少了契机,至少因为袁庭山杀徐脂虎而骑鹤下江南这个契机是说不通了。假如雪中悍刀行真的有第二季,那么这个契机的达成,就需要其他的角色或者其他的理由来实现,不知道编剧如何将这故事逻辑给圆回来,我们只能交由时间来证明了。</p>
-<h2 id="2-3赵楷这个喊大师傅小心的时候太迟">2.3赵楷这个喊大师傅小心的时候太迟</h2>
-<p>在38集当中,出现了很多不合理的剧情展现,让我们先来看一个例子（第38集），韩貂寺最后被徐凤年的飞剑斩杀的时候,赵楷喊了一声大师傅小心，这个一句话是不说说的有些太晚了，等自己的师傅被飞剑刺个透心凉之后，再说你小心，当时我看到这里之后，还在想，赵楷是不是希望他师傅死掉，从而达到什么目的，可惜是我想多了，赵楷到后面直接自杀。而这不合理的一幕始终只是人为失误造成的罢了。</p>
-<p>早在雪中悍刀行电视剧之前，我就在B站被推送到了各种雪中悍刀行的剪辑视频，在那些视频当中，描绘了一个权谋，武侠，儿女情长等等美好元素的完美融合体，但是在看完38集之后，我只想给那时的自己一个大嘴巴子，告诉自己别看。</p>
-<p>那么这期视频就到此结束，我是YuZhangWang，我们下期视频再见。</p>
-]]></content>
-      <categories>
-        <category>技能学习记录</category>
-        <category>影视观赏</category>
-      </categories>
-      <tags>
-        <tag>雪中悍刀行</tag>
-        <tag>文案</tag>
       </tags>
   </entry>
   <entry>
@@ -5689,6 +5689,276 @@ AR2<br>
       </tags>
   </entry>
   <entry>
+    <title>遍历二叉树</title>
+    <url>/2022/08/05/120-traversing-binary-tree/</url>
+    <content><![CDATA[<p>遍历二叉树中进行的一些操作</p>
+<ul>
+<li>创建二叉树</li>
+<li>先序遍历二叉树</li>
+<li>计算树高</li>
+<li>计算树叶数</li>
+<li>计算结点数</li>
+<li>计算分支点个数</li>
+<li>二叉树拷贝</li>
+<li>二叉树左右子树交换</li>
+</ul>
+<blockquote>
+<p>操作使用C++版的数据结构完成</p>
+</blockquote>
+<pre><code class="highlight cpp"><span class="comment">/***********************************   </span>
+<span class="comment"> @author: YuZhangWang  </span>
+<span class="comment"> @date: 2022/8/4 23:37:36 @link: https://yuzhang.wang/***********************************/</span>  
+  
+<span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span>  </span>
+  
+<span class="keyword">using</span> <span class="keyword">namespace</span> std;  
+  
+<span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">bitnode</span>  
+&#123;  
+    <span class="type">char</span> data;  
+    bitnode *lchild, *rchild;  
+&#125; bitnode;  
+  
+<span class="keyword">class</span> <span class="title class_">bitt</span>  
+&#123;  
+    bitnode *bt;  
+  
+    <span class="function"><span class="type">void</span> <span class="title">create</span><span class="params">(bitnode *&amp;t)</span></span>;<span class="comment">//创建二叉树  </span>
+    <span class="function"><span class="type">void</span> <span class="title">preorder</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//先序历遍  </span>
+    <span class="function"><span class="type">int</span> <span class="title">high</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//计算树高  </span>
+    <span class="function"><span class="type">int</span> <span class="title">countleaf</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//计算树叶数  </span>
+    <span class="function"><span class="type">int</span> <span class="title">countnode</span><span class="params">(bitnode *t)</span></span>; <span class="comment">//计算结点数  </span>
+    <span class="function"><span class="type">int</span> <span class="title">countpartnode</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//计算分支点个数  </span>
+    <span class="function"><span class="type">void</span> <span class="title">copy</span><span class="params">(bitnode *&amp;t, bitnode *&amp;s)</span></span>;<span class="comment">//二叉树拷贝  </span>
+    <span class="function"><span class="type">void</span> <span class="title">changebit</span><span class="params">(bitnode *&amp;t)</span></span>;<span class="comment">//二叉树左右子树交换  </span>
+<span class="keyword">public</span>:  
+    <span class="function"><span class="type">void</span> <span class="title">createtree</span><span class="params">()</span></span>;<span class="comment">//创建二叉树  </span>
+    <span class="function"><span class="type">void</span> <span class="title">preordertree</span><span class="params">()</span></span>;<span class="comment">//先序历遍  </span>
+    <span class="function"><span class="type">int</span> <span class="title">hightree</span><span class="params">()</span></span>;<span class="comment">//计算树高  </span>
+    <span class="function"><span class="type">int</span> <span class="title">countleaftree</span><span class="params">()</span></span>;<span class="comment">//计算树叶数  </span>
+    <span class="function"><span class="type">int</span> <span class="title">countnodetree</span><span class="params">()</span></span>;<span class="comment">//计算结点数  </span>
+    <span class="function"><span class="type">int</span> <span class="title">countpartnodetree</span><span class="params">()</span></span>;<span class="comment">//计算分支点个数  </span>
+    <span class="function"><span class="type">void</span> <span class="title">copytree</span><span class="params">()</span></span>;<span class="comment">//二叉树拷贝  </span>
+    <span class="function"><span class="type">void</span> <span class="title">changebittree</span><span class="params">()</span></span>;<span class="comment">//二叉树左右子树交换  </span>
+&#125;;  
+  
+<span class="function"><span class="type">void</span> <span class="title">bitt::create</span><span class="params">(bitnode *&amp;t)</span>  </span>
+<span class="function"></span>&#123;  
+    <span class="type">char</span> ch;  
+    cin &gt;&gt; ch;  
+    <span class="keyword">if</span> (ch == <span class="string">&#x27;.&#x27;</span>)  
+    &#123;  
+        t = <span class="literal">NULL</span>;  
+    &#125;  
+    <span class="keyword">else</span>  
+    &#123;  
+        t = <span class="keyword">new</span> bitnode;  
+        t-&gt;data = ch;  
+        <span class="built_in">create</span>(t-&gt;lchild);  
+        <span class="built_in">create</span>(t-&gt;rchild);  
+    &#125;  
+&#125;  
+  
+<span class="function"><span class="type">void</span> <span class="title">bitt::createtree</span><span class="params">()</span>  </span>
+<span class="function"></span>&#123;  
+    bitnode *t;  
+    <span class="built_in">create</span>(t);  
+    bt = t;  
+&#125;  
+  
+<span class="function"><span class="type">void</span> <span class="title">bitt::preorder</span><span class="params">(bitnode *t)</span>  </span>
+<span class="function"></span>&#123;  
+    <span class="keyword">if</span> (t)  
+    &#123;  
+        cout &lt;&lt; t-&gt;data;  
+        <span class="built_in">preorder</span>(t-&gt;lchild);  
+        <span class="built_in">preorder</span>(t-&gt;rchild);  
+    &#125;  
+&#125;  
+  
+<span class="function"><span class="type">void</span> <span class="title">bitt::preordertree</span><span class="params">()</span>  </span>
+<span class="function"></span>&#123;  
+    bitnode *t = bt;  
+    <span class="built_in">preorder</span>(t);  
+&#125;  
+  
+<span class="function"><span class="type">int</span> <span class="title">bitt::high</span><span class="params">(bitnode *t)</span>  </span>
+<span class="function"></span>&#123;  
+    <span class="keyword">if</span> (t == <span class="literal">NULL</span>)  
+    &#123;  
+        <span class="keyword">return</span> <span class="number">0</span>;  
+    &#125;  
+    <span class="keyword">else</span>  
+    &#123;  
+        <span class="type">int</span> m = <span class="number">1</span> + <span class="built_in">high</span>(t-&gt;lchild);  
+        <span class="type">int</span> n = <span class="number">1</span> + <span class="built_in">high</span>(t-&gt;rchild);  
+        <span class="keyword">if</span> (m &gt;= n)  
+        &#123;  
+            <span class="keyword">return</span> m;  
+        &#125;  
+        <span class="keyword">else</span>  
+        &#123;  
+            <span class="keyword">return</span> n;  
+        &#125;  
+    &#125;  
+&#125;  
+  
+<span class="function"><span class="type">int</span> <span class="title">bitt::hightree</span><span class="params">()</span>  </span>
+<span class="function"></span>&#123;  
+    bitnode *t = bt;  
+    <span class="keyword">return</span> <span class="built_in">high</span>(t);  
+&#125;  
+  
+<span class="function"><span class="type">int</span> <span class="title">bitt::countleaf</span><span class="params">(bitnode *t)</span>  </span>
+<span class="function"></span>&#123;  
+    <span class="keyword">if</span> (t == <span class="literal">NULL</span>)  
+    &#123;  
+        <span class="keyword">return</span> <span class="number">0</span>;  
+    &#125;  
+    <span class="keyword">else</span>  
+    &#123;  
+        <span class="type">int</span> m = <span class="built_in">countleaf</span>(t-&gt;lchild);  
+        <span class="type">int</span> n = <span class="built_in">countleaf</span>(t-&gt;rchild);  
+        <span class="keyword">if</span> (m + n == <span class="number">0</span>)  
+        &#123;  
+            <span class="keyword">return</span> <span class="number">1</span>;  
+        &#125;  
+        <span class="keyword">else</span>  
+        &#123;  
+            <span class="keyword">return</span> m + n;  
+        &#125;  
+    &#125;  
+&#125;  
+  
+<span class="function"><span class="type">int</span> <span class="title">bitt::countleaftree</span><span class="params">()</span>  </span>
+<span class="function"></span>&#123;  
+    bitnode *t = bt;  
+    <span class="keyword">return</span> <span class="built_in">countleaf</span>(t);  
+&#125;  
+  
+<span class="function"><span class="type">int</span> <span class="title">bitt::countnode</span><span class="params">(bitnode *t)</span>  </span>
+<span class="function"></span>&#123;  
+    <span class="keyword">if</span> (t)  
+    &#123;  
+        <span class="type">int</span> m = <span class="built_in">countnode</span>(t-&gt;lchild);  
+        <span class="type">int</span> n = <span class="built_in">countnode</span>(t-&gt;rchild);  
+        <span class="keyword">return</span> <span class="number">1</span> + m + n;  
+    &#125;  
+    <span class="keyword">else</span>  
+    &#123;  
+        <span class="keyword">return</span> <span class="number">0</span>;  
+    &#125;  
+&#125;  
+  
+<span class="function"><span class="type">int</span> <span class="title">bitt::countnodetree</span><span class="params">()</span>  </span>
+<span class="function"></span>&#123;  
+    bitnode *t = bt;  
+    <span class="keyword">return</span> <span class="built_in">countnode</span>(t);  
+&#125;  
+  
+<span class="function"><span class="type">int</span> <span class="title">bitt::countpartnode</span><span class="params">(bitnode *t)</span>  </span>
+<span class="function"></span>&#123;  
+    <span class="keyword">if</span> (t &amp;&amp; (t-&gt;lchild || t-&gt;rchild))  
+    &#123;  
+        <span class="type">int</span> m = <span class="built_in">countpartnode</span>(t-&gt;lchild);  
+        <span class="type">int</span> n = <span class="built_in">countpartnode</span>(t-&gt;rchild);  
+        <span class="keyword">return</span> <span class="number">1</span> + m + n;  
+    &#125;  
+    <span class="keyword">else</span>  
+    &#123;  
+        <span class="keyword">return</span> <span class="number">0</span>;  
+    &#125;  
+&#125;  
+  
+<span class="function"><span class="type">int</span> <span class="title">bitt::countpartnodetree</span><span class="params">()</span>  </span>
+<span class="function"></span>&#123;  
+    bitnode *t = bt;  
+    <span class="keyword">return</span> <span class="built_in">countpartnode</span>(t);  
+&#125;  
+  
+<span class="function"><span class="type">void</span> <span class="title">bitt::copy</span><span class="params">(bitnode *&amp;t, bitnode *&amp;s)</span>  </span>
+<span class="function"></span>&#123;  
+    <span class="keyword">if</span> (t == <span class="literal">NULL</span>)  
+    &#123;  
+        s = <span class="literal">NULL</span>;  
+    &#125;  
+    <span class="keyword">else</span>  
+    &#123;  
+        s = t;  
+        <span class="built_in">copy</span>(t-&gt;lchild, s-&gt;lchild);  
+        <span class="built_in">copy</span>(t-&gt;rchild, s-&gt;rchild);  
+    &#125;  
+&#125;  
+  
+<span class="function"><span class="type">void</span> <span class="title">bitt::copytree</span><span class="params">()</span>  </span>
+<span class="function"></span>&#123;  
+    bitnode *t = bt;  
+    bitnode *s;  
+    <span class="built_in">copy</span>(t, s);  
+    <span class="keyword">if</span> (s)  
+    &#123;  
+        cout &lt;&lt; s-&gt;data;  
+        <span class="built_in">preorder</span>(s-&gt;lchild);  
+        <span class="built_in">preorder</span>(s-&gt;rchild);  
+    &#125;  
+&#125;  
+  
+<span class="function"><span class="type">void</span> <span class="title">bitt::changebit</span><span class="params">(bitnode *&amp;t)</span>  </span>
+<span class="function"></span>&#123;  
+    bitnode *temp = <span class="keyword">new</span> bitnode;  
+    <span class="keyword">if</span> (t)  
+    &#123;  
+        temp = t-&gt;lchild;  
+        t-&gt;lchild = t-&gt;rchild;  
+        t-&gt;rchild = temp;  
+        <span class="built_in">changebit</span>(t-&gt;lchild);  
+        <span class="built_in">changebit</span>(t-&gt;rchild);  
+    &#125;  
+&#125;  
+  
+<span class="function"><span class="type">void</span> <span class="title">bitt::changebittree</span><span class="params">()</span>  </span>
+<span class="function"></span>&#123;  
+    bitnode *t = bt;  
+    <span class="built_in">changebit</span>(t);  
+    bt = t;  
+&#125;  
+  
+<span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span>  </span>
+<span class="function"></span>&#123;  
+    bitt tt;  
+    cout &lt;&lt; <span class="string">&quot;请输入需要形成的二叉树:&quot;</span> &lt;&lt; endl;  
+    tt.<span class="built_in">createtree</span>();  
+    cout &lt;&lt; <span class="string">&quot;该二叉树先序历遍结果为:&quot;</span> &lt;&lt; endl;  
+    tt.<span class="built_in">preordertree</span>();  
+    cout &lt;&lt; endl;  
+    cout &lt;&lt; <span class="string">&quot;该二叉树树高为:&quot;</span> &lt;&lt; endl;  
+    cout &lt;&lt; tt.<span class="built_in">hightree</span>() &lt;&lt; endl;  
+    cout &lt;&lt; <span class="string">&quot;该二叉树树叶数为:&quot;</span> &lt;&lt; endl;  
+    cout &lt;&lt; tt.<span class="built_in">countleaftree</span>() &lt;&lt; endl;  
+    cout &lt;&lt; <span class="string">&quot;该二叉树结点数为:&quot;</span> &lt;&lt; endl;  
+    cout &lt;&lt; tt.<span class="built_in">countnodetree</span>() &lt;&lt; endl;  
+    cout &lt;&lt; <span class="string">&quot;该二叉树分支点数为:&quot;</span> &lt;&lt; endl;  
+    cout &lt;&lt; tt.<span class="built_in">countpartnodetree</span>() &lt;&lt; endl;  
+    cout &lt;&lt; <span class="string">&quot;该二叉树拷贝结果为:&quot;</span> &lt;&lt; endl;  
+    tt.<span class="built_in">copytree</span>();  
+    cout &lt;&lt; endl;  
+    cout &lt;&lt; <span class="string">&quot;该二叉树左右子树交换结果为:&quot;</span> &lt;&lt; endl;  
+    tt.<span class="built_in">changebittree</span>();  
+    tt.<span class="built_in">preordertree</span>();  
+    cout &lt;&lt; endl;  
+    <span class="keyword">return</span> <span class="number">0</span>;  
+&#125;</code></pre>
+]]></content>
+      <categories>
+        <category>C++学习笔记</category>
+        <category>数据结构学习笔记</category>
+      </categories>
+      <tags>
+        <tag>遍历</tag>
+        <tag>二叉树</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>外文翻译</title>
     <url>/2022/03/10/106-foreign-language-translation/</url>
     <content><![CDATA[<h1>文本检测的字符区域感知</h1>
@@ -5980,276 +6250,6 @@ LSTM是单向的，它只使用过去的信息。然而，在基于图像的序�
       <tags>
         <tag>ctpn</tag>
         <tag>论文复现</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>遍历二叉树</title>
-    <url>/2022/08/05/120-traversing-binary-tree/</url>
-    <content><![CDATA[<p>遍历二叉树中进行的一些操作</p>
-<ul>
-<li>创建二叉树</li>
-<li>先序遍历二叉树</li>
-<li>计算树高</li>
-<li>计算树叶数</li>
-<li>计算结点数</li>
-<li>计算分支点个数</li>
-<li>二叉树拷贝</li>
-<li>二叉树左右子树交换</li>
-</ul>
-<blockquote>
-<p>操作使用C++版的数据结构完成</p>
-</blockquote>
-<pre><code class="highlight cpp"><span class="comment">/***********************************   </span>
-<span class="comment"> @author: YuZhangWang  </span>
-<span class="comment"> @date: 2022/8/4 23:37:36 @link: https://yuzhang.wang/***********************************/</span>  
-  
-<span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span>  </span>
-  
-<span class="keyword">using</span> <span class="keyword">namespace</span> std;  
-  
-<span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">bitnode</span>  
-&#123;  
-    <span class="type">char</span> data;  
-    bitnode *lchild, *rchild;  
-&#125; bitnode;  
-  
-<span class="keyword">class</span> <span class="title class_">bitt</span>  
-&#123;  
-    bitnode *bt;  
-  
-    <span class="function"><span class="type">void</span> <span class="title">create</span><span class="params">(bitnode *&amp;t)</span></span>;<span class="comment">//创建二叉树  </span>
-    <span class="function"><span class="type">void</span> <span class="title">preorder</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//先序历遍  </span>
-    <span class="function"><span class="type">int</span> <span class="title">high</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//计算树高  </span>
-    <span class="function"><span class="type">int</span> <span class="title">countleaf</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//计算树叶数  </span>
-    <span class="function"><span class="type">int</span> <span class="title">countnode</span><span class="params">(bitnode *t)</span></span>; <span class="comment">//计算结点数  </span>
-    <span class="function"><span class="type">int</span> <span class="title">countpartnode</span><span class="params">(bitnode *t)</span></span>;<span class="comment">//计算分支点个数  </span>
-    <span class="function"><span class="type">void</span> <span class="title">copy</span><span class="params">(bitnode *&amp;t, bitnode *&amp;s)</span></span>;<span class="comment">//二叉树拷贝  </span>
-    <span class="function"><span class="type">void</span> <span class="title">changebit</span><span class="params">(bitnode *&amp;t)</span></span>;<span class="comment">//二叉树左右子树交换  </span>
-<span class="keyword">public</span>:  
-    <span class="function"><span class="type">void</span> <span class="title">createtree</span><span class="params">()</span></span>;<span class="comment">//创建二叉树  </span>
-    <span class="function"><span class="type">void</span> <span class="title">preordertree</span><span class="params">()</span></span>;<span class="comment">//先序历遍  </span>
-    <span class="function"><span class="type">int</span> <span class="title">hightree</span><span class="params">()</span></span>;<span class="comment">//计算树高  </span>
-    <span class="function"><span class="type">int</span> <span class="title">countleaftree</span><span class="params">()</span></span>;<span class="comment">//计算树叶数  </span>
-    <span class="function"><span class="type">int</span> <span class="title">countnodetree</span><span class="params">()</span></span>;<span class="comment">//计算结点数  </span>
-    <span class="function"><span class="type">int</span> <span class="title">countpartnodetree</span><span class="params">()</span></span>;<span class="comment">//计算分支点个数  </span>
-    <span class="function"><span class="type">void</span> <span class="title">copytree</span><span class="params">()</span></span>;<span class="comment">//二叉树拷贝  </span>
-    <span class="function"><span class="type">void</span> <span class="title">changebittree</span><span class="params">()</span></span>;<span class="comment">//二叉树左右子树交换  </span>
-&#125;;  
-  
-<span class="function"><span class="type">void</span> <span class="title">bitt::create</span><span class="params">(bitnode *&amp;t)</span>  </span>
-<span class="function"></span>&#123;  
-    <span class="type">char</span> ch;  
-    cin &gt;&gt; ch;  
-    <span class="keyword">if</span> (ch == <span class="string">&#x27;.&#x27;</span>)  
-    &#123;  
-        t = <span class="literal">NULL</span>;  
-    &#125;  
-    <span class="keyword">else</span>  
-    &#123;  
-        t = <span class="keyword">new</span> bitnode;  
-        t-&gt;data = ch;  
-        <span class="built_in">create</span>(t-&gt;lchild);  
-        <span class="built_in">create</span>(t-&gt;rchild);  
-    &#125;  
-&#125;  
-  
-<span class="function"><span class="type">void</span> <span class="title">bitt::createtree</span><span class="params">()</span>  </span>
-<span class="function"></span>&#123;  
-    bitnode *t;  
-    <span class="built_in">create</span>(t);  
-    bt = t;  
-&#125;  
-  
-<span class="function"><span class="type">void</span> <span class="title">bitt::preorder</span><span class="params">(bitnode *t)</span>  </span>
-<span class="function"></span>&#123;  
-    <span class="keyword">if</span> (t)  
-    &#123;  
-        cout &lt;&lt; t-&gt;data;  
-        <span class="built_in">preorder</span>(t-&gt;lchild);  
-        <span class="built_in">preorder</span>(t-&gt;rchild);  
-    &#125;  
-&#125;  
-  
-<span class="function"><span class="type">void</span> <span class="title">bitt::preordertree</span><span class="params">()</span>  </span>
-<span class="function"></span>&#123;  
-    bitnode *t = bt;  
-    <span class="built_in">preorder</span>(t);  
-&#125;  
-  
-<span class="function"><span class="type">int</span> <span class="title">bitt::high</span><span class="params">(bitnode *t)</span>  </span>
-<span class="function"></span>&#123;  
-    <span class="keyword">if</span> (t == <span class="literal">NULL</span>)  
-    &#123;  
-        <span class="keyword">return</span> <span class="number">0</span>;  
-    &#125;  
-    <span class="keyword">else</span>  
-    &#123;  
-        <span class="type">int</span> m = <span class="number">1</span> + <span class="built_in">high</span>(t-&gt;lchild);  
-        <span class="type">int</span> n = <span class="number">1</span> + <span class="built_in">high</span>(t-&gt;rchild);  
-        <span class="keyword">if</span> (m &gt;= n)  
-        &#123;  
-            <span class="keyword">return</span> m;  
-        &#125;  
-        <span class="keyword">else</span>  
-        &#123;  
-            <span class="keyword">return</span> n;  
-        &#125;  
-    &#125;  
-&#125;  
-  
-<span class="function"><span class="type">int</span> <span class="title">bitt::hightree</span><span class="params">()</span>  </span>
-<span class="function"></span>&#123;  
-    bitnode *t = bt;  
-    <span class="keyword">return</span> <span class="built_in">high</span>(t);  
-&#125;  
-  
-<span class="function"><span class="type">int</span> <span class="title">bitt::countleaf</span><span class="params">(bitnode *t)</span>  </span>
-<span class="function"></span>&#123;  
-    <span class="keyword">if</span> (t == <span class="literal">NULL</span>)  
-    &#123;  
-        <span class="keyword">return</span> <span class="number">0</span>;  
-    &#125;  
-    <span class="keyword">else</span>  
-    &#123;  
-        <span class="type">int</span> m = <span class="built_in">countleaf</span>(t-&gt;lchild);  
-        <span class="type">int</span> n = <span class="built_in">countleaf</span>(t-&gt;rchild);  
-        <span class="keyword">if</span> (m + n == <span class="number">0</span>)  
-        &#123;  
-            <span class="keyword">return</span> <span class="number">1</span>;  
-        &#125;  
-        <span class="keyword">else</span>  
-        &#123;  
-            <span class="keyword">return</span> m + n;  
-        &#125;  
-    &#125;  
-&#125;  
-  
-<span class="function"><span class="type">int</span> <span class="title">bitt::countleaftree</span><span class="params">()</span>  </span>
-<span class="function"></span>&#123;  
-    bitnode *t = bt;  
-    <span class="keyword">return</span> <span class="built_in">countleaf</span>(t);  
-&#125;  
-  
-<span class="function"><span class="type">int</span> <span class="title">bitt::countnode</span><span class="params">(bitnode *t)</span>  </span>
-<span class="function"></span>&#123;  
-    <span class="keyword">if</span> (t)  
-    &#123;  
-        <span class="type">int</span> m = <span class="built_in">countnode</span>(t-&gt;lchild);  
-        <span class="type">int</span> n = <span class="built_in">countnode</span>(t-&gt;rchild);  
-        <span class="keyword">return</span> <span class="number">1</span> + m + n;  
-    &#125;  
-    <span class="keyword">else</span>  
-    &#123;  
-        <span class="keyword">return</span> <span class="number">0</span>;  
-    &#125;  
-&#125;  
-  
-<span class="function"><span class="type">int</span> <span class="title">bitt::countnodetree</span><span class="params">()</span>  </span>
-<span class="function"></span>&#123;  
-    bitnode *t = bt;  
-    <span class="keyword">return</span> <span class="built_in">countnode</span>(t);  
-&#125;  
-  
-<span class="function"><span class="type">int</span> <span class="title">bitt::countpartnode</span><span class="params">(bitnode *t)</span>  </span>
-<span class="function"></span>&#123;  
-    <span class="keyword">if</span> (t &amp;&amp; (t-&gt;lchild || t-&gt;rchild))  
-    &#123;  
-        <span class="type">int</span> m = <span class="built_in">countpartnode</span>(t-&gt;lchild);  
-        <span class="type">int</span> n = <span class="built_in">countpartnode</span>(t-&gt;rchild);  
-        <span class="keyword">return</span> <span class="number">1</span> + m + n;  
-    &#125;  
-    <span class="keyword">else</span>  
-    &#123;  
-        <span class="keyword">return</span> <span class="number">0</span>;  
-    &#125;  
-&#125;  
-  
-<span class="function"><span class="type">int</span> <span class="title">bitt::countpartnodetree</span><span class="params">()</span>  </span>
-<span class="function"></span>&#123;  
-    bitnode *t = bt;  
-    <span class="keyword">return</span> <span class="built_in">countpartnode</span>(t);  
-&#125;  
-  
-<span class="function"><span class="type">void</span> <span class="title">bitt::copy</span><span class="params">(bitnode *&amp;t, bitnode *&amp;s)</span>  </span>
-<span class="function"></span>&#123;  
-    <span class="keyword">if</span> (t == <span class="literal">NULL</span>)  
-    &#123;  
-        s = <span class="literal">NULL</span>;  
-    &#125;  
-    <span class="keyword">else</span>  
-    &#123;  
-        s = t;  
-        <span class="built_in">copy</span>(t-&gt;lchild, s-&gt;lchild);  
-        <span class="built_in">copy</span>(t-&gt;rchild, s-&gt;rchild);  
-    &#125;  
-&#125;  
-  
-<span class="function"><span class="type">void</span> <span class="title">bitt::copytree</span><span class="params">()</span>  </span>
-<span class="function"></span>&#123;  
-    bitnode *t = bt;  
-    bitnode *s;  
-    <span class="built_in">copy</span>(t, s);  
-    <span class="keyword">if</span> (s)  
-    &#123;  
-        cout &lt;&lt; s-&gt;data;  
-        <span class="built_in">preorder</span>(s-&gt;lchild);  
-        <span class="built_in">preorder</span>(s-&gt;rchild);  
-    &#125;  
-&#125;  
-  
-<span class="function"><span class="type">void</span> <span class="title">bitt::changebit</span><span class="params">(bitnode *&amp;t)</span>  </span>
-<span class="function"></span>&#123;  
-    bitnode *temp = <span class="keyword">new</span> bitnode;  
-    <span class="keyword">if</span> (t)  
-    &#123;  
-        temp = t-&gt;lchild;  
-        t-&gt;lchild = t-&gt;rchild;  
-        t-&gt;rchild = temp;  
-        <span class="built_in">changebit</span>(t-&gt;lchild);  
-        <span class="built_in">changebit</span>(t-&gt;rchild);  
-    &#125;  
-&#125;  
-  
-<span class="function"><span class="type">void</span> <span class="title">bitt::changebittree</span><span class="params">()</span>  </span>
-<span class="function"></span>&#123;  
-    bitnode *t = bt;  
-    <span class="built_in">changebit</span>(t);  
-    bt = t;  
-&#125;  
-  
-<span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span>  </span>
-<span class="function"></span>&#123;  
-    bitt tt;  
-    cout &lt;&lt; <span class="string">&quot;请输入需要形成的二叉树:&quot;</span> &lt;&lt; endl;  
-    tt.<span class="built_in">createtree</span>();  
-    cout &lt;&lt; <span class="string">&quot;该二叉树先序历遍结果为:&quot;</span> &lt;&lt; endl;  
-    tt.<span class="built_in">preordertree</span>();  
-    cout &lt;&lt; endl;  
-    cout &lt;&lt; <span class="string">&quot;该二叉树树高为:&quot;</span> &lt;&lt; endl;  
-    cout &lt;&lt; tt.<span class="built_in">hightree</span>() &lt;&lt; endl;  
-    cout &lt;&lt; <span class="string">&quot;该二叉树树叶数为:&quot;</span> &lt;&lt; endl;  
-    cout &lt;&lt; tt.<span class="built_in">countleaftree</span>() &lt;&lt; endl;  
-    cout &lt;&lt; <span class="string">&quot;该二叉树结点数为:&quot;</span> &lt;&lt; endl;  
-    cout &lt;&lt; tt.<span class="built_in">countnodetree</span>() &lt;&lt; endl;  
-    cout &lt;&lt; <span class="string">&quot;该二叉树分支点数为:&quot;</span> &lt;&lt; endl;  
-    cout &lt;&lt; tt.<span class="built_in">countpartnodetree</span>() &lt;&lt; endl;  
-    cout &lt;&lt; <span class="string">&quot;该二叉树拷贝结果为:&quot;</span> &lt;&lt; endl;  
-    tt.<span class="built_in">copytree</span>();  
-    cout &lt;&lt; endl;  
-    cout &lt;&lt; <span class="string">&quot;该二叉树左右子树交换结果为:&quot;</span> &lt;&lt; endl;  
-    tt.<span class="built_in">changebittree</span>();  
-    tt.<span class="built_in">preordertree</span>();  
-    cout &lt;&lt; endl;  
-    <span class="keyword">return</span> <span class="number">0</span>;  
-&#125;</code></pre>
-]]></content>
-      <categories>
-        <category>C++学习笔记</category>
-        <category>数据结构学习笔记</category>
-      </categories>
-      <tags>
-        <tag>遍历</tag>
-        <tag>二叉树</tag>
       </tags>
   </entry>
   <entry>
@@ -10277,8 +10277,8 @@ priority_queue&lt;<span class="type">int</span>, vector&lt;<span class="type">in
 <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203191956504.png" alt=""></p>
 ]]></content>
       <categories>
-        <category>CV学习笔记</category>
         <category>技能学习记录</category>
+        <category>CV学习笔记</category>
         <category>学术研究</category>
       </categories>
       <tags>
