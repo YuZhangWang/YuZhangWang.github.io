@@ -3,6 +3,7 @@
     text-decoration: none;
 }
 
+/* 页脚底部效果优化 */
 #aside-content .card-webinfo .webinfo .webinfo-item {
     padding: 0 0 0 0
 }
@@ -22,3 +23,46 @@
 .fa-heart {
     color: red
 }
+
+/* 分类字体调大 */
+#page .category-lists ul {
+    font-size: 22px;
+    ;
+}
+
+/* h1-h6颜色优化 */
+#content-inner.layout h1::before {
+    color: #ef50a8;
+}
+
+#content-inner.layout h2::before {
+    color: #fb7061;
+}
+
+#content-inner.layout h3::before {
+    color: #ffbf00;
+}
+
+#content-inner.layout h4::before {
+    color: #a9e000;
+}
+
+#content-inner.layout h5::before {
+    color: #57c850;
+}
+
+#content-inner.layout h6::before {
+    color: #5ec1e0;
+}
+
+#content-inner.layout h1:hover,
+#content-inner.layout h2:hover,
+#content-inner.layout h3:hover,
+#content-inner.layout h4:hover,
+#content-inner.layout h5:hover,
+#content-inner.layout h6:hover {
+    color: #49b1f5;
+}
+
+/* 图片下方描述和图片间距调整 */
+.img-alt {}
