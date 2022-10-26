@@ -86,19 +86,17 @@
       </tags>
   </entry>
   <entry>
-    <title>乘凉猫猫</title>
-    <url>/2019/04/16/007-cool-cat/</url>
-    <content><![CDATA[<p>一只神奇的猫，嘴巴上有一圈白毛<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826214735.jpeg" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826214752.jpeg" alt=""></p>
+    <title>坚果pro2返回魔趣8.1</title>
+    <url>/2019/05/12/009-nuts-pro2-return-to-magic-8-1/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826214934.jpeg" alt=""><br>
+9.0的魔趣很好用，但只能通过太极阳使用XP，这使得一部分功能无法完美使用，8.1可以完美兼容</p>
 ]]></content>
       <categories>
-        <category>动物大赏</category>
-        <category>摄影记录</category>
+        <category>极客之旅</category>
+        <category>技能学习记录</category>
       </categories>
       <tags>
-        <tag>黑猫</tag>
-        <tag>白毛</tag>
+        <tag>刷机</tag>
       </tags>
   </entry>
   <entry>
@@ -116,30 +114,17 @@
       </tags>
   </entry>
   <entry>
-    <title>一加6上手体验</title>
-    <url>/2019/03/09/006-oneplus-six-hands-on-experience/</url>
-    <content><![CDATA[<p>一加6，处理器为骁龙845，系统为安卓9.0，氢OS9.0.2，首先，整机外观非常一体化，握在手里感觉非常舒适，重量适中，适合游戏玩家长时间握持，手机背部的玻璃面板手感非常棒。正面采用了刘海设计，不过可以将刘海进行隐藏，屏幕素质属于中等偏上水平。游戏体验方面吃鸡60帧并不是问题，在拍照上，一加的相机也有所提升。较为可惜的一点是，一加6还是采用了单扬声器设计，但保留了3.5毫米耳机接口，这点给好评。总的来说相较于上一代一加5，有了明显的提升，同时也将一加品牌，全面的带入了全面屏时代。是一款同时兼顾了续航与性能的手机，日常体验完全没有任何问题，对刘海屏不介意的同学，可以试着入手。</p>
+    <title>吸猫</title>
+    <url>/2019/06/13/010-stroke-a-cat/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826215138.jpeg" alt=""></p>
 ]]></content>
       <categories>
-        <category>极客之旅</category>
+        <category>动物大赏</category>
+        <category>摄影记录</category>
       </categories>
       <tags>
-        <tag>845</tag>
-        <tag>OnePlus</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>坚果pro2返回魔趣8.1</title>
-    <url>/2019/05/12/009-nuts-pro2-return-to-magic-8-1/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826214934.jpeg" alt=""><br>
-9.0的魔趣很好用，但只能通过太极阳使用XP，这使得一部分功能无法完美使用，8.1可以完美兼容</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-        <category>技能学习记录</category>
-      </categories>
-      <tags>
-        <tag>刷机</tag>
+        <tag>白猫</tag>
+        <tag>小奶猫</tag>
       </tags>
   </entry>
   <entry>
@@ -154,20 +139,6 @@
       <tags>
         <tag>VS2019</tag>
         <tag>Adobe</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>吸猫</title>
-    <url>/2019/06/13/010-stroke-a-cat/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826215138.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>动物大赏</category>
-        <category>摄影记录</category>
-      </categories>
-      <tags>
-        <tag>白猫</tag>
-        <tag>小奶猫</tag>
       </tags>
   </entry>
   <entry>
@@ -224,6 +195,70 @@
       </tags>
   </entry>
   <entry>
+    <title>Wakeup课表</title>
+    <url>/2019/10/12/015-wakeup-timetable/</url>
+    <content><![CDATA[<p>想起来我手机里有一款神级软件，必须要给你们安利一下。首先说明，这是一款课表软件，开发者是苏州大学学生，适用于Android端的软件，iOS端目前开发者正在制作，因此iOS用户也可关注一下，本文后面也会提到iOS的使用方法。软件名字叫wakeup课程表，在各大平台都可以下载得到。关于它的优点有如下几点：<br>
+1.它很美，如图一，为我做好的课表<br>
+2.没有广告，代码优化极其优秀，软件本身体积小。这几点相比于市面上的超级课程表，课程格子等同类软件来说，两者根本就不在一个层次了。<br>
+3.高度的自定义供给用户选择，你想要什么样的课表都可以自定义实现。<br>
+4.如果开发者适配了你学校的教务网，你可以直接通过教务网导入你的课程。如果没有适配，你可以直接添加你的课程，点击上方的加号，便可以添加课程了。<br>
+5.每学期上课周数，每天课程数，课表具体时间，课程格子高度、不透明度、颜色、文字大小全部可以根据实际情况自己定义。这个好处在于，每个人手机屏幕尺寸不一样，有的手机是16:9，有的手机是18:9，像超级课程表和课程格子此类软件，只会生硬的塞满你的屏幕，让你去适应它具有挑战性的审美。而wakeup，可以根据自身实际情况调整你的课表相关参数，使得它课表真正的掌握在你手上，让你成为手机的主人而不是奴隶。<br>
+6.这或许是它最强大的一点，它支持导出导入，比方说，我们一个班的同学都在用这款我推荐的软件，每个学期开始，我将我们班课表做好，通过导出分享到群里，班级同学再通过下载导入到他们手机上的wakeup里，再结合5.中提到的通过调整让我分享的文件也能适应他们的手机屏幕尺寸，这样大大提高了效率。<br>
+7.最后，经管这款软件是Android用户的福利，但是iOS用户也是需要雨露均沾的，开发者为iOS用户准备了ICS格式的导出选择，这使得你可以将ICS通过windows的日历直接打开，同步到你的微软账号中，再在iOS的日历中添加微软账号同步，这样，你的课表就已经完美同步到你的iOS日历中了，目前来说，这是开发者为iOS用户留的一种方法了。不过，由于目前开发者正在开发iOS端wakeup，很快iOS用户也能享受到这款软件的强大便利。<br>
+结语，我很少去评价一款软件，因为大部分软件都充斥着大量的广告，冗余的代码，糟糕的排版这一系列通病。但是，一年前，当我发现它时，它就像一股子清流一般醍醐灌顶。它界面的优美，代码的规范简洁，不断的优化，不断的调整算法，实现的功能之强大，是我手机里任何一款软件都无法与之相比较的。</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>Wakeup</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>乘凉猫猫</title>
+    <url>/2019/04/16/007-cool-cat/</url>
+    <content><![CDATA[<p>一只神奇的猫，嘴巴上有一圈白毛<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826214735.jpeg" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826214752.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>动物大赏</category>
+        <category>摄影记录</category>
+      </categories>
+      <tags>
+        <tag>黑猫</tag>
+        <tag>白毛</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一叶知秋</title>
+    <url>/2019/10/23/016-one-falling-leaf-is-indicative-of-the-coming-of-autumn/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826220324.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>摄影记录</category>
+        <category>植物欣赏</category>
+      </categories>
+      <tags>
+        <tag>银杏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>霸气外漏喵</title>
+    <url>/2019/10/30/017-domineering-side-leakage-meow/</url>
+    <content><![CDATA[<p>这猫太有气势了，我撸它，竟然被打了！还好打在衣服上，没被挠到<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826220458.jpeg" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826220527.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>动物大赏</category>
+        <category>摄影记录</category>
+      </categories>
+      <tags>
+        <tag>豹纹</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>初入CV</title>
     <url>/2019/11/09/018-initial-with-cv/</url>
     <content><![CDATA[<p>之前在win环境下成功实现了人脸识别系统，但是在树莓派上将这个程序实现起来就没有这么轻松了。</p>
@@ -246,19 +281,6 @@
       </tags>
   </entry>
   <entry>
-    <title>打卡一加南京店</title>
-    <url>/2019/11/23/019-punch-in-oneplus-nanjing-store/</url>
-    <content><![CDATA[<p>一加南京店，给我的感觉就是精致和体贴的服务。在微博大佬处看到有网友投稿一加屏幕的一个问题，在解锁的时候会发出一些声音。正好我自己也有类似的问题存在，于是在昨天预约了一加的维修，对比之后，感觉一家的服务确实比其他厂家要体贴，来到了一家的店里之后，发现展示的只有7系列和7t系列，以及一加背包。在维修的时候可以坐在座位上看着激光电视，对于一个加油来说，这是非常体贴的服务，很人性化，如果给售后做一个评价的话，iphone和一加，是市面上主流厂家中排名较高规格的。很赞很舒服。</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>OnePlus</tag>
-        <tag>南京</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>小黑猫</title>
     <url>/2019/12/06/020-little-black-cat/</url>
     <content><![CDATA[<p>它又来了,飞天大盗,翻窗直入<br>
@@ -270,6 +292,19 @@
       </categories>
       <tags>
         <tag>黑猫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>打卡一加南京店</title>
+    <url>/2019/11/23/019-punch-in-oneplus-nanjing-store/</url>
+    <content><![CDATA[<p>一加南京店，给我的感觉就是精致和体贴的服务。在微博大佬处看到有网友投稿一加屏幕的一个问题，在解锁的时候会发出一些声音。正好我自己也有类似的问题存在，于是在昨天预约了一加的维修，对比之后，感觉一家的服务确实比其他厂家要体贴，来到了一家的店里之后，发现展示的只有7系列和7t系列，以及一加背包。在维修的时候可以坐在座位上看着激光电视，对于一个加油来说，这是非常体贴的服务，很人性化，如果给售后做一个评价的话，iphone和一加，是市面上主流厂家中排名较高规格的。很赞很舒服。</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>OnePlus</tag>
+        <tag>南京</tag>
       </tags>
   </entry>
   <entry>
@@ -287,26 +322,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Wakeup课表</title>
-    <url>/2019/10/12/015-wakeup-timetable/</url>
-    <content><![CDATA[<p>想起来我手机里有一款神级软件，必须要给你们安利一下。首先说明，这是一款课表软件，开发者是苏州大学学生，适用于Android端的软件，iOS端目前开发者正在制作，因此iOS用户也可关注一下，本文后面也会提到iOS的使用方法。软件名字叫wakeup课程表，在各大平台都可以下载得到。关于它的优点有如下几点：<br>
-1.它很美，如图一，为我做好的课表<br>
-2.没有广告，代码优化极其优秀，软件本身体积小。这几点相比于市面上的超级课程表，课程格子等同类软件来说，两者根本就不在一个层次了。<br>
-3.高度的自定义供给用户选择，你想要什么样的课表都可以自定义实现。<br>
-4.如果开发者适配了你学校的教务网，你可以直接通过教务网导入你的课程。如果没有适配，你可以直接添加你的课程，点击上方的加号，便可以添加课程了。<br>
-5.每学期上课周数，每天课程数，课表具体时间，课程格子高度、不透明度、颜色、文字大小全部可以根据实际情况自己定义。这个好处在于，每个人手机屏幕尺寸不一样，有的手机是16:9，有的手机是18:9，像超级课程表和课程格子此类软件，只会生硬的塞满你的屏幕，让你去适应它具有挑战性的审美。而wakeup，可以根据自身实际情况调整你的课表相关参数，使得它课表真正的掌握在你手上，让你成为手机的主人而不是奴隶。<br>
-6.这或许是它最强大的一点，它支持导出导入，比方说，我们一个班的同学都在用这款我推荐的软件，每个学期开始，我将我们班课表做好，通过导出分享到群里，班级同学再通过下载导入到他们手机上的wakeup里，再结合5.中提到的通过调整让我分享的文件也能适应他们的手机屏幕尺寸，这样大大提高了效率。<br>
-7.最后，经管这款软件是Android用户的福利，但是iOS用户也是需要雨露均沾的，开发者为iOS用户准备了ICS格式的导出选择，这使得你可以将ICS通过windows的日历直接打开，同步到你的微软账号中，再在iOS的日历中添加微软账号同步，这样，你的课表就已经完美同步到你的iOS日历中了，目前来说，这是开发者为iOS用户留的一种方法了。不过，由于目前开发者正在开发iOS端wakeup，很快iOS用户也能享受到这款软件的强大便利。<br>
-结语，我很少去评价一款软件，因为大部分软件都充斥着大量的广告，冗余的代码，糟糕的排版这一系列通病。但是，一年前，当我发现它时，它就像一股子清流一般醍醐灌顶。它界面的优美，代码的规范简洁，不断的优化，不断的调整算法，实现的功能之强大，是我手机里任何一款软件都无法与之相比较的。</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>Wakeup</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>斯通纳</title>
     <url>/2020/01/22/022-stone/</url>
     <content><![CDATA[<p>名著散文诗词读的少，小说倒是会读一些，斯通纳五六年前读过，写得就像一杯水，写得很平淡，没有浓墨重彩的地方，全书都没有诗词散文里面深奥的道理，也没有名人传记里面让人惊叹的故事，就是很平凡的一个人，一生的故事，但就是能吸引我看下去，因为写的很真实，很现实。<br>
@@ -321,19 +336,16 @@
       </tags>
   </entry>
   <entry>
-    <title>开罗金字塔游戏</title>
-    <url>/2020/02/05/024-cairo-pyramid-games/</url>
-    <content><![CDATA[<p>开罗游戏真是个打发时间的好去处<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826221742.png" alt=""></p>
+    <title>一加6上手体验</title>
+    <url>/2019/03/09/006-oneplus-six-hands-on-experience/</url>
+    <content><![CDATA[<p>一加6，处理器为骁龙845，系统为安卓9.0，氢OS9.0.2，首先，整机外观非常一体化，握在手里感觉非常舒适，重量适中，适合游戏玩家长时间握持，手机背部的玻璃面板手感非常棒。正面采用了刘海设计，不过可以将刘海进行隐藏，屏幕素质属于中等偏上水平。游戏体验方面吃鸡60帧并不是问题，在拍照上，一加的相机也有所提升。较为可惜的一点是，一加6还是采用了单扬声器设计，但保留了3.5毫米耳机接口，这点给好评。总的来说相较于上一代一加5，有了明显的提升，同时也将一加品牌，全面的带入了全面屏时代。是一款同时兼顾了续航与性能的手机，日常体验完全没有任何问题，对刘海屏不介意的同学，可以试着入手。</p>
 ]]></content>
       <categories>
         <category>极客之旅</category>
-        <category>游戏体验</category>
       </categories>
       <tags>
-        <tag>开罗游戏</tag>
-        <tag>GameGuardian</tag>
-        <tag>VMOS Pro</tag>
+        <tag>OnePlus</tag>
+        <tag>845</tag>
       </tags>
   </entry>
   <entry>
@@ -402,6 +414,22 @@
       </tags>
   </entry>
   <entry>
+    <title>开罗金字塔游戏</title>
+    <url>/2020/02/05/024-cairo-pyramid-games/</url>
+    <content><![CDATA[<p>开罗游戏真是个打发时间的好去处<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826221742.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+        <category>游戏体验</category>
+      </categories>
+      <tags>
+        <tag>开罗游戏</tag>
+        <tag>GameGuardian</tag>
+        <tag>VMOS Pro</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一加新功能</title>
     <url>/2020/04/06/026-a-new-function-of-oneplus/</url>
     <content><![CDATA[<p>一加在通讯录加入了类似Face Time的功能，一加手机之间可以通过Wifi、5G、4G进行聊天视频通话，界面的交互也和Face Time比较类似。使用下来，或可与Face Time相比，是一个很不错的功能</p>
@@ -413,21 +441,6 @@
         <tag>OnePlus</tag>
         <tag>通讯录</tag>
         <tag>FaceTime</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>炉石的同步策略</title>
-    <url>/2020/04/12/027-synchronization-strategy-of-furnace-stone/</url>
-    <content><![CDATA[<p>炉石在Android，PC，iPhone，iPad都共用一个服务器，数据都可以同步共享。暴雪这波操作简直把腾讯系游戏以及苹果官方的脸都吊起来打。而作为一个用户，真是拍手叫好。<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222306.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-        <category>游戏体验</category>
-      </categories>
-      <tags>
-        <tag>炉石</tag>
-        <tag>云同步</tag>
       </tags>
   </entry>
   <entry>
@@ -451,18 +464,18 @@
       </tags>
   </entry>
   <entry>
-    <title>霸气外漏喵</title>
-    <url>/2019/10/30/017-domineering-side-leakage-meow/</url>
-    <content><![CDATA[<p>这猫太有气势了，我撸它，竟然被打了！还好打在衣服上，没被挠到<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826220458.jpeg" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826220527.jpeg" alt=""></p>
+    <title>炉石的同步策略</title>
+    <url>/2020/04/12/027-synchronization-strategy-of-furnace-stone/</url>
+    <content><![CDATA[<p>炉石在Android，PC，iPhone，iPad都共用一个服务器，数据都可以同步共享。暴雪这波操作简直把腾讯系游戏以及苹果官方的脸都吊起来打。而作为一个用户，真是拍手叫好。<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222306.webp" alt=""></p>
 ]]></content>
       <categories>
-        <category>动物大赏</category>
-        <category>摄影记录</category>
+        <category>极客之旅</category>
+        <category>游戏体验</category>
       </categories>
       <tags>
-        <tag>豹纹</tag>
+        <tag>炉石</tag>
+        <tag>云同步</tag>
       </tags>
   </entry>
   <entry>
@@ -724,33 +737,6 @@
       </tags>
   </entry>
   <entry>
-    <title>后浪</title>
-    <url>/2020/05/14/032-rising-waves/</url>
-    <content><![CDATA[<p>麻：“师爷，您给翻译翻译，什么叫后浪，翻译翻译，什么，叫后浪”</p>
-<p>汤：“这还用翻译，年轻人嘛，新一代，都说了…”</p>
-<p>麻：“我让你翻译给我听，什么叫后浪！”</p>
-<p>汤：：“不用翻译，就是后浪啊，热爱生活嘛…”</p>
-<p>黄：“难道你听不懂什么叫后浪？”</p>
-<p>麻：“我就想让你翻译翻译，什么，叫后浪！！！”</p>
-<p>汤：“后浪嘛！”</p>
-<p>麻：“翻译出来给我听，什么TM的叫后浪！什么TM的叫TM的后浪！”</p>
-<p>汤：“什么TM的叫后浪啊？”</p>
-<p>黄：“后浪就是新一代青年，可以选择玩单反，开跑车，玩跳伞，在欧洲旅游拍vlog，明白了吗？”</p>
-<p>汤：“这就是后浪呀！”</p>
-<p>麻：“翻译翻译”</p>
-<p>汤，黄：“…？？？”</p>
-<p>麻：“翻译翻译！”</p>
-<p>汤：“后浪，就是前浪的儿子和女儿！”</p>
-<p>麻：“噢，大哥这TM是后浪啊。”</p>
-]]></content>
-      <categories>
-        <category>好句摘抄</category>
-      </categories>
-      <tags>
-        <tag>翻译翻译</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2019学年离散复习及押题</title>
     <url>/2020/05/14/033-2019-discrete-review-and-escort/</url>
     <content><![CDATA[<p>离散复习及押题(综合12,13,14,17,18年题型)</p>
@@ -806,6 +792,33 @@
       </tags>
   </entry>
   <entry>
+    <title>后浪</title>
+    <url>/2020/05/14/032-rising-waves/</url>
+    <content><![CDATA[<p>麻：“师爷，您给翻译翻译，什么叫后浪，翻译翻译，什么，叫后浪”</p>
+<p>汤：“这还用翻译，年轻人嘛，新一代，都说了…”</p>
+<p>麻：“我让你翻译给我听，什么叫后浪！”</p>
+<p>汤：：“不用翻译，就是后浪啊，热爱生活嘛…”</p>
+<p>黄：“难道你听不懂什么叫后浪？”</p>
+<p>麻：“我就想让你翻译翻译，什么，叫后浪！！！”</p>
+<p>汤：“后浪嘛！”</p>
+<p>麻：“翻译出来给我听，什么TM的叫后浪！什么TM的叫TM的后浪！”</p>
+<p>汤：“什么TM的叫后浪啊？”</p>
+<p>黄：“后浪就是新一代青年，可以选择玩单反，开跑车，玩跳伞，在欧洲旅游拍vlog，明白了吗？”</p>
+<p>汤：“这就是后浪呀！”</p>
+<p>麻：“翻译翻译”</p>
+<p>汤，黄：“…？？？”</p>
+<p>麻：“翻译翻译！”</p>
+<p>汤：“后浪，就是前浪的儿子和女儿！”</p>
+<p>麻：“噢，大哥这TM是后浪啊。”</p>
+]]></content>
+      <categories>
+        <category>好句摘抄</category>
+      </categories>
+      <tags>
+        <tag>翻译翻译</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux初体验</title>
     <url>/2020/05/14/034-linux-first-experience/</url>
     <content><![CDATA[<p>在经过系统换源，安装常用软件，学习基本命令行，三大语言编译环境配置，增加一点窗口特效之后，Deepin终于整成和Win差不多的生产力工具了。不得不说，Python3.8环境真难装，花了三天都没琢磨明白，最后还是装一个Conda解决全部问题。</p>
@@ -856,6 +869,37 @@
       </tags>
   </entry>
   <entry>
+    <title>在list中正序和倒序删除元素区别</title>
+    <url>/2020/05/16/037-the-difference-between-deleting-elements-in-positive-order-and-in-reverse-order-in-the-list/</url>
+    <content><![CDATA[<p>话说有下面这两段代码<br>
+<strong>代码一</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>();</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> list.size() - <span class="number">1</span> ; i &gt;= <span class="number">0</span> ; i--)&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="string">&quot;java&quot;</span>.equals(list.get(i)))&#123;</span><br><span class="line">                list.remove(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p><strong>代码二</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>();</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span>  <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i &lt; list.size() ; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="string">&quot;java&quot;</span>.equals(list.get(i)))&#123;</span><br><span class="line">                list.remove(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p>请问哪一段代码可以将加入的“java”元素全部删除？</p>
+<p>答案当然是代码一啦。什么？你不信？那就让我们从实际代码运行来看一下效果吧。</p>
+<p>代码一测试代码和运行结果如下<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-33-41.png" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-33-52.png" alt=""></p>
+<p>代码二测试代码和运行结果如下<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-35-47.png" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-35-52.png" alt=""></p>
+<p>究其原因，为什么看上去可以实现一样功能的数组会导致结果不同？其实是因为你忽略了一个点，list中对元素进行删除添加操作之后，<code>list会产生动态变化</code>，删除一个元素，后面的元素会补全上面元素的位置。</p>
+<p>让我们来分析一下代码二，<strong>代码二是正序删除</strong><br>
+当第一个“java”被移除之后，“aaa”位于第一的位置，第二个&quot;java&quot;位于第二的位置，第三个&quot;java&quot;位于第三的位置，“bbb&quot;位于第四的位置。<br>
+然后下标+1，指向上一步操作排列好的第二个位置。于是，位于第二个位置的第二个“java”也能顺利删除，此时&quot;aaa&quot;仍旧在第一的位置，第三个&quot;java&quot;来到了第二的位置，“bbb&quot;来到了第三的位置。<br>
+然后下标再+1，指向上一步操作排列好的第三个位置。但是注意此时，第三个位置是&quot;bbb”，而我们本来想要继续删除的第三个&quot;java&quot;此时却在第二个位置。所以，代码二会导致漏删第三个&quot;java”，致使程序块达不到想要的效果。</p>
+<p><strong>代码一是倒序删除</strong>，每一个&quot;java&quot;删除之后，只对后面的元素产生影响，而后面的元素又都是经过删除操作，确保不存在&quot;java&quot;元素，因此，代码二的倒序删除法可以实现彻底删除所有&quot;java&quot;元素的操作。</p>
+]]></content>
+      <categories>
+        <category>Java学习笔记</category>
+      </categories>
+      <tags>
+        <tag>正序</tag>
+        <tag>倒序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何利用油猴脚本进行中国MOOC刷课</title>
     <url>/2020/05/14/036-how-to-use-oil-monkey-script-to-brush-chinese-mooc-lessons/</url>
     <content><![CDATA[<h1>1.下载Google浏览器</h1>
@@ -902,50 +946,6 @@
         <tag>油猴脚本</tag>
         <tag>Chrome</tag>
         <tag>插件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在list中正序和倒序删除元素区别</title>
-    <url>/2020/05/16/037-the-difference-between-deleting-elements-in-positive-order-and-in-reverse-order-in-the-list/</url>
-    <content><![CDATA[<p>话说有下面这两段代码<br>
-<strong>代码一</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>();</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> list.size() - <span class="number">1</span> ; i &gt;= <span class="number">0</span> ; i--)&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="string">&quot;java&quot;</span>.equals(list.get(i)))&#123;</span><br><span class="line">                list.remove(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-<p><strong>代码二</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>();</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span>  <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i &lt; list.size() ; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="string">&quot;java&quot;</span>.equals(list.get(i)))&#123;</span><br><span class="line">                list.remove(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-<p>请问哪一段代码可以将加入的“java”元素全部删除？</p>
-<p>答案当然是代码一啦。什么？你不信？那就让我们从实际代码运行来看一下效果吧。</p>
-<p>代码一测试代码和运行结果如下<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-33-41.png" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-33-52.png" alt=""></p>
-<p>代码二测试代码和运行结果如下<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-35-47.png" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-35-52.png" alt=""></p>
-<p>究其原因，为什么看上去可以实现一样功能的数组会导致结果不同？其实是因为你忽略了一个点，list中对元素进行删除添加操作之后，<code>list会产生动态变化</code>，删除一个元素，后面的元素会补全上面元素的位置。</p>
-<p>让我们来分析一下代码二，<strong>代码二是正序删除</strong><br>
-当第一个“java”被移除之后，“aaa”位于第一的位置，第二个&quot;java&quot;位于第二的位置，第三个&quot;java&quot;位于第三的位置，“bbb&quot;位于第四的位置。<br>
-然后下标+1，指向上一步操作排列好的第二个位置。于是，位于第二个位置的第二个“java”也能顺利删除，此时&quot;aaa&quot;仍旧在第一的位置，第三个&quot;java&quot;来到了第二的位置，“bbb&quot;来到了第三的位置。<br>
-然后下标再+1，指向上一步操作排列好的第三个位置。但是注意此时，第三个位置是&quot;bbb”，而我们本来想要继续删除的第三个&quot;java&quot;此时却在第二个位置。所以，代码二会导致漏删第三个&quot;java”，致使程序块达不到想要的效果。</p>
-<p><strong>代码一是倒序删除</strong>，每一个&quot;java&quot;删除之后，只对后面的元素产生影响，而后面的元素又都是经过删除操作，确保不存在&quot;java&quot;元素，因此，代码二的倒序删除法可以实现彻底删除所有&quot;java&quot;元素的操作。</p>
-]]></content>
-      <categories>
-        <category>Java学习笔记</category>
-      </categories>
-      <tags>
-        <tag>正序</tag>
-        <tag>倒序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一叶知秋</title>
-    <url>/2019/10/23/016-one-falling-leaf-is-indicative-of-the-coming-of-autumn/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826220324.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>摄影记录</category>
-        <category>植物欣赏</category>
-      </categories>
-      <tags>
-        <tag>银杏</tag>
       </tags>
   </entry>
   <entry>
@@ -1104,6 +1104,18 @@
       </tags>
   </entry>
   <entry>
+    <title>伊甸园献祭平面图</title>
+    <url>/2020/07/26/044-sacrifice-plan-of-eden/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/src%3Dhttp___img.tkgame.com_d_file_2020_07_10_24n2lnyhrap.jpg%26refer%3Dhttp___img.tkgame_mh1615302773095.jpg" alt="伊甸园献祭平面图"></p>
+]]></content>
+      <categories>
+        <category>游戏体验</category>
+      </categories>
+      <tags>
+        <tag>光遇</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>尧新2考场科三考试流程</title>
     <url>/2020/07/25/043-examination-process-of-section-3-in-yaoxin-2-examination-room/</url>
     <content><![CDATA[<h2 id="一、灯光考试">一、灯光考试</h2>
@@ -1180,18 +1192,6 @@
       </tags>
   </entry>
   <entry>
-    <title>伊甸园献祭平面图</title>
-    <url>/2020/07/26/044-sacrifice-plan-of-eden/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/src%3Dhttp___img.tkgame.com_d_file_2020_07_10_24n2lnyhrap.jpg%26refer%3Dhttp___img.tkgame_mh1615302773095.jpg" alt="伊甸园献祭平面图"></p>
-]]></content>
-      <categories>
-        <category>游戏体验</category>
-      </categories>
-      <tags>
-        <tag>光遇</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>白夜</title>
     <url>/2020/08/01/045-white-night/</url>
     <content><![CDATA[<p>白夜：我的世界里本就没有太阳，只是有些东西代替了太阳，给我光芒。<br>
@@ -1256,17 +1256,6 @@
       </tags>
   </entry>
   <entry>
-    <title>iPad编程初步实现</title>
-    <url>/2020/09/10/049-preliminary-implementation-of-ipad-programming/</url>
-    <content><![CDATA[<p>iPad+TeamViewer，远程访问宿舍电脑<br>
-由于游戏本又重续航又差，带不出去宿舍，没法才想到这个方法。iPad和电脑都连Wifi可以大大降低网络延迟。鼠标键盘直接使用蓝牙的，稍微设置一下，体验就可以和电脑相比了<br>
-总体操作使用起来就和电脑没有什么区别，可以应付上课要用到电脑的情况，iPad+鼠标+键盘都比较轻，易于携带，唯一需要注意的是，出门前要检查保证宿舍电脑一定要连上Wifi</p>
-]]></content>
-      <tags>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>初入修仙</title>
     <url>/2020/10/12/050-novice-xiuxian/</url>
     <content><![CDATA[<p>到了庙门，拜了真神，很开心。一声道友尽沧桑，修仙路，一步一层天。<br>
@@ -1283,16 +1272,14 @@
       </tags>
   </entry>
   <entry>
-    <title>闪电五连鞭&amp;凡人修仙传</title>
-    <url>/2020/10/15/051-lightning-with-five-lashes/</url>
-    <content><![CDATA[<p>朋友们好啊，我是血色禁地二级妖兽墨蛟。<br>
-刚才有个朋友问我墨老师发生什么事了，我说怎么回事，给我发了一几张截图，我一看！嗷！原来是昨天，有两个年轻人，一个二十多岁相貌平平练气期，一个几百岁结丹期。上来就是二打一，偷袭！还用符宝砸我，年轻人不讲武德。修仙界要以和为贵，好自为之！</p>
+    <title>iPad编程初步实现</title>
+    <url>/2020/09/10/049-preliminary-implementation-of-ipad-programming/</url>
+    <content><![CDATA[<p>iPad+TeamViewer，远程访问宿舍电脑<br>
+由于游戏本又重续航又差，带不出去宿舍，没法才想到这个方法。iPad和电脑都连Wifi可以大大降低网络延迟。鼠标键盘直接使用蓝牙的，稍微设置一下，体验就可以和电脑相比了<br>
+总体操作使用起来就和电脑没有什么区别，可以应付上课要用到电脑的情况，iPad+鼠标+键盘都比较轻，易于携带，唯一需要注意的是，出门前要检查保证宿舍电脑一定要连上Wifi</p>
 ]]></content>
-      <categories>
-        <category>影视观赏</category>
-      </categories>
       <tags>
-        <tag>整活</tag>
+        <tag>IDE</tag>
       </tags>
   </entry>
   <entry>
@@ -1306,21 +1293,6 @@
       </categories>
       <tags>
         <tag>蒲公英</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>初遇2077</title>
-    <url>/2020/12/12/053-first-encounter-2077/</url>
-    <content><![CDATA[<p>今晚和基努里维斯血洗夜之城<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224332.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>游戏体验</category>
-      </categories>
-      <tags>
-        <tag>赛博朋克2077</tag>
-        <tag>捏脸</tag>
-        <tag>V</tag>
       </tags>
   </entry>
   <entry>
@@ -1340,6 +1312,34 @@
         <tag>赛博朋克2077</tag>
         <tag>鹅城</tag>
         <tag>夜之城</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>闪电五连鞭&amp;凡人修仙传</title>
+    <url>/2020/10/15/051-lightning-with-five-lashes/</url>
+    <content><![CDATA[<p>朋友们好啊，我是血色禁地二级妖兽墨蛟。<br>
+刚才有个朋友问我墨老师发生什么事了，我说怎么回事，给我发了一几张截图，我一看！嗷！原来是昨天，有两个年轻人，一个二十多岁相貌平平练气期，一个几百岁结丹期。上来就是二打一，偷袭！还用符宝砸我，年轻人不讲武德。修仙界要以和为贵，好自为之！</p>
+]]></content>
+      <categories>
+        <category>影视观赏</category>
+      </categories>
+      <tags>
+        <tag>整活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>初遇2077</title>
+    <url>/2020/12/12/053-first-encounter-2077/</url>
+    <content><![CDATA[<p>今晚和基努里维斯血洗夜之城<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224332.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>游戏体验</category>
+      </categories>
+      <tags>
+        <tag>赛博朋克2077</tag>
+        <tag>捏脸</tag>
+        <tag>V</tag>
       </tags>
   </entry>
   <entry>
@@ -1570,36 +1570,6 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
-    <title>黑苹果安装方法</title>
-    <url>/2021/02/28/065-black-apple-installation-method/</url>
-    <content><![CDATA[<p>以下出自个人安装经验，仅供参考，开学可以去实验室，可以先用虚拟机顶一顶，如果对黑苹果实在有需求，可以根据以下教程来操作</p>
-<h1>1.镜像下载</h1>
-<p>去黑果小兵网站下载镜像文件，big sur的bug较多，建议下载15.7的catalina</p>
-<h1>2.烧录</h1>
-<p>准备一个至少8G的U盘和一个叫transmac的软件</p>
-<p>transmac的使用办法百度一下，将镜像文件烧录到U盘当中</p>
-<h1>3.安装</h1>
-<p>电脑进入bios，进行一些相关，详情见如下视频，插入U盘，根据电脑型号进入启动界面，安装mac系统。可能会无法安装，需要进入终端更改时间。安装过程可能会持续10多分钟，要进行多次安装，具体情况按照个人</p>
-<h1>4.驱动</h1>
-<p>驱动是黑苹果最难解决的一步，需要有对应的EFI文件，建议去github找电脑相关对应文件，替换电脑内部本身的文件。同时还要做好声卡网卡显卡三卡驱动，市面上大部分win本的网卡都不能直接在mac系统下上网(有些可以)，需要买一张博通的网卡更换之后才能驱动上网成功。也有快捷方法，运行一段程序可以驱动任意网卡，但是速度会慢一点，每次开机都要重新运行。</p>
-<p>显卡驱动会麻烦一点，如果图形卡那里显示5m或者7m，就是没有驱动成功，使用过程中会比较卡(好像虚拟机里运行一样)。正确驱动看下面第二个视频。</p>
-<p>三卡驱动完毕，还要检查键盘，鼠标，亮度的问题，没有问题之后，黑苹果才算安装成功</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-        <category>技能学习记录</category>
-      </categories>
-      <tags>
-        <tag>刷机</tag>
-        <tag>MacOS</tag>
-        <tag>黑苹果</tag>
-        <tag>BigSur</tag>
-        <tag>Transmac</tag>
-        <tag>EFI</tag>
-        <tag>Clover</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>大物2考试复习一图到底</title>
     <url>/2021/02/28/064-review-the-picture-to-the-end-in-the-big-physics-2-exam/</url>
     <content><![CDATA[<h1>一、填空题（20分，10空，每空2分）</h1>
@@ -1637,6 +1607,36 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
+    <title>黑苹果安装方法</title>
+    <url>/2021/02/28/065-black-apple-installation-method/</url>
+    <content><![CDATA[<p>以下出自个人安装经验，仅供参考，开学可以去实验室，可以先用虚拟机顶一顶，如果对黑苹果实在有需求，可以根据以下教程来操作</p>
+<h1>1.镜像下载</h1>
+<p>去黑果小兵网站下载镜像文件，big sur的bug较多，建议下载15.7的catalina</p>
+<h1>2.烧录</h1>
+<p>准备一个至少8G的U盘和一个叫transmac的软件</p>
+<p>transmac的使用办法百度一下，将镜像文件烧录到U盘当中</p>
+<h1>3.安装</h1>
+<p>电脑进入bios，进行一些相关，详情见如下视频，插入U盘，根据电脑型号进入启动界面，安装mac系统。可能会无法安装，需要进入终端更改时间。安装过程可能会持续10多分钟，要进行多次安装，具体情况按照个人</p>
+<h1>4.驱动</h1>
+<p>驱动是黑苹果最难解决的一步，需要有对应的EFI文件，建议去github找电脑相关对应文件，替换电脑内部本身的文件。同时还要做好声卡网卡显卡三卡驱动，市面上大部分win本的网卡都不能直接在mac系统下上网(有些可以)，需要买一张博通的网卡更换之后才能驱动上网成功。也有快捷方法，运行一段程序可以驱动任意网卡，但是速度会慢一点，每次开机都要重新运行。</p>
+<p>显卡驱动会麻烦一点，如果图形卡那里显示5m或者7m，就是没有驱动成功，使用过程中会比较卡(好像虚拟机里运行一样)。正确驱动看下面第二个视频。</p>
+<p>三卡驱动完毕，还要检查键盘，鼠标，亮度的问题，没有问题之后，黑苹果才算安装成功</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+        <category>技能学习记录</category>
+      </categories>
+      <tags>
+        <tag>刷机</tag>
+        <tag>MacOS</tag>
+        <tag>黑苹果</tag>
+        <tag>BigSur</tag>
+        <tag>Transmac</tag>
+        <tag>EFI</tag>
+        <tag>Clover</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>赛博朋克2077捏脸数据</title>
     <url>/2021/02/28/066-cyberpunk-2077-pinch-face-data/</url>
     <content><![CDATA[<p>皮肤04</p>
@@ -1661,23 +1661,6 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       <tags>
         <tag>赛博朋克2077</tag>
         <tag>捏脸</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>正联导剪版第一观感</title>
-    <url>/2021/03/18/069-first-impression-of-justice-league-cutting-version/</url>
-    <content><![CDATA[<p>什么他妈的叫他妈的正义联盟，扎克施奈德牛逼！！！！！！！！！<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225225.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>影视观赏</category>
-      </categories>
-      <tags>
-        <tag>正义联盟</tag>
-        <tag>扎斯林</tag>
-        <tag>扎克施耐德</tag>
-        <tag>扎导</tag>
-        <tag>DC</tag>
       </tags>
   </entry>
   <entry>
@@ -1753,6 +1736,23 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
+    <title>正联导剪版第一观感</title>
+    <url>/2021/03/18/069-first-impression-of-justice-league-cutting-version/</url>
+    <content><![CDATA[<p>什么他妈的叫他妈的正义联盟，扎克施奈德牛逼！！！！！！！！！<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225225.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>影视观赏</category>
+      </categories>
+      <tags>
+        <tag>正义联盟</tag>
+        <tag>扎斯林</tag>
+        <tag>扎克施耐德</tag>
+        <tag>扎导</tag>
+        <tag>DC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>考研初记录</title>
     <url>/2021/03/20/070-preliminary-record-of-postgraduate-entrance-examination/</url>
     <content><![CDATA[<p>吃完饭在图书馆下面遇到只猫，顺手就拍了下来</p>
@@ -1761,6 +1761,25 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
 <p>英语背了快5个月了，词汇量从荒废的3k提升到近7k了，做完英一09年第一篇阅读，全对很高兴，做完想背下里面的生词，墨墨云词库一搜，发现英一英二真题都有归纳，好评！做完第二天背的时候可以复习下生词，比较有效率</p>
 <p>做阅读相当于看小说了，对里面的观点还是比较认同的</p>
 <p>总之任重道远，吾辈还需加油</p>
+]]></content>
+      <categories>
+        <category>考研复盘</category>
+      </categories>
+      <tags>
+        <tag>考研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研三月复盘</title>
+    <url>/2021/04/04/072-march-resumption-of-postgraduate-entrance-examination/</url>
+    <content><![CDATA[<p>路过操场，一抹红叶倒是格外的引人注意。</p>
+<p>回顾一下三月份，平均每天复习6个小时，有点拉胯，之后要调整一下时间，争取每天复习时间7-8小时</p>
+<p>大部分时间还是在高数上，目前微分方程已经结束，还有多元微分和二重积分就结束一轮基础了，在做660，正确率55%，群里问的题倒是都能有思路做出来。一块考研的隔壁大佬660正确率72%，数学有天赋。等一轮结束，还要理一理框架，啃一下难点再去看线代</p>
+<p>英语方面，用墨墨，每天233个，墨墨抗遗忘蛮强的，就是慢一点，背到现在，满打满算也就2300+，不过词汇量快8k了，还是蛮不错的。现在阅读，长难句，完形，翻译，新题型视频都在看，英一阅读真题也在做。不过前几天没看，在赶数学进度，今天看了完形视频</p>
+<p>草稿纸和笔芯准备了很多很多，现在用掉一部分草稿纸，估计有100+，笔芯黑笔用完了又买了一堆。这方面资源可以短时间内不用愁了</p>
+<p>和五个小伙伴一块考研，四个女生，一个男生大佬，给女生买了点柠檬茶，女生给了我点糖，顺便问了一些题，由于大家考的学校都不同，没有什么冲突，很不错</p>
+<p>和一个目标院校今年上岸的学长聊，发现他原来去年考上了985，但是女朋友没考上985所以没去，今年跟着女朋友考的学校又考了一遍，真的流弊。他说我的进度还行，不过我觉得有点慢，得加加速，比如专业课要开始看起来了，打开Clion，敲了第一行代码(群友发了一张表情包，10多个bug，忍不住敲了下)</p>
+<p>最近一个月，就是一般般，和喝凉白开一样，没什么特别的滋味，但又很解渴。吾辈任重道远，还需努力，加油</p>
 ]]></content>
       <categories>
         <category>考研复盘</category>
@@ -1781,25 +1800,6 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </categories>
       <tags>
         <tag>桃花</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考研三月复盘</title>
-    <url>/2021/04/04/072-march-resumption-of-postgraduate-entrance-examination/</url>
-    <content><![CDATA[<p>路过操场，一抹红叶倒是格外的引人注意。</p>
-<p>回顾一下三月份，平均每天复习6个小时，有点拉胯，之后要调整一下时间，争取每天复习时间7-8小时</p>
-<p>大部分时间还是在高数上，目前微分方程已经结束，还有多元微分和二重积分就结束一轮基础了，在做660，正确率55%，群里问的题倒是都能有思路做出来。一块考研的隔壁大佬660正确率72%，数学有天赋。等一轮结束，还要理一理框架，啃一下难点再去看线代</p>
-<p>英语方面，用墨墨，每天233个，墨墨抗遗忘蛮强的，就是慢一点，背到现在，满打满算也就2300+，不过词汇量快8k了，还是蛮不错的。现在阅读，长难句，完形，翻译，新题型视频都在看，英一阅读真题也在做。不过前几天没看，在赶数学进度，今天看了完形视频</p>
-<p>草稿纸和笔芯准备了很多很多，现在用掉一部分草稿纸，估计有100+，笔芯黑笔用完了又买了一堆。这方面资源可以短时间内不用愁了</p>
-<p>和五个小伙伴一块考研，四个女生，一个男生大佬，给女生买了点柠檬茶，女生给了我点糖，顺便问了一些题，由于大家考的学校都不同，没有什么冲突，很不错</p>
-<p>和一个目标院校今年上岸的学长聊，发现他原来去年考上了985，但是女朋友没考上985所以没去，今年跟着女朋友考的学校又考了一遍，真的流弊。他说我的进度还行，不过我觉得有点慢，得加加速，比如专业课要开始看起来了，打开Clion，敲了第一行代码(群友发了一张表情包，10多个bug，忍不住敲了下)</p>
-<p>最近一个月，就是一般般，和喝凉白开一样，没什么特别的滋味，但又很解渴。吾辈任重道远，还需努力，加油</p>
-]]></content>
-      <categories>
-        <category>考研复盘</category>
-      </categories>
-      <tags>
-        <tag>考研</tag>
       </tags>
   </entry>
   <entry>
@@ -1866,6 +1866,20 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
+    <title>泰勒公式速记</title>
+    <url>/2021/04/30/079-taylor-formula-shorthand/</url>
+    <content><![CDATA[<p>指对函数123，正弦函数135，正弦对数隔一换，正弦指数有感叹。<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/28/20210828235903071.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>考研复盘</category>
+      </categories>
+      <tags>
+        <tag>考研</tag>
+        <tag>泰勒</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vim初体验</title>
     <url>/2021/04/23/078-vim-first-experience/</url>
     <content><![CDATA[<p>宇宙第一IDE吗，人道主义情怀满分<br>
@@ -1878,20 +1892,6 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
         <tag>IDE</tag>
         <tag>VIM</tag>
         <tag>Ubuntu</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>泰勒公式速记</title>
-    <url>/2021/04/30/079-taylor-formula-shorthand/</url>
-    <content><![CDATA[<p>指对函数123，正弦函数135，正弦对数隔一换，正弦指数有感叹。<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/28/20210828235903071.jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>考研复盘</category>
-      </categories>
-      <tags>
-        <tag>考研</tag>
-        <tag>泰勒</tag>
       </tags>
   </entry>
   <entry>
@@ -2218,19 +2218,6 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
-    <title>六一快乐啊</title>
-    <url>/2021/06/01/088-happy-june-day/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826230332.webp" alt=""><br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826230340.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>动物大赏</category>
-      </categories>
-      <tags>
-        <tag>六一</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>四十九事件有感</title>
     <url>/2021/06/07/089-be-interested-in-this-event/</url>
     <content><![CDATA[<p>成都四十九中事件反应出敌人始终存在，并且即将有破土而出的趋势，他们等不及潜伏了。</p>
@@ -2245,6 +2232,19 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </categories>
       <tags>
         <tag>让子弹飞</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>六一快乐啊</title>
+    <url>/2021/06/01/088-happy-june-day/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826230332.webp" alt=""><br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826230340.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>动物大赏</category>
+      </categories>
+      <tags>
+        <tag>六一</tag>
       </tags>
   </entry>
   <entry>
@@ -2289,6 +2289,22 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
       </tags>
   </entry>
   <entry>
+    <title>年轻人的第一篇期刊</title>
+    <url>/2021/08/08/097-the-first-journal/</url>
+    <content><![CDATA[<p>不动声色 安心蛰伏 第一篇期刊get<br>
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/24/20210824174622936.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>项目展示</category>
+        <category>学术研究</category>
+      </categories>
+      <tags>
+        <tag>期刊</tag>
+        <tag>论文</tag>
+        <tag>数字技术与应用</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>黑苹果,浏览器,系统</title>
     <url>/2021/08/07/096-blackapple-browser-system/</url>
     <content><![CDATA[<p>1.火狐真好用 win mac Android iOS ubuntu 全能互通 体验又和谷歌一样 插件主题还极其丰富,还能直接装gnome扩展 装dash-to-dock这样的ubuntu桌面工具</p>
@@ -2309,22 +2325,6 @@ PS：在 <em>暑假结束开学前</em> 完成 <strong>数学强化二轮和专�
         <tag>OpenCore</tag>
         <tag>oh-my-zsh</tag>
         <tag>缓冲帧</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>年轻人的第一篇期刊</title>
-    <url>/2021/08/08/097-the-first-journal/</url>
-    <content><![CDATA[<p>不动声色 安心蛰伏 第一篇期刊get<br>
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/24/20210824174622936.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>项目展示</category>
-        <category>学术研究</category>
-      </categories>
-      <tags>
-        <tag>期刊</tag>
-        <tag>论文</tag>
-        <tag>数字技术与应用</tag>
       </tags>
   </entry>
   <entry>
@@ -2786,13 +2786,7 @@ c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z'/></svg><
 </li>
 </ul>
 <p>[1]: 这是一个 <em>注脚</em> 的 <strong>文本</strong>。</p>
-<p>[2]: 这是另一个 <em>注脚</em> 的 <strong>文本</strong>。<script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">Alice->Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob-->Alice: I am good thanks!</textarea><textarea id="sequence-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"}</textarea><script>  var code = document.getElementById("sequence-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-0", options);</script><textarea id="sequence-1-code" style="display: none">Title: Here is a title
-A->B: Normal line
-B-->C: Dashed line
-C->>D: Open arrow
-D-->>A: Dashed open arrow</textarea><textarea id="sequence-1-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"}</textarea><script>  var code = document.getElementById("sequence-1-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-1-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-1", options);</script><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start:>https://www.zybuluo.com
+<p>[2]: 这是另一个 <em>注脚</em> 的 <strong>文本</strong>。<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start:>https://www.zybuluo.com
 io=>inputoutput: verification
 op=>operation: Your Operation
 cond=>condition: Yes or No?
@@ -2801,7 +2795,13 @@ e=>end
 
 st->io->op->cond
 cond(yes)->e
-cond(no)->sub->io</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
+cond(no)->sub->io</textarea><textarea id="flowchart-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script><script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!</textarea><textarea id="sequence-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("sequence-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-0", options);</script><textarea id="sequence-1-code" style="display: none">Title: Here is a title
+A->B: Normal line
+B-->C: Dashed line
+C->>D: Open arrow
+D-->>A: Dashed open arrow</textarea><textarea id="sequence-1-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("sequence-1-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-1-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-1", options);</script></p>
 ]]></content>
       <categories>
         <category>技能学习记录</category>
@@ -2913,22 +2913,6 @@ cond(no)->sub->io</textarea><textarea id="flowchart-0-options" style="display: n
       </tags>
   </entry>
   <entry>
-    <title>考研6月总结2</title>
-    <url>/2022/07/22/116-June-Summary-2/</url>
-    <content><![CDATA[<p>1.复习全书换成36讲</p>
-<p>2.李永乐真题换成李艳芳真题</p>
-<p>3.买徐涛核心考案，放着等政治复习</p>
-<p>4.李艳芳基础，张宇基础，李林基础，B站其他讲解，数一答疑。接下来主要从这5个地方获取不会的内容</p>
-<p>5.墙灰比较麻烦，靠墙的书上都是灰，定做一个挡板隔一下</p>
-]]></content>
-      <categories>
-        <category>考研复盘</category>
-      </categories>
-      <tags>
-        <tag>考研</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>考研6月总结1</title>
     <url>/2022/07/22/115-June-Summary-1/</url>
     <content><![CDATA[<p>1.先把武忠祥，李永乐Youtube上去年没听完的基础课全部结束掉。结束掉之后，直接跟张宇，不会的看张宇基础班理解</p>
@@ -2942,6 +2926,22 @@ cond(no)->sub->io</textarea><textarea id="flowchart-0-options" style="display: n
 <p>9.政治要买徐涛的核心考案，后面做肖秀荣8+4的时候，换腿姐的背诵手册</p>
 <p>10.英语后期买王江涛作文背</p>
 <p>11.做模拟卷的时候，买数学答题卡+408答题卡+英语作文答题纸</p>
+]]></content>
+      <categories>
+        <category>考研复盘</category>
+      </categories>
+      <tags>
+        <tag>考研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研6月总结2</title>
+    <url>/2022/07/22/116-June-Summary-2/</url>
+    <content><![CDATA[<p>1.复习全书换成36讲</p>
+<p>2.李永乐真题换成李艳芳真题</p>
+<p>3.买徐涛核心考案，放着等政治复习</p>
+<p>4.李艳芳基础，张宇基础，李林基础，B站其他讲解，数一答疑。接下来主要从这5个地方获取不会的内容</p>
+<p>5.墙灰比较麻烦，靠墙的书上都是灰，定做一个挡板隔一下</p>
 ]]></content>
       <categories>
         <category>考研复盘</category>
@@ -3796,16 +3796,12 @@ AR2<br>
 <p>因为之前有一次，晚上胃痛，第二天就好了，所以我觉得应该是和饮食有一定关系，于是第2-3天就吃的很清淡，想观察一下，这个疼痛是否是因为饮食问题引起的，可惜并不是由于饮食原因</p>
 <p>于是又这样熬过了两个晚上，期间第三天晚上，痛的实在是受不了了，就起来录制视频来转移注意力，然后顺便用pr剪辑，加两重水印，一重静态的bilibili原水印，一重运动的字体水印，BGM，字幕(当时可真有心，真的是边痛边缓解)。</p>
 <p>有兴趣可以看一下这个70多分钟的废话视频，大晚上真的是凭意识在说废话(B站最近样式改版，分享按钮都没有了，可能出现无法观看的情况)</p>
-<div style="position: relative; padding: 30% 45%;">
-    <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?bvid=BV1P64y1a746&amp;page=1&as_wide=1&high_quality=1&danmaku=0"
-    scrolling="no"
-    border="0"
-    frameborder="no"
-    framespacing="0"
-    high_quality=1
-    danmaku=1
-    allowfullscreen="true">
-    </iframe>
+<div style="position: relative; padding: 30% 45%;">  
+    <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"  
+            src="https://player.bilibili.com/player.html?bvid=BV1P64y1a746&amp;page=1&as_wide=1&high_quality=1&danmaku=0"  
+            frameborder="no"  
+            scrolling="no">  
+    </iframe>  
 </div>
 <h1>初次就医后-大医院就医前</h1>
 <h2 id="第4天">第4天</h2>
@@ -3837,8 +3833,12 @@ AR2<br>
 <p>一开始查询丛集性头痛的相关问题，看了还是有点后怕，引用知乎上的一个回答。</p>
 <p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/09/21/20210921211922197.jpg" alt=""></p>
 <p>但是看了一些相关发作视频之后，我反而觉得我的症状有点不符合，远没有这么痛的程度，相关视频可以看下面的B站视频。</p>
-<div style="position: relative; padding: 30% 45%;">
-<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?bvid=BV1vt411Q7eb&amp;page=1&as_wide=1&high_quality=1&danmaku=0" frameborder="no" scrolling="no" framespacing="0" allowfullscreen="true"></iframe>
+<div style="position: relative; padding: 30% 45%;">  
+    <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"  
+            src="https://player.bilibili.com/player.html?bvid=BV1vt411Q7eb&amp;page=1&as_wide=1&high_quality=1&danmaku=0"  
+            frameborder="no"  
+            scrolling="no">  
+    </iframe>  
 </div>
 <h2 id="第8天">第8天</h2>
 <p>这一天没有去医院，相关症状在药物的缓和下，也没有那么严重了。</p>
@@ -7712,101 +7712,6 @@ fill函数</p>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/css/custom.css</url>
-    <content><![CDATA[/* 版权信息下划线去除 */
-#post .post-copyright .post-copyright-info a {
-    text-decoration: none;
-}
-
-/* 页脚底部效果优化 */
-#aside-content .card-webinfo .webinfo .webinfo-item {
-    padding: 0 0 0 0
-}
-
-#footer {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    color: #000;
-    background: hsla(0, 0%, 100%, .15);
-}
-
-#footer #footer-wrap,
-#footer #footer-wrap a {
-    color: #333;
-}
-
-.fa-heart {
-    color: red
-}
-
-/* 分类字体调大 */
-#page .category-lists ul {
-    font-size: 22px;
-    ;
-}
-
-/* h1-h6颜色优化 */
-#content-inner.layout h1::before {
-    color: #5ec1e0;
-}
-
-#content-inner.layout h2::before {
-
-    color: #ffbf00;
-}
-
-#content-inner.layout h3::before {
-    color: #57c850;
-}
-
-#content-inner.layout h4::before {
-    color: #fb7061;
-}
-
-#content-inner.layout h5::before {
-    color: #a9e000;
-}
-
-#content-inner.layout h6::before {
-    color: #ef50a8;
-}
-
-#content-inner.layout h1:hover,
-#content-inner.layout h2:hover,
-#content-inner.layout h3:hover,
-#content-inner.layout h4:hover,
-#content-inner.layout h5:hover,
-#content-inner.layout h6:hover {
-    color: #49b1f5;
-}
-
-/* 图片下方描述和图片间距调整 */
-.img-alt {}
-
-/* 页面标题和文章标题居中显示 */
-#page h1.page-title {
-    text-align: center;
-}
-
-#post-info h1.post-title {
-    text-align: center;
-}
-
-/* 文章顶部信息居中显示 */
-#post-info #post-meta div.meta-firstline {
-    text-align: center;
-}
-
-#post-info #post-meta div.meta-secondline {
-    text-align: center;
-}
-
-#post-info #post-meta{
-    text-align: center;
-}]]></content>
-  </entry>
-  <entry>
     <title>分类</title>
     <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
@@ -7912,6 +7817,111 @@ fill函数</p>
   </entry>
   <entry>
     <title></title>
+    <url>/css/custom.css</url>
+    <content><![CDATA[/* 版权信息下划线去除 */
+#post .post-copyright .post-copyright-info a {
+    text-decoration: none;
+}
+
+/* 页脚底部效果优化 */
+#aside-content .card-webinfo .webinfo .webinfo-item {
+    padding: 0 0 0 0
+}
+
+#footer {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #000;
+    background: hsla(0, 0%, 100%, .15);
+}
+
+#footer #footer-wrap,
+#footer #footer-wrap a {
+    color: #333;
+}
+
+.fa-heart {
+    color: red
+}
+
+/* 分类字体调大 */
+#page .category-lists ul {
+    font-size: 22px;
+    ;
+}
+
+/* h1-h6颜色优化 */
+#content-inner.layout h1::before {
+    color: #5ec1e0;
+}
+
+#content-inner.layout h2::before {
+
+    color: #ffbf00;
+}
+
+#content-inner.layout h3::before {
+    color: #57c850;
+}
+
+#content-inner.layout h4::before {
+    color: #fb7061;
+}
+
+#content-inner.layout h5::before {
+    color: #a9e000;
+}
+
+#content-inner.layout h6::before {
+    color: #ef50a8;
+}
+
+#content-inner.layout h1:hover,
+#content-inner.layout h2:hover,
+#content-inner.layout h3:hover,
+#content-inner.layout h4:hover,
+#content-inner.layout h5:hover,
+#content-inner.layout h6:hover {
+    color: #49b1f5;
+}
+
+/* 图片下方描述和图片间距调整 */
+.img-alt {}
+
+/* 页面标题和文章标题居中显示 */
+#page h1.page-title {
+    text-align: center;
+}
+
+#post-info h1.post-title {
+    text-align: center;
+}
+
+/* 文章顶部信息居中显示 */
+#post-info #post-meta div.meta-firstline {
+    text-align: center;
+}
+
+#post-info #post-meta div.meta-secondline {
+    text-align: center;
+}
+
+#post-info #post-meta{
+    text-align: center;
+}]]></content>
+  </entry>
+  <entry>
+    <title>影视</title>
+    <url>/cinemas/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
     <url>/css/font.css</url>
     <content><![CDATA[:root {
     --hl-color: hsl(220, 14%, 71%);
@@ -7991,15 +8001,5 @@ figure.highlight pre .params {
 <h2 id="友链格式">友链格式</h2>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">名称:YuZhangWang的领域 </span><br><span class="line">地址:https://yuzhang.wang/</span><br><span class="line">头像:https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png</span><br><span class="line">描述:PLUSULTRA!</span><br></pre></td></tr></table></figure>
 ]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>影视</title>
-    <url>/cinemas/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
