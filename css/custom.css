@@ -86,6 +86,12 @@
     text-align: center;
 }
 
-#post-info #post-meta{
+#post-info #post-meta {
     text-align: center;
+}
+
+/* 网页变灰 */
+html {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+    -webkit-filter: grayscale(100%);
 }
