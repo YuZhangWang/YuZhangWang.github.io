@@ -7713,67 +7713,44 @@ figure.highlight pre .params {
     <title>关于</title>
     <url>/about/index.html</url>
     <content><![CDATA[<!-- 欢迎界面并展示访问次数 -->
-<p><h2 align="center">👋Thank You For Your Visit</h2></p>
+<h2 align="center">👋Thank You For Your Visit</h2>
 <div align="center">
 <img src="https://profile-counter.glitch.me/YuZhangWang/count.svg" >
 </div>
-
-
 <!-- 反996运动 https://996.icu  https://github.com/996icu -->
 <div align="center">
     <strong>Guido van Rossum, Python之父:<a href="https://twitter.com/gvanrossum/status/1111628076801236993">"996"工作制是不人道的.</a></strong>
+    </br>
+    </br>
+    <table border="0">
+  <tr>
+    <td><a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg"  /></a></td>
+    <td><a href="https://996tsc.netlify.app/#/sticker"><img src="https://img.shields.io/badge/link-996.TSC-red" /></a></td>
+    <td><a href="https://github.com/top996/top.996"><img src="https://camo.githubusercontent.com/33a2b5d1787d372c8d9c7cfbdef67ca85981252cd2a1252d71bce9ea490300bb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c696e6b2d746f702e3939362d7265642e737667"/></a></td>
+    <td><a href="https://fengt-t.github.io/996_list/"><img src="https://img.shields.io/badge/link-996__list-red" /></a></td>
+    <td><a href="https://github.com/it-job-blacklist/996ICU.job.blacklist_company"><img src="https://img.shields.io/badge/link-job--blacklist-red" /></a></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/zxpsuper/IT-blacklist"><img src="https://img.shields.io/badge/link-IT--blacklist-red" /></a></td>
+    <td><a href="https://github.com/996icu/996.ICU/tree/master/whitelist"><img src="https://img.shields.io/badge/link-whitelist-success"  /></a></td>
+    <td><a href="https://github.com/996icu/996.ICU/blob/master/LICENSE"><img src="https://camo.githubusercontent.com/09024be9657c958cef4715aa7fc66bfcb11dc98be2f43763e8bf9a2742716f0b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4e504c2532302854686525323039393625323050726f686962697465642532304c6963656e7365292d626c75652e737667" /></a></td>
+    <td><a href="https://github.com/996icu/996.ICU/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-Anti%20996-blue.svg"  /></a></td>
+    <td><a href="https://github.com/YuZhangWang/YuZhangWang/blob/master/LICENSE"><img src="https://img.shields.io/github/license/onlyGuo/nginx-gui.svg?style=popout"></a></td>
+  </tr>
+</table> 
+</div>
 </br>
-<a href="https://996.icu"><mark class="hl-label red">996.icu</mark> </a>&nbsp
-<a href="https://996tsc.netlify.app/#/sticker"><mark class="hl-label red">996.TSC</mark> </a>&nbsp
-<a href="https://github.com/top996/top.996"><mark class="hl-label red">996.top</mark> </a>&nbsp
-<a href="https://fengt-t.github.io/996_list"><mark class="hl-label red">996_list</mark> </a>&nbsp
-<a href="https://github.com/it-job-blacklist/996ICU.job.blacklist_company"><mark class="hl-label red">job-blacklist</mark> </a>&nbsp
-<a href="https://github.com/zxpsuper/IT-blacklist"><mark class="hl-label red">IT-blacklist</mark> </a>&nbsp
-<a href="https://github.com/996icu/996.ICU/tree/master/whitelist"><mark class="hl-label green">whitelist</mark> </a>&nbsp
-<a href="https://github.com/996icu/996.ICU/blob/master/LICENSE"><mark class="hl-label blue">The-996-Prohibited-License</mark> </a>&nbsp
-<a href="https://github.com/996icu/996.ICU/blob/master/LICENSE"><mark class="hl-label blue">Anti-996</mark> </a>&nbsp
-<a href="https://github.com/YuZhangWang/YuZhangWang/blob/master/LICENSE"><mark class="hl-label orange">GPL-3.0</mark> </a>
-</div>
-
-
-
-<!-- 随着时间推移逃离996项目点赞人数,反996运动点赞人数太多,已经显示不了了,故采用相同性质的逃离996项目展示 --> 
-<p><a href="https://starchart.cc/623637646/996.Leave"><img src="https://starchart.cc/623637646/996.Leave.svg" alt="Stargazers over time"></a>  </p>
-<!-- 关于我的一些生活信息 -->
-<h2 id="🤵-About-Me"><a href="#🤵-About-Me" class="headerlink" title="🤵 About Me"></a>🤵 About Me</h2><div align="center">
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418173835829.jpg" width="150"/> 
-</div>
-
-
-<ul>
-<li>YuZhangWang(豫章望),无名之辈,一个刚上路的极客和程序员  </li>
-<li>励志成为一名算法工程师,研究深度学习、机器学习,达到算法工程落地的要求,同时前端后端掌握一些内容</li>
-<li>合作邮箱<a href="mailto:YuZhangWang233@163.com">YuZhangWang233@163.com</a></li>
-<li>个人博客<a href="https://yuzhang.wang">https://yuzhang.wang</a></li>
-<li>博客备份<a href="https://flowus.cn/yuzhangwang/share/7df66bdd-907c-4023-803c-b8c5cfe06d4a">【FlowUs 息流】YuZhangWang的领域</a></li>
-<li>RSS订阅<a href="https://yuzhang.wang/atom.xml">https://yuzhang.wang/atom.xml</a></li>
-</ul>
-<!-- 我的一些兴趣爱好信息 -->
-<h2 id="💻-Hobbies"><a href="#💻-Hobbies" class="headerlink" title="💻 Hobbies"></a>💻 Hobbies</h2><ul>
-<li>Coding </li>
-<li>刷机 </li>
-<li>折腾ROM </li>
-<li>看电影 </li>
-<li>数码爱好者</li>
-<li>openSUSE</li>
-</ul>
 <!-- 关于我的一些编程信息,例如Github状态,Github仓库内编程语言使用情况统计,常用的编程语言,常用的编程框架和IDE工具,Github粉丝点赞访客 -->
-<h2 id="🏆-Github-Status"><a href="#🏆-Github-Status" class="headerlink" title="🏆 Github Status"></a>🏆 Github Status</h2><!-- Github小动图 -->
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418173921189.jpg" alt=""></p>
-<!-- github关注活跃图表 -->
-<p><a href="https://github.com/ashutosh00710/github-readme-activity-graph"><img src="https://github-readme-activity-graph.cyclic.app/graph?username=YuZhangWang&amp;&amp;theme=react-dark" alt="YuZhangWang&#39;s github activity graph"></a></p>
+<h2 id="🏆-Github-Status">🏆 Github Status</h2>
 <!-- Github状态 -->
-<p align="left">
-<img src="https://github-readme-stats.vercel.app/api?username=YuZhangWang&show_icons=true&theme=dark&include_all_commits=true" width="420"/>
-</p>
-
-<!-- Github仓库内编程语言使用情况统计 -->
-<p><a href="https://github.com/anuraghazra/github-readme-stats"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YuZhangWang" alt=""></a></p>
+<table>
+    <tr>
+        <!-- Github状态 -->
+        <td><img src="https://github-readme-stats.vercel.app/api?username=YuZhangWang&show_icons=true&theme=dark&include_all_commits=true" /></td>
+        <!-- Github仓库内编程语言使用情况统计 -->
+        <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YuZhangWang"/></td>
+    </tr>
+</table>
 <div align="left">
 <!-- 常用的编程语言 -->
 <strong>Languages：</strong><mark class="hl-label orange">Python</mark> 、<mark class="hl-label purple">CPP</mark> 、<mark class="hl-label purple">C</mark> 、<mark class="hl-label pink">Markdown</mark> 、<mark class="hl-label blue">Html</mark> 、<mark class="hl-label blue">CSS</mark> 、<mark class="hl-label green">Javascript</mark> 、<mark class="hl-label default">Bash</mark> 、<mark class="hl-label default">Swift</mark> 、<mark class="hl-label default">Java</mark> 
@@ -7781,32 +7758,103 @@ figure.highlight pre .params {
 <!-- 常用的编程框架和IDE工具 -->
 <strong>Frameworks and Tools：</strong><mark class="hl-label orange">Pycharm</mark> 、<mark class="hl-label orange">Anaconda</mark> 、<mark class="hl-label orange">Opencv</mark> 、<mark class="hl-label orange">Django</mark> 、<mark class="hl-label orange">Flask</mark> 、<mark class="hl-label purple">Clion</mark> 、<mark class="hl-label purple">CMake</mark> 、<mark class="hl-label pink">Webstorm</mark> 、<mark class="hl-label pink">Node.js</mark> 、<mark class="hl-label pink">Gulp.js</mark> 、<mark class="hl-label blue">Vim</mark> 、<mark class="hl-label blue">Git</mark> 、<mark class="hl-label green">Datagrip</mark> 、<mark class="hl-label green">MySQL</mark> 、<mark class="hl-label default">Xcode</mark> 、<mark class="hl-label default">IDEA</mark> 、<mark class="hl-label default">Maven</mark> 、<mark class="hl-label default">Visual-Studio-Code</mark> 
 </div>
-
-<!-- 各种平台联系方式 -->
-<h2 id="📬-Get-In-Touch"><a href="#📬-Get-In-Touch" class="headerlink" title="📬 Get In Touch"></a>📬 Get In Touch</h2><ul>
-<li>StackOverFlow :<a href="https://stackoverflow.com/users/16347524/yuzhangwang"><mark class="hl-label orange">YuZhangWang</mark> </a></li>
-<li>CSDN:<a href="https://blog.csdn.net/qq_43616274"><mark class="hl-label orange">YuZhangWang</mark> </a></li>
-<li>掘金:<a href="https://juejin.cn/user/4476867080633319"><mark class="hl-label blue">YuZhangWang</mark> </a></li>
-<li>知乎:<a href="https://www.zhihu.com/people/YuZhangWang"><mark class="hl-label blue">YuZhangWang</mark> </a></li>
-<li>Github:<a href="https://github.com/YuZhangWang"><mark class="hl-label default">YuZhangWang</mark> </a></li>
-<li>Gitee:<a href="https://gitee.com/YuZhangWang233"><mark class="hl-label red">YuZhangWang</mark> </a></li>
-<li>LeetCode:<a href="https://leetcode-cn.com/u/yuzhangwang/"><mark class="hl-label orange">YuZhangWang</mark> </a></li>
-<li>bilibili:<a href="https://space.bilibili.com/19474542"><mark class="hl-label pink">YuZhangWang</mark> </a></li>
-<li>酷安:<a href="http://www.coolapk.com/u/1670757"><mark class="hl-label green">YuZhangWang</mark> </a></li>
-<li>网易云:<a href="https://music.163.com/#/user/home?id=340104770"><mark class="hl-label red">YuZhangWang</mark> </a></li>
-<li>微博:<a href="https://weibo.com/u/5603095987"><mark class="hl-label red">YuZhangWang</mark> </a></li>
-<li>QQ:<a href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=277598524&amp;website=www.oicqzone.com"><mark class="hl-label blue">YuZhangWang</mark> </a></li>
-<li>微信:<a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418174046425.jpg"><mark class="hl-label green">YuZhangWang</mark> </a></li>
-</ul>
-<!-- 请我喝杯柠檬红茶叭 -->
-<h2 id="💰-Buy-Me-A-Cup-Of-Lemon-Tea"><a href="#💰-Buy-Me-A-Cup-Of-Lemon-Tea" class="headerlink" title="💰 Buy Me A Cup Of Lemon Tea"></a>💰 Buy Me A Cup Of Lemon Tea</h2><ul>
-<li><a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@master/2021/09/07/20210907015229435.jpg"><mark class="hl-label blue">支付宝</mark> </a></li>
-<li><a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@master/2021/09/07/20210907015317436.png"><mark class="hl-label green">微信</mark> </a></li>
-</ul>
-<!-- 不错的动画 -->
+<!-- 关于我的一些生活信息 -->
+<h2 id="🤵-About-Me">🤵 About Me</h2>
 <div align="center">
-<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418174200765.jpg" width=45%/> 
+<img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418173835829.jpg" width="150"/> 
 </div>
+<blockquote>
+<ul>
+<li>YuZhangWang(豫章望)</li>
+<li>励志成为一名算法工程师,研究深度学习、机器学习，达到算法工程落地的要求，同时前端后端掌握一些内容</li>
+<li>合作邮箱<a href="mailto:YuZhangWang233@163.com">YuZhangWang233@163.com</a></li>
+<li>个人博客<a href="https://yuzhang.wang">https://yuzhang.wang</a></li>
+<li>博客备份<a href="https://flowus.cn/yuzhangwang/share/7df66bdd-907c-4023-803c-b8c5cfe06d4a">【FlowUs 息流】YuZhangWang的领域</a></li>
+<li>RSS订阅<a href="https://yuzhang.wang/atom.xml">https://yuzhang.wang/atom.xml</a></li>
+</ul>
+</blockquote>
+<!-- 各种平台联系方式 -->
+<h2 id="📬-Get-In-Touch">📬 Get In Touch</h2>
+<table border="0">
+  <tr>
+    <td>
+        <!-- StackOverFlow -->
+        <a href="https://stackoverflow.com/users/16347524/yuzhangwang" target="_blank"> 
+        <img src="https://img.shields.io/badge/StackOverFlow-YuZhangWang-%23F48024">
+        </a>
+    </td>
+    <td>
+        <!-- CSDN -->
+        <a href="https://blog.csdn.net/qq_43616274" target="_blank"> 
+        <img src="https://img.shields.io/badge/CSDN-YuZhangWang-%23FC5531">
+        </a>
+    </td>
+    <td>
+        <!-- 掘金 -->
+    <a href="https://juejin.cn/user/4476867080633319" target="_blank"> 
+    <img src="https://img.shields.io/badge/%E6%8E%98%E9%87%91-YuZhangWang-%231E80FF">
+    </a>
+    </td>
+    <td>
+        <!-- 知乎 -->
+        <a href="https://www.zhihu.com/people/YuZhangWang" target="_blank"> 
+        <img src="https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-YuZhangWang-%230066FF">
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <!-- Github -->
+        <a href="https://github.com/YuZhangWang" target="_blank"> 
+        <img src="https://img.shields.io/badge/Github-YuZhangWang-%2324292F">
+        </a>
+    </td>
+    <td>
+        <!-- Gitee -->
+        <a href="https://gitee.com/YuZhangWang233" target="_blank"> 
+        <img src="https://img.shields.io/badge/Gitee-YuZhangWang-%23C71D23">
+        </a>
+    </td>
+    <td>
+        <!-- LeetCode -->
+        <a href="https://leetcode-cn.com/u/yuzhangwang/" target="_blank"> 
+        <img src="https://img.shields.io/badge/LeetCode-YuZhangWang-%23FFA119">
+        </a>
+     </td>
+    <td>
+        <!-- bilibili -->
+        <a href="https://space.bilibili.com/19474542" target="_blank"> 
+        <img src="https://img.shields.io/badge/bilibili-YuZhangWang-%23FB7299">
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <!-- 酷安 -->
+        <a href="http://www.coolapk.com/u/1670757" target="_blank"> 
+        <img src="https://img.shields.io/badge/%E9%85%B7%E5%AE%89-YuZhangWang-%2311C273">
+        </a>
+     </td>
+    <td>
+        <!-- 网易云 -->
+        <a href="https://music.163.com/#/user/home?id=340104770" target="_blank"> 
+        <img src="https://img.shields.io/badge/%E7%BD%91%E6%98%93%E4%BA%91-YuZhangWang-%23DF001B">
+        </a>
+    </td>
+    <td>
+        <!-- QQ -->
+        <a href="https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/qrcode_1615295622746.jpg" target="_blank"> 
+        <img src="https://img.shields.io/badge/QQ-YuZhangWang-%2350BCFE">
+        </a>
+    </td>
+    <td>
+        <!-- 微信 -->
+        <a href="https://cdn.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/mmqrcode1615295634051.png" target="_blank"> 
+        <img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-YuZhangWang-%231AAD19">
+        </a>
+    </td>
+  </tr>
+</table>
 ]]></content>
   </entry>
   <entry>
