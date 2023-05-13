@@ -7629,6 +7629,146 @@ fill函数</p>
       </tags>
   </entry>
   <entry>
+    <title>图表的创建和动态修改测试</title>
+    <url>/123-chart-creation/</url>
+    <content><![CDATA[<p>在butterfly主题中使用Mermaid画图，不需要安装插件，只需要在设置中开启，并且启用标签即可使用</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">内容</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<h1>流程图</h1>
+<div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+  flowchart LR
+A[Hard] --&gt;|Text| B(Round)
+B --&gt; C{Decision}
+C --&gt;|One| D[Result 1]
+C --&gt;|Two| E[Result 2]
+  </pre></div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">A[Hard] --&gt;|Text| B(Round)</span><br><span class="line">B --&gt; C&#123;Decision&#125;</span><br><span class="line">C --&gt;|One| D[Result 1]</span><br><span class="line">C --&gt;|Two| E[Result 2]</span><br></pre></td></tr></table></figure>
+<h1>时序图</h1>
+<div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+  sequenceDiagram
+Alice-&gt;&gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&gt;&gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&gt;&gt;Alice: Great!
+John-&gt;&gt;Bob: How about you?
+Bob--&gt;&gt;John: Jolly good!
+  </pre></div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">Alice-&gt;&gt;John: Hello John, how are you?</span><br><span class="line">loop Healthcheck</span><br><span class="line">    John-&gt;&gt;John: Fight against hypochondria</span><br><span class="line">end</span><br><span class="line">Note right of John: Rational thoughts!</span><br><span class="line">John--&gt;&gt;Alice: Great!</span><br><span class="line">John-&gt;&gt;Bob: How about you?</span><br><span class="line">Bob--&gt;&gt;John: Jolly good!</span><br></pre></td></tr></table></figure>
+<h1>甘特图</h1>
+<div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+  
+gantt
+    section Section
+    Completed :done,    des1, 2014-01-06,2014-01-08
+    Active        :active,  des2, 2014-01-07, 3d
+    Parallel 1   :         des3, after des1, 1d
+    Parallel 2   :         des4, after des1, 1d
+    Parallel 3   :         des5, after des3, 1d
+    Parallel 4   :         des6, after des4, 1d
+  </pre></div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">gantt</span><br><span class="line">    section Section</span><br><span class="line">    Completed :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">    Active        :active,  des2, 2014-01-07, 3d</span><br><span class="line">    Parallel 1   :         des3, after des1, 1d</span><br><span class="line">    Parallel 2   :         des4, after des1, 1d</span><br><span class="line">    Parallel 3   :         des5, after des3, 1d</span><br><span class="line">    Parallel 4   :         des6, after des4, 1d</span><br></pre></td></tr></table></figure>
+<h1>类图</h1>
+<div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+  
+classDiagram
+Class01 &lt;|-- AveryLongClass : Cool
+&lt;&lt;Interface&gt;&gt; Class01
+Class09 --&gt; C2 : Where am I?
+Class09 --* C3
+Class09 --|&gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+class Class10 {
+  &lt;&lt;service&gt;&gt;
+  int id
+  size()
+}
+  </pre></div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">classDiagram</span><br><span class="line">Class01 &lt;|-- AveryLongClass : Cool</span><br><span class="line">&lt;&lt;Interface&gt;&gt; Class01</span><br><span class="line">Class09 --&gt; C2 : Where am I?</span><br><span class="line">Class09 --* C3</span><br><span class="line">Class09 --|&gt; Class07</span><br><span class="line">Class07 : equals()</span><br><span class="line">Class07 : Object[] elementData</span><br><span class="line">Class01 : size()</span><br><span class="line">Class01 : int chimp</span><br><span class="line">Class01 : int gorilla</span><br><span class="line">class Class10 &#123;</span><br><span class="line">  &lt;&lt;service&gt;&gt;</span><br><span class="line">  int id</span><br><span class="line">  size()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1>状态图</h1>
+<div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+  
+stateDiagram-v2
+[*] --&gt; Still
+Still --&gt; [*]
+Still --&gt; Moving
+Moving --&gt; Still
+Moving --&gt; Crash
+Crash --&gt; [*]
+  </pre></div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">stateDiagram-v2</span><br><span class="line">[*] --&gt; Still</span><br><span class="line">Still --&gt; [*]</span><br><span class="line">Still --&gt; Moving</span><br><span class="line">Moving --&gt; Still</span><br><span class="line">Moving --&gt; Crash</span><br><span class="line">Crash --&gt; [*]</span><br></pre></td></tr></table></figure>
+<h1>饼图</h1>
+<div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+  
+pie
+&quot;Dogs&quot; : 386
+&quot;Cats&quot; : 85
+&quot;Rats&quot; : 15
+  </pre></div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pie</span><br><span class="line">&quot;Dogs&quot; : 386</span><br><span class="line">&quot;Cats&quot; : 85</span><br><span class="line">&quot;Rats&quot; : 15</span><br></pre></td></tr></table></figure>
+<h1>用户体验旅程图</h1>
+<div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+  journey
+  title My working day
+  section Go to work
+    Make tea: 5: Me
+    Go upstairs: 3: Me
+    Do work: 1: Me, Cat
+  section Go home
+    Go downstairs: 5: Me
+    Sit down: 3: Me
+  </pre></div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">journey</span><br><span class="line">  title My working day</span><br><span class="line">  section Go to work</span><br><span class="line">    Make tea: 5: Me</span><br><span class="line">    Go upstairs: 3: Me</span><br><span class="line">    Do work: 1: Me, Cat</span><br><span class="line">  section Go home</span><br><span class="line">    Go downstairs: 5: Me</span><br><span class="line">    Sit down: 3: Me</span><br></pre></td></tr></table></figure>
+<h1>C4 图</h1>
+<div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+  
+C4Context
+title System Context diagram for Internet Banking System
+
+Person(customerA, &quot;Banking Customer A&quot;, &quot;A customer of the bank, with personal bank accounts.&quot;)
+Person(customerB, &quot;Banking Customer B&quot;)
+Person_Ext(customerC, &quot;Banking Customer C&quot;)
+System(SystemAA, &quot;Internet Banking System&quot;, &quot;Allows customers to view information about their bank accounts, and make payments.&quot;)
+
+Person(customerD, &quot;Banking Customer D&quot;, &quot;A customer of the bank, &lt;br&#x2F;&gt; with personal bank accounts.&quot;)
+
+Enterprise_Boundary(b1, &quot;BankBoundary&quot;) {
+
+  SystemDb_Ext(SystemE, &quot;Mainframe Banking System&quot;, &quot;Stores all of the core banking information about customers, accounts, transactions, etc.&quot;)
+
+  System_Boundary(b2, &quot;BankBoundary2&quot;) {
+    System(SystemA, &quot;Banking System A&quot;)
+    System(SystemB, &quot;Banking System B&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
+  }
+
+  System_Ext(SystemC, &quot;E-mail system&quot;, &quot;The internal Microsoft Exchange e-mail system.&quot;)
+  SystemDb(SystemD, &quot;Banking System D Database&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
+
+  Boundary(b3, &quot;BankBoundary3&quot;, &quot;boundary&quot;) {
+    SystemQueue(SystemF, &quot;Banking System F Queue&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
+    SystemQueue_Ext(SystemG, &quot;Banking System G Queue&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
+  }
+}
+
+BiRel(customerA, SystemAA, &quot;Uses&quot;)
+BiRel(SystemAA, SystemE, &quot;Uses&quot;)
+Rel(SystemAA, SystemC, &quot;Sends e-mails&quot;, &quot;SMTP&quot;)
+Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
+  </pre></div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C4Context</span><br><span class="line">title System Context diagram for Internet Banking System</span><br><span class="line"></span><br><span class="line">Person(customerA, &quot;Banking Customer A&quot;, &quot;A customer of the bank, with personal bank accounts.&quot;)</span><br><span class="line">Person(customerB, &quot;Banking Customer B&quot;)</span><br><span class="line">Person_Ext(customerC, &quot;Banking Customer C&quot;)</span><br><span class="line">System(SystemAA, &quot;Internet Banking System&quot;, &quot;Allows customers to view information about their bank accounts, and make payments.&quot;)</span><br><span class="line"></span><br><span class="line">Person(customerD, &quot;Banking Customer D&quot;, &quot;A customer of the bank, &lt;br/&gt; with personal bank accounts.&quot;)</span><br><span class="line"></span><br><span class="line">Enterprise_Boundary(b1, &quot;BankBoundary&quot;) &#123;</span><br><span class="line"></span><br><span class="line">  SystemDb_Ext(SystemE, &quot;Mainframe Banking System&quot;, &quot;Stores all of the core banking information about customers, accounts, transactions, etc.&quot;)</span><br><span class="line"></span><br><span class="line">  System_Boundary(b2, &quot;BankBoundary2&quot;) &#123;</span><br><span class="line">    System(SystemA, &quot;Banking System A&quot;)</span><br><span class="line">    System(SystemB, &quot;Banking System B&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  System_Ext(SystemC, &quot;E-mail system&quot;, &quot;The internal Microsoft Exchange e-mail system.&quot;)</span><br><span class="line">  SystemDb(SystemD, &quot;Banking System D Database&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)</span><br><span class="line"></span><br><span class="line">  Boundary(b3, &quot;BankBoundary3&quot;, &quot;boundary&quot;) &#123;</span><br><span class="line">    SystemQueue(SystemF, &quot;Banking System F Queue&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)</span><br><span class="line">    SystemQueue_Ext(SystemG, &quot;Banking System G Queue&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">BiRel(customerA, SystemAA, &quot;Uses&quot;)</span><br><span class="line">BiRel(SystemAA, SystemE, &quot;Uses&quot;)</span><br><span class="line">Rel(SystemAA, SystemC, &quot;Sends e-mails&quot;, &quot;SMTP&quot;)</span><br><span class="line">Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>技能学习记录</category>
+      </categories>
+      <tags>
+        <tag>Mermaid</tag>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>番剧</title>
     <url>/bangumis/index.html</url>
     <content><![CDATA[]]></content>
@@ -7766,7 +7906,7 @@ figure.highlight pre .params {
 <blockquote>
 <ul>
 <li>YuZhangWang(豫章望)</li>
-<li>励志成为一名算法工程师,研究深度学习、机器学习，达到算法工程落地的要求，同时前端后端掌握一些内容</li>
+<li>励志成为一名算法工程师，研究深度学习、机器学习，达到算法工程落地的要求，同时前端后端掌握一些内容</li>
 <li>合作邮箱<a href="mailto:YuZhangWang233@163.com">YuZhangWang233@163.com</a></li>
 <li>个人博客<a href="https://yuzhang.wang">https://yuzhang.wang</a></li>
 <li>博客备份<a href="https://flowus.cn/yuzhangwang/share/7df66bdd-907c-4023-803c-b8c5cfe06d4a">【FlowUs 息流】YuZhangWang的领域</a></li>
