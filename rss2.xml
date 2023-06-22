@@ -15,14 +15,253 @@
     <atom:link href="https://yuzhang.wang/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>PLUSULTRA!</description>
-    <pubDate>Wed, 07 Jun 2023 17:46:52 GMT</pubDate>
+    <pubDate>Thu, 22 Jun 2023 11:18:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>过去 现在 未来</title>
+      <link>https://yuzhang.wang/134-past-pesent-future/</link>
+      <guid>https://yuzhang.wang/134-past-pesent-future/</guid>
+      <pubDate>Thu, 08 Jun 2023 00:08:08 GMT</pubDate>
+      
+      <description>有东西被加密了, 请输入密码查看.</description>
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/">生活感悟</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E8%BF%87%E5%8E%BB/">过去</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E7%8E%B0%E5%9C%A8/">现在</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E6%9C%AA%E6%9D%A5/">未来</category>
+      
+      
+      <comments>https://yuzhang.wang/134-past-pesent-future/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>你应该为自己创建一个Github仓库模板</title>
+      <link>https://yuzhang.wang/133-best-template/</link>
+      <guid>https://yuzhang.wang/133-best-template/</guid>
+      <pubDate>Wed, 07 Jun 2023 00:08:08 GMT</pubDate>
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA/">项目展示</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/Github/">Github</category>
+      
+      <category domain="https://yuzhang.wang/tags/Awesome/">Awesome</category>
+      
+      
+      <comments>https://yuzhang.wang/133-best-template/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>如何拥有一个Awesome的Github介绍页面</title>
+      <link>https://yuzhang.wang/132-github-introduction/</link>
+      <guid>https://yuzhang.wang/132-github-introduction/</guid>
+      <pubDate>Tue, 06 Jun 2023 00:08:08 GMT</pubDate>
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA/">项目展示</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/Github/">Github</category>
+      
+      <category domain="https://yuzhang.wang/tags/Awesome/">Awesome</category>
+      
+      
+      <comments>https://yuzhang.wang/132-github-introduction/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Butterfly主题中远程友链实操</title>
+      <link>https://yuzhang.wang/131-remote-friend-linking/</link>
+      <guid>https://yuzhang.wang/131-remote-friend-linking/</guid>
+      <pubDate>Mon, 05 Jun 2023 00:08:08 GMT</pubDate>
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA/">项目展示</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/Butterfly/">Butterfly</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E8%BF%9C%E7%A8%8B%E5%8F%8B%E9%93%BE/">远程友链</category>
+      
+      
+      <comments>https://yuzhang.wang/131-remote-friend-linking/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>域名的小问题导致网站关闭了很久</title>
+      <link>https://yuzhang.wang/130-domain-name-issue/</link>
+      <guid>https://yuzhang.wang/130-domain-name-issue/</guid>
+      <pubDate>Sun, 04 Jun 2023 00:08:08 GMT</pubDate>
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E7%BD%91%E7%AB%99/">网站</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E5%9F%9F%E5%90%8D/">域名</category>
+      
+      
+      <comments>https://yuzhang.wang/130-domain-name-issue/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>原神进度以及未来规划</title>
+      <link>https://yuzhang.wang/129-genshin-progress-planning/</link>
+      <guid>https://yuzhang.wang/129-genshin-progress-planning/</guid>
+      <pubDate>Sat, 03 Jun 2023 00:08:08 GMT</pubDate>
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%B8%B8%E6%88%8F%E4%BD%93%E9%AA%8C/">游戏体验</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E5%8E%9F%E7%A5%9E/">原神</category>
+      
+      
+      <comments>https://yuzhang.wang/129-genshin-progress-planning/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>考研935记忆点</title>
+      <link>https://yuzhang.wang/128-exam-935/</link>
+      <guid>https://yuzhang.wang/128-exam-935/</guid>
+      <pubDate>Fri, 02 Jun 2023 00:08:08 GMT</pubDate>
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E8%AF%95%E8%B5%84%E6%96%99/">考试资料</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E7%A0%94%E5%A4%8D%E7%9B%98/">考研复盘</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E8%80%83%E7%A0%94/">考研</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E8%AE%B0%E5%BF%86/">记忆</category>
+      
+      <category domain="https://yuzhang.wang/tags/935/">935</category>
+      
+      
+      <comments>https://yuzhang.wang/128-exam-935/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>考研政治记忆点</title>
+      <link>https://yuzhang.wang/127-exam-politics/</link>
+      <guid>https://yuzhang.wang/127-exam-politics/</guid>
+      <pubDate>Thu, 01 Jun 2023 00:08:08 GMT</pubDate>
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E8%AF%95%E8%B5%84%E6%96%99/">考试资料</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E7%A0%94%E5%A4%8D%E7%9B%98/">考研复盘</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E8%80%83%E7%A0%94/">考研</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E8%AE%B0%E5%BF%86/">记忆</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E6%94%BF%E6%B2%BB/">政治</category>
+      
+      
+      <comments>https://yuzhang.wang/127-exam-politics/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>考研数学记忆点</title>
+      <link>https://yuzhang.wang/126-exam-mathematics/</link>
+      <guid>https://yuzhang.wang/126-exam-mathematics/</guid>
+      <pubDate>Wed, 31 May 2023 00:08:08 GMT</pubDate>
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E8%AF%95%E8%B5%84%E6%96%99/">考试资料</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E7%A0%94%E5%A4%8D%E7%9B%98/">考研复盘</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E8%80%83%E7%A0%94/">考研</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E6%95%B0%E5%AD%A6/">数学</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E8%AE%B0%E5%BF%86/">记忆</category>
+      
+      
+      <comments>https://yuzhang.wang/126-exam-mathematics/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>原来我的皮肤生病了</title>
+      <link>https://yuzhang.wang/125-aopic-dermatitis/</link>
+      <guid>https://yuzhang.wang/125-aopic-dermatitis/</guid>
+      <pubDate>Tue, 30 May 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;特应性皮炎（Atopic</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/">生活感悟</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E7%89%B9%E5%BA%94%E6%80%A7%E7%9A%AE%E7%82%8E/">特应性皮炎</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E5%B9%B2%E6%80%A7%E6%B9%BF%E7%96%B9/">干性湿疹</category>
+      
+      
+      <comments>https://yuzhang.wang/125-aopic-dermatitis/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>信息论与编码</title>
       <link>https://yuzhang.wang/124-information-theory/</link>
       <guid>https://yuzhang.wang/124-information-theory/</guid>
-      <pubDate>Mon, 29 May 2023 16:00:00 GMT</pubDate>
+      <pubDate>Mon, 29 May 2023 00:08:08 GMT</pubDate>
       
         
         
@@ -52,7 +291,7 @@
       <title>图表的创建和动态修改测试</title>
       <link>https://yuzhang.wang/123-chart-creation/</link>
       <guid>https://yuzhang.wang/123-chart-creation/</guid>
-      <pubDate>Sat, 13 May 2023 16:00:00 GMT</pubDate>
+      <pubDate>Sun, 14 May 2023 00:08:08 GMT</pubDate>
       
         
         
@@ -81,7 +320,7 @@
       <title>记录一个我遇到的考研炮灰</title>
       <link>https://yuzhang.wang/122-cannon-fodder/</link>
       <guid>https://yuzhang.wang/122-cannon-fodder/</guid>
-      <pubDate>Fri, 11 Nov 2022 16:00:00 GMT</pubDate>
+      <pubDate>Sat, 12 Nov 2022 00:08:08 GMT</pubDate>
       
         
         
@@ -113,7 +352,7 @@
       <title>后出师表</title>
       <link>https://yuzhang.wang/121-northern-memorial/</link>
       <guid>https://yuzhang.wang/121-northern-memorial/</guid>
-      <pubDate>Tue, 01 Nov 2022 16:00:00 GMT</pubDate>
+      <pubDate>Wed, 02 Nov 2022 00:08:08 GMT</pubDate>
       
         
         
@@ -140,42 +379,10 @@
     </item>
     
     <item>
-      <title>吐槽《雪中》的文案</title>
-      <link>https://yuzhang.wang/119-draft/</link>
-      <guid>https://yuzhang.wang/119-draft/</guid>
-      <pubDate>Thu, 04 Aug 2022 16:00:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;Hi,各位小伙伴大家好,我是YuZhangWang&lt;/p&gt;
-&lt;p&gt;前不久,雪中悍刀行第一季已经完结了,在庆余年中的父愁者联盟，陈道明(加图片)等老戏骨们的演技，让我对雪中悍刀行这部电视剧有些许的期待。带着对胡军、杜玉明、王同辉、李解(加图片)这些老师演技的信任,怀着我的期待</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E5%BD%B1%E8%A7%86%E8%A7%82%E8%B5%8F/">影视观赏</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E9%9B%AA%E4%B8%AD%E6%82%8D%E5%88%80%E8%A1%8C/">雪中悍刀行</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E6%96%87%E6%A1%88/">文案</category>
-      
-      
-      <comments>https://yuzhang.wang/119-draft/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>遍历二叉树</title>
       <link>https://yuzhang.wang/120-binary-tree/</link>
       <guid>https://yuzhang.wang/120-binary-tree/</guid>
-      <pubDate>Thu, 04 Aug 2022 16:00:00 GMT</pubDate>
+      <pubDate>Fri, 05 Aug 2022 01:08:08 GMT</pubDate>
       
         
         
@@ -212,89 +419,93 @@
     </item>
     
     <item>
-      <title>22年肖八第一套21题</title>
-      <link>https://yuzhang.wang/113-xiaoba/</link>
-      <guid>https://yuzhang.wang/113-xiaoba/</guid>
-      <pubDate>Thu, 21 Jul 2022 16:00:00 GMT</pubDate>
+      <title>吐槽《雪中》的文案</title>
+      <link>https://yuzhang.wang/119-draft/</link>
+      <guid>https://yuzhang.wang/119-draft/</guid>
+      <pubDate>Fri, 05 Aug 2022 00:08:08 GMT</pubDate>
       
         
         
           
           
-      <description>&lt;p&gt;A.之前战时的时候使用的是余粮收集制。&lt;/p&gt;
-&lt;p&gt;例如农民产出1000斤粮食，而满足家庭需求只需要500斤，那么剩下的500斤就会上缴国家。&lt;/p&gt;
-&lt;p&gt;即使农民生产2000斤，3000斤，最后也只有500斤留在自己手上。&lt;/p&gt;
-&lt;p&gt;所以农民趋向于满足自己需求即可</description>
+      <description>&lt;p&gt;Hi,各位小伙伴大家好,我是YuZhangWang&lt;/p&gt;
+&lt;p&gt;前不久,雪中悍刀行第一季已经完结了,在庆余年中的父愁者联盟，陈道明(加图片)等老戏骨们的演技，让我对雪中悍刀行这部电视剧有些许的期待。带着对胡军、杜玉明、王同辉、李解(加图片)这些老师演技的信任,怀着我的期待</description>
           
         
       
       
       
       
-      <category domain="https://yuzhang.wang/categories/%E8%80%83%E7%A0%94%E5%A4%8D%E7%9B%98/">考研复盘</category>
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%BD%B1%E8%A7%86%E8%A7%82%E8%B5%8F/">影视观赏</category>
       
       
-      <category domain="https://yuzhang.wang/tags/%E8%82%96%E5%85%AB/">肖八</category>
+      <category domain="https://yuzhang.wang/tags/%E9%9B%AA%E4%B8%AD%E6%82%8D%E5%88%80%E8%A1%8C/">雪中悍刀行</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E6%96%87%E6%A1%88/">文案</category>
       
       
-      <comments>https://yuzhang.wang/113-xiaoba/#disqus_thread</comments>
+      <comments>https://yuzhang.wang/119-draft/#disqus_thread</comments>
       
     </item>
     
     <item>
-      <title>导师给的答辩经验</title>
-      <link>https://yuzhang.wang/114-defense-experience/</link>
-      <guid>https://yuzhang.wang/114-defense-experience/</guid>
-      <pubDate>Thu, 21 Jul 2022 16:00:00 GMT</pubDate>
+      <title>《斯通纳》全书搬运</title>
+      <link>https://yuzhang.wang/118-stone/</link>
+      <guid>https://yuzhang.wang/118-stone/</guid>
+      <pubDate>Fri, 22 Jul 2022 05:08:08 GMT</pubDate>
       
         
         
           
           
-      <description>&lt;p&gt;按照往年答辩经验，我的几个个人建议：&lt;/p&gt;
-&lt;p&gt;1、调试好自己的系统，一定不要到时候崩溃，闪退，严重bug&lt;/p&gt;
-&lt;p&gt;2、系统中的测试数据准备好，不要很随意，举个例子，如果是类似电商系统，不要出现用户名111,商品名1111，图文不对应，随便放个照片，评论内容随意1</description>
+      <description>&lt;p&gt;威廉·斯通纳是1910年进的密苏里大学，那年他十九岁。求学八个春秋后，正当第一次世界大战拼杀犹酣的时候，他获得了哲学博士学位，拿到母校的助教职位，此后就在这所大学教书，直到1956年死去。他的职称始终没有升到助理教授以上的级别。修完他的课后记忆犹新的学生寥寥无几。他死后，几</description>
           
         
       
       
       
       
-      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      <category domain="https://yuzhang.wang/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%A5%BD%E5%8F%A5%E6%91%98%E6%8A%84/">好句摘抄</category>
       
       
-      <category domain="https://yuzhang.wang/tags/%E7%AD%94%E8%BE%A9/">答辩</category>
+      <category domain="https://yuzhang.wang/tags/%E6%96%AF%E9%80%9A%E7%BA%B3/">斯通纳</category>
       
       
-      <comments>https://yuzhang.wang/114-defense-experience/#disqus_thread</comments>
+      <comments>https://yuzhang.wang/118-stone/#disqus_thread</comments>
       
     </item>
     
     <item>
-      <title>考研6月总结1</title>
-      <link>https://yuzhang.wang/115-June-Summary-1/</link>
-      <guid>https://yuzhang.wang/115-June-Summary-1/</guid>
-      <pubDate>Thu, 21 Jul 2022 16:00:00 GMT</pubDate>
+      <title>出师表</title>
+      <link>https://yuzhang.wang/117-memorial/</link>
+      <guid>https://yuzhang.wang/117-memorial/</guid>
+      <pubDate>Fri, 22 Jul 2022 04:08:08 GMT</pubDate>
       
         
         
           
           
-      <description>&lt;p&gt;1.先把武忠祥，李永乐Youtube上去年没听完的基础课全部结束掉。结束掉之后，直接跟张宇，不会的看张宇基础班理解&lt;/p&gt;
-&lt;p&gt;2.线代里的正交规范化，施密特正交，向量空间李永乐没讲。B站收藏夹里存了厦门大学老师的课，以及本地下载了22张宇线代基础课可以作为补充看&lt;/p&gt;</description>
+      <description>&lt;p&gt;先帝创业未半而中道崩殂， 今天下三分， 益州疲弊， 此诚危急存亡之秋也。 然侍卫之臣不懈于内， 忠志之士忘身于外者， 盖追先帝之殊遇， 欲报之于陛下也。 诚宜开张圣听， 以光先帝遗德， 恢弘志士之气， 不宜妄自菲薄， 引喻失义， 以塞忠谏之路也。&lt;/p&gt;
+&lt;p&gt;宫中府中，</description>
           
         
       
       
       
       
-      <category domain="https://yuzhang.wang/categories/%E8%80%83%E7%A0%94%E5%A4%8D%E7%9B%98/">考研复盘</category>
+      <category domain="https://yuzhang.wang/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%A5%BD%E5%8F%A5%E6%91%98%E6%8A%84/">好句摘抄</category>
       
       
-      <category domain="https://yuzhang.wang/tags/%E8%80%83%E7%A0%94/">考研</category>
+      <category domain="https://yuzhang.wang/tags/%E5%87%BA%E5%B8%88%E8%A1%A8/">出师表</category>
       
       
-      <comments>https://yuzhang.wang/115-June-Summary-1/#disqus_thread</comments>
+      <comments>https://yuzhang.wang/117-memorial/#disqus_thread</comments>
       
     </item>
     
@@ -302,7 +513,7 @@
       <title>考研6月总结2</title>
       <link>https://yuzhang.wang/116-June-Summary-2/</link>
       <guid>https://yuzhang.wang/116-June-Summary-2/</guid>
-      <pubDate>Thu, 21 Jul 2022 16:00:00 GMT</pubDate>
+      <pubDate>Fri, 22 Jul 2022 03:08:08 GMT</pubDate>
       
         
         
@@ -330,325 +541,30 @@
     </item>
     
     <item>
-      <title>出师表</title>
-      <link>https://yuzhang.wang/117-memorial/</link>
-      <guid>https://yuzhang.wang/117-memorial/</guid>
-      <pubDate>Thu, 21 Jul 2022 16:00:00 GMT</pubDate>
+      <title>考研6月总结1</title>
+      <link>https://yuzhang.wang/115-June-Summary-1/</link>
+      <guid>https://yuzhang.wang/115-June-Summary-1/</guid>
+      <pubDate>Fri, 22 Jul 2022 02:08:08 GMT</pubDate>
       
         
         
           
           
-      <description>&lt;p&gt;先帝创业未半而中道崩殂， 今天下三分， 益州疲弊， 此诚危急存亡之秋也。 然侍卫之臣不懈于内， 忠志之士忘身于外者， 盖追先帝之殊遇， 欲报之于陛下也。 诚宜开张圣听， 以光先帝遗德， 恢弘志士之气， 不宜妄自菲薄， 引喻失义， 以塞忠谏之路也。&lt;/p&gt;
-&lt;p&gt;宫中府中，</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E5%A5%BD%E5%8F%A5%E6%91%98%E6%8A%84/">好句摘抄</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E5%87%BA%E5%B8%88%E8%A1%A8/">出师表</category>
-      
-      
-      <comments>https://yuzhang.wang/117-memorial/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>《斯通纳》全书搬运</title>
-      <link>https://yuzhang.wang/118-stone/</link>
-      <guid>https://yuzhang.wang/118-stone/</guid>
-      <pubDate>Thu, 21 Jul 2022 16:00:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;威廉·斯通纳是1910年进的密苏里大学，那年他十九岁。求学八个春秋后，正当第一次世界大战拼杀犹酣的时候，他获得了哲学博士学位，拿到母校的助教职位，此后就在这所大学教书，直到1956年死去。他的职称始终没有升到助理教授以上的级别。修完他的课后记忆犹新的学生寥寥无几。他死后，几</description>
+      <description>&lt;p&gt;1.先把武忠祥，李永乐Youtube上去年没听完的基础课全部结束掉。结束掉之后，直接跟张宇，不会的看张宇基础班理解&lt;/p&gt;
+&lt;p&gt;2.线代里的正交规范化，施密特正交，向量空间李永乐没讲。B站收藏夹里存了厦门大学老师的课，以及本地下载了22张宇线代基础课可以作为补充看&lt;/p&gt;</description>
           
         
       
       
       
       
-      <category domain="https://yuzhang.wang/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E7%A0%94%E5%A4%8D%E7%9B%98/">考研复盘</category>
       
-      <category domain="https://yuzhang.wang/categories/%E5%A5%BD%E5%8F%A5%E6%91%98%E6%8A%84/">好句摘抄</category>
       
+      <category domain="https://yuzhang.wang/tags/%E8%80%83%E7%A0%94/">考研</category>
       
-      <category domain="https://yuzhang.wang/tags/%E6%96%AF%E9%80%9A%E7%BA%B3/">斯通纳</category>
       
-      
-      <comments>https://yuzhang.wang/118-stone/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>使用labelImg手动标注数据集</title>
-      <link>https://yuzhang.wang/111-manual-labelImg/</link>
-      <guid>https://yuzhang.wang/111-manual-labelImg/</guid>
-      <pubDate>Sun, 13 Mar 2022 16:00:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;下载项目&quot;&gt;&lt;a href=&quot;#下载项目&quot; class=&quot;headerlink&quot; title=&quot;下载项目&quot;&gt;&lt;/a&gt;下载项目&lt;/h1&gt;&lt;p&gt;先放教程&lt;a</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/CV%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">CV学习笔记</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/labelImg/">labelImg</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/">数据集</category>
-      
-      <category domain="https://yuzhang.wang/tags/VOC/">VOC</category>
-      
-      
-      <comments>https://yuzhang.wang/111-manual-labelImg/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>来自Guuuuuu老师的CV岗、OCR、目检检测、多模态方向面试经验分享</title>
-      <link>https://yuzhang.wang/112-cv-interview/</link>
-      <guid>https://yuzhang.wang/112-cv-interview/</guid>
-      <pubDate>Sun, 13 Mar 2022 16:00:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;该面经来自&lt;a href=&quot;https://t.bilibili.com/637006992262561816?tab=2&quot;&gt;Guuuuuu老师儿&lt;/a&gt;,浙江大学软件学院研究生，在人工智能上十分优秀，Gu老师的CRNN和CTPN教程对我十分有帮助&lt;/p&gt;
-&lt;h1</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/CV%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">CV学习笔记</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E7%9B%AE%E6%A3%80%E6%A3%80%E6%B5%8B/">目检检测</category>
-      
-      <category domain="https://yuzhang.wang/tags/CV%E5%B2%97/">CV岗</category>
-      
-      <category domain="https://yuzhang.wang/tags/OCR/">OCR</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E5%A4%9A%E6%A8%A1%E6%80%81%E6%96%B9%E5%90%91/">多模态方向</category>
-      
-      
-      <comments>https://yuzhang.wang/112-cv-interview/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>CTPN模型讲解</title>
-      <link>https://yuzhang.wang/110-ctpn-model/</link>
-      <guid>https://yuzhang.wang/110-ctpn-model/</guid>
-      <pubDate>Sat, 12 Mar 2022 16:00:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;文字识别也是图像领域一个常见问题。然而，对于自然场景图像，首先要定位图像中的文字位置，然后才能进行识别。&lt;br&gt;所以一般来说，从自然场景图片中进行文字识别，需要包括2个步骤：&lt;br&gt;&lt;strong&gt;文字检测&lt;/strong&gt;：解决的问题是哪里有文字，文字的范围有多少&lt;br&gt;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/CV%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">CV学习笔记</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/ctpn/">ctpn</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0/">论文复现</category>
-      
-      
-      <comments>https://yuzhang.wang/110-ctpn-model/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Markdown简明语法手册</title>
-      <link>https://yuzhang.wang/107-markdown/</link>
-      <guid>https://yuzhang.wang/107-markdown/</guid>
-      <pubDate>Thu, 10 Mar 2022 16:00:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h3 id=&quot;1-斜体和粗体&quot;&gt;&lt;a href=&quot;#1-斜体和粗体&quot; class=&quot;headerlink&quot; title=&quot;1. 斜体和粗体&quot;&gt;&lt;/a&gt;1. 斜体和粗体&lt;/h3&gt;&lt;p&gt;使用 &lt;em&gt; 和 *&lt;/em&gt; 表示斜体和粗体。&lt;/p&gt;
-&lt;p&gt;示例：&lt;/p&gt;
-&lt;p&gt;这是</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/markdown/">markdown</category>
-      
-      
-      <comments>https://yuzhang.wang/107-markdown/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Markdown高阶语法手册</title>
-      <link>https://yuzhang.wang/108-markdown-advanced/</link>
-      <guid>https://yuzhang.wang/108-markdown-advanced/</guid>
-      <pubDate>Thu, 10 Mar 2022 16:00:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h3 id=&quot;1-标签分类&quot;&gt;&lt;a href=&quot;#1-标签分类&quot; class=&quot;headerlink&quot; title=&quot;1. 标签分类&quot;&gt;&lt;/a&gt;1. 标签分类&lt;/h3&gt;&lt;p&gt;在编辑区任意行的列首位置输入以下代码给文稿标签：&lt;/p&gt;
-&lt;p&gt;标签： 数学 英语</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/markdown/">markdown</category>
-      
-      
-      <comments>https://yuzhang.wang/108-markdown-advanced/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>如何在Hexo中用Gulp脚本进行静态资源渲染压缩和解决MathJax数学公式重复问题</title>
-      <link>https://yuzhang.wang/109-gulp-script/</link>
-      <guid>https://yuzhang.wang/109-gulp-script/</guid>
-      <pubDate>Thu, 10 Mar 2022 16:00:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;Gulp脚本&quot;&gt;&lt;a href=&quot;#Gulp脚本&quot; class=&quot;headerlink&quot; title=&quot;Gulp脚本&quot;&gt;&lt;/a&gt;Gulp脚本&lt;/h1&gt;&lt;p&gt;如何下载、配置，这里我给出一个我跟着来的教程&lt;a</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/gulp/">gulp</category>
-      
-      <category domain="https://yuzhang.wang/tags/MathJax/">MathJax</category>
-      
-      
-      <comments>https://yuzhang.wang/109-gulp-script/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>外文翻译</title>
-      <link>https://yuzhang.wang/106-translation/</link>
-      <guid>https://yuzhang.wang/106-translation/</guid>
-      <pubDate>Thu, 10 Mar 2022 13:13:13 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;文本检测的字符区域感知&quot;&gt;&lt;a href=&quot;#文本检测的字符区域感知&quot; class=&quot;headerlink&quot; title=&quot;文本检测的字符区域感知&quot;&gt;&lt;/a&gt;文本检测的字符区域感知&lt;/h1&gt;&lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/CV%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">CV学习笔记</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/CRNN/">CRNN</category>
-      
-      <category domain="https://yuzhang.wang/tags/CTPN/">CTPN</category>
-      
-      <category domain="https://yuzhang.wang/tags/CTC/">CTC</category>
-      
-      <category domain="https://yuzhang.wang/tags/TextDetection/">TextDetection</category>
-      
-      <category domain="https://yuzhang.wang/tags/OpenCV/">OpenCV</category>
-      
-      
-      <comments>https://yuzhang.wang/106-translation/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>开题报告</title>
-      <link>https://yuzhang.wang/105-opening-report/</link>
-      <guid>https://yuzhang.wang/105-opening-report/</guid>
-      <pubDate>Thu, 10 Mar 2022 12:57:59 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;文献综述&quot;&gt;&lt;a href=&quot;#文献综述&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/CV%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">CV学习笔记</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/CNN/">CNN</category>
-      
-      <category domain="https://yuzhang.wang/tags/RNN/">RNN</category>
-      
-      <category domain="https://yuzhang.wang/tags/CRNN/">CRNN</category>
-      
-      <category domain="https://yuzhang.wang/tags/CTPN/">CTPN</category>
-      
-      <category domain="https://yuzhang.wang/tags/CTC/">CTC</category>
-      
-      
-      <comments>https://yuzhang.wang/105-opening-report/#disqus_thread</comments>
+      <comments>https://yuzhang.wang/115-June-Summary-1/#disqus_thread</comments>
       
     </item>
     
