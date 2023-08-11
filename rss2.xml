@@ -15,7 +15,7 @@
     <atom:link href="https://yuzhang.wang/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>PLUSULTRA!</description>
-    <pubDate>Thu, 22 Jun 2023 11:18:33 GMT</pubDate>
+    <pubDate>Fri, 11 Aug 2023 08:28:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -158,6 +158,14 @@
       <guid>https://yuzhang.wang/128-exam-935/</guid>
       <pubDate>Fri, 02 Jun 2023 00:08:08 GMT</pubDate>
       
+        
+        
+          
+          
+      <description>&lt;p&gt;1.考研指定语言用C或者C++，可以调库，但是也要看场景，但建议高级函数不要调用，比如排序和查找相关sort()，stable_sort()，partial_sort()，nth_element()，binary_serach()，lower_bound()，upper_b</description>
+          
+        
+      
       
       
       
@@ -183,6 +191,16 @@
       <guid>https://yuzhang.wang/127-exam-politics/</guid>
       <pubDate>Thu, 01 Jun 2023 00:08:08 GMT</pubDate>
       
+        
+        
+          
+          
+      <description>&lt;p&gt;1.我国国家制度和国家治理体系具有显著优势，是坚定“四个自信”的基本依据&lt;/p&gt;
+&lt;p&gt;2.近代以来，中国人民反帝反封建的斗争之所以屡遭挫折和失败，最重要的原因就是没有一个先进政党作为凝聚力量的坚强领导核心&lt;/p&gt;
+&lt;p&gt;3.美国一些势力出于霸权心态和冷战思维，将中国视为最</description>
+          
+        
+      
       
       
       
@@ -207,6 +225,20 @@
       <link>https://yuzhang.wang/126-exam-mathematics/</link>
       <guid>https://yuzhang.wang/126-exam-mathematics/</guid>
       <pubDate>Wed, 31 May 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;1.一些记忆公式&lt;/p&gt;
+&lt;div class=&quot;table-container&quot;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;泰勒公式&lt;/th&gt;
+&lt;th</description>
+          
+        
       
       
       
@@ -237,7 +269,7 @@
         
           
           
-      <description>&lt;blockquote&gt;
+      <description>&lt;h1 id=&quot;一、引言&quot;&gt;&lt;a href=&quot;#一、引言&quot; class=&quot;headerlink&quot; title=&quot;一、引言&quot;&gt;&lt;/a&gt;一、引言&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;特应性皮炎（Atopic</description>
           
         
