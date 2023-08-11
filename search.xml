@@ -24,20 +24,6 @@
       </tags>
   </entry>
   <entry>
-    <title>iOS微体验</title>
-    <url>/002-iPhone6plus/</url>
-    <content><![CDATA[<p>iPhone6plus，A8处理器，64G，系统为iOS12.1.3<br>作为一个安卓用户，来到了iOS端进行操作，首先想到的是越狱刷机，但是现在的越狱只支持iOS11及以下的系统，并不支持iOS12，并且iOS12已经开启了防回滚模式，也就意味着不能回滚到iOS11进行越狱，不过还是可以在iOS12测试版和稳定版的固件之间进行刷机。<br>所以在这几天的体验中有了以下几点<br>1.将iOS12.1.3刷成了iOS12.1.1<br>2.下载了许多日常的软件，有通过苹果官方商店下载，也有通过爱思助手下载，下载软件的过程中手机会变得非常卡，我相信是由于A8处理器的缘故，不过在下载完之后，软件使用上来说没有太多的卡顿，但是过渡动画会比较长，我相信这也是A8处理器的缘故<br>3.前面说到作为一个安卓用户，在体验iOS端的时候，带给我的流畅性确实是一种日常的享受，不过安卓端带给我更多的是一种高效性以及逐步完善的流畅的体验，且不说安卓9.0的横空出世带来的过度动画以及流畅度，使得一大批早年间的旗舰例如835的旗舰恢生机复了以往的，以及达到了像iOS端那样样的流畅度，如今的安卓8.0以及安卓8.1也接近于iOS端的用户体验<br>4.让我比较意外的是，在iOS端不能实时显示网速，不过却可以通过一个软件来实现，它的名字是N Stats，安装这个软件在负一屏添加，便可以查看手机的内存，以及实时的上传下载速度。此外还有一款神器，它的前身叫workflow，后来它被苹果公司收购，变成了一款叫捷径的软件，这款软件类似于一步到位，将你需要经过多部操作的诸多步骤集合在一个操作内，你只需点一下即可完成众多繁琐的操作，更为神奇的是它还与siri相结合，使得你在使用siri时便可直接使用捷径一步完成你之前要多步完成的事<br>5.这台手机使用的是A8处理器，流畅度方面，相比于如今的安卓旗舰还是有较大的差距的，相信在A11级A12处理器上的流畅度，是不逊于如今的任何旗舰的，如果条件允许，可能未来会购入a11或者22处理器的iOS端手机进行日常体验</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>iOS</tag>
-        <tag>iPhone6plus</tag>
-        <tag>A8</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>除夕好!</title>
     <url>/004-new-year-eve/</url>
     <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826213844.jpeg" alt=""></p>
@@ -49,20 +35,6 @@
       <tags>
         <tag>过年</tag>
         <tag>比心</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iOS微体验之三</title>
-    <url>/006-iPhone8/</url>
-    <content><![CDATA[<p>iphone8，iOS12.1.4，64G，用了一天，有以下几个体验感受。首先说硬件层面上的进步，背面采用了玻璃后盖，使8的颜值大大提升，但正面6,7,8三代全部一样，不免丧失了新意。值得高兴的是，8用上了双扬声器，相较于7的单扬声器，音质方面有了很大提升，对于耳朵是一种莫大的享受。<br>其次，由于A11的加持，使得8变为名副其实的游戏机，类似NBA 2K19这类游戏玩起来也十分流畅。另外，iOS12上结合了捷径，使得整体体验有了质的提升。<br>最后，8的拍照相较于前代有了较大提升，但仍需改进，最后两张图为实拍图，可从图中看到暗光环境下iphone的拍照能力不是很强。</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>iOS</tag>
-        <tag>iphone8</tag>
-        <tag>A11</tag>
       </tags>
   </entry>
   <entry>
@@ -80,6 +52,34 @@
       </tags>
   </entry>
   <entry>
+    <title>iOS微体验</title>
+    <url>/002-iPhone6plus/</url>
+    <content><![CDATA[<p>iPhone6plus，A8处理器，64G，系统为iOS12.1.3<br>作为一个安卓用户，来到了iOS端进行操作，首先想到的是越狱刷机，但是现在的越狱只支持iOS11及以下的系统，并不支持iOS12，并且iOS12已经开启了防回滚模式，也就意味着不能回滚到iOS11进行越狱，不过还是可以在iOS12测试版和稳定版的固件之间进行刷机。<br>所以在这几天的体验中有了以下几点<br>1.将iOS12.1.3刷成了iOS12.1.1<br>2.下载了许多日常的软件，有通过苹果官方商店下载，也有通过爱思助手下载，下载软件的过程中手机会变得非常卡，我相信是由于A8处理器的缘故，不过在下载完之后，软件使用上来说没有太多的卡顿，但是过渡动画会比较长，我相信这也是A8处理器的缘故<br>3.前面说到作为一个安卓用户，在体验iOS端的时候，带给我的流畅性确实是一种日常的享受，不过安卓端带给我更多的是一种高效性以及逐步完善的流畅的体验，且不说安卓9.0的横空出世带来的过度动画以及流畅度，使得一大批早年间的旗舰例如835的旗舰恢生机复了以往的，以及达到了像iOS端那样样的流畅度，如今的安卓8.0以及安卓8.1也接近于iOS端的用户体验<br>4.让我比较意外的是，在iOS端不能实时显示网速，不过却可以通过一个软件来实现，它的名字是N Stats，安装这个软件在负一屏添加，便可以查看手机的内存，以及实时的上传下载速度。此外还有一款神器，它的前身叫workflow，后来它被苹果公司收购，变成了一款叫捷径的软件，这款软件类似于一步到位，将你需要经过多部操作的诸多步骤集合在一个操作内，你只需点一下即可完成众多繁琐的操作，更为神奇的是它还与siri相结合，使得你在使用siri时便可直接使用捷径一步完成你之前要多步完成的事<br>5.这台手机使用的是A8处理器，流畅度方面，相比于如今的安卓旗舰还是有较大的差距的，相信在A11级A12处理器上的流畅度，是不逊于如今的任何旗舰的，如果条件允许，可能未来会购入a11或者22处理器的iOS端手机进行日常体验</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>iPhone6plus</tag>
+        <tag>A8</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS微体验之三</title>
+    <url>/006-iPhone8/</url>
+    <content><![CDATA[<p>iphone8，iOS12.1.4，64G，用了一天，有以下几个体验感受。首先说硬件层面上的进步，背面采用了玻璃后盖，使8的颜值大大提升，但正面6,7,8三代全部一样，不免丧失了新意。值得高兴的是，8用上了双扬声器，相较于7的单扬声器，音质方面有了很大提升，对于耳朵是一种莫大的享受。<br>其次，由于A11的加持，使得8变为名副其实的游戏机，类似NBA 2K19这类游戏玩起来也十分流畅。另外，iOS12上结合了捷径，使得整体体验有了质的提升。<br>最后，8的拍照相较于前代有了较大提升，但仍需改进，最后两张图为实拍图，可从图中看到暗光环境下iphone的拍照能力不是很强。</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>iphone8</tag>
+        <tag>A11</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一加6上手体验</title>
     <url>/007-oneplus6/</url>
     <content><![CDATA[<p>一加6，处理器为骁龙845，系统为安卓9.0，氢OS9.0.2，首先，整机外观非常一体化，握在手里感觉非常舒适，重量适中，适合游戏玩家长时间握持，手机背部的玻璃面板手感非常棒。正面采用了刘海设计，不过可以将刘海进行隐藏，屏幕素质属于中等偏上水平。游戏体验方面吃鸡60帧并不是问题，在拍照上，一加的相机也有所提升。较为可惜的一点是，一加6还是采用了单扬声器设计，但保留了3.5毫米耳机接口，这点给好评。总的来说相较于上一代一加5，有了明显的提升，同时也将一加品牌，全面的带入了全面屏时代。是一款同时兼顾了续航与性能的手机，日常体验完全没有任何问题，对刘海屏不介意的同学，可以试着入手。</p>
@@ -90,31 +90,6 @@
       <tags>
         <tag>845</tag>
         <tag>OnePlus</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>致五四</title>
-    <url>/009-may-4th/</url>
-    <content><![CDATA[<p>愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话。<br>能做事的做事，能发声的发声。有一分热，发一分光。就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。<br>如若今后没有炬火，你便是唯一的光。           ——鲁迅</p>
-]]></content>
-      <categories>
-        <category>生活感悟</category>
-      </categories>
-      <tags>
-        <tag>炬火</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>坚果pro2返回魔趣8.1</title>
-    <url>/010-nuts-pro2/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826214934.jpeg" alt=""><br>9.0的魔趣很好用，但只能通过太极阳使用XP，这使得一部分功能无法完美使用，8.1可以完美兼容</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-        <category>技能学习记录</category>
-      </categories>
-      <tags>
-        <tag>刷机</tag>
       </tags>
   </entry>
   <entry>
@@ -132,16 +107,28 @@
       </tags>
   </entry>
   <entry>
-    <title>折腾windows</title>
-    <url>/012-windows/</url>
-    <content><![CDATA[<p>软件层面进行了一些升级工作，将教育版改为专业版，升级版本为1903；使用VS编译VC，Java和python，减少软件数量；将音频剪辑与PDF阅读器换为Adobe软件；更换了左侧应用图标；例行升级了各类软件；添加bilibilifans实时监控窗口。舒服了！<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826215354.jpeg" alt=""></p>
+    <title>坚果pro2返回魔趣8.1</title>
+    <url>/010-nuts-pro2/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826214934.jpeg" alt=""><br>9.0的魔趣很好用，但只能通过太极阳使用XP，这使得一部分功能无法完美使用，8.1可以完美兼容</p>
 ]]></content>
       <categories>
         <category>极客之旅</category>
+        <category>技能学习记录</category>
       </categories>
       <tags>
-        <tag>VS2019</tag>
-        <tag>Adobe</tag>
+        <tag>刷机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>致五四</title>
+    <url>/009-may-4th/</url>
+    <content><![CDATA[<p>愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话。<br>能做事的做事，能发声的发声。有一分热，发一分光。就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。<br>如若今后没有炬火，你便是唯一的光。           ——鲁迅</p>
+]]></content>
+      <categories>
+        <category>生活感悟</category>
+      </categories>
+      <tags>
+        <tag>炬火</tag>
       </tags>
   </entry>
   <entry>
@@ -156,6 +143,19 @@
       <tags>
         <tag>白猫</tag>
         <tag>小奶猫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>折腾windows</title>
+    <url>/012-windows/</url>
+    <content><![CDATA[<p>软件层面进行了一些升级工作，将教育版改为专业版，升级版本为1903；使用VS编译VC，Java和python，减少软件数量；将音频剪辑与PDF阅读器换为Adobe软件；更换了左侧应用图标；例行升级了各类软件；添加bilibilifans实时监控窗口。舒服了！<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826215354.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>VS2019</tag>
+        <tag>Adobe</tag>
       </tags>
   </entry>
   <entry>
@@ -226,18 +226,6 @@
       </tags>
   </entry>
   <entry>
-    <title>小黑猫</title>
-    <url>/021-little-black-cat/</url>
-    <content><![CDATA[<p>它又来了,飞天大盗,翻窗直入<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826221057.jpeg" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826221106.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>动物大赏</category>
-      </categories>
-      <tags>
-        <tag>黑猫</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>霸气外漏喵</title>
     <url>/018-bully-cat/</url>
     <content><![CDATA[<p>这猫太有气势了，我撸它，竟然被打了！还好打在衣服上，没被挠到<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826220458.jpeg" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826220527.jpeg" alt=""></p>
@@ -248,45 +236,6 @@
       </categories>
       <tags>
         <tag>豹纹</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>与QQ的斗智斗勇</title>
-    <url>/022-fight-with-qq/</url>
-    <content><![CDATA[<p>QQ这个老流氓让我见识到了它的厉害，最近一段时间，无论是QQ说说照片还是群相册传图片，都无法上传。在经历用QQ空间发说说暂时代替、使用TIM、删除Tentent文件夹、重装QQ等一系列步骤后。还是无果，导致我对手机产生了怀疑。最后还是在贴吧找到了解决方案。原因出自Android10底层的权限机制，默认将我用不到的电话权限拒绝了，本来是符合我意向的操作，用不到就禁用，但是QQ一旦缺少此权限，就会导致这个问题。不过从中也可以反映出，Android底层优化正在强大，而现在的问题出在软件本身的流氓操作上面。</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>QQ</tag>
-        <tag>流氓</tag>
-        <tag>权限</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>打卡一加南京店</title>
-    <url>/020-oneplus-nanjing-store/</url>
-    <content><![CDATA[<p>一加南京店，给我的感觉就是精致和体贴的服务。在微博大佬处看到有网友投稿一加屏幕的一个问题，在解锁的时候会发出一些声音。正好我自己也有类似的问题存在，于是在昨天预约了一加的维修，对比之后，感觉一家的服务确实比其他厂家要体贴，来到了一家的店里之后，发现展示的只有7系列和7t系列，以及一加背包。在维修的时候可以坐在座位上看着激光电视，对于一个加油来说，这是非常体贴的服务，很人性化，如果给售后做一个评价的话，iphone和一加，是市面上主流厂家中排名较高规格的。很赞很舒服。</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>OnePlus</tag>
-        <tag>南京</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2020/0202/2020</title>
-    <url>/024-2020-0202-2020/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/26/20210826221616535.jpeg" alt="2020/0202/2020"></p>
-]]></content>
-      <categories>
-        <category>摄影记录</category>
-      </categories>
-      <tags>
-        <tag>月亮</tag>
       </tags>
   </entry>
   <entry>
@@ -310,6 +259,31 @@
       </tags>
   </entry>
   <entry>
+    <title>打卡一加南京店</title>
+    <url>/020-oneplus-nanjing-store/</url>
+    <content><![CDATA[<p>一加南京店，给我的感觉就是精致和体贴的服务。在微博大佬处看到有网友投稿一加屏幕的一个问题，在解锁的时候会发出一些声音。正好我自己也有类似的问题存在，于是在昨天预约了一加的维修，对比之后，感觉一家的服务确实比其他厂家要体贴，来到了一家的店里之后，发现展示的只有7系列和7t系列，以及一加背包。在维修的时候可以坐在座位上看着激光电视，对于一个加油来说，这是非常体贴的服务，很人性化，如果给售后做一个评价的话，iphone和一加，是市面上主流厂家中排名较高规格的。很赞很舒服。</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>OnePlus</tag>
+        <tag>南京</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小黑猫</title>
+    <url>/021-little-black-cat/</url>
+    <content><![CDATA[<p>它又来了,飞天大盗,翻窗直入<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826221057.jpeg" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826221106.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>动物大赏</category>
+      </categories>
+      <tags>
+        <tag>黑猫</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>斯通纳</title>
     <url>/023-stone/</url>
     <content><![CDATA[<p>名著散文诗词读的少，小说倒是会读一些，斯通纳五六年前读过，写得就像一杯水，写得很平淡，没有浓墨重彩的地方，全书都没有诗词散文里面深奥的道理，也没有名人传记里面让人惊叹的故事，就是很平凡的一个人，一生的故事，但就是能吸引我看下去，因为写的很真实，很现实。<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826221417.webp" alt="斯通纳"> ^249d70</p>
@@ -320,6 +294,35 @@
       <tags>
         <tag>斯通纳</tag>
         <tag>普利策</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>与QQ的斗智斗勇</title>
+    <url>/022-fight-with-qq/</url>
+    <content><![CDATA[<p>QQ这个老流氓让我见识到了它的厉害，最近一段时间，无论是QQ说说照片还是群相册传图片，都无法上传。在经历用QQ空间发说说暂时代替、使用TIM、删除Tentent文件夹、重装QQ等一系列步骤后。还是无果，导致我对手机产生了怀疑。最后还是在贴吧找到了解决方案。原因出自Android10底层的权限机制，默认将我用不到的电话权限拒绝了，本来是符合我意向的操作，用不到就禁用，但是QQ一旦缺少此权限，就会导致这个问题。不过从中也可以反映出，Android底层优化正在强大，而现在的问题出在软件本身的流氓操作上面。</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>QQ</tag>
+        <tag>流氓</tag>
+        <tag>权限</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>开罗金字塔游戏</title>
+    <url>/025-cairo-pyramid-games/</url>
+    <content><![CDATA[<p>开罗游戏真是个打发时间的好去处<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826221742.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+        <category>游戏体验</category>
+      </categories>
+      <tags>
+        <tag>开罗游戏</tag>
+        <tag>GameGuardian</tag>
+        <tag>VMOS Pro</tag>
       </tags>
   </entry>
   <entry>
@@ -358,18 +361,29 @@
       </tags>
   </entry>
   <entry>
-    <title>开罗金字塔游戏</title>
-    <url>/025-cairo-pyramid-games/</url>
-    <content><![CDATA[<p>开罗游戏真是个打发时间的好去处<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826221742.png" alt=""></p>
+    <title>一加新功能</title>
+    <url>/027-new-function/</url>
+    <content><![CDATA[<p>一加在通讯录加入了类似Face Time的功能，一加手机之间可以通过Wifi、5G、4G进行聊天视频通话，界面的交互也和Face Time比较类似。使用下来，或可与Face Time相比，是一个很不错的功能</p>
 ]]></content>
       <categories>
         <category>极客之旅</category>
-        <category>游戏体验</category>
       </categories>
       <tags>
-        <tag>开罗游戏</tag>
-        <tag>GameGuardian</tag>
-        <tag>VMOS Pro</tag>
+        <tag>OnePlus</tag>
+        <tag>通讯录</tag>
+        <tag>FaceTime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2020/0202/2020</title>
+    <url>/024-2020-0202-2020/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/26/20210826221616535.jpeg" alt="2020/0202/2020"></p>
+]]></content>
+      <categories>
+        <category>摄影记录</category>
+      </categories>
+      <tags>
+        <tag>月亮</tag>
       </tags>
   </entry>
   <entry>
@@ -384,20 +398,6 @@
       <tags>
         <tag>炉石</tag>
         <tag>云同步</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一加新功能</title>
-    <url>/027-new-function/</url>
-    <content><![CDATA[<p>一加在通讯录加入了类似Face Time的功能，一加手机之间可以通过Wifi、5G、4G进行聊天视频通话，界面的交互也和Face Time比较类似。使用下来，或可与Face Time相比，是一个很不错的功能</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>OnePlus</tag>
-        <tag>通讯录</tag>
-        <tag>FaceTime</tag>
       </tags>
   </entry>
   <entry>
@@ -566,33 +566,6 @@
       </tags>
   </entry>
   <entry>
-    <title>2019学年离散复习及押题</title>
-    <url>/034-discrete-math/</url>
-    <content><![CDATA[<p>离散复习及押题(综合12,13,14,17,18年题型)</p>
-<h1 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h1><h2 id="1、存在和任意"><a href="#1、存在和任意" class="headerlink" title="1、存在和任意"></a>1、存在和任意</h2><p>(1)一定与什么喜欢什么有关，注意区分存在和任意两种情况即可<br>(2)近两年与作家写作品有关，注意作品是属于存在还是任何情况</p>
-<h2 id="2、推理证明"><a href="#2、推理证明" class="headerlink" title="2、推理证明"></a>2、推理证明</h2><p>一定考假设推理证明，最后两句话，由假设推理过程的定义知······<br>由推理定理可得代证公式</p>
-<h2 id="3、近两年趋势趋向于函数化标准迭置"><a href="#3、近两年趋势趋向于函数化标准迭置" class="headerlink" title="3、近两年趋势趋向于函数化标准迭置"></a>3、近两年趋势趋向于函数化标准迭置</h2><h1 id="第二部分"><a href="#第二部分" class="headerlink" title="第二部分"></a>第二部分</h1><h2 id="1、-集合"><a href="#1、-集合" class="headerlink" title="1、 集合"></a>1、 集合</h2><p> (1)必考写一个集合的子集<br> (2)笛卡尔积集，必考(1)中子集×另一个给出集合此类形式</p>
-<h2 id="2、集合组合"><a href="#2、集合组合" class="headerlink" title="2、集合组合"></a>2、集合组合</h2><p>简单一点会考集合相关内容，差集并集交集定义；复杂一点会将群和集合放在一起考。<br>此题证明过程多用假设法证明</p>
-<h2 id="3、偏序和等价"><a href="#3、偏序和等价" class="headerlink" title="3、偏序和等价"></a>3、偏序和等价</h2><p>此题近两年都考偏序关系的证明，注意区分偏序和等价，区别在于对称性和反对称性的证明方法</p>
-<h3 id="4、构造关系"><a href="#4、构造关系" class="headerlink" title="4、构造关系"></a>4、构造关系</h3><p>此题必考构造关系(1)(2)中提到反自反性即为空集，提到自反性即为ΔA</p>
-<h1 id="第三部分"><a href="#第三部分" class="headerlink" title="第三部分"></a>第三部分</h1><h2 id="1、-图"><a href="#1、-图" class="headerlink" title="1、 图"></a>1、 图</h2><p>(1)必考画欧拉图而非哈密尔顿图<br>均由下图变化而来<br>(2)必考画哈密尔顿图而非欧拉图<br>均由下图变化而来</p>
-<h2 id="2、哈密尔顿圈题型"><a href="#2、哈密尔顿圈题型" class="headerlink" title="2、哈密尔顿圈题型"></a>2、哈密尔顿圈题型</h2><p>该题先用图论语言构造顶点集边集和图，再证明之<br>最后两句话，由哈密尔顿图的定义知，G中存在哈密尔顿圈<br>所以按哈密尔顿圈就坐就能使·····</p>
-<h2 id="3、握手定理运用"><a href="#3、握手定理运用" class="headerlink" title="3、握手定理运用"></a>3、握手定理运用</h2><p>G中至少存在一个大于等于多少的顶点，用握手定理证明之即可</p>
-<p><strong>2、3、两题考查内容顺序可能会交换，并不影响押题</strong></p>
-<h2 id="4、握手定理，树的定义，二部图的定义类型证明题"><a href="#4、握手定理，树的定义，二部图的定义类型证明题" class="headerlink" title="4、握手定理，树的定义，二部图的定义类型证明题"></a>4、握手定理，树的定义，二部图的定义类型证明题</h2><p>搞懂三个概念即可解出。该题今年可能与欧拉公式以及平面图有关面个数r和边数m的关系公式相结合</p>
-<h2 id="5、握手定理与简单平面图充分条件类型证明题"><a href="#5、握手定理与简单平面图充分条件类型证明题" class="headerlink" title="5、握手定理与简单平面图充分条件类型证明题"></a>5、握手定理与简单平面图充分条件类型证明题</h2><p>搞懂三个概念即可解出。该题今年可能与欧拉公式以及平面图有关面个数r和边数m的关系公式相结合</p>
-<h1 id="第四部分"><a href="#第四部分" class="headerlink" title="第四部分"></a>第四部分</h1><h2 id="1、群"><a href="#1、群" class="headerlink" title="1、群"></a>1、群</h2><p>已知一群，证明另一群，四大点，闭运算，结合律，幺元，逆元，搞懂即可</p>
-<h2 id="2、双射、同构映射"><a href="#2、双射、同构映射" class="headerlink" title="2、双射、同构映射"></a>2、双射、同构映射</h2><p>简单考证明双射，复杂考证明自同构映射</p>
-<h2 id="3、大题"><a href="#3、大题" class="headerlink" title="3、大题"></a>3、大题</h2><p>已知一群，结合陪集或者集合有关概念证明另一群，预计19年题型与陪集或者正规子群有关</p>
-]]></content>
-      <categories>
-        <category>考试资料</category>
-      </categories>
-      <tags>
-        <tag>离散数学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>后浪</title>
     <url>/033-backwave/</url>
     <content><![CDATA[<p>麻：“师爷，您给翻译翻译，什么叫后浪，翻译翻译，什么，叫后浪”</p>
@@ -617,6 +590,33 @@
       </categories>
       <tags>
         <tag>翻译翻译</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2019学年离散复习及押题</title>
+    <url>/034-discrete-math/</url>
+    <content><![CDATA[<p>离散复习及押题(综合12,13,14,17,18年题型)</p>
+<h1 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h1><h2 id="1、存在和任意"><a href="#1、存在和任意" class="headerlink" title="1、存在和任意"></a>1、存在和任意</h2><p>(1)一定与什么喜欢什么有关，注意区分存在和任意两种情况即可<br>(2)近两年与作家写作品有关，注意作品是属于存在还是任何情况</p>
+<h2 id="2、推理证明"><a href="#2、推理证明" class="headerlink" title="2、推理证明"></a>2、推理证明</h2><p>一定考假设推理证明，最后两句话，由假设推理过程的定义知······<br>由推理定理可得代证公式</p>
+<h2 id="3、近两年趋势趋向于函数化标准迭置"><a href="#3、近两年趋势趋向于函数化标准迭置" class="headerlink" title="3、近两年趋势趋向于函数化标准迭置"></a>3、近两年趋势趋向于函数化标准迭置</h2><h1 id="第二部分"><a href="#第二部分" class="headerlink" title="第二部分"></a>第二部分</h1><h2 id="1、-集合"><a href="#1、-集合" class="headerlink" title="1、 集合"></a>1、 集合</h2><p> (1)必考写一个集合的子集<br> (2)笛卡尔积集，必考(1)中子集×另一个给出集合此类形式</p>
+<h2 id="2、集合组合"><a href="#2、集合组合" class="headerlink" title="2、集合组合"></a>2、集合组合</h2><p>简单一点会考集合相关内容，差集并集交集定义；复杂一点会将群和集合放在一起考。<br>此题证明过程多用假设法证明</p>
+<h2 id="3、偏序和等价"><a href="#3、偏序和等价" class="headerlink" title="3、偏序和等价"></a>3、偏序和等价</h2><p>此题近两年都考偏序关系的证明，注意区分偏序和等价，区别在于对称性和反对称性的证明方法</p>
+<h3 id="4、构造关系"><a href="#4、构造关系" class="headerlink" title="4、构造关系"></a>4、构造关系</h3><p>此题必考构造关系(1)(2)中提到反自反性即为空集，提到自反性即为ΔA</p>
+<h1 id="第三部分"><a href="#第三部分" class="headerlink" title="第三部分"></a>第三部分</h1><h2 id="1、-图"><a href="#1、-图" class="headerlink" title="1、 图"></a>1、 图</h2><p>(1)必考画欧拉图而非哈密尔顿图<br>均由下图变化而来<br>(2)必考画哈密尔顿图而非欧拉图<br>均由下图变化而来</p>
+<h2 id="2、哈密尔顿圈题型"><a href="#2、哈密尔顿圈题型" class="headerlink" title="2、哈密尔顿圈题型"></a>2、哈密尔顿圈题型</h2><p>该题先用图论语言构造顶点集边集和图，再证明之<br>最后两句话，由哈密尔顿图的定义知，G中存在哈密尔顿圈<br>所以按哈密尔顿圈就坐就能使·····</p>
+<h2 id="3、握手定理运用"><a href="#3、握手定理运用" class="headerlink" title="3、握手定理运用"></a>3、握手定理运用</h2><p>G中至少存在一个大于等于多少的顶点，用握手定理证明之即可</p>
+<p><strong>2、3、两题考查内容顺序可能会交换，并不影响押题</strong></p>
+<h2 id="4、握手定理，树的定义，二部图的定义类型证明题"><a href="#4、握手定理，树的定义，二部图的定义类型证明题" class="headerlink" title="4、握手定理，树的定义，二部图的定义类型证明题"></a>4、握手定理，树的定义，二部图的定义类型证明题</h2><p>搞懂三个概念即可解出。该题今年可能与欧拉公式以及平面图有关面个数r和边数m的关系公式相结合</p>
+<h2 id="5、握手定理与简单平面图充分条件类型证明题"><a href="#5、握手定理与简单平面图充分条件类型证明题" class="headerlink" title="5、握手定理与简单平面图充分条件类型证明题"></a>5、握手定理与简单平面图充分条件类型证明题</h2><p>搞懂三个概念即可解出。该题今年可能与欧拉公式以及平面图有关面个数r和边数m的关系公式相结合</p>
+<h1 id="第四部分"><a href="#第四部分" class="headerlink" title="第四部分"></a>第四部分</h1><h2 id="1、群"><a href="#1、群" class="headerlink" title="1、群"></a>1、群</h2><p>已知一群，证明另一群，四大点，闭运算，结合律，幺元，逆元，搞懂即可</p>
+<h2 id="2、双射、同构映射"><a href="#2、双射、同构映射" class="headerlink" title="2、双射、同构映射"></a>2、双射、同构映射</h2><p>简单考证明双射，复杂考证明自同构映射</p>
+<h2 id="3、大题"><a href="#3、大题" class="headerlink" title="3、大题"></a>3、大题</h2><p>已知一群，结合陪集或者集合有关概念证明另一群，预计19年题型与陪集或者正规子群有关</p>
+]]></content>
+      <categories>
+        <category>考试资料</category>
+      </categories>
+      <tags>
+        <tag>离散数学</tag>
       </tags>
   </entry>
   <entry>
@@ -694,6 +694,28 @@
       </tags>
   </entry>
   <entry>
+    <title>在list中正序和倒序删除元素区别</title>
+    <url>/038-order-in-list/</url>
+    <content><![CDATA[<p>话说有下面这两段代码<br><strong>代码一</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>();</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> list.size() - <span class="number">1</span> ; i &gt;= <span class="number">0</span> ; i--)&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="string">&quot;java&quot;</span>.equals(list.get(i)))&#123;</span><br><span class="line">                list.remove(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p><strong>代码二</strong><br><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>();</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span>  <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i &lt; list.size() ; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="string">&quot;java&quot;</span>.equals(list.get(i)))&#123;</span><br><span class="line">                list.remove(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure></p>
+<p>请问哪一段代码可以将加入的“java”元素全部删除？</p>
+<p>答案当然是代码一啦。什么？你不信？那就让我们从实际代码运行来看一下效果吧。</p>
+<p>代码一测试代码和运行结果如下<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-33-41.png" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-33-52.png" alt=""></p>
+<p>代码二测试代码和运行结果如下<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-35-47.png" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-35-52.png" alt=""></p>
+<p>究其原因，为什么看上去可以实现一样功能的数组会导致结果不同？其实是因为你忽略了一个点，list中对元素进行删除添加操作之后，<code>list会产生动态变化</code>，删除一个元素，后面的元素会补全上面元素的位置。</p>
+<p>让我们来分析一下代码二，<strong>代码二是正序删除</strong><br>当第一个“java”被移除之后，“aaa”位于第一的位置，第二个”java”位于第二的位置，第三个”java”位于第三的位置，”bbb”位于第四的位置。<br>然后下标+1，指向上一步操作排列好的第二个位置。于是，位于第二个位置的第二个“java”也能顺利删除，此时”aaa”仍旧在第一的位置，第三个”java”来到了第二的位置，”bbb”来到了第三的位置。<br>然后下标再+1，指向上一步操作排列好的第三个位置。但是注意此时，第三个位置是”bbb”，而我们本来想要继续删除的第三个”java”此时却在第二个位置。所以，代码二会导致漏删第三个”java”，致使程序块达不到想要的效果。</p>
+<p><strong>代码一是倒序删除</strong>，每一个”java”删除之后，只对后面的元素产生影响，而后面的元素又都是经过删除操作，确保不存在”java”元素，因此，代码二的倒序删除法可以实现彻底删除所有”java”元素的操作。</p>
+]]></content>
+      <categories>
+        <category>Java学习笔记</category>
+      </categories>
+      <tags>
+        <tag>正序</tag>
+        <tag>倒序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第一个Android程序：HelloAndroid</title>
     <url>/039-first-android-program/</url>
     <content><![CDATA[<h1 id="1-下载开发工具"><a href="#1-下载开发工具" class="headerlink" title="1.下载开发工具"></a>1.下载开发工具</h1><p>有几个选项，Android Studio、IntelliJ IDEA、Eclipse<br>由于Android Studio是基于IntelliJ IDEA开发的，所以这里我使用IDEA来进行程序开发</p>
@@ -743,25 +765,16 @@
       </tags>
   </entry>
   <entry>
-    <title>在list中正序和倒序删除元素区别</title>
-    <url>/038-order-in-list/</url>
-    <content><![CDATA[<p>话说有下面这两段代码<br><strong>代码一</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>();</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> list.size() - <span class="number">1</span> ; i &gt;= <span class="number">0</span> ; i--)&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="string">&quot;java&quot;</span>.equals(list.get(i)))&#123;</span><br><span class="line">                list.remove(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-<p><strong>代码二</strong><br><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>();</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;java&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span>  <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i &lt; list.size() ; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="string">&quot;java&quot;</span>.equals(list.get(i)))&#123;</span><br><span class="line">                list.remove(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure></p>
-<p>请问哪一段代码可以将加入的“java”元素全部删除？</p>
-<p>答案当然是代码一啦。什么？你不信？那就让我们从实际代码运行来看一下效果吧。</p>
-<p>代码一测试代码和运行结果如下<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-33-41.png" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-33-52.png" alt=""></p>
-<p>代码二测试代码和运行结果如下<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-35-47.png" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/2021/03/09/Snipaste_2020-05-13_14-35-52.png" alt=""></p>
-<p>究其原因，为什么看上去可以实现一样功能的数组会导致结果不同？其实是因为你忽略了一个点，list中对元素进行删除添加操作之后，<code>list会产生动态变化</code>，删除一个元素，后面的元素会补全上面元素的位置。</p>
-<p>让我们来分析一下代码二，<strong>代码二是正序删除</strong><br>当第一个“java”被移除之后，“aaa”位于第一的位置，第二个”java”位于第二的位置，第三个”java”位于第三的位置，”bbb”位于第四的位置。<br>然后下标+1，指向上一步操作排列好的第二个位置。于是，位于第二个位置的第二个“java”也能顺利删除，此时”aaa”仍旧在第一的位置，第三个”java”来到了第二的位置，”bbb”来到了第三的位置。<br>然后下标再+1，指向上一步操作排列好的第三个位置。但是注意此时，第三个位置是”bbb”，而我们本来想要继续删除的第三个”java”此时却在第二个位置。所以，代码二会导致漏删第三个”java”，致使程序块达不到想要的效果。</p>
-<p><strong>代码一是倒序删除</strong>，每一个”java”删除之后，只对后面的元素产生影响，而后面的元素又都是经过删除操作，确保不存在”java”元素，因此，代码二的倒序删除法可以实现彻底删除所有”java”元素的操作。</p>
+    <title>路边小橘猫</title>
+    <url>/042-orange-cat/</url>
+    <content><![CDATA[<p>路边看到只猫就挪不动了<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222836.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222846.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222900.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222910.webp" alt=""></p>
 ]]></content>
       <categories>
-        <category>Java学习笔记</category>
+        <category>动物大赏</category>
+        <category>摄影记录</category>
       </categories>
       <tags>
-        <tag>正序</tag>
-        <tag>倒序</tag>
+        <tag>小黄猫</tag>
       </tags>
   </entry>
   <entry>
@@ -776,19 +789,6 @@
         <tag>IDE</tag>
         <tag>VSCode</tag>
         <tag>JetBrains</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>路边小橘猫</title>
-    <url>/042-orange-cat/</url>
-    <content><![CDATA[<p>路边看到只猫就挪不动了<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222836.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222846.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222900.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222910.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>动物大赏</category>
-        <category>摄影记录</category>
-      </categories>
-      <tags>
-        <tag>小黄猫</tag>
       </tags>
   </entry>
   <entry>
@@ -881,19 +881,6 @@
       </tags>
   </entry>
   <entry>
-    <title>生活在Fibonacci堆上</title>
-    <url>/048-fibonacci-pile/</url>
-    <content><![CDATA[<p>现代计算机科学以哈罗德·埃布尔森的“代码是为人类阅读而写，只是顺便能被机器执行罢了。”为嚆矢。滥觞于哲学与数学的期望正失去它们的借鉴意义。但面对看似无垠的未来天空，我想循林纳斯·托瓦兹“懦夫才用磁带备份：真男人把重要的东西传到ftp，然后世界会帮他备份。”好过过早地振翮。<br>我们怀揣热忱的灵魂天然被赋予对超越性的追求，不屑于古旧坐标的约束，钟情于在别处的芬芳。但当这种期望流于对构造主义不假思索的批判，乃至走向逻辑与直觉主义时，便值得警惕了。与秩序的落差、错位向来不能为越矩的行为张本。而纵然我们已有翔实的蓝图，仍不能自持已在浪潮之巅立下了自己的沉锚。<br>“傻瓜都能写计算机能看懂的代码。好程序员写人能看懂的代码。”马丁·福勒之言可谓切中了肯綮。人的离散性是不可祓除的，而我们欲上青云也无时无刻不在因风借力。数学与哲学暂且被我们把握为一个薄脊的符号客体，一定程度上是因为我们尚缺乏体验与阅历去支撑自己的认知。而这种偏见的傲慢更远在知性的傲慢之上。<br>在孜孜矻矻以求计算机科学意义的道路上，对自己的期望本就是在与数学与哲学对接中塑型的动态过程。而我们的底料便是对不同P=NP猜想、不同最大流最小割定理的觉感与体认。大卫·韦勒为林纳斯·托瓦兹送去模拟退火，又维系启发式迭代加深。他的计算机科学观念是厚实的，也是实践的。倘若我们在对过往借史蒂夫·迈克康奈尔之言“祓魅”后，又对不断膨胀的自我进行“赋魅”，那么在丢失外界预期的同时，未尝也不是丢了自我。<br>毫无疑问，从哲学与数学角度一觇的自我有偏狭过时的成分。但我们所应摒弃的不是对此的批判，而是其批判的廉价，其对批判投诚中的反智倾向。在林纳斯·托瓦兹的观念中，如果在成为狮子与孩子之前，略去了像骆驼一样背负前人遗产的过程，那其“永远重复”洵不能成立。<br>蓝图上的落差终归只是理念上的区分，在实践场域的分野也未必明晰。譬如当我们追寻AC自动机时，在途中涉足网络流，这究竟是伴随着期望的泯灭还是期望的达成？在我们塑造计算机科学的同时，计算机科学也在浇铸我们。既不可否认原生的无后效性与有限性，又承认自己的图景有轻狂的失真，不妨让体验走在言语之前。用不被禁锢的头脑去体味林纳斯·托瓦兹的大海与风帆，并效艾伦·J·佩利，对无法言说之事保持沉默。<br>用在Fibonacci堆上的生活方式体现个体的超越性，保持婞直却又不拘泥于所谓“遗世独立”的单向度形象。这便是史蒂夫·迈克康奈尔为我们提供的理想期望范式。生活在Fibonacci堆上——始终热爱大地——升上天空。</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-        <category>好句摘抄</category>
-      </categories>
-      <tags>
-        <tag>生活在树上</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>字节事件感想</title>
     <url>/047-bytedance-traitor/</url>
     <content><![CDATA[<p>字节跳动成功助美国完成在“法国投降前攻占巴黎”的史诗级任务</p>
@@ -907,6 +894,19 @@
       <tags>
         <tag>法国行为</tag>
         <tag>耻辱柱</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生活在Fibonacci堆上</title>
+    <url>/048-fibonacci-pile/</url>
+    <content><![CDATA[<p>现代计算机科学以哈罗德·埃布尔森的“代码是为人类阅读而写，只是顺便能被机器执行罢了。”为嚆矢。滥觞于哲学与数学的期望正失去它们的借鉴意义。但面对看似无垠的未来天空，我想循林纳斯·托瓦兹“懦夫才用磁带备份：真男人把重要的东西传到ftp，然后世界会帮他备份。”好过过早地振翮。<br>我们怀揣热忱的灵魂天然被赋予对超越性的追求，不屑于古旧坐标的约束，钟情于在别处的芬芳。但当这种期望流于对构造主义不假思索的批判，乃至走向逻辑与直觉主义时，便值得警惕了。与秩序的落差、错位向来不能为越矩的行为张本。而纵然我们已有翔实的蓝图，仍不能自持已在浪潮之巅立下了自己的沉锚。<br>“傻瓜都能写计算机能看懂的代码。好程序员写人能看懂的代码。”马丁·福勒之言可谓切中了肯綮。人的离散性是不可祓除的，而我们欲上青云也无时无刻不在因风借力。数学与哲学暂且被我们把握为一个薄脊的符号客体，一定程度上是因为我们尚缺乏体验与阅历去支撑自己的认知。而这种偏见的傲慢更远在知性的傲慢之上。<br>在孜孜矻矻以求计算机科学意义的道路上，对自己的期望本就是在与数学与哲学对接中塑型的动态过程。而我们的底料便是对不同P=NP猜想、不同最大流最小割定理的觉感与体认。大卫·韦勒为林纳斯·托瓦兹送去模拟退火，又维系启发式迭代加深。他的计算机科学观念是厚实的，也是实践的。倘若我们在对过往借史蒂夫·迈克康奈尔之言“祓魅”后，又对不断膨胀的自我进行“赋魅”，那么在丢失外界预期的同时，未尝也不是丢了自我。<br>毫无疑问，从哲学与数学角度一觇的自我有偏狭过时的成分。但我们所应摒弃的不是对此的批判，而是其批判的廉价，其对批判投诚中的反智倾向。在林纳斯·托瓦兹的观念中，如果在成为狮子与孩子之前，略去了像骆驼一样背负前人遗产的过程，那其“永远重复”洵不能成立。<br>蓝图上的落差终归只是理念上的区分，在实践场域的分野也未必明晰。譬如当我们追寻AC自动机时，在途中涉足网络流，这究竟是伴随着期望的泯灭还是期望的达成？在我们塑造计算机科学的同时，计算机科学也在浇铸我们。既不可否认原生的无后效性与有限性，又承认自己的图景有轻狂的失真，不妨让体验走在言语之前。用不被禁锢的头脑去体味林纳斯·托瓦兹的大海与风帆，并效艾伦·J·佩利，对无法言说之事保持沉默。<br>用在Fibonacci堆上的生活方式体现个体的超越性，保持婞直却又不拘泥于所谓“遗世独立”的单向度形象。这便是史蒂夫·迈克康奈尔为我们提供的理想期望范式。生活在Fibonacci堆上——始终热爱大地——升上天空。</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+        <category>好句摘抄</category>
+      </categories>
+      <tags>
+        <tag>生活在树上</tag>
       </tags>
   </entry>
   <entry>
@@ -931,6 +931,58 @@
       </tags>
   </entry>
   <entry>
+    <title>初入修仙</title>
+    <url>/051-novice-xiuxian/</url>
+    <content><![CDATA[<p>到了庙门，拜了真神，很开心。一声道友尽沧桑，修仙路，一步一层天。<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223929.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223938.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>考研复盘</category>
+      </categories>
+      <tags>
+        <tag>王式安</tag>
+        <tag>武忠祥</tag>
+        <tag>李永乐</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>闪电五连鞭&amp;凡人修仙传</title>
+    <url>/052-five-lashes/</url>
+    <content><![CDATA[<p>朋友们好啊，我是血色禁地二级妖兽墨蛟。<br>刚才有个朋友问我墨老师发生什么事了，我说怎么回事，给我发了一几张截图，我一看！嗷！原来是昨天，有两个年轻人，一个二十多岁相貌平平练气期，一个几百岁结丹期。上来就是二打一，偷袭！还用符宝砸我，年轻人不讲武德。修仙界要以和为贵，好自为之！</p>
+]]></content>
+      <categories>
+        <category>影视观赏</category>
+      </categories>
+      <tags>
+        <tag>整活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蒲公英</title>
+    <url>/053-dandelion/</url>
+    <content><![CDATA[<p>好像平常白色的植物看到的都少<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224213.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>植物欣赏</category>
+      </categories>
+      <tags>
+        <tag>蒲公英</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>初遇2077</title>
+    <url>/054-2077/</url>
+    <content><![CDATA[<p>今晚和基努里维斯血洗夜之城<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224332.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>游戏体验</category>
+      </categories>
+      <tags>
+        <tag>赛博朋克2077</tag>
+        <tag>捏脸</tag>
+        <tag>V</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>申遗</title>
     <url>/055-world-heritage/</url>
     <content><![CDATA[<p>来晚了，税都收到2077年了</p>
@@ -949,44 +1001,6 @@
       </tags>
   </entry>
   <entry>
-    <title>蒲公英</title>
-    <url>/053-dandelion/</url>
-    <content><![CDATA[<p>好像平常白色的植物看到的都少<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224213.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>植物欣赏</category>
-      </categories>
-      <tags>
-        <tag>蒲公英</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>闪电五连鞭&amp;凡人修仙传</title>
-    <url>/052-five-lashes/</url>
-    <content><![CDATA[<p>朋友们好啊，我是血色禁地二级妖兽墨蛟。<br>刚才有个朋友问我墨老师发生什么事了，我说怎么回事，给我发了一几张截图，我一看！嗷！原来是昨天，有两个年轻人，一个二十多岁相貌平平练气期，一个几百岁结丹期。上来就是二打一，偷袭！还用符宝砸我，年轻人不讲武德。修仙界要以和为贵，好自为之！</p>
-]]></content>
-      <categories>
-        <category>影视观赏</category>
-      </categories>
-      <tags>
-        <tag>整活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>初入修仙</title>
-    <url>/051-novice-xiuxian/</url>
-    <content><![CDATA[<p>到了庙门，拜了真神，很开心。一声道友尽沧桑，修仙路，一步一层天。<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223929.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826223938.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>考研复盘</category>
-      </categories>
-      <tags>
-        <tag>王式安</tag>
-        <tag>武忠祥</tag>
-        <tag>李永乐</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>身在南方体验北方</title>
     <url>/056-north-in-the-south/</url>
     <content><![CDATA[<p>确定了，我在北方<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224607.webp" alt=""></p>
@@ -998,20 +1012,6 @@
       <tags>
         <tag>鬼天气</tag>
         <tag>好滤镜</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>初遇2077</title>
-    <url>/054-2077/</url>
-    <content><![CDATA[<p>今晚和基努里维斯血洗夜之城<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224332.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>游戏体验</category>
-      </categories>
-      <tags>
-        <tag>赛博朋克2077</tag>
-        <tag>捏脸</tag>
-        <tag>V</tag>
       </tags>
   </entry>
   <entry>
@@ -1073,6 +1073,18 @@
       </tags>
   </entry>
   <entry>
+    <title>小米无线充电桩惊了我</title>
+    <url>/059-xiaomi-wireless-charging/</url>
+    <content><![CDATA[<p>有5m以内5w充电，就会有20m以内100w充电。好家伙，以后直接偷邻居电用。<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224829.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+      </categories>
+      <tags>
+        <tag>充电桩</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>喵喵侄子</title>
     <url>/061-meow-nephew/</url>
     <content><![CDATA[<p>安详<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225000.webp" alt=""></p>
@@ -1098,6 +1110,18 @@
       </tags>
   </entry>
   <entry>
+    <title>青年大学生如何增强文化自信</title>
+    <url>/063-enhance-cultural-confidence/</url>
+    <content><![CDATA[<p>青少年的自信，其实不仅指能力强而且还有自知之明，两者缺一不可，只能力强而不自知就会自负或自卑，只自知没有多少能力也不会有自信。一个青少年是这样，，一个国家，一种文化也是这样。自信不是要求出来的，更不是喊口号喊出来的。可以说自信根本不是一种高要求，是需要天赋的，一个人能做到自知不盲目自信就不错了，大部分人天赋以一般，本分是最好的选择，希求自信便南辕北辙了。强不能以为能根本就是志大才疏，像极端分子一样，本来就是落后文化，一个小小的以色列就把整个中东打得爬不起来，越是无能越是打死不认，为了维护虚荣的自尊，到处搞破坏，叫嚣着复兴这个复兴那个，都跑到欧洲当难民了还不知道自己的斤两，根本就是死鸭子，只有嘴硬。身为一个青少年能不能自信完全身不由己，这时候认命并不是消极，而是积极的自知。一个国家一一个民族更要有自知之明，不能盲目自信，要勤修内功，要懂得自我优化，实现成员间的优胜劣汰，实打实地提高国民素质，才能实现国家民族的强大，只有国家富强民族强盛才有真正的文化自信，否则就只能像某些低等神族一样到处秀下限，成为天下的笑柄。作为青少年来说，唯有自信才能把自己的生活过得好，作为一个国家，也唯有自信，才能实现国家的强盛。因此当代大学生应积极响应国家对于文化自信的倡导精神，不断提升自信力，为民族的伟大复兴贡献力量。首先，大学生要深刻意识到树立文化自信的<br>重大意义，唯有对民族文化充满敬仰，才有底气推动国家的伟大建设;其次，大学生要坚持学习传统美德，中华文明几千年的历史长河中，先辈们为我们留下众多优秀传统知识，大学生须从中不断汲取营养， 提升自己的民族自豪感;再者，大学生要加深对我国传统科学技术的认知，包括耳熟能详的四大发明，及在数学、建筑学、农医等方面的伟大造诣，提升对民族智慧的敬仰;我们应加强对革命文化的学习，学习先烈的革命精神和牺牲意识,以提升自己在学习及工作中的创新能力;更要加深对现代文化的理解。如改革开放以来国家发生的翻天覆地的变化，全国人民在党的领导下逐渐步入小康生活，以及各行各业中先进人物事迹的学习等等;最后要说的是，坚持文化自信不等于盲目自大，我们对于外来的先进文化不应该盲目模仿，应采取包容及借鉴的态度，要以广阔的胸襟坚持学习精神，以不断扩充自身的文化宝库。</p>
+]]></content>
+      <categories>
+        <category>技能学习记录</category>
+      </categories>
+      <tags>
+        <tag>思修</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>路由信息协议Rip</title>
     <url>/064-routing-protocol/</url>
     <content><![CDATA[<p> 路由信息协议是基于向量-距离选择算法的协议，设置了周期更新定时器、延迟定时器、超时定时器与清除定时器。对照自己的路由表，没有的话接收； 有的话比较度量值，大了就忽略，小了就接收；（说明：当更新来源于同一个R时，不论度量值大小与否，都将接收。）<br>①RIP周期更新定时器：路由器设置一个周期更新定时器，每隔30秒在相邻路由器之间交换一次路由更新信息，路由器以广播的方发送路由信息。<br>②为了防止因触发更新而引起的广播风暴，RIp增加了一个延迟定时器。延迟定时器为每次路由更新延迟一个随机时间。<br>③每个路由表增加一个超时定时器，当路由信息中一个表项修改算起，超过180秒没有收到刷新信息，则认为该路径已经出现故障，路由表将该项记录设置为“无效”，而不是立即清除。<br>④设置一个清除定时器，如果路由表中的一个路由记录设置为“无效”超过120秒没有收到更新信息，则立即从路由表中删除该项记录。<br>⑤为了防止路由更新过程中，某个路径出现故障，而出现路由环路的情况，使得Rip产生慢收敛。有四种解决方式：设置路径的最大跳数为16； 如果路由器R1从R2处获得距离信息，R1不再给R2发送距离信息，称为“水平分割”；三是路由器在得知目的网络不可达信息之后的60秒时间内，不接受任何关于目的网络可达的信息；毒性逆转：当某条路径出现故障，最早广播该路由的路由器将距离定为16,，于此同时出发路由更新，立即广播刷新信息。<br>⑥由于防止引起广播风暴以及最大跳数的限制，Rip只适用于比较小的系统。</p>
@@ -1112,15 +1136,22 @@
       </tags>
   </entry>
   <entry>
-    <title>青年大学生如何增强文化自信</title>
-    <url>/063-enhance-cultural-confidence/</url>
-    <content><![CDATA[<p>青少年的自信，其实不仅指能力强而且还有自知之明，两者缺一不可，只能力强而不自知就会自负或自卑，只自知没有多少能力也不会有自信。一个青少年是这样，，一个国家，一种文化也是这样。自信不是要求出来的，更不是喊口号喊出来的。可以说自信根本不是一种高要求，是需要天赋的，一个人能做到自知不盲目自信就不错了，大部分人天赋以一般，本分是最好的选择，希求自信便南辕北辙了。强不能以为能根本就是志大才疏，像极端分子一样，本来就是落后文化，一个小小的以色列就把整个中东打得爬不起来，越是无能越是打死不认，为了维护虚荣的自尊，到处搞破坏，叫嚣着复兴这个复兴那个，都跑到欧洲当难民了还不知道自己的斤两，根本就是死鸭子，只有嘴硬。身为一个青少年能不能自信完全身不由己，这时候认命并不是消极，而是积极的自知。一个国家一一个民族更要有自知之明，不能盲目自信，要勤修内功，要懂得自我优化，实现成员间的优胜劣汰，实打实地提高国民素质，才能实现国家民族的强大，只有国家富强民族强盛才有真正的文化自信，否则就只能像某些低等神族一样到处秀下限，成为天下的笑柄。作为青少年来说，唯有自信才能把自己的生活过得好，作为一个国家，也唯有自信，才能实现国家的强盛。因此当代大学生应积极响应国家对于文化自信的倡导精神，不断提升自信力，为民族的伟大复兴贡献力量。首先，大学生要深刻意识到树立文化自信的<br>重大意义，唯有对民族文化充满敬仰，才有底气推动国家的伟大建设;其次，大学生要坚持学习传统美德，中华文明几千年的历史长河中，先辈们为我们留下众多优秀传统知识，大学生须从中不断汲取营养， 提升自己的民族自豪感;再者，大学生要加深对我国传统科学技术的认知，包括耳熟能详的四大发明，及在数学、建筑学、农医等方面的伟大造诣，提升对民族智慧的敬仰;我们应加强对革命文化的学习，学习先烈的革命精神和牺牲意识,以提升自己在学习及工作中的创新能力;更要加深对现代文化的理解。如改革开放以来国家发生的翻天覆地的变化，全国人民在党的领导下逐渐步入小康生活，以及各行各业中先进人物事迹的学习等等;最后要说的是，坚持文化自信不等于盲目自大，我们对于外来的先进文化不应该盲目模仿，应采取包容及借鉴的态度，要以广阔的胸襟坚持学习精神，以不断扩充自身的文化宝库。</p>
+    <title>大物2考试复习一图到底</title>
+    <url>/065-physics-exam/</url>
+    <content><![CDATA[<h1 id="一、填空题（20分，10空，每空2分）"><a href="#一、填空题（20分，10空，每空2分）" class="headerlink" title="一、填空题（20分，10空，每空2分）"></a>一、填空题（20分，10空，每空2分）</h1><h2 id="（1）电源，可能涉及的理论内容"><a href="#（1）电源，可能涉及的理论内容" class="headerlink" title="（1）电源，可能涉及的理论内容"></a>（1）电源，可能涉及的理论内容</h2><p>电容器放电过程，不能形成稳恒电流。<br> <em>电源：</em> 提供非静电力的装置，将正电荷从低电势处移到高电势处。<br><em>电源</em>电动势：在<em>电源</em>内部，将单位正电荷从负极移到正极，非静电力所做的功。<br><em>电源</em>电动势方向：<em>电源</em>内从负极到正极的方向，<em>电源</em>内电势升高的方向。</p>
+<h2 id="（2）惠更斯-菲涅耳原理，可能涉及的理论内容"><a href="#（2）惠更斯-菲涅耳原理，可能涉及的理论内容" class="headerlink" title="（2）惠更斯-菲涅耳原理，可能涉及的理论内容"></a>（2）惠更斯-菲涅耳原理，可能涉及的理论内容</h2><p>菲涅耳假定：波在传播时，从同一波阵面上各点发出的子波，经传播而在空间某点相遇时，产生相干叠加。</p>
+<h1 id="二、简答题（80分，7题）"><a href="#二、简答题（80分，7题）" class="headerlink" title="二、简答题（80分，7题）"></a>二、简答题（80分，7题）</h1><h2 id="（1）第一题，下图为仅供参考可能出现相类似的题型（12分）"><a href="#（1）第一题，下图为仅供参考可能出现相类似的题型（12分）" class="headerlink" title="（1）第一题，下图为仅供参考可能出现相类似的题型（12分）"></a>（1）第一题，下图为仅供参考可能出现相类似的题型（12分）</h2><p>练习一，第4题<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/29/20210829000450548.jpg" alt=""></p>
+<h2 id="（2）第二题，下图为仅供参考可能出现相类似的题型（12分）"><a href="#（2）第二题，下图为仅供参考可能出现相类似的题型（12分）" class="headerlink" title="（2）第二题，下图为仅供参考可能出现相类似的题型（12分）"></a>（2）第二题，下图为仅供参考可能出现相类似的题型（12分）</h2><p>练习六，第1题<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/29/20210829000523345.jpg" alt=""></p>
+<h2 id="（3）第三题，下图为仅供参考可能出现相类似的题型（12分）"><a href="#（3）第三题，下图为仅供参考可能出现相类似的题型（12分）" class="headerlink" title="（3）第三题，下图为仅供参考可能出现相类似的题型（12分）"></a>（3）第三题，下图为仅供参考可能出现相类似的题型（12分）</h2><p>练习十七，第1题<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/29/20210829000547612.jpg" alt=""></p>
+<h2 id="（4）第四题，下图为仅供参考可能出现相类似的题型（12分）"><a href="#（4）第四题，下图为仅供参考可能出现相类似的题型（12分）" class="headerlink" title="（4）第四题，下图为仅供参考可能出现相类似的题型（12分）"></a>（4）第四题，下图为仅供参考可能出现相类似的题型（12分）</h2><p>练习二十，第1题<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/29/20210829000621865.jpg" alt=""></p>
+<h2 id="（5）另外三题，第五题8分，第六、七题12分"><a href="#（5）另外三题，第五题8分，第六、七题12分" class="headerlink" title="（5）另外三题，第五题8分，第六、七题12分"></a>（5）另外三题，第五题8分，第六、七题12分</h2><p>仅提供思考范围，自行作为参考复习<br>练习十～练习十六，练习十五不用看（光学部分）</p>
+<h1 id="三、本图仅作参考"><a href="#三、本图仅作参考" class="headerlink" title="三、本图仅作参考"></a>三、本图仅作参考</h1><p>从往年考卷题型进行分析所得题型分析，不涉及原题分析，如有雷同，不胜荣幸</p>
 ]]></content>
       <categories>
-        <category>技能学习记录</category>
+        <category>考试资料</category>
       </categories>
       <tags>
-        <tag>思修</tag>
+        <tag>大物</tag>
       </tags>
   </entry>
   <entry>
@@ -1150,25 +1181,6 @@
       </tags>
   </entry>
   <entry>
-    <title>大物2考试复习一图到底</title>
-    <url>/065-physics-exam/</url>
-    <content><![CDATA[<h1 id="一、填空题（20分，10空，每空2分）"><a href="#一、填空题（20分，10空，每空2分）" class="headerlink" title="一、填空题（20分，10空，每空2分）"></a>一、填空题（20分，10空，每空2分）</h1><h2 id="（1）电源，可能涉及的理论内容"><a href="#（1）电源，可能涉及的理论内容" class="headerlink" title="（1）电源，可能涉及的理论内容"></a>（1）电源，可能涉及的理论内容</h2><p>电容器放电过程，不能形成稳恒电流。<br> <em>电源：</em> 提供非静电力的装置，将正电荷从低电势处移到高电势处。<br><em>电源</em>电动势：在<em>电源</em>内部，将单位正电荷从负极移到正极，非静电力所做的功。<br><em>电源</em>电动势方向：<em>电源</em>内从负极到正极的方向，<em>电源</em>内电势升高的方向。</p>
-<h2 id="（2）惠更斯-菲涅耳原理，可能涉及的理论内容"><a href="#（2）惠更斯-菲涅耳原理，可能涉及的理论内容" class="headerlink" title="（2）惠更斯-菲涅耳原理，可能涉及的理论内容"></a>（2）惠更斯-菲涅耳原理，可能涉及的理论内容</h2><p>菲涅耳假定：波在传播时，从同一波阵面上各点发出的子波，经传播而在空间某点相遇时，产生相干叠加。</p>
-<h1 id="二、简答题（80分，7题）"><a href="#二、简答题（80分，7题）" class="headerlink" title="二、简答题（80分，7题）"></a>二、简答题（80分，7题）</h1><h2 id="（1）第一题，下图为仅供参考可能出现相类似的题型（12分）"><a href="#（1）第一题，下图为仅供参考可能出现相类似的题型（12分）" class="headerlink" title="（1）第一题，下图为仅供参考可能出现相类似的题型（12分）"></a>（1）第一题，下图为仅供参考可能出现相类似的题型（12分）</h2><p>练习一，第4题<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/29/20210829000450548.jpg" alt=""></p>
-<h2 id="（2）第二题，下图为仅供参考可能出现相类似的题型（12分）"><a href="#（2）第二题，下图为仅供参考可能出现相类似的题型（12分）" class="headerlink" title="（2）第二题，下图为仅供参考可能出现相类似的题型（12分）"></a>（2）第二题，下图为仅供参考可能出现相类似的题型（12分）</h2><p>练习六，第1题<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/29/20210829000523345.jpg" alt=""></p>
-<h2 id="（3）第三题，下图为仅供参考可能出现相类似的题型（12分）"><a href="#（3）第三题，下图为仅供参考可能出现相类似的题型（12分）" class="headerlink" title="（3）第三题，下图为仅供参考可能出现相类似的题型（12分）"></a>（3）第三题，下图为仅供参考可能出现相类似的题型（12分）</h2><p>练习十七，第1题<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/29/20210829000547612.jpg" alt=""></p>
-<h2 id="（4）第四题，下图为仅供参考可能出现相类似的题型（12分）"><a href="#（4）第四题，下图为仅供参考可能出现相类似的题型（12分）" class="headerlink" title="（4）第四题，下图为仅供参考可能出现相类似的题型（12分）"></a>（4）第四题，下图为仅供参考可能出现相类似的题型（12分）</h2><p>练习二十，第1题<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/29/20210829000621865.jpg" alt=""></p>
-<h2 id="（5）另外三题，第五题8分，第六、七题12分"><a href="#（5）另外三题，第五题8分，第六、七题12分" class="headerlink" title="（5）另外三题，第五题8分，第六、七题12分"></a>（5）另外三题，第五题8分，第六、七题12分</h2><p>仅提供思考范围，自行作为参考复习<br>练习十～练习十六，练习十五不用看（光学部分）</p>
-<h1 id="三、本图仅作参考"><a href="#三、本图仅作参考" class="headerlink" title="三、本图仅作参考"></a>三、本图仅作参考</h1><p>从往年考卷题型进行分析所得题型分析，不涉及原题分析，如有雷同，不胜荣幸</p>
-]]></content>
-      <categories>
-        <category>考试资料</category>
-      </categories>
-      <tags>
-        <tag>大物</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>赛博朋克2077捏脸数据</title>
     <url>/067-cyberpunk2077/</url>
     <content><![CDATA[<p>皮肤04</p>
@@ -1193,34 +1205,6 @@
       <tags>
         <tag>赛博朋克2077</tag>
         <tag>捏脸</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>小米无线充电桩惊了我</title>
-    <url>/059-xiaomi-wireless-charging/</url>
-    <content><![CDATA[<p>有5m以内5w充电，就会有20m以内100w充电。好家伙，以后直接偷邻居电用。<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224829.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>充电桩</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>正联导剪版第一观感</title>
-    <url>/070-justice-league/</url>
-    <content><![CDATA[<p>什么他妈的叫他妈的正义联盟，扎克施奈德牛逼！！！！！！！！！<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225225.webp" alt=""></p>
-]]></content>
-      <categories>
-        <category>影视观赏</category>
-      </categories>
-      <tags>
-        <tag>正义联盟</tag>
-        <tag>扎斯林</tag>
-        <tag>扎克施耐德</tag>
-        <tag>扎导</tag>
-        <tag>DC</tag>
       </tags>
   </entry>
   <entry>
@@ -1264,6 +1248,22 @@
       <tags>
         <tag>床位</tag>
         <tag>整理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>正联导剪版第一观感</title>
+    <url>/070-justice-league/</url>
+    <content><![CDATA[<p>什么他妈的叫他妈的正义联盟，扎克施奈德牛逼！！！！！！！！！<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225225.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>影视观赏</category>
+      </categories>
+      <tags>
+        <tag>正义联盟</tag>
+        <tag>扎斯林</tag>
+        <tag>扎克施耐德</tag>
+        <tag>扎导</tag>
+        <tag>DC</tag>
       </tags>
   </entry>
   <entry>
@@ -1317,6 +1317,22 @@
       </tags>
   </entry>
   <entry>
+    <title>如人饮水</title>
+    <url>/075-like-drinking-water/</url>
+    <content><![CDATA[<p>眼看他起朱楼，眼看他宴宾客，眼看他楼塌了。</p>
+<p>体会了一把凌晨两点读书的感觉，体会了一把被英语老师教Java的感觉。</p>
+<p>日子过的像喝凉白开，没什么滋味，但是解渴。<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225607.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225618.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225627.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225638.webp" alt=""></p>
+]]></content>
+      <categories>
+        <category>生活感悟</category>
+        <category>摄影记录</category>
+        <category>植物欣赏</category>
+      </categories>
+      <tags>
+        <tag>桃花</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>雨花台游记</title>
     <url>/074-yuhuatai-travel/</url>
     <content><![CDATA[<p>来到了雨花台，感受到了浓烈的氛围，一股令人由衷肃穆的感觉。</p>
@@ -1335,19 +1351,17 @@
       </tags>
   </entry>
   <entry>
-    <title>如人饮水</title>
-    <url>/075-like-drinking-water/</url>
-    <content><![CDATA[<p>眼看他起朱楼，眼看他宴宾客，眼看他楼塌了。</p>
-<p>体会了一把凌晨两点读书的感觉，体会了一把被英语老师教Java的感觉。</p>
-<p>日子过的像喝凉白开，没什么滋味，但是解渴。<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225607.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225618.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225627.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225638.webp" alt=""></p>
+    <title>Vim初体验</title>
+    <url>/079-vim-experience/</url>
+    <content><![CDATA[<p>宇宙第一IDE吗，人道主义情怀满分<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225745.png" alt="Vim"></p>
 ]]></content>
       <categories>
-        <category>生活感悟</category>
-        <category>摄影记录</category>
-        <category>植物欣赏</category>
+        <category>极客之旅</category>
       </categories>
       <tags>
-        <tag>桃花</tag>
+        <tag>IDE</tag>
+        <tag>VIM</tag>
+        <tag>Ubuntu</tag>
       </tags>
   </entry>
   <entry>
@@ -1372,69 +1386,6 @@
         <tag>高数</tag>
         <tag>660</tag>
         <tag>墨墨背单词</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vim初体验</title>
-    <url>/079-vim-experience/</url>
-    <content><![CDATA[<p>宇宙第一IDE吗，人道主义情怀满分<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225745.png" alt="Vim"></p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-      </categories>
-      <tags>
-        <tag>IDE</tag>
-        <tag>VIM</tag>
-        <tag>Ubuntu</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>校园导航系统</title>
-    <url>/082-campus-navigation/</url>
-    <content><![CDATA[<h1 id="1-问题概述"><a href="#1-问题概述" class="headerlink" title="1.问题概述"></a>1.问题概述</h1><p>综合运用所学的数据结构知识解决一个关于学校导航系统的问题，侧重对图的相关内容特别是求最短路径的应用，使得能进一步熟悉掌握数据结构的基础知识，进一步提升自己的解决问题和编程调试能力，为后续专业课程的学习打下基础。</p>
-<h1 id="2-系统需求分析"><a href="#2-系统需求分析" class="headerlink" title="2.系统需求分析"></a>2.系统需求分析</h1><p>设计学校的平面图，至少包括30个以上的场所，每两个场所间可以有不同的路，且路长也可能不同，找出从某个场所到达另一场所的最佳路径。<br>求最短路径用Floryd算法实现。</p>
-<h1 id="3-系统概要设计"><a href="#3-系统概要设计" class="headerlink" title="3.系统概要设计"></a>3.系统概要设计</h1><h2 id="3-1系统主要功能"><a href="#3-1系统主要功能" class="headerlink" title="3.1系统主要功能"></a>3.1系统主要功能</h2><p>系统的主要功能是实现两个建筑之间的导航以及信息查询<br>主要包括:</p>
-<p>(1)查询起点与终点</p>
-<p>(2)计算两点之间的距离</p>
-<p>(3)求两点之间的最短路径</p>
-<p>(4)添加一个景点</p>
-<h2 id="3-2系统的总体结构"><a href="#3-2系统的总体结构" class="headerlink" title="3.2系统的总体结构"></a>3.2系统的总体结构</h2><h3 id="1-将校园平面图绘制为无向图并标各点和权值"><a href="#1-将校园平面图绘制为无向图并标各点和权值" class="headerlink" title="(1)将校园平面图绘制为无向图并标各点和权值"></a>(1)将校园平面图绘制为无向图并标各点和权值</h3><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824154659.png" alt=""></p>
-<h3 id="2-结构图设计"><a href="#2-结构图设计" class="headerlink" title="(2)结构图设计"></a>(2)结构图设计</h3><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824154854.png" alt="图3.2.1校园导航系统计结构图"></p>
-<h3 id="3-图的制作"><a href="#3-图的制作" class="headerlink" title="(3)图的制作"></a>(3)图的制作</h3><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824154949.png" alt="图3.2.2图的制作"></p>
-<h3 id="4-最短路径计算"><a href="#4-最短路径计算" class="headerlink" title="(4)最短路径计算"></a>(4)最短路径计算</h3><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155049.png" alt="图3.2.3最短路径计算"></p>
-<h3 id="5-图的制作"><a href="#5-图的制作" class="headerlink" title="(5)图的制作"></a>(5)图的制作</h3><p>①载入顶点数、边数、权值<br>②建立顶点表和边表，构建邻接表</p>
-<h3 id="6-最短路径计算"><a href="#6-最短路径计算" class="headerlink" title="(6)最短路径计算"></a>(6)最短路径计算</h3><p>①利用Floryd算法计算各个顶点之间最短路径<br>②输出最短路径</p>
-<h3 id="7-添加景点"><a href="#7-添加景点" class="headerlink" title="(7)添加景点"></a>(7)添加景点</h3><p>对类中对象进行修改即可</p>
-<h2 id="3-3数据结构的设计"><a href="#3-3数据结构的设计" class="headerlink" title="3.3数据结构的设计"></a>3.3数据结构的设计</h2><p>校园导航数据结构类型如下:<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155157.png" alt=""></p>
-<h1 id="4-系统详细设计"><a href="#4-系统详细设计" class="headerlink" title="4.系统详细设计"></a>4.系统详细设计</h1><p>①根据系统总体结构对问题进行的模块划分，对总的问题可划分为:校园地图的制作、校园地图的展示、计算两地点最短路径<br>②在主函数中创建了Map类型guide变量，为map变量申请一个邻接表空间<br>③调用InMap(map)函数初始化地图，调用CreateMap(map)函数创建地图<br>④调用ShortWay(map)函数计算两点之间的最短路径，调用ShowShortWay(begin, end)函数输出两点之间的最短路径<br>⑤调用Add(map)函数进行添加景点</p>
-<h2 id="4-1校园地图的制作-InMap-MapBox-map-、CreateMap-MapBox-map"><a href="#4-1校园地图的制作-InMap-MapBox-map-、CreateMap-MapBox-map" class="headerlink" title="4.1校园地图的制作(InMap(MapBox map)、CreateMap(MapBox map))"></a>4.1校园地图的制作(InMap(MapBox <em>map)、CreateMap(MapBox </em>map))</h2><h3 id="1-InMap-MapBox-map"><a href="#1-InMap-MapBox-map" class="headerlink" title="(1)InMap(MapBox *map)"></a>(1)InMap(MapBox *map)</h3><p>①用来初始化地图，该函数实现过程中首先将32个顶点数赋给map-&gt;topnum，59条边赋给map-&gt;edgenum。将每个点之间的权值赋给distance数据储存</p>
-<p>②代码实现<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155241.png" alt=""></p>
-<h3 id="2-CreateMap-MapBox-map"><a href="#2-CreateMap-MapBox-map" class="headerlink" title="(2)CreateMap(MapBox *map)"></a>(2)CreateMap(MapBox *map)</h3><p>①用来创建地图，该函数实现过程中首先定义一个边结点指针e。然后先用for来读取顶点信息，利用了strvpy函数，将mapname[i]中储存顶点名称传给map-&gt;Box[i].data，以此来读取顶点信息，并且将每个顶点对应的边头指针初始化，以达到将边表制空的目的。<br>再利用for循环，采用头插法创建边表。判断条件，当无向图两个点之间存在路径的时候，将两点之间的距离赋给temp变量。<br>为变量e申请新的空间来存放对应的下标、后继的地址、权值。将j赋给e-&gt;script作为入度下标，将两点的权值temp赋给e-&gt;weight。再利用e-&gt;next = map-&gt;Box[i].edgefirst和map-&gt;Box[i].edgefirst = e将边结点的头指针与后继相连接<br>为变量e申请新的空间来存放对应的下标、后继的地址、权值。将i赋给e-&gt;script作为出度下标，将两点的权值temp赋给e-&gt;weight。再利用e-&gt;next = map-&gt;Box[j].edgefirst和map-&gt;Box[j].edgefirst = e将边结点的头指针与后继相连接</p>
-<p>②代码实现<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155328.png" alt=""></p>
-<h2 id="4-2校园地图的展示"><a href="#4-2校园地图的展示" class="headerlink" title="4.2校园地图的展示"></a>4.2校园地图的展示</h2><h3 id="1-用来显示校园平面图，该函数实现过程中首先将制作好的校园平面图命名为SchoolMap并存放在Project1中等待调用。在主函数中使用system函数，执行system-“mspaint-SchoolMap-png”-来使用Win10自带画板打开SchoolMap，使校园平面图得到调出，让用户直观了解学校景点信息，以及便于选择需要查询的景点信息和最短路径"><a href="#1-用来显示校园平面图，该函数实现过程中首先将制作好的校园平面图命名为SchoolMap并存放在Project1中等待调用。在主函数中使用system函数，执行system-“mspaint-SchoolMap-png”-来使用Win10自带画板打开SchoolMap，使校园平面图得到调出，让用户直观了解学校景点信息，以及便于选择需要查询的景点信息和最短路径" class="headerlink" title="(1)用来显示校园平面图，该函数实现过程中首先将制作好的校园平面图命名为SchoolMap并存放在Project1中等待调用。在主函数中使用system函数，执行system(“mspaint SchoolMap.png”)来使用Win10自带画板打开SchoolMap，使校园平面图得到调出，让用户直观了解学校景点信息，以及便于选择需要查询的景点信息和最短路径"></a>(1)用来显示校园平面图，该函数实现过程中首先将制作好的校园平面图命名为SchoolMap并存放在Project1中等待调用。在主函数中使用system函数，执行system(“mspaint SchoolMap.png”)来使用Win10自带画板打开SchoolMap，使校园平面图得到调出，让用户直观了解学校景点信息，以及便于选择需要查询的景点信息和最短路径</h3><h3 id="2-操作实现"><a href="#2-操作实现" class="headerlink" title="(2)操作实现"></a>(2)操作实现</h3><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155422.png" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155543.png" alt=""></p>
-<h2 id="4-3计算两地点最短路径-ShortWay-MapBox-map-、ShowShortWay-int-begin-int-end"><a href="#4-3计算两地点最短路径-ShortWay-MapBox-map-、ShowShortWay-int-begin-int-end" class="headerlink" title="4.3计算两地点最短路径(ShortWay(MapBox *map)、ShowShortWay(int begin, int end))"></a>4.3计算两地点最短路径(ShortWay(MapBox *map)、ShowShortWay(int begin, int end))</h2><h3 id="1-ShortWay-MapBox-map"><a href="#1-ShortWay-MapBox-map" class="headerlink" title="(1)ShortWay(MapBox *map)"></a>(1)ShortWay(MapBox *map)</h3><p>①利用Floryd算法计算各个顶点之间最短路径，该函数实现过程中首先用两层for循环初始化，用if判断，若两点之间不存在路径并且不是相同的点，则将权值赋为10000,然后将每个结点对应的最短路径和下标信息分别初始化为distance[i][j]和下标j，以此来引入一个矩阵法S<br>利用三层循环判断最短路径，对引入的矩阵S进行k次更新，第一个顶点为中介，若shortdistance[i][j] &gt; shortdistance[i][0] + shortdistance[0][j]，将shortdistance[i][j]更新为shortdistance[i][0] + shortdistance[0][j]，同理，第k次更新时，如果shortdistance[i][j] &gt; shortdistance[i][k] + shortdistance[k][j]，则将shortdistance[i][j]更新为shortdistance[i][k] + shortdistance[k][j]。更新k次之后，操作即可完成。此时shortdistance[i][j]之中储存的即为每个顶点到其他顶点之间的最短路径距离，而shortpath中储存最短路径对应的信息。<br>图解如下:<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155459.png" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155611.png" alt=""></p>
-<p>②代码实现<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155712.png" alt=""></p>
-<h3 id="2-ShowShortWay-int-begin-int-end"><a href="#2-ShowShortWay-int-begin-int-end" class="headerlink" title="(2)ShowShortWay(int begin, int end)"></a>(2)ShowShortWay(int begin, int end)</h3><p>①用来输出路径长度和具体路径，该函数实现过程中首先定义一个temp变量。<br>输出地点名字、两点之间的最短距离，然后将两点间最短路径的下标信息temp = shortpath[begin][end]赋给temp变量。<br>之后利用while输出两点之间的最短路径，判断条件为temp不等于终点数值，若不相等，输出mapname[temp]，令temp赋为shortpath[temp][end]，如此循环，输出两点之间最短路径的具体路径。</p>
-<p>②代码实现<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155745.png" alt=""></p>
-<h3 id="4-4景点的添加"><a href="#4-4景点的添加" class="headerlink" title="4.4景点的添加"></a>4.4景点的添加</h3><p>mapname数组添加元素进行点的添加，distance数组添加元素进行边的添加</p>
-<h1 id="5-系统的测试及调试"><a href="#5-系统的测试及调试" class="headerlink" title="5.系统的测试及调试"></a>5.系统的测试及调试</h1><p>系统的测试及调试是为了发现程序中错误而执行程序的过程。</p>
-<h2 id="5-1运行过程"><a href="#5-1运行过程" class="headerlink" title="5.1运行过程"></a>5.1运行过程</h2><p>(1)进入主界面，进入选择界面<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155832.png" alt=""><br>(2)显示地图<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155904.png" alt=""><br>(3)添加一个景点<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155932.png" alt=""><br>(4)查询两点之间最短路径<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824160015.png" alt=""></p>
-<h2 id="5-2系统调试过程中遇到的问题"><a href="#5-2系统调试过程中遇到的问题" class="headerlink" title="5.2系统调试过程中遇到的问题"></a>5.2系统调试过程中遇到的问题</h2><p>(1)每次只能进行一次查询，并不能进行多次查询<br>错误原因:没有对代码进行完善<br>解决方案:添加一个while循环，使得用户可以进行多次查询</p>
-<p>(2)校园平面图输出复杂，容易出现地图混乱的情况<br>错误原因:输出一幅图的处理不当<br>解决方案:采用system函数直接将已经绘制完成的校园平面图进行调用</p>
-<h1 id="6-用户手册"><a href="#6-用户手册" class="headerlink" title="6.用户手册"></a>6.用户手册</h1><p>(1)本系统执行文件为Project1.sln<br>(2)进入系统界面后，根据提示，在校园平面图中查找对应的地点，输入两点信息<br>(3)两点输入为整型</p>
-<h1 id="7-总结"><a href="#7-总结" class="headerlink" title="7.总结"></a>7.总结</h1><p>通过对校园导航系统的设计，我对数据结构又有了进一步的了解与掌握，尤其是对其中的一些地方又有了深刻的理解，使得对知识有了进一步的加深。使求最短路径的算法有了更深一个层次的掌握，更进一步的把握，希望将来可以用来解决更加切合实际的问题，从而达到学以致用的目的。还明白了在做一个系统之前还应该做好全面的安排，对一个系统的整个流程及功能实现有一个很好的统筹。另在遇到困难不能解决时，应查资料或问其它懂的同学，参考一下意见，再结合自己的想法，最后实现自己想实现的功能。在本次设计中我发现细节有时候很重要，又是一个很小的问题都可能导致失败，所以细心非常重要。</p>
-<h1 id="8-参考文献"><a href="#8-参考文献" class="headerlink" title="8.参考文献"></a>8.参考文献</h1><p>[1] 张磊编著《C语言程序设计教程第2版》 中国铁道出版社<br>[2] 薛小龙编著《开发日记：深入体验C语言项目开发》清华大学出版社<br>[3] 刘字君张月琴叶瑶王庆生编著《C+理序设计案例分析》 清华大学出版社</p>
-]]></content>
-      <categories>
-        <category>项目展示</category>
-        <category>C++学习笔记</category>
-        <category>数据结构学习笔记</category>
-      </categories>
-      <tags>
-        <tag>VS2019</tag>
-        <tag>Floryd</tag>
-        <tag>栈</tag>
-        <tag>链表</tag>
       </tags>
   </entry>
   <entry>
@@ -1500,6 +1451,71 @@
       </tags>
   </entry>
   <entry>
+    <title>校园导航系统</title>
+    <url>/082-campus-navigation/</url>
+    <content><![CDATA[<h1 id="1-问题概述"><a href="#1-问题概述" class="headerlink" title="1.问题概述"></a>1.问题概述</h1><p>综合运用所学的数据结构知识解决一个关于学校导航系统的问题，侧重对图的相关内容特别是求最短路径的应用，使得能进一步熟悉掌握数据结构的基础知识，进一步提升自己的解决问题和编程调试能力，为后续专业课程的学习打下基础。</p>
+<h1 id="2-系统需求分析"><a href="#2-系统需求分析" class="headerlink" title="2.系统需求分析"></a>2.系统需求分析</h1><p>设计学校的平面图，至少包括30个以上的场所，每两个场所间可以有不同的路，且路长也可能不同，找出从某个场所到达另一场所的最佳路径。<br>求最短路径用Floryd算法实现。</p>
+<h1 id="3-系统概要设计"><a href="#3-系统概要设计" class="headerlink" title="3.系统概要设计"></a>3.系统概要设计</h1><h2 id="3-1系统主要功能"><a href="#3-1系统主要功能" class="headerlink" title="3.1系统主要功能"></a>3.1系统主要功能</h2><p>系统的主要功能是实现两个建筑之间的导航以及信息查询<br>主要包括:</p>
+<p>(1)查询起点与终点</p>
+<p>(2)计算两点之间的距离</p>
+<p>(3)求两点之间的最短路径</p>
+<p>(4)添加一个景点</p>
+<h2 id="3-2系统的总体结构"><a href="#3-2系统的总体结构" class="headerlink" title="3.2系统的总体结构"></a>3.2系统的总体结构</h2><h3 id="1-将校园平面图绘制为无向图并标各点和权值"><a href="#1-将校园平面图绘制为无向图并标各点和权值" class="headerlink" title="(1)将校园平面图绘制为无向图并标各点和权值"></a>(1)将校园平面图绘制为无向图并标各点和权值</h3><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824154659.png" alt=""></p>
+<h3 id="2-结构图设计"><a href="#2-结构图设计" class="headerlink" title="(2)结构图设计"></a>(2)结构图设计</h3><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824154854.png" alt="图3.2.1校园导航系统计结构图"></p>
+<h3 id="3-图的制作"><a href="#3-图的制作" class="headerlink" title="(3)图的制作"></a>(3)图的制作</h3><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824154949.png" alt="图3.2.2图的制作"></p>
+<h3 id="4-最短路径计算"><a href="#4-最短路径计算" class="headerlink" title="(4)最短路径计算"></a>(4)最短路径计算</h3><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155049.png" alt="图3.2.3最短路径计算"></p>
+<h3 id="5-图的制作"><a href="#5-图的制作" class="headerlink" title="(5)图的制作"></a>(5)图的制作</h3><p>①载入顶点数、边数、权值<br>②建立顶点表和边表，构建邻接表</p>
+<h3 id="6-最短路径计算"><a href="#6-最短路径计算" class="headerlink" title="(6)最短路径计算"></a>(6)最短路径计算</h3><p>①利用Floryd算法计算各个顶点之间最短路径<br>②输出最短路径</p>
+<h3 id="7-添加景点"><a href="#7-添加景点" class="headerlink" title="(7)添加景点"></a>(7)添加景点</h3><p>对类中对象进行修改即可</p>
+<h2 id="3-3数据结构的设计"><a href="#3-3数据结构的设计" class="headerlink" title="3.3数据结构的设计"></a>3.3数据结构的设计</h2><p>校园导航数据结构类型如下:<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155157.png" alt=""></p>
+<h1 id="4-系统详细设计"><a href="#4-系统详细设计" class="headerlink" title="4.系统详细设计"></a>4.系统详细设计</h1><p>①根据系统总体结构对问题进行的模块划分，对总的问题可划分为:校园地图的制作、校园地图的展示、计算两地点最短路径<br>②在主函数中创建了Map类型guide变量，为map变量申请一个邻接表空间<br>③调用InMap(map)函数初始化地图，调用CreateMap(map)函数创建地图<br>④调用ShortWay(map)函数计算两点之间的最短路径，调用ShowShortWay(begin, end)函数输出两点之间的最短路径<br>⑤调用Add(map)函数进行添加景点</p>
+<h2 id="4-1校园地图的制作-InMap-MapBox-map-、CreateMap-MapBox-map"><a href="#4-1校园地图的制作-InMap-MapBox-map-、CreateMap-MapBox-map" class="headerlink" title="4.1校园地图的制作(InMap(MapBox map)、CreateMap(MapBox map))"></a>4.1校园地图的制作(InMap(MapBox <em>map)、CreateMap(MapBox </em>map))</h2><h3 id="1-InMap-MapBox-map"><a href="#1-InMap-MapBox-map" class="headerlink" title="(1)InMap(MapBox *map)"></a>(1)InMap(MapBox *map)</h3><p>①用来初始化地图，该函数实现过程中首先将32个顶点数赋给map-&gt;topnum，59条边赋给map-&gt;edgenum。将每个点之间的权值赋给distance数据储存</p>
+<p>②代码实现<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155241.png" alt=""></p>
+<h3 id="2-CreateMap-MapBox-map"><a href="#2-CreateMap-MapBox-map" class="headerlink" title="(2)CreateMap(MapBox *map)"></a>(2)CreateMap(MapBox *map)</h3><p>①用来创建地图，该函数实现过程中首先定义一个边结点指针e。然后先用for来读取顶点信息，利用了strvpy函数，将mapname[i]中储存顶点名称传给map-&gt;Box[i].data，以此来读取顶点信息，并且将每个顶点对应的边头指针初始化，以达到将边表制空的目的。<br>再利用for循环，采用头插法创建边表。判断条件，当无向图两个点之间存在路径的时候，将两点之间的距离赋给temp变量。<br>为变量e申请新的空间来存放对应的下标、后继的地址、权值。将j赋给e-&gt;script作为入度下标，将两点的权值temp赋给e-&gt;weight。再利用e-&gt;next = map-&gt;Box[i].edgefirst和map-&gt;Box[i].edgefirst = e将边结点的头指针与后继相连接<br>为变量e申请新的空间来存放对应的下标、后继的地址、权值。将i赋给e-&gt;script作为出度下标，将两点的权值temp赋给e-&gt;weight。再利用e-&gt;next = map-&gt;Box[j].edgefirst和map-&gt;Box[j].edgefirst = e将边结点的头指针与后继相连接</p>
+<p>②代码实现<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155328.png" alt=""></p>
+<h2 id="4-2校园地图的展示"><a href="#4-2校园地图的展示" class="headerlink" title="4.2校园地图的展示"></a>4.2校园地图的展示</h2><h3 id="1-用来显示校园平面图，该函数实现过程中首先将制作好的校园平面图命名为SchoolMap并存放在Project1中等待调用。在主函数中使用system函数，执行system-“mspaint-SchoolMap-png”-来使用Win10自带画板打开SchoolMap，使校园平面图得到调出，让用户直观了解学校景点信息，以及便于选择需要查询的景点信息和最短路径"><a href="#1-用来显示校园平面图，该函数实现过程中首先将制作好的校园平面图命名为SchoolMap并存放在Project1中等待调用。在主函数中使用system函数，执行system-“mspaint-SchoolMap-png”-来使用Win10自带画板打开SchoolMap，使校园平面图得到调出，让用户直观了解学校景点信息，以及便于选择需要查询的景点信息和最短路径" class="headerlink" title="(1)用来显示校园平面图，该函数实现过程中首先将制作好的校园平面图命名为SchoolMap并存放在Project1中等待调用。在主函数中使用system函数，执行system(“mspaint SchoolMap.png”)来使用Win10自带画板打开SchoolMap，使校园平面图得到调出，让用户直观了解学校景点信息，以及便于选择需要查询的景点信息和最短路径"></a>(1)用来显示校园平面图，该函数实现过程中首先将制作好的校园平面图命名为SchoolMap并存放在Project1中等待调用。在主函数中使用system函数，执行system(“mspaint SchoolMap.png”)来使用Win10自带画板打开SchoolMap，使校园平面图得到调出，让用户直观了解学校景点信息，以及便于选择需要查询的景点信息和最短路径</h3><h3 id="2-操作实现"><a href="#2-操作实现" class="headerlink" title="(2)操作实现"></a>(2)操作实现</h3><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155422.png" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155543.png" alt=""></p>
+<h2 id="4-3计算两地点最短路径-ShortWay-MapBox-map-、ShowShortWay-int-begin-int-end"><a href="#4-3计算两地点最短路径-ShortWay-MapBox-map-、ShowShortWay-int-begin-int-end" class="headerlink" title="4.3计算两地点最短路径(ShortWay(MapBox *map)、ShowShortWay(int begin, int end))"></a>4.3计算两地点最短路径(ShortWay(MapBox *map)、ShowShortWay(int begin, int end))</h2><h3 id="1-ShortWay-MapBox-map"><a href="#1-ShortWay-MapBox-map" class="headerlink" title="(1)ShortWay(MapBox *map)"></a>(1)ShortWay(MapBox *map)</h3><p>①利用Floryd算法计算各个顶点之间最短路径，该函数实现过程中首先用两层for循环初始化，用if判断，若两点之间不存在路径并且不是相同的点，则将权值赋为10000,然后将每个结点对应的最短路径和下标信息分别初始化为distance[i][j]和下标j，以此来引入一个矩阵法S<br>利用三层循环判断最短路径，对引入的矩阵S进行k次更新，第一个顶点为中介，若shortdistance[i][j] &gt; shortdistance[i][0] + shortdistance[0][j]，将shortdistance[i][j]更新为shortdistance[i][0] + shortdistance[0][j]，同理，第k次更新时，如果shortdistance[i][j] &gt; shortdistance[i][k] + shortdistance[k][j]，则将shortdistance[i][j]更新为shortdistance[i][k] + shortdistance[k][j]。更新k次之后，操作即可完成。此时shortdistance[i][j]之中储存的即为每个顶点到其他顶点之间的最短路径距离，而shortpath中储存最短路径对应的信息。<br>图解如下:<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155459.png" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155611.png" alt=""></p>
+<p>②代码实现<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155712.png" alt=""></p>
+<h3 id="2-ShowShortWay-int-begin-int-end"><a href="#2-ShowShortWay-int-begin-int-end" class="headerlink" title="(2)ShowShortWay(int begin, int end)"></a>(2)ShowShortWay(int begin, int end)</h3><p>①用来输出路径长度和具体路径，该函数实现过程中首先定义一个temp变量。<br>输出地点名字、两点之间的最短距离，然后将两点间最短路径的下标信息temp = shortpath[begin][end]赋给temp变量。<br>之后利用while输出两点之间的最短路径，判断条件为temp不等于终点数值，若不相等，输出mapname[temp]，令temp赋为shortpath[temp][end]，如此循环，输出两点之间最短路径的具体路径。</p>
+<p>②代码实现<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155745.png" alt=""></p>
+<h3 id="4-4景点的添加"><a href="#4-4景点的添加" class="headerlink" title="4.4景点的添加"></a>4.4景点的添加</h3><p>mapname数组添加元素进行点的添加，distance数组添加元素进行边的添加</p>
+<h1 id="5-系统的测试及调试"><a href="#5-系统的测试及调试" class="headerlink" title="5.系统的测试及调试"></a>5.系统的测试及调试</h1><p>系统的测试及调试是为了发现程序中错误而执行程序的过程。</p>
+<h2 id="5-1运行过程"><a href="#5-1运行过程" class="headerlink" title="5.1运行过程"></a>5.1运行过程</h2><p>(1)进入主界面，进入选择界面<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155832.png" alt=""><br>(2)显示地图<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155904.png" alt=""><br>(3)添加一个景点<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155932.png" alt=""><br>(4)查询两点之间最短路径<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824160015.png" alt=""></p>
+<h2 id="5-2系统调试过程中遇到的问题"><a href="#5-2系统调试过程中遇到的问题" class="headerlink" title="5.2系统调试过程中遇到的问题"></a>5.2系统调试过程中遇到的问题</h2><p>(1)每次只能进行一次查询，并不能进行多次查询<br>错误原因:没有对代码进行完善<br>解决方案:添加一个while循环，使得用户可以进行多次查询</p>
+<p>(2)校园平面图输出复杂，容易出现地图混乱的情况<br>错误原因:输出一幅图的处理不当<br>解决方案:采用system函数直接将已经绘制完成的校园平面图进行调用</p>
+<h1 id="6-用户手册"><a href="#6-用户手册" class="headerlink" title="6.用户手册"></a>6.用户手册</h1><p>(1)本系统执行文件为Project1.sln<br>(2)进入系统界面后，根据提示，在校园平面图中查找对应的地点，输入两点信息<br>(3)两点输入为整型</p>
+<h1 id="7-总结"><a href="#7-总结" class="headerlink" title="7.总结"></a>7.总结</h1><p>通过对校园导航系统的设计，我对数据结构又有了进一步的了解与掌握，尤其是对其中的一些地方又有了深刻的理解，使得对知识有了进一步的加深。使求最短路径的算法有了更深一个层次的掌握，更进一步的把握，希望将来可以用来解决更加切合实际的问题，从而达到学以致用的目的。还明白了在做一个系统之前还应该做好全面的安排，对一个系统的整个流程及功能实现有一个很好的统筹。另在遇到困难不能解决时，应查资料或问其它懂的同学，参考一下意见，再结合自己的想法，最后实现自己想实现的功能。在本次设计中我发现细节有时候很重要，又是一个很小的问题都可能导致失败，所以细心非常重要。</p>
+<h1 id="8-参考文献"><a href="#8-参考文献" class="headerlink" title="8.参考文献"></a>8.参考文献</h1><p>[1] 张磊编著《C语言程序设计教程第2版》 中国铁道出版社<br>[2] 薛小龙编著《开发日记：深入体验C语言项目开发》清华大学出版社<br>[3] 刘字君张月琴叶瑶王庆生编著《C+理序设计案例分析》 清华大学出版社</p>
+]]></content>
+      <categories>
+        <category>项目展示</category>
+        <category>C++学习笔记</category>
+        <category>数据结构学习笔记</category>
+      </categories>
+      <tags>
+        <tag>VS2019</tag>
+        <tag>Floryd</tag>
+        <tag>栈</tag>
+        <tag>链表</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《一枝花·不伏老》</title>
+    <url>/084-flower-never-old/</url>
+    <content><![CDATA[<p>我是个蒸不烂、煮不熟、捶不匾、炒不爆、响珰珰一粒铜豌豆，恁子弟每谁教你钻入他锄不断、斫不下、解不开、顿不脱、慢腾腾千层锦套头？我玩的是梁园月，饮的是东京酒，赏的是洛阳花，攀的是章台柳。</p>
+<p>我也会围棋、会蹴鞠、会打围、会插科、会歌舞、会吹弹、会咽作、会吟诗、会双陆。你便是落了我牙、歪了我嘴、瘸了我腿、折了我手，天赐与我这几般儿歹症候，尚兀自不肯休！则除是阎王亲自唤，神鬼自来勾。三魂归地府，七魄丧冥幽。天哪！那其间才不向烟花路儿上走！</p>
+]]></content>
+      <categories>
+        <category>生活感悟</category>
+        <category>好句摘抄</category>
+      </categories>
+      <tags>
+        <tag>铜豌豆</tag>
+        <tag>锦套头</tag>
+        <tag>章台柳</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>运动会里观健康</title>
     <url>/085-view-health/</url>
     <content><![CDATA[<p>3000被套两圈 最后一名 用时20min</p>
@@ -1517,22 +1533,6 @@
         <tag>3000m</tag>
         <tag>运动会</tag>
         <tag>亚健康</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《一枝花·不伏老》</title>
-    <url>/084-flower-never-old/</url>
-    <content><![CDATA[<p>我是个蒸不烂、煮不熟、捶不匾、炒不爆、响珰珰一粒铜豌豆，恁子弟每谁教你钻入他锄不断、斫不下、解不开、顿不脱、慢腾腾千层锦套头？我玩的是梁园月，饮的是东京酒，赏的是洛阳花，攀的是章台柳。</p>
-<p>我也会围棋、会蹴鞠、会打围、会插科、会歌舞、会吹弹、会咽作、会吟诗、会双陆。你便是落了我牙、歪了我嘴、瘸了我腿、折了我手，天赐与我这几般儿歹症候，尚兀自不肯休！则除是阎王亲自唤，神鬼自来勾。三魂归地府，七魄丧冥幽。天哪！那其间才不向烟花路儿上走！</p>
-]]></content>
-      <categories>
-        <category>生活感悟</category>
-        <category>好句摘抄</category>
-      </categories>
-      <tags>
-        <tag>铜豌豆</tag>
-        <tag>锦套头</tag>
-        <tag>章台柳</tag>
       </tags>
   </entry>
   <entry>
@@ -1694,6 +1694,19 @@
       </tags>
   </entry>
   <entry>
+    <title>难为知己难为敌</title>
+    <url>/096-hard-confidant-enemy/</url>
+    <content><![CDATA[<p>古语有云「难为知己难为敌」，从策略上讲，你和最大敌人若在一段时间内无法杀死对方，到最后反而会不舍得离开他，皆因彼此熟门熟路，相斗相倚。</p>
+<p>这个人很冷漠很生人勿近，你怎么看也看不穿他的心的，更甭说想当他的朋友了；他同时又是个很厉害的角色，你肯定不能轻易嬴过他，所以当他的敌人也绝非一件好事。所以你和他之间皆非知己亦非敌人，是一种很微妙的关系。</p>
+]]></content>
+      <categories>
+        <category>好句摘抄</category>
+      </categories>
+      <tags>
+        <tag>难为知己难为敌</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>黑苹果,浏览器,系统</title>
     <url>/097-blackapple/</url>
     <content><![CDATA[<p>1.火狐真好用 win mac Android iOS ubuntu 全能互通 体验又和谷歌一样 插件主题还极其丰富,还能直接装gnome扩展 装dash-to-dock这样的ubuntu桌面工具</p>
@@ -1717,19 +1730,6 @@
       </tags>
   </entry>
   <entry>
-    <title>难为知己难为敌</title>
-    <url>/096-hard-confidant-enemy/</url>
-    <content><![CDATA[<p>古语有云「难为知己难为敌」，从策略上讲，你和最大敌人若在一段时间内无法杀死对方，到最后反而会不舍得离开他，皆因彼此熟门熟路，相斗相倚。</p>
-<p>这个人很冷漠很生人勿近，你怎么看也看不穿他的心的，更甭说想当他的朋友了；他同时又是个很厉害的角色，你肯定不能轻易嬴过他，所以当他的敌人也绝非一件好事。所以你和他之间皆非知己亦非敌人，是一种很微妙的关系。</p>
-]]></content>
-      <categories>
-        <category>好句摘抄</category>
-      </categories>
-      <tags>
-        <tag>难为知己难为敌</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>年轻人的第一篇期刊</title>
     <url>/098-periodicals/</url>
     <content><![CDATA[<p>不动声色 安心蛰伏 第一篇期刊get<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/2021/08/24/20210824174622936.jpeg" alt=""></p>
@@ -1750,8 +1750,8 @@
     <content><![CDATA[<p>加入了反996活动 难以想象 这场运动已经在Github如此声势浩大了<br>主页添加了一些资料 反996活动的主办方 各种衍生链接 还有最重要的黑名单和白名单公司<br>所有项目都在GPL证书的前提下加入了Anti 996 License<br>一方面是提前给自己踩踩坑 了解一下996<br>另外一方面在自由开源的影响下 希望能够在这场活动中尽一份力<br>打算加入另外一个开源代码组织 已经提交了申请资料 在等审核通过<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826231226.webp" alt=""><br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826231238.webp" alt=""></p>
 ]]></content>
       <categories>
-        <category>极客之旅</category>
         <category>生活感悟</category>
+        <category>极客之旅</category>
       </categories>
       <tags>
         <tag>Anti996</tag>
@@ -1819,6 +1819,22 @@
       </tags>
   </entry>
   <entry>
+    <title>年轻人的头两份软著</title>
+    <url>/103-software-publications/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01/2022/01/20/20220120192413837.jpg" alt=""></p>
+<p>在一篇期刊之后，又是两份软著。软著获得难度不高，代码方面不是最复杂的地方，最头疼的地方在于申请。  </p>
+<p>申请有两种方式，，一种是直接去官网进行申请，另外一种是通过阿里云帮助申请，我采用的方式是阿里云代为申请，会方便许多，然后就是等待证书批来下，大概需要2-4个月时间。两份证书，用了3个多月的时间审核，在1月份批下来，整体还算流畅。</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+        <category>项目展示</category>
+        <category>学术研究</category>
+      </categories>
+      <tags>
+        <tag>软件著作</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>选题说明</title>
     <url>/104-select-topic/</url>
     <content><![CDATA[<h1 id="课题简介"><a href="#课题简介" class="headerlink" title="课题简介"></a>课题简介</h1><p>财务行业的发票识别及财务做账问题一直是会计行业关注的焦点问题，在这其中发票信息填录尤其重要。近年来随着企业之间财务交易越来越频繁，企业中财务处理也日趋频繁，但传统的人工填录方法效率较低，而且易于出错；在这样的背景下，社会急需一整套发票自动填录系统来解决这些问题。本课题使用Python构建增值<strong>税发票识别系统</strong>，具有一定的工程意义。</p>
@@ -1881,22 +1897,6 @@
         <tag>CRNN</tag>
         <tag>CTPN</tag>
         <tag>CTC</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>年轻人的头两份软著</title>
-    <url>/103-software-publications/</url>
-    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01/2022/01/20/20220120192413837.jpg" alt=""></p>
-<p>在一篇期刊之后，又是两份软著。软著获得难度不高，代码方面不是最复杂的地方，最头疼的地方在于申请。  </p>
-<p>申请有两种方式，，一种是直接去官网进行申请，另外一种是通过阿里云帮助申请，我采用的方式是阿里云代为申请，会方便许多，然后就是等待证书批来下，大概需要2-4个月时间。两份证书，用了3个多月的时间审核，在1月份批下来，整体还算流畅。</p>
-]]></content>
-      <categories>
-        <category>极客之旅</category>
-        <category>项目展示</category>
-        <category>学术研究</category>
-      </categories>
-      <tags>
-        <tag>软件著作</tag>
       </tags>
   </entry>
   <entry>
@@ -2077,7 +2077,13 @@
 </li>
 </ul>
 <p>[1]: 这是一个 <em>注脚</em> 的 <strong>文本</strong>。</p>
-<p>[2]: 这是另一个 <em>注脚</em> 的 <strong>文本</strong>。<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start:>https://www.zybuluo.com
+<p>[2]: 这是另一个 <em>注脚</em> 的 <strong>文本</strong>。<script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!</textarea><textarea id="sequence-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"}</textarea><script>  var code = document.getElementById("sequence-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-0", options);</script><textarea id="sequence-1-code" style="display: none">Title: Here is a title
+A->B: Normal line
+B-->C: Dashed line
+C->>D: Open arrow
+D-->>A: Dashed open arrow</textarea><textarea id="sequence-1-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"}</textarea><script>  var code = document.getElementById("sequence-1-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-1-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-1", options);</script><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start:>https://www.zybuluo.com
 io=>inputoutput: verification
 op=>operation: Your Operation
 cond=>condition: Yes or No?
@@ -2086,13 +2092,7 @@ e=>end
 
 st->io->op->cond
 cond(yes)->e
-cond(no)->sub->io</textarea><textarea id="flowchart-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script><script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">Alice->Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob-->Alice: I am good thanks!</textarea><textarea id="sequence-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("sequence-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-0", options);</script><textarea id="sequence-1-code" style="display: none">Title: Here is a title
-A->B: Normal line
-B-->C: Dashed line
-C->>D: Open arrow
-D-->>A: Dashed open arrow</textarea><textarea id="sequence-1-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("sequence-1-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-1-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-1", options);</script></p>
+cond(no)->sub->io</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
 ]]></content>
       <categories>
         <category>技能学习记录</category>
@@ -2150,25 +2150,6 @@ D-->>A: Dashed open arrow</textarea><textarea id="sequence-1-options" style="dis
       </tags>
   </entry>
   <entry>
-    <title>导师给的答辩经验</title>
-    <url>/114-defense-experience/</url>
-    <content><![CDATA[<p>按照往年答辩经验，我的几个个人建议：</p>
-<p>1、调试好自己的系统，一定不要到时候崩溃，闪退，严重bug</p>
-<p>2、系统中的测试数据准备好，不要很随意，举个例子，如果是类似电商系统，不要出现用户名111,商品名1111，图文不对应，随便放个照片，评论内容随意1111这样实验数据要像模像样，真实可靠</p>
-<p>3、论文再仔细检查不要有明显错误和低级错误，按照打印要求打印，按照装订要求装订，注意顺序，该给成绩个签字的地方请指导老师填好。</p>
-<p>4、该有评语的地方填好不要缺</p>
-<p>5、自己先练习一下讲讲系统，边演示边讲，注意逻辑，和扬长避短。</p>
-<p>6、把自己的核心业务逻辑整理通顺，一般是答辩老师的提问点。举个例子：比如预定的，要考虑到机制的合理性，比如同一时段不能冲突，比如不能别人已经释放的可以被预定，比如过去的历史时间不可以预定</p>
-<p>7、答辩老师提出问题虚心接受，不要和老师顶嘴，也不要说“我不清楚，别人帮忙的”之类的，也不要说“老师任务书没有说”，总之不要让答辩评委觉得你顶嘴、作弊、甩锅。</p>
-]]></content>
-      <categories>
-        <category>学术研究</category>
-      </categories>
-      <tags>
-        <tag>答辩</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>22年肖八第一套21题</title>
     <url>/113-xiaoba/</url>
     <content><![CDATA[<p>A.之前战时的时候使用的是余粮收集制。</p>
@@ -2189,13 +2170,38 @@ D-->>A: Dashed open arrow</textarea><textarea id="sequence-1-options" style="dis
       </tags>
   </entry>
   <entry>
-    <title>考研6月总结2</title>
-    <url>/116-June-Summary-2/</url>
-    <content><![CDATA[<p>1.复习全书换成36讲</p>
-<p>2.李永乐真题换成李艳芳真题</p>
-<p>3.买徐涛核心考案，放着等政治复习</p>
-<p>4.李艳芳基础，张宇基础，李林基础，B站其他讲解，数一答疑。接下来主要从这5个地方获取不会的内容</p>
-<p>5.墙灰比较麻烦，靠墙的书上都是灰，定做一个挡板隔一下</p>
+    <title>导师给的答辩经验</title>
+    <url>/114-defense-experience/</url>
+    <content><![CDATA[<p>按照往年答辩经验，我的几个个人建议：</p>
+<p>1、调试好自己的系统，一定不要到时候崩溃，闪退，严重bug</p>
+<p>2、系统中的测试数据准备好，不要很随意，举个例子，如果是类似电商系统，不要出现用户名111,商品名1111，图文不对应，随便放个照片，评论内容随意1111这样实验数据要像模像样，真实可靠</p>
+<p>3、论文再仔细检查不要有明显错误和低级错误，按照打印要求打印，按照装订要求装订，注意顺序，该给成绩个签字的地方请指导老师填好。</p>
+<p>4、该有评语的地方填好不要缺</p>
+<p>5、自己先练习一下讲讲系统，边演示边讲，注意逻辑，和扬长避短。</p>
+<p>6、把自己的核心业务逻辑整理通顺，一般是答辩老师的提问点。举个例子：比如预定的，要考虑到机制的合理性，比如同一时段不能冲突，比如不能别人已经释放的可以被预定，比如过去的历史时间不可以预定</p>
+<p>7、答辩老师提出问题虚心接受，不要和老师顶嘴，也不要说“我不清楚，别人帮忙的”之类的，也不要说“老师任务书没有说”，总之不要让答辩评委觉得你顶嘴、作弊、甩锅。</p>
+]]></content>
+      <categories>
+        <category>学术研究</category>
+      </categories>
+      <tags>
+        <tag>答辩</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研6月总结1</title>
+    <url>/115-June-Summary-1/</url>
+    <content><![CDATA[<p>1.先把武忠祥，李永乐Youtube上去年没听完的基础课全部结束掉。结束掉之后，直接跟张宇，不会的看张宇基础班理解</p>
+<p>2.线代里的正交规范化，施密特正交，向量空间李永乐没讲。B站收藏夹里存了厦门大学老师的课，以及本地下载了22张宇线代基础课可以作为补充看</p>
+<p>3.概率听Youtube余丙森的基础课，听完直接跟张宇</p>
+<p>4.8月中旬左右，880基础题全部写一遍</p>
+<p>5.基础结束复习全书可以收起来了，用张宇36讲作为高数、线代、概率强化讲义</p>
+<p>6.强化阶段采用做880综合题+1000题+看讲义复习</p>
+<p>7.6月底开始专业课，王道的课+935辅导讲义+王道书上例题(maybe)</p>
+<p>8.7月底开始政治，徐涛强化课+1000题(maybe)</p>
+<p>9.政治要买徐涛的核心考案，后面做肖秀荣8+4的时候，换腿姐的背诵手册</p>
+<p>10.英语后期买王江涛作文背</p>
+<p>11.做模拟卷的时候，买数学答题卡+408答题卡+英语作文答题纸</p>
 ]]></content>
       <categories>
         <category>考研复盘</category>
@@ -2226,19 +2232,13 @@ D-->>A: Dashed open arrow</textarea><textarea id="sequence-1-options" style="dis
       </tags>
   </entry>
   <entry>
-    <title>考研6月总结1</title>
-    <url>/115-June-Summary-1/</url>
-    <content><![CDATA[<p>1.先把武忠祥，李永乐Youtube上去年没听完的基础课全部结束掉。结束掉之后，直接跟张宇，不会的看张宇基础班理解</p>
-<p>2.线代里的正交规范化，施密特正交，向量空间李永乐没讲。B站收藏夹里存了厦门大学老师的课，以及本地下载了22张宇线代基础课可以作为补充看</p>
-<p>3.概率听Youtube余丙森的基础课，听完直接跟张宇</p>
-<p>4.8月中旬左右，880基础题全部写一遍</p>
-<p>5.基础结束复习全书可以收起来了，用张宇36讲作为高数、线代、概率强化讲义</p>
-<p>6.强化阶段采用做880综合题+1000题+看讲义复习</p>
-<p>7.6月底开始专业课，王道的课+935辅导讲义+王道书上例题(maybe)</p>
-<p>8.7月底开始政治，徐涛强化课+1000题(maybe)</p>
-<p>9.政治要买徐涛的核心考案，后面做肖秀荣8+4的时候，换腿姐的背诵手册</p>
-<p>10.英语后期买王江涛作文背</p>
-<p>11.做模拟卷的时候，买数学答题卡+408答题卡+英语作文答题纸</p>
+    <title>考研6月总结2</title>
+    <url>/116-June-Summary-2/</url>
+    <content><![CDATA[<p>1.复习全书换成36讲</p>
+<p>2.李永乐真题换成李艳芳真题</p>
+<p>3.买徐涛核心考案，放着等政治复习</p>
+<p>4.李艳芳基础，张宇基础，李林基础，B站其他讲解，数一答疑。接下来主要从这5个地方获取不会的内容</p>
+<p>5.墙灰比较麻烦，靠墙的书上都是灰，定做一个挡板隔一下</p>
 ]]></content>
       <categories>
         <category>考研复盘</category>
@@ -2302,6 +2302,98 @@ D-->>A: Dashed open arrow</textarea><textarea id="sequence-1-options" style="dis
       <tags>
         <tag>雪中悍刀行</tag>
         <tag>文案</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>后出师表</title>
+    <url>/121-northern-memorial/</url>
+    <content><![CDATA[<p>先帝深虑汉、贼不两立，王业不偏安，故托臣以讨贼也。以先帝之明，量臣之才，固知臣伐贼，才弱敌强也。然不伐贼，王业亦亡。惟坐而待亡，孰与伐之？是故托臣而弗疑也。</p>
+<p>臣受命之日，寝不安席，食不甘味。思惟北征。宜先入南。故五月渡泸，深入不毛，并日而食；臣非不自惜也，顾王业不可得偏安于蜀都，故冒危难，以奉先帝之遗意也，而议者谓为非计。今贼适疲于西，又务于东，兵法乘劳，此进趋之时也。谨陈其事如左：</p>
+<p>高帝明并日月，谋臣渊深，然涉险被创，危然后安。今陛下未及高帝，谋臣不如良、平，而欲以长策取胜，坐定天下，此臣之未解一也。</p>
+<p>刘繇、王朗各据州郡，论安言计，动引圣人，群疑满腹，众难塞胸，今岁不战，明年不征，使孙策坐大，遂并江东，此臣之未解二也。</p>
+<p>曹操智计，殊绝于人，其用兵也，仿佛孙、吴，然困于南阳，险于乌巢，危于祁连，逼于黎阳，几败北山，殆死潼关，然后伪定一时耳。况臣才弱，而欲以不危而定之，此臣之未解三也。</p>
+<p>曹操五攻昌霸不下，四越巢湖不成，任用李服而李服图之，委任夏侯而夏侯败亡，先帝每称操为能，犹有此失，况臣驽下，何能必胜？此臣之未解四也。</p>
+<p>自臣到汉中，中间期年耳，然丧赵云、阳群、马玉、阎芝、丁立、白寿、刘郃、邓铜等及曲长、屯将七十余人，突将、无前、賨叟、青羌、散骑、武骑一千余人。此皆数十年之内所纠合四方之精锐，非一州之所有；若复数年，则损三分之二也，当何以图敌？此臣之未解五也。</p>
+<p>今民穷兵疲，而事不可息；事不可息，则住与行劳费正等。而不及今图之，欲以一州之地，与贼持久，此臣之未解六也。</p>
+<p>夫难平者，事也。昔先帝败军于楚，当此时，曹操拊手，谓天下已定。然后先帝东连吴越，西取巴蜀，举兵北征，夏侯授首，此操之失计，而汉事将成也。然后吴更违盟，关羽毁败，秭归蹉跌，曹丕称帝。凡事如是，难可逆见。臣鞠躬尽瘁，死而后已。至于成败利钝，非臣之明所能逆睹也。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+        <category>好句摘抄</category>
+      </categories>
+      <tags>
+        <tag>后出师表</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录一个我遇到的考研炮灰</title>
+    <url>/122-cannon-fodder/</url>
+    <content><![CDATA[<p>我遇到了一个自信满满，不知悔改的考研炮灰，这是我从被他各种无脑行为打扰，到了解到他学习情况，最后物理心灵上共同逃离的故事。 </p>
+<h1 id="1-和学习无关的内容"><a href="#1-和学习无关的内容" class="headerlink" title="1. 和学习无关的内容"></a>1. 和学习无关的内容</h1><h2 id="1-1-长时间的噪音"><a href="#1-1-长时间的噪音" class="headerlink" title="1.1 长时间的噪音"></a>1.1 长时间的噪音</h2><h3 id="基本情况"><a href="#基本情况" class="headerlink" title="基本情况"></a>基本情况</h3><p>这人坐我后面，每天餐巾纸都要用掉两包，一天到晚抽餐巾纸，抽纸声音一来很频繁，二来他就好像和餐巾纸有仇一样，抽的时候，巨用力，这样每次声音都响，每天抽那么多下，已经形成噪音了。</p>
+<h3 id="第1次沟通失败"><a href="#第1次沟通失败" class="headerlink" title="第1次沟通失败"></a>第1次沟通失败</h3><p>后来，晚上教室就剩我和他了，和他说了一说，他听完我说，直接来一句，我是油性皮肤呀，我不擦我难受，说完，当着我的面，用力一抽，还来一句，哎嘿，就吵你！</p>
+<h2 id="1-2-频繁进出教室"><a href="#1-2-频繁进出教室" class="headerlink" title="1.2 频繁进出教室"></a>1.2 频繁进出教室</h2><h3 id="基本情况-1"><a href="#基本情况-1" class="headerlink" title="基本情况"></a>基本情况</h3><p>这么说吧，我看一节课，1小时，他要出去6-7次吧，走来走去，走来走去，每次走动，声音还大，一天天的次数多了，很吵。</p>
+<h3 id="第2次沟通失败"><a href="#第2次沟通失败" class="headerlink" title="第2次沟通失败"></a>第2次沟通失败</h3><p>后来也问了，他说我喝水多，不能不上厕所；<br>我说，那你少喝点水不就行了，他又说，我不喝水难受。</p>
+<h2 id="1-3-抖音外放-吃味道大声音响东西"><a href="#1-3-抖音外放-吃味道大声音响东西" class="headerlink" title="1.3 抖音外放 吃味道大声音响东西"></a>1.3 抖音外放 吃味道大声音响东西</h2><h3 id="基本情况-2"><a href="#基本情况-2" class="headerlink" title="基本情况"></a>基本情况</h3><p>每天晚上22点准时出去，22点半准时回来，回来的时候，伴随着抖音的外放而来。</p>
+<p>后来我注意到，他带着耳机，只是耳机开到和外放一样响，在那边看抖音，看完抖音了，继续听歌，等到他听爽了，才开始慢慢悠悠，拿出吃的，嘶拉一下拉开包装，而且不仅吃起来声音大，味道也大。</p>
+<p>并且，你吃就吃好了嘛，你用背单词来掩护干啥，你声音这么大，每天就那么几个破单词，都不背新的，我听着你天天背，我都记住了，你还在那边背。</p>
+<h3 id="第3次沟通失败"><a href="#第3次沟通失败" class="headerlink" title="第3次沟通失败"></a>第3次沟通失败</h3><p>教室里有规定，不要吃东西，但老师们也说了，就算吃，能理解，吃点声音小没味道的没啥大问题。我和他说了，他说吃东西怎么了，我晚上就是要吃东西！</p>
+<h2 id="1-4-门窗黑板"><a href="#1-4-门窗黑板" class="headerlink" title="1.4 门窗黑板"></a>1.4 门窗黑板</h2><h3 id="门"><a href="#门" class="headerlink" title="门"></a>门</h3><p>教室里的门，这边一共10个教室左右，其他教室门全是开着的，或者这么说，进进出出，没人会在意开还是关，我一路走过来，全是开着，或者半掩着的。<br>然后他，每次进出门，一定要把门关的严严实实</p>
+<h3 id="窗"><a href="#窗" class="headerlink" title="窗"></a>窗</h3><p>每天傍晚，他都要，趁着我们出去吃饭，把一旁窗户打开，教室里除了你吃东西外，没什么其他味道，你也用不到开窗户。而且，夏天外面蚊子那么多，你天天开窗户，这不是养蛊呢吗？</p>
+<h3 id="黑板"><a href="#黑板" class="headerlink" title="黑板"></a>黑板</h3><p>原本黑板上有倒计时，有个女生在写，后来这女生回家了，他就开始自管自写来写去了。<br>那个考研倒计时，他就总是少写一天，例如距离考研还有44天，他写成43天，如果是少写一天，那么到23号，就是距离考研还有0天，24号就变成了-1天了，这种很简单的错误，他怎么就没意识到呢？</p>
+<h3 id="第4次沟通失败"><a href="#第4次沟通失败" class="headerlink" title="第4次沟通失败"></a>第4次沟通失败</h3><p>关于门窗，门我本来就不在乎，没什么必要说多余的话；窗户开着，搞得教室里全是飞来飞去的虫，有时候还有蟑螂，于是我回来会把窗户关上，身上喷点驱蚊喷剂，也没和他沟通。<br>关于黑板，这么明显的数字BUG，我作为考数一的计算机专业学生，实在是看不下去这么低级的错误，虽然知道说了没啥结果，还是在我专业性的驱使下说了。<br>但他的回答是，我就是觉得之前人家写错了，我觉得这样很好。</p>
+<h1 id="2-和学习相关的内容"><a href="#2-和学习相关的内容" class="headerlink" title="2. 和学习相关的内容"></a>2. 和学习相关的内容</h1><h2 id="2-1-择校"><a href="#2-1-择校" class="headerlink" title="2.1 择校"></a>2.1 择校</h2><h3 id="最初选择"><a href="#最初选择" class="headerlink" title="最初选择"></a>最初选择</h3><p>之前一块隔离的时候，他说他是跨考，而且要一上来就考408四本书，公共课是数二英二。跨考408的人也不少，我也不知道他水平如何，因此对他说的天花乱坠的那些东西，我也就没啥感觉。然后他说要考杭师大，还特意说了，自己本科不好，不敢报多好的学校。</p>
+<h3 id="改学校"><a href="#改学校" class="headerlink" title="改学校"></a>改学校</h3><p>后来他说他要考福建师范学校。<br>这里我就很迷惑，他既然要跨考计算机，而且他也说就是看计算机赚钱多一点才考计算机，那么你既然不选杭师大了，那么可以选一些计算机专业强势一点的双非学校啊，比如桂林电子科技，对他以后想赚钱来说，足够用了；或者干脆考海南大学，牌子是211，这种简历上可以让他过关的学校。但是，他反而选什么福建师范大学，我问他是不是要定居福建，他说不是的，就是看着有个师范两个字，好一点。</p>
+<blockquote>
+<p>福建师范大学在当地就业还行，出省了差了许多。他是个温州人，不在福建定居情况下，纯粹用带有师范两个字选学校，没有什么其他依据，实在是过于草率</p>
+</blockquote>
+<h2 id="2-2-专业课"><a href="#2-2-专业课" class="headerlink" title="2.2 专业课"></a>2.2 专业课</h2><h3 id="自我攻略能力MAX"><a href="#自我攻略能力MAX" class="headerlink" title="自我攻略能力MAX"></a>自我攻略能力MAX</h3><p>直接说结果，他考408，408课看了半年，第一遍还没看完，一直到11月份，题还一道没写。<br>我5月份劝他，换个1-2门专业课的吧，8月份劝他提高效率，11月份再劝他要提高效率了。他始终不听。<br>他和我说的话，始终是，”已经这样了，没办法了，我只能硬着头皮学408学下去。”<br>我真的满脸问号，已经什么样了啊，什么叫没办法？11月份确认结束了，你说没办法，这还能说得过去。5月份、8月份的时候，叫哪门子没办法，有人拿枪逼着你让你学408了？还是你除了杭师大，福建师范，没有其他学校选了？？？</p>
+<h3 id="对计算机的认知浅薄"><a href="#对计算机的认知浅薄" class="headerlink" title="对计算机的认知浅薄"></a>对计算机的认知浅薄</h3><p>他会问我，你们学计算机的，是不是要学Java啊，巴拉巴拉说一大堆，总之就是一句话，他觉得的程序员，必须要学Java。说实话，我没怎么学过Java，我说计算机相关研究生，大部分都是要来一套深度学习这类的，要用Python，他就一副接受不了的表情，没话了。</p>
+<blockquote>
+<p>这里我想起来，我见过挺多，被那种培训机构糊弄的人，也是一副Java天下第一以及世界上只有Java的样子。不知道，他这种想法哪来的，也没什么兴趣多问</p>
+</blockquote>
+<h2 id="2-3-数学"><a href="#2-3-数学" class="headerlink" title="2.3 数学"></a>2.3 数学</h2><p>既然上面说到了，他单专业课就看了半年，还没看完，那他公共课如何呢？<br>到了11月份，他三门公共课，数二英二政治，可以说是一塌糊涂，乱七八糟。</p>
+<p>到11月份为止，他880高数部分写了3章，线代课还有2章没看完，880线代部分一题未写。<br>除了880以外，他1800、660、1000题都买了，但那些，真的一道未写了。</p>
+<p>我问，你为什么不写题目呢，他说，我已经会了，没必要写，我现在只是忘了，之后再回忆一下就好了。<br>我问，你是怎么判断出，你不需要写了的呢，他说，我看小红书上，不写的人多的是，就写两套真题去考试，没问题的。</p>
+<h2 id="2-4-英语"><a href="#2-4-英语" class="headerlink" title="2.4 英语"></a>2.4 英语</h2><p>上面说过，他背单词，实际上没啥效果，在英二真题里面，体现很淋漓尽致。<br>他不写完型、新题型、翻译，只写阅读，这也行吧。<br>但是他一篇阅读要45分钟，最快也要30分钟，真的很离谱，就一直盯着，好像盯着就全对了。<br>结果不出所料，5道错4道，少点错3道。他最好的错2个，他还在那篇阅读上，画了个笑脸，配上文字“嘻嘻，做的真好”。</p>
+<p>我问他，那你作文怎么办啊？他说，背一篇就够了，不需要背其他的了，我也不知道，他说的一篇模板，还是一篇预测作文。</p>
+<h2 id="2-5-政治"><a href="#2-5-政治" class="headerlink" title="2.5 政治"></a>2.5 政治</h2><p>徐涛强化课他没看，肖秀荣1000题他也没写，后面肖八也不写。</p>
+<p>我问他，你肖四打算怎么背啊，他说，背8道题目足够了。</p>
+<blockquote>
+<p>是我没有的自信了</p>
+</blockquote>
+<h1 id="3-补充内容"><a href="#3-补充内容" class="headerlink" title="3. 补充内容"></a>3. 补充内容</h1><h2 id="3-1-对考985的不屑一顾"><a href="#3-1-对考985的不屑一顾" class="headerlink" title="3.1 对考985的不屑一顾"></a>3.1 对考985的不屑一顾</h2><p>这边有2个考清华的巨佬，一男一女，男生文科，女生工科电路，每天复习到凌晨3点，早上8点又准时出现在教室，我很佩服。</p>
+<p>在劝诫这个炮灰的同时，我会用这些人做例子，劝他赶紧提高效率呀，但他却说，他们肯定考不上，人家考的可是清华，怎么可能。</p>
+<p>完事，对我们几个考985的，话里话外不屑一顾，透露出来的意思就是，他一定能上岸，我们不行。</p>
+<h2 id="3-2-对211室友不屑一顾"><a href="#3-2-对211室友不屑一顾" class="headerlink" title="3.2 对211室友不屑一顾"></a>3.2 对211室友不屑一顾</h2><p>之前隔离，我和炮灰的室友，也在一块隔离，他是个211本科的朋友，聊过几次，他各种学习方法，对人对事的态度，我还是比较认可的。</p>
+<p>可是炮灰同志和我说，他觉得他这个211的室友，说的很多话，他都不认同，都觉得是错的。</p>
+<p>离谱的点在于，他既然都不认同，还天天拽着室友，聊到凌晨3点不睡觉。不过，这朋友和我说，他其实也无所谓，比较佛系，炮灰同志想聊到3点，那就陪他聊吧。</p>
+<h2 id="3-3-好打听别人"><a href="#3-3-好打听别人" class="headerlink" title="3.3 好打听别人"></a>3.3 好打听别人</h2><p>从多次和他沟通对话中，我能得知很多人的事情，都是他主动给我说的，这些内容包括，谁谁谁考什么学校，现在进度怎么样，甚至连人家专业课考哪几本书都知道。我来这边，也就几个熟悉的朋友或者像这炮灰坐我后面，离我比较近一点，可能对他们清楚一点，但他可是都要加一遍群里面人的微信，问问人家，我微信一开始就是不让人从群里加的，他还特地跑来找我，让我去加他微信。而且，每天教室里，谁谁谁做了什么事，他都喜欢去观察，去记下来说。</p>
+<blockquote>
+<p>就他这样，喜欢打听别人的事，喜欢观察人，既把精力放在各种琐事上面，又把精力放在别人干了什么事情上面，还考个P的研究生啊</p>
+</blockquote>
+<h2 id="3-4-事件发生背景"><a href="#3-4-事件发生背景" class="headerlink" title="3.4 事件发生背景"></a>3.4 事件发生背景</h2><p>整个事情发生在考研寄宿中心里面，炮灰是工作了辞职第一次考研，我是二战。这里的人，上限很高，下限也很低。我并不是碰巧坐在他前面，而是我很早就来这里选好了位置，后面由于疫情，过来之前要先在外面隔离，然后进来。隔离差不多的时候，他把我过去的名额抢了，比我先到，然后他看我坐哪里，选在了我后面。当时我以为，无非就是一块隔离住一起过，他选我后面，之后可能问问我一些学习方面的事情吧，没成想他是这么一个人。</p>
+<blockquote>
+<p>具体是怎么抢走的呢？<br>一共五人隔离，第一个到的是个大佬，来了一周，我们一块住了一周，他待满半个月就过去了。<br>我比炮灰早来一天，我在六楼找了一个付费自习室，白天就在那复习(那是个商业宿舍楼，我们在同一栋楼的八楼进行隔离，六楼正好有付费自习室)。<br>后面我时间到了，他就趁机，让来这边的老师，先带他走了。我虽然那个时候在自习室复习，但我也和带人老师说了，我不在的话，微信找我就行，我上楼打包东西走。<br>后来我才了解到，他每天都在微信上，跑去找这个来带人的老师，聊好久，所以他能抢走我的名额，不奇怪。</p>
+</blockquote>
+<h1 id="4-逃离"><a href="#4-逃离" class="headerlink" title="4. 逃离"></a>4. 逃离</h1><h2 id="4-1-物理逃离"><a href="#4-1-物理逃离" class="headerlink" title="4.1 物理逃离"></a>4.1 物理逃离</h2><p>5月份到8月份，再到11月份，他一次次挑战我和教室里其他人的下限，最后11月份，我确实受不了了他，于是果断，找老师，换到了隔壁去，实现了物理上，逃离这个人，他对我噪音的影响也好，各种奇怪的话的影响也好，物理上直接给他隔绝，最后这段复习时间了，不能被这炮灰影响了。</p>
+<h2 id="4-2-心灵逃离"><a href="#4-2-心灵逃离" class="headerlink" title="4.2 心灵逃离"></a>4.2 心灵逃离</h2><p>炮灰同志有两句话，第一句，“你不是机器，你是人”<br>在我规劝他的时候，我会说最后这段时间了，每天要把任务完成，你再不提高你的效率，就真的要成为炮灰了，他说“你不是机器，你是人，我心情好多学一点，不好少学一点，我很焦虑，压力大的！”</p>
+<p>我一时间还没有转过思路来，我就去找了我的导师，他说现在考研这个阶段，就是要要求我们当机器，考清华的比我还更像机器，到了最后冲刺阶段了，不当了机器能行吗，当一个机器，好过于考不上。把我的一个小小的心结给解开了。</p>
+<p>第二句话，“压力虽然是借口，但也是原因”<br>我听完他各种无病呻吟，像“什么不喝水难受，只能喝水，多上厕所走来走去”，“不擦脸难受，只能擦脸”，“没办法了，只能考408”，我说，你把精力放这些上面，找这么多借口，还要什么精力来考研呢？这个时候，他就来了他的第二句金句，“压力虽然是借口，但也是原因”。</p>
+<p>同样对于这句话，我的导师说这句话只能说明，抗压能力和韧性不够，只是他承受不了，才会把这个当做原因。</p>
+<h1 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h1><p>考研是一场国家性选拔人才的考试，有其固定的标准在那里，就算目标院校是国家线，那么也有国家线这个标准在那里。我们要做的，就是尊重这个事实，摒除杂念，提高效率，达到硬性要求，其实就这么简单。</p>
+<p>这个炮灰，在相当一段时间，打扰我，还和他沟通无效，一定程度上，已经成为了我的杂念，我应该更早，就换教室，更早找导师，寻求解答，不过好在，其实他对我的学习，也没有产生太大影响，现在没有了他，我效率更高，就是一件好事了。</p>
+<p>炮灰的故事，告诉我们，有一股无形的力量在阻止你，那就是你自己。</p>
+<p>而我的故事，告诉我们，遇到杂念，多问问自己Would it help? 做到及时止损</p>
+<p>最后送大家一张图，希望能帮到你</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202212041852547.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>生活感悟</category>
+        <category>考研复盘</category>
+      </categories>
+      <tags>
+        <tag>考研炮灰</tag>
+        <tag>规劝傻逼</tag>
       </tags>
   </entry>
   <entry>
@@ -2463,105 +2555,13 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
       </tags>
   </entry>
   <entry>
-    <title>后出师表</title>
-    <url>/121-northern-memorial/</url>
-    <content><![CDATA[<p>先帝深虑汉、贼不两立，王业不偏安，故托臣以讨贼也。以先帝之明，量臣之才，固知臣伐贼，才弱敌强也。然不伐贼，王业亦亡。惟坐而待亡，孰与伐之？是故托臣而弗疑也。</p>
-<p>臣受命之日，寝不安席，食不甘味。思惟北征。宜先入南。故五月渡泸，深入不毛，并日而食；臣非不自惜也，顾王业不可得偏安于蜀都，故冒危难，以奉先帝之遗意也，而议者谓为非计。今贼适疲于西，又务于东，兵法乘劳，此进趋之时也。谨陈其事如左：</p>
-<p>高帝明并日月，谋臣渊深，然涉险被创，危然后安。今陛下未及高帝，谋臣不如良、平，而欲以长策取胜，坐定天下，此臣之未解一也。</p>
-<p>刘繇、王朗各据州郡，论安言计，动引圣人，群疑满腹，众难塞胸，今岁不战，明年不征，使孙策坐大，遂并江东，此臣之未解二也。</p>
-<p>曹操智计，殊绝于人，其用兵也，仿佛孙、吴，然困于南阳，险于乌巢，危于祁连，逼于黎阳，几败北山，殆死潼关，然后伪定一时耳。况臣才弱，而欲以不危而定之，此臣之未解三也。</p>
-<p>曹操五攻昌霸不下，四越巢湖不成，任用李服而李服图之，委任夏侯而夏侯败亡，先帝每称操为能，犹有此失，况臣驽下，何能必胜？此臣之未解四也。</p>
-<p>自臣到汉中，中间期年耳，然丧赵云、阳群、马玉、阎芝、丁立、白寿、刘郃、邓铜等及曲长、屯将七十余人，突将、无前、賨叟、青羌、散骑、武骑一千余人。此皆数十年之内所纠合四方之精锐，非一州之所有；若复数年，则损三分之二也，当何以图敌？此臣之未解五也。</p>
-<p>今民穷兵疲，而事不可息；事不可息，则住与行劳费正等。而不及今图之，欲以一州之地，与贼持久，此臣之未解六也。</p>
-<p>夫难平者，事也。昔先帝败军于楚，当此时，曹操拊手，谓天下已定。然后先帝东连吴越，西取巴蜀，举兵北征，夏侯授首，此操之失计，而汉事将成也。然后吴更违盟，关羽毁败，秭归蹉跌，曹丕称帝。凡事如是，难可逆见。臣鞠躬尽瘁，死而后已。至于成败利钝，非臣之明所能逆睹也。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-        <category>好句摘抄</category>
-      </categories>
-      <tags>
-        <tag>后出师表</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>记录一个我遇到的考研炮灰</title>
-    <url>/122-cannon-fodder/</url>
-    <content><![CDATA[<p>我遇到了一个自信满满，不知悔改的考研炮灰，这是我从被他各种无脑行为打扰，到了解到他学习情况，最后物理心灵上共同逃离的故事。 </p>
-<h1 id="1-和学习无关的内容"><a href="#1-和学习无关的内容" class="headerlink" title="1. 和学习无关的内容"></a>1. 和学习无关的内容</h1><h2 id="1-1-长时间的噪音"><a href="#1-1-长时间的噪音" class="headerlink" title="1.1 长时间的噪音"></a>1.1 长时间的噪音</h2><h3 id="基本情况"><a href="#基本情况" class="headerlink" title="基本情况"></a>基本情况</h3><p>这人坐我后面，每天餐巾纸都要用掉两包，一天到晚抽餐巾纸，抽纸声音一来很频繁，二来他就好像和餐巾纸有仇一样，抽的时候，巨用力，这样每次声音都响，每天抽那么多下，已经形成噪音了。</p>
-<h3 id="第1次沟通失败"><a href="#第1次沟通失败" class="headerlink" title="第1次沟通失败"></a>第1次沟通失败</h3><p>后来，晚上教室就剩我和他了，和他说了一说，他听完我说，直接来一句，我是油性皮肤呀，我不擦我难受，说完，当着我的面，用力一抽，还来一句，哎嘿，就吵你！</p>
-<h2 id="1-2-频繁进出教室"><a href="#1-2-频繁进出教室" class="headerlink" title="1.2 频繁进出教室"></a>1.2 频繁进出教室</h2><h3 id="基本情况-1"><a href="#基本情况-1" class="headerlink" title="基本情况"></a>基本情况</h3><p>这么说吧，我看一节课，1小时，他要出去6-7次吧，走来走去，走来走去，每次走动，声音还大，一天天的次数多了，很吵。</p>
-<h3 id="第2次沟通失败"><a href="#第2次沟通失败" class="headerlink" title="第2次沟通失败"></a>第2次沟通失败</h3><p>后来也问了，他说我喝水多，不能不上厕所；<br>我说，那你少喝点水不就行了，他又说，我不喝水难受。</p>
-<h2 id="1-3-抖音外放-吃味道大声音响东西"><a href="#1-3-抖音外放-吃味道大声音响东西" class="headerlink" title="1.3 抖音外放 吃味道大声音响东西"></a>1.3 抖音外放 吃味道大声音响东西</h2><h3 id="基本情况-2"><a href="#基本情况-2" class="headerlink" title="基本情况"></a>基本情况</h3><p>每天晚上22点准时出去，22点半准时回来，回来的时候，伴随着抖音的外放而来。</p>
-<p>后来我注意到，他带着耳机，只是耳机开到和外放一样响，在那边看抖音，看完抖音了，继续听歌，等到他听爽了，才开始慢慢悠悠，拿出吃的，嘶拉一下拉开包装，而且不仅吃起来声音大，味道也大。</p>
-<p>并且，你吃就吃好了嘛，你用背单词来掩护干啥，你声音这么大，每天就那么几个破单词，都不背新的，我听着你天天背，我都记住了，你还在那边背。</p>
-<h3 id="第3次沟通失败"><a href="#第3次沟通失败" class="headerlink" title="第3次沟通失败"></a>第3次沟通失败</h3><p>教室里有规定，不要吃东西，但老师们也说了，就算吃，能理解，吃点声音小没味道的没啥大问题。我和他说了，他说吃东西怎么了，我晚上就是要吃东西！</p>
-<h2 id="1-4-门窗黑板"><a href="#1-4-门窗黑板" class="headerlink" title="1.4 门窗黑板"></a>1.4 门窗黑板</h2><h3 id="门"><a href="#门" class="headerlink" title="门"></a>门</h3><p>教室里的门，这边一共10个教室左右，其他教室门全是开着的，或者这么说，进进出出，没人会在意开还是关，我一路走过来，全是开着，或者半掩着的。<br>然后他，每次进出门，一定要把门关的严严实实</p>
-<h3 id="窗"><a href="#窗" class="headerlink" title="窗"></a>窗</h3><p>每天傍晚，他都要，趁着我们出去吃饭，把一旁窗户打开，教室里除了你吃东西外，没什么其他味道，你也用不到开窗户。而且，夏天外面蚊子那么多，你天天开窗户，这不是养蛊呢吗？</p>
-<h3 id="黑板"><a href="#黑板" class="headerlink" title="黑板"></a>黑板</h3><p>原本黑板上有倒计时，有个女生在写，后来这女生回家了，他就开始自管自写来写去了。<br>那个考研倒计时，他就总是少写一天，例如距离考研还有44天，他写成43天，如果是少写一天，那么到23号，就是距离考研还有0天，24号就变成了-1天了，这种很简单的错误，他怎么就没意识到呢？</p>
-<h3 id="第4次沟通失败"><a href="#第4次沟通失败" class="headerlink" title="第4次沟通失败"></a>第4次沟通失败</h3><p>关于门窗，门我本来就不在乎，没什么必要说多余的话；窗户开着，搞得教室里全是飞来飞去的虫，有时候还有蟑螂，于是我回来会把窗户关上，身上喷点驱蚊喷剂，也没和他沟通。<br>关于黑板，这么明显的数字BUG，我作为考数一的计算机专业学生，实在是看不下去这么低级的错误，虽然知道说了没啥结果，还是在我专业性的驱使下说了。<br>但他的回答是，我就是觉得之前人家写错了，我觉得这样很好。</p>
-<h1 id="2-和学习相关的内容"><a href="#2-和学习相关的内容" class="headerlink" title="2. 和学习相关的内容"></a>2. 和学习相关的内容</h1><h2 id="2-1-择校"><a href="#2-1-择校" class="headerlink" title="2.1 择校"></a>2.1 择校</h2><h3 id="最初选择"><a href="#最初选择" class="headerlink" title="最初选择"></a>最初选择</h3><p>之前一块隔离的时候，他说他是跨考，而且要一上来就考408四本书，公共课是数二英二。跨考408的人也不少，我也不知道他水平如何，因此对他说的天花乱坠的那些东西，我也就没啥感觉。然后他说要考杭师大，还特意说了，自己本科不好，不敢报多好的学校。</p>
-<h3 id="改学校"><a href="#改学校" class="headerlink" title="改学校"></a>改学校</h3><p>后来他说他要考福建师范学校。<br>这里我就很迷惑，他既然要跨考计算机，而且他也说就是看计算机赚钱多一点才考计算机，那么你既然不选杭师大了，那么可以选一些计算机专业强势一点的双非学校啊，比如桂林电子科技，对他以后想赚钱来说，足够用了；或者干脆考海南大学，牌子是211，这种简历上可以让他过关的学校。但是，他反而选什么福建师范大学，我问他是不是要定居福建，他说不是的，就是看着有个师范两个字，好一点。</p>
-<blockquote>
-<p>福建师范大学在当地就业还行，出省了差了许多。他是个温州人，不在福建定居情况下，纯粹用带有师范两个字选学校，没有什么其他依据，实在是过于草率</p>
-</blockquote>
-<h2 id="2-2-专业课"><a href="#2-2-专业课" class="headerlink" title="2.2 专业课"></a>2.2 专业课</h2><h3 id="自我攻略能力MAX"><a href="#自我攻略能力MAX" class="headerlink" title="自我攻略能力MAX"></a>自我攻略能力MAX</h3><p>直接说结果，他考408，408课看了半年，第一遍还没看完，一直到11月份，题还一道没写。<br>我5月份劝他，换个1-2门专业课的吧，8月份劝他提高效率，11月份再劝他要提高效率了。他始终不听。<br>他和我说的话，始终是，”已经这样了，没办法了，我只能硬着头皮学408学下去。”<br>我真的满脸问号，已经什么样了啊，什么叫没办法？11月份确认结束了，你说没办法，这还能说得过去。5月份、8月份的时候，叫哪门子没办法，有人拿枪逼着你让你学408了？还是你除了杭师大，福建师范，没有其他学校选了？？？</p>
-<h3 id="对计算机的认知浅薄"><a href="#对计算机的认知浅薄" class="headerlink" title="对计算机的认知浅薄"></a>对计算机的认知浅薄</h3><p>他会问我，你们学计算机的，是不是要学Java啊，巴拉巴拉说一大堆，总之就是一句话，他觉得的程序员，必须要学Java。说实话，我没怎么学过Java，我说计算机相关研究生，大部分都是要来一套深度学习这类的，要用Python，他就一副接受不了的表情，没话了。</p>
-<blockquote>
-<p>这里我想起来，我见过挺多，被那种培训机构糊弄的人，也是一副Java天下第一以及世界上只有Java的样子。不知道，他这种想法哪来的，也没什么兴趣多问</p>
-</blockquote>
-<h2 id="2-3-数学"><a href="#2-3-数学" class="headerlink" title="2.3 数学"></a>2.3 数学</h2><p>既然上面说到了，他单专业课就看了半年，还没看完，那他公共课如何呢？<br>到了11月份，他三门公共课，数二英二政治，可以说是一塌糊涂，乱七八糟。</p>
-<p>到11月份为止，他880高数部分写了3章，线代课还有2章没看完，880线代部分一题未写。<br>除了880以外，他1800、660、1000题都买了，但那些，真的一道未写了。</p>
-<p>我问，你为什么不写题目呢，他说，我已经会了，没必要写，我现在只是忘了，之后再回忆一下就好了。<br>我问，你是怎么判断出，你不需要写了的呢，他说，我看小红书上，不写的人多的是，就写两套真题去考试，没问题的。</p>
-<h2 id="2-4-英语"><a href="#2-4-英语" class="headerlink" title="2.4 英语"></a>2.4 英语</h2><p>上面说过，他背单词，实际上没啥效果，在英二真题里面，体现很淋漓尽致。<br>他不写完型、新题型、翻译，只写阅读，这也行吧。<br>但是他一篇阅读要45分钟，最快也要30分钟，真的很离谱，就一直盯着，好像盯着就全对了。<br>结果不出所料，5道错4道，少点错3道。他最好的错2个，他还在那篇阅读上，画了个笑脸，配上文字“嘻嘻，做的真好”。</p>
-<p>我问他，那你作文怎么办啊？他说，背一篇就够了，不需要背其他的了，我也不知道，他说的一篇模板，还是一篇预测作文。</p>
-<h2 id="2-5-政治"><a href="#2-5-政治" class="headerlink" title="2.5 政治"></a>2.5 政治</h2><p>徐涛强化课他没看，肖秀荣1000题他也没写，后面肖八也不写。</p>
-<p>我问他，你肖四打算怎么背啊，他说，背8道题目足够了。</p>
-<blockquote>
-<p>是我没有的自信了</p>
-</blockquote>
-<h1 id="3-补充内容"><a href="#3-补充内容" class="headerlink" title="3. 补充内容"></a>3. 补充内容</h1><h2 id="3-1-对考985的不屑一顾"><a href="#3-1-对考985的不屑一顾" class="headerlink" title="3.1 对考985的不屑一顾"></a>3.1 对考985的不屑一顾</h2><p>这边有2个考清华的巨佬，一男一女，男生文科，女生工科电路，每天复习到凌晨3点，早上8点又准时出现在教室，我很佩服。</p>
-<p>在劝诫这个炮灰的同时，我会用这些人做例子，劝他赶紧提高效率呀，但他却说，他们肯定考不上，人家考的可是清华，怎么可能。</p>
-<p>完事，对我们几个考985的，话里话外不屑一顾，透露出来的意思就是，他一定能上岸，我们不行。</p>
-<h2 id="3-2-对211室友不屑一顾"><a href="#3-2-对211室友不屑一顾" class="headerlink" title="3.2 对211室友不屑一顾"></a>3.2 对211室友不屑一顾</h2><p>之前隔离，我和炮灰的室友，也在一块隔离，他是个211本科的朋友，聊过几次，他各种学习方法，对人对事的态度，我还是比较认可的。</p>
-<p>可是炮灰同志和我说，他觉得他这个211的室友，说的很多话，他都不认同，都觉得是错的。</p>
-<p>离谱的点在于，他既然都不认同，还天天拽着室友，聊到凌晨3点不睡觉。不过，这朋友和我说，他其实也无所谓，比较佛系，炮灰同志想聊到3点，那就陪他聊吧。</p>
-<h2 id="3-3-好打听别人"><a href="#3-3-好打听别人" class="headerlink" title="3.3 好打听别人"></a>3.3 好打听别人</h2><p>从多次和他沟通对话中，我能得知很多人的事情，都是他主动给我说的，这些内容包括，谁谁谁考什么学校，现在进度怎么样，甚至连人家专业课考哪几本书都知道。我来这边，也就几个熟悉的朋友或者像这炮灰坐我后面，离我比较近一点，可能对他们清楚一点，但他可是都要加一遍群里面人的微信，问问人家，我微信一开始就是不让人从群里加的，他还特地跑来找我，让我去加他微信。而且，每天教室里，谁谁谁做了什么事，他都喜欢去观察，去记下来说。</p>
-<blockquote>
-<p>就他这样，喜欢打听别人的事，喜欢观察人，既把精力放在各种琐事上面，又把精力放在别人干了什么事情上面，还考个P的研究生啊</p>
-</blockquote>
-<h2 id="3-4-事件发生背景"><a href="#3-4-事件发生背景" class="headerlink" title="3.4 事件发生背景"></a>3.4 事件发生背景</h2><p>整个事情发生在考研寄宿中心里面，炮灰是工作了辞职第一次考研，我是二战。这里的人，上限很高，下限也很低。我并不是碰巧坐在他前面，而是我很早就来这里选好了位置，后面由于疫情，过来之前要先在外面隔离，然后进来。隔离差不多的时候，他把我过去的名额抢了，比我先到，然后他看我坐哪里，选在了我后面。当时我以为，无非就是一块隔离住一起过，他选我后面，之后可能问问我一些学习方面的事情吧，没成想他是这么一个人。</p>
-<blockquote>
-<p>具体是怎么抢走的呢？<br>一共五人隔离，第一个到的是个大佬，来了一周，我们一块住了一周，他待满半个月就过去了。<br>我比炮灰早来一天，我在六楼找了一个付费自习室，白天就在那复习(那是个商业宿舍楼，我们在同一栋楼的八楼进行隔离，六楼正好有付费自习室)。<br>后面我时间到了，他就趁机，让来这边的老师，先带他走了。我虽然那个时候在自习室复习，但我也和带人老师说了，我不在的话，微信找我就行，我上楼打包东西走。<br>后来我才了解到，他每天都在微信上，跑去找这个来带人的老师，聊好久，所以他能抢走我的名额，不奇怪。</p>
-</blockquote>
-<h1 id="4-逃离"><a href="#4-逃离" class="headerlink" title="4. 逃离"></a>4. 逃离</h1><h2 id="4-1-物理逃离"><a href="#4-1-物理逃离" class="headerlink" title="4.1 物理逃离"></a>4.1 物理逃离</h2><p>5月份到8月份，再到11月份，他一次次挑战我和教室里其他人的下限，最后11月份，我确实受不了了他，于是果断，找老师，换到了隔壁去，实现了物理上，逃离这个人，他对我噪音的影响也好，各种奇怪的话的影响也好，物理上直接给他隔绝，最后这段复习时间了，不能被这炮灰影响了。</p>
-<h2 id="4-2-心灵逃离"><a href="#4-2-心灵逃离" class="headerlink" title="4.2 心灵逃离"></a>4.2 心灵逃离</h2><p>炮灰同志有两句话，第一句，“你不是机器，你是人”<br>在我规劝他的时候，我会说最后这段时间了，每天要把任务完成，你再不提高你的效率，就真的要成为炮灰了，他说“你不是机器，你是人，我心情好多学一点，不好少学一点，我很焦虑，压力大的！”</p>
-<p>我一时间还没有转过思路来，我就去找了我的导师，他说现在考研这个阶段，就是要要求我们当机器，考清华的比我还更像机器，到了最后冲刺阶段了，不当了机器能行吗，当一个机器，好过于考不上。把我的一个小小的心结给解开了。</p>
-<p>第二句话，“压力虽然是借口，但也是原因”<br>我听完他各种无病呻吟，像“什么不喝水难受，只能喝水，多上厕所走来走去”，“不擦脸难受，只能擦脸”，“没办法了，只能考408”，我说，你把精力放这些上面，找这么多借口，还要什么精力来考研呢？这个时候，他就来了他的第二句金句，“压力虽然是借口，但也是原因”。</p>
-<p>同样对于这句话，我的导师说这句话只能说明，抗压能力和韧性不够，只是他承受不了，才会把这个当做原因。</p>
-<h1 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h1><p>考研是一场国家性选拔人才的考试，有其固定的标准在那里，就算目标院校是国家线，那么也有国家线这个标准在那里。我们要做的，就是尊重这个事实，摒除杂念，提高效率，达到硬性要求，其实就这么简单。</p>
-<p>这个炮灰，在相当一段时间，打扰我，还和他沟通无效，一定程度上，已经成为了我的杂念，我应该更早，就换教室，更早找导师，寻求解答，不过好在，其实他对我的学习，也没有产生太大影响，现在没有了他，我效率更高，就是一件好事了。</p>
-<p>炮灰的故事，告诉我们，有一股无形的力量在阻止你，那就是你自己。</p>
-<p>而我的故事，告诉我们，遇到杂念，多问问自己Would it help? 做到及时止损</p>
-<p>最后送大家一张图，希望能帮到你</p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202212041852547.jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>生活感悟</category>
-        <category>考研复盘</category>
-      </categories>
-      <tags>
-        <tag>考研炮灰</tag>
-        <tag>规劝傻逼</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>原来我的皮肤生病了</title>
     <url>/125-aopic-dermatitis/</url>
     <content><![CDATA[<h1 id="一、引言"><a href="#一、引言" class="headerlink" title="一、引言"></a>一、引言</h1><blockquote>
 <p>特应性皮炎（Atopic Dermatitis）是一种慢性、复发性的炎症性皮肤病，通常起始于婴幼儿期，也可在成人时发生。它表现为皮肤瘙痒、红肿、渗出、干燥、粗糙、开裂等不同程度的皮肤损害，常累及面部、颈部、肘部、手腕、膝盖弯曲处等皮肤褶皱处。其发病机制为遗传因素、免疫异常和环境因素的相互作用所致。特应性皮炎与其他变应性疾病，如过敏性鼻炎、哮喘等有关联。治疗包括局部药物治疗、口服抗过敏药物、光疗等综合治疗措施。</p>
 </blockquote>
 <p>没错，我一直都有特应性皮炎(以下简称AD)，长期以来AD对我的生活造成了一定程度上的伤害，因此我撰写这篇博客的目的，是希望通过分享我的经历，帮助其他人了解这种病并提供缓解方法和注意事项。</p>
-<h1 id="二、发现和诊断"><a href="#二、发现和诊断" class="headerlink" title="二、发现和诊断"></a>二、发现和诊断</h1><h2 id="1-早期发现"><a href="#1-早期发现" class="headerlink" title="1.早期发现"></a>1.早期发现</h2><p>要说最早我是什么时候注意到AD的，那得追溯到我的小学了，一开始是同班的同学说我的皮肤和他们的不同，不够我也没有在意，之后一些<strong>有心之人</strong>，就会刻意地说，<mark class="hl-label red">我得了皮肤病，会传染</mark> ，叫同学们远离我，当然<mark class="hl-label default">这种人和行为很可耻</mark> ，遇到这样的人<mark class="hl-label orange">应该尽量远离，和理解关心你的人相处</mark> 。</p>
+<h1 id="二、发现和诊断"><a href="#二、发现和诊断" class="headerlink" title="二、发现和诊断"></a>二、发现和诊断</h1><h2 id="1-早期发现"><a href="#1-早期发现" class="headerlink" title="1.早期发现"></a>1.早期发现</h2><p>要说最早我是什么时候注意到AD的，那得追溯到我的小学了，一开始是同班的同学说我的皮肤和他们的不同，不过我也没有在意，之后一些<strong>有心之人</strong>，就会刻意地说，<mark class="hl-label red">我得了皮肤病，会传染</mark> ，叫同学们远离我，当然<mark class="hl-label default">这种人和行为很可耻</mark> ，遇到这样的人<mark class="hl-label orange">应该尽量远离，和理解关心你的人相处</mark> 。</p>
 <h2 id="2-病情恶化和拉扯"><a href="#2-病情恶化和拉扯" class="headerlink" title="2.病情恶化和拉扯"></a>2.病情恶化和拉扯</h2><h3 id="1-恶化"><a href="#1-恶化" class="headerlink" title="(1)恶化"></a>(1)恶化</h3><p>病情在多年的拖延当中，逐渐开始恶化，已经造成了以下的情况：</p>
 <ul>
 <li>冬天洗完澡，我得皮肤会<mark class="hl-label purple">异常瘙痒干燥</mark> </li>
@@ -2801,148 +2801,6 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
       </tags>
   </entry>
   <entry>
-    <title>考研政治记忆点</title>
-    <url>/127-exam-politics/</url>
-    <content><![CDATA[<p>1.我国国家制度和国家治理体系具有显著优势，是坚定“四个自信”的基本依据</p>
-<p>2.近代以来，中国人民反帝反封建的斗争之所以屡遭挫折和失败，最重要的原因就是没有一个先进政党作为凝聚力量的坚强领导核心</p>
-<p>3.美国一些势力出于霸权心态和冷战思维，将中国视为最主要的战略对手和最严峻的长期挑战，竭力进行围堵打压，一方面怂愚“台独”分裂势力制造两岸关系紧张动荡，另一方面却无端指责大陆“施压””胁迫””单方面改变现状”，为“台独”分裂势力撑腰打气，给中国实现和平统一制造障碍。其实质是企图改变台湾是中国的一部分的地位，制造“两个中国””一中一台”，实现其“以台制华”的政治目的</p>
-<p>4.历史思维能力是辩证思维与历史眼光的结合，是马克思主义科学历史观的具体表现和实践运用，是以史为鉴、知古鉴今，善于运用历史眼光认识发展规律、把握前进方向、指导现实工作的能力</p>
-<p>5.战略思维能力强调思维的整体性、全局性、长期性，是高瞻远瞩、统揽全局、善于把握事物发展总体趋势和方向的能力</p>
-<p>6.物质生产实践是人类最基本的实践活动，不是科学研究等其他活动</p>
-<p>7.题目出现了解等词，说明认识有待于深化，认识的感性阶段有待于发展到理性阶段</p>
-<p>8.与以往的剥削制度不同，资本家与工人的关系不是完全占有，也不是人身依附，而是基于劳动者人身自由基础上的“平等”关系，剥削带有一定的隐蔽性</p>
-<p>9.构建新发展格局是以全国统一大市场基础上的国内大循环为主体，不是各地都搞自我小循环</p>
-<p>10.统一战线是中国共产党凝聚人心、汇聚力量的政治优势和战略方针，是党克敌制胜、执政兴国的重要法宝，是团结海内外全体中华儿女实现中华民族伟大复兴的重要法宝，必须长期坚持</p>
-<p>11.有事好商量，众人的事情由众人商量，是人民民主的真谛</p>
-<p>12.以和平方式实现祖国统一，是中国共产党和中国政府解决台湾问题的第一选择，并非唯一选择</p>
-<p>13.建设中国特色社会主义法治体系为全面依法治国的总抓手</p>
-<p>14.上海合作组织并非军事同盟，秉持共同、综合、合作、可持续的安全观，推动构建均衡、有效、可持续的安全架构。出现“绝对安全”错误</p>
-<p>15.直接经验是认识的源泉，接受间接经验要以某种直接经验为基础</p>
-<p>16.实施乡村振兴战略，必须把确保重要农产品特别是粮食供给作为首要任务，把提高农业综合生产能力放在更加突出的位置，把“藏粮于地、藏粮于技”真正落实到位</p>
-<p>17.认清中国的国情，乃是认清一切革命问题的基本的根据、</p>
-<p>18.近代中国的主要矛盾、革命性质，中华民族面临的历史任务都是由近代社会的性质决定的</p>
-<p>19.法律的不可违抗性，是指法律必须遵守，违反法律要受到惩罚。任何人不论权力大小、职位高低，只要有违法犯罪行为，就要依法追究和承担法律责任</p>
-<p>20.法律的普遍适用性是指法律在本国主权范围内对所有人具有普遍的约束力。所有国家机关、社会组织和公民个人都必须遵守法律，依法享有和行使法定职权与权利，承担和履行法定职责与义务</p>
-<p>21.法律的阶级性是指法律是统治阶级意志的体现</p>
-<p>22.法律的优先适用性是指当同一项社会关系同时受到多种社会规范的调整而多种社会规范又相互矛盾时，要优先考虑法律规范的适用</p>
-<p>23.个人品德在社会道德建设中具有基础性的作用</p>
-<p>24.坚定不移跟党走，为党和人民奋斗，是共青团的初心使命</p>
-<p>25.勇于自我革命，始终成为紧跟党走在时代前列的先进组织，是解决建设什么样的青年组织、怎样建设青年组织这个共青团事关根本的重大问题的答案</p>
-<p>26.金砖国家领导人第十四次会晤，主题，“构建高质量伙伴关系，共创全球发展新时代</p>
-<p>27.2021年金砖国家领导人峰会，主题，金砖15周年：开展金砖合作，促进延续、巩固与共识</p>
-<p>28.三亚举行的第三届金砖国家领导人峰会，主题，展望未来、共享繁荣</p>
-<p>29.金砖国家领导人第九次会晤，主题，深化金砖伙伴关系，开辟更加光明未来</p>
-<p>30.马克思说：“人们自己创造自己的历史，但是他们并不是随心所欲地创造，并不是在他们自己选定的条件下创造，而是在直接碰到的、既定的、从过去承继下来的条件下创造。”</p>
-<p>31.垄断价格的产生并没有否定价值规律，但改变了价值规律的作用形式，市场价格即垄断价格是价值规律在垄断资本主义阶段作用的具体表现</p>
-<p>32.中华优秀传统文化是中华民族的“根”和“魂”，是最深厚的文化软实力，是中国特色社会主义植根的沃土，是我们在世界文化激荡中站稳脚跟的根基</p>
-<p>33.完成民主革命的遗留任务，在新解放区进行土改</p>
-<p>34.社会主义革命的任务，第一，没收官僚资本，确立社会主义国营经济的领导地位。第二；开始将资本主义纳入国家资本主义轨道，第三，引导个体农民在土地改革后逐步走上互助合作的道路</p>
-<p>35.十一届六中全会通过《关于建国以来党的若干历史问题的决议》，对新中国成立32年来党的重大历史事件特别是“文化大革命”作出正确总结，实事求是地评价毛泽东的历史地位，科学论述毛泽东思想作为党的指导思想的伟大意义。《决议》的通过，标志着党在指导思想上拨乱反正任务的完成</p>
-<p>36.十一届三中全会高度评价关于实践是检验真理的唯一标准问题的讨论；果断地停止使用“以阶级斗争为纲”的口号，作出把党和国家工作中心转移到经济建设上来、实行改革开放的历史性决策</p>
-<p>37.习近平法治思想从历史和现实相贯通、国际和国内相关联、理论和实际相结合上深刻回答了新时代为什么实行全面依法治国、怎样实行全面依法治国等一系列重大问题，是顺应实现中华民族伟大复兴时代要求应运而生的重大理论创新成果，是马克思主义法治理论中国化的最新成果，是习近平新时代中国特色社会主义思想的重要组成部分</p>
-<p>38.“五个坚持”充分体现了“上海精神”，始终是上合组织的生命力所在，也是必须长期坚持的根本遵循。“五个坚持”也是真正多边主义的实践，是对传统集团政治的超越，回答了在新的时代背景下应当推进什么样的新型区域合作、如何推进新型区域合作的问题，对上合组织自身建设、对促进国际关系健康公正发展均具有重要指导意义</p>
-<p>39.我们要共同守护人类生命健康，我们要共同促进经济复苏，我们要共同维护世界和平安宁，我们要共同应对全球治理挑战</p>
-<p>40.马克思和恩格斯创立马克思主义，是为了适应无产阶级实际斗争的要求</p>
-<p>41.八七会议，枪杆子里面出政权</p>
-<p>42.《论持久战》，兵民是胜利之本</p>
-<p>43.《反对本本主义》，没有调查就没有发言权</p>
-<p>44.六届六中全会，马克思主义中国化</p>
-<p>45.马克思主义中国化，用毛泽东的话说，就是“解决中国问题”和“创造些新的东西”。具体说来，马克思主义中国化就是：第一，坚持把马克思主义基本原理同中国具体实际相结合、同中华优秀传统文化相结合，运用马克思主义的立场、观点、方法研究和解决中国革命、建设、改革中的实际问题。第二，总结和提炼中国革命、建设、改革的实践经验，从而认识和掌握客观规律，为马克思主义理论宝库增添新的内容。第三，运用中国人民喜闻乐见的民族语言来阐述马克思主义理论，使之成为具有中国特色、中国风格、中国气派的马克思主义</p>
-<p>46.毛泽东思想不涉及对中国改革经验的科学总结问题，中国特色社会主义理论体系、习近平新时代中国特色社会主义思想不涉及对中国革命经验的科学总结问题</p>
-<p>47.在理论上闻述了中国革命的新道路，这标志着毛泽东思想开始形成</p>
-<p>48.毛泽东思想主题，中国革命和建设；邓小平主题，什么是社会主义、怎样建设社会主义；习近平主题，中国特色社会主义</p>
-<p>49.劳动力成为商品是货币转化为资本的前提</p>
-<p>50.资本家之所以能够购买工人的劳动力，把工人变成雇佣工人，其根源在于资本主义的生产资料所有制</p>
-<p>51.政治安全是核心，起决定性作用，规定和制约着其他领域的安全</p>
-<p>52.要解决中国发展进步问题，迫切需要新的思想引领救亡运动，迫切需要新的组织凝聚革命力量</p>
-<p>53.五四运动，实现了中国人民和中华民族自鸦片战争以来第一次全面觉醒</p>
-<p>54.“一五”计划确定的经济建设指导方针，突出了集中主要力量发展重工业，建立国家工业化和国防现代化的初步基础的核心要点</p>
-<p>55.“人工智能无法将意识活动从人脑中分离出来”说法不对，人工智能已经可以取代人的体力劳动和部分脑力劳动</p>
-<p>56.剩余价值是利润的本质，利润是剩余价值的转化形式。当剩余价值转化为利润时，剩余价值和可变资本的关系便被掩盖了</p>
-<p>57.利润是资本的赢利</p>
-<p>58.自觉维护党中央权威和集中统一领导；必须坚持和完善党的领导的体制机制；必须坚持党的民主集中制原则</p>
-<p>59.发挥人大及其常委会在立法工作中的主导作用</p>
-<p>60.1943年12月1日，中美英三国政府发表的《开罗宣言》宣布：“三国之宗旨在使日本所窃取于中国之领土，例如东北、台湾、澎湖列岛等，归还中国。”1945年7月26日，中美英三国共同签署、后来苏联参加的《波茨坦公告》，重申“开罗宣言之条件必将实施”。同年9月，日本签署《日本投降条款》，承诺“忠诚履行波茨坦公告各项规定之义务”。1945年10月25日，中国政府宣告“恢复对台湾行使主权”，并在台北举行“中国战区台湾省受降仪式”。由此，通过一系列具有国际法律效力的文件，中国从法律和事实上收复了台湾。</p>
-<p>61.与以往社会的道德形态相比，社会主义道德具有显著的先进性特征，这种先进性主要体现在：首先，社会主义道德是社会主义经济基础的反映；其次，社会主义道德是对人类优秀道德资源的批判继承和创新发展；最后，社会主义道德克服了以往阶级社会道德的片面性和局限性</p>
-<p>62.要坚持党领导立法、保证执法、支持司法、带头守法，把依法治国、依法执政、依法行政统一起来，把党总揽全局、协调各方同人大、政府、政协、监察机关、审判机关、检察机关依法依章程履行职能、开展工作统一起来，把党领导人民制定和实施宪法法律同党坚持在宪法法律范围内活动统一起来</p>
-<p>63.完法是国家各项制度和法律法规的总依据，对把国家各项事业和各项工作全面纳人法治轨道，维护社会公平正义具有重要意义</p>
-<p>64.人民至上是贯穿习近平新时代中国特色社会主义思想的一根红线，人民立场是习近平新时代中国特色社会主义思想的根本立场</p>
-<p>65.实现两岸和平统一，必须面对大陆和台湾社会制度与意识形态不同这一基本问题</p>
-<p>66.爱国、创业、求实、奉献是大庆精神、铁人精神</p>
-<p>67.热爱祖国、无私奉献、自力更生、艰苦奋斗、大力协同、勇于登攀是“两弹一星”精神</p>
-<p>68.上下同心、尽锐出战、精准务实、开拓创新、攻坚克难、不负人民是脱贫攻坚精神</p>
-<p>69.亲民爱民、艰苦奋斗、科学求实、迎难而上、无私奉献是焦裕禄精神</p>
-<p>70.诚信是个人立身处世的基本价值规范，是社会存续发展的重要价值基石</p>
-<p>71.文明是社会进步的重要标志，也是社会主义现代化国家的重要特征</p>
-<p>72.公正是人类社会进步的标尺，也是社会主义制度的本质要求</p>
-<p>73.自由是社会活力之源，是社会主义的价值理想</p>
-<p>74.习近平强调，思想政治理论课能否在立德树人中发挥应有作用，关键看重视不重视、适应不适应、做得好不好</p>
-<p>75.加快构建中国特色哲学社会科学，归根结底是建构中国自主的知识体系</p>
-<p>76.要综合运用好市场化、法治化手段，加快建立体现资源稀缺程度、生态损害成本、环境污染代价的资源价格形成机制。不是行政手段</p>
-<p>77.我们推动经济社会发展，归根结底是要实现全体人民共同富裕</p>
-<p>78.中共二大在中国近代史上第一次明确提出了反帝反封建的民主革命纲领。中共二大提出要“到群众中去”，要组成一个大的“群众党”。大会提出，为实现反帝反军阀的革命目标，必须联合全国一切革命党派，联合资产阶级民主派，组成“民主主义的联合战线”</p>
-<p>79.中国共产党第三次全国代表大会，正确估计了孙中山的革命立场和国民党进行改革的可能性，决定共产党员以个人身份加人国民党，以实现国共合作</p>
-<p>80.科学立法、严格执法、公正司法、全民守法是全面依法治国的基本格局</p>
-<p>81.中国特色社会主义法治道路，包括坚持党的领导，坚持中国特色社会主义制度，贯彻中国特色社会主义法治理论三个方面的核心要义</p>
-<p>82.习近平主席在撒马尔罕举行的上海合作组织成员国元首理事会第二十二次会议上鲜明指出，要坚定维护以联合国为核心的国际体系和以国际法为基础的国际秩序，弘扬全人类共同价值，坚持真正的多边主义，齐心协力完善全球治理，拼弃零和博弈和集团政治，携手推动国际秩序朝着更加公正合理的方向发展。有多边主义，但没有集团政治</p>
-<p>83.资产阶级选择自己的国家管理者、实现其内部利益平衡的政治机制是资本主义政党制度</p>
-<p>84.资产阶级法律的实质是将存在于资本家和劳动者之间、富人和穷人之间经济利益的不平等合法化</p>
-<p>85.让中国大飞机翻翔蓝天，承载着国家意志、民族梦想、人民期盼，要充分发挥新型举国体制优势</p>
-<p>86.1842年，英国强迫清政府签订《南京条约》，把香港岛割让给英国</p>
-<p>87.1860年，通过中英《北京条约》，英国割去香港岛对岸九龙半岛南端和昂船洲、</p>
-<p>88.1895年，日本强迫清政府签订《马关条约》，割去中国台湾全岛及所有附属各岛屿和涉湖列岛</p>
-<p>89.1901年《辛丑条约》的签订，标志着以慈禧太后为首的清政府已经彻底放弃了抵抗外国侵略者的念头，甘当“洋人的朝廷”</p>
-<p>90.毛泽东同志提出，要根据不同的地区，采取不同的策略。第一种是日本投降以前的老解放区，这种地区大体上早已分配土地，只需调整一部分土地。第二种是日本投降至1947年8月大反攻前解放的地区，这种地区完全适用土地法，普遍地彻底地分配土地。第三种是大反攻后新解放的地区，因群众尚未发动，不应当企图一下实行土地法，而应当分两个阶段实行土地法</p>
-<p>91.国民党统治区需要等到新中国成立后再进行土地改革</p>
-<p>92.弘扬英烈精神，康续红色血脉，让红色江山代代相传，成为时代赋予烈士褒扬工作的重要使命任务</p>
-<p>93.始终把革命利益放在首位，激发革命者为集体而献身的斗志；引导建立新型家庭关系和培育良好家风，树立社会新风尚；坚定党员的社会主义和共产主义的理想信念都是大学生发扬革命道德、传承红色基因的内容</p>
-<p>94.实践是检验认识真理性的唯一标准，衡量创新成功与否的唯一标准是正确指导实践，而不是能否应用于实践</p>
-<p>95.影响资本周转快慢的因素有许多，关键的因素有两个：一是资本周转的时间，二是生产资本的固定资本和流动资本的构成</p>
-<p>96.生产资本的不变资本和可变资本的构成讲的是生产资本构成，随着资本积累而产生的失业是由资本追逐剩余价值引起资本有机构成的提高所导致的</p>
-<p>97.所用资本和所费资本之间的差额是影响资本积累规模大小的因素</p>
-<p>98.资本主义终究要被社会主义所取代的原因是：首先，资本主义基本矛盾“包含着现代的一切冲突的萌芽”；第二，资本积累推动资本主义基本矛盾不断激化并最终否定资本主义自身；第三，国家垄断资本主义是资本社会化的更高形式，将成为社会主义的前奏；第四，资本主义社会存在着资产阶级和无产阶级两大阶级之间的矛盾和斗争</p>
-<p>99.习近平在《促进我国社会保障事业高质量发展、可持续发展》一文中强调，社会保障是保障和改善民生、维护社会公平、增进人民福祉的基本制度保障，是促进经济社会发展、实现广大人民群众共享改革发展成果的重要制度安排，发挥着民生保障安全网、收入分配调节器、经济运行减震器的作用，是治国安邦的大问题</p>
-<p>100.讲好中华文明故事，展示中国形象是提升文化软实力要做好的工作</p>
-<p>101.统一战线在维护国家主权、安全、发展利益上的作用更加重要。统一战线在围绕中心、服务大局上的作用更加重要。我国社会结构发生深刻变化，统一战线在增强党的阶级基础、扩大党的群众基础上的作用更加重要</p>
-<p>102.问盟会纲领中的民族主义没有从正面鲜明地提出反对帝国主义的主张。民权主义虽然强调了要建立民主共和国，却忽略了广大劳动群众在国家中的地位，因而难以使人民的民主权利得到真正的保证。孙中山的“平均地权”的主张，没有正面触及封建土地所有制</p>
-<p>103.孙中山强调，政治革命应当与民族革命并行。民族革命是扫除“现在的恶劣政治”，而政治革命则是扫除“恶劣政治的根本”，从而把斗争矛头直接指向集国内民族压迫与封建专制统治于一身的清政府。他的民权主义强调了要建立资产阶级民主共和国</p>
-<p>104.《论持久战》一文中，分析了抗日战争的四个特点；敌强我弱、敌退步我进步、敌国土地小人口少我国土地大人口多、敌失道寡助我得道多助；准确地预见了抗日战争由防御到相持、最后到反攻的三个阶段；系统提出了争取抗战胜利的依靠力量和战略战术</p>
-<p>105.1937年8月，中国共产党在陕北洛川召开政治局扩大会议，制定了抗日救国十大纲领，强调要打倒日本帝国主义，关键在于使已经发动的抗战成为全面的全民族抗战</p>
-<p>106.八大坚持党中央提出的既反保守又反冒进，即在综合平衡中稳步前进的经济建设方针；大会肯定“三个主休，三个补充”思想，即以国家经营和集体经营、计划生产、国家市场三者为主体，而以个体经营、自由生产、自由市场三者作为补充；八大通过的新党章是中国共产党在全国执政以后制定的第一部党章。</p>
-<p>107.八大坚持党中央提出的既反保守又反冒进，即在综合平衡中稳步前进的经济建设方针；大会肯定“三个主休，三个补充”思想，即以国家经营和集体经营、计划生产、国家市场三者为主体，而以个体经营、自由生产、自由市场三者作为补充；八大通过的新党章是中国共产党在全国执政以后制定的第一部党章。</p>
-<p>108.推进全面依法治国，法治政府建设是重点任务和主体工程</p>
-<p>109.剩余价值理论揭示了剩余价值的运动规律及其作用</p>
-<p>110.马克思劳动价值论通过对私有制商品经济条件下生产商品的劳动所特有的社会性质及其表现形式的分析，揭示了商品经济的内在矛盾及其运动规律，揭露和批判了商品拜物教观念</p>
-<p>111.保护文物和文化遗产、健全现代公共文化服务体系、构建中国特色哲学社会科学学科体系都是文化建设的具体举措</p>
-<p>112.党的二十大着眼新时代党和国家事业全局，明确把坚持马克思主义在意识形态领域的指导地位确立为根本制度</p>
-<p>113.腐败是危害党的生命力和战斗力的最大毒瘤，反腐败是最彻底的自我革命</p>
-<p>114.加强理想信念教育属于党的思想建设，坚持制度治党、依规治党属于党的制度建设，纠治形式主义、官僚主义属于党的作风建设</p>
-<p>115.九一八事变后，中国人民就在白山黑水间奋起抵抗，成为中国人民抗日战争的起点，同时揭开了世界反法西斯战争的序幕</p>
-<p>116.七七事变后，抗击侵略、救亡图存成为中国各党派、各民族、各阶级、各阶层、各团体，以及海外华侨华人的共同意志和行动，标志着中国进人全民族抗战阶段，并开辟了世界反法西斯战争的东方主战场</p>
-<p>117.资本积聚和资本集中都是扩大生产规模实现资本积累的手段，资本积聚是指个别资本，只有一个企业。资本集中是指个别资本通过结合而形成较大的资本，多个企业，比如大企业吞并小企业</p>
-<p>118.坚持深化改革、坚持敢于斗争是走好中国式现代化要遵循的原则</p>
-<p>119.党的二十大报告强调，要坚持人民至上、坚持自信自立、坚持守正创新、坚持问题导向、坚持系统观念、坚持胸怀天下</p>
-<p>120.完善分配制度的要求是坚持按劳分配为主体、多种分配方式并存，构建初次分配、再分配、第三次分配协调配套的制度体系。努力提高居民收人在国民收人分配中的比重，提高劳动报酬在初次分配و 中的比重。坚持多劳多得，鼓励勤劳致富，促进机会公平，增加低收人者收人，扩大中等收人群体。规范收人分配秩序，规范财富积累机制，保护合法收入，调节过高收人，取缔非法收入</p>
-<p>121.只提到初次分配，再分配，是错的，现在还要再加上三次分配</p>
-<p>122.第一，社会主义基本制度的确立极大地提高了工人阶级和广大劳动人民的积极性、创造性，为社会生产力的大发展开辟了广阔道路。第二，社会主义基本制度的确立为当代中国的一切发展进步提供了根本政治保障。第三，社会主义基本制度的确立为社会主义先进文化的发展指明了前进方向</p>
-<p>123.独立的、比较完整的工业体系和国民经济体系的建立，从根本上解决了工业化中“从无到有”的问题，使中国在赢得政治上的独立之后又赢得了经济上的独立，为中国以后的发展莫定了牢固的物质技术基础，而且为中国同包括西方发达国家在内的世界各国在平等互利的原则下发展对外贸易和经济往来创建了前提</p>
-<p>124.十八大召开至今已经十年了。十年来，我们经历了对党和人民事业具有重大现实意义和深远历史意义的三件大事是：第一，迎来中国共产党成立一百周年。第二，中国特色社会主义进人新时代。第三，完成脱贫攻坚、全面建成小康社会的历史任务，实现第一个百年奋斗目标</p>
-<p>125.开辟了中国特色社会主义道路，形成了中国特色社会主义理论体系是改革开放以来我们取得一切成绩和进步的根本原因</p>
-<p>126.习近平在二十大报告中强调，从现在起，中国共产党的中心任务就是团结带领全国各族人民全面建成社会主义现代化强国、实现第二个百年奋斗目标，以中国式现代化全面推进中华民族伟大复兴</p>
-<p>127.坚持和完善中国特色社会主义制度，推进国家治理体系和治理能力现代化是全面深化改革的总目标</p>
-<p>128.决胜全面建成小康社会，夺取新时代中国特色社会主义伟大胜利是2012年党的十八大提出的目标</p>
-]]></content>
-      <categories>
-        <category>考试资料</category>
-        <category>考研复盘</category>
-      </categories>
-      <tags>
-        <tag>考研</tag>
-        <tag>记忆</tag>
-        <tag>政治</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>考研935记忆点</title>
     <url>/128-exam-935/</url>
     <content><![CDATA[<p>1.考研指定语言用C或者C++，可以调库，但是也要看场景，但建议高级函数不要调用，比如排序和查找相关sort()，stable_sort()，partial_sort()，nth_element()，binary_serach()，lower_bound()，upper_bound()等。本来就是考你底层基本实现的，不是考你用一行代码秒杀的。<br>建议熟练掌握STL中vector，stack，queue，priority_queue，unordered_set，set，unordered_map，map即数组，栈</p>
@@ -2967,9 +2825,92 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
       </tags>
   </entry>
   <entry>
+    <title>原神进度以及未来规划</title>
+    <url>/129-genshin-progress-planning/</url>
+    <content><![CDATA[<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308111939961.jpg" alt=""></p>
+<p>更新时间为2023.8.11，以上是经过了187天之后的数据，先定下一个基调，我是成就党，深渊能过就行</p>
+<h1 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h1><h2 id="魔神任务"><a href="#魔神任务" class="headerlink" title="魔神任务"></a>魔神任务</h2><p>关于魔神任务，我大概花了1个月，过完了全部的剧情。我是使用的英文语音，因此听着磨磨耳朵也好，对于总体的剧情也有所大概了解，当我遇到不懂的地方，就去看<a href="https://space.bilibili.com/431073645/channel/collectiondetail?sid=261059">影月月</a>的视频</p>
+<h2 id="传说任务"><a href="#传说任务" class="headerlink" title="传说任务"></a>传说任务</h2><p>传说任务，做完了才发现，没有成就可以获得，大部分直接跟着任务提示做就可以了，某部分有隐藏宝箱，因此不确定的话，也可以去看<a href="https://space.bilibili.com/431073645/channel/collectiondetail?sid=257877">影月月</a>，他会告诉你，任务的哪个阶段有你可能忽略的一次性宝箱</p>
+<h2 id="邀约任务"><a href="#邀约任务" class="headerlink" title="邀约任务"></a>邀约任务</h2><p>邀约任务做的时间也比较久，全部做完，大概需要2个多月吧，不过好在，每个邀约任务是给3个成就的，对我这种成就党来说比较爽，同样，跟着<a href="https://space.bilibili.com/431073645/channel/collectiondetail?sid=38604">影月月</a>直接来就行了</p>
+<h2 id="每日任务"><a href="#每日任务" class="headerlink" title="每日任务"></a>每日任务</h2><p>一开始我还不知道每日任务有隐藏成就，于是前3个月都选在了璃月，遇到那些包含隐藏成就的每日任务也没有正确打开这些任务，之后知道遇到了<a href="https://space.bilibili.com/441302341/channel/collectiondetail?sid=780446">布丁</a>，才把任务地点选在蒙德开始慢慢做</p>
+<h2 id="活动任务"><a href="#活动任务" class="headerlink" title="活动任务"></a>活动任务</h2><p>我这里说的活动，还包括很多你容易忽略的原石来源，例如</p>
+<table>
+  <tr>
+    <td><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308111955245.png"/></td>
+    <td><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308111955725.png"/></td>
+    <td><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308111955324.png"/></td>
+    <td><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308111955670.png"/></td>
+    <td><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308111956923.png"/></td>
+    <td><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308111957204.png"/></td>
+    <td><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308111957172.png"/></td>
+  </tr>
+</table>
+
+<p>经过我的多次忽略，我发现，影月月他并不会去关注这些隐藏原石来源，或者他没有关注全</p>
+<p>这部分活动，我是跟着<a href="https://space.bilibili.com/635041/">Ziv紫薇</a>来的，建议各位也是关注这个UP一下</p>
+<h1 id="成就"><a href="#成就" class="headerlink" title="成就"></a>成就</h1><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308111939958.jpg" alt=""></p>
+<p>目前还剩下尘歌壶作物、地脉花、角色好感度、地区声望、四方八方之网以及每日任务隐藏成就，这些成就是需要长时间完成的</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308112016063.png" alt=""></p>
+<h2 id="世界任务类"><a href="#世界任务类" class="headerlink" title="世界任务类"></a>世界任务类</h2><p>世界任务实在是太多了，因此我建议还是直接上<a href="https://space.bilibili.com/431073645/channel/collectiondetail?sid=261059">影月月</a>，毕竟他的任务集合是最全的，不过有个问题很烦，影月月他的任务攻略视频，其中会包含大量的宝箱收集，大部分时候，可能做着做着任务，就去附近拿下宝箱，你做完了才发现，这些个宝箱，和你要做的任务，没有半毛钱关系，因此，对于想快速过任务的人，需要熟练使用跳过</p>
+<h2 id="探索类"><a href="#探索类" class="headerlink" title="探索类"></a>探索类</h2><p>关于探索度先贴张图进行叠甲</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308111939960.jpg" alt=""></p>
+<p>关于收集各种东西，例如神瞳、键纹、净光翎、宝箱这些多种收集的情况，我的建议是千万不要跟着影月月，他的视频没有考虑到分P，十分容易忽略，因此，我根据不同物品，推荐一些不同UP</p>
+<p>首先是神瞳、键纹、净光翎这些东西，我推荐<a href="https://space.bilibili.com/14444722/">疯子啊滨</a>这位UP，究其原因，最最开始的风神瞳、岩神瞳，找不出比他更详细的视频了，而经过几个月的探索，个人认为，他在非宝箱物品的收集攻略中，是最好的UP主，非宝箱物品收集，关注他就对了</p>
+<p>然后就是宝箱，这个应该不用多说了，关注<a href="https://space.bilibili.com/1773346/">莴苣某人</a>就行了，我也尝试过宝箱跟着影月月、疯子啊滨、Ziv紫薇，但是效果都没有莴苣来的好，因此宝箱视频关注莴苣就行了</p>
+<h2 id="长期成就类"><a href="#长期成就类" class="headerlink" title="长期成就类"></a>长期成就类</h2><p>像尘歌壶摆设、旋耀玉帛、七圣召唤、钓鱼、尘歌壶同伴赠礼等成就，只要想做，至少都可以控制在1个月中做完，还算不上真的长期成就，长期成就应该指只能通过长时间等待才能完成的成就</p>
+<p>四方八方之网、地区声望、角色好感度、地脉花、尘歌壶作物这些成就，就符合长期成就的要求，除了每日任务隐藏成就外，我也只剩下这些需要完成了</p>
+<h2 id="每日任务隐藏成就"><a href="#每日任务隐藏成就" class="headerlink" title="每日任务隐藏成就"></a>每日任务隐藏成就</h2><p>每日任务隐藏成就直接关注<a href="https://space.bilibili.com/441302341/channel/collectiondetail?sid=780446">布丁</a>就行，他的合集是最全的，同时，这里我推荐米游社的<a href="https://www.miyoushe.com/ys/accountCenter/postList?id=210401">笑抵千言♡</a>，他对于每日隐藏成就的研究更深入，对于难以完成的任务进行分解，告诉你哪里可以通过小技巧判断是否能继续完成下去，哪里可以通过小技巧快速完成拿到成就</p>
+<h1 id="队伍练度"><a href="#队伍练度" class="headerlink" title="队伍练度"></a>队伍练度</h1><p>由于我对于深渊的要求只是能打过12-3就行，所以有关于打满12层、12层速通等内容，我并不感兴趣。这里简单说下我目前的练度就行</p>
+<h2 id="夜兰高配雷国队"><a href="#夜兰高配雷国队" class="headerlink" title="夜兰高配雷国队"></a>夜兰高配雷国队</h2><p>队伍角色：雷神、夜兰、班尼特、香菱</p>
+<table>
+  <tr>
+  <td><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308112048620.jpg"/></td>
+    <td><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308112035594.jpg"/></td>
+    <td><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308112035595.jpg"/></td>
+  </tr>
+</table>
+
+
+<p>目前我的版本是3.8，马上就要4.0了，这次上半是夜兰复刻，而此时我攒了190+颗粉球，百分百可以抽到夜兰，然后就等雷神复刻就行了，我好像是3.2入坑的，完美错过了雷神和绫人那个池子         </p>
+<p>现在是用莫娜做驾驶员，以及点秋香经典组合           </p>
+<h2 id="神猫万心队"><a href="#神猫万心队" class="headerlink" title="神猫万心队"></a>神猫万心队</h2><p>队伍角色：神里绫华、迪奥娜、枫原万叶、珊瑚宫心海</p>
+<table>
+  <tr>
+    <td><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308112038770.jpg"/></td>
+    <td><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308112037597.jpg"/></td>
+    <td><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308112037595.jpg"/></td>
+    <td><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308112037596.jpg"/></td>
+  </tr>
+</table>
+
+<p>这是我目前来说，输出最高的队伍了，神里是和申鹤一个池子的，当时那个卡池并不会去攒粉球，于是只把神里抽上来了，还是氪了一个648的结果，练度足够我打过12-3了，日后可以慢慢刷圣遗物</p>
+<h2 id="草行久-菲谢尔队"><a href="#草行久-菲谢尔队" class="headerlink" title="草行久+菲谢尔队"></a>草行久+菲谢尔队</h2><p>队伍角色：纳西达、行秋、久歧忍、菲谢尔</p>
+<p>草国队和岩队我都没有培养，4.0有一套剧场圣遗物，菲谢尔大喝汤了，目前这个队伍还差草神，草神第二次复刻的时候，我也没有养成攒粉球的习惯，因此也错过了，也就是这次之后，我正式开始攒了，然后才能把万叶、心海给拿下</p>
+<h2 id="女仆云堇岩队"><a href="#女仆云堇岩队" class="headerlink" title="女仆云堇岩队"></a>女仆云堇岩队</h2><p>队伍角色：诺艾尔、五郎、云堇、钟离</p>
+<h1 id="未来规划"><a href="#未来规划" class="headerlink" title="未来规划"></a>未来规划</h1><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308112051985.png" alt=""></p>
+<p>由于我是成就党，到了现在长草期，一部分内容肯定是成就，在我<a href="https://space.bilibili.com/19474542/favlist?fid=2220732442&amp;ftype=create">长草期</a>的文件夹中，记录了包含成就的每日任务，截至目前，我蒙德还剩下惊喜大礼和过量的思念这两个任务的成就没有拿到，其中惊喜大礼在这一轮中就可以做完，也就是还剩下最后一次；过量的思念本轮做完之后是3次，还需要再来两轮才可以做完</p>
+<p>然后就是关于队伍了，我要培养四支队伍，4队16个角色需要做的事情，我放在了上面这张图上，也就是主要练度部分</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308112056836.png" alt=""></p>
+<p>然后就是次要练度，这部分角色是我觉得有培养的潜力，目前包括提纳里、琴、赛诺、绮良良、烟绯、瑶瑶、珐露珊、小鹿，随着以后角色的抽到，我会适当做出调整，可以看到，弹弓是打算给提纳里使用，等4.0更新了，灰河渡手打算给琴用(原本打算给她飞天御剑)，总之就是随着版本更新，进行更适合的武器和圣遗物更换</p>
+<p>最后，主要练度和次要练度的角色培养完了，将除了这些角色之外的角色，拉到66级，不过我估计，主要练度里面的角色，一套主词条适合的圣遗物都够我刷很久了，因此我会在很久很久以后，才去碰次要练度以及拉到66级的角色</p>
+<h2 id="肝的顺序"><a href="#肝的顺序" class="headerlink" title="肝的顺序"></a>肝的顺序</h2><p>这里说下我肝的一个顺序，先放这张图，这是我关注的UP主，关于影月月，我只关注了他的魔神+世界任务(这两种任务在一个合集里)、传说任务、邀约任务这三个合集，因为目前来说，原神任务攻略做得最好的就是他了，而我只想关注他原神任务相关攻略，因此关注下合集也就够了，任务视频更新了我也能观看，影月月播放量也有我的一份。然后关于如何培养角色，我关注了<a href="https://space.bilibili.com/644663808/channel/collectiondetail?sid=212670">贪欲九头蛇</a>的合集，以及<a href="https://space.bilibili.com/91489061/channel/collectiondetail?sid=297976">猫冬</a>的合集<br>至于其他方面，关注下面这些UP久足够了，基本上包含了所需要的一切了</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308112110328.png" alt=""></p>
+<p>大致就是这样一个顺序，有些是同步进行的，例如长期成就和角色练度</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308112149207.png" alt=""></p>
+<p>通过这篇博客，深入探讨了我的原神进度以及未来规划这个话题，并希望您对此有了更全面的了解。希望的我分享对您有所帮助</p>
+]]></content>
+      <categories>
+        <category>游戏体验</category>
+      </categories>
+      <tags>
+        <tag>原神</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>域名的小问题导致网站关闭了很久</title>
     <url>/130-domain-name-issue/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>关注我博客的朋友应该发现了，我的博客关闭了一段时间，时间不到半年左右，这篇博客就是说明，为什么我的博客关闭了一段时间</p>
+]]></content>
       <categories>
         <category>极客之旅</category>
       </categories>
@@ -2989,17 +2930,6 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
       <tags>
         <tag>Butterfly</tag>
         <tag>远程友链</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>原神进度以及未来规划</title>
-    <url>/129-genshin-progress-planning/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>游戏体验</category>
-      </categories>
-      <tags>
-        <tag>原神</tag>
       </tags>
   </entry>
   <entry>
@@ -3489,6 +3419,53 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
       </tags>
   </entry>
   <entry>
+    <title>外文翻译</title>
+    <url>/106-translation/</url>
+    <content><![CDATA[<h1 id="文本检测的字符区域感知"><a href="#文本检测的字符区域感知" class="headerlink" title="文本检测的字符区域感知"></a>文本检测的字符区域感知</h1><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>最近出现了基于神经网络的场景文本检测方法，并显示出令人鼓舞的结果。经过严格的单词级边界框训练的先前方法在以任意形状表示文本区域方面显示出局限性。在本文中，我们提出了一种新的场景文本检测方法，通过探索每个字符和字符之间的亲和力来有效地检测文本区域。为了克服单个字符级注释的不足，我们提出的框架利用了合成图像的给定字符级注释和通过学习的临时模型获取的真实图像的估计字符级基础。为了估计字符之间的亲和力，使用新提出的亲和力表示来训练网络。在六个基准测试上进行了广泛的实验，包括TotalText和CTW-1500数据集，这些数据集在自然图像中包含高度弯曲的文本，这表明我们的字符级文本检测明显优于最新的检测器。根据结果，我们提出的方法保证了检测复杂场景文本图像（如任意定向，弯曲或变形文本）的高度灵活性。</p>
+<h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1.引言"></a>1.引言</h2><p>场景文本检测由于其众多应用（例如即时翻译，图像检索，场景解析，地理位置和盲目导航）而在计算机视觉领域引起了广泛关注。近来，基于深度学习的场景文本检测器显示出令人鼓舞的性能<sup>[8、40、21、4、11、10、12、13、17、24、25、32、26]</sup>。这些方法主要训练他们的网络以定位字级边界框。但是,它们可能会遇到困难的情况，例如弯曲，变形或过长的文本，这些文本很难用单个边界框检测到。 然而，当通过自下而上的方式链接连续的字符来处理具有挑战性的文本时，字符级意识具有许多优点。 不幸的是，大多数现有的文本数据集都没有提供字符级注释，并且获取字符级基础事实所需的工作过于昂贵。<br>在本文中，我们提出了一种新颖的文本检测器，该文本检测器可以定位各个字符区域并将检测到的字符链接到文本实例。 我们的框架被称为用于文字检测的字符区域感知的CRAFT，是使用卷积神经网络设计的，该卷积神经网络生成字符区域得分和亲和力得分。区域分数用于在图像中定位单个字符，而亲和度分数用于将每个字符分组为单个实例。 为了弥补字符级注释的不足，我们提出了一个弱监督学习框架，该框架估计现有真实单词级数据集中的字符级基本事实。<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203102122032.png" alt="图1.使用CRAFT进行字符级检测的可视化。(a)我们提议的框架预测的热图 (b)各种形状的文本的检测结果"></p>
+<p>图1是CRAFT在各种形状的文本上的结果的可视化。通过利用字符级区域意识，可以轻松呈现各种形状的文本。我们在ICDAR数据集上进行了广泛的实验[15、14、28]，以验证我们的方法，实验结果表明，该方法优于最新的文本检测器。此外，在MSRATD500，CTW-1500和TotalText数据集上进行的实验[36、38、3]显示了该方法在复杂情况下（例如长，弯曲和/或任意形状的文本）的高度灵活性。</p>
+<h2 id="2-相关工作"><a href="#2-相关工作" class="headerlink" title="2.相关工作"></a>2.相关工作</h2><p>在深度学习出现之前，场景文本检测的主要趋势是自下而上，其中以手工功能（例如MSER<sup>[27]</sup>或SWT<sup>[5]</sup>）为基本组成部分是最主要的。最近，通过采用流行的对象检测/分段方法（如SSD<sup>[20]</sup>，Faster R-CNN<sup>[30]</sup>和FCN<sup>[23]</sup>），提出了基于深度学习的文本检测器。<br>基于回归的文本检测。已经提出了使用从流行的对象检测器改编的使用框回归的各种文本检测器。与一般对象不同，文本通常以不规则的形状呈现，具有各种纵横比。 为了解决这个问题，TextBoxes<sup>[18]</sup>修改了卷积核和锚定框以有效地捕获各种文本形状。DMPNet<sup>[22]</sup>试图通过合并四边形滑动窗口来进一步减少该问题。最近，提出了旋转敏感回归检测器（RSDD）<sup>[19]</sup>，该检测器通过主动旋转卷积滤波器来充分利用旋转不变特征。但是，使用这种方法来捕获野外存在的所有可能形状存在结构上的限制。<br>基于回归的文本检测。已经提出了使用从流行的对象检测器改编的使用框回归的各种文本检测器。与一般对象不同，文本通常以不规则的形状呈现，具有各种纵横比。 为了解决这个问题，TextBoxes<sup>[18]</sup>修改了卷积核和锚定框以有效地捕获各种文本形状。DMPNet<sup>[22]</sup>试图通过合并四边形滑动窗口来进一步减少该问题。最近，提出了旋转敏感回归检测器（RSDD）<sup>[19]</sup>，该检测器通过主动旋转卷积滤波器来充分利用旋转不变特征。但是，使用这种方法来捕获野外存在的所有可能形状存在结构上的限制。<br>基于回归的文本检测。已经提出了使用从流行的对象检测器改编的使用框回归的各种文本检测器。与一般对象不同，文本通常以不规则的形状呈现，具有各种纵横比。 为了解决这个问题，TextBoxes<sup>[18]</sup>修改了卷积核和锚定框以有效地捕获各种文本形状。DMPNet<sup>[22]</sup>试图通过合并四边形滑动窗口来进一步减少该问题。最近，提出了旋转敏感回归检测器（RSDD）<sup>[19]</sup>，该检测器通过主动旋转卷积滤波器来充分利用旋转不变特征。但是，使用这种方法来捕获野外存在的所有可能形状存在结构上的限制。<br>基于分段的文本检测器另一种常见的方法是基于处理分段的工作，该工作旨在在像素级别上查找文本区域。这些通过估计单词边界区域来检测文本的方法，例如多尺度FCN<sup> [7]</sup>，整体预测<sup>[37]</sup>和PixelLink<sup> [4]</sup>，也已经提出使用分段作为其基础。SSTD<sup> [8]</sup>尝试通过使用注意力机制通过减少特征级别的背景干扰来增强文本相关区域，从而从回归和分割方法中受益。最近，提出了TextSnake <sup>[24]</sup>通过预测文本区域和中心线以及几何属性来检测文本实例。<br>端到端文本检测器端到端方法同时训练检测和识别模块，以便通过利用识别结果来提高检测精度。 FOTS<sup> [21]</sup>和EAA<sup> [10]</sup>连接了流行的检测和识别方法，并以端到端的方式对其进行了训练。Mask TextSpotter <sup>[25]</sup>利用他们的统一模型将识别任务视为语义分割问题。显然，使用识别模块进行训练可以帮助文本检测器对类似文本的背景杂波变得更加健壮。<br>大多数方法都以单词为单位来检测文本，但是定义单词的检测范围并非易事，因为单词可以按各种标准（例如含义，空格或颜色）分开。另外，不能严格定义分词的边界，因此分词本身没有明显的语义。单词注解的这种含混不清稀释了回归和分割方法的地面真理的含义。<br>字符级文本检测器 Zhang等。<sup>[39]</sup>提出了一种字符级检测器，它使用了由MSER<sup> [27]</sup>提炼的文本块候选。它使用MSER识别单个字符的事实限制了在某些情况下（例如对比度低，曲率和光反射的场景）的检测鲁棒性等。<sup>[37]</sup>使用了字符的预测图以及文本单词区域和需要字符级别注释的链接方向的图。代替显式的字符级预测，Seglink <sup>[32]</sup>搜索文本网格（部分文本段），并将这些段与其他链接预测相关联。 即使Mask TextSpotter <sup>[25]</sup>预测了字符级别的概率图，它也被用于文本识别而不是发现单个字符。<br>这项工作的灵感来自WordSup<sup> [12]</sup>的思想，该思想使用了一个弱监督框架来训练字符级检测器。但是，Wordsup的缺点是字符表示形式是在矩形锚中形成的，因此很容易受到由不同摄影机视点引起的字符透视变形的影响。而且，它受到骨干结构性能的约束（即，使用SSD，并受到锚定盒的数量及其尺寸的限制）。</p>
+<h2 id="3-方法"><a href="#3-方法" class="headerlink" title="3.方法"></a>3.方法</h2><p>我们的主要目标是在自然图像中精确定位所有单个字符。为此，我们训练了一个深度神经网络来预测字符区域和字符之间的亲和力。由于没有可用的公共数据集，因此该模型是以弱监督的方式进行训练的。</p>
+<h3 id="3-1结构"><a href="#3-1结构" class="headerlink" title="3.1结构"></a>3.1结构</h3><p>我们采用基于VGG-16<sup> [34]</sup>和批处理归一化的全卷积网络体系结构作为我们的骨干。 我们的模型在解码部分具有跳过连接，这类似于U-net [31]，因为它聚合了低级特征。最终输出具有两个通道作为得分图：区域得分和亲和力得分。图2示意性地示出了网络架构。<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203102129803.png" alt="图2.我们的网络架构的示意图"></p>
+<h3 id="3-2训练"><a href="#3-2训练" class="headerlink" title="3.2训练"></a>3.2训练</h3><h4 id="3-2-1真实标签生成"><a href="#3-2-1真实标签生成" class="headerlink" title="3.2.1真实标签生成"></a>3.2.1真实标签生成</h4><p>对于每个训练图像，我们使用字符级边界框生成区域分数和亲和度分数的地面真相标签。区域得分表示给定像素是字符中心的概率，而亲和力得分表示相邻字符之间空间的中心概率。<br>与二进制分割图不同，二进制分割图离散地标记每个像素，我们使用高斯热图对字符中心的概率进行编码。 此热图表示已用于其他应用程序，例如姿势估计工作<sup>[1，29]</sup>，因为它在处理不受严格限制的地面真实区域时具有很高的灵活性。我们使用热图表示来学习区域得分和亲和力得分。</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203102131316.png" alt="图3.我们框架中的真实数据生成过程的图示。 我们从具有字符级别注释的合成图像生成真实数据标签"></p>
+<p>对于亲和度得分的基本事实，亲和度框是使用相邻的字符框定义的，如图3所示。通过绘制对角线以连接每个字符框的相对角，我们可以生成两个三角形-我们将参考它们 作为上下字符三角形。然后，对于每个相邻的字符框对，通过将上下三角形的中心设置为该框的角来生成相似度框。<br>提出的地面实况定义使模型能够充分检测大型或长文本实例，尽管使用的接收域较小。另一方面，在这种情况下，像盒回归之类的先前方法需要较大的接受场。 我们的字符级检测使卷积过滤器可以只关注字符内和字符间，而不关注整个文本实例。</p>
+<h4 id="3-2-2弱监督学习"><a href="#3-2-2弱监督学习" class="headerlink" title="3.2.2弱监督学习"></a>3.2.2弱监督学习</h4><p>与合成数据集不同，数据集中的真实图像通常具有单词级注释。在这里，我们以弱监督的方式从每个单词级注释生成字符框，如图4所示。当提供带有单词级注释的真实图像时，学习的过渡模型将预测裁剪后的单词图像的字符区域得分生成字符级边界框。为了反映临时模型预测的可靠性，每个单词框上的置信度图的值与检测到的字符数除以地面真实字符数成正比，用于在学习期间权重训练。<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203102131655.png" alt="图4.提出的方法的整体培训流程的图示。训练是在弱监督的情况下使用真实图像和合成图像进行的"></p>
+<p>图6显示了拆分字符的整个过程。首先，从原始图像中裁剪单词级图像。其次，最新训练的模型可以预测区域得分。第三，分水岭算法<sup>[35]</sup>用于分割字符区域，用于使字符边界框覆盖区域。最后，使用裁剪步骤中的逆变换，将字符框的坐标转换回原始图像坐标。可以使用获得的四边形字符级边界框通过图3中描述的步骤来生成区域分数和亲和度分数的伪真实数据（pseudoGTs）。</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203102132797.png" alt="图6.从单词级注释中实现字符级注释的字符拆分过程：1)裁剪单词级图像；2)预测区域分数；3)应用分水岭算法；4)得到字符边界框；5)解开字符边界框"></p>
+<p>当使用弱监督训练模型时，我们被迫使用不完整的伪GT进行训练。如果使用不正确的区域分数训练模型，则字符区域内的输出可能会模糊。为了防止这种情况，我们测量了模型生成的每个伪GT的质量。幸运的是，文本注释中有一个非常强烈的提示，即单词长度。在大多数数据集中，提供了单词的转录，单词的长度可用于评估伪GT的置信度。<br>对于训练数据的单词级注释样本w，令R(w)和l(w)分别为样本w的边界框区域和词长。通过字符分割过程，我们可以获得估计的字符边界框及其对应的字符长度lc(w)。 </p>
+<ul>
+<li><p>然后将样本w的置信度得分sconf(w)计算为</p>
+<script type="math/tex; mode=display">s_{conf}(w)=\frac{l(w)- min(l(w),|l(w)- l^{c}(w)|)}{l(w)} {,\qquad(1)}</script></li>
+<li><p>图像的像素置信度图Sc计算为</p>
+</li>
+</ul>
+<script type="math/tex; mode=display">S_{c}(p)=
+    \begin{cases}
+        s_{conf}(w)  & \text{p$\in$R(w)}, \\[2ex]
+        1        & \text{otherwise}, \\
+    \end{cases}
+   \qquad\qquad{(2)}</script><ul>
+<li>其中p表示区域R（w）中的像素。目标L定义为</li>
+</ul>
+<script type="math/tex; mode=display">L=\sum_{p}{S_{c}(p)\cdot(||S{_r}(p)-S{^*_r}(p)||{^2_2} +||S{_a}(p)-S{^*_a}(p)||{^2_2})} ,\quad(3)</script><p>其中$S{\times}r(p)$和$Sa{\times}(p)$分别表示伪地面真相区域得分和亲和力图，而Sr(p)和Sa(p)分别表示预测区域得分和亲和力得分。在使用综合数据进行训练时，我们可以获得真实的地面真相，因此将Sc(p)设置为1。<br>随着训练的进行，CRAFT模型可以更准确地预测角色，并且置信度得分sconf(w)也逐渐增加。图5示出了训练期间的人物区域得分图。 在训练的早期阶段，自然图像中不熟悉的文本的区域分数相对较低。该模型学习新文本的外观，例如不规则字体和合成文本，这些文本的数据分布与SynthText数据集的数据分布不同。<br>如果置信度得分sconf(w)低于0.5，则应忽略估计的字符边界框，因为它们在训练模型时会产生不利影响。在这种情况下，我们假设单个字符的宽度是恒定的，并通过简单地将单词区域R(w)除以字符数l(w)来计算字符级预测。然后，将sconf(w)设置为0.5，以学习看不见的文本外观。</p>
+<h3 id="3-2推理"><a href="#3-2推理" class="headerlink" title="3.2推理"></a>3.2推理</h3><p>在推断阶段，最终输出可以各种形状传递，例如单词框或字符框，以及其他多边形。对于像ICDAR这样的数据集，评估协议是单词级交联(IoU)，因此在此我们描述如何通过简单但有效的后处理步骤，从预测的Sr和Sa中制作单词级边界框QuadBox。<br>查找边界框的后处理总结如下。首先，将覆盖图像的二进制映射M初始化为0。如果Sr(p)&gt;τr或Sa(p)&gt;τa，则M(p)设置为1，其中τr是区域阈值，而τa是亲和度阈值。其次，在M上执行连接组件标签(CCL)。最后，通过找到具有最小面积的旋转矩形来获得QuadBox，该矩形包围着与每个标签相对应的连接组件。 OpenCV提供的诸如connectedComponents和minAreaRect之类的功能可以用于此目的。<br>请注意，CRAFT的优点是它不需要任何其他后处理方法，例如非最大抑制(NMS)。 由于我们有用CCL分隔的单词区域的图像斑点，因此，单词的边界框仅由单个封闭矩形定义。另一方面，我们的字符链接过程是在像素级别进行的，这与其他基于链接的方法<sup>[32、12]</sup>明显不同，后者依赖显式地搜索文本组件之间的关系。</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203102143883.png" alt="图7.任意形状的文本的多边形生成"></p>
+<p>另外，我们可以在整个字符区域周围生成多边形，以有效处理弯曲的文本。多边形生成的过程如图7所示。第一步是沿着扫描方向找到字符区域的局部最大值，如图中蓝色箭头所示。将局部最大值线的长度均等地设置为其中的最大长度，以防止最终的多边形结果变得不均匀。 连接局部最大值的所有中心点的线称为中心线，以黄色显示。然后，旋转局部最大值线以使其垂直于中心线，以反映字符的倾斜角度，如红色箭头所示。局部最大值线的端点是文本多边形控制点的候选项。为了完全覆盖文本区域，我们将两条最外侧倾斜的局部最大值线沿局部最大值中心线向外移动，以形成最终控制点(绿色点)。</p>
+]]></content>
+      <categories>
+        <category>CV学习笔记</category>
+        <category>学术研究</category>
+      </categories>
+      <tags>
+        <tag>CRNN</tag>
+        <tag>CTPN</tag>
+        <tag>CTC</tag>
+        <tag>TextDetection</tag>
+        <tag>OpenCV</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CTPN模型讲解</title>
     <url>/110-ctpn-model/</url>
     <content><![CDATA[<p>文字识别也是图像领域一个常见问题。然而，对于自然场景图像，首先要定位图像中的文字位置，然后才能进行识别。<br>所以一般来说，从自然场景图片中进行文字识别，需要包括2个步骤：<br><strong>文字检测</strong>：解决的问题是哪里有文字，文字的范围有多少<br><strong>文字识别</strong>：对定位好的文字区域进行识别，主要解决的问题是每个文字是什么，将图像中的文字区域进转化为字符信息。</p>
@@ -3602,53 +3579,6 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
       <tags>
         <tag>ctpn</tag>
         <tag>论文复现</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>外文翻译</title>
-    <url>/106-translation/</url>
-    <content><![CDATA[<h1 id="文本检测的字符区域感知"><a href="#文本检测的字符区域感知" class="headerlink" title="文本检测的字符区域感知"></a>文本检测的字符区域感知</h1><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>最近出现了基于神经网络的场景文本检测方法，并显示出令人鼓舞的结果。经过严格的单词级边界框训练的先前方法在以任意形状表示文本区域方面显示出局限性。在本文中，我们提出了一种新的场景文本检测方法，通过探索每个字符和字符之间的亲和力来有效地检测文本区域。为了克服单个字符级注释的不足，我们提出的框架利用了合成图像的给定字符级注释和通过学习的临时模型获取的真实图像的估计字符级基础。为了估计字符之间的亲和力，使用新提出的亲和力表示来训练网络。在六个基准测试上进行了广泛的实验，包括TotalText和CTW-1500数据集，这些数据集在自然图像中包含高度弯曲的文本，这表明我们的字符级文本检测明显优于最新的检测器。根据结果，我们提出的方法保证了检测复杂场景文本图像（如任意定向，弯曲或变形文本）的高度灵活性。</p>
-<h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1.引言"></a>1.引言</h2><p>场景文本检测由于其众多应用（例如即时翻译，图像检索，场景解析，地理位置和盲目导航）而在计算机视觉领域引起了广泛关注。近来，基于深度学习的场景文本检测器显示出令人鼓舞的性能<sup>[8、40、21、4、11、10、12、13、17、24、25、32、26]</sup>。这些方法主要训练他们的网络以定位字级边界框。但是,它们可能会遇到困难的情况，例如弯曲，变形或过长的文本，这些文本很难用单个边界框检测到。 然而，当通过自下而上的方式链接连续的字符来处理具有挑战性的文本时，字符级意识具有许多优点。 不幸的是，大多数现有的文本数据集都没有提供字符级注释，并且获取字符级基础事实所需的工作过于昂贵。<br>在本文中，我们提出了一种新颖的文本检测器，该文本检测器可以定位各个字符区域并将检测到的字符链接到文本实例。 我们的框架被称为用于文字检测的字符区域感知的CRAFT，是使用卷积神经网络设计的，该卷积神经网络生成字符区域得分和亲和力得分。区域分数用于在图像中定位单个字符，而亲和度分数用于将每个字符分组为单个实例。 为了弥补字符级注释的不足，我们提出了一个弱监督学习框架，该框架估计现有真实单词级数据集中的字符级基本事实。<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203102122032.png" alt="图1.使用CRAFT进行字符级检测的可视化。(a)我们提议的框架预测的热图 (b)各种形状的文本的检测结果"></p>
-<p>图1是CRAFT在各种形状的文本上的结果的可视化。通过利用字符级区域意识，可以轻松呈现各种形状的文本。我们在ICDAR数据集上进行了广泛的实验[15、14、28]，以验证我们的方法，实验结果表明，该方法优于最新的文本检测器。此外，在MSRATD500，CTW-1500和TotalText数据集上进行的实验[36、38、3]显示了该方法在复杂情况下（例如长，弯曲和/或任意形状的文本）的高度灵活性。</p>
-<h2 id="2-相关工作"><a href="#2-相关工作" class="headerlink" title="2.相关工作"></a>2.相关工作</h2><p>在深度学习出现之前，场景文本检测的主要趋势是自下而上，其中以手工功能（例如MSER<sup>[27]</sup>或SWT<sup>[5]</sup>）为基本组成部分是最主要的。最近，通过采用流行的对象检测/分段方法（如SSD<sup>[20]</sup>，Faster R-CNN<sup>[30]</sup>和FCN<sup>[23]</sup>），提出了基于深度学习的文本检测器。<br>基于回归的文本检测。已经提出了使用从流行的对象检测器改编的使用框回归的各种文本检测器。与一般对象不同，文本通常以不规则的形状呈现，具有各种纵横比。 为了解决这个问题，TextBoxes<sup>[18]</sup>修改了卷积核和锚定框以有效地捕获各种文本形状。DMPNet<sup>[22]</sup>试图通过合并四边形滑动窗口来进一步减少该问题。最近，提出了旋转敏感回归检测器（RSDD）<sup>[19]</sup>，该检测器通过主动旋转卷积滤波器来充分利用旋转不变特征。但是，使用这种方法来捕获野外存在的所有可能形状存在结构上的限制。<br>基于回归的文本检测。已经提出了使用从流行的对象检测器改编的使用框回归的各种文本检测器。与一般对象不同，文本通常以不规则的形状呈现，具有各种纵横比。 为了解决这个问题，TextBoxes<sup>[18]</sup>修改了卷积核和锚定框以有效地捕获各种文本形状。DMPNet<sup>[22]</sup>试图通过合并四边形滑动窗口来进一步减少该问题。最近，提出了旋转敏感回归检测器（RSDD）<sup>[19]</sup>，该检测器通过主动旋转卷积滤波器来充分利用旋转不变特征。但是，使用这种方法来捕获野外存在的所有可能形状存在结构上的限制。<br>基于回归的文本检测。已经提出了使用从流行的对象检测器改编的使用框回归的各种文本检测器。与一般对象不同，文本通常以不规则的形状呈现，具有各种纵横比。 为了解决这个问题，TextBoxes<sup>[18]</sup>修改了卷积核和锚定框以有效地捕获各种文本形状。DMPNet<sup>[22]</sup>试图通过合并四边形滑动窗口来进一步减少该问题。最近，提出了旋转敏感回归检测器（RSDD）<sup>[19]</sup>，该检测器通过主动旋转卷积滤波器来充分利用旋转不变特征。但是，使用这种方法来捕获野外存在的所有可能形状存在结构上的限制。<br>基于分段的文本检测器另一种常见的方法是基于处理分段的工作，该工作旨在在像素级别上查找文本区域。这些通过估计单词边界区域来检测文本的方法，例如多尺度FCN<sup> [7]</sup>，整体预测<sup>[37]</sup>和PixelLink<sup> [4]</sup>，也已经提出使用分段作为其基础。SSTD<sup> [8]</sup>尝试通过使用注意力机制通过减少特征级别的背景干扰来增强文本相关区域，从而从回归和分割方法中受益。最近，提出了TextSnake <sup>[24]</sup>通过预测文本区域和中心线以及几何属性来检测文本实例。<br>端到端文本检测器端到端方法同时训练检测和识别模块，以便通过利用识别结果来提高检测精度。 FOTS<sup> [21]</sup>和EAA<sup> [10]</sup>连接了流行的检测和识别方法，并以端到端的方式对其进行了训练。Mask TextSpotter <sup>[25]</sup>利用他们的统一模型将识别任务视为语义分割问题。显然，使用识别模块进行训练可以帮助文本检测器对类似文本的背景杂波变得更加健壮。<br>大多数方法都以单词为单位来检测文本，但是定义单词的检测范围并非易事，因为单词可以按各种标准（例如含义，空格或颜色）分开。另外，不能严格定义分词的边界，因此分词本身没有明显的语义。单词注解的这种含混不清稀释了回归和分割方法的地面真理的含义。<br>字符级文本检测器 Zhang等。<sup>[39]</sup>提出了一种字符级检测器，它使用了由MSER<sup> [27]</sup>提炼的文本块候选。它使用MSER识别单个字符的事实限制了在某些情况下（例如对比度低，曲率和光反射的场景）的检测鲁棒性等。<sup>[37]</sup>使用了字符的预测图以及文本单词区域和需要字符级别注释的链接方向的图。代替显式的字符级预测，Seglink <sup>[32]</sup>搜索文本网格（部分文本段），并将这些段与其他链接预测相关联。 即使Mask TextSpotter <sup>[25]</sup>预测了字符级别的概率图，它也被用于文本识别而不是发现单个字符。<br>这项工作的灵感来自WordSup<sup> [12]</sup>的思想，该思想使用了一个弱监督框架来训练字符级检测器。但是，Wordsup的缺点是字符表示形式是在矩形锚中形成的，因此很容易受到由不同摄影机视点引起的字符透视变形的影响。而且，它受到骨干结构性能的约束（即，使用SSD，并受到锚定盒的数量及其尺寸的限制）。</p>
-<h2 id="3-方法"><a href="#3-方法" class="headerlink" title="3.方法"></a>3.方法</h2><p>我们的主要目标是在自然图像中精确定位所有单个字符。为此，我们训练了一个深度神经网络来预测字符区域和字符之间的亲和力。由于没有可用的公共数据集，因此该模型是以弱监督的方式进行训练的。</p>
-<h3 id="3-1结构"><a href="#3-1结构" class="headerlink" title="3.1结构"></a>3.1结构</h3><p>我们采用基于VGG-16<sup> [34]</sup>和批处理归一化的全卷积网络体系结构作为我们的骨干。 我们的模型在解码部分具有跳过连接，这类似于U-net [31]，因为它聚合了低级特征。最终输出具有两个通道作为得分图：区域得分和亲和力得分。图2示意性地示出了网络架构。<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203102129803.png" alt="图2.我们的网络架构的示意图"></p>
-<h3 id="3-2训练"><a href="#3-2训练" class="headerlink" title="3.2训练"></a>3.2训练</h3><h4 id="3-2-1真实标签生成"><a href="#3-2-1真实标签生成" class="headerlink" title="3.2.1真实标签生成"></a>3.2.1真实标签生成</h4><p>对于每个训练图像，我们使用字符级边界框生成区域分数和亲和度分数的地面真相标签。区域得分表示给定像素是字符中心的概率，而亲和力得分表示相邻字符之间空间的中心概率。<br>与二进制分割图不同，二进制分割图离散地标记每个像素，我们使用高斯热图对字符中心的概率进行编码。 此热图表示已用于其他应用程序，例如姿势估计工作<sup>[1，29]</sup>，因为它在处理不受严格限制的地面真实区域时具有很高的灵活性。我们使用热图表示来学习区域得分和亲和力得分。</p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203102131316.png" alt="图3.我们框架中的真实数据生成过程的图示。 我们从具有字符级别注释的合成图像生成真实数据标签"></p>
-<p>对于亲和度得分的基本事实，亲和度框是使用相邻的字符框定义的，如图3所示。通过绘制对角线以连接每个字符框的相对角，我们可以生成两个三角形-我们将参考它们 作为上下字符三角形。然后，对于每个相邻的字符框对，通过将上下三角形的中心设置为该框的角来生成相似度框。<br>提出的地面实况定义使模型能够充分检测大型或长文本实例，尽管使用的接收域较小。另一方面，在这种情况下，像盒回归之类的先前方法需要较大的接受场。 我们的字符级检测使卷积过滤器可以只关注字符内和字符间，而不关注整个文本实例。</p>
-<h4 id="3-2-2弱监督学习"><a href="#3-2-2弱监督学习" class="headerlink" title="3.2.2弱监督学习"></a>3.2.2弱监督学习</h4><p>与合成数据集不同，数据集中的真实图像通常具有单词级注释。在这里，我们以弱监督的方式从每个单词级注释生成字符框，如图4所示。当提供带有单词级注释的真实图像时，学习的过渡模型将预测裁剪后的单词图像的字符区域得分生成字符级边界框。为了反映临时模型预测的可靠性，每个单词框上的置信度图的值与检测到的字符数除以地面真实字符数成正比，用于在学习期间权重训练。<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203102131655.png" alt="图4.提出的方法的整体培训流程的图示。训练是在弱监督的情况下使用真实图像和合成图像进行的"></p>
-<p>图6显示了拆分字符的整个过程。首先，从原始图像中裁剪单词级图像。其次，最新训练的模型可以预测区域得分。第三，分水岭算法<sup>[35]</sup>用于分割字符区域，用于使字符边界框覆盖区域。最后，使用裁剪步骤中的逆变换，将字符框的坐标转换回原始图像坐标。可以使用获得的四边形字符级边界框通过图3中描述的步骤来生成区域分数和亲和度分数的伪真实数据（pseudoGTs）。</p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203102132797.png" alt="图6.从单词级注释中实现字符级注释的字符拆分过程：1)裁剪单词级图像；2)预测区域分数；3)应用分水岭算法；4)得到字符边界框；5)解开字符边界框"></p>
-<p>当使用弱监督训练模型时，我们被迫使用不完整的伪GT进行训练。如果使用不正确的区域分数训练模型，则字符区域内的输出可能会模糊。为了防止这种情况，我们测量了模型生成的每个伪GT的质量。幸运的是，文本注释中有一个非常强烈的提示，即单词长度。在大多数数据集中，提供了单词的转录，单词的长度可用于评估伪GT的置信度。<br>对于训练数据的单词级注释样本w，令R(w)和l(w)分别为样本w的边界框区域和词长。通过字符分割过程，我们可以获得估计的字符边界框及其对应的字符长度lc(w)。 </p>
-<ul>
-<li><p>然后将样本w的置信度得分sconf(w)计算为</p>
-<script type="math/tex; mode=display">s_{conf}(w)=\frac{l(w)- min(l(w),|l(w)- l^{c}(w)|)}{l(w)} {,\qquad(1)}</script></li>
-<li><p>图像的像素置信度图Sc计算为</p>
-</li>
-</ul>
-<script type="math/tex; mode=display">S_{c}(p)=
-    \begin{cases}
-        s_{conf}(w)  & \text{p$\in$R(w)}, \\[2ex]
-        1        & \text{otherwise}, \\
-    \end{cases}
-   \qquad\qquad{(2)}</script><ul>
-<li>其中p表示区域R（w）中的像素。目标L定义为</li>
-</ul>
-<script type="math/tex; mode=display">L=\sum_{p}{S_{c}(p)\cdot(||S{_r}(p)-S{^*_r}(p)||{^2_2} +||S{_a}(p)-S{^*_a}(p)||{^2_2})} ,\quad(3)</script><p>其中$S{\times}r(p)$和$Sa{\times}(p)$分别表示伪地面真相区域得分和亲和力图，而Sr(p)和Sa(p)分别表示预测区域得分和亲和力得分。在使用综合数据进行训练时，我们可以获得真实的地面真相，因此将Sc(p)设置为1。<br>随着训练的进行，CRAFT模型可以更准确地预测角色，并且置信度得分sconf(w)也逐渐增加。图5示出了训练期间的人物区域得分图。 在训练的早期阶段，自然图像中不熟悉的文本的区域分数相对较低。该模型学习新文本的外观，例如不规则字体和合成文本，这些文本的数据分布与SynthText数据集的数据分布不同。<br>如果置信度得分sconf(w)低于0.5，则应忽略估计的字符边界框，因为它们在训练模型时会产生不利影响。在这种情况下，我们假设单个字符的宽度是恒定的，并通过简单地将单词区域R(w)除以字符数l(w)来计算字符级预测。然后，将sconf(w)设置为0.5，以学习看不见的文本外观。</p>
-<h3 id="3-2推理"><a href="#3-2推理" class="headerlink" title="3.2推理"></a>3.2推理</h3><p>在推断阶段，最终输出可以各种形状传递，例如单词框或字符框，以及其他多边形。对于像ICDAR这样的数据集，评估协议是单词级交联(IoU)，因此在此我们描述如何通过简单但有效的后处理步骤，从预测的Sr和Sa中制作单词级边界框QuadBox。<br>查找边界框的后处理总结如下。首先，将覆盖图像的二进制映射M初始化为0。如果Sr(p)&gt;τr或Sa(p)&gt;τa，则M(p)设置为1，其中τr是区域阈值，而τa是亲和度阈值。其次，在M上执行连接组件标签(CCL)。最后，通过找到具有最小面积的旋转矩形来获得QuadBox，该矩形包围着与每个标签相对应的连接组件。 OpenCV提供的诸如connectedComponents和minAreaRect之类的功能可以用于此目的。<br>请注意，CRAFT的优点是它不需要任何其他后处理方法，例如非最大抑制(NMS)。 由于我们有用CCL分隔的单词区域的图像斑点，因此，单词的边界框仅由单个封闭矩形定义。另一方面，我们的字符链接过程是在像素级别进行的，这与其他基于链接的方法<sup>[32、12]</sup>明显不同，后者依赖显式地搜索文本组件之间的关系。</p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@master/img/202203102143883.png" alt="图7.任意形状的文本的多边形生成"></p>
-<p>另外，我们可以在整个字符区域周围生成多边形，以有效处理弯曲的文本。多边形生成的过程如图7所示。第一步是沿着扫描方向找到字符区域的局部最大值，如图中蓝色箭头所示。将局部最大值线的长度均等地设置为其中的最大长度，以防止最终的多边形结果变得不均匀。 连接局部最大值的所有中心点的线称为中心线，以黄色显示。然后，旋转局部最大值线以使其垂直于中心线，以反映字符的倾斜角度，如红色箭头所示。局部最大值线的端点是文本多边形控制点的候选项。为了完全覆盖文本区域，我们将两条最外侧倾斜的局部最大值线沿局部最大值中心线向外移动，以形成最终控制点(绿色点)。</p>
-]]></content>
-      <categories>
-        <category>CV学习笔记</category>
-        <category>学术研究</category>
-      </categories>
-      <tags>
-        <tag>CRNN</tag>
-        <tag>CTPN</tag>
-        <tag>CTC</tag>
-        <tag>TextDetection</tag>
-        <tag>OpenCV</tag>
       </tags>
   </entry>
   <entry>
@@ -3955,6 +3885,148 @@ C=\max_{p\left( a_i \right)} \left[ H(Y)-H_{mi} \right] =\log m-H_{mi}</script><
       <tags>
         <tag>信息论</tag>
         <tag>编码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研政治记忆点</title>
+    <url>/127-exam-politics/</url>
+    <content><![CDATA[<p>1.我国国家制度和国家治理体系具有显著优势，是坚定“四个自信”的基本依据</p>
+<p>2.近代以来，中国人民反帝反封建的斗争之所以屡遭挫折和失败，最重要的原因就是没有一个先进政党作为凝聚力量的坚强领导核心</p>
+<p>3.美国一些势力出于霸权心态和冷战思维，将中国视为最主要的战略对手和最严峻的长期挑战，竭力进行围堵打压，一方面怂愚“台独”分裂势力制造两岸关系紧张动荡，另一方面却无端指责大陆“施压””胁迫””单方面改变现状”，为“台独”分裂势力撑腰打气，给中国实现和平统一制造障碍。其实质是企图改变台湾是中国的一部分的地位，制造“两个中国””一中一台”，实现其“以台制华”的政治目的</p>
+<p>4.历史思维能力是辩证思维与历史眼光的结合，是马克思主义科学历史观的具体表现和实践运用，是以史为鉴、知古鉴今，善于运用历史眼光认识发展规律、把握前进方向、指导现实工作的能力</p>
+<p>5.战略思维能力强调思维的整体性、全局性、长期性，是高瞻远瞩、统揽全局、善于把握事物发展总体趋势和方向的能力</p>
+<p>6.物质生产实践是人类最基本的实践活动，不是科学研究等其他活动</p>
+<p>7.题目出现了解等词，说明认识有待于深化，认识的感性阶段有待于发展到理性阶段</p>
+<p>8.与以往的剥削制度不同，资本家与工人的关系不是完全占有，也不是人身依附，而是基于劳动者人身自由基础上的“平等”关系，剥削带有一定的隐蔽性</p>
+<p>9.构建新发展格局是以全国统一大市场基础上的国内大循环为主体，不是各地都搞自我小循环</p>
+<p>10.统一战线是中国共产党凝聚人心、汇聚力量的政治优势和战略方针，是党克敌制胜、执政兴国的重要法宝，是团结海内外全体中华儿女实现中华民族伟大复兴的重要法宝，必须长期坚持</p>
+<p>11.有事好商量，众人的事情由众人商量，是人民民主的真谛</p>
+<p>12.以和平方式实现祖国统一，是中国共产党和中国政府解决台湾问题的第一选择，并非唯一选择</p>
+<p>13.建设中国特色社会主义法治体系为全面依法治国的总抓手</p>
+<p>14.上海合作组织并非军事同盟，秉持共同、综合、合作、可持续的安全观，推动构建均衡、有效、可持续的安全架构。出现“绝对安全”错误</p>
+<p>15.直接经验是认识的源泉，接受间接经验要以某种直接经验为基础</p>
+<p>16.实施乡村振兴战略，必须把确保重要农产品特别是粮食供给作为首要任务，把提高农业综合生产能力放在更加突出的位置，把“藏粮于地、藏粮于技”真正落实到位</p>
+<p>17.认清中国的国情，乃是认清一切革命问题的基本的根据、</p>
+<p>18.近代中国的主要矛盾、革命性质，中华民族面临的历史任务都是由近代社会的性质决定的</p>
+<p>19.法律的不可违抗性，是指法律必须遵守，违反法律要受到惩罚。任何人不论权力大小、职位高低，只要有违法犯罪行为，就要依法追究和承担法律责任</p>
+<p>20.法律的普遍适用性是指法律在本国主权范围内对所有人具有普遍的约束力。所有国家机关、社会组织和公民个人都必须遵守法律，依法享有和行使法定职权与权利，承担和履行法定职责与义务</p>
+<p>21.法律的阶级性是指法律是统治阶级意志的体现</p>
+<p>22.法律的优先适用性是指当同一项社会关系同时受到多种社会规范的调整而多种社会规范又相互矛盾时，要优先考虑法律规范的适用</p>
+<p>23.个人品德在社会道德建设中具有基础性的作用</p>
+<p>24.坚定不移跟党走，为党和人民奋斗，是共青团的初心使命</p>
+<p>25.勇于自我革命，始终成为紧跟党走在时代前列的先进组织，是解决建设什么样的青年组织、怎样建设青年组织这个共青团事关根本的重大问题的答案</p>
+<p>26.金砖国家领导人第十四次会晤，主题，“构建高质量伙伴关系，共创全球发展新时代</p>
+<p>27.2021年金砖国家领导人峰会，主题，金砖15周年：开展金砖合作，促进延续、巩固与共识</p>
+<p>28.三亚举行的第三届金砖国家领导人峰会，主题，展望未来、共享繁荣</p>
+<p>29.金砖国家领导人第九次会晤，主题，深化金砖伙伴关系，开辟更加光明未来</p>
+<p>30.马克思说：“人们自己创造自己的历史，但是他们并不是随心所欲地创造，并不是在他们自己选定的条件下创造，而是在直接碰到的、既定的、从过去承继下来的条件下创造。”</p>
+<p>31.垄断价格的产生并没有否定价值规律，但改变了价值规律的作用形式，市场价格即垄断价格是价值规律在垄断资本主义阶段作用的具体表现</p>
+<p>32.中华优秀传统文化是中华民族的“根”和“魂”，是最深厚的文化软实力，是中国特色社会主义植根的沃土，是我们在世界文化激荡中站稳脚跟的根基</p>
+<p>33.完成民主革命的遗留任务，在新解放区进行土改</p>
+<p>34.社会主义革命的任务，第一，没收官僚资本，确立社会主义国营经济的领导地位。第二；开始将资本主义纳入国家资本主义轨道，第三，引导个体农民在土地改革后逐步走上互助合作的道路</p>
+<p>35.十一届六中全会通过《关于建国以来党的若干历史问题的决议》，对新中国成立32年来党的重大历史事件特别是“文化大革命”作出正确总结，实事求是地评价毛泽东的历史地位，科学论述毛泽东思想作为党的指导思想的伟大意义。《决议》的通过，标志着党在指导思想上拨乱反正任务的完成</p>
+<p>36.十一届三中全会高度评价关于实践是检验真理的唯一标准问题的讨论；果断地停止使用“以阶级斗争为纲”的口号，作出把党和国家工作中心转移到经济建设上来、实行改革开放的历史性决策</p>
+<p>37.习近平法治思想从历史和现实相贯通、国际和国内相关联、理论和实际相结合上深刻回答了新时代为什么实行全面依法治国、怎样实行全面依法治国等一系列重大问题，是顺应实现中华民族伟大复兴时代要求应运而生的重大理论创新成果，是马克思主义法治理论中国化的最新成果，是习近平新时代中国特色社会主义思想的重要组成部分</p>
+<p>38.“五个坚持”充分体现了“上海精神”，始终是上合组织的生命力所在，也是必须长期坚持的根本遵循。“五个坚持”也是真正多边主义的实践，是对传统集团政治的超越，回答了在新的时代背景下应当推进什么样的新型区域合作、如何推进新型区域合作的问题，对上合组织自身建设、对促进国际关系健康公正发展均具有重要指导意义</p>
+<p>39.我们要共同守护人类生命健康，我们要共同促进经济复苏，我们要共同维护世界和平安宁，我们要共同应对全球治理挑战</p>
+<p>40.马克思和恩格斯创立马克思主义，是为了适应无产阶级实际斗争的要求</p>
+<p>41.八七会议，枪杆子里面出政权</p>
+<p>42.《论持久战》，兵民是胜利之本</p>
+<p>43.《反对本本主义》，没有调查就没有发言权</p>
+<p>44.六届六中全会，马克思主义中国化</p>
+<p>45.马克思主义中国化，用毛泽东的话说，就是“解决中国问题”和“创造些新的东西”。具体说来，马克思主义中国化就是：第一，坚持把马克思主义基本原理同中国具体实际相结合、同中华优秀传统文化相结合，运用马克思主义的立场、观点、方法研究和解决中国革命、建设、改革中的实际问题。第二，总结和提炼中国革命、建设、改革的实践经验，从而认识和掌握客观规律，为马克思主义理论宝库增添新的内容。第三，运用中国人民喜闻乐见的民族语言来阐述马克思主义理论，使之成为具有中国特色、中国风格、中国气派的马克思主义</p>
+<p>46.毛泽东思想不涉及对中国改革经验的科学总结问题，中国特色社会主义理论体系、习近平新时代中国特色社会主义思想不涉及对中国革命经验的科学总结问题</p>
+<p>47.在理论上闻述了中国革命的新道路，这标志着毛泽东思想开始形成</p>
+<p>48.毛泽东思想主题，中国革命和建设；邓小平主题，什么是社会主义、怎样建设社会主义；习近平主题，中国特色社会主义</p>
+<p>49.劳动力成为商品是货币转化为资本的前提</p>
+<p>50.资本家之所以能够购买工人的劳动力，把工人变成雇佣工人，其根源在于资本主义的生产资料所有制</p>
+<p>51.政治安全是核心，起决定性作用，规定和制约着其他领域的安全</p>
+<p>52.要解决中国发展进步问题，迫切需要新的思想引领救亡运动，迫切需要新的组织凝聚革命力量</p>
+<p>53.五四运动，实现了中国人民和中华民族自鸦片战争以来第一次全面觉醒</p>
+<p>54.“一五”计划确定的经济建设指导方针，突出了集中主要力量发展重工业，建立国家工业化和国防现代化的初步基础的核心要点</p>
+<p>55.“人工智能无法将意识活动从人脑中分离出来”说法不对，人工智能已经可以取代人的体力劳动和部分脑力劳动</p>
+<p>56.剩余价值是利润的本质，利润是剩余价值的转化形式。当剩余价值转化为利润时，剩余价值和可变资本的关系便被掩盖了</p>
+<p>57.利润是资本的赢利</p>
+<p>58.自觉维护党中央权威和集中统一领导；必须坚持和完善党的领导的体制机制；必须坚持党的民主集中制原则</p>
+<p>59.发挥人大及其常委会在立法工作中的主导作用</p>
+<p>60.1943年12月1日，中美英三国政府发表的《开罗宣言》宣布：“三国之宗旨在使日本所窃取于中国之领土，例如东北、台湾、澎湖列岛等，归还中国。”1945年7月26日，中美英三国共同签署、后来苏联参加的《波茨坦公告》，重申“开罗宣言之条件必将实施”。同年9月，日本签署《日本投降条款》，承诺“忠诚履行波茨坦公告各项规定之义务”。1945年10月25日，中国政府宣告“恢复对台湾行使主权”，并在台北举行“中国战区台湾省受降仪式”。由此，通过一系列具有国际法律效力的文件，中国从法律和事实上收复了台湾。</p>
+<p>61.与以往社会的道德形态相比，社会主义道德具有显著的先进性特征，这种先进性主要体现在：首先，社会主义道德是社会主义经济基础的反映；其次，社会主义道德是对人类优秀道德资源的批判继承和创新发展；最后，社会主义道德克服了以往阶级社会道德的片面性和局限性</p>
+<p>62.要坚持党领导立法、保证执法、支持司法、带头守法，把依法治国、依法执政、依法行政统一起来，把党总揽全局、协调各方同人大、政府、政协、监察机关、审判机关、检察机关依法依章程履行职能、开展工作统一起来，把党领导人民制定和实施宪法法律同党坚持在宪法法律范围内活动统一起来</p>
+<p>63.完法是国家各项制度和法律法规的总依据，对把国家各项事业和各项工作全面纳人法治轨道，维护社会公平正义具有重要意义</p>
+<p>64.人民至上是贯穿习近平新时代中国特色社会主义思想的一根红线，人民立场是习近平新时代中国特色社会主义思想的根本立场</p>
+<p>65.实现两岸和平统一，必须面对大陆和台湾社会制度与意识形态不同这一基本问题</p>
+<p>66.爱国、创业、求实、奉献是大庆精神、铁人精神</p>
+<p>67.热爱祖国、无私奉献、自力更生、艰苦奋斗、大力协同、勇于登攀是“两弹一星”精神</p>
+<p>68.上下同心、尽锐出战、精准务实、开拓创新、攻坚克难、不负人民是脱贫攻坚精神</p>
+<p>69.亲民爱民、艰苦奋斗、科学求实、迎难而上、无私奉献是焦裕禄精神</p>
+<p>70.诚信是个人立身处世的基本价值规范，是社会存续发展的重要价值基石</p>
+<p>71.文明是社会进步的重要标志，也是社会主义现代化国家的重要特征</p>
+<p>72.公正是人类社会进步的标尺，也是社会主义制度的本质要求</p>
+<p>73.自由是社会活力之源，是社会主义的价值理想</p>
+<p>74.习近平强调，思想政治理论课能否在立德树人中发挥应有作用，关键看重视不重视、适应不适应、做得好不好</p>
+<p>75.加快构建中国特色哲学社会科学，归根结底是建构中国自主的知识体系</p>
+<p>76.要综合运用好市场化、法治化手段，加快建立体现资源稀缺程度、生态损害成本、环境污染代价的资源价格形成机制。不是行政手段</p>
+<p>77.我们推动经济社会发展，归根结底是要实现全体人民共同富裕</p>
+<p>78.中共二大在中国近代史上第一次明确提出了反帝反封建的民主革命纲领。中共二大提出要“到群众中去”，要组成一个大的“群众党”。大会提出，为实现反帝反军阀的革命目标，必须联合全国一切革命党派，联合资产阶级民主派，组成“民主主义的联合战线”</p>
+<p>79.中国共产党第三次全国代表大会，正确估计了孙中山的革命立场和国民党进行改革的可能性，决定共产党员以个人身份加人国民党，以实现国共合作</p>
+<p>80.科学立法、严格执法、公正司法、全民守法是全面依法治国的基本格局</p>
+<p>81.中国特色社会主义法治道路，包括坚持党的领导，坚持中国特色社会主义制度，贯彻中国特色社会主义法治理论三个方面的核心要义</p>
+<p>82.习近平主席在撒马尔罕举行的上海合作组织成员国元首理事会第二十二次会议上鲜明指出，要坚定维护以联合国为核心的国际体系和以国际法为基础的国际秩序，弘扬全人类共同价值，坚持真正的多边主义，齐心协力完善全球治理，拼弃零和博弈和集团政治，携手推动国际秩序朝着更加公正合理的方向发展。有多边主义，但没有集团政治</p>
+<p>83.资产阶级选择自己的国家管理者、实现其内部利益平衡的政治机制是资本主义政党制度</p>
+<p>84.资产阶级法律的实质是将存在于资本家和劳动者之间、富人和穷人之间经济利益的不平等合法化</p>
+<p>85.让中国大飞机翻翔蓝天，承载着国家意志、民族梦想、人民期盼，要充分发挥新型举国体制优势</p>
+<p>86.1842年，英国强迫清政府签订《南京条约》，把香港岛割让给英国</p>
+<p>87.1860年，通过中英《北京条约》，英国割去香港岛对岸九龙半岛南端和昂船洲、</p>
+<p>88.1895年，日本强迫清政府签订《马关条约》，割去中国台湾全岛及所有附属各岛屿和涉湖列岛</p>
+<p>89.1901年《辛丑条约》的签订，标志着以慈禧太后为首的清政府已经彻底放弃了抵抗外国侵略者的念头，甘当“洋人的朝廷”</p>
+<p>90.毛泽东同志提出，要根据不同的地区，采取不同的策略。第一种是日本投降以前的老解放区，这种地区大体上早已分配土地，只需调整一部分土地。第二种是日本投降至1947年8月大反攻前解放的地区，这种地区完全适用土地法，普遍地彻底地分配土地。第三种是大反攻后新解放的地区，因群众尚未发动，不应当企图一下实行土地法，而应当分两个阶段实行土地法</p>
+<p>91.国民党统治区需要等到新中国成立后再进行土地改革</p>
+<p>92.弘扬英烈精神，康续红色血脉，让红色江山代代相传，成为时代赋予烈士褒扬工作的重要使命任务</p>
+<p>93.始终把革命利益放在首位，激发革命者为集体而献身的斗志；引导建立新型家庭关系和培育良好家风，树立社会新风尚；坚定党员的社会主义和共产主义的理想信念都是大学生发扬革命道德、传承红色基因的内容</p>
+<p>94.实践是检验认识真理性的唯一标准，衡量创新成功与否的唯一标准是正确指导实践，而不是能否应用于实践</p>
+<p>95.影响资本周转快慢的因素有许多，关键的因素有两个：一是资本周转的时间，二是生产资本的固定资本和流动资本的构成</p>
+<p>96.生产资本的不变资本和可变资本的构成讲的是生产资本构成，随着资本积累而产生的失业是由资本追逐剩余价值引起资本有机构成的提高所导致的</p>
+<p>97.所用资本和所费资本之间的差额是影响资本积累规模大小的因素</p>
+<p>98.资本主义终究要被社会主义所取代的原因是：首先，资本主义基本矛盾“包含着现代的一切冲突的萌芽”；第二，资本积累推动资本主义基本矛盾不断激化并最终否定资本主义自身；第三，国家垄断资本主义是资本社会化的更高形式，将成为社会主义的前奏；第四，资本主义社会存在着资产阶级和无产阶级两大阶级之间的矛盾和斗争</p>
+<p>99.习近平在《促进我国社会保障事业高质量发展、可持续发展》一文中强调，社会保障是保障和改善民生、维护社会公平、增进人民福祉的基本制度保障，是促进经济社会发展、实现广大人民群众共享改革发展成果的重要制度安排，发挥着民生保障安全网、收入分配调节器、经济运行减震器的作用，是治国安邦的大问题</p>
+<p>100.讲好中华文明故事，展示中国形象是提升文化软实力要做好的工作</p>
+<p>101.统一战线在维护国家主权、安全、发展利益上的作用更加重要。统一战线在围绕中心、服务大局上的作用更加重要。我国社会结构发生深刻变化，统一战线在增强党的阶级基础、扩大党的群众基础上的作用更加重要</p>
+<p>102.问盟会纲领中的民族主义没有从正面鲜明地提出反对帝国主义的主张。民权主义虽然强调了要建立民主共和国，却忽略了广大劳动群众在国家中的地位，因而难以使人民的民主权利得到真正的保证。孙中山的“平均地权”的主张，没有正面触及封建土地所有制</p>
+<p>103.孙中山强调，政治革命应当与民族革命并行。民族革命是扫除“现在的恶劣政治”，而政治革命则是扫除“恶劣政治的根本”，从而把斗争矛头直接指向集国内民族压迫与封建专制统治于一身的清政府。他的民权主义强调了要建立资产阶级民主共和国</p>
+<p>104.《论持久战》一文中，分析了抗日战争的四个特点；敌强我弱、敌退步我进步、敌国土地小人口少我国土地大人口多、敌失道寡助我得道多助；准确地预见了抗日战争由防御到相持、最后到反攻的三个阶段；系统提出了争取抗战胜利的依靠力量和战略战术</p>
+<p>105.1937年8月，中国共产党在陕北洛川召开政治局扩大会议，制定了抗日救国十大纲领，强调要打倒日本帝国主义，关键在于使已经发动的抗战成为全面的全民族抗战</p>
+<p>106.八大坚持党中央提出的既反保守又反冒进，即在综合平衡中稳步前进的经济建设方针；大会肯定“三个主休，三个补充”思想，即以国家经营和集体经营、计划生产、国家市场三者为主体，而以个体经营、自由生产、自由市场三者作为补充；八大通过的新党章是中国共产党在全国执政以后制定的第一部党章。</p>
+<p>107.八大坚持党中央提出的既反保守又反冒进，即在综合平衡中稳步前进的经济建设方针；大会肯定“三个主休，三个补充”思想，即以国家经营和集体经营、计划生产、国家市场三者为主体，而以个体经营、自由生产、自由市场三者作为补充；八大通过的新党章是中国共产党在全国执政以后制定的第一部党章。</p>
+<p>108.推进全面依法治国，法治政府建设是重点任务和主体工程</p>
+<p>109.剩余价值理论揭示了剩余价值的运动规律及其作用</p>
+<p>110.马克思劳动价值论通过对私有制商品经济条件下生产商品的劳动所特有的社会性质及其表现形式的分析，揭示了商品经济的内在矛盾及其运动规律，揭露和批判了商品拜物教观念</p>
+<p>111.保护文物和文化遗产、健全现代公共文化服务体系、构建中国特色哲学社会科学学科体系都是文化建设的具体举措</p>
+<p>112.党的二十大着眼新时代党和国家事业全局，明确把坚持马克思主义在意识形态领域的指导地位确立为根本制度</p>
+<p>113.腐败是危害党的生命力和战斗力的最大毒瘤，反腐败是最彻底的自我革命</p>
+<p>114.加强理想信念教育属于党的思想建设，坚持制度治党、依规治党属于党的制度建设，纠治形式主义、官僚主义属于党的作风建设</p>
+<p>115.九一八事变后，中国人民就在白山黑水间奋起抵抗，成为中国人民抗日战争的起点，同时揭开了世界反法西斯战争的序幕</p>
+<p>116.七七事变后，抗击侵略、救亡图存成为中国各党派、各民族、各阶级、各阶层、各团体，以及海外华侨华人的共同意志和行动，标志着中国进人全民族抗战阶段，并开辟了世界反法西斯战争的东方主战场</p>
+<p>117.资本积聚和资本集中都是扩大生产规模实现资本积累的手段，资本积聚是指个别资本，只有一个企业。资本集中是指个别资本通过结合而形成较大的资本，多个企业，比如大企业吞并小企业</p>
+<p>118.坚持深化改革、坚持敢于斗争是走好中国式现代化要遵循的原则</p>
+<p>119.党的二十大报告强调，要坚持人民至上、坚持自信自立、坚持守正创新、坚持问题导向、坚持系统观念、坚持胸怀天下</p>
+<p>120.完善分配制度的要求是坚持按劳分配为主体、多种分配方式并存，构建初次分配、再分配、第三次分配协调配套的制度体系。努力提高居民收人在国民收人分配中的比重，提高劳动报酬在初次分配و 中的比重。坚持多劳多得，鼓励勤劳致富，促进机会公平，增加低收人者收人，扩大中等收人群体。规范收人分配秩序，规范财富积累机制，保护合法收入，调节过高收人，取缔非法收入</p>
+<p>121.只提到初次分配，再分配，是错的，现在还要再加上三次分配</p>
+<p>122.第一，社会主义基本制度的确立极大地提高了工人阶级和广大劳动人民的积极性、创造性，为社会生产力的大发展开辟了广阔道路。第二，社会主义基本制度的确立为当代中国的一切发展进步提供了根本政治保障。第三，社会主义基本制度的确立为社会主义先进文化的发展指明了前进方向</p>
+<p>123.独立的、比较完整的工业体系和国民经济体系的建立，从根本上解决了工业化中“从无到有”的问题，使中国在赢得政治上的独立之后又赢得了经济上的独立，为中国以后的发展莫定了牢固的物质技术基础，而且为中国同包括西方发达国家在内的世界各国在平等互利的原则下发展对外贸易和经济往来创建了前提</p>
+<p>124.十八大召开至今已经十年了。十年来，我们经历了对党和人民事业具有重大现实意义和深远历史意义的三件大事是：第一，迎来中国共产党成立一百周年。第二，中国特色社会主义进人新时代。第三，完成脱贫攻坚、全面建成小康社会的历史任务，实现第一个百年奋斗目标</p>
+<p>125.开辟了中国特色社会主义道路，形成了中国特色社会主义理论体系是改革开放以来我们取得一切成绩和进步的根本原因</p>
+<p>126.习近平在二十大报告中强调，从现在起，中国共产党的中心任务就是团结带领全国各族人民全面建成社会主义现代化强国、实现第二个百年奋斗目标，以中国式现代化全面推进中华民族伟大复兴</p>
+<p>127.坚持和完善中国特色社会主义制度，推进国家治理体系和治理能力现代化是全面深化改革的总目标</p>
+<p>128.决胜全面建成小康社会，夺取新时代中国特色社会主义伟大胜利是2012年党的十八大提出的目标</p>
+]]></content>
+      <categories>
+        <category>考试资料</category>
+        <category>考研复盘</category>
+      </categories>
+      <tags>
+        <tag>考研</tag>
+        <tag>记忆</tag>
+        <tag>政治</tag>
       </tags>
   </entry>
   <entry>
@@ -6605,11 +6677,6 @@ C=\max_{p\left( a_i \right)} \left[ H(Y)-H_{mi} \right] =\log m-H_{mi}</script><
       </tags>
   </entry>
   <entry>
-    <title>番剧</title>
-    <url>/bangumis/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>相册</title>
     <url>/albums/index.html</url>
     <content><![CDATA[<div class="gallery-group-main">
@@ -6836,84 +6903,18 @@ C=\max_{p\left( a_i \right)} \left[ H(Y)-H_{mi} \right] =\log m-H_{mi}</script><
 </div>]]></content>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
+    <title>番剧</title>
+    <url>/bangumis/index.html</url>
     <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/css/font.css</url>
-    <content><![CDATA[:root {
-    --hl-color: hsl(220, 14%, 71%);
-    --hl-bg: hsl(220, 13%, 18%);
-}
-
-figure.highlight pre .deletion,
-figure.highlight pre .tag .name,
-figure.highlight pre .constant,
-figure.highlight pre .css .class,
-figure.highlight pre .number,
-figure.highlight pre .tag .attr,
-figure.highlight pre .ruby .constant {
-    color: hsl(29, 54%, 61%);
-}
-
-figure.highlight pre .addition,
-figure.highlight pre .string,
-figure.highlight pre .value {
-    color: hsl(95, 38%, 62%);
-}
-
-figure.highlight pre .comment,
-figure.highlight pre .xml .cdata {
-    color: hsl(220, 10%, 40%);
-}
-
-figure.highlight pre .variable,
-figure.highlight pre .function,
-figure.highlight pre .javascript .function,
-figure.highlight pre .built_in,
-figure.highlight pre .title {
-    color: hsl(207, 82%, 66%);
-}
-
-figure.highlight pre .xml .tag .title,
-figure.highlight pre .tag,
-figure.highlight pre .ruby .class .title,
-figure.highlight pre .python .title,
-figure.highlight pre .ruby .function .title,
-figure.highlight pre .javascript .title,
-figure.highlight pre .coffeescript .title,
-figure.highlight pre .ruby .symbol {
-    color: hsl(355, 65%, 65%);
-}
-
-figure.highlight pre .xml .doctype,
-figure.highlight pre .html .doctype,
-figure.highlight pre .special {
-    color: hsl(220, 14%, 71%);
-}
-
-figure.highlight pre .command {
-    color: hsl(220, 14%, 45%);
-}
-
-figure.highlight pre .keyword,
-figure.highlight pre .ruby .title .keyword {
-    color: hsl(286, 60%, 67%);
-}
-
-figure.highlight pre .params {
-    color: hsl(220, 14%, 71%);
-}
-
-#article-container figure.highlight .gutter pre {
-    background-color: rgb(40, 44, 52);
-}]]></content>
   </entry>
   <entry>
     <title>影视</title>
     <url>/cinemas/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -7019,12 +7020,75 @@ html {
 */]]></content>
   </entry>
   <entry>
-    <title>友链</title>
-    <url>/link/index.html</url>
-    <content><![CDATA[<blockquote>
-<p>每次刷新为随机顺序展示～<br>现已不支持在评论区中直接申请友链，请在<a href="https://github.com/YuZhangWang/Blog-Friend-Link">Blog-Friend-Link</a>这个 Repo 里按要求提交一个 Pull Request 就可以申请友链啦~</p>
-</blockquote>
-]]></content>
+    <title></title>
+    <url>/css/font.css</url>
+    <content><![CDATA[:root {
+    --hl-color: hsl(220, 14%, 71%);
+    --hl-bg: hsl(220, 13%, 18%);
+}
+
+figure.highlight pre .deletion,
+figure.highlight pre .tag .name,
+figure.highlight pre .constant,
+figure.highlight pre .css .class,
+figure.highlight pre .number,
+figure.highlight pre .tag .attr,
+figure.highlight pre .ruby .constant {
+    color: hsl(29, 54%, 61%);
+}
+
+figure.highlight pre .addition,
+figure.highlight pre .string,
+figure.highlight pre .value {
+    color: hsl(95, 38%, 62%);
+}
+
+figure.highlight pre .comment,
+figure.highlight pre .xml .cdata {
+    color: hsl(220, 10%, 40%);
+}
+
+figure.highlight pre .variable,
+figure.highlight pre .function,
+figure.highlight pre .javascript .function,
+figure.highlight pre .built_in,
+figure.highlight pre .title {
+    color: hsl(207, 82%, 66%);
+}
+
+figure.highlight pre .xml .tag .title,
+figure.highlight pre .tag,
+figure.highlight pre .ruby .class .title,
+figure.highlight pre .python .title,
+figure.highlight pre .ruby .function .title,
+figure.highlight pre .javascript .title,
+figure.highlight pre .coffeescript .title,
+figure.highlight pre .ruby .symbol {
+    color: hsl(355, 65%, 65%);
+}
+
+figure.highlight pre .xml .doctype,
+figure.highlight pre .html .doctype,
+figure.highlight pre .special {
+    color: hsl(220, 14%, 71%);
+}
+
+figure.highlight pre .command {
+    color: hsl(220, 14%, 45%);
+}
+
+figure.highlight pre .keyword,
+figure.highlight pre .ruby .title .keyword {
+    color: hsl(286, 60%, 67%);
+}
+
+figure.highlight pre .params {
+    color: hsl(220, 14%, 71%);
+}
+
+#article-container figure.highlight .gutter pre {
+    background-color: rgb(40, 44, 52);
+}]]></content>
   </entry>
   <entry>
     <title>简历</title>
@@ -7136,16 +7200,26 @@ h3 {
 </style>]]></content>
   </entry>
   <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>动物大赏</title>
     <url>/albums/animal/index.html</url>
     <content><![CDATA[<div class="gallery">
     <div class="fj-gallery  data" data-rowHeight="220" data-limit="10">
     <span class="gallery-data">[{"url":"","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807051300871.jpg","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225000.webp","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222910.webp","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222900.webp","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222836.webp","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826221057.jpeg","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826214752.jpeg","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807042911045.jpeg","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826220458.jpeg","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826215138.jpeg","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826214735.jpeg","alt":""}]</span>
+    </div>
+    <button class="gallery-load-more"><span>加载更多</span><i class="fa-solid fa-arrow-down"></i></button>
+    </div>]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>植物欣赏</title>
+    <url>/albums/plant/index.html</url>
+    <content><![CDATA[<div class="gallery">
+    <div class="fj-gallery  data" data-rowHeight="220" data-limit="10">
+    <span class="gallery-data">[{"url":"","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807051356525.jpg","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225607.webp","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225338.webp","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224607.webp","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224213.webp","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826220324.jpeg","alt":""}]</span>
     </div>
     <button class="gallery-load-more"><span>加载更多</span><i class="fa-solid fa-arrow-down"></i></button>
     </div>]]></content>
@@ -7172,14 +7246,12 @@ h3 {
 ]]></content>
   </entry>
   <entry>
-    <title>植物欣赏</title>
-    <url>/albums/plant/index.html</url>
-    <content><![CDATA[<div class="gallery">
-    <div class="fj-gallery  data" data-rowHeight="220" data-limit="10">
-    <span class="gallery-data">[{"url":"","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807051356525.jpg","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225607.webp","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826225338.webp","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224607.webp","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826224213.webp","alt":""},{"url":"https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826220324.jpeg","alt":""}]</span>
-    </div>
-    <button class="gallery-load-more"><span>加载更多</span><i class="fa-solid fa-arrow-down"></i></button>
-    </div>]]></content>
+    <title>友链</title>
+    <url>/link/index.html</url>
+    <content><![CDATA[<blockquote>
+<p>每次刷新为随机顺序展示～<br>现已不支持在评论区中直接申请友链，请在<a href="https://github.com/YuZhangWang/Blog-Friend-Link">Blog-Friend-Link</a>这个 Repo 里按要求提交一个 Pull Request 就可以申请友链啦~</p>
+</blockquote>
+]]></content>
   </entry>
   <entry>
     <title>说说</title>
