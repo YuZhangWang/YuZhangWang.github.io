@@ -2896,7 +2896,7 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 <h2 id="肝的顺序"><a href="#肝的顺序" class="headerlink" title="肝的顺序"></a>肝的顺序</h2><p>这里说下我肝的一个顺序，先放这张图，这是我关注的UP主，关于影月月，我只关注了他的魔神+世界任务(这两种任务在一个合集里)、传说任务、邀约任务这三个合集，因为目前来说，原神任务攻略做得最好的就是他了，而我只想关注他原神任务相关攻略，因此关注下合集也就够了，任务视频更新了我也能观看，影月月播放量也有我的一份。然后关于如何培养角色，我关注了<a href="https://space.bilibili.com/644663808/channel/collectiondetail?sid=212670">贪欲九头蛇</a>的合集，以及<a href="https://space.bilibili.com/91489061/channel/collectiondetail?sid=297976">猫冬</a>的合集<br>至于其他方面，关注下面这些UP久足够了，基本上包含了所需要的一切了</p>
 <p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308112110328.png" alt=""></p>
 <p>大致就是这样一个顺序，有些是同步进行的，例如长期成就和角色练度</p>
-<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308112149207.png" alt=""></p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308182116470.png" alt=""></p>
 <p>通过这篇博客，深入探讨了我的原神进度以及未来规划这个话题，并希望您对此有了更全面的了解。希望的我分享对您有所帮助</p>
 ]]></content>
       <categories>
@@ -2923,9 +2923,55 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
     <title>域名的小问题导致网站关闭了很久</title>
     <url>/130-domain-name-issue/</url>
     <content><![CDATA[<p>关注我博客的朋友应该发现了，我的博客关闭了一段时间，时间不到半年左右，这篇博客就是说明，为什么我的博客关闭了一段时间</p>
+<h1 id="问题表象"><a href="#问题表象" class="headerlink" title="问题表象"></a>问题表象</h1><p>网站访问失败的页面没有截图，这里我用网上找到的图片代替一下，大致和下方图片差不多</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308311517486.png" alt=""></p>
+<p>在这张图片里面，由于我是在腾讯云购买的这个域名，因此这张图片中的原因二并不适用我，让我们重点关注一下原因一和三</p>
+<h2 id="原因一"><a href="#原因一" class="headerlink" title="原因一"></a>原因一</h2><blockquote>
+<p>“根据工信部相关法规，您尚未进行备案”</p>
+</blockquote>
+<p>我开始看到这一条，就在想，我的备案是不是被撤销了，于是我打开公安部备案页面以及腾讯云备案页面进行查询，果不其然，确实显示为尚未备案，于是得出结论，<strong>已经备案好的域名现在处于未备案状态</strong>，于是我们的思路就来到了原因三中</p>
+<h2 id="原因三"><a href="#原因三" class="headerlink" title="原因三"></a>原因三</h2><blockquote>
+<p>“您的网站可能存在不适宜传播的信息，请联系网站管理员”</p>
+</blockquote>
+<p>关于这一点，其实我心里早有准备，因为我的网站有以下两个我认为的问题：</p>
+<ul>
+<li>备案的时候是非交互式网站，但是后续我使用了<a href="https://giscus.app/zh-CN">giscus</a>和<a href="https://docs.github.com/en/discussions">GitHub Discussions</a>在我的网站上实现了评论系统，这就变成了交互式网站，可能因为这个原因会被注销掉备案</li>
+<li>某些博客，例如<a href="https://yuzhang.wang/094-blockchain">基于区块链采用Python实现的银行供应链金融服务</a>开头部分的<a href="https://yuzhang.wang/094-blockchain/#%E4%B8%80%E3%80%81%E9%A1%B9%E7%9B%AE%E4%B8%BB%E8%A6%81%E5%86%85%E5%AE%B9">项目主要内容</a>引用了某些政治内容，而这些内容我同样地一字不改情况下发布在CSDN，是会被评判为政治敏感而发不出去的，这也可能是一种备案被注销的情况</li>
+<li>我并没有在国内购买云服务器，因此，如果我需要在国内进行备案的话，第一步企业进行的审查就过不了。于是我购买了腾讯云备案注册码，这是腾讯云服务器提供的，使用这个备案注册码就等同于有云服务器，于是当初我是在淘宝等地购买了一个别人服务器生成的备案注册码。也正是因为这个备案注册码是别人服务器提供的，因此如果他的服务器到期或者停止使用注销了，那么我的备案也可能因此被撤销了</li>
+</ul>
+<p>然而，前面2种情况，我在很早之前就考虑到了，它们的影响程度严不严重，其他博主的博客中出现此种情况会不会被注销备案，综合考虑，认为可以发布或者使用才进行实践操作，并且在相当长一段时间内都没有问题，才安心的</p>
+<blockquote>
+<p>因此我推断，是当初购买的备案注册码出了问题，生成这个码的那台服务器出了问题，导致我的备案被停掉了</p>
+</blockquote>
+<h1 id="峰回路转"><a href="#峰回路转" class="headerlink" title="峰回路转"></a>峰回路转</h1><p>没了备案当然是想着重新备案，备案又要先等企业审查，再提交到公安机关，先不说要等上几周时间，还可能还要再去趟公安局给技术人员演示网站，尤其是网站安全性部分，这方面检查还是比较严格的。就在我为备案后续内容而感到头疼的时候，一通电话打开了我的思路</p>
+<p>再接下来之前，先倒带一下，由于考研的原因，从网站不能访问到我开始解决问题，期间足足隔了1年之久(懒起来确实挺出乎意料的)，那么隔了这么久，我要开始了解一下情况，当然是要去打一下腾讯与的客服电话，了解下基本情况，问题产生的原因是什么，才能继续下一步吧，也正是几个客服电话下来，其中一名客服人员的电话打开了我的思路</p>
+<p>当时我的心里想着的就是，备案没了要备案，这种想法其实主要来自于<strong>我的网站打不开了</strong>这个想法，因此我将网站打不开和备案直接联系到了一起，而客服人员一通电话，就直接告诉我，没有备案网站也可以使用的，于是网站打不开和备案就没有直接的联系了</p>
+<p>下面让我来理一下思路：</p>
+<ul>
+<li>我的网站对国内线路做了CDN处理，相当于使用又拍云把我GithubPage上的内容复制下来，使得国内访问其实是在访问又拍云上复制下来的内容</li>
+<li>又拍云的使用需要两点：国内备案+腾讯云DNS部署</li>
+<li>现在又拍云还部署在腾讯云DNS上，但是国内备案没有了，就导致了又拍云无法使用</li>
+<li>腾讯云DNS上的部署分为国内线路和国外线路，国外线路直接访问GithubPage，国内访问又拍云</li>
+</ul>
+<p>于是乎，我想是不是仅仅是国内访问失败了呢？为了验证这一点，我使用科学上网的工具访问我的网站，果不其然，网站可以进行访问了</p>
+<h1 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h1><p>既然国内的线路无法访问，同时再次备案又十分麻烦，那么目前来说舍弃国内线路就行了，直接在DNS中将原本访问源头GithubPage的国外线路，直接改为默认线路，就可以实现正常访问了</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308311628657.png" alt=""></p>
+<p>可以看到，yuzhangwang.github.io是GithubPage给我的源访问地址，我将www和@两种地址方式全部解析到DNS中，同时将原本境外的线路类型修改为默认，这样就可以了。当然，作为CDN的三条和境内有关的线路，自然就需要暂停了</p>
+<h1 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h1><p>这样解决的好处就是省去了繁琐和严格的国内备案审查过程，在不进行备案的情况下，直接使用域名就行了。同时又产生两个问题，SSL证书以及访问速度</p>
+<h2 id="SSL证书"><a href="#SSL证书" class="headerlink" title="SSL证书"></a>SSL证书</h2><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308311613391.png" alt=""></p>
+<p>腾讯云免费送了我们50张证书，一张证书有效期一年，因此SSL证书问题可以不用担心了</p>
+<p>不过我并没有使用腾讯云提供的SSL证书，因为我发现我的网站目前有一张证书，有效期是2023-08-03到2023-11-01，我问过又拍云的客服了，这张证书并不是又他们提供的，因此我也不知道这章SSL证书到底是谁发布给我的，以及哪里生成的？？？</p>
+<p>以下是这张证书的一些信息，如果有小伙伴知道这张证书的发布者以及是如何产生的话，请通过邮箱<a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#x59;&#117;&#90;&#x68;&#x61;&#x6e;&#x67;&#87;&#x61;&#110;&#103;&#50;&#x33;&#51;&#x40;&#x31;&#x36;&#x33;&#x2e;&#99;&#x6f;&#109;">&#x59;&#117;&#90;&#x68;&#x61;&#x6e;&#x67;&#87;&#x61;&#110;&#103;&#50;&#x33;&#51;&#x40;&#x31;&#x36;&#x33;&#x2e;&#99;&#x6f;&#109;</a>联系告知于我，感谢！</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308311702523.png" alt=""></p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308311703216.png" alt=""></p>
+<h2 id="访问速度"><a href="#访问速度" class="headerlink" title="访问速度"></a>访问速度</h2><p>国内速度一般，建议科学上网访问<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308311640198.png" alt=""></p>
+<p>国外速度还可以<br><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308311641824.png" alt=""></p>
+<p>至于图片方面，我这里使用的是jsdelivr+Github的方案，原本的加速链接为<code>https://cdn.jsdelivr.net/gh/&lt;用户名&gt;/&lt;仓库名&gt;@&lt;发布版本号&gt;/&lt;文件路径&gt;</code>，但是由于cdn被国内封掉了，因此建议改为gcore，也就是<code>https://gcore.jsdelivr.net/gh/&lt;用户名&gt;/&lt;仓库名&gt;@&lt;发布版本号&gt;/&lt;文件路径&gt;</code>这样的加速链接，这样的话，图片加速就快很多了</p>
+<p>当我用科学上网访问之后，感觉速度还可以，拜托一些人进行测试，他们的回答是秒打开，没什么问题，那么到这一步，这个由域名引起的问题，就可以告一段落了</p>
 ]]></content>
       <categories>
         <category>极客之旅</category>
+        <category>技能学习记录</category>
       </categories>
       <tags>
         <tag>网站</tag>
@@ -6674,6 +6720,54 @@ C=\max_{p\left( a_i \right)} \left[ H(Y)-H_{mi} \right] =\log m-H_{mi}</script><
       </categories>
       <tags>
         <tag>斯通纳</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于快速抗抑郁的药物研究进展</title>
+    <url>/136-rapid-treatment-depression/</url>
+    <content><![CDATA[<p>抗抑郁药物的发展历史可以追溯到1988年，当时氟西汀（Prozac）作为第一种选择性5-羟色胺再摄取抑制剂（SSRI）进入市场，此后的30年，许多专家将SSRI视为“现代”抗抑郁药 <a href="https://www.healthline.com/health/depression/newest-antidepressants">1</a>。然而，近年来，新型抗抑郁药物的研发取得了显著进展。2019年，美国食品药品监督管理局（FDA）批准了两种新的抗抑郁药物，布雷克索隆和艾司酮酮。布雷克索隆是第一种专门用于治疗中度至重度产后抑郁症（PPD）的药物，它可以立即起效，通过提高大脑中的神经递质γ-氨基丁酸（GABA）水平来治疗PPD症状 <a href="https://www.healthline.com/health/depression/newest-antidepressants">1</a>。艾司酮酮是麻醉药酮酮的化学表亲，FDA在2019年批准其用于治疗抗药性抑郁症，或者在尝试至少两种不同的抗抑郁治疗后仍持续的抑郁症 <a href="https://www.healthline.com/health/depression/newest-antidepressants">1</a>。</p>
+<p>到了2023年，研究人员已经开始使用化学遗传学策略，通过设计药物专门激活设计受体（DREADDs）来激活在重性抑郁症患者中功能失调的脑区，如胼胝体下前扣带皮质区25（scACC-25）。研究发现，激活从scACC-25到纹状体（NAc）的神经通路可以防止anhedonia（无欢愉症），而激活从scACC-25到杏仁核的神经通路可以增加焦虑感。此外，研究还发现，将快速抗抑郁药物酮酮注入NAc可以防止scACC-25激活后的无欢愉症，效果持续超过1周 <a href="https://pubmed.ncbi.nlm.nih.gov/37018416/">2</a>。</p>
+<p>化学遗传学策略是一种实验研究方法，通过使用工程化的设计受体，这些受体只能被设计药物（DREADDs）激活，从而特异性地操控神经元活动。这种策略使研究人员能够控制特定神经元的活动，确定神经元活动与行为之间的因果关系。</p>
+<p>在抗抑郁药物治疗中，化学遗传学策略已经被用于激活在重性抑郁症患者中功能失调的脑区，如胼胝体下前扣带皮质区25（scACC-25）。研究发现，激活从scACC-25到纹状体（NAc）的神经通路可以防止anhedonia（无欢愉症），而激活从scACC-25到杏仁核的神经通路可以增加焦虑感。此外，研究还发现，将快速抗抑郁药物酮酮注入NAc可以防止scACC-25激活后的无欢愉症，效果持续超过1周</p>
+<p>酮酮是一种解离性麻醉药，已被证实能够产生快速和持久的抗抑郁作用。酮酮的抗抑郁作用主要通过调节谷氨酸途径实现。具体来说，酮酮是N-甲基-D-天冬氨酸受体（NMDAR）的拮抗剂，能够阻断NMDAR的功能，从而引发一系列生化反应，包括增加脑源性神经营养因子（BDNF）的表达，激活机械靶点蛋白酮酮（mTOR）信号通路，以及促进突触可塑性的改变，这些都有助于抗抑郁效应的产生。此外，酮酮的代谢产物，如(2R,6R)-羟基酮酮，也显示出具有抗抑郁效果的潜力，且无酮酮的不良反应，如解离效应和滥用潜力</p>
+<p>受体是细胞表面或细胞内的一种蛋白质，能够特异性地识别并结合特定的信号分子，如药物、激素或神经递质。当这些信号分子（也被称为配体）结合到受体上时，会引发一系列的生物化学反应，从而改变细胞的行为。受体是药物作用的主要靶点，通过与受体相互作用，药物可以增强或抑制受体的活性，从而产生治疗效果。例如，N-甲基-D-天冬氨酸受体（NMDAR）是一种离子型谷氨酸受体，是许多抗抑郁药物的作用靶点</p>
+<p>N-甲基-D-天冬氨酸（NMDA）受体是一种离子型谷氨酸受体，广泛分布在中枢神经系统中，是主要的兴奋性神经递质。NMDA受体在突触可塑性中起着关键作用，突触可塑性被认为是记忆形成的基础。此外，NMDA受体还参与了一种称为兴奋性毒性的过程，这可能在癫痫或阿尔茨海默病等多种疾病的病理生理过程中起作用。许多药物，包括酮酮和苯环利定，都能抑制NMDA受体，这些药物常被滥用。NMDA受体由七种亚基组成，它们可以组装成多种四聚体受体复合物，这些复合物具有不同的调控方式，不同的区域和发育表达，以及广泛的功能和药理特性。亚基的多样性为NMDA受体在神经元细胞类型和大脑区域中的不同生理角色提供了可能性，并使突触传输能够进行精确的调节</p>
+<p>目前已经投入使用的快速抗抑郁药物包括酮酮和艾司酮酮（Esketamine，即(S)-酮酮），这两种药物都是NMDA受体拮抗剂，已经被美国食品药品监督管理局（FDA）批准用于治疗抑郁症。</p>
+<p>正在临床开发的快速抗抑郁药物包括：</p>
+<ol>
+<li>(R)-酮酮：这是酮酮的一个对映异构体，正在进行临床试验。</li>
+<li>GLYX-13（Rapastinel）：这是一种NMDA受体调节剂，正在进行临床试验。</li>
+<li>TAK-653：这是一种AMPA受体增效剂，正在进行临床试验。</li>
+</ol>
+<p>此外，还有一些药物在实验室的预实验中显示出了作为快速抗抑郁药物的潜力，包括mGlu2/3受体拮抗剂、AMPA受体增效剂和GABA负性变构调节剂，但这些药物目前还未进入临床试验阶段 <a href="https://pubmed.ncbi.nlm.nih.gov/31378256/">1</a>。</p>
+<p>快速抗抑郁药物的研究已取得一些重要进展。例如，NMDA受体拮抗剂氯胺酮已经在临床研究中显示出快速起效、效果显著、在单次或少量剂量后就能产生效果，以及对治疗抗药性病人和一些抗药性症状（如无欢乐症）有积极影响 <a href="https://pubmed.ncbi.nlm.nih.gov/31378256/">1</a>。此外，一些其他的NMDA受体拮抗剂和scopolamine也已经在临床研究中显示出快速抗抑郁药物的作用 <a href="https://pubmed.ncbi.nlm.nih.gov/31378256/">1</a>。另一种药物，(S)-氯胺酮（Esketamine），最近已经获得FDA的批准</p>
+<p>化学遗传学策略在抗抑郁药物研究中的应用主要集中在两个方面：谷氨酸药物和RNA干扰策略。谷氨酸药物被认为是快速抗抑郁药物，例如非竞争性NMDA受体拮抗剂氯胺酮，其抗抑郁特性似乎源于其代谢产物(2S,6S;2R,6R)-羟基诺氯胺酮(HNK)通过激活AMPA受体和mTOR信号通路，增加前额叶皮质锥体神经元的突触生成，并通过对核团的下行输入增强5-羟色胺神经传输 <a href="https://pubmed.ncbi.nlm.nih.gov/29525411/">1</a>。此外，RNA干扰策略也在抗抑郁药物研究中得到应用，例如使用小RNA（如小干扰RNA或siRNA）来敲低单胺和非单胺神经元中的基因，以在实验动物中诱导抗抑郁样反应。许多与抑郁症相关的微RNA，例如miR-135，已被发现可以靶向抗抑郁作用相关的基因。同样，SSRI结合的siRNA也可以诱导更快和/或更有效的抗抑郁样反应 <a href="https://pubmed.ncbi.nlm.nih.gov/29525411/">1</a>。</p>
+<h1 id="References："><a href="#References：" class="headerlink" title="References："></a>References：</h1><p>1.抑郁症：抗抑郁药中的“奇葩”，S-氯胺酮：<a href="https://www.bilibili.com/video/BV1fQ4y1y7xf/">https://www.bilibili.com/video/BV1fQ4y1y7xf/</a><br>2.浙大胡海岚教授 | 氯胺酮快速抗抑郁的研究进展 ：<a href="https://www.bilibili.com/video/BV1QG4y1D7VE">https://www.bilibili.com/video/BV1QG4y1D7VE</a><br>3.Healthy Minds - 601 - TREATMENT RESISTANT DEPRESSION &amp; RAPID ACTING ANTIDEPRESSANTS：<a href="https://www.youtube.com/watch?v=5VrSaAT0fsE">https://www.youtube.com/watch?v=5VrSaAT0fsE</a><br>4.王世锴：<a href="http://a.xueshu.baidu.com/scholarID/CN-BOHAP3IK">http://a.xueshu.baidu.com/scholarID/CN-BOHAP3IK</a><br>5.Neurocognitive effects of repeated ketamine infusion treatments in patients with treatment resistant depression: a retrospective chart review：<a href="https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-022-03789-3">https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-022-03789-3</a><br>6.Rapid treatments for depression: Endocannabinoid system as a therapeutic target：<a href="https://pubmed.ncbi.nlm.nih.gov/35351488/">https://pubmed.ncbi.nlm.nih.gov/35351488/</a><br>7.</p>
+]]></content>
+      <categories>
+        <category>技能学习记录</category>
+      </categories>
+      <tags>
+        <tag>快速抗抑郁</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于抑郁症可能的发病机制调查研究</title>
+    <url>/137-etiopathogenesis/</url>
+    <content><![CDATA[<p>抑郁症的发病机制可能与能量代谢紊乱有关。一些研究发现，抑郁症患者的三羧酸循环（TCA）显著下降，而糖异生途径异常增加 <a href="https://pubmed.ncbi.nlm.nih.gov/35640666/">1</a>。此外，抑郁症患者的线粒体功能可能受损，导致能量代谢底物供应紊乱，例如线粒体丙酮酸载体（MPC）的水平显著降低，这对丙酮酸进入TCA循环至关重要 <a href="https://pubmed.ncbi.nlm.nih.gov/35640666/">1</a>。此外，一些研究还发现，抑郁症患者的氨基酸代谢、能量代谢和脂质代谢可能受到影响 <a href="https://pubmed.ncbi.nlm.nih.gov/26947756/">2</a><a href="https://pubmed.ncbi.nlm.nih.gov/19913000/">3</a>。这些研究结果表明，能量代谢紊乱可能是抑郁症发病机制的重要组成部分。</p>
+<p>抑郁症患者的身体活动水平和能量消耗可能会降低，这可能与抑郁症的发病机制有关。一项研究发现，抑郁症患者的总能量消耗和活动能量消耗在24小时内显著降低，而且随着抑郁症症状的缓解，他们的身体活动参数显著增加 <a href="https://pubmed.ncbi.nlm.nih.gov/25532078/">1</a>。此外，抑郁症患者的能量代谢可能受损，这可能是抑郁症发病的重要机制之一 <a href="https://pubmed.ncbi.nlm.nih.gov/34225015/">2</a>。这些研究结果表明，能量代谢紊乱可能是抑郁症发病机制的重要组成部分。</p>
+<p>抑郁症患者的能量代谢受损可能会导致多种身体症状。例如，他们可能会出现体重增加、食欲增加、过度睡眠、疲劳和肌肉麻痹等症状，这些都反映了能量摄取/消耗平衡的改变。此外，抑郁症患者可能会出现无快感症，这是一种对原本乐于参与的活动失去兴趣的症状，这可能与大脑中线粒体呼吸链和肌酸激酶活动的改变有关。此外，抑郁症患者可能会出现焦虑和抑郁症状，这可能与餐后催产素分泌的异常有关。</p>
+<p>抑郁症和遗传学的关系：<br>抑郁症是一种复杂的疾病，其发病机制可能涉及遗传和环境因素的相互作用。研究表明，抑郁症有一定的遗传倾向。例如，如果你的直系亲属有抑郁症，你可能有更高的患病风险 <a href="https://www.healthline.com/health/depression/causes">1</a><a href="https://www.healthline.com/health/are-mental-illness-genetic">2</a>。一项对五个家庭研究的元分析发现，主要抑郁症的遗传率为37% <a href="https://pubmed.ncbi.nlm.nih.gov/11007705/">3</a>。然而，抑郁症的遗传机制并不简单，可能涉及多个基因的作用。一些人的大脑在抑郁症时会有明显的变化，这可能与大脑功能的开始有关。特定的神经递质（如血清素、多巴胺和去甲肾上腺素）可能在抑郁症患者中失衡 <a href="https://www.healthline.com/health/depression/causes">1</a>。此外，性别也可能影响抑郁症的遗传关联，女性比男性更容易受到抑郁症的影响 <a href="https://pubmed.ncbi.nlm.nih.gov/36741030/">4</a>。然而，尽管遗传因素在抑郁症的发病中起着重要作用，但我们对其具体机制的理解仍然有限 <a href="https://pubmed.ncbi.nlm.nih.gov/36769269/">5</a>。</p>
+<p>抑郁症和生理学的关系：<br>抑郁症与生理学的关系涉及到多种生物化学和神经生理学因素。首先，抑郁症的典型症状，如体重减轻、性欲变化、月经不调和睡眠障碍，可能反映出生物化学和神经生理功能的主要紊乱，这些症状通常不会在其他心理障碍中出现 <a href="https://pubmed.ncbi.nlm.nih.gov/7914394/">1</a>。此外，抑郁症与心脏病的关系可能涉及到下丘脑-垂体-肾上腺轴的失调、心率变异性的降低、血小板功能的改变以及免疫功能的损害 <a href="https://pubmed.ncbi.nlm.nih.gov/12667498/">2</a><a href="https://pubmed.ncbi.nlm.nih.gov/24692463/">3</a>。抑郁症还与慢性疼痛有关，可能涉及到神经塑性、炎症、氧化应激、内分泌系统的改变等生物学机制 <a href="https://pubmed.ncbi.nlm.nih.gov/28706741/">4</a>。此外，生活方式因素，如饮食、睡眠和运动，也可能影响与抑郁症相关的生理过程 <a href="https://pubmed.ncbi.nlm.nih.gov/23415826/">5</a><a href="https://pubmed.ncbi.nlm.nih.gov/31586447/">6</a>。</p>
+<p>抑郁症和生物学的关系：<br>抑郁症是一种复杂的疾病，涉及到生物学和心理社会因素的相互作用。在生物学层面，抑郁症与神经递质（例如，去甲肾上腺素，5-羟色胺，多巴胺）的代谢有关，这些神经递质在大脑中影响幸福和快乐的感觉，可能在抑郁症患者中失衡 <a href="https://pubmed.ncbi.nlm.nih.gov/7914394/">1</a>。此外，抑郁症可能与脑功能的显著变化有关，包括脑区体积的减小和活动的改变 <a href="https://www.healthline.com/health/depression-physical-effects-on-the-brain">2</a>。慢性炎症也可能与抑郁症的症状有关，特别是在癌症患者中 <a href="https://pubmed.ncbi.nlm.nih.gov/24716498/">3</a>。此外，抑郁症还与激素生产或功能的变化有关，这可能导致抑郁状态的发生 <a href="https://www.healthline.com/health/depression/causes">4</a>。总的来说，抑郁症的生物学机制涉及到神经递质的失衡，脑功能的改变，慢性炎症以及激素的变化。</p>
+<h1 id="References："><a href="#References：" class="headerlink" title="References："></a>References：</h1><p>1.抑郁症患者来源诱导的NPCs和iPS-神经元表现出能量代谢和电生理特性的改变：<a href="https://zhuanlan.zhihu.com/p/541957867">https://zhuanlan.zhihu.com/p/541957867</a><br>2.从突触角度总结抑郁症的六大分子机制：<a href="https://new.qq.com/rain/a/20221016A06TJE00">https://new.qq.com/rain/a/20221016A06TJE00</a><br>3.重庆医科大学谢鹏团队揭示核受体相关蛋白Nr4a2的抗抑郁新机制：<a href="https://zhuanlan.zhihu.com/p/620191381">https://zhuanlan.zhihu.com/p/620191381</a><br>4.陈建国/王芳团队揭示调节抑郁样行为的新神经环路机制：<a href="https://cj.sina.com.cn/articles/view/5803416260/159e91ac4019012swm">https://cj.sina.com.cn/articles/view/5803416260/159e91ac4019012swm</a><br>5.</p>
+]]></content>
+      <categories>
+        <category>技能学习记录</category>
+      </categories>
+      <tags>
+        <tag>能量代谢</tag>
+        <tag>抑郁症发病机制</tag>
       </tags>
   </entry>
   <entry>
