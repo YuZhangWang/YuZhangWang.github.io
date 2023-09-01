@@ -2909,7 +2909,20 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
   <entry>
     <title>Butterfly主题中远程友链实操</title>
     <url>/131-remote-friend-linking/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>其实这个操作不难，跟着<a href="https://butterfly.js.org/posts/dc584b87/#%E5%89%B5%E5%BB%BA%E5%8F%8B%E6%83%85%E9%8F%88%E6%8E%A5%E9%A0%81%E9%9D%A2">友情链接添加-远程拉取</a>Butterfly主题作者的说明文档进行操作就可以实现了，我的建议是直接跟着文档来，在这篇博客中，我将记录一下我完成这个操作的全过程</p>
+<h1 id="格式转换"><a href="#格式转换" class="headerlink" title="格式转换"></a>格式转换</h1><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309012153599.png" alt=""></p>
+<p>那么首先啊，远程链接需要的是<code>json</code>格式的文件，而我们本地是<code>yml</code>格式的，手动一个一个转换太过费劲了，因此我们找一个自动转换的工具操作一下，这里我使用的是<a href="https://www.lddgo.net/convert/yaml-to-json">在线YAML转JSON</a>这个网页工具，那么转换完成之后就是下方图片所示效果</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309012156084.png" alt=""></p>
+<h1 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h1><p>这里我为了方便和统一，使用的是Github的仓库，当然你也可以使用你的云服务器来实现</p>
+<p>这里我直接给出仓库链接<a href="https://github.com/YuZhangWang/Blog-Friend-Link">Blog-Friend-Link</a>，同时也欢迎各位小伙伴给项目一个Star</p>
+<h2 id="README"><a href="#README" class="headerlink" title="README"></a>README</h2><p>到这里其实还没完，还需要写一份使用说明，这里我直接写在<a href="https://github.com/YuZhangWang/Blog-Friend-Link/blob/master/README.md">README</a>中了，主要是为了告诉想要交换友链的人，你得Fork之后进行修改，然后再Pr一下，我通过了之后，你的链接才会出现在我的友链页面当中</p>
+<h1 id="添加远程链接"><a href="#添加远程链接" class="headerlink" title="添加远程链接"></a>添加远程链接</h1><p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309012145919.png" alt=""></p>
+<p>在 <code>source/link/index.md</code> 这个文件的  <code>---</code> 所包含的内容中，添加远程链接<code>flink_url: https://cdn.jsdelivr.net/gh/YuZhangWang/Blog-Friend-Link@master/link.json</code></p>
+<p>到这里，配置就结束了，下面让我们来看一下效果</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309012148222.png" alt=""></p>
+<p>由于我将友链设置为了随机展示，因此每个大类中的顺序都是打乱的</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>总的来说，实现难度还是比较简单的了，无非是创建一个仓库，按照既定的格式转换一下，然后本地添加远程链接就行了，这样以后别人申请友链，就可以直接通过Pr来添加了，无需我们自己再操作</p>
+]]></content>
       <categories>
         <category>极客之旅</category>
         <category>项目展示</category>
