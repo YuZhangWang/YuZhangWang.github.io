@@ -7819,4 +7819,15 @@ h3 {
     <url>/natter/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
+  <entry>
+    <title></title>
+    <url>/css/Align-al-elements.css</url>
+    <content><![CDATA[.coin-title {
+    display: flex;
+    justify-content: center;
+    /* 水平居中对齐 */
+    align-items: center;
+    /* 垂直居中对齐（可选） */
+}]]></content>
+  </entry>
 </search>
