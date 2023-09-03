@@ -6906,27 +6906,279 @@ C=\max_{p\left( a_i \right)} \left[ H(Y)-H_{mi} \right] =\log m-H_{mi}</script><
   <entry>
     <title>关于快速抗抑郁的药物研究进展</title>
     <url>/136-rapid-treatment-depression/</url>
-    <content><![CDATA[<p>抗抑郁药物的发展历史可以追溯到1988年，当时氟西汀（Prozac）作为第一种选择性5-羟色胺再摄取抑制剂（SSRI）进入市场，此后的30年，许多专家将SSRI视为“现代”抗抑郁药 <a href="https://www.healthline.com/health/depression/newest-antidepressants">1</a>。然而，近年来，新型抗抑郁药物的研发取得了显著进展。2019年，美国食品药品监督管理局（FDA）批准了两种新的抗抑郁药物，布雷克索隆和艾司酮酮。布雷克索隆是第一种专门用于治疗中度至重度产后抑郁症（PPD）的药物，它可以立即起效，通过提高大脑中的神经递质γ-氨基丁酸（GABA）水平来治疗PPD症状 <a href="https://www.healthline.com/health/depression/newest-antidepressants">1</a>。艾司酮酮是麻醉药酮酮的化学表亲，FDA在2019年批准其用于治疗抗药性抑郁症，或者在尝试至少两种不同的抗抑郁治疗后仍持续的抑郁症 <a href="https://www.healthline.com/health/depression/newest-antidepressants">1</a>。</p>
-<p>到了2023年，研究人员已经开始使用化学遗传学策略，通过设计药物专门激活设计受体（DREADDs）来激活在重性抑郁症患者中功能失调的脑区，如胼胝体下前扣带皮质区25（scACC-25）。研究发现，激活从scACC-25到纹状体（NAc）的神经通路可以防止anhedonia（无欢愉症），而激活从scACC-25到杏仁核的神经通路可以增加焦虑感。此外，研究还发现，将快速抗抑郁药物酮酮注入NAc可以防止scACC-25激活后的无欢愉症，效果持续超过1周 <a href="https://pubmed.ncbi.nlm.nih.gov/37018416/">2</a>。</p>
-<p>化学遗传学策略是一种实验研究方法，通过使用工程化的设计受体，这些受体只能被设计药物（DREADDs）激活，从而特异性地操控神经元活动。这种策略使研究人员能够控制特定神经元的活动，确定神经元活动与行为之间的因果关系。</p>
-<p>在抗抑郁药物治疗中，化学遗传学策略已经被用于激活在重性抑郁症患者中功能失调的脑区，如胼胝体下前扣带皮质区25（scACC-25）。研究发现，激活从scACC-25到纹状体（NAc）的神经通路可以防止anhedonia（无欢愉症），而激活从scACC-25到杏仁核的神经通路可以增加焦虑感。此外，研究还发现，将快速抗抑郁药物酮酮注入NAc可以防止scACC-25激活后的无欢愉症，效果持续超过1周</p>
-<p>酮酮是一种解离性麻醉药，已被证实能够产生快速和持久的抗抑郁作用。酮酮的抗抑郁作用主要通过调节谷氨酸途径实现。具体来说，酮酮是N-甲基-D-天冬氨酸受体（NMDAR）的拮抗剂，能够阻断NMDAR的功能，从而引发一系列生化反应，包括增加脑源性神经营养因子（BDNF）的表达，激活机械靶点蛋白酮酮（mTOR）信号通路，以及促进突触可塑性的改变，这些都有助于抗抑郁效应的产生。此外，酮酮的代谢产物，如(2R,6R)-羟基酮酮，也显示出具有抗抑郁效果的潜力，且无酮酮的不良反应，如解离效应和滥用潜力</p>
-<p>受体是细胞表面或细胞内的一种蛋白质，能够特异性地识别并结合特定的信号分子，如药物、激素或神经递质。当这些信号分子（也被称为配体）结合到受体上时，会引发一系列的生物化学反应，从而改变细胞的行为。受体是药物作用的主要靶点，通过与受体相互作用，药物可以增强或抑制受体的活性，从而产生治疗效果。例如，N-甲基-D-天冬氨酸受体（NMDAR）是一种离子型谷氨酸受体，是许多抗抑郁药物的作用靶点</p>
-<p>N-甲基-D-天冬氨酸（NMDA）受体是一种离子型谷氨酸受体，广泛分布在中枢神经系统中，是主要的兴奋性神经递质。NMDA受体在突触可塑性中起着关键作用，突触可塑性被认为是记忆形成的基础。此外，NMDA受体还参与了一种称为兴奋性毒性的过程，这可能在癫痫或阿尔茨海默病等多种疾病的病理生理过程中起作用。许多药物，包括酮酮和苯环利定，都能抑制NMDA受体，这些药物常被滥用。NMDA受体由七种亚基组成，它们可以组装成多种四聚体受体复合物，这些复合物具有不同的调控方式，不同的区域和发育表达，以及广泛的功能和药理特性。亚基的多样性为NMDA受体在神经元细胞类型和大脑区域中的不同生理角色提供了可能性，并使突触传输能够进行精确的调节</p>
-<p>目前已经投入使用的快速抗抑郁药物包括酮酮和艾司酮酮（Esketamine，即(S)-酮酮），这两种药物都是NMDA受体拮抗剂，已经被美国食品药品监督管理局（FDA）批准用于治疗抑郁症。</p>
-<p>正在临床开发的快速抗抑郁药物包括：</p>
+    <content><![CDATA[<h1 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h1><p>要谈论一个事物目前是怎样的，离不开它的历史，因为没有过往的事件，就不会逐步发展成当下的情况，在这里我们进行简单的历史回顾，看一看抗抑郁药的过去是怎样的</p>
+<h2 id="单胺类抗抑郁药"><a href="#单胺类抗抑郁药" class="headerlink" title="单胺类抗抑郁药"></a>单胺类抗抑郁药</h2><p>抗抑郁药物的发展历史可以追溯到单胺类抗抑郁药的出现，这是治疗重性抑郁症的第一种药物 <sup>[1]</sup>。1988年，当时氟西汀(Prozac)作为第一种 <strong>选择性5-羟色胺再摄取抑制剂(SSRI)</strong> 进入市场，此后的30年，许多专家将SSRI视为“现代”抗抑郁药<sup>[2]</sup>。然而，这些药物的疗效不足，副作用和风险使患者的治疗选择有限，因此在日后的发展当中，疗效更加有效的药物，成为了研究方向。</p>
+<blockquote>
+<p>早期的单胺类抗抑郁药主要包括<strong>单胺氧化酶抑制剂（MAOIs）</strong> 和<strong>三环抗抑郁药</strong>。这些药物的分子式各不相同，但它们的作用机制都与调节大脑中的单胺类神经递质有关。</p>
 <ol>
-<li>(R)-酮酮：这是酮酮的一个对映异构体，正在进行临床试验。</li>
-<li>GLYX-13（Rapastinel）：这是一种NMDA受体调节剂，正在进行临床试验。</li>
-<li>TAK-653：这是一种AMPA受体增效剂，正在进行临床试验。</li>
+<li><p>单胺氧化酶抑制剂（MAOIs）：早期的MAOIs包括<strong>异丙嗪（iproniazid）</strong>。MAOIs通过抑制单胺氧化酶的活性，阻止神经递质（如多巴胺、5-羟色胺和去甲肾上腺素）的降解，从而增加这些神经递质在大脑中的浓度，提高情绪<sup>[3]</sup>。</p>
+</li>
+<li><p>三环抗抑郁药：早期的三环抗抑郁药包括<strong>伊米普拉明（imipramine）</strong>。这类药物通过抑制神经递质（如5-羟色胺和去甲肾上腺素）在突触间隙中的再摄取，增加神经递质在突触间隙中的浓度，从而改善抑郁症状。</p>
+</li>
 </ol>
-<p>此外，还有一些药物在实验室的预实验中显示出了作为快速抗抑郁药物的潜力，包括mGlu2/3受体拮抗剂、AMPA受体增效剂和GABA负性变构调节剂，但这些药物目前还未进入临床试验阶段 <a href="https://pubmed.ncbi.nlm.nih.gov/31378256/">1</a>。</p>
-<p>快速抗抑郁药物的研究已取得一些重要进展。例如，NMDA受体拮抗剂氯胺酮已经在临床研究中显示出快速起效、效果显著、在单次或少量剂量后就能产生效果，以及对治疗抗药性病人和一些抗药性症状（如无欢乐症）有积极影响 <a href="https://pubmed.ncbi.nlm.nih.gov/31378256/">1</a>。此外，一些其他的NMDA受体拮抗剂和scopolamine也已经在临床研究中显示出快速抗抑郁药物的作用 <a href="https://pubmed.ncbi.nlm.nih.gov/31378256/">1</a>。另一种药物，(S)-氯胺酮（Esketamine），最近已经获得FDA的批准</p>
-<p>化学遗传学策略在抗抑郁药物研究中的应用主要集中在两个方面：谷氨酸药物和RNA干扰策略。谷氨酸药物被认为是快速抗抑郁药物，例如非竞争性NMDA受体拮抗剂氯胺酮，其抗抑郁特性似乎源于其代谢产物(2S,6S;2R,6R)-羟基诺氯胺酮(HNK)通过激活AMPA受体和mTOR信号通路，增加前额叶皮质锥体神经元的突触生成，并通过对核团的下行输入增强5-羟色胺神经传输 <a href="https://pubmed.ncbi.nlm.nih.gov/29525411/">1</a>。此外，RNA干扰策略也在抗抑郁药物研究中得到应用，例如使用小RNA（如小干扰RNA或siRNA）来敲低单胺和非单胺神经元中的基因，以在实验动物中诱导抗抑郁样反应。许多与抑郁症相关的微RNA，例如miR-135，已被发现可以靶向抗抑郁作用相关的基因。同样，SSRI结合的siRNA也可以诱导更快和/或更有效的抗抑郁样反应 <a href="https://pubmed.ncbi.nlm.nih.gov/29525411/">1</a>。</p>
-<h1 id="References："><a href="#References：" class="headerlink" title="References："></a>References：</h1><p>1.抑郁症：抗抑郁药中的“奇葩”，S-氯胺酮：<a href="https://www.bilibili.com/video/BV1fQ4y1y7xf/">https://www.bilibili.com/video/BV1fQ4y1y7xf/</a><br>2.浙大胡海岚教授 | 氯胺酮快速抗抑郁的研究进展 ：<a href="https://www.bilibili.com/video/BV1QG4y1D7VE">https://www.bilibili.com/video/BV1QG4y1D7VE</a><br>3.Healthy Minds - 601 - TREATMENT RESISTANT DEPRESSION &amp; RAPID ACTING ANTIDEPRESSANTS：<a href="https://www.youtube.com/watch?v=5VrSaAT0fsE">https://www.youtube.com/watch?v=5VrSaAT0fsE</a><br>4.王世锴：<a href="http://a.xueshu.baidu.com/scholarID/CN-BOHAP3IK">http://a.xueshu.baidu.com/scholarID/CN-BOHAP3IK</a><br>5.Neurocognitive effects of repeated ketamine infusion treatments in patients with treatment resistant depression: a retrospective chart review：<a href="https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-022-03789-3">https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-022-03789-3</a><br>6.Rapid treatments for depression: Endocannabinoid system as a therapeutic target：<a href="https://pubmed.ncbi.nlm.nih.gov/35351488/">https://pubmed.ncbi.nlm.nih.gov/35351488/</a><br>7.</p>
+<p>选择性5-羟色胺再摄取抑制剂（SSRIs）主要通过增强5-羟色胺（即血清素）的作用来发挥其药效。SSRIs的设计目标是利用特定的作用机制，同时避免不良反应，因此比以前的抗抑郁药物更安全、更易于忍受<sup>[4]</sup>。SSRIs包括西酞普兰、艾司西酞普兰（西酞普兰的活性对映体）、氟西汀、氟伏沙明、帕罗西汀和舍曲林等药物<sup>[5]</sup>。这些药物主要用于治疗重度抑郁症，也用于治疗强迫症、恐慌症、酒精依赖症、肥胖症、偏头痛和慢性疼痛。虽然SSRIs的副作用较少，但仍有可能出现恶心、呕吐、瞳孔扩大、过度唾液分泌和体温过高等症状。</p>
+</blockquote>
+<h2 id="Brexanolone-And-Esketamine"><a href="#Brexanolone-And-Esketamine" class="headerlink" title="Brexanolone And Esketamine"></a>Brexanolone And Esketamine</h2><p>然而，近年来，新型抗抑郁药物的研发取得了显著进展，为治疗抑郁症开辟了新的可能性。例如，2019年，美国食品药品监督管理局（FDA）批准了两种新的抗抑郁药物，布雷克索隆(brexanolone)和艾司酮酮(esketamine)。布雷克索隆是第一种专门用于治疗中度至重度产后抑郁症（PPD）的药物，它可以立即起效，通过提高大脑中的神经递质γ-氨基丁酸（GABA）水平来治疗PPD症状。艾司酮酮是麻醉药酮酮的化学表亲，FDA在2019年批准其用于治疗抗药性抑郁症，或者在尝试至少两种不同的抗抑郁治疗后仍持续的抑郁症。</p>
+<blockquote>
+<p>神经递质γ-氨基丁酸（GABA）是哺乳动物中枢神经系统的主要抑制性神经递质，与焦虑、抑郁和精神分裂症等情绪障碍有关<sup>[6]</sup>。许多研究表明，抑郁症可能与大脑GABA的缺乏有关<sup>[7]</sup>。例如，抑郁症患者的大脑GABA浓度降低，GABA(A)受体的亚单位组成发生改变<sup>[8]</sup>。此外，GABA在大脑对压力的控制中起着重要作用，压力是情绪障碍的最重要的易感因素。然而，尽管理论上这些病症的患者可能会服用GABA补充剂来帮助管理他们的症状，但目前还没有足够的证据表明GABA补充剂可以帮助这些病症，除了焦虑症之外 <sup>[9]</sup>。</p>
+<p>酮酮是一种解离性麻醉药，已被证实能够产生快速和持久的抗抑郁作用。酮酮的抗抑郁作用主要通过调节谷氨酸途径实现。具体来说，酮酮是N-甲基-D-天冬氨酸受体（NMDAR）的拮抗剂，能够阻断NMDAR的功能，从而引发一系列生化反应，包括增加脑源性神经营养因子（BDNF）的表达，激活机械靶点蛋白酮酮（mTOR）信号通路，以及促进突触可塑性的改变，这些都有助于抗抑郁效应的产生。此外，酮酮的代谢产物，如(2R,6R)-羟基酮酮，也显示出具有抗抑郁效果的潜力，且无酮酮的不良反应，如解离效应和滥用潜力。</p>
+</blockquote>
+<h3 id="Brexanolone"><a href="#Brexanolone" class="headerlink" title="Brexanolone"></a>Brexanolone</h3><p>布雷克索隆(brexanolone)的作用方式与传统的抗抑郁药物不同。它是孕酮衍生物神经甾体(allopregnanolone)的可溶性、专有的、可注射的制剂，它通过调节神经元的 <strong>兴奋性</strong> 来发挥作用<sup>[10]</sup>。Allopregnanolone在怀孕期间水平上升，分娩后显著下降，这些波动对焦虑和抑郁有深远的影响 。</p>
+<p>布雷克索隆(brexanolone)的主要优势在于其快速的起效时间和持久的效果。研究表明，布雷克索隆(brexanolone)可以在24小时内产生抗抑郁效果，这种效果可以持续到治疗后的一周<sup>[11]</sup>。此外，布雷克索隆(brexanolone)还能快速改善焦虑和失眠症状<sup>[12]</sup>。然而，需要注意的是，布雷克索隆(brexanolone)的使用可能会导致意识丧失、过度镇静等副作用，因此需要在医疗机构的监督下使用。</p>
+<blockquote>
+<p>Allopregnanolone是一种神经活性类固醇，它可以通过与特定的神经递质受体相互作用，改变神经元的兴奋性。特别是，它是孕酮的某些3α-还原代谢物，如3α,5α-四氢孕酮（allopregnanolone）和3α,5β-四氢孕酮（pregnanolone），它们是GABA(A)受体复合物的强效阳性变构调节剂 <sup>[13]</sup>。Allopregnanolone在孕妇的血液和脑脊液中的降低水平与重度抑郁症、焦虑症、经前期情绪障碍、精神分裂症的负性症状或冲动性攻击行为有关 <sup>[13]</sup>。此外，Allopregnanolone在孕期和分娩期间的血清水平会发生变化，而在患有慢性高血压的孕妇中，血清Allopregnanolone水平会显著增高<sup>[14]</sup>。</p>
+</blockquote>
+<h3 id="Esketamine"><a href="#Esketamine" class="headerlink" title="Esketamine"></a>Esketamine</h3><p>艾司氯胺酮(Esketamine)是一种NMDA受体拮抗剂，其作用方式主要通过激活谷氨酸途径<sup>[15]</sup>。Esketamine的主要优势在于其对抗抑郁症的快速效果。在治疗抗药性抑郁症（TRD）的研究中，Esketamine显示出显著的抗抑郁效果和可能的抗自杀效果 <sup>[16]</sup>。此外，Esketamine的副作用相对较小，主要包括短暂的血压升高和轻度、短暂的解离和精神病样效应<sup>[17]</sup>。然而，长期使用Esketamine的安全性仍需要进一步研究。</p>
+<blockquote>
+<p>N-甲基-D-天冬氨酸（NMDA）受体是一种离子型谷氨酸受体，广泛分布在中枢神经系统中，是主要的兴奋性神经递质。NMDA受体在突触可塑性中起着关键作用，突触可塑性被认为是记忆形成的基础。此外，NMDA受体还参与了一种称为兴奋性毒性的过程，这可能在癫痫或阿尔茨海默病等多种疾病的病理生理过程中起作用。许多药物，包括酮酮和苯环利定，都能抑制NMDA受体<sup>[18]</sup>，这些药物常被滥用。NMDA受体由七种亚基组成，它们可以组装成多种四聚体受体复合物，这些复合物具有不同的调控方式，不同的区域和发育表达，以及广泛的功能和药理特性。亚基的多样性为NMDA受体在神经元细胞类型和大脑区域中的不同生理角色提供了可能性，并使突触传输能够进行精确的调节</p>
+<p>受体是细胞内部或表面的蛋白质，它们接收信号。在正常生理学中，这是一个化学信号，其中蛋白质配体与蛋白质受体结合。配体是由一个细胞释放的化学信使，用于信号自身或不同的细胞。结合结果在细胞中产生效应，这可能表现为细胞中的许多变化，包括改变基因转录或翻译或改变细胞形态。通常，单个配体会有一个可以与其结合并引起细胞反应的受体。受体可以广泛地分类为内部受体，细胞表面受体，离子通道受体，G蛋白偶联受体（GPCRs）和酶联受体。虽然大多数细胞受体结合是通过化学配体，但两个值得注意的例外是病原性的病毒，它们可以结合宿主细胞受体以感染细胞，以及细菌组分，它们可以结合免疫细胞上的受体以引起免疫反应<sup>[19]</sup>。</p>
+<p>谷氨酸是一种氨基酸，它在人体中扮演着多种重要的角色。首先，谷氨酸是蛋白质的构建块之一，对于人体的器官来说，蛋白质是至关重要的<sup>[20]</sup>。其次，谷氨酸在神经系统中起着关键的作用，它是大脑中最主要的兴奋性神经递质<sup>[21]</sup>。此外，谷氨酸还在细胞间的信号传递中起着重要的作用，例如在抑制未分化的间充质干细胞的自我复制的机制中<sup>[22]</sup>。谷氨酸也是许多重要分子的合成所必需，例如谷胱甘肽和多谷氨酸叶酸辅酶<sup>[23]</sup>。</p>
+<p>解离是一种心理机制，它在人们的适应努力中起着非常重要的作用。解离是许多防御机制的基础机制，包括压抑、理智化、分裂等，它们都依赖于解离来完成特定的任务<sup>[24]</sup>。解离被定义为两个或多个不同的“思想和功能系统”的整合能力的缺陷，它可以与遗传成分、严重的疾病和疲劳，以及特别是经历不利的、可能造成创伤的事件有关<sup>[25]</sup>。解离的核心特征是一种或多种心理功能的中断，包括解离性遗忘、人格解离、现实解离、身份混淆和身份改变等<sup>[26]</sup>。解离可能作为许多不同的心理健康状况的症状出现，例如创伤后应激障碍（PTSD）<sup>[27]</sup>。</p>
+<p>精神病样效应是指一种类似于精神病的症状或体验，包括感知扭曲、偏执和无乐感等。这种效应通常在感官剥夺的情况下出现，特别是在长时间的感官剥夺中，人们经常报告出现感知扭曲，如幻觉。此外，易于产生幻觉的个体在短期感官剥夺中比非易感个体更容易出现感知扭曲 <sup>[28]</sup>。精神病样效应也可能是严重精神健康障碍的症状，例如精神病。精神病患者可能会出现幻觉或妄想。幻觉是在没有实际刺激的情况下出现的感官体验，例如，一个人可能会听到他们的母亲在对他们大喊大叫，而他们的母亲并不在场。妄想是与实际证据相反的思想<sup>[29]</sup>。</p>
+</blockquote>
+<h1 id="当前快速抗抑郁药物研究进展"><a href="#当前快速抗抑郁药物研究进展" class="headerlink" title="当前快速抗抑郁药物研究进展"></a>当前快速抗抑郁药物研究进展</h1><h2 id="已经投入使用"><a href="#已经投入使用" class="headerlink" title="已经投入使用"></a>已经投入使用</h2><h3 id="Arketamine"><a href="#Arketamine" class="headerlink" title="Arketamine"></a>Arketamine</h3><p>氯胺酮(arketamine)最初被用作麻醉药，后来发现它具有抗抑郁效果。氯胺酮的作用机制是通过与大脑中产生一种名为谷氨酸的化学物质的受体结合，从而激活大脑中的谷氨酸。谷氨酸在情绪调节中起着关键作用，大脑中谷氨酸水平低可能导致抑郁症状 <sup>[30]</sup>。氯胺酮还可以刺激产生脑源性神经营养因子，这种蛋白质在神经可塑性中起作用，氯胺酮可能通过支持神经可塑性来改变导致抑郁的负面思维模式 <sup>[30]</sup>。</p>
+<p>尽管Arketamine对NMDAR的结合亲和力较低，但预临床研究显示，Arketamine比esketamine具有更大的效力和更持久的抗抑郁样效应。重要的是，arketamine的副作用，即精神病样和解离效应以及滥用可能性，比和Esketamine在动物和人类中都要少 <sup>[31]</sup></p>
+<p>相比于传统的抗抑郁药，氯胺酮的主要优势在于其快速的作用机制。传统的抗抑郁药可能需要几周的时间才能改善症状，而氯胺酮可能在1小时内就能提供缓解 <sup>[30]</sup>。此外，氯胺酮对于治疗抗药性抑郁症也显示出了潜力，这是一种对两种或更多种抗抑郁药物无反应的抑郁症状 <sup>[30]</sup> <sup>[32]</sup>。</p>
+<p>然而，需要注意的是，氯胺酮的长期使用可能会对认知功能产生影响，这一问题需要进一步研究  <sup>[32]</sup>。</p>
+<blockquote>
+<p>脑源性神经营养因子（BDNF）是一种神经营养因子，对大脑的组装、发育和成熟起着至关重要的作用。BDNF在中枢和外周神经系统的神经元的生存、发育和功能中起着关键作用。BDNF通过激活神经营养因子受体酪氨酸激酶（Trk）家族的一种或多种成员（TrkA，TrkB，TrkC）来发挥其生物学效应。此外，所有神经营养因子都能激活p75神经营养因子受体（p75） <sup>[33]</sup>。BDNF在神经发育障碍（例如，自闭症谱系障碍）、神经精神疾病（例如，焦虑、抑郁、创伤后应激障碍和精神分裂症）以及各种神经退行性疾病（例如，帕金森病、阿尔茨海默病等）中都有涉及<sup>[34]</sup>。</p>
+</blockquote>
+<h3 id="Sertraline"><a href="#Sertraline" class="headerlink" title="Sertraline"></a>Sertraline</h3><p>盐酸司可平（Sertraline）是一种选择性5-羟色胺再摄取抑制剂（SSRI），主要用于治疗抑郁症和焦虑症。盐酸司可平在口服后缓慢吸收，血浆浓度在6-8小时达到峰值。血浆浓度与剂量线性相关，消除半衰期约为32小时。建议每日一次服用，大约7天后达到稳态。盐酸司可平在老年人和肾功能受损患者的动力学与年轻健康的女性志愿者相似。在年轻男性志愿者中，血浆浓度较低，消除半衰期较短，但不建议这些人群减少剂量 <sup>[35]</sup>。</p>
+<p>盐酸司可平的副作用通常较轻且短暂。在单独过量服用盐酸司可平的情况下，最常见的异常表现是震颤、嗜睡和恶心。较少见的症状包括激动、混乱和呕吐<sup>[36]</sup>。在某些情况下，盐酸司可平可能会引发或加重精神病症状，特别是在已经接受抗精神病药物治疗且有精神病史的患者中 <sup>[37]</sup>。</p>
+<p>在老年抑郁症患者中，盐酸司可平的治疗效果已得到证实，且通常能被良好地耐受。最常见的副作用包括口干、头痛、腹泻、恶心、失眠、嗜睡、便秘、头晕、出汗和味觉异常<sup>[38]</sup>。</p>
+<h3 id="Brexanolone-1"><a href="#Brexanolone-1" class="headerlink" title="Brexanolone"></a>Brexanolone</h3><p>布雷克索隆(brexanolone)是一种用于治疗成年女性产后抑郁症的药物，属于GABA-A调节剂类药物 <sup>[39]</sup>。Brexanolone是一种可溶性的、专有的、可注射的醇孕酮配方，醇孕酮是一种调节神经元兴奋性的神经活性类固醇。醇孕酮水平在怀孕期间增加，在出生后大幅度下降，这些波动对焦虑和抑郁有深远的影响<sup>[10]</sup>。Brexanolone的疗效表明，像醇孕酮这样的神经类固醇对于治疗产后抑郁症很重要。然而，目前尚不清楚Brexanolone是否能在给药后或超过30天提供持久的抑郁症状缓解<sup>[40]</sup>。</p>
+<p>详细内容在上面提到发展历史的时候进了阐述</p>
+<blockquote>
+<p>GABA-A调节剂类药物主要通过增强GABA（γ-氨基丁酸）的抑制效应来发挥作用，GABA是大脑中的主要抑制性神经递质<sup>[9]</sup>。这类药物主要包括全能激动剂和正向异位调节剂，它们可以与GABA-A受体的正交位点和至少七个异位激动剂结合位点结合<sup>[41]</sup>。然而，全能激动剂可能导致受体的脱敏、耐受性和物理依赖性，因此，研究人员进一步开发了部分正交激动剂和GABA-A受体的正向异位调节剂<sup>[41]</sup>。</p>
+<p>例如，MK-0777是一种具有选择性活性的GABA-A受体α2或α3亚单位的苯二氮卓类药物，它可以改善精神分裂症患者的认知功能和γ波振荡<sup>[42]</sup>。另一种药物，3-乙酰氨基-4’-O-甲基鬼臼毒素（AMH），是一种高效的GABA-A受体调节剂，它是鬼臼毒素的含氮衍生物，可以作为强效的部分激动剂<sup>[43]</sup>。</p>
+<p>然而，需要注意的是，GABA-A调节剂可能会产生副作用，包括胃部不适、头痛、嗜睡和肌肉无力等<sup>[9]</sup>。因此，在使用这类药物之前，建议先咨询医生的意见。</p>
+</blockquote>
+<h3 id="Esketamine-1"><a href="#Esketamine-1" class="headerlink" title="Esketamine"></a>Esketamine</h3><p>艾司氯胺酮(Esketamine)已被批准用于治疗抗药性抑郁症（TRD）的成年人，并与口服抗抑郁药一起使用，也用于治疗有急性自杀意念或行为的成年人的抑郁症状<sup>[44]</sup>。然而，Esketamine的使用可能存在一些副作用，包括分离感、焦虑、恶心、血压升高和头痛等<sup>[45]</sup>。此外，还有一些研究表明，Esketamine可能存在成瘾的风险 <sup>[44]</sup>。因此，对于使用Esketamine的患者，医生需要密切监测其症状，并及时管理任何可能出现的副作用。</p>
+<p>详细内容在上面提到发展历史的时候进了阐述</p>
+<h2 id="正在临床开发"><a href="#正在临床开发" class="headerlink" title="正在临床开发"></a>正在临床开发</h2><h3 id="Scopolamine"><a href="#Scopolamine" class="headerlink" title="Scopolamine"></a>Scopolamine</h3><p>东莨菪碱(scopolamine)是一种抗胆碱药，可以阻断神经递质乙酰胆碱与其受体之间的信号传递，从而抑制与自主神经系统相关的肌肉运动和身体功能<sup>[46]</sup>。</p>
+<p>在抗抑郁疗法中，Scopolamine和其他NMDA受体拮抗剂（如氯胺酮）被认为是快速作用的抗抑郁药物。这些药物的作用机制可能涉及通过调节情绪偏见（即情绪状态改变学习、记忆和决策的认知过程）的神经心理效应<sup>[47]</sup>。</p>
+<p>Scopolamine的优势在于其快速的抗抑郁效果，这对于传统的抗抑郁药物来说是一个重大突破，因为传统的抗抑郁药物通常需要几周的时间才能显示出临床效益<sup>[48]</sup>。然而，Scopolamine的具体作用机制和优势仍需要进一步的研究。</p>
+<blockquote>
+<p>抗胆碱药这类药物，它们通过阻断神经递质乙酰胆碱在大脑和周围组织中的作用来发挥作用。这些药物广泛应用于老年人治疗各种疾病。事实上，约三分之一到一半常用的老年人药物具有抗胆碱活性<sup>[49]</sup>。抗胆碱药物的主要作用是通过与胆碱能受体竞争性地结合，从而阻止乙酰胆碱的作用<sup>[50]</sup>。</p>
+<p>抗胆碱药物的临床应用包括治疗尿失禁、过敏反应、抗抑郁药、抗精神病药等<sup>[51]</sup>。然而，这类药物可能导致一系列副作用，如口干、恶心、便秘、腹痛v、尿潴留、视力模糊、心动过速和神经功能障碍等<sup>[52]</sup>。在老年人中，抗胆碱药物可能增加认知和功能下降、发病率、住院和死亡的风险 <sup>[53]</sup>。因此，在临床实践中，尽量减少抗胆碱负荷是非常重要的。</p>
+<p>乙酰胆碱是一种神经化学物质，它在大脑和身体的其他器官系统中具有多种功能。具体来说，它是一种神经递质，作为一种化学信息，由神经元释放，使它们能够与其他神经元以及肌肉细胞和腺体组织中的其他专门细胞进行通信。乙酰胆碱的名称源于其化学结构，因为它是乙酸和胆碱的酯。使用这种化学信使或对其有反应的身体组织被称为胆碱能的。乙酰胆碱在许多身体部位作为神经递质运作，但最常与神经肌肉接头相关联。神经肌肉接头是身体中的肌肉与位于脊髓腹侧的运动神经元突触的地方，用于激活它们。乙酰胆碱也在自主神经系统中作为神经递质发挥作用，既作为前神经元和后神经元之间的神经递质，也是副交感后神经元的最终释放产物<sup>[54]</sup>。</p>
+</blockquote>
+<h3 id="GLYX-13-Rapastinel"><a href="#GLYX-13-Rapastinel" class="headerlink" title="GLYX-13(Rapastinel)"></a>GLYX-13(Rapastinel)</h3><p>GLYX-13(rapastinel)是一种NMDA受体调节剂，具有甘氨酸部位部分激动剂的特性，能产生快速的抗抑郁效果，但没有麻醉药ketamine的精神病样副作用<sup>[55]</sup>。</p>
+<p>在临床试验中，GLYX-13被用作具有抗抑郁潜力的药物，因为它能在2小时内减轻抑郁症状，且这种效果平均可以维持7天<sup>[56]</sup>。</p>
+<p>GLYX-13的作用机制包括在前额叶皮质（PFC）中快速激活mTORC1通路，以及在mPFC的V层锥形神经元的顶树突中快速增加脊突突触的数量和功能<sup>[55]</sup>。</p>
+<p>GLYX-13的优势在于，与ketamine相比，它不会引起认知损害，而且可以防止或逆转ketamine引起的认知损害<sup>[57]</sup>。此外，GLYX-13没有精神病样或其他重大副作用<sup>[56]</sup>。</p>
+<blockquote>
+<p>NMDA受体调节剂是一类药物或化合物，它们可以影响N-甲基-D-天冬氨酸受体（NMDA受体）的功能。NMDA受体是一种离子通道受体，主要参与神经元之间的信息传递和突触可塑性。这些受体在学习、记忆和神经系统功能中起着关键作用。然而，过度的NMDA受体活性可能导致神经元损伤和一系列神经精神疾病，如抑郁症、精神分裂症和癫痫等。</p>
+<p>NMDA受体调节剂可以分为两类：正向调节剂（PAMs）和负向调节剂（NAMs）。正向调节剂增强NMDA受体的功能，而负向调节剂抑制NMDA受体的功能。这些调节剂通过与NMDA受体的特定结合位点结合来调控受体活性，从而影响神经递质谷氨酸在突触间隙中的传递和神经元的兴奋性<sup>[58]</sup>。</p>
+<p>甘氨酸是一种非必需、中性且代谢惰性的氨基酸，它是许多生物重要生物分子和化合物合成的必需底物。甘氨酸参与蛋白质、三肽谷胱甘肽的合成以及解毒反应。它具有广泛的抗炎、细胞保护和免疫调节性质。为了发挥其作用，甘氨酸会结合到不同的受体。GlyR阴离子通道是研究最多的甘氨酸受体。然而，甘氨酸的细胞保护作用还有GlyR独立的机制，甘氨酸的其他可能的结合分子是NMDA受体和GlyT1和GlyT2受体。尽管在人体中，甘氨酸的正常血清水平约为300 μM，但增加甘氨酸的摄入量可以使血液中的水平超过900 μM，从而增加其有益作用，而不会产生有害的副作用<sup>[59]</sup>。</p>
+<p>部分激动剂是一种药物，它们与受体结合时产生有限的反应。这些药物的内在活性低于全激动剂，因此它们可以根据周围的自然神经递质（全激动剂）水平，作为功能性激动剂或功能性拮抗剂。在全激动剂缺席的情况下，部分激动剂显示出功能性激动剂活性，与受体结合产生反应。在全激动剂存在的情况下，部分激动剂显示出功能性拮抗剂活性，因为受体结合减少了全激动剂所见的反应<sup>[60]</sup>。例如，部分阿片激动剂在结合到您的阿片受体时具有混合或有限的作用，因此医生经常用它们来治疗阿片类药物使用障碍<sup>[61]</sup>。</p>
+<p>前额叶皮质是大脑的一部分，位于大脑的前部。它占据了人脑的三分之二，对于人类的高级认知功能起着重要作用。前额叶皮质的功能包括执行功能、注意力、记忆和语言处理。它还对情绪、情绪、个性、自我意识以及社会和道德推理的过程起着重要作用。此外，前额叶皮质还负责主要的运动功能，包括我们有意识地移动肌肉，以及与语言相关的两个关键区域，包括布洛卡区。前额叶皮质使我们能够将思想形成为语言，也帮助我们产生像走路和跑步这样的自愿运动<sup>[62]</sup><sup>[63]</sup>。</p>
+<p>mTORC1（哺乳动物雷帕霉素靶蛋白复合体1）是一个进化保守的丝/苏氨酸蛋白激酶，它能感知多种上游刺激以控制细胞生长、代谢和自噬。mTORC1通过调节多种信号通路，参与了人类疾病如癌症、糖尿病和衰老等的发生和发展。mTORC1的主要功能是通过下游分子4E-BP1和S6K来调节蛋白质合成和细胞生长<sup>[64]</sup><sup>[65]</sup>。</p>
+<p>mPFC是指大脑的内侧前额叶皮质（Medial Prefrontal Cortex）。这个区域在大脑的前部，负责高级认知功能，如自我控制、记忆和情绪表达，对我们的个性和沟通能力至关重要。mPFC还负责主要的运动功能，包括我们有意识地移动肌肉，以及与语言相关的关键区域，如Broca区。此外，mPFC还参与社会认知、情绪调节、动机和社交行为等多种功能<sup>[66]</sup><sup>[67]</sup><sup>[68]</sup>。</p>
+<p>V层锥形神经元是大脑皮层中的一种神经元，它们的特点是具有明显的顶树和基树，并且其细胞体呈金字塔形。这些神经元在中枢神经系统的多个区域中都可以找到，尽管其丰富程度的原因尚不清楚，但功能研究表明，它们的独特的细胞结构提供了对其功能的深入理解。锥形神经元并非完全相同，但可以确定一些共享的功能原则。特别是，存在具有不同突触输入、兴奋性、调节和可塑性的树突领域的特性，这使得整个树突树对动作电位产生的贡献成为可能<sup>[69]</sup>。</p>
+<p>顶树突是神经元的突出部分，通常每个顶树突只接收来自一个兴奋性突触的输入。它们包含神经递质受体、细胞器和对突触功能和可塑性至关重要的信号系统。顶树突的形成、可塑性和维持依赖于突触活动，并可以通过感官体验进行调节。研究表明，顶树突主要作为生化而非电气的隔室。特别是，最近的工作强调了顶树突是快速大幅度Ca(2+)信号的高度专化隔室，这些信号是诱导突触可塑性的基础<sup>[70]</sup>。</p>
+<p>脊突突触是神经元之间的一种特殊连接，位于树突脊突上。树突脊突是神经元树突上的小突起，大多数兴奋性突触都位于这些脊突上。脊突突触中的信号传递和可塑性对于学习和记忆等高级脑功能至关重要。脊突突触包含神经递质受体、细胞器和信号系统，这些都对突触功能和可塑性起着关键作用 <sup>[71]</sup><sup>[70]</sup>。</p>
+</blockquote>
+<h3 id="TAK-653"><a href="#TAK-653" class="headerlink" title="TAK-653"></a>TAK-653</h3><p>TAK-653是一种AMPA受体增效剂。尽管关于TAK-653的详细信息有限，但根据已有的研究，它可能通过增强AMPA受体功能来发挥抗抑郁作用 <sup>[72]</sup>。AMPA受体是一种离子型谷氨酸受体，与快速抗抑郁药物的作用机制密切相关。例如，氯胺酮（ketamine）等快速抗抑郁药物已被证实可以通过增强AMPA受体功能来产生抗抑郁效果<sup>[73]</sup>。</p>
+<p>TAK-653的优势可能在于其具有快速抗抑郁作用，这意味着它可能在短时间内显著改善抑郁症状。传统的抗抑郁药物通常需要数周甚至数月的时间才能见效，而快速抗抑郁药物如TAK-653可能在短时间内产生显著的疗效 <sup>[72]</sup>。然而，关于TAK-653的具体作用机制、优势和潜在副作用仍需要进一步的研究和临床试验来证实。</p>
+<blockquote>
+<p>以上药物的共同特点是它们都能快速产生抗抑郁效果，这是传统抗抑郁药物所无法做到的。然而，这些药物的副作用和持久抗抑郁效果的确保方法仍然是需要解决的问题 <sup>[72]</sup><sup>[74]</sup><sup>[75]</sup><sup>[76]</sup><sup>[77]</sup><sup>[78]</sup>。</p>
+</blockquote>
+<h2 id="具有快速抗抑郁潜力"><a href="#具有快速抗抑郁潜力" class="headerlink" title="具有快速抗抑郁潜力"></a>具有快速抗抑郁潜力</h2><h3 id="化学遗传学策略"><a href="#化学遗传学策略" class="headerlink" title="化学遗传学策略"></a>化学遗传学策略</h3><p>到了2023年，研究人员已经开始使用化学遗传学策略，通过使用工程化，设计药物专门激活设计受体（DREADDs），从而激活在重性抑郁症患者中功能失调的脑区，也就是特异性地操控神经元活动，这种策略使研究人员能够控制特定神经元的活动，确定神经元活动与行为之间的因果关系。如胼胝体下前扣带皮质区25（scACC-25）。</p>
+<p>研究发现，激活从scACC-25到纹状体（NAc）的神经通路可以防止anhedonia（无欢愉症），而激活从scACC-25到杏仁核的神经通路可以增加焦虑感。此外，研究还发现，将快速抗抑郁药物酮酮注入NAc可以防止scACC-25激活后的无欢愉症，效果持续超过1周<sup>[79]</sup>。</p>
+<p>化学遗传学策略在抗抑郁药物研究中的应用主要集中在两个方面：谷氨酸药物和RNA干扰策略。谷氨酸药物被认为是快速抗抑郁药物，例如非竞争性NMDA受体拮抗剂氯胺酮，其抗抑郁特性似乎源于其代谢产物(2S,6S;2R,6R)-羟基诺氯胺酮(HNK)，通过激活AMPA受体和mTOR信号通路，增加前额叶皮质锥体神经元的突触生成，并通过对核团的下行输入增强5-羟色胺神经传输<sup>[80]</sup>。此外，RNA干扰策略也在抗抑郁药物研究中得到应用，例如使用小RNA（如小干扰RNA或siRNA）来敲低单胺和非单胺神经元中的基因，以在实验动物中诱导抗抑郁样反应。许多与抑郁症相关的微RNA，例如miR-135，已被发现可以靶向抗抑郁作用相关的基因。同样，SSRI结合的siRNA也可以诱导更快和/或更有效的抗抑郁样反应 <sup>[80]</sup>。</p>
+<blockquote>
+<p>DREADDs是“设计师受体专门由设计师药物激活”（Designer Receptors Exclusively Activated by Designer Drugs）的缩写。这是一种神经调控工具，也是一种新兴的治疗方法。通过使用不同滴度的腺相关病毒（AAV）载体，可以尝试改变抑制性DREADD hM4D(Gi)在兴奋性海马神经元中的总表达水平。然而，DREADD表达的安全性尚未知。研究表明，长期高水平的DREADD表达可能具有神经毒性效应，而化学遗传学抑制兴奋性海马神经元可能会矛盾地增强齿状回诱发电位<sup>[81]</sup>。</p>
+<p>胼胝体下前扣带皮质区25（A25）是大脑的一个关键区域，对情绪表达和平衡起着至关重要的作用。A25在情感网络中起着关键作用，其功能的破坏已经与情绪障碍相关联。A25与与情绪和体内稳态相关的其他腹内和后眶前额区域有密切的连接。此外，A25还与复杂认知相关的前极区域10有适度的连接，可能调节情绪并抑制负面情绪。在前额叶之外，A25与听觉相关区域、与记忆相关的内侧颞叶皮质以及与内感相关的前岛有连接。A25的这些皮质连接为理解其在精神疾病和神经疾病中的脆弱性提供了电路基础<sup>[82]</sup>。</p>
+<p>纹状体是大脑的一部分，主要负责处理视觉信息、运动和记忆。它是基底节的一部分，帮助控制高级功能，包括运动规划、学习、记忆、奖励、动机、情绪和浪漫交流<sup>[83]</sup>。纹状体接收来自大脑皮层的神经运动信号，然后处理和修改这些信号，然后通过丘脑将信号传回运动皮层，通过锥体系统执行运动<sup>[84]</sup>。此外，纹状体在抑制和执行运动反应中起着关键作用<sup>[85]</sup>。</p>
+<p>杏仁核是哺乳动物大脑中的一个区域，位于大脑的颞叶部分，由不同的核团组成，形状类似杏仁，因此得名<sup>[86]</sup><sup>[87]</sup>。杏仁核在处理情绪，特别是恐惧和愉悦的反应中起着重要的作用<sup>[87]</sup>。此外，杏仁核也参与了学习，记忆，注意力和感知等认知功能<sup>[88]</sup>。杏仁核还在处理社交信号，如面部表情，以及维持社会地位，如灵长类的优势等级中起作用<sup>[89]</sup><sup>[90]</sup>。此外，杏仁核还参与决策制定，通过触发对情绪刺激，包括货币奖励和惩罚的自主反应<sup>[91]</sup>。</p>
+<p>RNA干扰（RNAi）是一种自然生物现象，通过小干扰RNA（siRNA）分子来降解靶向的病毒mRNA。这种策略已经成为研究基因功能的首选方法，尤其是在哺乳动物系统中。RNAi策略引起了大量关注，目前有几种化合物正在临床试验中。病毒是RNAi治疗的明显目标，因为大多数病毒难以用传统药物治疗，它们对药物治疗迅速产生抗性，而且它们的基因与人类基因差异很大，最小化副作用。此外，RNAi分子的潜在疗效测试周期相对较短，理论上任何病原体都可以快速靶向，使它们成为治疗各种疾病的无价工具 <sup>[92]</sup><sup>[93]</sup>。</p>
+<p>核团是细胞核中最明显且明显区分的亚核区域，主要负责核糖体的生物合成，也就是蛋白质合成的地方 <sup>[94]</sup>。然而，除了核糖体生物合成，核团还有非核糖体功能，包括DNA损伤应答、基因组稳定性的维护、细胞周期控制、应激反应、衰老、全局基因表达以及各种核糖核蛋白颗粒的组装或成熟等<sup>[95]</sup><sup>[96]</sup>。此外，核团的形态和活动高度响应生长信号和核团损伤，这些都被包括在不断发展的核团应激概念中。核团的改变是多种人类疾病（包括癌症和神经退行性疾病）的显著特征，也与衰老有关 <sup>[97]</sup>。</p>
+</blockquote>
+<h3 id="Psilocybin"><a href="#Psilocybin" class="headerlink" title="Psilocybin"></a>Psilocybin</h3><p>Psilocybin是一种存在于某些种类的蘑菇中的致幻化合物，被称为“魔术蘑菇”。近年来的研究发现,Psilocybin可能对抗抑郁症有治疗效果。在一项研究中，233名对两种或更多种抗抑郁药物无反应的抑郁症患者接受了Psilocybin治疗，结果发现，单次使用25毫克的合成Psilocybin，可以显著减轻抑郁症症状<sup>[98]</sup>。</p>
+<p>Psilocybin的作用机制与现有的抗抑郁药物不同。Psilocybin是一种精神活性生物碱，存在于某些致幻蘑菇中。当人体摄入Psilocybin后，它会在体内转化为Psilocin，然后与大脑中的5-HT2A受体结合，产生致幻效果<sup>[99]</sup>。</p>
+<p>Psilocybin的抗抑郁效果可能与其对大脑中的神经递质系统的影响有关。研究发现，Psilocybin可以改善突触结构和功能，并抑制炎症，这可能有助于改善抑郁症症状<sup>[100]</sup>。</p>
+<p>它的效果很快，而现有的抗抑郁药物可能需要几周才能起效。此外，单次使用Psilocybin的效果可能持续数周到数月。这意味着，与每天需要服用药物的传统抗抑郁疗法相比，Psilocybin可能只需要一次或几次治疗就能产生持久的效果，从而减少了副作用<sup>[101]</sup>。</p>
+<p>然而，尽管Psilocybin的研究结果看起来很有希望，但是Psilocybin的具体作用机制仍然不清楚，需要进一步的研究来探索，从而确认其对抑郁症的治疗效果，以及确定其最佳剂量和安全性。目前的研究表明，Psilocybin可能通过改变大脑中的神经递质系统，以及改善神经元的结构和功能，来产生其抗抑郁效果<sup>[102]</sup>。此外，Psilocybin的使用需要在专业治疗师的监督下进行，这也给其广泛应用带来了挑战<sup>[101]</sup>。</p>
+<blockquote>
+<p>精神活性生物碱是一类存在于自然界中的化合物，它们对人类的中枢神经系统有影响，可以改变人的心理状态，包括知觉、情绪和思维。这些生物碱通常存在于某些植物中，例如麻黄碱（ephedrine）存在于麻黄中，可以引起中枢神经系统的兴奋，但也可能导致失眠、焦虑等副作用<sup>[103]</sup>。卡西酮（cathinone）是卡特（khat）的主要精神活性成分，被认为是一种天然的安非他命，具有强烈的中枢神经系统兴奋作用 <sup>[103]</sup>。此外，魔幻蘑菇中的吲哚生物碱也显示出作为治疗神经精神疾病的潜力<sup>[104]</sup>。然而，这些生物碱的使用可能会带来一些健康风险，包括心血管问题、精神健康问题等。</p>
+<p>5-HT2A是一种血清素受体，属于G蛋白偶联受体（GPCR）超家族的一部分。这种受体通过与G蛋白的相互作用将细胞外信号传导到细胞内部。5-HT2A受体介导了许多影响抑郁症，精神分裂症，焦虑，幻觉，心境障碍，睡眠模式，饮食行为和神经内分泌功能的化合物的效应。与大多数其他受体不同，长期阻断5-HT2A和5-HT2C受体不会导致上调，而是导致（悖论性的）下调<sup>[105]</sup>。</p>
+<p>神经递质系统是由神经递质（一种化学信使）组成的网络，它在神经元（神经细胞）和身体其他细胞之间传递信息，影响从情绪到非自主运动的各种功能。神经递质可以通过预测的方式行动，但也可能受到药物、疾病和与其他化学信使的交互的影响。神经元需要传递信号以进行相互通信，但它们之间没有物理连接，只有微小的间隙。这种两个神经细胞之间的连接被称为突触。为了与下一个细胞进行通信，神经元通过神经递质的扩散在突触中发送信号<sup>[106]</sup>。</p>
+<p>神经递质是放大、传输和转换细胞信号的分子，对整个神经系统中的信息传输起着至关重要的作用。这些物质已被观察到影响许多功能，包括情绪、思想、记忆、学习和运动。因此，神经递质的稳态失调开始与大量的神经和神经退行性疾病相关<sup>[107]</sup>。</p>
+<p>神经递质系统根据神经元分泌的神经递质类型被分类为胆碱能、谷氨酸能、GABA能、多巴胺能、5-羟色胺能、组胺能或胺能系统，允许效应器器官通过发送神经冲动来执行特定功能。神经递质系统的失调通常与特定的神经疾病相关<sup>[108]</sup>。</p>
+</blockquote>
+<h3 id="mGlu2-3受体拮抗剂"><a href="#mGlu2-3受体拮抗剂" class="headerlink" title="mGlu2/3受体拮抗剂"></a>mGlu2/3受体拮抗剂</h3><p>mGlu2/3受体拮抗剂是一种新型的抗抑郁药物，它们通过阻断mGlu2和mGlu3受体来发挥作用。</p>
+<p>这些药物在动物模型中显示出快速的抗抑郁效果，而且在传统抗抑郁药物无效的模型中也显示出有效性<sup>[109]</sup>。</p>
+<p>mGlu2/3受体拮抗剂的作用机制与麻醉药氯胺酮相似，但不会引起氯胺酮类似的副作用，如精神病样行为、滥用潜力或神经毒性。</p>
+<p>此外，mGlu2/3受体拮抗剂的优势在于它们的快速作用和较少的副作用。例如，TP0473292是一种mGlu2/3受体拮抗剂的前药，它在人体中具有良好的口服生物利用度，并能有效地转化为活性代谢物TP0178894，且在临床试验中显示出良好的安全性和耐受性<sup>[110]</sup>。</p>
+<blockquote>
+<p>mGlu2和mGlu3是II类代谢型谷氨酸受体，它们在中枢神经系统中发挥重要作用，调节不同神经递质系统的突触释放，从而调节多种神经元亚型的信号传递 <sup>[111]</sup>。这两种受体在大脑的发育过程中表达，可以帮助理解它们各自的功能<sup>[111]</sup>。mGlu2和mGlu3受体的药物靶点被视为治疗各种精神病和神经疾病的潜在疗法 <sup>[111]</sup>。例如，mGlu2受体在控制炎症性疼痛中起主导作用，而mGlu2/3受体激动剂的镇痛活性完全由mGlu2受体的激活介导<sup>[112]</sup>。此外，mGlu2和mGlu3受体也参与睡眠和昼夜节律的调节<sup>[112]</sup>。</p>
+</blockquote>
+<h3 id="AMPA受体增效剂"><a href="#AMPA受体增效剂" class="headerlink" title="AMPA受体增效剂"></a>AMPA受体增效剂</h3><p>AMPA受体增效剂这类药物，它们通过正向调节AMPA型谷氨酸受体来增强兴奋性谷氨酸神经传输。</p>
+<p>这些药物被认为具有快速抗抑郁潜力，因为它们可以增强神经元活动，改善认知功能，并可能提高神经营养因子的表达，这些都与抑郁症的治疗有关<sup>[113]</sup><sup>[114]</sup><sup>[115]</sup>。</p>
+<p>AMPA受体增效剂的作用机制主要是通过增强AMPA受体功能，间接调动细胞内信号转导级联反应，并长期调节基因表达。这些药物还可以增强突触传输，通过增强NMDA受体活动来增强钙离子内流，这是启动突触功能长期改变（例如长期增强，LTP）的关键步骤，这些改变可能是某些形式的记忆编码的基础<sup>[116]</sup><sup>[117]</sup>。</p>
+<p>AMPA受体增效剂的优势在于它们可以直接增强AMPA受体功能，而不仅仅是通过阻断其他受体来改变神经递质的平衡。此外，这些药物还可以通过增强神经元活动来提高神经营养因子的表达，这可能有助于神经保护和修复。这些药物还可以改善认知功能，这对于许多神经退行性和/或神经精神疾病的治疗可能具有治疗益处<sup>[113]</sup><sup>[114]</sup><sup>[118]</sup>。</p>
+<blockquote>
+<p>神经营养因子是一类与神经元生存、发育和功能有关的蛋白质。它们首先被识别为对交感神经和感觉神经的生存因子，并已被证明能控制中枢和外周神经系统中神经元的许多生存、发育和功能方面。在发育过程中，神经营养因子的限制数量控制了存活神经元的数量，以确保神经元与目标支配密度需求之间的匹配。四种哺乳动物神经营养因子的生物效应是通过激活三种肌球蛋白相关激酶（Trk）家族的受体酪氨酸激酶（TrkA，TrkB和TrkC）中的一个或多个来介导的。此外，所有神经营养因子都激活p75神经营养因子受体（p75）<sup>[119]</sup>。</p>
+<p>信号转导级联反应是一种细胞内部的信号传递机制，它涉及一系列相互作用的蛋白质，这些蛋白质通过磷酸化和去磷酸化来激活或抑制下游的信号分子。这种级联反应可以放大信号，使得细胞可以对微弱的外部刺激产生强烈的反应。举例来说，有一种被称为丝裂原活化蛋白激酶（MAPK）的信号转导级联反应，它在许多细胞过程中起着关键作用，包括细胞增殖、分化和发育 <sup>[120]</sup>。这种级联反应的特点是，多种输入和输出都通过有限数量的共享中间组件进行操作，这就是所谓的”沙漏难题”<sup>[121]</sup>。理解MAPK级联如何以特异性调节各种输出是生物学中的一个基本问题 <sup>[121]</sup>。</p>
+<p>基因表达是一个生物过程，通过这个过程，DNA中的信息被转化为蛋白质或RNA产品。这个过程开始于DNA的转录，最终产生蛋白质或RNA产品。基因表达的控制是所有生物体必不可少的生物过程。这是通过调控蛋白与基因控制区域的特定DNA基序的相互作用来实现的。当这些调控蛋白结合到DNA上，并通过特定的蛋白-蛋白相互作用，它们将信号传递给基础的转录机器，包含相应的RNA聚合酶，从而产生特定的基因表达率<sup>[122]</sup>。基因表达研究已经证明是一个很好的资源，严格来说，”基因表达”包括从基因激活到成熟蛋白质位于其相应的区室以执行其功能并贡献于细胞表型的表达<sup>[123]</sup>。</p>
+</blockquote>
+<h3 id="GABA负性变构调节剂"><a href="#GABA负性变构调节剂" class="headerlink" title="GABA负性变构调节剂"></a>GABA负性变构调节剂</h3><p>GABA的负性变构调节剂（Negative Allosteric Modulators，NAMs）可以降低GABA受体的活性，从而减少GABA的效应。在一些研究中，GABA的负性变构调节剂显示出可能的镇痛活性 <sup>[124]</sup>。例如，抗癫痫药物Levetiracetam（LEV）被发现能够逆转负性变构调节剂锌和β-咔啉对GABA和甘氨酸受体介导的反应的抑制作用 <sup>[125]</sup>。</p>
+<p>GABA负性变构调节剂（GABA-NAMs）具有作为快速抗抑郁药物的潜力，因为它们能够迅速恢复由慢性压力引起的行为和神经生物学改变。研究表明，针对含有α5亚基的GABA-A受体的GABA-NAMs，如L-655,708和MRK-016，能在24小时内逆转慢性压力引起的享乐行为改变，并恢复病理性削弱的兴奋性突触传输的强度。此外，这些药物还能增加GluA1亚基的水平，这是AMPA受体的一个亚基，这可能有助于恢复兴奋性突触的强度<sup>[126]</sup>。这些药物的作用机制与已知的快速抗抑郁药物酮酯类似，但可能没有酮酯的副作用<sup>[126]</sup>。因此，GABA-NAMs代表了一类有前景的新型快速抗抑郁化合物。</p>
+<p>GABA负性变构调节剂的快速抗抑郁作用机制可能与其对大脑中GABA神经元的调节有关。一种理论是，这些药物通过抑制GABA神经元，从而解除了对丘脑皮质神经元的抑制，导致额叶皮质中谷氨酸的增加。这种增加的谷氨酸活动可以增强突触连接，从而改善抑郁症状。例如，氯胺酮被认为通过这种机制产生其快速抗抑郁效果，它通过NMDA受体调节GABA神经元的活动，增加谷氨酸的释放，从而增强突触功能<sup>[127]</sup><sup>[128]</sup>。然而，这个领域的研究仍在进行中，对于GABA负性变构调节剂的确切作用机制，科学家们还没有达成一致的看法。</p>
+<p>GABA负性变构调节剂在快速抗抑郁中的优势主要体现在其能够迅速产生抗抑郁效果。传统的抗抑郁药物通常需要几周的连续使用才能产生显著的治疗效果，而GABA负性变构调节剂则能在短时间内产生效果。此外，这类药物还能对一些抗抑郁治疗无效的症状（如无快感症）产生积极的影响。然而，目前这类药物的主要挑战在于副作用的管理以及如何延长其临床疗效的持续时间<sup>[74]</sup>。</p>
+<blockquote>
+<p>α5亚基是烟碱型乙酰胆碱受体（nAChR）的一部分，这是一种在神经系统中发挥作用的受体。α5亚基的mRNA在神经系统的多个结构中被检测到，主要在小脑、丘脑和自主神经节中表达。此外，α5亚基也在非神经组织中被检测到，尤其在整个胃肠道、胸腺和睾丸中表达最大<sup>[129]</sup>。在小鼠大脑中，α5*烟碱型乙酰胆碱受体的表达在15个检查的区域中的9个区域中被发现，尽管任何区域的总烟碱型乙酰胆碱受体种群中包含α5的比例都不到20%<sup>[130]</sup>。</p>
+<p>GluA1亚基是AMPA型谷氨酸受体（AMPARs）的一个重要组成部分。AMPA型谷氨酸受体是中枢神经系统中主要的快速兴奋性神经递质，对于突触传递和突触可塑性具有关键作用。AMPARs由四个核心亚基GluA1-4组成，其中GluA1亚基对于调节受体的功能特性和突触传递具有重要作用<sup>[131]</sup>。在学习和记忆过程中，GluA1亚基在突触可塑性和突触传递的调节中起着关键作用<sup>[132]</sup>。此外，GluA1亚基还与一些神经退行性疾病（如阿尔茨海默病）和代谢紊乱相关的认知障碍有关<sup>[133]</sup><sup>[134]</sup>。</p>
+<p>丘脑皮质神经元是大脑皮质和丘脑之间的连接神经元。这些神经元在大脑的许多重要功能中起着关键作用，包括感觉、运动、认知和情绪处理。丘脑皮质神经元的活动可以影响到皮质的活动，反之亦然。例如，丘脑皮质神经元可以接收来自皮质的信息，并将这些信息传递到丘脑的其他部分，从而影响到大脑的其他区域的活动。此外，丘脑皮质神经元也可以接收来自丘脑的信息，并将这些信息传递到皮质，从而影响到皮质的活动<sup>[135]</sup>。</p>
+</blockquote>
+<h1 id="论文详读"><a href="#论文详读" class="headerlink" title="论文详读"></a>论文详读</h1><h2 id="反复注射氯胺酮疗法"><a href="#反复注射氯胺酮疗法" class="headerlink" title="反复注射氯胺酮疗法"></a>反复注射氯胺酮疗法</h2><p>这篇是 <a href="https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-022-03789-3">Neurocognitive effects of repeated ketamine infusion treatments in patients with treatment resistant depression: a retrospective chart review</a><sup>[136]</sup>，我翻译为 <strong>反复注射氯胺酮疗法对难治性抑郁症患者的神经认知影响：回顾性图表审查</strong> </p>
+<h2 id="速效抗抑郁药机理认识"><a href="#速效抗抑郁药机理认识" class="headerlink" title="速效抗抑郁药机理认识"></a>速效抗抑郁药机理认识</h2><p>这篇是 <a href="https://pubmed.ncbi.nlm.nih.gov/30034992/">Rapid-Acting Antidepressants: Mechanistic Insights and Future Directions</a><sup>[137]</sup>，我翻译为 <strong>快速抗抑郁药：机理认识和未来方向</strong></p>
+<h2 id="抗抑郁药的新视角"><a href="#抗抑郁药的新视角" class="headerlink" title="抗抑郁药的新视角"></a>抗抑郁药的新视角</h2><p>这篇是 <a href="https://pubmed.ncbi.nlm.nih.gov/37379962/">Molecular mechanisms of rapid-acting antidepressants: New perspective for developing antidepressants</a><sup>[138]</sup>，我翻译为 <strong>快速抗抑郁药的分子机制：开发抗抑郁药的新视角</strong></p>
+<h1 id="References："><a href="#References：" class="headerlink" title="References："></a>References：</h1><ol>
+<li>Novel Pharmacological Approaches to the Treatment of Depression： <a href="https://pubmed.ncbi.nlm.nih.gov/35207483/">https://pubmed.ncbi.nlm.nih.gov/35207483/</a></li>
+<li>How the Newest Antidepressants Work：<a href="https://www.healthline.com/health/depression/newest-antidepressants">https://www.healthline.com/health/depression/newest-antidepressants</a></li>
+<li>Monoaminergic neurotransmission: the history of the discovery of antidepressants from 1950s until today：<a href="https://pubmed.ncbi.nlm.nih.gov/19442174/">https://pubmed.ncbi.nlm.nih.gov/19442174/</a></li>
+<li>Selective Serotonin Reuptake Inhibitors ：<a href="https://pubmed.ncbi.nlm.nih.gov/30838457/">https://pubmed.ncbi.nlm.nih.gov/30838457/</a></li>
+<li>Selective serotonin reuptake inhibitor exposure ：<a href="https://pubmed.ncbi.nlm.nih.gov/23796482/">https://pubmed.ncbi.nlm.nih.gov/23796482/</a></li>
+<li>The interaction between gamma-aminobutyric acid and other related neurotransmitters in depression ：<a href="https://pubmed.ncbi.nlm.nih.gov/25219270/">https://pubmed.ncbi.nlm.nih.gov/25219270/</a></li>
+<li>GABA and mood disorders: a brief review and hypothesis ：[<a href="https://pubmed.ncbi.nlm.nih.gov/8550953/](https://pubmed.ncbi.nlm.nih.gov/8550953/">https://pubmed.ncbi.nlm.nih.gov/8550953/](https://pubmed.ncbi.nlm.nih.gov/8550953/</a></li>
+<li>The GABAergic deficit hypothesis of major depressive disorder ：<a href="https://pubmed.ncbi.nlm.nih.gov/21079608/">https://pubmed.ncbi.nlm.nih.gov/21079608/</a></li>
+<li>What Does Gamma Aminobutyric Acid (GABA) Do? : <a href="https://www.healthline.com/health/gamma-aminobutyric-acid">https://www.healthline.com/health/gamma-aminobutyric-acid</a></li>
+<li>Brexanolone: A Novel Drug for the Treatment of Postpartum Depression ：<a href="https://pubmed.ncbi.nlm.nih.gov/33302791/">https://pubmed.ncbi.nlm.nih.gov/33302791/</a></li>
+<li>Brexanolone for postpartum depression: A meta-analysis of randomized controlled studies ：<a href="https://pubmed.ncbi.nlm.nih.gov/31323375/">https://pubmed.ncbi.nlm.nih.gov/31323375/</a></li>
+<li>Effect of brexanolone on depressive symptoms, anxiety, and insomnia in women with postpartum depression: Pooled analyses from 3 double-blind, randomized, placebo-controlled clinical trials in the HUMMINGBIRD clinical program ：<a href="https://pubmed.ncbi.nlm.nih.gov/36191643/">https://pubmed.ncbi.nlm.nih.gov/36191643/</a></li>
+<li>The role of allopregnanolone in depression and anxiety : <a href="https://pubmed.ncbi.nlm.nih.gov/24215796/">https://pubmed.ncbi.nlm.nih.gov/24215796/</a></li>
+<li>Serum allopregnanolone levels in pregnant women: changes during pregnancy, at delivery, and in hypertensive patients ：<a href="https://pubmed.ncbi.nlm.nih.gov/10902789/">https://pubmed.ncbi.nlm.nih.gov/10902789/</a></li>
+<li>Adjunctive dopaminergic enhancement of esketamine in treatment-resistant depression ： <a href="https://pubmed.ncbi.nlm.nih.gov/35842074/">https://pubmed.ncbi.nlm.nih.gov/35842074/</a></li>
+<li>Ketamine and esketamine for crisis management in patients with depression: Why, whom, and how?  ：<a href="https://pubmed.ncbi.nlm.nih.gov/35219097/">https://pubmed.ncbi.nlm.nih.gov/35219097/</a></li>
+<li>Antidepressant Efficacy and Tolerability of Ketamine and Esketamine: A Critical Review：<a href="https://pubmed.ncbi.nlm.nih.gov/29736744/">https://pubmed.ncbi.nlm.nih.gov/29736744/</a></li>
+<li>Physiology, NMDA Receptor ：<a href="https://pubmed.ncbi.nlm.nih.gov/30137779/">https://pubmed.ncbi.nlm.nih.gov/30137779/</a></li>
+<li>Physiology, Cellular Receptor：<a href="https://pubmed.ncbi.nlm.nih.gov/32119290/">https://pubmed.ncbi.nlm.nih.gov/32119290/</a></li>
+<li>Glutamine: Benefits, Uses and Side Effects：<a href="https://www.healthline.com/nutrition/glutamine">https://www.healthline.com/nutrition/glutamine</a></li>
+<li>II. Glutamine and glutamate：<a href="https://pubmed.ncbi.nlm.nih.gov/12481981/">https://pubmed.ncbi.nlm.nih.gov/12481981/</a></li>
+<li>Glutamic acid as a universal extracellular signal：<a href="https://pubmed.ncbi.nlm.nih.gov/26434096/">https://pubmed.ncbi.nlm.nih.gov/26434096/</a></li>
+<li>Glutamate: a truly functional amino acid：<a href="https://pubmed.ncbi.nlm.nih.gov/22526238/">https://pubmed.ncbi.nlm.nih.gov/22526238/</a></li>
+<li>The concept of dissociation：<a href="https://pubmed.ncbi.nlm.nih.gov/2258317/">https://pubmed.ncbi.nlm.nih.gov/2258317/</a></li>
+<li>Contemporary concepts of dissociation ：<a href="https://pubmed.ncbi.nlm.nih.gov/23114818/">https://pubmed.ncbi.nlm.nih.gov/23114818/</a></li>
+<li>The many faces of dissociation: opportunities for innovative research in psychiatry：<a href="https://pubmed.ncbi.nlm.nih.gov/25598819/">https://pubmed.ncbi.nlm.nih.gov/25598819/</a></li>
+<li>Dissociation as a Defense Mechanism: Why It Happens and How to Handle It：<a href="https://www.healthline.com/health/mental-health/dissociative-defense-mechanism">https://www.healthline.com/health/mental-health/dissociative-defense-mechanism</a></li>
+<li>The psychotomimetic effects of short-term sensory deprivation：<a href="https://pubmed.ncbi.nlm.nih.gov/19829208/">https://pubmed.ncbi.nlm.nih.gov/19829208/</a></li>
+<li>Psychosis：<a href="https://www.healthline.com/health/psychosis">https://www.healthline.com/health/psychosis</a></li>
+<li>What to Know About Ketamine Therapy for Depression：<a href="https://www.healthline.com/health/depression/ketamine-depression-treatment">https://www.healthline.com/health/depression/ketamine-depression-treatment</a></li>
+<li>Arketamine, a new rapid-acting antidepressant: A historical review and future ：<a href="https://pubmed.ncbi.nlm.nih.gov/35977629/">https://pubmed.ncbi.nlm.nih.gov/35977629/</a></li>
+<li>Increased use of ketamine for the treatment of depression: Benefits and concerns：<a href="https://pubmed.ncbi.nlm.nih.gov/32777326/">https://pubmed.ncbi.nlm.nih.gov/32777326/</a></li>
+<li>Neurotrophic Factors: An Overview：<a href="https://pubmed.ncbi.nlm.nih.gov/29222769/">https://pubmed.ncbi.nlm.nih.gov/29222769/</a></li>
+<li>The evolution of BDNF is defined by strict purifying selection and prodomain spatial coevolution, but what does it mean for human brain disease?：<a href="https://pubmed.ncbi.nlm.nih.gov/35732627/">https://pubmed.ncbi.nlm.nih.gov/35732627/</a></li>
+<li>Clinical implications of the pharmacology of sertraline：<a href="https://pubmed.ncbi.nlm.nih.gov/1806626/">https://pubmed.ncbi.nlm.nih.gov/1806626/</a></li>
+<li>Sertraline overdose：<a href="https://pubmed.ncbi.nlm.nih.gov/8808373/">https://pubmed.ncbi.nlm.nih.gov/8808373/</a></li>
+<li>Sertraline and psychotic symptoms: a case series：<a href="https://pubmed.ncbi.nlm.nih.gov/9167832/">https://pubmed.ncbi.nlm.nih.gov/9167832/</a></li>
+<li>Spotlight on sertraline in the management of major depressive disorder in elderly patients：<a href="https://pubmed.ncbi.nlm.nih.gov/12383038/">https://pubmed.ncbi.nlm.nih.gov/12383038/</a></li>
+<li>Brexanolone：<a href="https://pubmed.ncbi.nlm.nih.gov/31082098/">https://pubmed.ncbi.nlm.nih.gov/31082098/</a></li>
+<li>Brexanolone to Treat Postpartum Depression in Adult Women：<a href="https://pubmed.ncbi.nlm.nih.gov/34092826/">https://pubmed.ncbi.nlm.nih.gov/34092826/</a></li>
+<li>Experimental GABA A Receptor Agonists and Allosteric Modulators for the Treatment of Focal Epilepsy：<a href="https://pubmed.ncbi.nlm.nih.gov/33727865/">https://pubmed.ncbi.nlm.nih.gov/33727865/</a></li>
+<li>Subunit-selective modulation of GABA type A receptor neurotransmission and cognition in schizophrenia:<a href="https://pubmed.ncbi.nlm.nih.gov/18923067/"></a></li>
+<li>Nitrogenated honokiol derivatives allosterically modulate GABAA receptors and act as strong partial agonists：<a href="https://pubmed.ncbi.nlm.nih.gov/26410663/">https://pubmed.ncbi.nlm.nih.gov/26410663/</a></li>
+<li>Craving and addictive potential of esketamine as side effects?：<a href="https://pubmed.ncbi.nlm.nih.gov/35509224/">https://pubmed.ncbi.nlm.nih.gov/35509224/</a></li>
+<li>Prevention and Management of Common Adverse Effects of Ketamine and Esketamine in Patients with Mood Disorders：<a href="https://pubmed.ncbi.nlm.nih.gov/34363603/">https://pubmed.ncbi.nlm.nih.gov/34363603/</a></li>
+<li>Anticholinergics：<a href="https://www.healthline.com/health/anticholinergics">https://www.healthline.com/health/anticholinergics</a></li>
+<li>Role of the medial prefrontal cortex in the effects of rapid acting antidepressants on decision-making biases in rodents：<a href="https://pubmed.ncbi.nlm.nih.gov/32842137/">https://pubmed.ncbi.nlm.nih.gov/32842137/</a></li>
+<li>Faster, better, stronger: towards new antidepressant therapeutic strategies：<a href="https://pubmed.ncbi.nlm.nih.gov/25092200/">https://pubmed.ncbi.nlm.nih.gov/25092200/</a></li>
+<li>Anticholinergics: theoretical and clinical overview：<a href="https://pubmed.ncbi.nlm.nih.gov/26966981/">https://pubmed.ncbi.nlm.nih.gov/26966981/</a></li>
+<li>Anticholinergics in palliative medicine: an update：<a href="https://pubmed.ncbi.nlm.nih.gov/22964342/">https://pubmed.ncbi.nlm.nih.gov/22964342/</a></li>
+<li>Drugs with anticholinergic properties: a current perspective on use and safety：<a href="https://pubmed.ncbi.nlm.nih.gov/21635190/">https://pubmed.ncbi.nlm.nih.gov/21635190/</a></li>
+<li>Anticholinergic drugs and negative outcomes in the older population: from biological plausibility to clinical evidence：<a href="https://pubmed.ncbi.nlm.nih.gov/25930085/">https://pubmed.ncbi.nlm.nih.gov/25930085/</a></li>
+<li>Anticholinergic drugs and negative outcomes in the older population: from biological plausibility to clinical evidence：<a href="https://pubmed.ncbi.nlm.nih.gov/25930085/">https://pubmed.ncbi.nlm.nih.gov/25930085/</a></li>
+<li>Physiology, Acetylcholine：<a href="https://pubmed.ncbi.nlm.nih.gov/32491757/">https://pubmed.ncbi.nlm.nih.gov/32491757/</a></li>
+<li>GLYX-13 Produces Rapid Antidepressant Responses with Key Synaptic and Behavioral Effects Distinct from Ketamine：<a href="https://pubmed.ncbi.nlm.nih.gov/27634355/">https://pubmed.ncbi.nlm.nih.gov/27634355/</a></li>
+<li>Randomized proof of concept trial of GLYX-13, an N-methyl-D-aspartate receptor glycine site partial agonist, in major depressive disorder nonresponsive to a previous antidepressant agent：<a href="https://pubmed.ncbi.nlm.nih.gov/25782764/">https://pubmed.ncbi.nlm.nih.gov/25782764/</a></li>
+<li>GLYX-13 (rapastinel) ameliorates subchronic phencyclidine- and ketamine-induced declarative memory deficits in mice：<a href="https://pubmed.ncbi.nlm.nih.gov/26632337/">https://pubmed.ncbi.nlm.nih.gov/26632337/</a></li>
+<li>Pregnane-based steroids are novel positive NMDA receptor modulators that may compensate for the effect of loss-of-function disease-associated GRIN mutations：<a href="https://pubmed.ncbi.nlm.nih.gov/35318645/">https://pubmed.ncbi.nlm.nih.gov/35318645/</a></li>
+<li>Beneficial Effects of the Amino Acid Glycine：<a href="https://pubmed.ncbi.nlm.nih.gov/27292783/">https://pubmed.ncbi.nlm.nih.gov/27292783/</a></li>
+<li>Dopamine partial agonists: a new class of antipsychotic：<a href="https://pubmed.ncbi.nlm.nih.gov/15015905/">https://pubmed.ncbi.nlm.nih.gov/15015905/</a></li>
+<li>What Are Partial Opioid Agonists?：<a href="https://www.healthline.com/health/partial-opioid-agonist">https://www.healthline.com/health/partial-opioid-agonist</a></li>
+<li>Frontal lobe functions：<a href="https://pubmed.ncbi.nlm.nih.gov/11898568/">https://pubmed.ncbi.nlm.nih.gov/11898568/</a></li>
+<li>Frontal Lobe: What to Know：<a href="https://www.healthline.com/human-body-maps/frontal-lobe">https://www.healthline.com/human-body-maps/frontal-lobe</a></li>
+<li>Regulation of mTORC1 by Upstream Stimuli：<a href="https://pubmed.ncbi.nlm.nih.gov/32854217/">https://pubmed.ncbi.nlm.nih.gov/32854217/</a></li>
+<li>Diverse signaling mechanisms of mTOR complexes: mTORC1 and mTORC2 in forming a formidable relationship：<a href="https://pubmed.ncbi.nlm.nih.gov/31010692/">https://pubmed.ncbi.nlm.nih.gov/31010692/</a></li>
+<li>Frontal Lobe: What to Know：<a href="https://www.healthline.com/human-body-maps/frontal-lobe">https://www.healthline.com/human-body-maps/frontal-lobe</a></li>
+<li>Medial prefrontal cortex in neurological diseases：<a href="https://pubmed.ncbi.nlm.nih.gov/31373533/">https://pubmed.ncbi.nlm.nih.gov/31373533/</a></li>
+<li>The Role of the Medial Prefrontal Cortex in Moderating Neural Representations of Self and Other in Primates：<a href="https://pubmed.ncbi.nlm.nih.gov/33752448/">https://pubmed.ncbi.nlm.nih.gov/33752448/</a></li>
+<li>Pyramidal neurons: dendritic structure and synaptic integration：<a href="https://pubmed.ncbi.nlm.nih.gov/18270515/">https://pubmed.ncbi.nlm.nih.gov/18270515/</a></li>
+<li>Structure and function of dendritic spines：<a href="https://pubmed.ncbi.nlm.nih.gov/11826272/">https://pubmed.ncbi.nlm.nih.gov/11826272/</a></li>
+<li>Development and regulation of dendritic spine synapses：<a href="https://pubmed.ncbi.nlm.nih.gov/16443821/">https://pubmed.ncbi.nlm.nih.gov/16443821/</a></li>
+<li>Rapid-Acting Antidepressants：<a href="https://pubmed.ncbi.nlm.nih.gov/30058481/">https://pubmed.ncbi.nlm.nih.gov/30058481/</a></li>
+<li>Molecular Pharmacology and Neurobiology of Rapid-Acting Antidepressants：<a href="https://pubmed.ncbi.nlm.nih.gov/30296896/">https://pubmed.ncbi.nlm.nih.gov/30296896/</a></li>
+<li>Rapid-acting antidepressants ：<a href="https://pubmed.ncbi.nlm.nih.gov/31378256/">https://pubmed.ncbi.nlm.nih.gov/31378256/</a></li>
+<li>New targets for rapid antidepressant action：<a href="https://pubmed.ncbi.nlm.nih.gov/26724279/">https://pubmed.ncbi.nlm.nih.gov/26724279/</a></li>
+<li>Rapid acting antidepressants in the mTOR pathway: Current evidence：<a href="https://pubmed.ncbi.nlm.nih.gov/37379962/">https://pubmed.ncbi.nlm.nih.gov/37379962/</a></li>
+<li>Effects of fast-acting antidepressant drugs on a postpartum depression mice model：<a href="https://pubmed.ncbi.nlm.nih.gov/36029538/">https://pubmed.ncbi.nlm.nih.gov/36029538/</a></li>
+<li>Ketamine for Depression: Advances in Clinical Treatment, Rapid Antidepressant Mechanisms of Action, and a Contrast with Serotonergic Psychedelics：<a href="https://pubmed.ncbi.nlm.nih.gov/35312993/">https://pubmed.ncbi.nlm.nih.gov/35312993/</a></li>
+<li>Chemogenetics identifies separate area 25 brain circuits involved in anhedonia and anxiety in marmosets：<a href="https://pubmed.ncbi.nlm.nih.gov/37018416/">https://pubmed.ncbi.nlm.nih.gov/37018416/</a></li>
+<li>Can we increase the speed and efficacy of antidepressant treatments? Part II. Glutamatergic and RNA interference strategies：<a href="https://pubmed.ncbi.nlm.nih.gov/29525411/">https://pubmed.ncbi.nlm.nih.gov/29525411/</a></li>
+<li>Level of hM4D(Gi) DREADD Expression Determines Inhibitory and Neurotoxic Effects in the Hippocampus：<a href="https://pubmed.ncbi.nlm.nih.gov/34620623/">https://pubmed.ncbi.nlm.nih.gov/34620623/</a></li>
+<li>Cortical Connections Position Primate Area 25 as a Keystone for Interoception, Emotion, and Memory：<a href="https://pubmed.ncbi.nlm.nih.gov/29358365/">https://pubmed.ncbi.nlm.nih.gov/29358365/</a></li>
+<li>Caudate nucleus：<a href="https://www.healthline.com/human-body-maps/caudate-nucleus">https://www.healthline.com/human-body-maps/caudate-nucleus</a></li>
+<li>Movement Control of Striatum Neural Pathway：<a href="https://pubmed.ncbi.nlm.nih.gov/29888893/">https://pubmed.ncbi.nlm.nih.gov/29888893/</a></li>
+<li>Function of striatum beyond inhibition and execution of motor responses：<a href="https://pubmed.ncbi.nlm.nih.gov/15852388/">https://pubmed.ncbi.nlm.nih.gov/15852388/</a></li>
+<li>What is the amygdala?：<a href="https://pubmed.ncbi.nlm.nih.gov/9720596/">https://pubmed.ncbi.nlm.nih.gov/9720596/</a></li>
+<li>Amygdaloid body：<a href="https://www.healthline.com/human-body-maps/amygdala">https://www.healthline.com/human-body-maps/amygdala</a></li>
+<li>The amygdala and reward：<a href="https://pubmed.ncbi.nlm.nih.gov/12094212/">https://pubmed.ncbi.nlm.nih.gov/12094212/</a></li>
+<li>Functional activities of the amygdala: an overview：<a href="https://pubmed.ncbi.nlm.nih.gov/10721680/">https://pubmed.ncbi.nlm.nih.gov/10721680/</a></li>
+<li>The amygdala, social behavior, and danger detection：<a href="https://pubmed.ncbi.nlm.nih.gov/14766647/">https://pubmed.ncbi.nlm.nih.gov/14766647/</a></li>
+<li>The amygdala and decision-making：<a href="https://pubmed.ncbi.nlm.nih.gov/20920513/">https://pubmed.ncbi.nlm.nih.gov/20920513/</a></li>
+<li>RNA interference: on the road to an alternate therapeutic strategy!：<a href="https://pubmed.ncbi.nlm.nih.gov/14625885/">https://pubmed.ncbi.nlm.nih.gov/14625885/</a></li>
+<li>RNA interference-based therapeutics: new strategies to fight infectious disease：<a href="https://pubmed.ncbi.nlm.nih.gov/19075801/">https://pubmed.ncbi.nlm.nih.gov/19075801/</a></li>
+<li>Structure and function of the nucleolus in the spotlight：<a href="https://pubmed.ncbi.nlm.nih.gov/16687244/">https://pubmed.ncbi.nlm.nih.gov/16687244/</a></li>
+<li>Nucleolus as an emerging hub in maintenance of genome stability and cancer pathogenesis：<a href="https://pubmed.ncbi.nlm.nih.gov/29429989/">https://pubmed.ncbi.nlm.nih.gov/29429989/</a></li>
+<li>The relationship between the nucleolus and cancer: Current evidence and emerging paradigms：<a href="https://pubmed.ncbi.nlm.nih.gov/26721423/">https://pubmed.ncbi.nlm.nih.gov/26721423/</a></li>
+<li>Targeting the nucleolus as a therapeutic strategy in human disease：<a href="https://pubmed.ncbi.nlm.nih.gov/36229381/">https://pubmed.ncbi.nlm.nih.gov/36229381/</a></li>
+<li>Single Dose of Synthetic ‘Magic Mushroom’ Psilocybin Eases Severe Depression：<a href="https://www.healthline.com/health-news/single-dose-of-synthetic-magic-mushroom-psilocybin-eases-severe-depression">https://www.healthline.com/health-news/single-dose-of-synthetic-magic-mushroom-psilocybin-eases-severe-depression</a></li>
+<li>Psilocybin—summary of knowledge and new perspectives：<a href="https://pubmed.ncbi.nlm.nih.gov/24444771/">https://pubmed.ncbi.nlm.nih.gov/24444771/</a></li>
+<li>Preclinical perspectives on the mechanisms underlying the therapeutic actions of psilocybin in psychiatric disorders：<a href="https://pubmed.ncbi.nlm.nih.gov/36921889/">https://pubmed.ncbi.nlm.nih.gov/36921889/</a></li>
+<li>Could Magic Mushrooms Ever Replace Today’s Antidepressants?：<a href="https://www.healthline.com/health-news/could-magic-mushrooms-ever-replace-ssris">https://www.healthline.com/health-news/could-magic-mushrooms-ever-replace-ssris</a></li>
+<li>Psilocybin Efficacy and Mechanisms of Action in Major Depressive Disorder: a Review：<a href="https://pubmed.ncbi.nlm.nih.gov/35953638/">https://pubmed.ncbi.nlm.nih.gov/35953638/</a></li>
+<li>The pharmacology of psychoactive alkaloids from ephedra and catha：<a href="https://pubmed.ncbi.nlm.nih.gov/1881158/">https://pubmed.ncbi.nlm.nih.gov/1881158/</a></li>
+<li>Indole Alkaloids from Psychoactive Mushrooms: Chemical and Pharmacological Potential as Psychotherapeutic Agents：<a href="https://pubmed.ncbi.nlm.nih.gov/36830997/">https://pubmed.ncbi.nlm.nih.gov/36830997/</a></li>
+<li>5-HT2A and 5-HT2C receptors and their atypical regulation properties：<a href="https://pubmed.ncbi.nlm.nih.gov/12650852/">https://pubmed.ncbi.nlm.nih.gov/12650852/</a></li>
+<li>What Are Excitatory Neurotransmitters?：<a href="https://www.healthline.com/health/excitatory-neurotransmitters">https://www.healthline.com/health/excitatory-neurotransmitters</a></li>
+<li>Neurotransmitters-Key Factors in Neurological and Neurodegenerative Disorders of the Central Nervous System：<a href="https://pubmed.ncbi.nlm.nih.gov/35682631/">https://pubmed.ncbi.nlm.nih.gov/35682631/</a></li>
+<li>Neurotransmitter systems in the etiology of major neurological disorders: Emerging insights and therapeutic implications：<a href="https://pubmed.ncbi.nlm.nih.gov/37385351/">https://pubmed.ncbi.nlm.nih.gov/37385351/</a></li>
+<li>mGlu2/3 receptor as a novel target for rapid acting antidepressants：<a href="https://pubmed.ncbi.nlm.nih.gov/32616210/">https://pubmed.ncbi.nlm.nih.gov/32616210/</a></li>
+<li>Evaluation of the Safety, Tolerability, and Pharmacokinetic Profiles of TP0473292 (TS-161), A Prodrug of a Novel Orthosteric mGlu2/3 Receptor Antagonist TP0178894, in Healthy Subjects and Its Antidepressant-Like Effects in Rodents：<a href="https://pubmed.ncbi.nlm.nih.gov/34534292/">https://pubmed.ncbi.nlm.nih.gov/34534292/</a></li>
+<li>Developmental expression of mGlu2 and mGlu3 in the mouse brain：<a href="https://pubmed.ncbi.nlm.nih.gov/27818290/">https://pubmed.ncbi.nlm.nih.gov/27818290/</a></li>
+<li>mGlu2 metabotropic glutamate receptors restrain inflammatory pain and mediate the analgesic activity of dual mGlu2/mGlu3 receptor agonists：<a href="https://pubmed.ncbi.nlm.nih.gov/21235748/">https://pubmed.ncbi.nlm.nih.gov/21235748/</a></li>
+<li>Facilitation of task performance and removal of the effects of sleep deprivation by an ampakine (CX717) in nonhuman primates：<a href="https://pubmed.ncbi.nlm.nih.gov/16104830/">https://pubmed.ncbi.nlm.nih.gov/16104830/</a></li>
+<li>Effects of chronic systemic low-impact ampakine treatment on neurotrophin expression in rat brain：<a href="https://pubmed.ncbi.nlm.nih.gov/29886374/">https://pubmed.ncbi.nlm.nih.gov/29886374/</a></li>
+<li>Metabotropic glutamate receptors in the control of mood disorders；<a href="https://pubmed.ncbi.nlm.nih.gov/17430147/">https://pubmed.ncbi.nlm.nih.gov/17430147/</a></li>
+<li>LY404187: a novel positive allosteric modulator of AMPA receptors：<a href="https://pubmed.ncbi.nlm.nih.gov/12353058/">https://pubmed.ncbi.nlm.nih.gov/12353058/</a></li>
+<li>NMDA Receptors Enhance the Fidelity of Synaptic Integration：<a href="https://pubmed.ncbi.nlm.nih.gov/33468538/">https://pubmed.ncbi.nlm.nih.gov/33468538/</a></li>
+<li>AMPAKINE enhancement of social interaction in the BTBR mouse model of autism：<a href="https://pubmed.ncbi.nlm.nih.gov/22801296/">https://pubmed.ncbi.nlm.nih.gov/22801296/</a></li>
+<li>Neurotrophic Factors: An Overview：<a href="https://pubmed.ncbi.nlm.nih.gov/29222769/">https://pubmed.ncbi.nlm.nih.gov/29222769/</a></li>
+<li>The MAPK signaling cascad：<a href="https://pubmed.ncbi.nlm.nih.gov/7601337/">https://pubmed.ncbi.nlm.nih.gov/7601337/</a></li>
+<li>Specificity models in MAPK cascade signaling：<a href="https://pubmed.ncbi.nlm.nih.gov/37157227/">https://pubmed.ncbi.nlm.nih.gov/37157227/</a></li>
+<li>Components and mechanisms of regulation of gene expression：<a href="https://pubmed.ncbi.nlm.nih.gov/20827583/">https://pubmed.ncbi.nlm.nih.gov/20827583/</a></li>
+<li>Introduction to the Gene Expression Analysis：<a href="https://pubmed.ncbi.nlm.nih.gov/27300529/">https://pubmed.ncbi.nlm.nih.gov/27300529/</a></li>
+<li>A question of balance—positive versus negative allosteric modulation of GABA(A) receptor subtypes as a driver of analgesic efficacy in rat models of inflammatory and neuropathic pain：<a href="https://pubmed.ncbi.nlm.nih.gov/21439986/">https://pubmed.ncbi.nlm.nih.gov/21439986/</a></li>
+<li>The anti-epileptic drug levetiracetam reverses the inhibition by negative allosteric modulators of neuronal GABA- and glycine-gated currents：<a href="https://pubmed.ncbi.nlm.nih.gov/12086975/">https://pubmed.ncbi.nlm.nih.gov/12086975/</a></li>
+<li>Rapid Antidepressant Action and Restoration of Excitatory Synaptic Strength After Chronic Stress by Negative Modulators of Alpha5-Containing GABAA Receptors：<a href="https://pubmed.ncbi.nlm.nih.gov/25900119/">https://pubmed.ncbi.nlm.nih.gov/25900119/</a></li>
+<li>Convergent Mechanisms Underlying Rapid Antidepressant Action：<a href="https://pubmed.ncbi.nlm.nih.gov/29516301/">https://pubmed.ncbi.nlm.nih.gov/29516301/</a></li>
+<li>Molecular and Cellular Mechanisms of Rapid-Acting Antidepressants Ketamine and Scopolamine：<a href="https://pubmed.ncbi.nlm.nih.gov/26955968/">https://pubmed.ncbi.nlm.nih.gov/26955968/</a></li>
+<li>Neuronal and extraneuronal expression and regulation of the human alpha5 nicotinic receptor subunit gene：<a href="https://pubmed.ncbi.nlm.nih.gov/10854242/">https://pubmed.ncbi.nlm.nih.gov/10854242/</a></li>
+<li>Nicotinic alpha5 subunit deletion locally reduces high-affinity agonist activation without altering nicotinic receptor numbers：<a href="https://pubmed.ncbi.nlm.nih.gov/17573823/">https://pubmed.ncbi.nlm.nih.gov/17573823/</a></li>
+<li>Synaptic AMPA receptor composition in development, plasticity and disease：<a href="https://pubmed.ncbi.nlm.nih.gov/27080385/">https://pubmed.ncbi.nlm.nih.gov/27080385/</a></li>
+<li>Emerging role of AMPA receptor subunit GluA1 in synaptic plasticity: Implications for Alzheimer’s disease：<a href="https://pubmed.ncbi.nlm.nih.gov/33188547/">https://pubmed.ncbi.nlm.nih.gov/33188547/</a></li>
+<li>Intracellular oligomeric amyloid-beta rapidly regulates GluA1 subunit of AMPA receptor in the hippocampus：<a href="https://pubmed.ncbi.nlm.nih.gov/26055072/">https://pubmed.ncbi.nlm.nih.gov/26055072/</a></li>
+<li>Hippocampal Insulin Resistance Impairs Spatial Learning and Synaptic Plasticity：<a href="https://pubmed.ncbi.nlm.nih.gov/26216852/">https://pubmed.ncbi.nlm.nih.gov/26216852/</a></li>
+<li>An organizational analysis of the neurons forming the descending cortico-hypothalamic pathways：<a href="https://pubmed.ncbi.nlm.nih.gov/2284020/">https://pubmed.ncbi.nlm.nih.gov/2284020/</a></li>
+<li>Neurocognitive effects of repeated ketamine infusion treatments in patients with treatment resistant depression: a retrospective chart review：<a href="https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-022-03789-3">https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-022-03789-3</a></li>
+<li>Rapid treatments for depression: Endocannabinoid system as a therapeutic target：<a href="https://pubmed.ncbi.nlm.nih.gov/35351488/">https://pubmed.ncbi.nlm.nih.gov/35351488/</a></li>
+<li>Molecular mechanisms of rapid-acting antidepressants: New perspective for developing antidepressants：<a href="https://pubmed.ncbi.nlm.nih.gov/37379962/">https://pubmed.ncbi.nlm.nih.gov/37379962/</a></li>
+</ol>
 ]]></content>
       <categories>
         <category>技能学习记录</category>
+        <category>学术研究</category>
       </categories>
       <tags>
         <tag>快速抗抑郁</tag>
@@ -6935,16 +7187,50 @@ C=\max_{p\left( a_i \right)} \left[ H(Y)-H_{mi} \right] =\log m-H_{mi}</script><
   <entry>
     <title>关于抑郁症可能的发病机制调查研究</title>
     <url>/137-etiopathogenesis/</url>
-    <content><![CDATA[<p>抑郁症的发病机制可能与能量代谢紊乱有关。一些研究发现，抑郁症患者的三羧酸循环（TCA）显著下降，而糖异生途径异常增加 <a href="https://pubmed.ncbi.nlm.nih.gov/35640666/">1</a>。此外，抑郁症患者的线粒体功能可能受损，导致能量代谢底物供应紊乱，例如线粒体丙酮酸载体（MPC）的水平显著降低，这对丙酮酸进入TCA循环至关重要 <a href="https://pubmed.ncbi.nlm.nih.gov/35640666/">1</a>。此外，一些研究还发现，抑郁症患者的氨基酸代谢、能量代谢和脂质代谢可能受到影响 <a href="https://pubmed.ncbi.nlm.nih.gov/26947756/">2</a><a href="https://pubmed.ncbi.nlm.nih.gov/19913000/">3</a>。这些研究结果表明，能量代谢紊乱可能是抑郁症发病机制的重要组成部分。</p>
+    <content><![CDATA[<p>上一篇<a href="https://yuzhang.wang/136-rapid-treatment-depression/">关于快速抗抑郁的药物研究进展</a>中，一共引用了138篇期刊，总字数飙升到了1w5k多字，其实正文内容还好，占了大篇幅的，是那些专有名词的解释说明，每一段中不懂的内容，都找论文，尝试理解，这个是什么东西，在哪，怎么作用的，然后将解释和引用都写下来了。那么既然这篇博客的标题已经确定了，是讨论抑郁症的发病机制，那么我就不需要再长篇大论了，而是根据几个方面，进行调查研究即可，话不多说，让我们开始吧。</p>
+<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>抑郁症的发病机制可能涉及多个因素：</p>
+<ul>
+<li><ol>
+<li><strong>神经递质的改变</strong>：抑郁症患者的生物胺类神经递质（如儿茶酚胺和5-羟色胺）的代谢可能发生改变，这可能与自主神经系统的调节失衡有关 <a href="https://pubmed.ncbi.nlm.nih.gov/6858512/">1</a>。</li>
+</ol>
+</li>
+<li><ol>
+<li><strong>能量代谢紊乱</strong>：一些研究发现，抑郁症患者的能量代谢可能受到影响，例如三羧酸循环（TCA）显著降低，而糖异生途径异常增加。这可能与线粒体功能障碍有关，影响了能量代谢的底物供应。</li>
+</ol>
+</li>
+<li><ol>
+<li><strong>大脑结构的改变</strong>：抑郁症可能导致大脑的一些结构性改变，包括炎症和萎缩。这些改变可能影响到情绪的感知和调节 <a href="https://www.healthline.com/health/depression-physical-effects-on-the-brain">4</a>。</li>
+</ol>
+</li>
+<li><ol>
+<li><strong>肠道菌群的改变</strong>：肠道菌群的代谢产物可能影响抑郁症的发生，这些产物具有神经活性和免疫调节性质 <a href="https://pubmed.ncbi.nlm.nih.gov/33287416/">5</a>。</li>
+</ol>
+</li>
+<li><ol>
+<li><strong>奖赏回路的改变</strong>：抑郁症患者的脑内奖赏回路可能发生改变，这可能与抑郁症的主要症状如无快感、动机减退和能量水平降低有关 <a href="https://pubmed.ncbi.nlm.nih.gov/16566899/">6</a>。</li>
+</ol>
+</li>
+</ul>
+<p><em>在这篇博客中，有关能量代谢的内容会多提及一些，笔者会多进行一些调查研究，来尝试说明有关这个因素的发病机制是什么</em></p>
+<h1 id="详细说明"><a href="#详细说明" class="headerlink" title="详细说明"></a>详细说明</h1><h2 id="神经递质的发病机制"><a href="#神经递质的发病机制" class="headerlink" title="神经递质的发病机制"></a>神经递质的发病机制</h2><h2 id="能量代谢紊乱的发病机制"><a href="#能量代谢紊乱的发病机制" class="headerlink" title="能量代谢紊乱的发病机制"></a>能量代谢紊乱的发病机制</h2><p>抑郁症的发病机制可能与能量代谢紊乱有关。一些研究发现，抑郁症患者的三羧酸循环（TCA）显著下降，而糖异生途径异常增加 <a href="https://pubmed.ncbi.nlm.nih.gov/35640666/">1</a>。此外，抑郁症患者的线粒体功能可能受损，导致能量代谢底物供应紊乱，例如线粒体丙酮酸载体（MPC）的水平显著降低，这对丙酮酸进入TCA循环至关重要 <a href="https://pubmed.ncbi.nlm.nih.gov/35640666/">1</a>。此外，一些研究还发现，抑郁症患者的氨基酸代谢、能量代谢和脂质代谢可能受到影响 <a href="https://pubmed.ncbi.nlm.nih.gov/26947756/">2</a><a href="https://pubmed.ncbi.nlm.nih.gov/19913000/">3</a>。这些研究结果表明，能量代谢紊乱可能是抑郁症发病机制的重要组成部分。</p>
 <p>抑郁症患者的身体活动水平和能量消耗可能会降低，这可能与抑郁症的发病机制有关。一项研究发现，抑郁症患者的总能量消耗和活动能量消耗在24小时内显著降低，而且随着抑郁症症状的缓解，他们的身体活动参数显著增加 <a href="https://pubmed.ncbi.nlm.nih.gov/25532078/">1</a>。此外，抑郁症患者的能量代谢可能受损，这可能是抑郁症发病的重要机制之一 <a href="https://pubmed.ncbi.nlm.nih.gov/34225015/">2</a>。这些研究结果表明，能量代谢紊乱可能是抑郁症发病机制的重要组成部分。</p>
 <p>抑郁症患者的能量代谢受损可能会导致多种身体症状。例如，他们可能会出现体重增加、食欲增加、过度睡眠、疲劳和肌肉麻痹等症状，这些都反映了能量摄取/消耗平衡的改变。此外，抑郁症患者可能会出现无快感症，这是一种对原本乐于参与的活动失去兴趣的症状，这可能与大脑中线粒体呼吸链和肌酸激酶活动的改变有关。此外，抑郁症患者可能会出现焦虑和抑郁症状，这可能与餐后催产素分泌的异常有关。</p>
-<p>抑郁症和遗传学的关系：<br>抑郁症是一种复杂的疾病，其发病机制可能涉及遗传和环境因素的相互作用。研究表明，抑郁症有一定的遗传倾向。例如，如果你的直系亲属有抑郁症，你可能有更高的患病风险 <a href="https://www.healthline.com/health/depression/causes">1</a><a href="https://www.healthline.com/health/are-mental-illness-genetic">2</a>。一项对五个家庭研究的元分析发现，主要抑郁症的遗传率为37% <a href="https://pubmed.ncbi.nlm.nih.gov/11007705/">3</a>。然而，抑郁症的遗传机制并不简单，可能涉及多个基因的作用。一些人的大脑在抑郁症时会有明显的变化，这可能与大脑功能的开始有关。特定的神经递质（如血清素、多巴胺和去甲肾上腺素）可能在抑郁症患者中失衡 <a href="https://www.healthline.com/health/depression/causes">1</a>。此外，性别也可能影响抑郁症的遗传关联，女性比男性更容易受到抑郁症的影响 <a href="https://pubmed.ncbi.nlm.nih.gov/36741030/">4</a>。然而，尽管遗传因素在抑郁症的发病中起着重要作用，但我们对其具体机制的理解仍然有限 <a href="https://pubmed.ncbi.nlm.nih.gov/36769269/">5</a>。</p>
-<p>抑郁症和生理学的关系：<br>抑郁症与生理学的关系涉及到多种生物化学和神经生理学因素。首先，抑郁症的典型症状，如体重减轻、性欲变化、月经不调和睡眠障碍，可能反映出生物化学和神经生理功能的主要紊乱，这些症状通常不会在其他心理障碍中出现 <a href="https://pubmed.ncbi.nlm.nih.gov/7914394/">1</a>。此外，抑郁症与心脏病的关系可能涉及到下丘脑-垂体-肾上腺轴的失调、心率变异性的降低、血小板功能的改变以及免疫功能的损害 <a href="https://pubmed.ncbi.nlm.nih.gov/12667498/">2</a><a href="https://pubmed.ncbi.nlm.nih.gov/24692463/">3</a>。抑郁症还与慢性疼痛有关，可能涉及到神经塑性、炎症、氧化应激、内分泌系统的改变等生物学机制 <a href="https://pubmed.ncbi.nlm.nih.gov/28706741/">4</a>。此外，生活方式因素，如饮食、睡眠和运动，也可能影响与抑郁症相关的生理过程 <a href="https://pubmed.ncbi.nlm.nih.gov/23415826/">5</a><a href="https://pubmed.ncbi.nlm.nih.gov/31586447/">6</a>。</p>
-<p>抑郁症和生物学的关系：<br>抑郁症是一种复杂的疾病，涉及到生物学和心理社会因素的相互作用。在生物学层面，抑郁症与神经递质（例如，去甲肾上腺素，5-羟色胺，多巴胺）的代谢有关，这些神经递质在大脑中影响幸福和快乐的感觉，可能在抑郁症患者中失衡 <a href="https://pubmed.ncbi.nlm.nih.gov/7914394/">1</a>。此外，抑郁症可能与脑功能的显著变化有关，包括脑区体积的减小和活动的改变 <a href="https://www.healthline.com/health/depression-physical-effects-on-the-brain">2</a>。慢性炎症也可能与抑郁症的症状有关，特别是在癌症患者中 <a href="https://pubmed.ncbi.nlm.nih.gov/24716498/">3</a>。此外，抑郁症还与激素生产或功能的变化有关，这可能导致抑郁状态的发生 <a href="https://www.healthline.com/health/depression/causes">4</a>。总的来说，抑郁症的生物学机制涉及到神经递质的失衡，脑功能的改变，慢性炎症以及激素的变化。</p>
-<h1 id="References："><a href="#References：" class="headerlink" title="References："></a>References：</h1><p>1.抑郁症患者来源诱导的NPCs和iPS-神经元表现出能量代谢和电生理特性的改变：<a href="https://zhuanlan.zhihu.com/p/541957867">https://zhuanlan.zhihu.com/p/541957867</a><br>2.从突触角度总结抑郁症的六大分子机制：<a href="https://new.qq.com/rain/a/20221016A06TJE00">https://new.qq.com/rain/a/20221016A06TJE00</a><br>3.重庆医科大学谢鹏团队揭示核受体相关蛋白Nr4a2的抗抑郁新机制：<a href="https://zhuanlan.zhihu.com/p/620191381">https://zhuanlan.zhihu.com/p/620191381</a><br>4.陈建国/王芳团队揭示调节抑郁样行为的新神经环路机制：<a href="https://cj.sina.com.cn/articles/view/5803416260/159e91ac4019012swm">https://cj.sina.com.cn/articles/view/5803416260/159e91ac4019012swm</a><br>5.</p>
+<h2 id="大脑结构的发病机制"><a href="#大脑结构的发病机制" class="headerlink" title="大脑结构的发病机制"></a>大脑结构的发病机制</h2><h2 id="肠道菌群的发病机制"><a href="#肠道菌群的发病机制" class="headerlink" title="肠道菌群的发病机制"></a>肠道菌群的发病机制</h2><h2 id="奖赏回路的发病机制"><a href="#奖赏回路的发病机制" class="headerlink" title="奖赏回路的发病机制"></a>奖赏回路的发病机制</h2><h1 id="额外补充"><a href="#额外补充" class="headerlink" title="额外补充"></a>额外补充</h1><h2 id="抑郁症和遗传学的关系"><a href="#抑郁症和遗传学的关系" class="headerlink" title="抑郁症和遗传学的关系"></a>抑郁症和遗传学的关系</h2><p>抑郁症是一种复杂的疾病，其发病机制可能涉及遗传和环境因素的相互作用。研究表明，抑郁症有一定的遗传倾向。例如，如果你的直系亲属有抑郁症，你可能有更高的患病风险 <a href="https://www.healthline.com/health/depression/causes">1</a><a href="https://www.healthline.com/health/are-mental-illness-genetic">2</a>。一项对五个家庭研究的元分析发现，主要抑郁症的遗传率为37% <a href="https://pubmed.ncbi.nlm.nih.gov/11007705/">3</a>。然而，抑郁症的遗传机制并不简单，可能涉及多个基因的作用。一些人的大脑在抑郁症时会有明显的变化，这可能与大脑功能的开始有关。特定的神经递质（如血清素、多巴胺和去甲肾上腺素）可能在抑郁症患者中失衡 <a href="https://www.healthline.com/health/depression/causes">1</a>。此外，性别也可能影响抑郁症的遗传关联，女性比男性更容易受到抑郁症的影响 <a href="https://pubmed.ncbi.nlm.nih.gov/36741030/">4</a>。然而，尽管遗传因素在抑郁症的发病中起着重要作用，但我们对其具体机制的理解仍然有限 <a href="https://pubmed.ncbi.nlm.nih.gov/36769269/">5</a>。</p>
+<h2 id="抑郁症和生理学的关系"><a href="#抑郁症和生理学的关系" class="headerlink" title="抑郁症和生理学的关系"></a>抑郁症和生理学的关系</h2><p>抑郁症与生理学的关系涉及到多种生物化学和神经生理学因素。首先，抑郁症的典型症状，如体重减轻、性欲变化、月经不调和睡眠障碍，可能反映出生物化学和神经生理功能的主要紊乱，这些症状通常不会在其他心理障碍中出现 <a href="https://pubmed.ncbi.nlm.nih.gov/7914394/">1</a>。此外，抑郁症与心脏病的关系可能涉及到下丘脑-垂体-肾上腺轴的失调、心率变异性的降低、血小板功能的改变以及免疫功能的损害 <a href="https://pubmed.ncbi.nlm.nih.gov/12667498/">2</a><a href="https://pubmed.ncbi.nlm.nih.gov/24692463/">3</a>。抑郁症还与慢性疼痛有关，可能涉及到神经塑性、炎症、氧化应激、内分泌系统的改变等生物学机制 <a href="https://pubmed.ncbi.nlm.nih.gov/28706741/">4</a>。此外，生活方式因素，如饮食、睡眠和运动，也可能影响与抑郁症相关的生理过程 <a href="https://pubmed.ncbi.nlm.nih.gov/23415826/">5</a><a href="https://pubmed.ncbi.nlm.nih.gov/31586447/">6</a>。</p>
+<h2 id="抑郁症和生物学的关系"><a href="#抑郁症和生物学的关系" class="headerlink" title="抑郁症和生物学的关系"></a>抑郁症和生物学的关系</h2><p>抑郁症是一种复杂的疾病，涉及到生物学和心理社会因素的相互作用。在生物学层面，抑郁症与神经递质（例如，去甲肾上腺素，5-羟色胺，多巴胺）的代谢有关，这些神经递质在大脑中影响幸福和快乐的感觉，可能在抑郁症患者中失衡 <a href="https://pubmed.ncbi.nlm.nih.gov/7914394/">1</a>。此外，抑郁症可能与脑功能的显著变化有关，包括脑区体积的减小和活动的改变 <a href="https://www.healthline.com/health/depression-physical-effects-on-the-brain">2</a>。慢性炎症也可能与抑郁症的症状有关，特别是在癌症患者中 <a href="https://pubmed.ncbi.nlm.nih.gov/24716498/">3</a>。此外，抑郁症还与激素生产或功能的变化有关，这可能导致抑郁状态的发生 <a href="https://www.healthline.com/health/depression/causes">4</a>。总的来说，抑郁症的生物学机制涉及到神经递质的失衡，脑功能的改变，慢性炎症以及激素的变化。</p>
+<h1 id="论文详读"><a href="#论文详读" class="headerlink" title="论文详读"></a>论文详读</h1><h2 id="生物能和电生理特性的改变"><a href="#生物能和电生理特性的改变" class="headerlink" title="生物能和电生理特性的改变"></a>生物能和电生理特性的改变</h2><p>这篇是<a href="https://pubmed.ncbi.nlm.nih.gov/35732695/">Induced neural progenitor cells and iPS-neurons from major depressive disorder patients show altered bioenergetics and electrophysiological properties</a>，我翻译为 <strong>重度抑郁症患者的诱导神经祖细胞和 iPS 神经元显示出生物能和电生理特性的改变</strong></p>
+<h2 id="依赖性神经抑制抑郁行为"><a href="#依赖性神经抑制抑郁行为" class="headerlink" title="依赖性神经抑制抑郁行为"></a>依赖性神经抑制抑郁行为</h2><p>这篇是<a href="https://pubmed.ncbi.nlm.nih.gov/37325895/">PDGF-BB-Dependent Neurogenesis Buffers Depressive-Like Behaviors by Inhibition of GABAergic Projection from Medial Septum to Dentate Gyrus</a>，我翻译为 <strong>PDGF-BB依赖性神经发生通过抑制GABA从内隔到齿状回光的能投射来缓冲抑郁样行为</strong>，这个标题我自己翻译读着都拗口，还是不纠结怎么更通畅了</p>
+<h2 id="时间紊乱和抑郁症"><a href="#时间紊乱和抑郁症" class="headerlink" title="时间紊乱和抑郁症"></a>时间紊乱和抑郁症</h2><p>这篇是 <a href="https://pubmed.ncbi.nlm.nih.gov/37081401/">Effects of chronotype on antidepressant treatment and symptoms in patients with depression: a multicenter, parallel, controlled study</a>，我翻译为 <strong>时间类型对抑郁症患者抗抑郁治疗和症状的影响：一项多中心、平行的对照研究</strong> </p>
+<h1 id="References："><a href="#References：" class="headerlink" title="References："></a>References：</h1><ol>
+<li></li>
+<li>Induced neural progenitor cells and iPS-neurons from major depressive disorder patients show altered bioenergetics and electrophysiological properties：<a href="https://pubmed.ncbi.nlm.nih.gov/35732695/">https://pubmed.ncbi.nlm.nih.gov/35732695/</a></li>
+<li>PDGF-BB-Dependent Neurogenesis Buffers Depressive-Like Behaviors by Inhibition of GABAergic Projection from Medial Septum to Dentate Gyrus：<a href="https://pubmed.ncbi.nlm.nih.gov/37325895/">https://pubmed.ncbi.nlm.nih.gov/37325895/</a></li>
+<li>Effects of chronotype on antidepressant treatment and symptoms in patients with depression: a multicenter, parallel, controlled study：<a href="https://pubmed.ncbi.nlm.nih.gov/37081401/">https://pubmed.ncbi.nlm.nih.gov/37081401/</a></li>
+</ol>
 ]]></content>
       <categories>
         <category>技能学习记录</category>
+        <category>学术研究</category>
       </categories>
       <tags>
         <tag>能量代谢</tag>
