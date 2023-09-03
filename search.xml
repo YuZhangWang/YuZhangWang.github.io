@@ -7032,7 +7032,7 @@ C=\max_{p\left( a_i \right)} \left[ H(Y)-H_{mi} \right] =\log m-H_{mi}</script><
 <p>GluA1亚基是AMPA型谷氨酸受体（AMPARs）的一个重要组成部分。AMPA型谷氨酸受体是中枢神经系统中主要的快速兴奋性神经递质，对于突触传递和突触可塑性具有关键作用。AMPARs由四个核心亚基GluA1-4组成，其中GluA1亚基对于调节受体的功能特性和突触传递具有重要作用<sup>[131]</sup>。在学习和记忆过程中，GluA1亚基在突触可塑性和突触传递的调节中起着关键作用<sup>[132]</sup>。此外，GluA1亚基还与一些神经退行性疾病（如阿尔茨海默病）和代谢紊乱相关的认知障碍有关<sup>[133]</sup><sup>[134]</sup>。</p>
 <p>丘脑皮质神经元是大脑皮质和丘脑之间的连接神经元。这些神经元在大脑的许多重要功能中起着关键作用，包括感觉、运动、认知和情绪处理。丘脑皮质神经元的活动可以影响到皮质的活动，反之亦然。例如，丘脑皮质神经元可以接收来自皮质的信息，并将这些信息传递到丘脑的其他部分，从而影响到大脑的其他区域的活动。此外，丘脑皮质神经元也可以接收来自丘脑的信息，并将这些信息传递到皮质，从而影响到皮质的活动<sup>[135]</sup>。</p>
 </blockquote>
-<h1 id="论文详读"><a href="#论文详读" class="headerlink" title="论文详读"></a>论文详读</h1><h2 id="反复注射氯胺酮疗法"><a href="#反复注射氯胺酮疗法" class="headerlink" title="反复注射氯胺酮疗法"></a>反复注射氯胺酮疗法</h2><p>这篇是 <a href="https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-022-03789-3">Neurocognitive effects of repeated ketamine infusion treatments in patients with treatment resistant depression: a retrospective chart review</a><sup>[136]</sup>，我翻译为 <strong>反复注射氯胺酮疗法对难治性抑郁症患者的神经认知影响：回顾性图表审查</strong> </p>
+<h1 id="论文精读"><a href="#论文精读" class="headerlink" title="论文精读"></a>论文精读</h1><h2 id="反复注射氯胺酮疗法"><a href="#反复注射氯胺酮疗法" class="headerlink" title="反复注射氯胺酮疗法"></a>反复注射氯胺酮疗法</h2><p>这篇是 <a href="https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-022-03789-3">Neurocognitive effects of repeated ketamine infusion treatments in patients with treatment resistant depression: a retrospective chart review</a><sup>[136]</sup>，我翻译为 <strong>反复注射氯胺酮疗法对难治性抑郁症患者的神经认知影响：回顾性图表审查</strong> </p>
 <h2 id="速效抗抑郁药机理认识"><a href="#速效抗抑郁药机理认识" class="headerlink" title="速效抗抑郁药机理认识"></a>速效抗抑郁药机理认识</h2><p>这篇是 <a href="https://pubmed.ncbi.nlm.nih.gov/30034992/">Rapid-Acting Antidepressants: Mechanistic Insights and Future Directions</a><sup>[137]</sup>，我翻译为 <strong>快速抗抑郁药：机理认识和未来方向</strong></p>
 <h2 id="抗抑郁药的新视角"><a href="#抗抑郁药的新视角" class="headerlink" title="抗抑郁药的新视角"></a>抗抑郁药的新视角</h2><p>这篇是 <a href="https://pubmed.ncbi.nlm.nih.gov/37379962/">Molecular mechanisms of rapid-acting antidepressants: New perspective for developing antidepressants</a><sup>[138]</sup>，我翻译为 <strong>快速抗抑郁药的分子机制：开发抗抑郁药的新视角</strong></p>
 <h1 id="References："><a href="#References：" class="headerlink" title="References："></a>References：</h1><ol>
@@ -7182,16 +7182,27 @@ C=\max_{p\left( a_i \right)} \left[ H(Y)-H_{mi} \right] =\log m-H_{mi}</script><
       </categories>
       <tags>
         <tag>快速抗抑郁</tag>
+        <tag>Brexanolone</tag>
+        <tag>Esketamine</tag>
+        <tag>Psilocybin</tag>
+        <tag>mGlu2/3受体拮抗剂</tag>
+        <tag>AMPA受体增效剂</tag>
+        <tag>GLYX-13(Rapastinel)</tag>
+        <tag>Scopolamin</tag>
+        <tag>TAK-653</tag>
+        <tag>Sertraline</tag>
+        <tag>Arketamin</tag>
+        <tag>GABA负性变构调节剂</tag>
       </tags>
   </entry>
   <entry>
     <title>关于抑郁症可能的发病机制调查研究</title>
     <url>/137-etiopathogenesis/</url>
-    <content><![CDATA[<p>上一篇<a href="https://yuzhang.wang/136-rapid-treatment-depression/">关于快速抗抑郁的药物研究进展</a>中，一共引用了138篇期刊，总字数飙升到了1w5k多字，其实正文内容还好，占了大篇幅的，是那些专有名词的解释说明，每一段中不懂的内容，都找论文，尝试理解，这个是什么东西，在哪，怎么作用的，然后将解释和引用都写下来了。那么既然这篇博客的标题已经确定了，是讨论抑郁症的发病机制，那么我就不需要再长篇大论了，而是根据几个方面，进行调查研究即可，话不多说，让我们开始吧。</p>
+    <content><![CDATA[<p>上一篇<a href="https://yuzhang.wang/136-rapid-treatment-depression/">关于快速抗抑郁的药物研究进展</a>中，一共引用了138篇期刊，总字数飙升到了1w5k多字，其实正文内容还好，占了大篇幅的，是那些专有名词的解释说明，每一段中不懂的内容都得找论文，尝试理解，这个是什么东西，在哪，怎么作用的，然后将解释和引用都写下来了。那么既然这篇博客的标题已经确定了，是讨论抑郁症的发病机制，那么我就不需要再长篇大论了，而是根据几个方面，进行调查研究即可，话不多说，让我们开始吧。</p>
 <h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>抑郁症的发病机制可能涉及多个因素：</p>
 <ul>
 <li><ol>
-<li><strong>神经递质的改变</strong>：抑郁症患者的生物胺类神经递质（如儿茶酚胺和5-羟色胺）的代谢可能发生改变，这可能与自主神经系统的调节失衡有关 <a href="https://pubmed.ncbi.nlm.nih.gov/6858512/">1</a>。</li>
+<li><strong>神经递质的改变</strong>：抑郁症患者的生物胺类神经递质（如儿茶酚胺和5-羟色胺）的代谢可能发生改变，这可能与自主神经系统的调节失衡有关<sup>[1]</sup>。</li>
 </ol>
 </li>
 <li><ol>
@@ -7199,29 +7210,156 @@ C=\max_{p\left( a_i \right)} \left[ H(Y)-H_{mi} \right] =\log m-H_{mi}</script><
 </ol>
 </li>
 <li><ol>
-<li><strong>大脑结构的改变</strong>：抑郁症可能导致大脑的一些结构性改变，包括炎症和萎缩。这些改变可能影响到情绪的感知和调节 <a href="https://www.healthline.com/health/depression-physical-effects-on-the-brain">4</a>。</li>
+<li><strong>大脑结构的改变</strong>：抑郁症可能导致大脑的一些结构性改变，包括炎症和萎缩。这些改变可能影响到情绪的感知和调节<sup>[2]</sup>。</li>
 </ol>
 </li>
 <li><ol>
-<li><strong>肠道菌群的改变</strong>：肠道菌群的代谢产物可能影响抑郁症的发生，这些产物具有神经活性和免疫调节性质 <a href="https://pubmed.ncbi.nlm.nih.gov/33287416/">5</a>。</li>
+<li><strong>肠道菌群的改变</strong>：肠道菌群的代谢产物可能影响抑郁症的发生，这些产物具有神经活性和免疫调节性质 <sup>[3]</sup>。</li>
 </ol>
 </li>
 <li><ol>
-<li><strong>奖赏回路的改变</strong>：抑郁症患者的脑内奖赏回路可能发生改变，这可能与抑郁症的主要症状如无快感、动机减退和能量水平降低有关 <a href="https://pubmed.ncbi.nlm.nih.gov/16566899/">6</a>。</li>
+<li><strong>奖赏回路的改变</strong>：抑郁症患者的脑内奖赏回路可能发生改变，这可能与抑郁症的主要症状如无快感、动机减退和能量水平降低有关<sup>[4]</sup>。</li>
 </ol>
 </li>
 </ul>
 <p><em>在这篇博客中，有关能量代谢的内容会多提及一些，笔者会多进行一些调查研究，来尝试说明有关这个因素的发病机制是什么</em></p>
-<h1 id="详细说明"><a href="#详细说明" class="headerlink" title="详细说明"></a>详细说明</h1><h2 id="神经递质的发病机制"><a href="#神经递质的发病机制" class="headerlink" title="神经递质的发病机制"></a>神经递质的发病机制</h2><h2 id="能量代谢紊乱的发病机制"><a href="#能量代谢紊乱的发病机制" class="headerlink" title="能量代谢紊乱的发病机制"></a>能量代谢紊乱的发病机制</h2><p>抑郁症的发病机制可能与能量代谢紊乱有关。一些研究发现，抑郁症患者的三羧酸循环（TCA）显著下降，而糖异生途径异常增加 <a href="https://pubmed.ncbi.nlm.nih.gov/35640666/">1</a>。此外，抑郁症患者的线粒体功能可能受损，导致能量代谢底物供应紊乱，例如线粒体丙酮酸载体（MPC）的水平显著降低，这对丙酮酸进入TCA循环至关重要 <a href="https://pubmed.ncbi.nlm.nih.gov/35640666/">1</a>。此外，一些研究还发现，抑郁症患者的氨基酸代谢、能量代谢和脂质代谢可能受到影响 <a href="https://pubmed.ncbi.nlm.nih.gov/26947756/">2</a><a href="https://pubmed.ncbi.nlm.nih.gov/19913000/">3</a>。这些研究结果表明，能量代谢紊乱可能是抑郁症发病机制的重要组成部分。</p>
-<p>抑郁症患者的身体活动水平和能量消耗可能会降低，这可能与抑郁症的发病机制有关。一项研究发现，抑郁症患者的总能量消耗和活动能量消耗在24小时内显著降低，而且随着抑郁症症状的缓解，他们的身体活动参数显著增加 <a href="https://pubmed.ncbi.nlm.nih.gov/25532078/">1</a>。此外，抑郁症患者的能量代谢可能受损，这可能是抑郁症发病的重要机制之一 <a href="https://pubmed.ncbi.nlm.nih.gov/34225015/">2</a>。这些研究结果表明，能量代谢紊乱可能是抑郁症发病机制的重要组成部分。</p>
-<p>抑郁症患者的能量代谢受损可能会导致多种身体症状。例如，他们可能会出现体重增加、食欲增加、过度睡眠、疲劳和肌肉麻痹等症状，这些都反映了能量摄取/消耗平衡的改变。此外，抑郁症患者可能会出现无快感症，这是一种对原本乐于参与的活动失去兴趣的症状，这可能与大脑中线粒体呼吸链和肌酸激酶活动的改变有关。此外，抑郁症患者可能会出现焦虑和抑郁症状，这可能与餐后催产素分泌的异常有关。</p>
-<h2 id="大脑结构的发病机制"><a href="#大脑结构的发病机制" class="headerlink" title="大脑结构的发病机制"></a>大脑结构的发病机制</h2><h2 id="肠道菌群的发病机制"><a href="#肠道菌群的发病机制" class="headerlink" title="肠道菌群的发病机制"></a>肠道菌群的发病机制</h2><h2 id="奖赏回路的发病机制"><a href="#奖赏回路的发病机制" class="headerlink" title="奖赏回路的发病机制"></a>奖赏回路的发病机制</h2><h1 id="额外补充"><a href="#额外补充" class="headerlink" title="额外补充"></a>额外补充</h1><h2 id="抑郁症和遗传学的关系"><a href="#抑郁症和遗传学的关系" class="headerlink" title="抑郁症和遗传学的关系"></a>抑郁症和遗传学的关系</h2><p>抑郁症是一种复杂的疾病，其发病机制可能涉及遗传和环境因素的相互作用。研究表明，抑郁症有一定的遗传倾向。例如，如果你的直系亲属有抑郁症，你可能有更高的患病风险 <a href="https://www.healthline.com/health/depression/causes">1</a><a href="https://www.healthline.com/health/are-mental-illness-genetic">2</a>。一项对五个家庭研究的元分析发现，主要抑郁症的遗传率为37% <a href="https://pubmed.ncbi.nlm.nih.gov/11007705/">3</a>。然而，抑郁症的遗传机制并不简单，可能涉及多个基因的作用。一些人的大脑在抑郁症时会有明显的变化，这可能与大脑功能的开始有关。特定的神经递质（如血清素、多巴胺和去甲肾上腺素）可能在抑郁症患者中失衡 <a href="https://www.healthline.com/health/depression/causes">1</a>。此外，性别也可能影响抑郁症的遗传关联，女性比男性更容易受到抑郁症的影响 <a href="https://pubmed.ncbi.nlm.nih.gov/36741030/">4</a>。然而，尽管遗传因素在抑郁症的发病中起着重要作用，但我们对其具体机制的理解仍然有限 <a href="https://pubmed.ncbi.nlm.nih.gov/36769269/">5</a>。</p>
-<h2 id="抑郁症和生理学的关系"><a href="#抑郁症和生理学的关系" class="headerlink" title="抑郁症和生理学的关系"></a>抑郁症和生理学的关系</h2><p>抑郁症与生理学的关系涉及到多种生物化学和神经生理学因素。首先，抑郁症的典型症状，如体重减轻、性欲变化、月经不调和睡眠障碍，可能反映出生物化学和神经生理功能的主要紊乱，这些症状通常不会在其他心理障碍中出现 <a href="https://pubmed.ncbi.nlm.nih.gov/7914394/">1</a>。此外，抑郁症与心脏病的关系可能涉及到下丘脑-垂体-肾上腺轴的失调、心率变异性的降低、血小板功能的改变以及免疫功能的损害 <a href="https://pubmed.ncbi.nlm.nih.gov/12667498/">2</a><a href="https://pubmed.ncbi.nlm.nih.gov/24692463/">3</a>。抑郁症还与慢性疼痛有关，可能涉及到神经塑性、炎症、氧化应激、内分泌系统的改变等生物学机制 <a href="https://pubmed.ncbi.nlm.nih.gov/28706741/">4</a>。此外，生活方式因素，如饮食、睡眠和运动，也可能影响与抑郁症相关的生理过程 <a href="https://pubmed.ncbi.nlm.nih.gov/23415826/">5</a><a href="https://pubmed.ncbi.nlm.nih.gov/31586447/">6</a>。</p>
-<h2 id="抑郁症和生物学的关系"><a href="#抑郁症和生物学的关系" class="headerlink" title="抑郁症和生物学的关系"></a>抑郁症和生物学的关系</h2><p>抑郁症是一种复杂的疾病，涉及到生物学和心理社会因素的相互作用。在生物学层面，抑郁症与神经递质（例如，去甲肾上腺素，5-羟色胺，多巴胺）的代谢有关，这些神经递质在大脑中影响幸福和快乐的感觉，可能在抑郁症患者中失衡 <a href="https://pubmed.ncbi.nlm.nih.gov/7914394/">1</a>。此外，抑郁症可能与脑功能的显著变化有关，包括脑区体积的减小和活动的改变 <a href="https://www.healthline.com/health/depression-physical-effects-on-the-brain">2</a>。慢性炎症也可能与抑郁症的症状有关，特别是在癌症患者中 <a href="https://pubmed.ncbi.nlm.nih.gov/24716498/">3</a>。此外，抑郁症还与激素生产或功能的变化有关，这可能导致抑郁状态的发生 <a href="https://www.healthline.com/health/depression/causes">4</a>。总的来说，抑郁症的生物学机制涉及到神经递质的失衡，脑功能的改变，慢性炎症以及激素的变化。</p>
-<h1 id="论文详读"><a href="#论文详读" class="headerlink" title="论文详读"></a>论文详读</h1><h2 id="生物能和电生理特性的改变"><a href="#生物能和电生理特性的改变" class="headerlink" title="生物能和电生理特性的改变"></a>生物能和电生理特性的改变</h2><p>这篇是<a href="https://pubmed.ncbi.nlm.nih.gov/35732695/">Induced neural progenitor cells and iPS-neurons from major depressive disorder patients show altered bioenergetics and electrophysiological properties</a>，我翻译为 <strong>重度抑郁症患者的诱导神经祖细胞和 iPS 神经元显示出生物能和电生理特性的改变</strong></p>
+<blockquote>
+<p>三羧酸循环（TCA）是生物体内的一种重要的代谢途径，也被称为柠檬酸循环或克雷布斯循环。它是碳水化合物、脂肪和氨基酸氧化的最终通用途径，是体内能量供应的最重要的代谢途径。TCA循环连接了几乎所有的单个代谢途径，包括有机酸的合成，如柠檬酸、α-酮戊二酸、琥珀酸、延胡索酸、L-苹果酸和草酰乙酸等。这些有机酸是广泛应用的基础化学品，具有巨大的市场<sup>[5]</sup>。</p>
+</blockquote>
+<h1 id="详细说明"><a href="#详细说明" class="headerlink" title="详细说明"></a>详细说明</h1><h2 id="神经递质"><a href="#神经递质" class="headerlink" title="神经递质"></a>神经递质</h2><p>抑郁症的发病机制可能与大脑中的神经递质有关。主要的单胺神经递质，包括多巴胺、去甲肾上腺素和5-羟色胺，与抑郁症的特定症状存在关联。这些神经递质的增加或减少可能与抑郁症的特定症状有关，这表明抑郁症的特定症状可能被归因于特定的神经化学机制，因此特定的抗抑郁药物可以针对症状特异性的神经递质<sup>[6]</sup>。此外，一些非单胺神经递质，如一氧化氮和内源性大麻素，也在抑郁症的神经生物学和抗抑郁作用中起着重要作用<sup>[7]</sup>。γ-氨基丁酸（GABA）是哺乳动物中枢神经系统的主要抑制性神经递质，也与抑郁症有关。研究表明，抑郁症与大脑GABA的缺乏有关<sup>[8]</sup>。另一项研究发现，与健康对照组相比，抑郁症患者的GABA水平显著降低 <sup>[9]</sup>。此外，叶酸缺乏在抑郁症患者中也相对常见，大约三分之一的抑郁症患者存在明显的缺乏。叶酸是合成单胺神经递质血清素、肾上腺素和多巴胺所必需的水溶性B族维生素 <sup>[10]</sup>。然而，尽管抗抑郁药物通过提高这些神经递质的水平来缓解抑郁症症状，但目前尚未找到确凿的证据表明抑郁症患者的特定单胺系统存在主要功能障碍<sup>[11]</sup>。</p>
+<blockquote>
+<p>内源性大麻素系统是一种广泛的脂质信号系统，它在所有脊椎动物体内具有重要的调节功能。主要的内源性大麻素（内源性类大麻物质）是从花生四烯酸衍生的小分子，包括阿拉基酰乙醇胺（anandamide）和2-花生四烯酸甘油酯（2-arachidonoylglycerol）。它们与一系列G蛋白偶联受体结合，其中大麻素CB（1）受体在与运动控制、认知、情绪反应、有动机的行为和稳态相关的大脑区域中分布密集。在大脑之外，内源性大麻素系统是自主神经系统、免疫系统和微循环的关键调节器之一。内源性大麻素在受体依赖的方式下从脂质前体中释放，并作为GABA能和谷氨酸能突触的逆向信号信使，以及与其他神经递质（包括多巴胺）交互的突触后传输调节器<sup>[12]</sup>。</p>
+</blockquote>
+<h2 id="能量代谢紊乱"><a href="#能量代谢紊乱" class="headerlink" title="能量代谢紊乱"></a>能量代谢紊乱</h2><p>抑郁症的发病机制可能与能量代谢紊乱有关，一些研究发现：</p>
+<ul>
+<li>抑郁症患者的三羧酸循环（TCA）显著下降，而糖异生途径异常增加，这可能是能量代谢紊乱的关键酶，包括丙酮酸脱氢酶（PDH）和丙酮酸羧化酶（PC）<sup>[13]</sup>。</li>
+<li>抑郁症患者的线粒体功能可能受损，导致能量代谢底物供应紊乱，例如线粒体丙酮酸载体（MPC）的水平显著降低，这对丙酮酸进入TCA循环至关重要<sup>[13]</sup>。</li>
+<li>抑郁症患者的氨基酸代谢、能量代谢和脂质代谢可能受到影响 <sup>[14]</sup><sup>[15]</sup>。</li>
+<li>抑郁症与肥胖症的生物学联系也可能涉及能量代谢的调节，例如，肥胖相关的瘦素信号紊乱可能影响情绪<sup>[16]</sup><sup>[17]</sup>。</li>
+<li>抑郁症患者的总能量消耗和活动能量消耗在24小时内显著降低，而且随着抑郁症症状的缓解，他们的身体活动参数显著增加<sup>[18]</sup>。</li>
+<li><p>抑郁症患者的能量代谢可能受损，这可能是抑郁症发病的重要机制之一<sup>[19]</sup>。</p>
+<p>这些研究结果表明，抑郁症患者的身体活动水平和能量消耗可能会降低，这可能与抑郁症的发病机制有关，能量代谢紊乱可能是抑郁症发病机制的重要组成部分。</p>
+</li>
+</ul>
+<blockquote>
+<p>线粒体丙酮酸载体（Mitochondrial acetoacetyl-CoA thiolase，也被称为T2）是一种酶，它在体内的异亮氨酸和酮体的代谢过程中起着重要的作用。T2的缺乏会导致一种罕见的常染色体隐性遗传疾病，影响异亮氨酸和酮体的代谢。这种疾病的特征是反复发生的酮症酸中毒，开始时会有呕吐，然后会出现脱水和呼吸急促。在稳定的条件下，T2缺乏症患者的尿液有机酸和血液酰肉碱剖面可能存在微妙的异常<sup>[20]</sup></p>
+</blockquote>
+<p>抑郁症患者的能量代谢受损可能会导致多种身体症状。例如，他们可能会出现体重增加、食欲增加、过度睡眠、疲劳、肌肉麻痹、缺乏能量、注意力集中问题等症状，这些症状可能部分地由于线粒体功能受损导致的三磷酸腺苷（ATP）供应减少而引起<sup>[21]</sup>，反映了能量摄取/消耗平衡的改变。<br>此外，抑郁症患者可能会出现无快感症，这是一种对原本乐于参与的活动失去兴趣的症状，这可能与大脑中线粒体呼吸链和肌酸激酶活动的改变有关。</p>
+<blockquote>
+<p>线粒体呼吸链是线粒体氧化磷酸化系统的核心部分，对细胞代谢起着中心作用。它由五个酶复合物和两个移动电子载体组成，通过将进入线粒体的还原当量的氧化与质子梯度的产生和随后的消散相耦合，驱动ATP的产生，ATP随后被用作几乎所有细胞过程的主要能量载体。这五个酶复合物包括NADH-泛醌氧化还原酶（复合物I）、琥珀酸脱氢酶（复合物II）、泛醌-细胞色素c氧化还原酶（复合物III）、细胞色素c氧化酶（复合物IV）和ATP合酶。这些复合物通过催化NADH和琥珀酸的氧化以及氧的还原为水的电子转移途径，形成线粒体内膜上的质子和电荷梯度，该梯度被用来驱动ATP的合成 <sup>[22]</sup><sup>[23]</sup><sup>[24]</sup></p>
+<p>肌酸激酶（CK）是一种酶，它在体内的能量代谢过程中起着关键作用。CK能够迅速为需要大量能量的过程提供三磷酸腺苷（ATP），包括心血管收缩等。CK可以分解为三个独立的部分：CK-1主要存在于大脑和肺部，CK-2主要存在于心脏，CK-3存在于骨骼肌。当这些身体部位因受伤或疾病而受损时，CK酶可以被释放到血液中。通过血液测试可以测量CK的活动，这有助于医生识别身体受损的区域<sup>[25]</sup>。</p>
+</blockquote>
+<h3 id="体重变化和食欲变化"><a href="#体重变化和食欲变化" class="headerlink" title="体重变化和食欲变化"></a>体重变化和食欲变化</h3><p>抑郁症患者可能会出现食欲和体重的变化，部分人群存在体重增加的风险。体重增加的途径可能包括食欲紊乱、过度进食和食欲激素的失调<sup>[26]</sup>。研究发现，女性抑郁症患者中食欲/体重增加的人群，瘦素（一种饱腹激素）水平较高<sup>[27]</sup>。此外，抑郁症患者中有较高比例的人满足食物成瘾的标准，这可能与多巴胺（一种与食物摄入有关的神经递质）有关<sup>[28]</sup>。然而，这些研究结果并不能确定激素因素在抑郁症过度进食中的因果作用，需要进一步的纵向研究来更好地理解这一问题。</p>
+<h3 id="过度睡眠和疲劳"><a href="#过度睡眠和疲劳" class="headerlink" title="过度睡眠和疲劳"></a>过度睡眠和疲劳</h3><p>抑郁症患者常常会出现过度睡眠和疲劳的症状。研究发现，睡眠质量（如夜间醒来次数）和白天嗜睡症是疲劳严重程度的重要预测因素<sup>[29]</sup>。此外，使用镇静抗抑郁药物治疗可以显著改善抑郁症患者的嗜睡症和疲劳症状<sup>[30]</sup>。然而，疲劳和过度睡眠的症状在抑郁症治疗后常常会残留，因此可能需要特定的治疗方法来解决这些症状<sup>[31]</sup>。在一般人群中，疲劳与抑郁症的关联独立于过度白天嗜睡症<sup>[32]</sup>。</p>
+<h3 id="肌肉麻痹和缺乏能量"><a href="#肌肉麻痹和缺乏能量" class="headerlink" title="肌肉麻痹和缺乏能量"></a>肌肉麻痹和缺乏能量</h3><p>抑郁症和肌肉麻痹或缺乏能量之间可能存在一些联系。抑郁症患者可能会感到极度疲倦，即使在良好的睡眠后也是如此。他们可能会有睡眠问题，可能睡眠过多或根本无法入睡，这可能导致精疲力竭<sup>[33]</sup>。此外，抑郁症患者可能会出现肌肉疲劳，这是一种症状，会随着时间的推移降低肌肉的表现能力，使人感到更弱 <sup>[34]</sup>。此外，一项研究发现，握力较弱的人更可能患有抑郁症<sup>[35]</sup>。然而，这些症状也可能是其他疾病的表现，例如慢性疲劳综合症或肌无力症 <sup>[36]</sup>。因此，如果您有这些症状，应寻求医生的帮助以确定确切的原因。</p>
+<h3 id="注意力集中问题"><a href="#注意力集中问题" class="headerlink" title="注意力集中问题"></a>注意力集中问题</h3><p>抑郁症患者常常抱怨注意力集中的问题，这些问题对他们的日常功能产生了负面影响<sup>[37]</sup>。这些问题通常表现为选择性、持续性和分散性注意力的行为障碍<sup>[37]</sup>。研究发现，抑郁症患者在阅读和看电视时最常出现注意力问题，这些问题往往与彼此高度相关<sup>[38]</sup>。此外，抑郁症患者的注意力问题可能常常是由于“心神不宁”引起的<sup>[39]</sup>。</p>
+<p>抑郁症患者的注意力问题可能与大脑中负责认知的网络的异常有关<sup>[37]</sup>。例如，患者可能会出现“心神不宁”或“一片空白”的现象，这两种现象在不同的任务性能相关性上有所不同<sup>[40]</sup>。此外，抑郁症的严重程度也可能影响注意力问题的严重程度<sup>[41]</sup>。</p>
+<p>目前的一线治疗方法并不能缓解抑郁症患者的注意力问题<sup>[37]</sup>。因此，更有针对性的药物、脑刺激和行为干预可能是更有效的治疗方法<sup>[37]</sup>。</p>
+<h3 id="无快感症"><a href="#无快感症" class="headerlink" title="无快感症"></a>无快感症</h3><p>无快感症是抑郁症的核心症状之一，定义为失去兴趣或快感的状态 <sup>[42]</sup>。无快感症在抑郁症和精神分裂症等精神疾病中都有出现，与大脑奖赏和厌恶功能的缺陷有关 <sup>[43]</sup>。在慢性抑郁症患者中，无快感症的程度与抑郁的严重程度无关，即使抑郁症状显著减轻，无快感症的程度也可能保持不变<sup>[44]</sup>。此外，无快感症也可能在使用选择性5-羟色胺再摄取抑制剂（SSRI）的抑郁症患者中持续存在<sup>[45]</sup>。药物治疗，包括使用美拉托宁类药物（如阿哥美拉汀）、单胺类药物（如氟西汀、舍曲林等）、谷氨酸类药物（如氨甲环酸、利鲁唑等）、兴奋剂（如甲基苯丙胺）和致幻剂（如麦角酸二乙胺），可能对无快感症有所帮助<sup>[46]</sup>。然而，对无快感症的治疗仍需要进一步的研究。</p>
+<blockquote>
+<p>托宁类药物是一种存在已久的药物，自20世纪初至70年代非常流行，主要用于治疗睡眠问题和焦虑。托宁类药物对大脑有抑制作用，它们增加了伽马氨酪酸（GABA）的活性，这是一种产生镇静效果的大脑化学物质。它们可以产生短期到长期的效果，具体取决于特定的药物。托宁类药物会形成习惯，你可能会对它们产生耐受性和依赖性，这意味着你需要更大的剂量才能获得相同的效果。此外，突然停止使用这类药物会引起戒断症状。过量使用托宁类药物是危险的，这是现在这些药物不再被广泛开处方的原因之一<sup>[47]</sup>。</p>
+</blockquote>
+<h2 id="大脑结构"><a href="#大脑结构" class="headerlink" title="大脑结构"></a>大脑结构</h2><p>抑郁症可能会导致大脑结构的一些变化。这些变化可能包括炎症和实际的萎缩，特定大脑区域的大小可能在经历抑郁症的人中减小，这种萎缩可能是可逆的<sup>[48]</sup>。受影响的个体可能会表现出如杏仁核、海马和基底节等结构的体积减小，以及大脑中神经递质水平的改变<sup>[49]</sup>。</p>
+<p>抑郁症患者的海马体积减小可能特定于海马的某些亚区，这与海马神经可塑性的局部机制一致<sup>[50]</sup>。此外，抑郁症患者的大脑可能表现出比实际年龄更高的“大脑年龄”，但这种差异似乎不受特定临床特征（如复发状态、缓解状态、抗抑郁药物使用、发病年龄或症状严重程度）的驱动<sup>[51]</sup>。</p>
+<p>\研究发现，抑郁症的严重程度与背内侧前扣带皮质（ACC）的厚度负相关，表明抑郁症和ACC厚度的减少之间存在剂量-反应关系<sup>[52]</sup>。抑郁症患者的大脑可能会出现白质微结构的改变<sup>[53]</sup>。然而，这些大脑结构的改变可能与抑郁症的状态有关，只在抑郁症的急性发作期出现，而在缓解后恢复正常<sup>[54]</sup>。</p>
+<h2 id="肠道菌群"><a href="#肠道菌群" class="headerlink" title="肠道菌群"></a>肠道菌群</h2><p>肠道菌群在抑郁症的发病机制中起着重要的作用。研究发现，抑郁症患者的肠道菌群与健康人存在显著差异，抑郁症患者的肠道菌群多样性和丰度较低 <sup>[55]</sup>。肠道菌群可以通过神经、免疫、内分泌和代谢途径影响中枢神经系统，这被称为“菌群-肠-脑轴”<sup>[56]</sup>。</p>
+<p>肠道菌群还能影响神经递质的产生，例如，研究发现，抑郁症小鼠的肠道菌群改变与神经递质和短链脂肪酸的变化有关<sup>[57]</sup>。因此，肠道菌群可能通过影响神经递质的调节，进而影响情绪和行为，导致抑郁症的发生<sup>[58]</sup>。这为开发新的治疗策略提供了可能，例如使用益生菌和益生元来调节肠道菌群，改善抑郁症症状 <sup>[57]</sup> <sup>[55]</sup><sup>[56]</sup><sup>[58]</sup><sup>[59]</sup>。</p>
+<blockquote>
+<p>短链脂肪酸（SCFAs）主要由肠道微生物群发酵膳食纤维产生，也可以由皮肤和阴道的细菌产生。主要的短链脂肪酸包括醋酸，丙酸和丁酸，它们的生物活性已被广泛研究。短链脂肪酸具有许多健康益处，如抗炎，免疫调节，抗肥胖，抗糖尿病，抗癌，心血管保护，肝脏保护和神经保护活动。短链脂肪酸的两个主要信号机制已被确定，即抑制组蛋白去乙酰化酶（HDACs）和激活G蛋白偶联受体（GPCRs）。由于HDACs调节基因表达，抑制HDACs具有广泛的下游影响。GPCRs，特别是GPR43，GPR41和GPR109A，已被确定为SCFAs的受体。研究表明，这些GPCRs在代谢，炎症和疾病的调节中起着主要作用。短链脂肪酸已被证明可以改变趋化性和吞噬作用；诱导活性氧（ROS）；改变细胞增殖和功能；具有抗炎，抗肿瘤和抗微生物效果；并改变肠道完整性。这些发现强调了短链脂肪酸在维持肠道和免疫稳态中的作用。鉴于短链脂肪酸的广泛影响，以及它们的水平受饮食调节，它们为解释西方国家炎症性疾病的增加提供了新的依据。<sup>[60]</sup><sup>[61]</sup><sup>[62]</sup></p>
+</blockquote>
+<h2 id="奖赏回路"><a href="#奖赏回路" class="headerlink" title="奖赏回路"></a>奖赏回路</h2><p>奖赏回路在抑郁症中起着重要的作用。抑郁症的核心症状之一是无法从以前的奖赏刺激中获得快乐，这可能反映了奖赏处理中的基础调节失常<sup>[63]</sup>。奖赏回路的主要部分是脑的中脑边缘多巴胺系统，包括伏隔区和腹侧被盖区，这两个区域在抑郁症的病理生理和症状表现中起着重要的作用<sup>[64]</sup>。此外，研究还发现，抑郁症患者的奖赏回路中的一些转录因子（如CREB，ΔFosB，SRF，NFκB和β-连环蛋白）发生了改变，这些改变在动物模型中产生了强烈的抑郁症或抗抑郁症效应<sup>[65]</sup>。此外，研究还发现，抑郁症患者的奖赏回路功能可能受到炎症的影响，例如，血浆中的白细胞介素6（IL-6）和肿瘤坏死因子α的增加可能影响皮质纹状体奖赏回路。总的来说，奖赏回路在抑郁症的发生和发展中起着关键的作用。</p>
+<blockquote>
+<p>中脑边缘多巴胺系统（Mesolimbic Dopaminergic System）是大脑中的一个重要神经系统，它起源于脑的腹侧被盖区（Ventral Tegmental Area，VTA），并向前脑的多个区域投射，包括一个主要的终止区域，即伏隔核（Nucleus Accumbens，NAc）。这个系统在调节动机行为，如奖赏和学习等方面起着核心作用。例如，当你做了一些好的或愉快的事情时，你的大脑会被多巴胺充满，这会鼓励你再次采取这个行动<sup>[66]</sup>。此外，中脑边缘多巴胺系统也在睡眠/觉醒调节、食物摄取的强化、抑郁症的奖赏回路、疼痛和相关的情感共病症等方面发挥作用 <sup>[67]</sup><sup>[68]</sup><sup>[69]</sup><sup>[70]</sup>。</p>
+</blockquote>
+<h1 id="额外补充"><a href="#额外补充" class="headerlink" title="额外补充"></a>额外补充</h1><h2 id="抑郁症和遗传学的关系"><a href="#抑郁症和遗传学的关系" class="headerlink" title="抑郁症和遗传学的关系"></a>抑郁症和遗传学的关系</h2><p>抑郁症是一种复杂的疾病，其发病机制可能涉及遗传和环境因素的相互作用。研究表明，抑郁症有一定的遗传倾向。例如，如果你的直系亲属有抑郁症，你可能有更高的患病风险 <sup>[71]</sup><sup>[72]</sup>。一项对五个家庭研究的元分析发现，主要抑郁症的遗传率为37% <sup>[73]</sup>。然而，抑郁症的遗传机制并不简单，可能涉及多个基因的作用。一些人的大脑在抑郁症时会有明显的变化，这可能与大脑功能的开始有关。特定的神经递质（如血清素、多巴胺和去甲肾上腺素）可能在抑郁症患者中失衡 <sup>[71]</sup>。此外，性别也可能影响抑郁症的遗传关联，女性比男性更容易受到抑郁症的影响<sup>[74]</sup>。然而，尽管遗传因素在抑郁症的发病中起着重要作用，但我们对其具体机制的理解仍然有限<sup>[75]</sup>。</p>
+<h2 id="抑郁症和生理学的关系"><a href="#抑郁症和生理学的关系" class="headerlink" title="抑郁症和生理学的关系"></a>抑郁症和生理学的关系</h2><p>抑郁症与生理学的关系涉及到多种生物化学和神经生理学因素。首先，抑郁症的典型症状，如体重减轻、性欲变化、月经不调和睡眠障碍，可能反映出生物化学和神经生理功能的主要紊乱，这些症状通常不会在其他心理障碍中出现<sup>[76]</sup>。此外，抑郁症与心脏病的关系可能涉及到下丘脑-垂体-肾上腺轴的失调、心率变异性的降低、血小板功能的改变以及免疫功能的损害<sup>[77]</sup><sup>[78]</sup>。抑郁症还与慢性疼痛有关，可能涉及到神经塑性、炎症、氧化应激、内分泌系统的改变等生物学机制<sup>[79]</sup>。此外，生活方式因素，如饮食、睡眠和运动，也可能影响与抑郁症相关的生理过程<sup>[80]</sup><sup>[81]</sup>。</p>
+<h2 id="抑郁症和生物学的关系"><a href="#抑郁症和生物学的关系" class="headerlink" title="抑郁症和生物学的关系"></a>抑郁症和生物学的关系</h2><p>抑郁症是一种复杂的疾病，涉及到生物学和心理社会因素的相互作用。在生物学层面，抑郁症与神经递质（例如，去甲肾上腺素，5-羟色胺，多巴胺）的代谢有关，这些神经递质在大脑中影响幸福和快乐的感觉，可能在抑郁症患者中失衡<sup>[76]</sup>。此外，抑郁症可能与脑功能的显著变化有关，包括脑区体积的减小和活动的改变<sup>[2]</sup>。慢性炎症也可能与抑郁症的症状有关，特别是在癌症患者中<sup>[82]</sup>。此外，抑郁症还与激素生产或功能的变化有关，这可能导致抑郁状态的发生<sup>[71]</sup>。总的来说，抑郁症的生物学机制涉及到神经递质的失衡，脑功能的改变，慢性炎症以及激素的变化。</p>
+<h1 id="论文精读"><a href="#论文精读" class="headerlink" title="论文精读"></a>论文精读</h1><h2 id="生物能和电生理特性的改变"><a href="#生物能和电生理特性的改变" class="headerlink" title="生物能和电生理特性的改变"></a>生物能和电生理特性的改变</h2><p>这篇是<a href="https://pubmed.ncbi.nlm.nih.gov/35732695/">Induced neural progenitor cells and iPS-neurons from major depressive disorder patients show altered bioenergetics and electrophysiological properties</a>，我翻译为 <strong>重度抑郁症患者的诱导神经祖细胞和 iPS 神经元显示出生物能和电生理特性的改变</strong></p>
 <h2 id="依赖性神经抑制抑郁行为"><a href="#依赖性神经抑制抑郁行为" class="headerlink" title="依赖性神经抑制抑郁行为"></a>依赖性神经抑制抑郁行为</h2><p>这篇是<a href="https://pubmed.ncbi.nlm.nih.gov/37325895/">PDGF-BB-Dependent Neurogenesis Buffers Depressive-Like Behaviors by Inhibition of GABAergic Projection from Medial Septum to Dentate Gyrus</a>，我翻译为 <strong>PDGF-BB依赖性神经发生通过抑制GABA从内隔到齿状回光的能投射来缓冲抑郁样行为</strong>，这个标题我自己翻译读着都拗口，还是不纠结怎么更通畅了</p>
 <h2 id="时间紊乱和抑郁症"><a href="#时间紊乱和抑郁症" class="headerlink" title="时间紊乱和抑郁症"></a>时间紊乱和抑郁症</h2><p>这篇是 <a href="https://pubmed.ncbi.nlm.nih.gov/37081401/">Effects of chronotype on antidepressant treatment and symptoms in patients with depression: a multicenter, parallel, controlled study</a>，我翻译为 <strong>时间类型对抑郁症患者抗抑郁治疗和症状的影响：一项多中心、平行的对照研究</strong> </p>
 <h1 id="References："><a href="#References：" class="headerlink" title="References："></a>References：</h1><ol>
+<li>Pathogenetic mechanisms of depressive states：<a href="https://pubmed.ncbi.nlm.nih.gov/6858512/">https://pubmed.ncbi.nlm.nih.gov/6858512/</a></li>
+<li>How Does Depression Affect the Brain?：<a href="https://www.healthline.com/health/depression-physical-effects-on-the-brain">https://www.healthline.com/health/depression-physical-effects-on-the-brain</a></li>
+<li>Bacterial Metabolites of Human Gut Microbiota Correlating with Depression：<a href="https://pubmed.ncbi.nlm.nih.gov/33287416/">https://pubmed.ncbi.nlm.nih.gov/33287416/</a></li>
+<li>The mesolimbic dopamine reward circuit in depression：<a href="https://pubmed.ncbi.nlm.nih.gov/16566899/">https://pubmed.ncbi.nlm.nih.gov/16566899/</a></li>
+<li>Metabolic engineering in the biotechnological production of organic acids in the tricarboxylic acid cycle of microorganisms: Advances and prospects： <a href="https://pubmed.ncbi.nlm.nih.gov/25902192/">https://pubmed.ncbi.nlm.nih.gov/25902192/</a></li>
+<li>Relationship of neurotransmitters to the symptoms of major depressive disorder：<a href="https://pubmed.ncbi.nlm.nih.gov/18494537/">https://pubmed.ncbi.nlm.nih.gov/18494537/</a></li>
+<li>Atypical Neurotransmitters and the Neurobiology of Depression：<a href="https://pubmed.ncbi.nlm.nih.gov/26350337/">https://pubmed.ncbi.nlm.nih.gov/26350337/</a></li>
+<li>The interaction between gamma-aminobutyric acid and other related neurotransmitters in depression：<a href="https://pubmed.ncbi.nlm.nih.gov/25219270/">https://pubmed.ncbi.nlm.nih.gov/25219270/</a></li>
+<li>Differences in excitatory and inhibitory neurotransmitter levels between depressed patients and healthy controls: A systematic review and meta-analysis：<a href="https://pubmed.ncbi.nlm.nih.gov/30144668/">https://pubmed.ncbi.nlm.nih.gov/30144668/</a></li>
+<li>The methylation, neurotransmitter, and antioxidant connections between folate and depression：<a href="https://pubmed.ncbi.nlm.nih.gov/18950248/">https://pubmed.ncbi.nlm.nih.gov/18950248/</a></li>
+<li>Depression: the case for a monoamine deficiency：<a href="https://pubmed.ncbi.nlm.nih.gov/10775018/">https://pubmed.ncbi.nlm.nih.gov/10775018/</a></li>
+<li>The endocannabinoid system: physiology and pharmacology：<a href="https://pubmed.ncbi.nlm.nih.gov/15550444/">https://pubmed.ncbi.nlm.nih.gov/15550444/</a></li>
+<li>Novel targets for ameliorating energy metabolism disorders in depression through stable isotope-resolved metabolomics：<a href="https://pubmed.ncbi.nlm.nih.gov/35640666/">https://pubmed.ncbi.nlm.nih.gov/35640666/</a></li>
+<li>The identification of metabolic disturbances in the prefrontal cortex of the chronic restraint stress rat model of depression：<a href="https://pubmed.ncbi.nlm.nih.gov/26947756/">https://pubmed.ncbi.nlm.nih.gov/26947756/</a></li>
+<li>Urinary metabonomic study on biochemical changes in chronic unpredictable mild stress model of depression：<a href="https://pubmed.ncbi.nlm.nih.gov/19913000/">https://pubmed.ncbi.nlm.nih.gov/19913000/</a></li>
+<li>Leptin Dysregulation Is Specifically Associated With Major Depression With Atypical Features: Evidence for a Mechanism Connecting Obesity and Depression：<a href="https://pubmed.ncbi.nlm.nih.gov/26742925/">https://pubmed.ncbi.nlm.nih.gov/26742925/</a></li>
+<li>Depression and obesity: evidence of shared biological mechanisms：<a href="https://pubmed.ncbi.nlm.nih.gov/29453413/">https://pubmed.ncbi.nlm.nih.gov/29453413/</a></li>
+<li>Physical activity and energy expenditure during depressive episodes of major depression：<a href="https://pubmed.ncbi.nlm.nih.gov/25532078/">https://pubmed.ncbi.nlm.nih.gov/25532078/</a></li>
+<li>Energy metabolism in major depressive disorder: Recent advances from omics technologies and imaging：<a href="https://pubmed.ncbi.nlm.nih.gov/34225015/">https://pubmed.ncbi.nlm.nih.gov/34225015/</a></li>
+<li>Beta-ketothiolase deficiency: An unusual cause of recurrent ketoacidosis：<a href="https://pubmed.ncbi.nlm.nih.gov/29624230/">https://pubmed.ncbi.nlm.nih.gov/29624230/</a></li>
+<li>Mitochondrial respiration in peripheral blood mononuclear cells correlates with depressive subsymptoms and severity of major depression：<a href="https://pubmed.ncbi.nlm.nih.gov/26126180/">https://pubmed.ncbi.nlm.nih.gov/26126180/</a></li>
+<li>The mitochondrial respiratory chain：<a href="https://pubmed.ncbi.nlm.nih.gov/20533897/">https://pubmed.ncbi.nlm.nih.gov/20533897/</a></li>
+<li>Mitochondrial Respiratory Chain Complexes：<a href="https://pubmed.ncbi.nlm.nih.gov/29464561/">https://pubmed.ncbi.nlm.nih.gov/29464561/</a></li>
+<li>The assembly, regulation and function of the mitochondrial respiratory chain：<a href="https://pubmed.ncbi.nlm.nih.gov/34621061/">https://pubmed.ncbi.nlm.nih.gov/34621061/</a></li>
+<li>CPK Isoenzymes Test：<a href="https://www.healthline.com/health/cpk-isoenzymes-test">https://www.healthline.com/health/cpk-isoenzymes-test</a></li>
+<li>Weight gain in Major Depressive Disorder: Linking appetite and disordered eating to leptin and ghrelin：<a href="https://pubmed.ncbi.nlm.nih.gov/30878306/">https://pubmed.ncbi.nlm.nih.gov/30878306/</a></li>
+<li>Problematic eating behaviours, changes in appetite, and weight gain in Major Depressive Disorder: The role of leptin：<a href="https://pubmed.ncbi.nlm.nih.gov/30071417/">https://pubmed.ncbi.nlm.nih.gov/30071417/</a></li>
+<li>Overeating and food addiction in Major Depressive Disorder: Links to peripheral dopamine：<a href="https://pubmed.ncbi.nlm.nih.gov/31926176/">https://pubmed.ncbi.nlm.nih.gov/31926176/</a></li>
+<li>Sleep disturbances in relation to fatigue in major depression：<a href="https://pubmed.ncbi.nlm.nih.gov/19073291/">https://pubmed.ncbi.nlm.nih.gov/19073291/</a></li>
+<li>Excessive daytime sleepiness and fatigue in depressed patients and therapeutic response of a sedating antidepressant： <a href="https://pubmed.ncbi.nlm.nih.gov/21616541/">https://pubmed.ncbi.nlm.nih.gov/21616541/</a></li>
+<li>Symptoms of fatigue and sleepiness in major depressive disorder：<a href="https://pubmed.ncbi.nlm.nih.gov/16848671/">https://pubmed.ncbi.nlm.nih.gov/16848671/</a></li>
+<li>Fatigue is associated with depression independent of excessive daytime sleepiness in the general population：<a href="https://pubmed.ncbi.nlm.nih.gov/34292460/">https://pubmed.ncbi.nlm.nih.gov/34292460/</a></li>
+<li>Fatigue and Depression: Are They Connected?：<a href="https://www.healthline.com/health/depression/fatigue">https://www.healthline.com/health/depression/fatigue</a></li>
+<li>What Causes Muscle Fatigue?：<a href="https://www.healthline.com/health/muscle-fatigue">https://www.healthline.com/health/muscle-fatigue</a></li>
+<li>Handgrip strength and depression among 34,129 adults aged 50 years and older in six low- and middle-income countries：<a href="https://pubmed.ncbi.nlm.nih.gov/30273883/">https://pubmed.ncbi.nlm.nih.gov/30273883/</a></li>
+<li>Central and peripheral fatigue: exemplified by multiple sclerosis and myasthenia gravis：<a href="https://pubmed.ncbi.nlm.nih.gov/20656621/">https://pubmed.ncbi.nlm.nih.gov/20656621/</a></li>
+<li>Paying attention to attention in depression：<a href="https://pubmed.ncbi.nlm.nih.gov/31699968/">https://pubmed.ncbi.nlm.nih.gov/31699968/</a></li>
+<li>Description and measurement of concentration problems in depressed patients：<a href="https://pubmed.ncbi.nlm.nih.gov/4023135/">https://pubmed.ncbi.nlm.nih.gov/4023135/</a></li>
+<li>Description and measurement of concentration problems in depressed patients：<a href="https://pubmed.ncbi.nlm.nih.gov/4023135/">https://pubmed.ncbi.nlm.nih.gov/4023135/</a></li>
+<li>Associations between phenomenal and objective aspects of concentration problems in depressed patients：<a href="https://pubmed.ncbi.nlm.nih.gov/3395793/">https://pubmed.ncbi.nlm.nih.gov/3395793/</a></li>
+<li>Impact of depression heterogeneity on attention: an auditory oddball event related potential study：<a href="https://pubmed.ncbi.nlm.nih.gov/19740547/">https://pubmed.ncbi.nlm.nih.gov/19740547/</a></li>
+<li>Anhedonia in Depressive Disorder: A Narrative Review：<a href="https://pubmed.ncbi.nlm.nih.gov/32668436/">https://pubmed.ncbi.nlm.nih.gov/32668436/</a></li>
+<li>Anhedonia in Depression and Schizophrenia: Brain Reward and Aversion Circuits：<a href="https://pubmed.ncbi.nlm.nih.gov/35836582/">https://pubmed.ncbi.nlm.nih.gov/35836582/</a></li>
+<li>Does anhedonia correlate with depression severity in chronic depression?：<a href="https://pubmed.ncbi.nlm.nih.gov/9298317/">https://pubmed.ncbi.nlm.nih.gov/9298317/</a></li>
+<li>Anhedonia in depressed patients on treatment with selective serotonin reuptake inhibitor anti-depressant—A two-centered study in Malaysia：<a href="https://pubmed.ncbi.nlm.nih.gov/25874350/">https://pubmed.ncbi.nlm.nih.gov/25874350/</a></li>
+<li>Pharmacological interventions targeting anhedonia in patients with major depressive disorder: A systematic review：<a href="https://pubmed.ncbi.nlm.nih.gov/30611836/">https://pubmed.ncbi.nlm.nih.gov/30611836/</a></li>
+<li>What You Need to Know About Barbiturates：<a href="https://www.healthline.com/health/barbiturates">https://www.healthline.com/health/barbiturates</a></li>
+<li>How Does Depression Affect the Brain?：<a href="https://www.healthline.com/health/depression-physical-effects-on-the-brain">https://www.healthline.com/health/depression-physical-effects-on-the-brain</a></li>
+<li>New insights into the neurobiological mechanisms of major depressive disorders：<a href="https://pubmed.ncbi.nlm.nih.gov/25772946/">https://pubmed.ncbi.nlm.nih.gov/25772946/</a></li>
+<li>Hippocampal neuroplasticity in major depressive disorder：<a href="https://pubmed.ncbi.nlm.nih.gov/25934030/">https://pubmed.ncbi.nlm.nih.gov/25934030/</a></li>
+<li>Brain aging in major depressive disorder: results from the ENIGMA major depressive disorder working group：<a href="https://pubmed.ncbi.nlm.nih.gov/32424236/">https://pubmed.ncbi.nlm.nih.gov/32424236/</a></li>
+<li>The association between clinical and biological characteristics of depression and structural brain alterations：<a href="https://pubmed.ncbi.nlm.nih.gov/35760189/">https://pubmed.ncbi.nlm.nih.gov/35760189/</a></li>
+<li>Sub-threshold depressive symptoms and brain structure: A magnetic resonance imaging study within the Whitehall II cohort：<a href="https://pubmed.ncbi.nlm.nih.gov/27372409/">https://pubmed.ncbi.nlm.nih.gov/27372409/</a></li>
+<li>Longitudinal MR study of brain structure and hippocampus volume in major depressive disorder：<a href="https://pubmed.ncbi.nlm.nih.gov/21219263/">https://pubmed.ncbi.nlm.nih.gov/21219263/</a></li>
+<li>Features of the gut microbiota in ulcerative colitis patients with depression: A pilot study：<a href="https://pubmed.ncbi.nlm.nih.gov/33607855/">https://pubmed.ncbi.nlm.nih.gov/33607855/</a></li>
+<li>Gut microbiota and neuropsychiatric disorders: Implications for neuroendocrine-immune regulation：<a href="https://pubmed.ncbi.nlm.nih.gov/34543739/">https://pubmed.ncbi.nlm.nih.gov/34543739/</a></li>
+<li>Associations between disordered gut microbiota and changes of neurotransmitters and short-chain fatty acids in depressed mice：<a href="https://pubmed.ncbi.nlm.nih.gov/33067412/">https://pubmed.ncbi.nlm.nih.gov/33067412/</a></li>
+<li>Gut Bacteria and Neurotransmitters：<a href="https://pubmed.ncbi.nlm.nih.gov/36144440/">https://pubmed.ncbi.nlm.nih.gov/36144440/</a></li>
+<li>A narrative review of relationship between gut microbiota and neuropsychiatric disorders: mechanisms and clinical application of probiotics and prebiotics：<a href="https://pubmed.ncbi.nlm.nih.gov/33549028/">https://pubmed.ncbi.nlm.nih.gov/33549028/</a></li>
+<li>Health Benefits and Side Effects of Short-Chain Fatty Acids：<a href="https://pubmed.ncbi.nlm.nih.gov/36140990/">https://pubmed.ncbi.nlm.nih.gov/36140990/</a></li>
+<li>The role of short-chain fatty acids in health and disease：<a href="https://pubmed.ncbi.nlm.nih.gov/24388214/">https://pubmed.ncbi.nlm.nih.gov/24388214/</a></li>
+<li>Short-Chain Fatty Acids and Their Association with Signalling Pathways in Inflammation, Glucose and Lipid Metabolism：<a href="https://pubmed.ncbi.nlm.nih.gov/32887215/">https://pubmed.ncbi.nlm.nih.gov/32887215/</a></li>
+<li>Anhedonia and the brain reward circuitry in depression：<a href="https://pubmed.ncbi.nlm.nih.gov/26525751/">https://pubmed.ncbi.nlm.nih.gov/26525751/</a></li>
+<li>The mesolimbic dopamine reward circuit in depression：<a href="https://pubmed.ncbi.nlm.nih.gov/16566899/">https://pubmed.ncbi.nlm.nih.gov/16566899/</a></li>
+<li>Role of the Brain’s Reward Circuitry in Depression: Transcriptional Mechanisms：<a href="https://pubmed.ncbi.nlm.nih.gov/26472529/">https://pubmed.ncbi.nlm.nih.gov/26472529/</a></li>
+<li>Behavioral functions of the mesolimbic dopaminergic system: an affective neuroethological perspective：<a href="https://pubmed.ncbi.nlm.nih.gov/17905440/">https://pubmed.ncbi.nlm.nih.gov/17905440/</a></li>
+<li>The control of sleep and wakefulness by mesolimbic dopamine systems：<a href="https://pubmed.ncbi.nlm.nih.gov/28434991/">https://pubmed.ncbi.nlm.nih.gov/28434991/</a></li>
+<li>Insulin actions in the mesolimbic dopamine system：<a href="https://pubmed.ncbi.nlm.nih.gov/31279911/">https://pubmed.ncbi.nlm.nih.gov/31279911/</a></li>
+<li>The mesolimbic dopamine reward circuit in depression：<a href="https://pubmed.ncbi.nlm.nih.gov/16566899/">https://pubmed.ncbi.nlm.nih.gov/16566899/</a></li>
+<li>The Mesolimbic Dopamine System in Chronic Pain and Associated Affective Comorbidities：<a href="https://pubmed.ncbi.nlm.nih.gov/31806085/">https://pubmed.ncbi.nlm.nih.gov/31806085/</a></li>
+<li>Causes of Depression：<a href="https://www.healthline.com/health/depression/causes">https://www.healthline.com/health/depression/causes</a></li>
+<li>Can You Inherit a Mental Illness?：<a href="https://www.healthline.com/health/are-mental-illness-genetic">https://www.healthline.com/health/are-mental-illness-genetic</a></li>
+<li>Genetic epidemiology of major depression: review and meta-analysis：<a href="https://pubmed.ncbi.nlm.nih.gov/11007705/">https://pubmed.ncbi.nlm.nih.gov/11007705/</a></li>
+<li>The Role of Sex in Genetic Association Studies of Depression：<a href="https://pubmed.ncbi.nlm.nih.gov/36741030/">https://pubmed.ncbi.nlm.nih.gov/36741030/</a></li>
+<li>The Role of Genetics in the Development and Pharmacotherapy of Depression and Its Impact on Drug Discovery：<a href="https://pubmed.ncbi.nlm.nih.gov/36769269/">https://pubmed.ncbi.nlm.nih.gov/36769269/</a></li>
+<li>Biological aspects of depression：<a href="https://pubmed.ncbi.nlm.nih.gov/7914394/">https://pubmed.ncbi.nlm.nih.gov/7914394/</a></li>
+<li>Biological mechanisms in the relationship between depression and heart disease：<a href="https://pubmed.ncbi.nlm.nih.gov/12667498/">https://pubmed.ncbi.nlm.nih.gov/12667498/</a></li>
+<li>Pathophysiological relationships between heart failure and depression and anxiety：<a href="https://pubmed.ncbi.nlm.nih.gov/24692463/">https://pubmed.ncbi.nlm.nih.gov/24692463/</a></li>
+<li>The Link between Depression and Chronic Pain: Neural Mechanisms in the Brain：<a href="https://pubmed.ncbi.nlm.nih.gov/28706741/">https://pubmed.ncbi.nlm.nih.gov/28706741/</a></li>
+<li>A review of lifestyle factors that contribute to important pathways associated with major depression: diet, sleep and exercise：<a href="https://pubmed.ncbi.nlm.nih.gov/23415826/">https://pubmed.ncbi.nlm.nih.gov/23415826/</a></li>
+<li>Physical activity and depression: Towards understanding the antidepressant mechanisms of physical activity：<a href="https://pubmed.ncbi.nlm.nih.gov/31586447/">https://pubmed.ncbi.nlm.nih.gov/31586447/</a></li>
+<li>The biology of depression in cancer and the relationship between depression and cancer progression：<a href="https://pubmed.ncbi.nlm.nih.gov/24716498/">https://pubmed.ncbi.nlm.nih.gov/24716498/</a></li>
 <li></li>
 <li>Induced neural progenitor cells and iPS-neurons from major depressive disorder patients show altered bioenergetics and electrophysiological properties：<a href="https://pubmed.ncbi.nlm.nih.gov/35732695/">https://pubmed.ncbi.nlm.nih.gov/35732695/</a></li>
 <li>PDGF-BB-Dependent Neurogenesis Buffers Depressive-Like Behaviors by Inhibition of GABAergic Projection from Medial Septum to Dentate Gyrus：<a href="https://pubmed.ncbi.nlm.nih.gov/37325895/">https://pubmed.ncbi.nlm.nih.gov/37325895/</a></li>
@@ -7235,6 +7373,12 @@ C=\max_{p\left( a_i \right)} \left[ H(Y)-H_{mi} \right] =\log m-H_{mi}</script><
       <tags>
         <tag>能量代谢</tag>
         <tag>抑郁症发病机制</tag>
+        <tag>神经递质</tag>
+        <tag>能量代谢紊乱</tag>
+        <tag>大脑结构</tag>
+        <tag>肠道菌群</tag>
+        <tag>奖赏回路</tag>
+        <tag>无快感症</tag>
       </tags>
   </entry>
   <entry>
