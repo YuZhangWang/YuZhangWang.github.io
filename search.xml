@@ -8572,76 +8572,163 @@ html {
     <content><![CDATA[<!-- 项目列表 -->
 <h1 id="创新创业实践-amp-竞赛项目"><a href="#创新创业实践-amp-竞赛项目" class="headerlink" title="创新创业实践&amp;竞赛项目"></a>创新创业实践&amp;竞赛项目</h1><div class="projects">
   <div class="project">
-    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309012314543.png">
-    <h3>项目1</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit magna. Praesent lacinia a nisl quis posuere.
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232140642.png">
+    <h3>基于分离混合注意力机制的人脸表情识别</h3>
+    <p>我在导师的南大博士项目中专注于算法和模型研究，成功将超轻量级人脸识别模型在Linux系统上编译并部署在树莓派上，实现高效低成本的运行，为团队提供了更多可能性和应用场景。
       <div class="links">
-        <a class="link" href="https://yuzhang.wang/">Code</a>
-        <a class="link" href="https://yuzhang.wang/">Blog</a>
-        <a class="link" href="https://yuzhang.wang/">Video</a>
+        <a class="link" href="https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB">Code</a>
+        <a class="link" href="https://yuzhang.wang/031-ncnn/">Blog</a>
+        <a class="link" href="https://www.bilibili.com/video/BV1x741187cB/">Video</a>
       </div>
     </p>
   </div>
 
   <div class="project">
-    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309012219165.jpeg">
-    <h3>项目2</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit magna. Praesent lacinia a nisl quis posuere.
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232141602.png">
+    <h3>增值税发票自动识别系统</h3>
+    <p>我的毕业设计项目是基于图像识别的内容，使用CTPN和CRNN算法识别发票下的文字并进行扩展以进行银行卡文字的识别。
       <div class="links">
-        <a class="link" href="https://yuzhang.wang/">Code</a>
-        <a class="link" href="https://yuzhang.wang/">Blog</a>
-        <a class="link" href="https://yuzhang.wang/">Video</a>
+        <a class="link" href="https://github.com/YuZhangWang/Invoice-Identification">Code</a>
+        <a class="link" href="https://yuzhang.wang/139-invoice-identification/">Blog</a>
+        <a class="link" href="https://www.bilibili.com/video/BV1n34y1h79n/">Video</a>
       </div>   
     </p>
   </div>
 
   <div class="project">
-    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png">
-    <h3>项目3</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit magna. Praesent lacinia a nisl quis posuere.
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232138272.png">
+    <h3>融合人脸识别和区块链技术的图书管理系统</h3>
+    <p>通过TopN算法解决了新用户推荐中的"冷启动"问题，并利用1000goodbooks网站提供的数据集有效避免了稀疏性问题。
       <div class="links">
-        <a class="link smaller" href="https://yuzhang.wang/">Code</a>
-        <a class="link smaller" href="https://yuzhang.wang/">Blog</a>
-        <a class="link smaller" href="https://yuzhang.wang/">Video</a>
+        <a class="link smaller" href="https://github.com/timTianWSRF/booksrecommendsystem">Code</a>
       </div>   
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232147452.png">
+    <h3>基于区块链采用Python实现的银行供应链金融服务</h3>
+    <p>我在大学生创新创业训练计划项目中，使用Python语言基于区块链技术实现了一个供应链金融服务系统，利用智能合约、分布式账本等区块链技术实现供应链金融的自动化，提高银行贷款效率，并拓宽了对区块链和供应链金融的理解。
+      <div class="links">
+        <a class="link smaller" href="https://yuzhang.wang/094-blockchain/">Blog</a>
+      </div>    
     </p>
   </div>
 </div>
 
 <h1 id="个人项目"><a href="#个人项目" class="headerlink" title="个人项目"></a>个人项目</h1><div class="projects">
   <div class="project">
-    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309012125915.png">
-    <h3>项目4</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit magna. Praesent lacinia a nisl quis posuere.
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232149210.png">
+    <h3>基于Opencv实现的多彩隔空画图</h3>
+    <p>我使用OpenCV库和不到100行代码实现了一项创新性的项目，可以根据物体的颜色识别和跟踪物体，并利用计算机视觉技术在半空中绘制出相应颜色的轨迹，展示了我的计算机视觉技术和编程能力，以及对创新和实践的积极态度。
       <div class="links">
-        <a class="link smaller" href="https://yuzhang.wang/">Code</a>
-        <a class="link smaller" href="https://yuzhang.wang/">Blog</a>
-        <a class="link smaller" href="https://yuzhang.wang/">Video</a>
+        <a class="link smaller" href="https://yuzhang.wang/095-colorful-painting/">Blog</a>
+        <a class="link smaller" href="https://www.bilibili.com/video/BV12T4y1o7WA/">Video</a>
       </div>    
     </p>
   </div>
 
   <div class="project">
-    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png">
-    <h3>项目5</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit magna. Praesent lacinia a nisl quis posuere.
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232150281.png">
+    <h3>使用eNSP搭建的小型校园网</h3>
+    <p>该项目使用eNSP仿真软件搭建了一个小型校园网，实现了校园网的IP地址分配，并满足了各部门内部互通、部门间三层互通、校园内部使用私网IP地址、访问Internet和资源共享等需求，同时限制了学生宿舍、图书馆和教学楼对人事处和财务处的访问，并采用静态IP地址和动态IP地址。
       <div class="links">
-        <a class="link smaller" href="https://yuzhang.wang/">Code</a>
-        <a class="link smaller" href="https://yuzhang.wang/">Blog</a>
-        <a class="link smaller" href="https://yuzhang.wang/">Video</a>
+        <a class="link smaller" href="https://yuzhang.wang/092-campus-network/">Blog</a>
       </div>   
     </p>
   </div>
 
   <div class="project">
-    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308291824027.png">
-    <h3>项目6</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit magna. Praesent lacinia a nisl quis posuere.
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232152520.png">
+    <h3>YuZhangWang的领域</h3>
+    <p>这个个人博客项目是基于Hexo和Github Page，使用Butterfly主题实现的纯静态博客网站，包括主页、归档、分类、标签、影视、番剧、说说、相册、友链、项目介绍、简历、关于等多功能页面，整个项目的低成本、低维护和高效率使其成为一个优秀的博客网站。
       <div class="links">
-        <a class="link smaller" href="https://yuzhang.wang/">Code</a>
-        <a class="link smaller" href="https://yuzhang.wang/">Blog</a>
-        <a class="link smaller" href="https://yuzhang.wang/">Video</a>
+        <a class="link smaller" href="https://github.com/YuZhangWang/YuZhangWang.github.io">Code</a>
+        <a class="link smaller" href="https://yuzhang.wang/060-personal-blog-design/">Blog</a>
       </div>    
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232154379.png">
+    <h3>校园导航系统</h3>
+    <p>这个校园导航项目基于Floryd算法和校园平面图，能够快速准确地计算出最短路径，并提供了可视化展示，帮助学校内的人们提高出行效率。
+      <div class="links">
+        <a class="link smaller" href="https://yuzhang.wang/082-campus-navigation/">Blog</a>
+      </div>   
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232156333.png">
+    <h3>学生信息管理系统</h3>
+    <p>这个学生信息管理系统项目基于基本的数据结构内容，实现了高效可靠的学生信息的整改、删查功能，方便管理人员快速更新和准确维护学生信息。
+      <div class="links">
+        <a class="link smaller" href="https://yuzhang.wang/068-student-management/">Blog</a>
+      </div>   
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232158717.png">
+    <h3>Awsome Github Introduction</h3>
+    <p>这个为个人Profile创建的介绍页面项目包括访问统计、Github项目状态和语言使用情况、个人信息及博客和豆瓣动态更新展示，以及联系方式。
+      <div class="links">
+        <a class="link smaller" href="https://github.com/YuZhangWang/YuZhangWang">Code</a>
+        <a class="link smaller" href="https://yuzhang.wang/132-github-introduction/">Blog</a>
+      </div>   
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232200497.png">
+    <h3>Awesome Repository Template</h3>
+    <p>这个模板库可以用于创建个人项目，提供了workflow、.gitignore文件、README书写模板和中英双语说明，能够提高项目改进效率、整洁度和文档质量，适用于任何人使用。
+      <div class="links">
+        <a class="link smaller" href="https://github.com/YuZhangWang/Awesome-Repository-Template">Code</a>
+        <a class="link smaller" href="https://yuzhang.wang/133-best-template/">Blog</a>
+      </div>   
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232211601.png">
+    <h3>基于C++实现的四子连珠游戏</h3>
+    <p>这是我基于C++实现的四子连珠游戏项目，拓展了更高难度的规则，使用基本数据结构管理游戏状态并通过命令行界面提供可视化操作。
+      <div class="links">
+        <a class="link smaller" href="https://yuzhang.wang/057-four-beads-connect/">Blog</a>
+      </div>   
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232204235.png">
+    <h3>Blog-Friend-Link</h3>
+    <p>这是一个基于JSON格式的远程友链仓库项目，用户添加自己博客的友链信息到分支中并提交PR，使用JSON存储所有友链信息，实现了个人博客友链的简单而实用的标准化管理和快速更新。
+      <div class="links">
+        <a class="link smaller" href="https://github.com/YuZhangWang/Blog-Friend-Link">Code</a>
+        <a class="link smaller" href="https://yuzhang.wang/131-remote-friend-linking">Blog</a>
+      </div>   
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232208599.png">
+    <h3>安卓通信录app的Demo制作</h3>
+    <p>这是一个基于Java开发的安卓通信录App，采用MVC架构和Activity与Fragment组合来实现界面切换和显示，使用高性能的MMKV作为数据存储工具，提供了高效的联系人信息存储和读取。
+      <div class="links">
+        <a class="link smaller" href="https://yuzhang.wang/076-android-address/">Blog</a>
+      </div>   
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232214391.png">
+    <h3>基于Maven的鲜花管理系统</h3>
+    <p>该项目用于管理和展示鲜花的类型和花语信息，包含管理员登陆与注册、鲜花类型管理、鲜花花语信息管理等多个模块，采用Struct、JSP、JDBC等技术实现MVC架构，使用Mysql作为底层数据存储以确保信息的安全和可靠。
+      <div class="links">
+        <a class="link smaller" href="https://yuzhang.wang/077-flower-management/">Blog</a>
+      </div>   
     </p>
   </div>
 </div>
@@ -8649,37 +8736,101 @@ html {
 
 <h1 id="开源相关"><a href="#开源相关" class="headerlink" title="开源相关"></a>开源相关</h1><div class="projects">
   <div class="project">
-    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308291821814.png">
-    <h3>项目7</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit magna. Praesent lacinia a nisl quis posuere.
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232216575.png">
+    <h3>Gridea Theme NexT</h3>
+    <p>我为Gridea的NexT主题进行了50处源代码改动，修复了BUG并增强了视觉效果，还新增了博客运行时间统计功能，提升了用户体验、功能扩展性和整体性能。
       <div class="links">
-        <a class="link smaller" href="https://yuzhang.wang/">Code</a>
-        <a class="link smaller" href="https://yuzhang.wang/">Blog</a>
-        <a class="link smaller" href="https://yuzhang.wang/">Video</a>
+        <a class="link smaller" href="https://github.com/hsxyhao/gridea-theme-next">Code</a>
       </div>    
     </p>
   </div>
 
   <div class="project">
-    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png">
-    <h3>项目8</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit magna. Praesent lacinia a nisl quis posuere.
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232218911.png">
+    <h3>Expense Tracker</h3>
+    <p>我与印度开发者合作设计了一款基于ReactJS、Node.js和MongoDB构建的Web应用程序，帮助用户跟踪费用、收入和预算。
       <div class="links">
-        <a class="link smaller" href="https://yuzhang.wang/">Code</a>
-        <a class="link smaller" href="https://yuzhang.wang/">Blog</a>
-        <a class="link smaller" href="https://yuzhang.wang/">Video</a>
+        <a class="link smaller" href="https://github.com/sakshgupta/Spendee-Expense-Tracker">Code</a>
       </div>   
     </p>
   </div>
 
   <div class="project">
-    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png">
-    <h3>项目9</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit magna. Praesent lacinia a nisl quis posuere.
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232219768.png">
+    <h3>Angry Trump</h3>
+    <p>这是一个应用FaceSwap开源项目的案例，我使用该项目提取了Trump的人脸，并将其替换到需要替换人脸的视频中，通过RTX3060训练生成了一个愤怒的Trump视频，项目的优势在于生成了一个可用于其他视频脸部替换任务的模型。
       <div class="links">
-        <a class="link smaller" href="https://yuzhang.wang/">Code</a>
-        <a class="link smaller" href="https://yuzhang.wang/">Blog</a>
-        <a class="link smaller" href="https://yuzhang.wang/">Video</a>
+        <a class="link smaller" href="https://www.bilibili.com/video/BV1p3411H7R5/">Video</a>
+      </div>    
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232221531.png">
+    <h3>基于RVC制作的自媒体视频</h3>
+    <p>我使用Retrieval-based-Voice-Conversion-WebUI项目训练了一款令人印象深刻的声音模型，能够实时将我的声音转化为美妙动听的女声，并通过示例视频展示了其强大效果，以展示这项声音转换技术的潜力和可能性，为个人创作者和音频媒体产业带来更多创新机会。
+      <div class="links">
+        <a class="link smaller" href="https://www.bilibili.com/video/BV1KN4y1X7ir/">Video</a>
+      </div>    
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232224294.png">
+    <h3>Novel-AI for Cat</h3>
+    <p>这是一个应用Novel-AI开源项目的案例，通过迭代优化基于一张猫咪图片生成了符合目标要求的三幅图像，包括戴眼镜、黑黄条纹和略显严肃的猫咪。该项目不仅展示了技术上的创新和进步，还为人们带来了新颖有趣的图像生成体验。
+      <div class="links">
+        <a class="link smaller" href="https://github.com/YuZhangWang/Novel-AI-Picture/tree/master/01Cat">Code</a>
+      </div>   
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232226659.png">
+    <h3>Novel-AI for Zaha Hadid</h3>
+    <p>这是一个利用Novel-AI开源项目进行建筑设计的案例，以Zaha Hadid的幻想和超现实主义设计风格为灵感，并以阿利耶夫文化中心为基础，通过迭代设计创造符合超现实主义设计风格的建筑，为建筑领域带来了新颖有趣的设计理念和视觉体验。
+      <div class="links">
+        <a class="link smaller" href="https://github.com/YuZhangWang/Novel-AI-Picture/tree/master/11Constructions">Code</a>
+      </div>    
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232227432.png">
+    <h3>YaSei-LuoXian</h3>
+    <p>这是一个实际应用FaceSwap开源项目的案例，旨在通过人脸替换对涉及乌蝇哥名场面表情包的视频片段进行娱乐观赏，挑战在于准确识别和替换多张人脸，确保只替换特定的人脸，展现了人脸识别技术在娱乐和实际应用中的创新和发展潜力。
+      <div class="links">
+        <a class="link smaller" href="https://www.bilibili.com/video/BV1jr4y1s7JS">Video</a>
+      </div>    
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232229555.png">
+    <h3>Yanderifier for Attack On Titan Theme</h3>
+    <p>这是一个实际应用Yanderifier开源项目的案例，旨在通过Yanderifier项目为固定人脸添加动态效果，并确保口型准确对准歌曲的节奏和歌词，创造出独特有趣的演唱体验，展示了该项目在娱乐领域的创新应用以及人脸识别和动态效果技术的进步和潜力。
+      <div class="links">
+        <a class="link smaller" href="https://www.bilibili.com/video/BV1SY411S7e7/">Video</a>
+      </div>   
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232230737.png">
+    <h3>中文独立博客</h3>
+    <p>这个项目是为了支持中国人自己的独立博客，解决了独立博客在获取新读者方面的问题，并成功将个人博客纳入该项目中，为独立博客做出了贡献。
+      <div class="links">
+        <a class="link smaller" href="https://github.com/timqian/chinese-independent-blogs">Code</a>
+      </div>    
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309232231133.png">
+    <h3>Awesome GitHub Profile README Template</h3>
+    <p>该项目收集了GitHub上出色的个人介绍页面，展示了各种令人印象深刻的案例，为用户提供了一个方便的资源，让他们能够从他人的设计和内容表达方式中受益，以改进自己的个人介绍页面。
+      <div class="links">
+        <a class="link smaller" href="https://github.com/durgeshsamariya/awesome-github-profile-readme-templates">Code</a>
       </div>    
     </p>
   </div>
