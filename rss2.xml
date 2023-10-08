@@ -15,8 +15,40 @@
     <atom:link href="https://yuzhang.wang/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>PLUSULTRA!</description>
-    <pubDate>Wed, 13 Sep 2023 08:57:53 GMT</pubDate>
+    <pubDate>Sun, 08 Oct 2023 15:54:11 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>抑郁症与线粒体能量代谢-Section01</title>
+      <link>https://yuzhang.wang/134-depression-mitochondrial-energy-metabolism-01/</link>
+      <guid>https://yuzhang.wang/134-depression-mitochondrial-energy-metabolism-01/</guid>
+      <pubDate>Thu, 28 Sep 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;从本篇博客开始，我将开一个大坑，对一些Paper进行解读，其目的是为了阐述抑郁症与线粒体能量代之间的关系，本篇博客为其中的第一章节，用于了解一些医学基本概念，对两幅图进行解释说明。&lt;/p&gt;
+&lt;h1 id=&quot;能量代谢的绝对定量&quot;&gt;&lt;a href=&quot;#能量代谢的绝对定量&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E8%83%BD%E9%87%8F%E4%BB%A3%E8%B0%A2/">能量代谢</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E7%BA%BF%E7%B2%92%E4%BD%93/">线粒体</category>
+      
+      
+      <comments>https://yuzhang.wang/134-depression-mitochondrial-energy-metabolism-01/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>增值税发票自动识别</title>
@@ -187,31 +219,6 @@
       
       
       <comments>https://yuzhang.wang/136-rapid-treatment-depression/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>过去 现在 未来</title>
-      <link>https://yuzhang.wang/134-past-pesent-future/</link>
-      <guid>https://yuzhang.wang/134-past-pesent-future/</guid>
-      <pubDate>Thu, 08 Jun 2023 00:08:08 GMT</pubDate>
-      
-      <description>有东西被加密了, 请输入密码查看.</description>
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/">生活感悟</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E8%BF%87%E5%8E%BB/">过去</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E7%8E%B0%E5%9C%A8/">现在</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E6%9C%AA%E6%9D%A5/">未来</category>
-      
-      
-      <comments>https://yuzhang.wang/134-past-pesent-future/#disqus_thread</comments>
       
     </item>
     
