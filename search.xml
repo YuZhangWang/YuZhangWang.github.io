@@ -9454,4 +9454,12 @@ figure.highlight pre .params {
 
 ]]></content>
   </entry>
+  <entry>
+    <title>友链</title>
+    <url>/link/index.html</url>
+    <content><![CDATA[<blockquote>
+<p>每次刷新为随机顺序展示～<br>现已不支持在评论区中直接申请友链，请在<a href="https://github.com/YuZhangWang/Blog-Friend-Link">Blog-Friend-Link</a>这个 Repo 里按要求提交一个 Pull Request 就可以申请友链啦~</p>
+</blockquote>
+]]></content>
+  </entry>
 </search>
