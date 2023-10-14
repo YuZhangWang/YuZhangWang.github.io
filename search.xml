@@ -4119,8 +4119,8 @@ C=\max_{p\left( a_i \right)} \left[ H(Y)-H_{mi} \right] =\log m-H_{mi}</script><
 </ul>
 <blockquote>
 <p> 由于考虑到仓库的项目多种多样，所以这里只放上了issue的模板</p>
-<h2 id="ISSUE-TEMPLATE"><a href="#ISSUE-TEMPLATE" class="headerlink" title="ISSUE_TEMPLATE"></a>ISSUE_TEMPLATE</h2></blockquote>
-<h3 id="bug-report—"><a href="#bug-report—" class="headerlink" title="bug-report—-"></a>bug-report—-</h3><p>让我们看一下这里是怎么写的</p>
+</blockquote>
+<h2 id="ISSUE-TEMPLATE"><a href="#ISSUE-TEMPLATE" class="headerlink" title="ISSUE_TEMPLATE"></a>ISSUE_TEMPLATE</h2><h3 id="bug-report—"><a href="#bug-report—" class="headerlink" title="bug-report—-"></a>bug-report—-</h3><p>让我们看一下这里是怎么写的</p>
 <p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308312220429.png" alt=""></p>
 <p>其实就是在用户提交issues的时候，给一个书写模板，并且使用两种语言进行提示</p>
 <p>例如，当用户创建一个新的issue的时候，会出现如下的页面</p>
@@ -8611,6 +8611,40 @@ C=\max_{p\left( a_i \right)} \left[ H(Y)-H_{mi} \right] =\log m-H_{mi}</script><
       </tags>
   </entry>
   <entry>
+    <title>Butterfly中Note标签使用方法</title>
+    <url>/142-note-tag/</url>
+    <content><![CDATA[<p>事情是这样子，我将友链的管理，放入了Github仓库中，如果有小伙伴需要我加入他的友链，那么去仓库中提一个PR就可以了，不用再每次我写完部署上去。我也写了提示的话，让申请友链的小伙伴们直接去仓库。</p>
+<p><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202310141202715.png" alt="修改完后的醒目提示语句"></p>
+<p>但是呢，很多人依旧没有看到这条提示语句，于是我想起来，butterfly中应该有比较醒目的提示，于是翻了一下文档，找到了<a href="https://butterfly.js.org/posts/4aa8abbe/#Note-Bootstrap-Callout">Note标签</a>的写法。在这里做一下笔记，以免之后忘记。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default modern"><p>default 提示块标签</p>
+</div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note primary %&#125;</span><br><span class="line">primary 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note primary modern"><p>primary 提示块标签</p>
+</div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note success %&#125;</span><br><span class="line">success 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success modern"><p>success 提示块标签</p>
+</div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note info %&#125;</span><br><span class="line">info 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note info modern"><p>info 提示块标签</p>
+</div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning modern"><p>warning 提示块标签</p>
+</div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note danger modern"><p>danger 提示块标签</p>
+</div>
+<p>最后还是希望小伙伴们，能够看一看提示，不要直接在评论区进行申请了。</p>
+]]></content>
+      <categories>
+        <category>极客之旅</category>
+        <category>技能学习记录</category>
+      </categories>
+      <tags>
+        <tag>Note标签</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于</title>
     <url>/about/index.html</url>
     <content><![CDATA[<!-- 欢迎界面并展示访问次数 -->
@@ -9457,9 +9491,7 @@ figure.highlight pre .params {
   <entry>
     <title>友链</title>
     <url>/link/index.html</url>
-    <content><![CDATA[<blockquote>
-<p>每次刷新为随机顺序展示～<br>现已不支持在评论区中直接申请友链，请在<a href="https://github.com/YuZhangWang/Blog-Friend-Link">Blog-Friend-Link</a>这个 Repo 里按要求提交一个 Pull Request 就可以申请友链啦~</p>
-</blockquote>
-]]></content>
+    <content><![CDATA[<div class="note warning modern"><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p><strong>每次刷新为随机顺序展示～</strong><br><strong>现已不支持在评论区中直接申请友链，请在 <a href="https://github.com/YuZhangWang/Blog-Friend-Link">Blog-Friend-Link</a> 这个Repo里按要求提交一个PR就可以申请友链啦~</strong></p>
+</div>]]></content>
   </entry>
 </search>
