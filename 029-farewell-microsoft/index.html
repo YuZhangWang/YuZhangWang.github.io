@@ -1,0 +1,362 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>告别微软计划 | YuZhangWang的领域</title><meta name="author" content="YuZhangWang"><meta name="copyright" content="YuZhangWang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1.彻底卸载VS2019 2.使用Clion写C&#x2F;C++，好处是实时反馈BUG，JetBrain公司的插件在IDEA，Pycharm，Clion上都能通用。几种语言书写时都能享到同样的插件优化，体验很好。 3.照例升级三个IDE的版本至2020，插件也随之升级一波 4.整理一波桌面 5.将DeepinV20和黑苹果使用列入计划，尝试用Linux的DeepinV20或者类Linux的MacOS来进行">
+<meta property="og:type" content="article">
+<meta property="og:title" content="告别微软计划">
+<meta property="og:url" content="https://yuzhang.wang/029-farewell-microsoft/index.html">
+<meta property="og:site_name" content="YuZhangWang的领域">
+<meta property="og:description" content="1.彻底卸载VS2019 2.使用Clion写C&#x2F;C++，好处是实时反馈BUG，JetBrain公司的插件在IDEA，Pycharm，Clion上都能通用。几种语言书写时都能享到同样的插件优化，体验很好。 3.照例升级三个IDE的版本至2020，插件也随之升级一波 4.整理一波桌面 5.将DeepinV20和黑苹果使用列入计划，尝试用Linux的DeepinV20或者类Linux的MacOS来进行">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807043317192.png">
+<meta property="article:published_time" content="2020-04-15T14:23:39.000Z">
+<meta property="article:modified_time" content="2022-08-06T20:33:52.326Z">
+<meta property="article:author" content="YuZhangWang">
+<meta property="article:tag" content="VS2019">
+<meta property="article:tag" content="Clion">
+<meta property="article:tag" content="Pycharm">
+<meta property="article:tag" content="DeepinV20">
+<meta property="article:tag" content="MacOS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807043317192.png"><link rel="shortcut icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png"><link rel="canonical" href="https://yuzhang.wang/029-farewell-microsoft/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        if (name && globalFn[key][name]) return
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+          
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2ed9ec904657094072d5645542b35a76";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"距离上次更新已经过去","messageNext":"天,文章内容可能与实际操作有一定出入"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":400,"highlightFullpage":true,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":500,"languages":{"author":"作者: YuZhangWang","link":"链接: ","source":"来源: YuZhangWang的领域","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'null',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#49b1f5","position":"top-center"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '告别微软计划',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-08-07 04:33:52'
+}</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/Align-al-elements.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/rss2.xml" title="YuZhangWang的领域" type="application/rss+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">139</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">288</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cinemas/"><i class="fa-fw fa fa-film"></i><span> 影视</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></div><div class="menus_item"><a class="site-page" href="/natter/"><i class="fa-fw fa-sharp fa-solid fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/albums/"><i class="fa-fw fa fa-camera"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/project/"><i class="fa-fw fa fa-coins"></i><span> 项目</span></a></div><div class="menus_item"><a class="site-page" href="/cv/"><i class="fa-fw fa-solid fa-file"></i><span> 简历</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-thumbs-up"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" alt="Logo"><span class="site-name">YuZhangWang的领域</span></a><a class="nav-page-title" href="/"><span class="site-name">告别微软计划</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cinemas/"><i class="fa-fw fa fa-film"></i><span> 影视</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></div><div class="menus_item"><a class="site-page" href="/natter/"><i class="fa-fw fa-sharp fa-solid fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/albums/"><i class="fa-fw fa fa-camera"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/project/"><i class="fa-fw fa fa-coins"></i><span> 项目</span></a></div><div class="menus_item"><a class="site-page" href="/cv/"><i class="fa-fw fa-solid fa-file"></i><span> 简历</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-thumbs-up"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">告别微软计划</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon fas fa-history"></i><span class="post-meta-label">更新于</span><time datetime="2022-08-06T20:33:52.326Z" title="更新于 2022-08-07 04:33:52">2022-08-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">113</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><p>1.彻底卸载VS2019</p>
+<p>2.使用Clion写C/C++，好处是实时反馈BUG，JetBrain公司的插件在IDEA，Pycharm，Clion上都能通用。几种语言书写时都能享到同样的插件优化，体验很好。</p>
+<p>3.照例升级三个IDE的版本至2020，插件也随之升级一波</p>
+<p>4.整理一波桌面</p>
+<p>5.将DeepinV20和黑苹果使用列入计划，尝试用Linux的DeepinV20或者类Linux的MacOS来进行代码书写</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://yuzhang.wang">YuZhangWang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yuzhang.wang/029-farewell-microsoft/">https://yuzhang.wang/029-farewell-microsoft/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://yuzhang.wang" target="_blank">YuZhangWang的领域</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/VS2019/">VS2019</a><a class="post-meta__tags" href="/tags/Clion/">Clion</a><a class="post-meta__tags" href="/tags/Pycharm/">Pycharm</a><a class="post-meta__tags" href="/tags/DeepinV20/">DeepinV20</a><a class="post-meta__tags" href="/tags/MacOS/">MacOS</a></div><div class="post-share"><div class="social-share" data-image="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807043317192.png" data-sites="wechat,qq,weibo"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195242695.jpg" target="_blank"><img class="post-qr-code-img" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195242695.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195556282.png" target="_blank"><img class="post-qr-code-img" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195556282.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="prev-post pull-left" href="/030-deepin-experience/" title="Deepin初体验"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807043353473.jpeg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Deepin初体验</div></div></a><a class="next-post pull-right" href="/028-synchronization-strategy/" title="炉石的同步策略"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222306.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">炉石的同步策略</div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a href="/012-windows/" title="折腾windows"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/19/20220419153533619.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-08-05</div><div class="title">折腾windows</div></div></a><a href="/082-campus-navigation/" title="校园导航系统"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210824155904.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-09-10</div><div class="title">校园导航系统</div></div></a><a href="/030-deepin-experience/" title="Deepin初体验"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807043353473.jpeg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-08-07</div><div class="title">Deepin初体验</div></div></a><a href="/043-arm-architecture/" title="ARM架构"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807044638728.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-08-07</div><div class="title">ARM架构</div></div></a><a href="/066-black-apple/" title="黑苹果安装方法"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807050838325.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-08-14</div><div class="title">黑苹果安装方法</div></div></a><a href="/097-blackapple/" title="黑苹果,浏览器,系统"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202208070525320.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-08-07</div><div class="title">黑苹果,浏览器,系统</div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info is-center"><div class="avatar-img"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">YuZhangWang</div><div class="author-info-description">PLUSULTRA!</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">139</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">288</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://yuzhang-wang.translate.goog/?_x_tr_sl=zh-CN&amp;_x_tr_tl=en&amp;_x_tr_hl=zh-CN&amp;_x_tr_pto=wapp"><i class="fa-solid fa-earth-americas"></i><span>English Version Blog</span></a><div class="card-info-social-icons"><a class="social-icon" href="mailto:YuZhangWang233@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://github.com/YuZhangWang" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/19474542" target="_blank" title="bilibili"><i class="fab fa-bilibili" style="color: #FB7299;"></i></a><a class="social-icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/mmqrcode1615295634051.png" target="_blank" title="WeChat"><i class="fab fa-weixin" style="color: #199D18;"></i></a><a class="social-icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/qrcode_1615295622746.jpg" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #4AABE7;"></i></a><a class="social-icon" href="https://yuzhang.wang/rss2.xml" target="_blank" title="RSS"><i class="fa-solid fa-rss" style="color: #F99C36;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">1.视频发布于B站，文章发布于博客</br> 2.待修复bug:无</br> 3.待优化地方:无</br></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/142-note-tag/" title="Butterfly中Note标签使用方法"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202310141208712.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Butterfly中Note标签使用方法"/></a><div class="content"><a class="title" href="/142-note-tag/" title="Butterfly中Note标签使用方法">Butterfly中Note标签使用方法</a><time datetime="2024-10-08T16:21:57.101Z" title="更新于 2024-10-09 00:21:57">2024-10-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/001-obsidian-template/" title="无标题"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195159290.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无标题"/></a><div class="content"><a class="title" href="/001-obsidian-template/" title="无标题">无标题</a><time datetime="2024-07-09T12:21:49.328Z" title="更新于 2024-07-09 20:21:49">2024-07-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/028-synchronization-strategy/" title="炉石的同步策略"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222306.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="炉石的同步策略"/></a><div class="content"><a class="title" href="/028-synchronization-strategy/" title="炉石的同步策略">炉石的同步策略</a><time datetime="2023-10-18T00:26:24.693Z" title="更新于 2023-10-18 08:26:24">2023-10-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/027-new-function/" title="一加新功能"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807043237906.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一加新功能"/></a><div class="content"><a class="title" href="/027-new-function/" title="一加新功能">一加新功能</a><time datetime="2023-10-18T00:26:17.338Z" title="更新于 2023-10-18 08:26:17">2023-10-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/114-defense-experience/" title="导师给的答辩经验"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202208070536934.7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="导师给的答辩经验"/></a><div class="content"><a class="title" href="/114-defense-experience/" title="导师给的答辩经验">导师给的答辩经验</a><time datetime="2023-10-18T00:25:28.166Z" title="更新于 2023-10-18 08:25:28">2023-10-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/133-best-template/" title="你应该为自己创建一个Github仓库模板"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309012124695.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="你应该为自己创建一个Github仓库模板"/></a><div class="content"><a class="title" href="/133-best-template/" title="你应该为自己创建一个Github仓库模板">你应该为自己创建一个Github仓库模板</a><time datetime="2023-10-11T01:56:16.186Z" title="更新于 2023-10-11 09:56:16">2023-10-11</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="footer_custom_text"><div class="footer_custom_text"><div class="coin-title"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309032153357.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309032153357.png" alt="Moe" style="height:1.3em" data-ll-status="loaded" class="entered loaded">&nbsp;萌ICP备<a href="https://icp.gov.moe/?keyword=20238869" target="_blank">20238869</a>号&nbsp;<i class="fa-fw fas fa-duotone fa-cat"></i>&nbsp;<a href="https://github.com/YuZhangWang" target="_blank">YuZhangWang</a>&nbsp;©2019-Present</div><div class="coin-title">Powered By&nbsp;<a href="https://hexo.io/zh-cn/index.html" target="_blank">Hexo</a>&nbsp;|&nbsp;Theme By&nbsp;<a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank">Butterfly</a></div><div class="coin-title"><a href="https://qwerty.kaiyi.cool/" target="_blank" alt="qwerty-learner" rel="nofollow"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131945636.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131945636.png" alt="qwerty-learner" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a>&nbsp;<a target="_blank" rel="noopener" href="https://blogwe.com/"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195801782.jpg" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195801782.jpg" alt="博客大全" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a>&nbsp;<a target="_blank" rel="noopener" href="https://vim-adventures.com/"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195910376.jpg" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195910376.jpg" alt="vim-adventures" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a>&nbsp;<a target="_blank" rel="noopener" href="https://huanghaibin91.github.io/Reversi/"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418200005401.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418200005401.png" alt="黑白翻转棋" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a>&nbsp;<a target="_blank" rel="noopener" href="https://cloud.tencent.com/"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826081712.svg" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826081712.svg" alt="腾讯云" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a>&nbsp;<a target="_blank" rel="noopener" href="https://www.jsdelivr.com"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131843411.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131843411.png" alt="Jsdelivr" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a></div></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>(() => {
+  const panguFn = () => {
+    if (typeof pangu === 'object') pangu.autoSpacingPage()
+    else {
+      btf.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+        .then(() => {
+          pangu.autoSpacingPage()
+        })
+    }
+  }
+
+  const panguInit = () => {
+    if (false){
+      GLOBAL_CONFIG_SITE.isPost && panguFn()
+    } else {
+      panguFn()
+    }
+  }
+
+  btf.addGlobalFn('pjaxComplete', panguInit, 'pangu')
+  document.addEventListener('DOMContentLoaded', panguInit)
+})()</script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+      
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (true) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(()=>{
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'YuZhangWang/YuZhangWang.github.io',
+      'data-repo-id': 'MDEwOlJlcG9zaXRvcnkzNDY4MTQyNjE=',
+      'data-category-id': 'DIC_kwDOFKv3Nc4CQ6NC',
+      'data-mapping': 'pathname',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },{"data-mapping":"title","data-strict":1,"data-reactions-enabled":1,"data-emit-metadata":0,"data-input-position":"top","data-lang":"zh-CN"})
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment= loadGiscus
+  }
+})()</script></div><script>document.addEventListener('visibilitychange', function () {if (document.visibilityState == 'hidden') {normal_title = document.title;document.title = '早上好 中午好 晚上好';}else document.title = normal_title;});</script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/学术研究/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🎓 Academic Research (15)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/项目展示/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">💎 Project Showcase (16)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/Python学习笔记/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📖 Python Learning Notes (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/CV学习笔记/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">💻 CV Learning Notes (9)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/C-学习笔记/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📖 C++ Learning Notes (4)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/数据结构学习笔记/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">💻 Data Structures Learning Notes (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><a class="magnet_link_more"  href="https://yuzhang.wang/categories" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(50% - 5px);background: #f2f2f2;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: rgb(127, 199, 244)}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>历史上的今天</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='/'|| '/' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>

@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>YuZhangWang的领域</title>
+    <link>https://yuzhang.wang/</link>
+    
+    <image>
+      <url>https://yuzhang.wang/icon.png</url>
+      <title>YuZhangWang的领域</title>
+      <link>https://yuzhang.wang/</link>
+    </image>
+    
+    <atom:link href="https://yuzhang.wang/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>PLUSULTRA!</description>
+    <pubDate>Sun, 08 Oct 2023 15:54:11 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>抑郁症与线粒体能量代谢-Section01</title>
+      <link>https://yuzhang.wang/134-depression-mitochondrial-energy-metabolism-01/</link>
+      <guid>https://yuzhang.wang/134-depression-mitochondrial-energy-metabolism-01/</guid>
+      <pubDate>Thu, 28 Sep 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;从本篇博客开始，我将开一个大坑，对一些Paper进行解读，其目的是为了阐述抑郁症与线粒体能量代之间的关系，本篇博客为其中的第一章节，用于了解一些医学基本概念，对两幅图进行解释说明。&lt;/p&gt;
+&lt;h1 id=&quot;能量代谢的绝对定量&quot;&gt;&lt;a href=&quot;#能量代谢的绝对定量&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E7%BA%BF%E7%B2%92%E4%BD%93/">线粒体</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E8%83%BD%E9%87%8F%E4%BB%A3%E8%B0%A2/">能量代谢</category>
+      
+      
+      <comments>https://yuzhang.wang/134-depression-mitochondrial-energy-metabolism-01/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Butterfly中Note标签使用方法</title>
+      <link>https://yuzhang.wang/142-note-tag/</link>
+      <guid>https://yuzhang.wang/142-note-tag/</guid>
+      <pubDate>Thu, 14 Sep 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;事情是这样子，我将友链的管理，放入了Github仓库中，如果有小伙伴需要我加入他的友链，那么去仓库中提一个PR就可以了，不用再每次我写完部署上去。我也写了提示的话，让申请友链的小伙伴们直接去仓库。&lt;/p&gt;
+&lt;p&gt;&lt;img</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/Note%E6%A0%87%E7%AD%BE/">Note标签</category>
+      
+      
+      <comments>https://yuzhang.wang/142-note-tag/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>增值税发票自动识别</title>
+      <link>https://yuzhang.wang/139-invoice-identification/</link>
+      <guid>https://yuzhang.wang/139-invoice-identification/</guid>
+      <pubDate>Wed, 13 Sep 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;绪论&quot;&gt;&lt;a href=&quot;#绪论&quot; class=&quot;headerlink&quot; title=&quot;绪论&quot;&gt;&lt;/a&gt;绪论&lt;/h1&gt;&lt;h2 id=&quot;课题的研究背景及意义&quot;&gt;&lt;a href=&quot;#课题的研究背景及意义&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA/">项目展示</category>
+      
+      <category domain="https://yuzhang.wang/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/CRNN/">CRNN</category>
+      
+      <category domain="https://yuzhang.wang/tags/CTPN/">CTPN</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E5%A2%9E%E5%80%BC%E7%A8%8E%E5%8F%91%E7%A5%A8/">增值税发票</category>
+      
+      
+      <comments>https://yuzhang.wang/139-invoice-identification/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>关于麻醉药及违禁药在抑郁症快速起效领域应用情况的调查研究</title>
+      <link>https://yuzhang.wang/138-prohibited-drugs/</link>
+      <guid>https://yuzhang.wang/138-prohibited-drugs/</guid>
+      <pubDate>Wed, 06 Sep 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;在&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E5%BF%AB%E9%80%9F%E6%8A%97%E6%8A%91%E9%83%81/">快速抗抑郁</category>
+      
+      <category domain="https://yuzhang.wang/tags/Esketamine/">Esketamine</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E9%BA%BB%E9%86%89%E8%8D%AF/">麻醉药</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E8%BF%9D%E7%A6%81%E8%8D%AF/">违禁药</category>
+      
+      <category domain="https://yuzhang.wang/tags/Spavato/">Spavato</category>
+      
+      <category domain="https://yuzhang.wang/tags/Arketamine/">Arketamine</category>
+      
+      <category domain="https://yuzhang.wang/tags/Nitrous-oxide/">Nitrous oxide</category>
+      
+      <category domain="https://yuzhang.wang/tags/Lsoflurane/">Lsoflurane</category>
+      
+      
+      <comments>https://yuzhang.wang/138-prohibited-drugs/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>关于抑郁症可能的发病机制调查研究</title>
+      <link>https://yuzhang.wang/137-etiopathogenesis/</link>
+      <guid>https://yuzhang.wang/137-etiopathogenesis/</guid>
+      <pubDate>Tue, 29 Aug 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;上一篇&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E8%83%BD%E9%87%8F%E4%BB%A3%E8%B0%A2/">能量代谢</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E6%8A%91%E9%83%81%E7%97%87%E5%8F%91%E7%97%85%E6%9C%BA%E5%88%B6/">抑郁症发病机制</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E7%A5%9E%E7%BB%8F%E9%80%92%E8%B4%A8/">神经递质</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E8%83%BD%E9%87%8F%E4%BB%A3%E8%B0%A2%E7%B4%8A%E4%B9%B1/">能量代谢紊乱</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E5%A4%A7%E8%84%91%E7%BB%93%E6%9E%84/">大脑结构</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E8%82%A0%E9%81%93%E8%8F%8C%E7%BE%A4/">肠道菌群</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E5%A5%96%E8%B5%8F%E5%9B%9E%E8%B7%AF/">奖赏回路</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E6%97%A0%E5%BF%AB%E6%84%9F%E7%97%87/">无快感症</category>
+      
+      
+      <comments>https://yuzhang.wang/137-etiopathogenesis/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>关于快速抗抑郁的药物研究进展</title>
+      <link>https://yuzhang.wang/136-rapid-treatment-depression/</link>
+      <guid>https://yuzhang.wang/136-rapid-treatment-depression/</guid>
+      <pubDate>Mon, 28 Aug 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;发展历史&quot;&gt;&lt;a href=&quot;#发展历史&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E5%BF%AB%E9%80%9F%E6%8A%97%E6%8A%91%E9%83%81/">快速抗抑郁</category>
+      
+      <category domain="https://yuzhang.wang/tags/Brexanolone/">Brexanolone</category>
+      
+      <category domain="https://yuzhang.wang/tags/Esketamine/">Esketamine</category>
+      
+      <category domain="https://yuzhang.wang/tags/Psilocybin/">Psilocybin</category>
+      
+      <category domain="https://yuzhang.wang/tags/mGlu2-3%E5%8F%97%E4%BD%93%E6%8B%AE%E6%8A%97%E5%89%82/">mGlu2/3受体拮抗剂</category>
+      
+      <category domain="https://yuzhang.wang/tags/AMPA%E5%8F%97%E4%BD%93%E5%A2%9E%E6%95%88%E5%89%82/">AMPA受体增效剂</category>
+      
+      <category domain="https://yuzhang.wang/tags/GLYX-13-Rapastinel/">GLYX-13(Rapastinel)</category>
+      
+      <category domain="https://yuzhang.wang/tags/Scopolamin/">Scopolamin</category>
+      
+      <category domain="https://yuzhang.wang/tags/TAK-653/">TAK-653</category>
+      
+      <category domain="https://yuzhang.wang/tags/Sertraline/">Sertraline</category>
+      
+      <category domain="https://yuzhang.wang/tags/Arketamin/">Arketamin</category>
+      
+      <category domain="https://yuzhang.wang/tags/GABA%E8%B4%9F%E6%80%A7%E5%8F%98%E6%9E%84%E8%B0%83%E8%8A%82%E5%89%82/">GABA负性变构调节剂</category>
+      
+      
+      <comments>https://yuzhang.wang/136-rapid-treatment-depression/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>你应该为自己创建一个Github仓库模板</title>
+      <link>https://yuzhang.wang/133-best-template/</link>
+      <guid>https://yuzhang.wang/133-best-template/</guid>
+      <pubDate>Wed, 07 Jun 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;这个Github仓库模板的内容不多，我有两种介绍方法，一种是一个一个文件，一行一行说过来，另一种是根据所有的功能介绍，在这里我选择从最上面文件夹的最上面的文件的最上面的内容来慢慢讲起来，内容可能有所跳跃，需要注意一下，那让我们开始吧&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA/">项目展示</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/Github/">Github</category>
+      
+      <category domain="https://yuzhang.wang/tags/Awesome/">Awesome</category>
+      
+      
+      <comments>https://yuzhang.wang/133-best-template/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>如何拥有一个Awesome的Github介绍页面</title>
+      <link>https://yuzhang.wang/132-github-introduction/</link>
+      <guid>https://yuzhang.wang/132-github-introduction/</guid>
+      <pubDate>Tue, 06 Jun 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;先上效果图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309012219165.jpeg&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA/">项目展示</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/Github/">Github</category>
+      
+      <category domain="https://yuzhang.wang/tags/Awesome/">Awesome</category>
+      
+      
+      <comments>https://yuzhang.wang/132-github-introduction/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Butterfly主题中远程友链实操</title>
+      <link>https://yuzhang.wang/131-remote-friend-linking/</link>
+      <guid>https://yuzhang.wang/131-remote-friend-linking/</guid>
+      <pubDate>Mon, 05 Jun 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;其实这个操作不难，跟着&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA/">项目展示</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/Butterfly/">Butterfly</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E8%BF%9C%E7%A8%8B%E5%8F%8B%E9%93%BE/">远程友链</category>
+      
+      
+      <comments>https://yuzhang.wang/131-remote-friend-linking/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>域名的小问题导致网站关闭了很久</title>
+      <link>https://yuzhang.wang/130-domain-name-issue/</link>
+      <guid>https://yuzhang.wang/130-domain-name-issue/</guid>
+      <pubDate>Sun, 04 Jun 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;关注我博客的朋友应该发现了，我的博客关闭了一段时间，时间不到半年左右，首先和各位说一声抱歉，让大家久等了，这篇博客就是来详细说明具体情况的&lt;/p&gt;
+&lt;h1 id=&quot;问题表象&quot;&gt;&lt;a href=&quot;#问题表象&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E7%BD%91%E7%AB%99/">网站</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E5%9F%9F%E5%90%8D/">域名</category>
+      
+      
+      <comments>https://yuzhang.wang/130-domain-name-issue/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>原神进度以及未来规划</title>
+      <link>https://yuzhang.wang/129-genshin-progress-planning/</link>
+      <guid>https://yuzhang.wang/129-genshin-progress-planning/</guid>
+      <pubDate>Sat, 03 Jun 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;&lt;img src=&quot;https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308111939961.jpg&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%B8%B8%E6%88%8F%E4%BD%93%E9%AA%8C/">游戏体验</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E5%8E%9F%E7%A5%9E/">原神</category>
+      
+      
+      <comments>https://yuzhang.wang/129-genshin-progress-planning/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>考研935记忆点</title>
+      <link>https://yuzhang.wang/128-exam-935/</link>
+      <guid>https://yuzhang.wang/128-exam-935/</guid>
+      <pubDate>Fri, 02 Jun 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;1.考研指定语言用C或者C++，可以调库，但是也要看场景，但建议高级函数不要调用，比如排序和查找相关sort()，stable_sort()，partial_sort()，nth_element()，binary_serach()，lower_bound()，upper_b</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E8%AF%95%E8%B5%84%E6%96%99/">考试资料</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E7%A0%94%E5%A4%8D%E7%9B%98/">考研复盘</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E8%80%83%E7%A0%94/">考研</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E8%AE%B0%E5%BF%86/">记忆</category>
+      
+      <category domain="https://yuzhang.wang/tags/935/">935</category>
+      
+      
+      <comments>https://yuzhang.wang/128-exam-935/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>考研政治记忆点</title>
+      <link>https://yuzhang.wang/127-exam-politics/</link>
+      <guid>https://yuzhang.wang/127-exam-politics/</guid>
+      <pubDate>Thu, 01 Jun 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;1.我国国家制度和国家治理体系具有显著优势，是坚定“四个自信”的基本依据&lt;/p&gt;
+&lt;p&gt;2.近代以来，中国人民反帝反封建的斗争之所以屡遭挫折和失败，最重要的原因就是没有一个先进政党作为凝聚力量的坚强领导核心&lt;/p&gt;
+&lt;p&gt;3.美国一些势力出于霸权心态和冷战思维，将中国视为最</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E8%AF%95%E8%B5%84%E6%96%99/">考试资料</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E7%A0%94%E5%A4%8D%E7%9B%98/">考研复盘</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E8%80%83%E7%A0%94/">考研</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E8%AE%B0%E5%BF%86/">记忆</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E6%94%BF%E6%B2%BB/">政治</category>
+      
+      
+      <comments>https://yuzhang.wang/127-exam-politics/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>考研数学记忆点</title>
+      <link>https://yuzhang.wang/126-exam-mathematics/</link>
+      <guid>https://yuzhang.wang/126-exam-mathematics/</guid>
+      <pubDate>Wed, 31 May 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;1.一些记忆公式&lt;/p&gt;
+&lt;div class=&quot;table-container&quot;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;泰勒公式&lt;/th&gt;
+&lt;th</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E8%AF%95%E8%B5%84%E6%96%99/">考试资料</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E7%A0%94%E5%A4%8D%E7%9B%98/">考研复盘</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E8%80%83%E7%A0%94/">考研</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E6%95%B0%E5%AD%A6/">数学</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E8%AE%B0%E5%BF%86/">记忆</category>
+      
+      
+      <comments>https://yuzhang.wang/126-exam-mathematics/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>原来我的皮肤生病了</title>
+      <link>https://yuzhang.wang/125-aopic-dermatitis/</link>
+      <guid>https://yuzhang.wang/125-aopic-dermatitis/</guid>
+      <pubDate>Tue, 30 May 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;一、引言&quot;&gt;&lt;a href=&quot;#一、引言&quot; class=&quot;headerlink&quot; title=&quot;一、引言&quot;&gt;&lt;/a&gt;一、引言&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;特应性皮炎（Atopic</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/">生活感悟</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E7%89%B9%E5%BA%94%E6%80%A7%E7%9A%AE%E7%82%8E/">特应性皮炎</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E5%B9%B2%E6%80%A7%E6%B9%BF%E7%96%B9/">干性湿疹</category>
+      
+      
+      <comments>https://yuzhang.wang/125-aopic-dermatitis/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>信息论与编码</title>
+      <link>https://yuzhang.wang/124-information-theory/</link>
+      <guid>https://yuzhang.wang/124-information-theory/</guid>
+      <pubDate>Mon, 29 May 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt; 这篇博客是帮忙测试的内容，&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E4%BF%A1%E6%81%AF%E8%AE%BA/">信息论</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E7%BC%96%E7%A0%81/">编码</category>
+      
+      
+      <comments>https://yuzhang.wang/124-information-theory/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>图表的创建和动态修改测试</title>
+      <link>https://yuzhang.wang/123-chart-creation/</link>
+      <guid>https://yuzhang.wang/123-chart-creation/</guid>
+      <pubDate>Sun, 14 May 2023 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/Mermaid/">Mermaid</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E6%B5%8B%E8%AF%95/">测试</category>
+      
+      
+      <comments>https://yuzhang.wang/123-chart-creation/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>记录一个我遇到的考研炮灰</title>
+      <link>https://yuzhang.wang/122-cannon-fodder/</link>
+      <guid>https://yuzhang.wang/122-cannon-fodder/</guid>
+      <pubDate>Sat, 12 Nov 2022 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;我遇到了一个自信满满，不知悔改的考研炮灰，这是我从被他各种无脑行为打扰，到了解到他学习情况，最后物理心灵上共同逃离的故事。 &lt;/p&gt;
+&lt;h1 id=&quot;1-和学习无关的内容&quot;&gt;&lt;a href=&quot;#1-和学习无关的内容&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/">生活感悟</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E7%A0%94%E5%A4%8D%E7%9B%98/">考研复盘</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E8%80%83%E7%A0%94%E7%82%AE%E7%81%B0/">考研炮灰</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E8%A7%84%E5%8A%9D%E5%82%BB%E9%80%BC/">规劝傻逼</category>
+      
+      
+      <comments>https://yuzhang.wang/122-cannon-fodder/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>后出师表</title>
+      <link>https://yuzhang.wang/121-northern-memorial/</link>
+      <guid>https://yuzhang.wang/121-northern-memorial/</guid>
+      <pubDate>Wed, 02 Nov 2022 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;先帝深虑汉、贼不两立，王业不偏安，故托臣以讨贼也。以先帝之明，量臣之才，固知臣伐贼，才弱敌强也。然不伐贼，王业亦亡。惟坐而待亡，孰与伐之？是故托臣而弗疑也。&lt;/p&gt;
+&lt;p&gt;臣受命之日，寝不安席，食不甘味。思惟北征。宜先入南。故五月渡泸，深入不毛，并日而食；臣非不自惜也，顾王</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%A5%BD%E5%8F%A5%E6%91%98%E6%8A%84/">好句摘抄</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E5%90%8E%E5%87%BA%E5%B8%88%E8%A1%A8/">后出师表</category>
+      
+      
+      <comments>https://yuzhang.wang/121-northern-memorial/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>遍历二叉树</title>
+      <link>https://yuzhang.wang/120-binary-tree/</link>
+      <guid>https://yuzhang.wang/120-binary-tree/</guid>
+      <pubDate>Fri, 05 Aug 2022 01:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;遍历二叉树中进行的一些操作&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建二叉树&lt;/li&gt;
+&lt;li&gt;先序遍历二叉树&lt;/li&gt;
+&lt;li&gt;计算树高&lt;/li&gt;
+&lt;li&gt;计算树叶数&lt;/li&gt;
+&lt;li&gt;计算结点数&lt;/li&gt;
+&lt;li&gt;计算分支点个数&lt;/li&gt;
+&lt;li&gt;二叉树拷贝&lt;/li&gt;
+&lt;li&gt;二叉</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/C-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">C++学习笔记</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">数据结构学习笔记</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E9%81%8D%E5%8E%86/">遍历</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/">二叉树</category>
+      
+      
+      <comments>https://yuzhang.wang/120-binary-tree/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>

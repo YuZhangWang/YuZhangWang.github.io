@@ -1,0 +1,495 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>考研数学记忆点 | YuZhangWang的领域</title><meta name="author" content="YuZhangWang"><meta name="copyright" content="YuZhangWang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1.一些记忆公式     泰勒公式 积分公式 n阶导公式 绕一般直线的参数做法 旋转体体积，弧长，旋转体表面积公式     边缘密度，条件密度公式 7种分布的期望方差 样本均值，样本方差的期望和方差 单正态总体4个公式，双正态总体2个公式 四种情况下的5个置信区间   叉乘运算法则 直线点向式化一般式 绕XYZ轴曲面方程的做法 各种空间图形方程 第一型第二型曲线曲面积分，计算方法   方向导数、梯">
+<meta property="og:type" content="article">
+<meta property="og:title" content="考研数学记忆点">
+<meta property="og:url" content="https://yuzhang.wang/126-exam-mathematics/index.html">
+<meta property="og:site_name" content="YuZhangWang的领域">
+<meta property="og:description" content="1.一些记忆公式     泰勒公式 积分公式 n阶导公式 绕一般直线的参数做法 旋转体体积，弧长，旋转体表面积公式     边缘密度，条件密度公式 7种分布的期望方差 样本均值，样本方差的期望和方差 单正态总体4个公式，双正态总体2个公式 四种情况下的5个置信区间   叉乘运算法则 直线点向式化一般式 绕XYZ轴曲面方程的做法 各种空间图形方程 第一型第二型曲线曲面积分，计算方法   方向导数、梯">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202306221841436.png">
+<meta property="article:published_time" content="2023-05-31T00:08:08.000Z">
+<meta property="article:modified_time" content="2023-08-11T08:08:30.118Z">
+<meta property="article:author" content="YuZhangWang">
+<meta property="article:tag" content="考研">
+<meta property="article:tag" content="数学">
+<meta property="article:tag" content="记忆">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202306221841436.png"><link rel="shortcut icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png"><link rel="canonical" href="https://yuzhang.wang/126-exam-mathematics/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        if (name && globalFn[key][name]) return
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+          
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2ed9ec904657094072d5645542b35a76";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"距离上次更新已经过去","messageNext":"天,文章内容可能与实际操作有一定出入"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":400,"highlightFullpage":true,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":500,"languages":{"author":"作者: YuZhangWang","link":"链接: ","source":"来源: YuZhangWang的领域","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'null',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#49b1f5","position":"top-center"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '考研数学记忆点',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-08-11 16:08:30'
+}</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/Align-al-elements.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/rss2.xml" title="YuZhangWang的领域" type="application/rss+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">139</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">288</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cinemas/"><i class="fa-fw fa fa-film"></i><span> 影视</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></div><div class="menus_item"><a class="site-page" href="/natter/"><i class="fa-fw fa-sharp fa-solid fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/albums/"><i class="fa-fw fa fa-camera"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/project/"><i class="fa-fw fa fa-coins"></i><span> 项目</span></a></div><div class="menus_item"><a class="site-page" href="/cv/"><i class="fa-fw fa-solid fa-file"></i><span> 简历</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-thumbs-up"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" alt="Logo"><span class="site-name">YuZhangWang的领域</span></a><a class="nav-page-title" href="/"><span class="site-name">考研数学记忆点</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cinemas/"><i class="fa-fw fa fa-film"></i><span> 影视</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></div><div class="menus_item"><a class="site-page" href="/natter/"><i class="fa-fw fa-sharp fa-solid fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/albums/"><i class="fa-fw fa fa-camera"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/project/"><i class="fa-fw fa fa-coins"></i><span> 项目</span></a></div><div class="menus_item"><a class="site-page" href="/cv/"><i class="fa-fw fa-solid fa-file"></i><span> 简历</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-thumbs-up"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">考研数学记忆点</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon fas fa-history"></i><span class="post-meta-label">更新于</span><time datetime="2023-08-11T08:08:30.118Z" title="更新于 2023-08-11 16:08:30">2023-08-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%80%83%E8%AF%95%E8%B5%84%E6%96%99/">考试资料</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%80%83%E7%A0%94%E5%A4%8D%E7%9B%98/">考研复盘</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">4.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>14分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><p>1.一些记忆公式</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">泰勒公式</th>
+<th style="text-align:center">积分公式</th>
+<th style="text-align:center">n阶导公式</th>
+<th style="text-align:center">绕一般直线的参数做法</th>
+<th style="text-align:center">旋转体体积，弧长，旋转体表面积公式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">边缘密度，条件密度公式</td>
+<td style="text-align:center">7种分布的期望方差</td>
+<td style="text-align:center">样本均值，样本方差的期望和方差</td>
+<td style="text-align:center">单正态总体4个公式，双正态总体2个公式</td>
+<td style="text-align:center">四种情况下的5个置信区间</td>
+</tr>
+<tr>
+<td style="text-align:center">叉乘运算法则</td>
+<td style="text-align:center">直线点向式化一般式</td>
+<td style="text-align:center">绕XYZ轴曲面方程的做法</td>
+<td style="text-align:center">各种空间图形方程</td>
+<td style="text-align:center">第一型第二型曲线曲面积分，计算方法</td>
+</tr>
+<tr>
+<td style="text-align:center">方向导数、梯度、散度、旋度</td>
+<td style="text-align:center">第二型曲面积分归一法、高斯法</td>
+<td style="text-align:center">球坐标是如何计算的，定限，xyz对应什么</td>
+<td style="text-align:center">重心(质心)、形心、质量、转动惯量</td>
+<td style="text-align:center">伯努利方程，欧拉方程，全微分方程</td>
+</tr>
+<tr>
+<td style="text-align:center">r(A)+r(B)≤n，r(A)+r(B)≥r(A+B)</td>
+<td style="text-align:center">r(A 0)=r(A)</td>
+<td style="text-align:center">r(ATA)=r(A)=r(AT)=r(AAT)</td>
+<td style="text-align:center">中值定理公式</td>
+<td style="text-align:center">定积分定义</td>
+</tr>
+<tr>
+<td style="text-align:center">概率加法公式、条件概率、独立、分配律、对偶律(摩根律)</td>
+<td style="text-align:center">期望、方程、协方差、相关系数之间的关系</td>
+<td style="text-align:center">二维正态分布</td>
+<td style="text-align:center">假设检验、标准正态化</td>
+<td style="text-align:center">离散型概率摸球应用</td>
+</tr>
+<tr>
+<td style="text-align:center">形心的竖坐标</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>2.双纽线由直坐标化成极坐标就可以画图了</p>
+<p>3.微分方程非齐次的解法，尤其是有复根的形式，复根形式包括一开始y1会出现，以及根据右边fx也会在y*中出现复根</p>
+<p>4.通解=齐次通解+非齐次特解</p>
+<p>5.齐次特解=非齐次特解-非齐次特解</p>
+<p>6.特解前面+C，变成通解</p>
+<p>7.齐次方程那里，可以设为u=x/y，把x当成y的函数，这样有部分题比较容易</p>
+<p>8.根据特解算出通解：两个不同函数，两两相减得到齐次特解，前面+C变成齐次通解，然后后面加上任意一个非齐次特解</p>
+<p>9.给一个具体的特解，求通解，一般是两个不同的根，根据结构对比方程右边，可以推出两个根r1和r2，y=c1er1x+c2er2x+特解</p>
+<p>10.微分方程里遇到含有x,y的表达式，可以用极限的定义去做，可以得出微分方程</p>
+<p>11.遇到三阶微分方程，只会和齐次方程的通解结合起来</p>
+<p>12.遇到微分方程和图像结合，没有给出方程表达式的情况下，可以使用参数方程y(t)表示</p>
+<p>13.遇到两个多元函数，求导，则其中一部分的导数，需要从另一部分中求出</p>
+<p>14.可降阶的微分方程中，不含x的条件是，y”，y’，y同时存在且不含x，缺少y‘的话，可以直接用齐次的解法</p>
+<p>15.偏导数应用曲线需要方程左右对x求导，y和z看成x的函数，求出dy/dx和dz/dx，然后带入x，y，z算出y和z的分量，但是x需要设为1，最后得出切向量</p>
+<p>16.偏导数应用曲面需要设F(x,y,z)，然后对x，y，z求偏导，带入点计算法向量，z分量一般为-1</p>
+<p>17.A的转置AT里面的元素是aji，而A的伴随矩阵A*里面的元素是Aji</p>
+<p>18.正负号，，不影响矩阵的秩</p>
+<p>19.0矩阵，秩必为0；非0矩阵，秩一定大于等于1</p>
+<p>20.可逆必满秩，未满秩则必不可逆</p>
+<p>21.不可逆，行列式必为0</p>
+<p>22.矩阵，左乘行变换，右乘列变换</p>
+<p>23.A的特征值为r1，r2，r3，A*的特征值R1=r2r3，R2=r1r3，R3=r1r2</p>
+<p>24.A和A<em>的秩关系，当r(A)=n时，r(A</em>)=n；当r(A)=n-1时，r(A<em>)=1；当r(A)&lt;n-1时，r(A</em>)=0</p>
+<p>25.在矩阵A行列式为1的情况下，trA不等于0，可以推出A有唯一的非0特征值</p>
+<p>26.除了0/0，无穷/无穷之外，只要分母为无穷，分子不用管，就可以洛必达。所以记住0/0和*/无穷即可</p>
+<p>27.(k<em>A)的逆=1/k</em>A的逆</p>
+<p>28.B逆的转置等于B转置的逆</p>
+<p>29.齐次解的线性组合，还是齐次解</p>
+<p>30.Ax=b的通解，必定是两个齐次解的线性组合+一个非齐次解的特解，两个齐次解一定要是线性无关的</p>
+<p>31.矩阵A经过行变换，得到矩阵B，可以说Ax=0和Bx=0是同解的。但是A经过列变换得到B，就不能说Ax=0和Bx=0是同解的</p>
+<p>32.单位列向量，就是指长度为1的向量，比如(1,0)，(1,0,0)这样子的。单位列向量，乘它的转置，秩为1，trA就等于1。秩为1，trA就等于1又可以得出，有唯一的非0特征值，该特征值为1</p>
+<p>33.r(A AB)可以通过A右乘-B，然后进行列变换，变成r(A 0)</p>
+<p>34.r(A BA)里面的BA消不掉，A左乘-B，只能进行行变换，而这里需要列变换，所以不行</p>
+<p>35.ɑ1，ɑ2，ɑ3线性无关，可以推出ɑ1+k1ɑ3，ɑ2+k2ɑ3是线性无关的，反过来不行。因为举例，k1=k2=0，则ɑ1和ɑ2无关，两个无关无法推出3个无关。多的无关可以推出少的无关，少的相关可以推出多的相关</p>
+<p>36.r(AT ATA)可以通过AT右乘-A，然后进行列变换，变成r(AT 0)，而r(AT 0)=r(AT)=r(A)</p>
+<p>37.Ax=0和ATAx=0是同解的</p>
+<p>38.n个线性无关的n维列向量，可以表示任意n维列向量。例如(1,0)T，(0,1)T可以表示任意的2维列向量</p>
+<p>39.行阶梯矩阵，每一行开头，最好都是1，如果是未知量，涉及到秩的问题，可能需要考虑未知量等于0的情况</p>
+<p>40.求方程组的通解，非齐次的特解，并不是增广矩阵最后一列的列向量。非齐次特解的算法，和齐次通解的算法差不多，就是把右边的0变成最后一列对应的数字，然后看有多少个自由未知量，例如1个，则可以令这个维0，得出其他；2个自由未知量，则可以使两个为0即可，得出其他</p>
+<p>41.实对称矩阵不同特征值之间正交</p>
+<p>42.正交需要对二重根一个进行正交，一个一重、另一个二重对应的特征向量，列出两个方程，方程的系数为另外两个特征向量元素的值，这个很重要，不要搞成-的</p>
+<p>43.实对称矩阵A，当求可逆矩阵P，使得P-1AP为对角矩阵的时候，只需要将三个特征值对应的特征向量求出来即可，这里一般会给两个二重特征值对应的特征向量，然后第3个要求的特征向量，只需要和给出的正交化即可，这里自由未知量的判断，看正交给出的两个方程，对应的秩是多少，然后就能判断出有几个自由未知量；同样的，当求可逆矩阵Q，使得QTAQ为对角矩阵的时候，需要将二重特征值对应的特征向量中其中一个和另一个以及一重对应特征向量进行正交化得到，得到两个方程的自由未知量，看正交给出的两个方程，对应的秩是多少</p>
+<p>44.考研不出~这个符号，一些书代表相似，一些书代表等价。考研一定会用文字写明白，是A相似于B，还是A相似于对角阵。880上用这个符号，代表相似</p>
+<p>45.A和B相似，说明特征值相同(|A-λE|=|B-λE|，特征向量没说相同)、迹相同、行列式相同、秩相同</p>
+<p>46.A和B相似，并不能说明，A或者B可以相似对角化</p>
+<p>47.特征向量是非0向量</p>
+<p>48.如果题目给出三个特征值，再给出对应三个特征向量α1、α2、α3，然后对三个特征向量进行线性组合，之后判断是不是(A+kE)的特征向量，只需要用线性组合乘这个A+kE，其中Aα1、Aα2、Aα3分别对应特征向量乘特征值，然后看右边，得出的东西，关于α1、α2、α3的式子，是不是左边的线性组合，如果是，先不急，因为只是说给出这三个特征向量，没说这三个线性无关，所以可能相等，比如就取一个相同的特征向量两遍，右边如果相减就为0，也是错的</p>
+<p>49.A-λE为0，则说明A-λE有n个自由未知量，那么特征向量就是所有n维非0向量</p>
+<p>50.最重要的两个结论，λ为二重特征值，A-λE对应的秩是1，A才可以相似对角化；A可以相似对角化的充要条件为A有n个线性无关的特征向量</p>
+<p>51.遇到A方=A，说明A和A-E的秩相加为n，那么A有n个线性无关的特征向量，说明A可以相似对角化</p>
+<p>52.二次型平方项系数，就为二次型矩阵A的主对角线元素，主对角线元素写出来之后，就要看X1X2、X2X3、X1X3前面的系数，例如X1X2前面的系数，就把系数减半，放在第1行和第2行上，也就是a12和a21的位置，则两个位置是需要关于主对角线对称的，x2x3和x1x3以此类推</p>
+<p>53.遇到二次型化标准形、规范形的情况，配方法不好使的话，就写A，然后算出A的特征值，得出正负惯性指数，然后用正负惯性指数来判断选哪个</p>
+<p>54.遇到给一个面，然后判断二次型里未知量的范围，需要把A求特征值的式子写出来，如果不好因式化解，就需要用给出面对应的正负惯性指数，再结合韦达定理来判断范围</p>
+<p>55.中值定理证明，一般用X代替积分的上限</p>
+<p>56.多元微分，两个不同的表达式不同的参数，求某个值全微分的解法</p>
+<p>57.简单随机样本代表里面每个都独立</p>
+<p>58.填空题算出的结果，要化到最简</p>
+<p>59.合同的充要条件是：正负惯性指数指数相同，如果合同那么他们的正负系数个数必然相同，所以与正定矩阵合同的矩阵必然也是正定矩阵，它们的特征值都大于0</p>
+<p>60.若实对称阵A的主对角线元素相同，则它的开方和平方矩阵B主对角线元素，不一定相同</p>
+<p>61.与正定矩阵相似的矩阵必然也是正定矩阵</p>
+<p>62.实对称矩阵的n次方以及开方都还是实对称矩阵</p>
+<p>63.实对称阵A的开方和平方对应的实对称阵B，每个位置的正负，和A不一定是一样的</p>
+<p>64.欧拉方程，令x=et，x<em>dy/dx=dy/dt，x2</em>d2y/dx2=d2y/dt2-dy/dt</p>
+<p>65.单连通区域之中不含有“洞”，而复连通区域之中会有“洞”</p>
+<p>66.闭区域是指简单闭曲线及它的内部</p>
+<p>67.若积分区域包含所有使得被积函数非负的点，且不包含使得被积函数小于零的点，则在该区域上，积分取得最大值</p>
+<p>68.如果t时间间隔内发生故障次数为X，而相继两次发生时间间隔为Y，则{Y&gt;t}表示，t在两次连续的故障发生中，也就代表，t时间间隔内没有故障发生，所以{Y&gt;t}={X=0}</p>
+<p>69.对于概率一些题目，可以考虑使用反集来解决，例如独立重复观察三次，三次至少有一次观察值大于3的概率为26/27，则反集为三次全部小于等于3的概率为1/27</p>
+<p>70.离散型求分布函数，每个端点就是分界点，在哪些点有概率，那么就在那些点分开，要分清分界点是离散还是连续的。如果分界点是离散的，例如有两个，则分成三个部分，第一个部分，小于第1个端点；第二个部分大于等于第1个端点，小于第2个端点；第三部分，大于等于第2个端点。对应的概率，只要还没有到下一个点，就把前面概率加起来就行。注意，大于号的必须带等于，小于的不带，和连续型分布函数不一样，连续型等于带在哪里都一样</p>
+<p>71.离散离散的时候，相对来说最简单；连续连续，求(X,Y)分布函数的时候，计算量最大。和Z=X+Y，Z=X-Y，Z=XY，Z=X/Y结合，求Z的分布函数的时候，需要用暴力求导；一个离散一个连续的时候，最复杂</p>
+<p>72.遇到e的x2次方求b到a的积分，可以考虑，变成标准正态分布N(0,1)的形式，然后系数提出来，后面就变成了Φ(b)-Φ(a)</p>
+<p>73.如果题目给出了Z和X、Y的关系，X是离散型，Y是连续型，那么X=0，Z给一个范围，可以转换为X=0，Y变成一个范围。然后一个离散型，一个连续型，求Z的分布函数，这个时候，需要对X这个离散型不同值进行讨论，每个值，都要去乘上，对应的条件概率，条件概率 | 后面为X为这个值。然后就能根据X和Y独立，条件概率就直接等于 | 前面部分的概率，然后利用Y的分布函数，把z的分布函数给算出来，例如算出来，之后根据z不同分布函数的分界点，得出多个范围，再根据这里z的多个范围，</p>
+<p>74.给X，Y正态分布，相互独立。求D(|X-Y|)的时候，这个Z=X-Y大概率服从标准正态分布，Z~N(0,1)，然后E(|Z|)可以通过概率密度求积分得到，E(|Z|2)=E(Z2)=D(Z)+E2(Z)。最后D(|X-Y|)=D(|Z|)=E(|Z|2)-E2(|Z|)</p>
+<p>75.分别找符合条件的上面算出来的z的分布函数，各个部分相加即可</p>
+<p>76.ɑ、ß线性无关，f=xT<em>ɑßT</em>X，ɑßT不一定为正交矩阵，则f的秩为2，正负惯性指数，各为1</p>
+<p>77.二维随机变量给一个区域，并且均匀分布，求Z=X+Y，算当z为不同区间的时候，f(x,y)的积分，也就是FZ(z)，然后用暴力求导去算fZ(z)。之后如果要算E(Z2)，那么就要对z2*fZ(z)逐段进行积分，就得到E(Z2)了</p>
+<p>78.最大似然估计的期望和方差，先用总体X的概率密度，得出分布函数，然后分布函数的n次方，然后再用这个分布函数的n次方，求导就得出了最大似然估计的分布函数。注意这里不要忘了，将题目给出的X的概率密度，得出分布函数</p>
+<p>79.给一个部分的X求和，算相关系数，直接求cov和D就可以，利用性质算就行了</p>
+<p>80.最大似然估计求期望，其实这个最大似然估计，整体相当于一个X，所以算期望的时候，是乘x的。注意，EX，是需要乘一个X的</p>
+<p>81.只要最大似然估计量为平均值，那么用最大似然估计量形成的函数，里面也可以用平均值代替，这是不变性。你把λ的最大似然估计量求出来，后面λ的函数直接用均值替换就可以。适用于，给一个概率，求概率的最大似然估计，这个概率算出来是λ的函数，把λ最大似然估计算出来，只要是平均值，就可以把概率算出来是λ的函数里面的λ用平均值代替</p>
+<p>82.若y= f(x)关于直线x= a(a不为0)对称，则f(x)=f(2a-x)；若y=f(x)关于点(a,0)对称(a不为0)，则f(x)=-f(2a-x)</p>
+<p>83.遇到二阶导的中值定理，一般用泰勒或者列出两个拉格朗日的式子，然后反解其中某一个点的一阶导，然后按照题目给的要求加起来，就能推出来了</p>
+<p>84.双中值定理。式子里面，两个量如果是对称，即可以相互交换，使得式子不变，那么就能用两个拉格朗日中值式子；如果不对称，一次拉格朗日，一次柯西来证明。一个柯西，一个拉格朗日的话，需要把要证明的，相同量移动到一边，然后一边没有分数的用拉格朗日，有分数的用柯西，注意分母，原函数，就是要设的g(x)</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://yuzhang.wang">YuZhangWang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yuzhang.wang/126-exam-mathematics/">https://yuzhang.wang/126-exam-mathematics/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://yuzhang.wang" target="_blank">YuZhangWang的领域</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%80%83%E7%A0%94/">考研</a><a class="post-meta__tags" href="/tags/%E6%95%B0%E5%AD%A6/">数学</a><a class="post-meta__tags" href="/tags/%E8%AE%B0%E5%BF%86/">记忆</a></div><div class="post-share"><div class="social-share" data-image="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202306221841436.png" data-sites="wechat,qq,weibo"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195242695.jpg" target="_blank"><img class="post-qr-code-img" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195242695.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195556282.png" target="_blank"><img class="post-qr-code-img" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195556282.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="prev-post pull-left" href="/127-exam-politics/" title="考研政治记忆点"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202306221842132.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">考研政治记忆点</div></div></a><a class="next-post pull-right" href="/125-aopic-dermatitis/" title="原来我的皮肤生病了"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305261814926.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">原来我的皮肤生病了</div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a href="/128-exam-935/" title="考研935记忆点"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202306221843216.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-08-11</div><div class="title">考研935记忆点</div></div></a><a href="/127-exam-politics/" title="考研政治记忆点"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202306221842132.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-08-11</div><div class="title">考研政治记忆点</div></div></a><a href="/062-long-term-arrangement/" title="2022考研初试长期安排"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807050609731.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-08-07</div><div class="title">2022考研初试长期安排</div></div></a><a href="/071-preliminary-record/" title="考研初记录"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807051300871.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-08-07</div><div class="title">考研初记录</div></div></a><a href="/073-march-resumption/" title="考研三月复盘"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807051356525.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-08-07</div><div class="title">考研三月复盘</div></div></a><a href="/078-april-resumption/" title="考研四月复盘"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807051610211.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-08-07</div><div class="title">考研四月复盘</div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info is-center"><div class="avatar-img"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">YuZhangWang</div><div class="author-info-description">PLUSULTRA!</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">139</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">288</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://yuzhang-wang.translate.goog/?_x_tr_sl=zh-CN&amp;_x_tr_tl=en&amp;_x_tr_hl=zh-CN&amp;_x_tr_pto=wapp"><i class="fa-solid fa-earth-americas"></i><span>English Version Blog</span></a><div class="card-info-social-icons"><a class="social-icon" href="mailto:YuZhangWang233@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://github.com/YuZhangWang" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/19474542" target="_blank" title="bilibili"><i class="fab fa-bilibili" style="color: #FB7299;"></i></a><a class="social-icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/mmqrcode1615295634051.png" target="_blank" title="WeChat"><i class="fab fa-weixin" style="color: #199D18;"></i></a><a class="social-icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/qrcode_1615295622746.jpg" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #4AABE7;"></i></a><a class="social-icon" href="https://yuzhang.wang/rss2.xml" target="_blank" title="RSS"><i class="fa-solid fa-rss" style="color: #F99C36;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">1.视频发布于B站，文章发布于博客</br> 2.待修复bug:无</br> 3.待优化地方:无</br></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/142-note-tag/" title="Butterfly中Note标签使用方法"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202310141208712.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Butterfly中Note标签使用方法"/></a><div class="content"><a class="title" href="/142-note-tag/" title="Butterfly中Note标签使用方法">Butterfly中Note标签使用方法</a><time datetime="2024-10-08T16:21:57.101Z" title="更新于 2024-10-09 00:21:57">2024-10-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/001-obsidian-template/" title="无标题"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195159290.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无标题"/></a><div class="content"><a class="title" href="/001-obsidian-template/" title="无标题">无标题</a><time datetime="2024-07-09T12:21:49.328Z" title="更新于 2024-07-09 20:21:49">2024-07-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/028-synchronization-strategy/" title="炉石的同步策略"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826222306.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="炉石的同步策略"/></a><div class="content"><a class="title" href="/028-synchronization-strategy/" title="炉石的同步策略">炉石的同步策略</a><time datetime="2023-10-18T00:26:24.693Z" title="更新于 2023-10-18 08:26:24">2023-10-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/027-new-function/" title="一加新功能"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/08/07/20220807043237906.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一加新功能"/></a><div class="content"><a class="title" href="/027-new-function/" title="一加新功能">一加新功能</a><time datetime="2023-10-18T00:26:17.338Z" title="更新于 2023-10-18 08:26:17">2023-10-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/114-defense-experience/" title="导师给的答辩经验"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202208070536934.7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="导师给的答辩经验"/></a><div class="content"><a class="title" href="/114-defense-experience/" title="导师给的答辩经验">导师给的答辩经验</a><time datetime="2023-10-18T00:25:28.166Z" title="更新于 2023-10-18 08:25:28">2023-10-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/133-best-template/" title="你应该为自己创建一个Github仓库模板"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309012124695.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="你应该为自己创建一个Github仓库模板"/></a><div class="content"><a class="title" href="/133-best-template/" title="你应该为自己创建一个Github仓库模板">你应该为自己创建一个Github仓库模板</a><time datetime="2023-10-11T01:56:16.186Z" title="更新于 2023-10-11 09:56:16">2023-10-11</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="footer_custom_text"><div class="footer_custom_text"><div class="coin-title"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309032153357.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309032153357.png" alt="Moe" style="height:1.3em" data-ll-status="loaded" class="entered loaded">&nbsp;萌ICP备<a href="https://icp.gov.moe/?keyword=20238869" target="_blank">20238869</a>号&nbsp;<i class="fa-fw fas fa-duotone fa-cat"></i>&nbsp;<a href="https://github.com/YuZhangWang" target="_blank">YuZhangWang</a>&nbsp;©2019-Present</div><div class="coin-title">Powered By&nbsp;<a href="https://hexo.io/zh-cn/index.html" target="_blank">Hexo</a>&nbsp;|&nbsp;Theme By&nbsp;<a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank">Butterfly</a></div><div class="coin-title"><a href="https://qwerty.kaiyi.cool/" target="_blank" alt="qwerty-learner" rel="nofollow"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131945636.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131945636.png" alt="qwerty-learner" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a>&nbsp;<a target="_blank" rel="noopener" href="https://blogwe.com/"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195801782.jpg" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195801782.jpg" alt="博客大全" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a>&nbsp;<a target="_blank" rel="noopener" href="https://vim-adventures.com/"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195910376.jpg" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195910376.jpg" alt="vim-adventures" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a>&nbsp;<a target="_blank" rel="noopener" href="https://huanghaibin91.github.io/Reversi/"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418200005401.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418200005401.png" alt="黑白翻转棋" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a>&nbsp;<a target="_blank" rel="noopener" href="https://cloud.tencent.com/"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826081712.svg" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826081712.svg" alt="腾讯云" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a>&nbsp;<a target="_blank" rel="noopener" href="https://www.jsdelivr.com"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131843411.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131843411.png" alt="Jsdelivr" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a></div></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>(() => {
+  const panguFn = () => {
+    if (typeof pangu === 'object') pangu.autoSpacingPage()
+    else {
+      btf.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+        .then(() => {
+          pangu.autoSpacingPage()
+        })
+    }
+  }
+
+  const panguInit = () => {
+    if (false){
+      GLOBAL_CONFIG_SITE.isPost && panguFn()
+    } else {
+      panguFn()
+    }
+  }
+
+  btf.addGlobalFn('pjaxComplete', panguInit, 'pangu')
+  document.addEventListener('DOMContentLoaded', panguInit)
+})()</script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+      
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (true) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(()=>{
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'YuZhangWang/YuZhangWang.github.io',
+      'data-repo-id': 'MDEwOlJlcG9zaXRvcnkzNDY4MTQyNjE=',
+      'data-category-id': 'DIC_kwDOFKv3Nc4CQ6NC',
+      'data-mapping': 'pathname',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },{"data-mapping":"title","data-strict":1,"data-reactions-enabled":1,"data-emit-metadata":0,"data-input-position":"top","data-lang":"zh-CN"})
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment= loadGiscus
+  }
+})()</script></div><script>document.addEventListener('visibilitychange', function () {if (document.visibilityState == 'hidden') {normal_title = document.title;document.title = '早上好 中午好 晚上好';}else document.title = normal_title;});</script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/学术研究/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🎓 Academic Research (15)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/项目展示/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">💎 Project Showcase (16)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/Python学习笔记/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📖 Python Learning Notes (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/CV学习笔记/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">💻 CV Learning Notes (9)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/C-学习笔记/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📖 C++ Learning Notes (4)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/数据结构学习笔记/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">💻 Data Structures Learning Notes (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><a class="magnet_link_more"  href="https://yuzhang.wang/categories" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(50% - 5px);background: #f2f2f2;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: rgb(127, 199, 244)}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>历史上的今天</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='/'|| '/' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
