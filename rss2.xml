@@ -15,21 +15,51 @@
     <atom:link href="https://yuzhang.wang/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>PLUSULTRA!</description>
-    <pubDate>Sun, 08 Oct 2023 15:54:11 GMT</pubDate>
+    <pubDate>Mon, 13 Oct 2025 10:55:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>抑郁症与线粒体能量代谢-Section01</title>
-      <link>https://yuzhang.wang/134-depression-mitochondrial-energy-metabolism-01/</link>
-      <guid>https://yuzhang.wang/134-depression-mitochondrial-energy-metabolism-01/</guid>
+      <title>教资复习-职业理念笔记</title>
+      <link>https://yuzhang.wang/135-teaching-qualification-review/</link>
+      <guid>https://yuzhang.wang/135-teaching-qualification-review/</guid>
+      <pubDate>Sat, 11 Oct 2025 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;这里将罗列一些教资复习过程中，职业理念这一部分错过的题目笔记。&lt;/p&gt;
+&lt;h1 id=&quot;教育观&quot;&gt;&lt;a href=&quot;#教育观&quot; class=&quot;headerlink&quot; title=&quot;教育观&quot;&gt;&lt;/a&gt;教育观&lt;/h1&gt;&lt;h2 id=&quot;素质教育的实质&quot;&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E8%AF%95%E8%B5%84%E6%96%99/">考试资料</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81/">教师资格证</category>
+      
+      
+      <comments>https://yuzhang.wang/135-teaching-qualification-review/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>抑郁症与线粒体能量代谢</title>
+      <link>https://yuzhang.wang/134-depression-mitochondrial-energy-metabolism/</link>
+      <guid>https://yuzhang.wang/134-depression-mitochondrial-energy-metabolism/</guid>
       <pubDate>Thu, 28 Sep 2023 00:08:08 GMT</pubDate>
       
         
         
           
           
-      <description>&lt;p&gt;从本篇博客开始，我将开一个大坑，对一些Paper进行解读，其目的是为了阐述抑郁症与线粒体能量代之间的关系，本篇博客为其中的第一章节，用于了解一些医学基本概念，对两幅图进行解释说明。&lt;/p&gt;
-&lt;h1 id=&quot;能量代谢的绝对定量&quot;&gt;&lt;a href=&quot;#能量代谢的绝对定量&quot;</description>
+      <description>&lt;p&gt;从本篇博客主要对抑郁症与能量代谢方面的内容进行简单的讲解，为论文的完成做一定的铺垫。&lt;/p&gt;
+&lt;h1 id=&quot;能量代谢的绝对定量&quot;&gt;&lt;a href=&quot;#能量代谢的绝对定量&quot; class=&quot;headerlink&quot;</description>
           
         
       
@@ -46,7 +76,7 @@
       <category domain="https://yuzhang.wang/tags/%E8%83%BD%E9%87%8F%E4%BB%A3%E8%B0%A2/">能量代谢</category>
       
       
-      <comments>https://yuzhang.wang/134-depression-mitochondrial-energy-metabolism-01/#disqus_thread</comments>
+      <comments>https://yuzhang.wang/134-depression-mitochondrial-energy-metabolism/#disqus_thread</comments>
       
     </item>
     
@@ -662,46 +692,6 @@
       
       
       <comments>https://yuzhang.wang/121-northern-memorial/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>遍历二叉树</title>
-      <link>https://yuzhang.wang/120-binary-tree/</link>
-      <guid>https://yuzhang.wang/120-binary-tree/</guid>
-      <pubDate>Fri, 05 Aug 2022 01:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;遍历二叉树中进行的一些操作&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;创建二叉树&lt;/li&gt;
-&lt;li&gt;先序遍历二叉树&lt;/li&gt;
-&lt;li&gt;计算树高&lt;/li&gt;
-&lt;li&gt;计算树叶数&lt;/li&gt;
-&lt;li&gt;计算结点数&lt;/li&gt;
-&lt;li&gt;计算分支点个数&lt;/li&gt;
-&lt;li&gt;二叉树拷贝&lt;/li&gt;
-&lt;li&gt;二叉</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/C-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">C++学习笔记</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">数据结构学习笔记</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E9%81%8D%E5%8E%86/">遍历</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/">二叉树</category>
-      
-      
-      <comments>https://yuzhang.wang/120-binary-tree/#disqus_thread</comments>
       
     </item>
     
