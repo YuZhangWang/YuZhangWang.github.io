@@ -15,14 +15,74 @@
     <atom:link href="https://yuzhang.wang/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>PLUSULTRA!</description>
-    <pubDate>Mon, 13 Oct 2025 19:34:04 GMT</pubDate>
+    <pubDate>Tue, 14 Oct 2025 10:23:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>量化增强强化学习（QeRL）：突破大语言模型训练效率与性能的新范式</title>
+      <link>https://yuzhang.wang/147-quantization-enhanced-reinforcement-learning/</link>
+      <guid>https://yuzhang.wang/147-quantization-enhanced-reinforcement-learning/</guid>
+      <pubDate>Tue, 14 Oct 2025 01:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/QeRL/">QeRL</category>
+      
+      
+      <comments>https://yuzhang.wang/147-quantization-enhanced-reinforcement-learning/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>基于ATTENDRE模型的长上下文处理突破：记忆管理与注意力机制的协同进化</title>
+      <link>https://yuzhang.wang/146-long-context-processing/</link>
+      <guid>https://yuzhang.wang/146-long-context-processing/</guid>
+      <pubDate>Tue, 14 Oct 2025 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E9%95%BF%E4%B8%8A%E4%B8%8B%E6%96%87%E5%A4%84%E7%90%86/">长上下文处理</category>
+      
+      <category domain="https://yuzhang.wang/tags/ATTENDRE/">ATTENDRE</category>
+      
+      
+      <comments>https://yuzhang.wang/146-long-context-processing/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>纳斯达克100指数：宏观架构、历史绩效与个人投资策略的系统研究</title>
       <link>https://yuzhang.wang/145-Nasdaq100/</link>
       <guid>https://yuzhang.wang/145-Nasdaq100/</guid>
-      <pubDate>Tue, 14 Oct 2025 00:08:08 GMT</pubDate>
+      <pubDate>Mon, 13 Oct 2025 00:08:08 GMT</pubDate>
       
         
         
@@ -617,80 +677,6 @@
       
       
       <comments>https://yuzhang.wang/128-exam-935/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>考研政治记忆点</title>
-      <link>https://yuzhang.wang/127-exam-politics/</link>
-      <guid>https://yuzhang.wang/127-exam-politics/</guid>
-      <pubDate>Thu, 01 Jun 2023 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;1.我国国家制度和国家治理体系具有显著优势，是坚定“四个自信”的基本依据&lt;/p&gt;
-&lt;p&gt;2.近代以来，中国人民反帝反封建的斗争之所以屡遭挫折和失败，最重要的原因就是没有一个先进政党作为凝聚力量的坚强领导核心&lt;/p&gt;
-&lt;p&gt;3.美国一些势力出于霸权心态和冷战思维，将中国视为最</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E8%80%83%E8%AF%95%E8%B5%84%E6%96%99/">考试资料</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E8%80%83%E7%A0%94%E5%A4%8D%E7%9B%98/">考研复盘</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E8%80%83%E7%A0%94/">考研</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E8%AE%B0%E5%BF%86/">记忆</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E6%94%BF%E6%B2%BB/">政治</category>
-      
-      
-      <comments>https://yuzhang.wang/127-exam-politics/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>考研数学记忆点</title>
-      <link>https://yuzhang.wang/126-exam-mathematics/</link>
-      <guid>https://yuzhang.wang/126-exam-mathematics/</guid>
-      <pubDate>Wed, 31 May 2023 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;1.一些记忆公式&lt;/p&gt;
-&lt;div class=&quot;table-container&quot;&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;泰勒公式&lt;/th&gt;
-&lt;th</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E8%80%83%E8%AF%95%E8%B5%84%E6%96%99/">考试资料</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E8%80%83%E7%A0%94%E5%A4%8D%E7%9B%98/">考研复盘</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E8%80%83%E7%A0%94/">考研</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E6%95%B0%E5%AD%A6/">数学</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E8%AE%B0%E5%BF%86/">记忆</category>
-      
-      
-      <comments>https://yuzhang.wang/126-exam-mathematics/#disqus_thread</comments>
       
     </item>
     
