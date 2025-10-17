@@ -15,8 +15,278 @@
     <atom:link href="https://yuzhang.wang/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>PLUSULTRA!</description>
-    <pubDate>Tue, 14 Oct 2025 10:23:29 GMT</pubDate>
+    <pubDate>Fri, 17 Oct 2025 03:18:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>联邦学习中的统计异质性建模与优化理论</title>
+      <link>https://yuzhang.wang/156-statistical-heterogeneity-modeling/</link>
+      <guid>https://yuzhang.wang/156-statistical-heterogeneity-modeling/</guid>
+      <pubDate>Fri, 17 Oct 2025 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;&lt;strong&gt;摘要&lt;/strong&gt;  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;联邦学习（Federated Learning, FL）在保留数据本地性的前提下实现多方协同建模，然而统计异质性（clients</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E7%BB%9F%E8%AE%A1%E5%BC%82%E8%B4%A8%E6%80%A7%E5%BB%BA%E6%A8%A1/">统计异质性建模</category>
+      
+      
+      <comments>https://yuzhang.wang/156-statistical-heterogeneity-modeling/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>联邦学习范式下的隐私伦理与数据所有权哲学研究</title>
+      <link>https://yuzhang.wang/155-privacy-ethics-data-ownership/</link>
+      <guid>https://yuzhang.wang/155-privacy-ethics-data-ownership/</guid>
+      <pubDate>Thu, 16 Oct 2025 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;&lt;strong&gt;摘要&lt;/strong&gt;  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;联邦学习（Federated Learning,</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E9%9A%90%E7%A7%81%E4%BC%A6%E7%90%86/">隐私伦理</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E6%95%B0%E6%8D%AE%E6%89%80%E6%9C%89%E6%9D%83/">数据所有权</category>
+      
+      
+      <comments>https://yuzhang.wang/155-privacy-ethics-data-ownership/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>单循环联邦演员—评论家方法</title>
+      <link>https://yuzhang.wang/154-critic-method/</link>
+      <guid>https://yuzhang.wang/154-critic-method/</guid>
+      <pubDate>Wed, 15 Oct 2025 06:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;&lt;strong&gt;摘要&lt;/strong&gt;  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;联邦强化学习（Federated Reinforcement Learning,</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E5%8D%95%E5%BE%AA%E7%8E%AF%E8%81%94%E9%82%A6%E6%BC%94%E5%91%98/">单循环联邦演员</category>
+      
+      
+      <comments>https://yuzhang.wang/154-critic-method/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>面向资源受限场景的 FedFreeze 框架</title>
+      <link>https://yuzhang.wang/153-fedFreeze-framework/</link>
+      <guid>https://yuzhang.wang/153-fedFreeze-framework/</guid>
+      <pubDate>Wed, 15 Oct 2025 05:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot; title=&quot;摘要&quot;&gt;&lt;/a&gt;摘要&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;在边缘设备、移动终端和物联网环境中，联邦学习（Federated Learning,</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/FedFreeze/">FedFreeze</category>
+      
+      
+      <comments>https://yuzhang.wang/153-fedFreeze-framework/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>大模型时代的高效云-边协同推理框架</title>
+      <link>https://yuzhang.wang/152-edge-collaborative-reasoning-framework/</link>
+      <guid>https://yuzhang.wang/152-edge-collaborative-reasoning-framework/</guid>
+      <pubDate>Wed, 15 Oct 2025 04:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;&lt;strong&gt;摘要&lt;/strong&gt; </description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E8%BE%B9%E5%8D%8F%E5%90%8C%E6%8E%A8%E7%90%86%E6%A1%86%E6%9E%B6/">边协同推理框架</category>
+      
+      
+      <comments>https://yuzhang.wang/152-edge-collaborative-reasoning-framework/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>选择性对比解码的边-云协同动态推理</title>
+      <link>https://yuzhang.wang/151-selective-contrast-decoding-edges/</link>
+      <guid>https://yuzhang.wang/151-selective-contrast-decoding-edges/</guid>
+      <pubDate>Wed, 15 Oct 2025 03:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E4%BA%91%E5%8D%8F%E5%90%8C/">云协同</category>
+      
+      
+      <comments>https://yuzhang.wang/151-selective-contrast-decoding-edges/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>跨机构联邦风控平台：架构、方法与实践</title>
+      <link>https://yuzhang.wang/150-federal-risk-control-platform/</link>
+      <guid>https://yuzhang.wang/150-federal-risk-control-platform/</guid>
+      <pubDate>Wed, 15 Oct 2025 02:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;跨机构联邦风控平台：架构、方法与实践&quot;&gt;&lt;a href=&quot;#跨机构联邦风控平台：架构、方法与实践&quot; class=&quot;headerlink&quot; title=&quot;跨机构联邦风控平台：架构、方法与实践&quot;&gt;&lt;/a&gt;跨机构联邦风控平台：架构、方法与实践&lt;/h1&gt;&lt;h2</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E8%81%94%E9%82%A6%E9%A3%8E%E6%8E%A7%E5%B9%B3%E5%8F%B0/">联邦风控平台</category>
+      
+      
+      <comments>https://yuzhang.wang/150-federal-risk-control-platform/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>人体微生态与宿主的交互调控机制：从共生稳态到精准干预</title>
+      <link>https://yuzhang.wang/149-human-microbiome-host-interaction/</link>
+      <guid>https://yuzhang.wang/149-human-microbiome-host-interaction/</guid>
+      <pubDate>Wed, 15 Oct 2025 01:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E4%BA%BA%E4%BD%93%E5%BE%AE%E7%94%9F%E6%80%81/">人体微生态</category>
+      
+      
+      <comments>https://yuzhang.wang/149-human-microbiome-host-interaction/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>基于人类反馈的语言模型训练：技术前沿、挑战与未来展望</title>
+      <link>https://yuzhang.wang/148-language-model-training-human-feedback/</link>
+      <guid>https://yuzhang.wang/148-language-model-training-human-feedback/</guid>
+      <pubDate>Wed, 15 Oct 2025 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E4%BA%BA%E7%B1%BB%E5%8F%8D%E9%A6%88/">人类反馈</category>
+      
+      
+      <comments>https://yuzhang.wang/148-language-model-training-human-feedback/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>量化增强强化学习（QeRL）：突破大语言模型训练效率与性能的新范式</title>
@@ -281,9 +551,9 @@
       <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
       
       
-      <category domain="https://yuzhang.wang/tags/%E7%BA%BF%E7%B2%92%E4%BD%93/">线粒体</category>
-      
       <category domain="https://yuzhang.wang/tags/%E8%83%BD%E9%87%8F%E4%BB%A3%E8%B0%A2/">能量代谢</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E7%BA%BF%E7%B2%92%E4%BD%93/">线粒体</category>
       
       
       <comments>https://yuzhang.wang/134-depression-mitochondrial-energy-metabolism/#disqus_thread</comments>
@@ -352,331 +622,6 @@
       
       
       <comments>https://yuzhang.wang/139-invoice-identification/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>关于麻醉药及违禁药在抑郁症快速起效领域应用情况的调查研究</title>
-      <link>https://yuzhang.wang/138-prohibited-drugs/</link>
-      <guid>https://yuzhang.wang/138-prohibited-drugs/</guid>
-      <pubDate>Wed, 06 Sep 2023 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;在&lt;a</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E5%BF%AB%E9%80%9F%E6%8A%97%E6%8A%91%E9%83%81/">快速抗抑郁</category>
-      
-      <category domain="https://yuzhang.wang/tags/Esketamine/">Esketamine</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E9%BA%BB%E9%86%89%E8%8D%AF/">麻醉药</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E8%BF%9D%E7%A6%81%E8%8D%AF/">违禁药</category>
-      
-      <category domain="https://yuzhang.wang/tags/Spavato/">Spavato</category>
-      
-      <category domain="https://yuzhang.wang/tags/Arketamine/">Arketamine</category>
-      
-      <category domain="https://yuzhang.wang/tags/Nitrous-oxide/">Nitrous oxide</category>
-      
-      <category domain="https://yuzhang.wang/tags/Lsoflurane/">Lsoflurane</category>
-      
-      
-      <comments>https://yuzhang.wang/138-prohibited-drugs/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>关于抑郁症可能的发病机制调查研究</title>
-      <link>https://yuzhang.wang/137-etiopathogenesis/</link>
-      <guid>https://yuzhang.wang/137-etiopathogenesis/</guid>
-      <pubDate>Tue, 29 Aug 2023 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;上一篇&lt;a</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E8%83%BD%E9%87%8F%E4%BB%A3%E8%B0%A2/">能量代谢</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E6%8A%91%E9%83%81%E7%97%87%E5%8F%91%E7%97%85%E6%9C%BA%E5%88%B6/">抑郁症发病机制</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E7%A5%9E%E7%BB%8F%E9%80%92%E8%B4%A8/">神经递质</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E8%83%BD%E9%87%8F%E4%BB%A3%E8%B0%A2%E7%B4%8A%E4%B9%B1/">能量代谢紊乱</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E5%A4%A7%E8%84%91%E7%BB%93%E6%9E%84/">大脑结构</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E8%82%A0%E9%81%93%E8%8F%8C%E7%BE%A4/">肠道菌群</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E5%A5%96%E8%B5%8F%E5%9B%9E%E8%B7%AF/">奖赏回路</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E6%97%A0%E5%BF%AB%E6%84%9F%E7%97%87/">无快感症</category>
-      
-      
-      <comments>https://yuzhang.wang/137-etiopathogenesis/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>关于快速抗抑郁的药物研究进展</title>
-      <link>https://yuzhang.wang/136-rapid-treatment-depression/</link>
-      <guid>https://yuzhang.wang/136-rapid-treatment-depression/</guid>
-      <pubDate>Mon, 28 Aug 2023 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;发展历史&quot;&gt;&lt;a href=&quot;#发展历史&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E5%BF%AB%E9%80%9F%E6%8A%97%E6%8A%91%E9%83%81/">快速抗抑郁</category>
-      
-      <category domain="https://yuzhang.wang/tags/Brexanolone/">Brexanolone</category>
-      
-      <category domain="https://yuzhang.wang/tags/Esketamine/">Esketamine</category>
-      
-      <category domain="https://yuzhang.wang/tags/Psilocybin/">Psilocybin</category>
-      
-      <category domain="https://yuzhang.wang/tags/mGlu2-3%E5%8F%97%E4%BD%93%E6%8B%AE%E6%8A%97%E5%89%82/">mGlu2/3受体拮抗剂</category>
-      
-      <category domain="https://yuzhang.wang/tags/AMPA%E5%8F%97%E4%BD%93%E5%A2%9E%E6%95%88%E5%89%82/">AMPA受体增效剂</category>
-      
-      <category domain="https://yuzhang.wang/tags/GLYX-13-Rapastinel/">GLYX-13(Rapastinel)</category>
-      
-      <category domain="https://yuzhang.wang/tags/Scopolamin/">Scopolamin</category>
-      
-      <category domain="https://yuzhang.wang/tags/TAK-653/">TAK-653</category>
-      
-      <category domain="https://yuzhang.wang/tags/Sertraline/">Sertraline</category>
-      
-      <category domain="https://yuzhang.wang/tags/Arketamin/">Arketamin</category>
-      
-      <category domain="https://yuzhang.wang/tags/GABA%E8%B4%9F%E6%80%A7%E5%8F%98%E6%9E%84%E8%B0%83%E8%8A%82%E5%89%82/">GABA负性变构调节剂</category>
-      
-      
-      <comments>https://yuzhang.wang/136-rapid-treatment-depression/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>你应该为自己创建一个Github仓库模板</title>
-      <link>https://yuzhang.wang/133-best-template/</link>
-      <guid>https://yuzhang.wang/133-best-template/</guid>
-      <pubDate>Wed, 07 Jun 2023 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;这个Github仓库模板的内容不多，我有两种介绍方法，一种是一个一个文件，一行一行说过来，另一种是根据所有的功能介绍，在这里我选择从最上面文件夹的最上面的文件的最上面的内容来慢慢讲起来，内容可能有所跳跃，需要注意一下，那让我们开始吧&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA/">项目展示</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/Github/">Github</category>
-      
-      <category domain="https://yuzhang.wang/tags/Awesome/">Awesome</category>
-      
-      
-      <comments>https://yuzhang.wang/133-best-template/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>如何拥有一个Awesome的Github介绍页面</title>
-      <link>https://yuzhang.wang/132-github-introduction/</link>
-      <guid>https://yuzhang.wang/132-github-introduction/</guid>
-      <pubDate>Tue, 06 Jun 2023 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;先上效果图&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309012219165.jpeg&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA/">项目展示</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/Github/">Github</category>
-      
-      <category domain="https://yuzhang.wang/tags/Awesome/">Awesome</category>
-      
-      
-      <comments>https://yuzhang.wang/132-github-introduction/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Butterfly主题中远程友链实操</title>
-      <link>https://yuzhang.wang/131-remote-friend-linking/</link>
-      <guid>https://yuzhang.wang/131-remote-friend-linking/</guid>
-      <pubDate>Mon, 05 Jun 2023 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;其实这个操作不难，跟着&lt;a</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA/">项目展示</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/Butterfly/">Butterfly</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E8%BF%9C%E7%A8%8B%E5%8F%8B%E9%93%BE/">远程友链</category>
-      
-      
-      <comments>https://yuzhang.wang/131-remote-friend-linking/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>域名的小问题导致网站关闭了很久</title>
-      <link>https://yuzhang.wang/130-domain-name-issue/</link>
-      <guid>https://yuzhang.wang/130-domain-name-issue/</guid>
-      <pubDate>Sun, 04 Jun 2023 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;关注我博客的朋友应该发现了，我的博客关闭了一段时间，时间不到半年左右，首先和各位说一声抱歉，让大家久等了，这篇博客就是来详细说明具体情况的&lt;/p&gt;
-&lt;h1 id=&quot;问题表象&quot;&gt;&lt;a href=&quot;#问题表象&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E7%BD%91%E7%AB%99/">网站</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E5%9F%9F%E5%90%8D/">域名</category>
-      
-      
-      <comments>https://yuzhang.wang/130-domain-name-issue/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>原神进度以及未来规划</title>
-      <link>https://yuzhang.wang/129-genshin-progress-planning/</link>
-      <guid>https://yuzhang.wang/129-genshin-progress-planning/</guid>
-      <pubDate>Sat, 03 Jun 2023 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;&lt;img src=&quot;https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202308111939961.jpg&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%B8%B8%E6%88%8F%E4%BD%93%E9%AA%8C/">游戏体验</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E5%8E%9F%E7%A5%9E/">原神</category>
-      
-      
-      <comments>https://yuzhang.wang/129-genshin-progress-planning/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>考研935记忆点</title>
-      <link>https://yuzhang.wang/128-exam-935/</link>
-      <guid>https://yuzhang.wang/128-exam-935/</guid>
-      <pubDate>Fri, 02 Jun 2023 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;1.考研指定语言用C或者C++，可以调库，但是也要看场景，但建议高级函数不要调用，比如排序和查找相关sort()，stable_sort()，partial_sort()，nth_element()，binary_serach()，lower_bound()，upper_b</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E8%80%83%E8%AF%95%E8%B5%84%E6%96%99/">考试资料</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E8%80%83%E7%A0%94%E5%A4%8D%E7%9B%98/">考研复盘</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E8%80%83%E7%A0%94/">考研</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E8%AE%B0%E5%BF%86/">记忆</category>
-      
-      <category domain="https://yuzhang.wang/tags/935/">935</category>
-      
-      
-      <comments>https://yuzhang.wang/128-exam-935/#disqus_thread</comments>
       
     </item>
     
