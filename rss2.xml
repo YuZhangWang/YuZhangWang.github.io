@@ -15,8 +15,40 @@
     <atom:link href="https://yuzhang.wang/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>PLUSULTRA!</description>
-    <pubDate>Fri, 17 Oct 2025 14:47:41 GMT</pubDate>
+    <pubDate>Fri, 14 Nov 2025 02:59:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>教资复习-教师职业道德笔记</title>
+      <link>https://yuzhang.wang/157-teacher-professional-ethics/</link>
+      <guid>https://yuzhang.wang/157-teacher-professional-ethics/</guid>
+      <pubDate>Fri, 14 Nov 2025 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;这里将罗列一些教资复习过程中，职业理念这一部分错过的题目笔记。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;教师职业道德规范&quot;&gt;&lt;a href=&quot;#教师职业道德规范&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E8%AF%95%E8%B5%84%E6%96%99/">考试资料</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81/">教师资格证</category>
+      
+      
+      <comments>https://yuzhang.wang/157-teacher-professional-ethics/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>联邦学习中的统计异质性建模与优化理论</title>
@@ -419,8 +451,10 @@
         
           
           
-      <description>&lt;p&gt;这里将罗列一些教资复习过程中，职业理念这一部分错过的题目笔记。&lt;/p&gt;
-&lt;h1 id=&quot;教育观&quot;&gt;&lt;a href=&quot;#教育观&quot; class=&quot;headerlink&quot; title=&quot;教育观&quot;&gt;&lt;/a&gt;教育观&lt;/h1&gt;&lt;h2 id=&quot;素质教育的实质&quot;&gt;&lt;a</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;这里将罗列一些教资复习过程中，职业理念这一部分错过的题目笔记。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;教育观&quot;&gt;&lt;a href=&quot;#教育观&quot; class=&quot;headerlink&quot;</description>
           
         
       
@@ -587,41 +621,6 @@
       
       
       <comments>https://yuzhang.wang/142-note-tag/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>增值税发票自动识别</title>
-      <link>https://yuzhang.wang/139-invoice-identification/</link>
-      <guid>https://yuzhang.wang/139-invoice-identification/</guid>
-      <pubDate>Wed, 13 Sep 2023 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;绪论&quot;&gt;&lt;a href=&quot;#绪论&quot; class=&quot;headerlink&quot; title=&quot;绪论&quot;&gt;&lt;/a&gt;绪论&lt;/h1&gt;&lt;h2 id=&quot;课题的研究背景及意义&quot;&gt;&lt;a href=&quot;#课题的研究背景及意义&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA/">项目展示</category>
-      
-      <category domain="https://yuzhang.wang/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/CRNN/">CRNN</category>
-      
-      <category domain="https://yuzhang.wang/tags/CTPN/">CTPN</category>
-      
-      <category domain="https://yuzhang.wang/tags/%E5%A2%9E%E5%80%BC%E7%A8%8E%E5%8F%91%E7%A5%A8/">增值税发票</category>
-      
-      
-      <comments>https://yuzhang.wang/139-invoice-identification/#disqus_thread</comments>
       
     </item>
     
