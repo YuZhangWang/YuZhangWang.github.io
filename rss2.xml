@@ -15,8 +15,40 @@
     <atom:link href="https://yuzhang.wang/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>PLUSULTRA!</description>
-    <pubDate>Fri, 14 Nov 2025 02:59:21 GMT</pubDate>
+    <pubDate>Sun, 30 Nov 2025 10:23:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>教资复习-教育法律法规笔记</title>
+      <link>https://yuzhang.wang/158-education-laws-regulations/</link>
+      <guid>https://yuzhang.wang/158-education-laws-regulations/</guid>
+      <pubDate>Fri, 28 Nov 2025 00:08:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;这里将罗列一些教资复习过程中，教育法律法规这一部分错过的题目笔记。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;教师权力与义务&quot;&gt;&lt;a href=&quot;#教师权力与义务&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E8%80%83%E8%AF%95%E8%B5%84%E6%96%99/">考试资料</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81/">教师资格证</category>
+      
+      
+      <comments>https://yuzhang.wang/158-education-laws-regulations/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>教资复习-教师职业道德笔记</title>
@@ -29,7 +61,7 @@
           
           
       <description>&lt;blockquote&gt;
-&lt;p&gt;这里将罗列一些教资复习过程中，职业理念这一部分错过的题目笔记。&lt;/p&gt;
+&lt;p&gt;这里将罗列一些教资复习过程中，教师职业道德这一部分错过的题目笔记。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&quot;教师职业道德规范&quot;&gt;&lt;a href=&quot;#教师职业道德规范&quot; class=&quot;headerlink&quot;</description>
           
@@ -591,36 +623,6 @@
       
       
       <comments>https://yuzhang.wang/134-depression-mitochondrial-energy-metabolism/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Butterfly中Note标签使用方法</title>
-      <link>https://yuzhang.wang/142-note-tag/</link>
-      <guid>https://yuzhang.wang/142-note-tag/</guid>
-      <pubDate>Thu, 14 Sep 2023 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;事情是这样子，我将友链的管理，放入了Github仓库中，如果有小伙伴需要我加入他的友链，那么去仓库中提一个PR就可以了，不用再每次我写完部署上去。我也写了提示的话，让申请友链的小伙伴们直接去仓库。&lt;/p&gt;
-&lt;p&gt;&lt;img</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%9E%81%E5%AE%A2%E4%B9%8B%E6%97%85/">极客之旅</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/Note%E6%A0%87%E7%AD%BE/">Note标签</category>
-      
-      
-      <comments>https://yuzhang.wang/142-note-tag/#disqus_thread</comments>
       
     </item>
     
