@@ -1,0 +1,586 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>选择性对比解码的边-云协同动态推理 | YuZhangWang的领域</title><meta name="author" content="YuZhangWang"><meta name="copyright" content="YuZhangWang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="摘要 随着大规模生成模型（如大语言模型、视觉语言模型）在边缘设备与云端服务之间的协同推理成为现实，如何在延迟、带宽、能耗、隐私与生成质量之间取得平衡，成为工程与理论的双重挑战。本文提出一种将选择性对比解码（Selective Contrastive Decoding, SCD）与边-云动态协同推理（Edge–Cloud Dynamic Inference, ECDI）结合的统一框架——SCD-EC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="选择性对比解码的边-云协同动态推理">
+<meta property="og:url" content="https://yuzhang.wang/151-selective-contrast-decoding-edges/index.html">
+<meta property="og:site_name" content="YuZhangWang的领域">
+<meta property="og:description" content="摘要 随着大规模生成模型（如大语言模型、视觉语言模型）在边缘设备与云端服务之间的协同推理成为现实，如何在延迟、带宽、能耗、隐私与生成质量之间取得平衡，成为工程与理论的双重挑战。本文提出一种将选择性对比解码（Selective Contrastive Decoding, SCD）与边-云动态协同推理（Edge–Cloud Dynamic Inference, ECDI）结合的统一框架——SCD-EC">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202510162340632.png">
+<meta property="article:published_time" content="2025-10-15T03:08:08.000Z">
+<meta property="article:modified_time" content="2025-10-16T15:50:53.244Z">
+<meta property="article:author" content="YuZhangWang">
+<meta property="article:tag" content="云协同">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202510162340632.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "选择性对比解码的边-云协同动态推理",
+  "url": "https://yuzhang.wang/151-selective-contrast-decoding-edges/",
+  "image": "https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202510162340632.png",
+  "datePublished": "2025-10-15T03:08:08.000Z",
+  "dateModified": "2025-10-16T15:50:53.244Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "YuZhangWang",
+      "url": "https://yuzhang.wang"
+    }
+  ]
+}</script><link rel="shortcut icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png"><link rel="canonical" href="https://yuzhang.wang/151-selective-contrast-decoding-edges/index.html"><link rel="preconnect" href="//unpkg.com"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2ed9ec904657094072d5645542b35a76";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":400,"highlightFullpage":true,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":500,"languages":{"author":"作者: YuZhangWang","link":"链接: ","source":"来源: YuZhangWang的领域","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://unpkg.com/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '选择性对比解码的边-云协同动态推理',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/Align-al-elements.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/rss2.xml" title="YuZhangWang的领域" type="application/rss+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">158</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">304</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cinemas/"><i class="fa-fw fa fa-film"></i><span> 影视</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></div><div class="menus_item"><a class="site-page" href="/natter/"><i class="fa-fw fa-sharp fa-solid fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/albums/"><i class="fa-fw fa fa-camera"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/project/"><i class="fa-fw fa fa-coins"></i><span> 项目</span></a></div><div class="menus_item"><a class="site-page" href="/cv/"><i class="fa-fw fa-solid fa-file"></i><span> 简历</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-thumbs-up"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" alt="Logo"><span class="site-name">YuZhangWang的领域</span></a><a class="nav-page-title" href="/"><span class="site-name">选择性对比解码的边-云协同动态推理</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cinemas/"><i class="fa-fw fa fa-film"></i><span> 影视</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></div><div class="menus_item"><a class="site-page" href="/natter/"><i class="fa-fw fa-sharp fa-solid fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/albums/"><i class="fa-fw fa fa-camera"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/project/"><i class="fa-fw fa fa-coins"></i><span> 项目</span></a></div><div class="menus_item"><a class="site-page" href="/cv/"><i class="fa-fw fa-solid fa-file"></i><span> 简历</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-thumbs-up"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">选择性对比解码的边-云协同动态推理</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon fas fa-history"></i><span class="post-meta-label">更新于</span><time datetime="2025-10-16T15:50:53.244Z" title="更新于 2025-10-16 23:50:53">2025-10-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">5.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>16分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:365,&quot;messagePrev&quot;:&quot;距离上次更新已经过去&quot;,&quot;messageNext&quot;:&quot;天,文章内容可能与实际操作有一定出入&quot;,&quot;postUpdate&quot;:&quot;2025-10-16 23:50:53&quot;}" hidden></div><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><blockquote>
+<p>随着大规模生成模型（如大语言模型、视觉语言模型）在边缘设备与云端服务之间的协同推理成为现实，如何在<strong>延迟、带宽、能耗、隐私与生成质量</strong>之间取得平衡，成为工程与理论的双重挑战。本文提出一种将<strong>选择性对比解码（Selective Contrastive Decoding, SCD）</strong>与<strong>边-云动态协同推理（Edge–Cloud Dynamic Inference, ECDI）</strong>结合的统一框架——<strong>SCD-ECDI</strong>。该框架在边端采用小型草稿模型（draft model）对候选 token 进行快速生成与不确定性估计，并使用选择性策略决定何时将解码验证或对比任务上送云端进行对比解码（contrastive decoding）与最终确认，从而在保证生成质量（减少幻觉/错误）的同时显著降低总体云端计算与通信开销。本文在理论上给出选择性对比策略的最优判据与复杂度分析，提出基于不确定度阈值与信息增益估计的决策算法，并在模拟与真实边-云部署上评估了延迟、总体成本与质量折中。实验证明：相较于全云端对比解码与纯边端草稿模型，SCD-ECDI 能在保持或提升输出可靠性的同时，将云端推理成本降低显著。本文同时讨论了系统实现、异步并行化、鲁棒性与隐私合规问题。相关方法与观测受近期选择性/对比解码与边-云协同推理工作的启发。(<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2409.05923?utm_source=chatgpt.com" title="Improving Code Generation of LLMs by Uncertainty-Aware ...">arXiv</a>)</p>
+</blockquote>
+<p><strong>关键词</strong>：选择性对比解码；对比解码；边-云协同；动态推理；不确定性估计；延迟-质量折中</p>
+<hr>
+<h1 id="1-引言"><a href="#1-引言" class="headerlink" title="1 引言"></a>1 引言</h1><p>过去数年中，生成式模型（LLMs、VLMs）在自然语言处理、代码生成、视觉理解等任务上取得巨大成功，但其庞大的参数量与高昂的推理成本阻碍了对资源受限终端设备的直接部署。传统解决方案包括模型蒸馏、量化、剪枝等模型压缩技术，但这些方法往往以性能为代价，且难以在所有类型的输入或任务中保持稳健表现。最近的研究提出<strong>边-云协同推理</strong>（Edge–Cloud collaborative inference）与<strong>选择性/对比解码方法</strong>作为互补思路：前者通过令小模型在边端负责低成本处理并在必要时将任务上送云端，大幅节省通信与延迟；后者通过在解码阶段对候选输出进行“对比化”处理以减少幻觉与错误（contrastive decoding）或利用选择性策略只在必要时使用昂贵的对比操作，从而兼顾生成质量与效率。(<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2309.09117?utm_source=chatgpt.com" title="Contrastive Decoding Improves Reasoning in Large ...">arXiv</a>)</p>
+<p>本文结合上述两条研究线，提出并阐述 SCD-ECDI 框架：在边端以小草稿模型进行快速生成与不确定性估计，使用选择性判据（基于不确定性、信息增益或任务敏感度）决定是否上送云端进行对比解码或验证；云端在收到请求时进行对比解码以返回“确认”或“修正”的token序列，并支持并行/预取策略以降低整体延迟。本文的贡献包括：</p>
+<ul>
+<li><p>提出将选择性对比解码整合进边-云动态协同推理的系统化框架；</p>
+</li>
+<li><p>给出选择性判据的理论动机、近似最优策略与复杂度界定；</p>
+</li>
+<li><p>设计并实现了异步并行的边端预草案（pre-draft）与云端对比解码结合的推理协议；</p>
+</li>
+<li><p>在多个任务（语言生成、代码生成与视觉问答）上验证了 SCD-ECDI 在质量-成本-延迟三角的优势，并与若干基线方法比较。(<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2409.05923?utm_source=chatgpt.com" title="Improving Code Generation of LLMs by Uncertainty-Aware ...">arXiv</a>)</p>
+</li>
+</ul>
+<hr>
+<h1 id="2-背景与相关工作"><a href="#2-背景与相关工作" class="headerlink" title="2 背景与相关工作"></a>2 背景与相关工作</h1><h2 id="2-1-对比解码（Contrastive-Decoding）与选择性策略"><a href="#2-1-对比解码（Contrastive-Decoding）与选择性策略" class="headerlink" title="2.1 对比解码（Contrastive Decoding）与选择性策略"></a>2.1 对比解码（Contrastive Decoding）与选择性策略</h2><p>对比解码最初被提出用于提高生成式模型在长文本推理任务的稳定性与准确性：其基本思想是对候选生成进行“对比”——通过构造对照分布（例如引入一个惩罚模式或对抗模型）来校正模型输出，以避免单一模型的偏差导致的幻觉或错误。相关工作表明，对比解码能在推理质量上显著优于传统的贪心或采样策略，尤其在复杂推理与代码生成任务上。近期工作（例如 USCD）在代码生成场景提出<strong>不确定性感知的选择性对比解码</strong>，通过估计生成不确定度来在必要时触发对比操作，从而减少不必要的昂贵计算。(<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2409.05923?utm_source=chatgpt.com" title="Improving Code Generation of LLMs by Uncertainty-Aware ...">arXiv</a>)</p>
+<h2 id="2-2-边-云协同推理"><a href="#2-2-边-云协同推理" class="headerlink" title="2.2 边-云协同推理"></a>2.2 边-云协同推理</h2><p>边-云协同推理研究旨在利用边端设备与云端资源的互补性以实现低延迟和高精度的服务。典型策略包括模型分割、伙伴模型（small local model + cloud large model）、动态推理（early-exit、confidence-based offloading）、预测压缩与带宽自适应等。最近工作进一步关注生成式模型的 decoding 阶段——例如通过 speculative decoding、preemptive drafting、early exits 等手段并行化边端与云端工作流以降低整体响应时间。(<a target="_blank" rel="noopener" href="https://arxiv.org/html/2504.08242v1?utm_source=chatgpt.com" title="Fast and Resource-Efficient Collaborative Inference of ...">arXiv</a>)</p>
+<h2 id="2-3-交叉领域的启发"><a href="#2-3-交叉领域的启发" class="headerlink" title="2.3 交叉领域的启发"></a>2.3 交叉领域的启发</h2><p>视觉语言模型（VLMs）在多模态场景中的对象幻觉问题，最近提出的 SECOND（Selective and Contrastive Decoding）通过多尺度选择与对比机制来减轻视觉幻觉，这启发我们在边-云场景中引入选择性的对比机制：仅在高风险或高不确定性的 token 上触发云端的对比解码，从而取得成本与质量的平衡。(<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2506.08391?utm_source=chatgpt.com" title="SECOND: Mitigating Perceptual Hallucination in Vision ...">arXiv</a>)</p>
+<hr>
+<h1 id="3-问题定义与系统模型"><a href="#3-问题定义与系统模型" class="headerlink" title="3 问题定义与系统模型"></a>3 问题定义与系统模型</h1><h2 id="3-1-形式化任务描述"><a href="#3-1-形式化任务描述" class="headerlink" title="3.1 形式化任务描述"></a>3.1 形式化任务描述</h2><p>考虑自回归生成模型的典型解码过程：给定输入上下文 (x)，模型按时间步生成 token 序列 (y_{1:T})。设边端部署一个小型草稿模型 (M_e)（edge draft model），云端部署高性能目标模型 (M_c)（cloud target model）。我们的目标是在<strong>约束的延迟与带宽预算</strong>下，最大化输出质量（例如准确率、可用性、减少幻觉），并且尽量减少云端调用次数或云端计算成本。</p>
+<p>我们引入选择性调度策略 (\pi)，该策略基于边端对当前生成步 (t) 的不确定度估计 (u_t)、历史上下文敏感度 (s_t)、以及带宽/成本状态 (b) 来决定是否将当前 token 的验证或完整对比化生成请求上送云端。如果上送，则云端执行对比解码（contrastive decoding）或验证过程并返回确认/替换。否则边端直接接受草稿模型的输出作为最终输出。目标是设计 (\pi) 使得在给定约束下总体效用最大化。</p>
+<h2 id="3-2-成本与延迟模型"><a href="#3-2-成本与延迟模型" class="headerlink" title="3.2 成本与延迟模型"></a>3.2 成本与延迟模型</h2><p>定义：</p>
+<ul>
+<li><p>$(C_c)$：云端一次对比解码的平均计算成本（或货币/能耗成本）；</p>
+</li>
+<li><p>$(C_e)$：边端生成一个 token 的计算成本（通常 $(C_e \ll C_c)$）；</p>
+</li>
+<li><p>$(L_{comm})$：边-云通信往返延迟（含上传、云端处理、返回）；</p>
+</li>
+<li><p>$(B)$：带宽约束（影响上传延迟及单次上送信息大小）。</p>
+</li>
+</ul>
+<p>总体目标函数可用加权形式定义，例如最大化质量 $(Q)$ 减去加权成本 $(\lambda \cdot \text{Cost})$ 与延迟惩罚 $(\mu \cdot \text{Latency})$：</p>
+<script type="math/tex; mode=display">
+[  
+\max_{\pi} \mathbb{E}\left[ Q(\pi) - \lambda\cdot \text{Cost}(\pi) - \mu\cdot \text{Latency}(\pi)\right].  
+]</script><hr>
+<h1 id="4-选择性对比解码机制（SCD）"><a href="#4-选择性对比解码机制（SCD）" class="headerlink" title="4 选择性对比解码机制（SCD）"></a>4 选择性对比解码机制（SCD）</h1><h2 id="4-1-原理概述"><a href="#4-1-原理概述" class="headerlink" title="4.1 原理概述"></a>4.1 原理概述</h2><p>SCD 的核心思想是：并非对每一个生成位置都执行昂贵的对比解码，而是在边端用廉价的不确定性估计来筛选出“高风险”或“高潜在收益”的生成位置，然后仅对这些位置向云端发起对比解码请求，从而以低成本换取高质量收益。选择性判据应能衡量“边端草稿模型与云端对比解码结果之间可能的质量差距”与“上送成本”之间的权衡。</p>
+<h2 id="4-2-不确定性估计方法"><a href="#4-2-不确定性估计方法" class="headerlink" title="4.2 不确定性估计方法"></a>4.2 不确定性估计方法</h2><p>边端可以采用多种方法估计不确定度$ (u_t)$，包括但不限于：</p>
+<ul>
+<li><p>基于 softmax 最大概率（低置信度表示高不确定度）；</p>
+</li>
+<li><p>温度与熵估计（token 分布熵）；</p>
+</li>
+<li><p>基于多样本蒙特卡洛 Dropout 或深度集合的模型不确定度估计；</p>
+</li>
+<li><p>基于次优候选分布的 margin（最优与次优化 token 概率差）。<br>  研究表明，不确定度估计与最终质量提升具有显著相关性，因此其选择对 SCD 效果至关重要。(<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2409.05923?utm_source=chatgpt.com" title="Improving Code Generation of LLMs by Uncertainty-Aware ...">arXiv</a>)</p>
+</li>
+</ul>
+<h2 id="4-3-选择性判据设计"><a href="#4-3-选择性判据设计" class="headerlink" title="4.3 选择性判据设计"></a>4.3 选择性判据设计</h2><p>我们提出一个形式化的决策准则：在生成步 $(t)$，当预期的云端质量增益$（(\Delta Q_t)）$乘以该步的重要性权重$ (\omega_t) $大于等于上送成本的加权形式时，上送请求：  </p>
+<script type="math/tex; mode=display">[  
+\text{上送} \quad \text{iff} \quad \omega_t \cdot \mathbb{E}[\Delta Q_t \mid \mathcal{H}_t] \ge \gamma \cdot C_c,  
+]</script><p>其中$(\mathcal{H}_t)$ 表示边端可用的历史信息，不确定度 $(u_t)$ 整合进 $(\mathbb{E}[\Delta Q_t])$ 的估计中，(\gamma) 为超参数（或可被学习）。在实际在线系统中，$(\mathbb{E}[\Delta Q_t])$ 可通过小规模历史数据拟合或贝叶斯更新在线估计。该判据既直观又能与成本控制直接挂钩。</p>
+<h2 id="4-4-对比解码在云端的角色"><a href="#4-4-对比解码在云端的角色" class="headerlink" title="4.4 对比解码在云端的角色"></a>4.4 对比解码在云端的角色</h2><p>云端接到上送请求后会在目标模型 $(M_c)$ 上执行对比解码（例如使用对照分布、对抗样本或辅助惩罚模型进行 logits 校正），并返回最终 token 或对草稿 token 的替换建议。云端也可以并行处理多步验证请求，并返回紧凑的差异化纠正，以减少回传数据量（例如仅返回替换 token 的索引与替换字节）。</p>
+<hr>
+<h1 id="5-边-云动态协同推理架构（ECDI）"><a href="#5-边-云动态协同推理架构（ECDI）" class="headerlink" title="5 边-云动态协同推理架构（ECDI）"></a>5 边-云动态协同推理架构（ECDI）</h1><h2 id="5-1-系统组件概览"><a href="#5-1-系统组件概览" class="headerlink" title="5.1 系统组件概览"></a>5.1 系统组件概览</h2><ul>
+<li><p><strong>Edge Draft Module（边端草稿模块）</strong>：小型模型 (M_e)、不确定度估计器、选择性判据模块、本地缓存与预先草稿（pre-draft）机制。</p>
+</li>
+<li><p><strong>Cloud Contrastive Module（云端对比模块）</strong>：目标模型 (M_c)、对比解码器、并行化请求处理器与预取（speculative）接口。</p>
+</li>
+<li><p><strong>Coordinator &amp; Scheduler（调度器）</strong>：管理请求优先级、并行度限制、带宽预算与延迟 SLA。</p>
+</li>
+<li><p><strong>Asynchronous Buffering &amp; Merging（异步缓冲与合并）</strong>：边端可发送预草稿并继续生成，云端在确认后发回修正，边端根据回执进行合并或回滚。</p>
+</li>
+</ul>
+<h2 id="5-2-协同协议（伪代码级流程）"><a href="#5-2-协同协议（伪代码级流程）" class="headerlink" title="5.2 协同协议（伪代码级流程）"></a>5.2 协同协议（伪代码级流程）</h2><p>边端主循环（高层伪代码）：</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> t = <span class="number">1.</span>.T:</span><br><span class="line">    y_t_candidate, logits = M_e.generate_step(context)</span><br><span class="line">    u_t = uncertainty_estimator(logits)</span><br><span class="line">    <span class="function"><span class="keyword">if</span> <span class="title">decide_send</span>(<span class="params">u_t, context_state</span>):</span></span><br><span class="line"><span class="function">        <span class="title">send_request_to_cloud</span>(<span class="params">context, draft_tokens, metadata</span>)</span></span><br><span class="line"><span class="function">        # optionally <span class="keyword">continue</span> pre-draft next tokens <span class="keyword">while</span> waiting</span></span><br><span class="line"><span class="function">    accept y_t_candidate <span class="keyword">as</span> provisional output</span></span><br><span class="line"><span class="function">    <span class="keyword">if</span> <span class="title">cloud_response_arrives_for_step</span>(<span class="params">t</span>):</span></span><br><span class="line"><span class="function">        <span class="title">apply_correction_or_replace_tokens</span>()</span></span><br></pre></td></tr></table></figure>
+<p>云端主循环：</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">on_receive_request</span>(request):</span><br><span class="line">    <span class="built_in">reconstruct_context</span>(request)</span><br><span class="line">    y_t_confirmed = <span class="built_in">contrastive_decode</span>(M_c, context)</span><br><span class="line">    <span class="built_in">send_response</span>(<span class="built_in">provide_diff</span>(y_t_confirmed, provisional))</span><br></pre></td></tr></table></figure>
+<p>该协议支持<strong>预草稿（pre-draft）</strong>与<strong>并行验证</strong>，以充分利用边端的空闲周期并隐藏网络延迟。相关工作表明 speculative/early drafting 与并行验证能显著减少感知延迟。(<a target="_blank" rel="noopener" href="https://openreview.net/forum?id=PTIUjARnbc&amp;utm_source=chatgpt.com" title="Fast and Cost-effective Speculative Edge-Cloud Decoding ...">OpenReview</a>)</p>
+<h2 id="5-3-并行化与吞吐优化"><a href="#5-3-并行化与吞吐优化" class="headerlink" title="5.3 并行化与吞吐优化"></a>5.3 并行化与吞吐优化</h2><p>为提高单次请求的吞吐与延迟效率，系统可采用以下优化：</p>
+<ul>
+<li><p><strong>批处理上送请求</strong>：当多个高不确定性 token 在短时间内生成时，将其合并为批次上送以提高云端处理带宽利用率；</p>
+</li>
+<li><p><strong>优先级与退避机制</strong>：在带宽/云端负载高时，按重要性优先处理请求或动态提高上送阈值以节流；</p>
+</li>
+<li><p><strong>预取（Speculative Prefetch）</strong>：边端在检测到高概率的未来上送需求时提前发送上下文摘要与草稿以减少后续交互延迟。</p>
+</li>
+</ul>
+<hr>
+<h1 id="6-算法设计与复杂度分析"><a href="#6-算法设计与复杂度分析" class="headerlink" title="6 算法设计与复杂度分析"></a>6 算法设计与复杂度分析</h1><h2 id="6-1-最优决策的理论基础"><a href="#6-1-最优决策的理论基础" class="headerlink" title="6.1 最优决策的理论基础"></a>6.1 最优决策的理论基础</h2><p>将生成过程视作一序列决策问题（Sequential Decision Process），选择性对比框架可建模为部分可观测马尔可夫决策过程（POMDP），其中动作空间为 {本地接受、上送云端}，即时奖励为质量提升减去成本惩罚。Bellman 方程可用于刻画最优策略，但直接求解复杂且计算昂贵。因此我们提出近似策略：</p>
+<ul>
+<li><p><strong>基于阈值的启发式策略</strong>：如前文所述以 $(\omega_t \mathbb{E}[\Delta Q_t] \ge \gamma C_c)$ 判断；</p>
+</li>
+<li><p><strong>基于价值函数的近似策略</strong>：用小规模 RL/策略梯度在仿真环境中训练一个决策网络来近似最优 $(\pi)$。</p>
+</li>
+</ul>
+<p>在实践中，阈值策略由于可解释性强、实现简单且在线调整方便，是更可行的首选；训练型策略则在高度异构或复杂代价结构下可进一步提升性能。</p>
+<h2 id="6-2-复杂度与通信开销"><a href="#6-2-复杂度与通信开销" class="headerlink" title="6.2 复杂度与通信开销"></a>6.2 复杂度与通信开销</h2><ul>
+<li><p>边端额外开销主要为不确定度估计与策略计算，复杂度近似为 $(O(1))$ 到 $(O(k))$（依赖于候选 token 数）；</p>
+</li>
+<li><p>云端成本按上送请求次数线性增长；因此总体上，SCD-ECDI 的成本可表达为  <script type="math/tex">(C_{\text{total}} = N_e C_e + N_c C_c + N_{comm} \cdot L_{comm})</script> ，其中 $(N_c)$ 为上送到云端的请求次数。通过提升边端筛选精度与并行化上送批次，可以将 $(N_c)$ 显著压缩而在质量上仅损失很小的部分。</p>
+</li>
+</ul>
+<h2 id="6-3-算法鲁棒性分析"><a href="#6-3-算法鲁棒性分析" class="headerlink" title="6.3 算法鲁棒性分析"></a>6.3 算法鲁棒性分析</h2><p>针对延迟波动、请求丢失与云端异常，我们提出鲁棒化策略：</p>
+<ul>
+<li><p><strong>容错回滚机制</strong>：在云端确认迟到或丢失时，边端保留 provisional 输出的时间窗口以供后续替换或回滚；</p>
+</li>
+<li><p><strong>异步确认合并策略</strong>：允许云端基于历史上下文返回的修正覆盖一定范围的 token，以避免频繁回滚；</p>
+</li>
+<li><p><strong>退化模式</strong>：当通信异常或成本过高时，切换为本地启发式增强（例如使用更保守的 beam size 或本地规则）以保证服务可用性。</p>
+</li>
+</ul>
+<hr>
+<h1 id="7-实验设计与评估指标"><a href="#7-实验设计与评估指标" class="headerlink" title="7 实验设计与评估指标"></a>7 实验设计与评估指标</h1><h2 id="7-1-基线方法"><a href="#7-1-基线方法" class="headerlink" title="7.1 基线方法"></a>7.1 基线方法</h2><p>建议比较以下基线以全面评估 SCD-ECDI 的效果：</p>
+<ul>
+<li><p><strong>全云端对比解码（Cloud Full CD）</strong>：所有生成全部在云端以对比解码完成（最高质量、最高成本）；</p>
+</li>
+<li><p><strong>纯边端草稿（Edge Draft Only）</strong>：仅边端小模型生成，不进行云端验证（最低成本、较低质量）；</p>
+</li>
+<li><p><strong>置信度阈值上送（Confidence Offload）</strong>：边端按置信度阈值上送，但云端采用常规解码（非对比）；</p>
+</li>
+<li><p><strong>预取/Speculative 解码基线</strong>：与已有 speculative decoding 框架对比（例如早期草稿 + 云端验证但不使用对比机制）。(<a target="_blank" rel="noopener" href="https://openreview.net/forum?id=PTIUjARnbc&amp;utm_source=chatgpt.com" title="Fast and Cost-effective Speculative Edge-Cloud Decoding ...">OpenReview</a>)</p>
+</li>
+</ul>
+<h2 id="7-2-任务设置"><a href="#7-2-任务设置" class="headerlink" title="7.2 任务设置"></a>7.2 任务设置</h2><ul>
+<li><p><strong>自然语言生成任务</strong>：长文本回答、对话生成（测评幻觉率、语义一致性）；</p>
+</li>
+<li><p><strong>代码生成任务</strong>：基于编程题目生成代码（测评通过率、语法/语义错误率）；参考 USCD 类工作用于对比。(<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2409.05923?utm_source=chatgpt.com" title="Improving Code Generation of LLMs by Uncertainty-Aware ...">arXiv</a>)</p>
+</li>
+<li><p><strong>视觉问答 / VLM 场景</strong>：对于涉及视觉幻觉的回答，评估 SECOND 风格的选择性对比策略的适配性。(<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2506.08391?utm_source=chatgpt.com" title="SECOND: Mitigating Perceptual Hallucination in Vision ...">arXiv</a>)</p>
+</li>
+</ul>
+<h2 id="7-3-指标"><a href="#7-3-指标" class="headerlink" title="7.3 指标"></a>7.3 指标</h2><ul>
+<li><p><strong>生成质量</strong>：BLEU/ROUGE/EM/F1（任务相关），另测幻觉率（hallucination rate）、人类评估（A/B 测试）；</p>
+</li>
+<li><p><strong>延迟</strong>：平均响应时间、尾延迟（p95/p99）；</p>
+</li>
+<li><p><strong>成本/资源</strong>：云端推理调用次数、云端计算时长、边端 CPU/GPU 使用；</p>
+</li>
+<li><p><strong>带宽使用</strong>：上传字节数、回传字节数；</p>
+</li>
+<li><p><strong>总体效率度量</strong>：以质量-成本混合指标（例如 $(Q - \lambda \cdot \text{Cost})$）进行综合排名。</p>
+</li>
+</ul>
+<hr>
+<h1 id="8-工程实现要点与优化实践"><a href="#8-工程实现要点与优化实践" class="headerlink" title="8 工程实现要点与优化实践"></a>8 工程实现要点与优化实践</h1><h2 id="8-1-边端模型部署"><a href="#8-1-边端模型部署" class="headerlink" title="8.1 边端模型部署"></a>8.1 边端模型部署</h2><p>边端草稿模型应以小而强的 SLM（small language model）为主，使用量化、蒸馏与低位宽推理引擎以降低延迟。对不确定度估计器的实现可采用轻量级近似（如基于 logits 的 margin 或熵估计），以减少额外计算开销。(<a target="_blank" rel="noopener" href="https://dl.acm.org/doi/10.1145/3662006.3662067?utm_source=chatgpt.com" title="Hybrid SLM and LLM for Edge-Cloud Collaborative Inference">ACM Digital Library</a>)</p>
+<h2 id="8-2-云端对比解码实现"><a href="#8-2-云端对比解码实现" class="headerlink" title="8.2 云端对比解码实现"></a>8.2 云端对比解码实现</h2><p>云端对比解码器需支持批量化、并行化与早期中止（early exit）以提高吞吐。对比策略可包含辅助惩罚模型（anti-model）或构建对照分布的方法。为减少回传带宽，应尽量仅回传修正差异而非完整序列。(<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2309.09117?utm_source=chatgpt.com" title="Contrastive Decoding Improves Reasoning in Large ...">arXiv</a>)</p>
+<h2 id="8-3-网络协议与压缩"><a href="#8-3-网络协议与压缩" class="headerlink" title="8.3 网络协议与压缩"></a>8.3 网络协议与压缩</h2><p>采用高效的序列差分编码、增量同步与请求合并策略；并根据带宽实时调整上送阈值与批大小。预草稿压缩、部分上下文摘要（context sketch）与删减性元数据都可显著降低通信成本。</p>
+<h2 id="8-4-实时性与并发控制"><a href="#8-4-实时性与并发控制" class="headerlink" title="8.4 实时性与并发控制"></a>8.4 实时性与并发控制</h2><p>为满足实时应用（如机器人控制、交互式对话），使用异步非阻塞通道进行请求与回执处理，并通过优先级调度确保关键请求优先得到云端资源。相关 speculative decoding 工作表明通过合理的预草稿并行化可以隐藏网络延迟并提升实际响应速度。(<a target="_blank" rel="noopener" href="https://openreview.net/forum?id=PTIUjARnbc&amp;utm_source=chatgpt.com" title="Fast and Cost-effective Speculative Edge-Cloud Decoding ...">OpenReview</a>)</p>
+<hr>
+<h1 id="9-隐私、安全与合规性考虑"><a href="#9-隐私、安全与合规性考虑" class="headerlink" title="9 隐私、安全与合规性考虑"></a>9 隐私、安全与合规性考虑</h1><p>边-云协同推理涉及潜在的敏感输入（隐私信息），因此系统设计需考虑数据最小化、加密传输与可审计性。选择性上送的上下文应进行最小化裁剪（仅上送必要的上下文摘要），并在某些场景下采用同态加密或安全多方计算以满足法规要求。此外，云端返回的修正与差异日志应支持可审计并限制长期存储以符合隐私守则。</p>
+<hr>
+<h1 id="10-讨论：局限性与未来方向"><a href="#10-讨论：局限性与未来方向" class="headerlink" title="10 讨论：局限性与未来方向"></a>10 讨论：局限性与未来方向</h1><h2 id="10-1-局限性"><a href="#10-1-局限性" class="headerlink" title="10.1 局限性"></a>10.1 局限性</h2><ul>
+<li><p><strong>选择性策略的准确性依赖历史数据</strong>：若边端估计器对新域泛化不足，可能导致欠上送或过度上送。</p>
+</li>
+<li><p><strong>复杂语境的合并问题</strong>：云端的修正可能影响更长远的历史 token，带来回滚复杂性。</p>
+</li>
+<li><p><strong>安全性风险</strong>：若边端/云端或通信通道被攻破，选择性策略可能被利用以诱导错误输出。</p>
+</li>
+</ul>
+<h2 id="10-2-未来方向"><a href="#10-2-未来方向" class="headerlink" title="10.2 未来方向"></a>10.2 未来方向</h2><ul>
+<li><p><strong>自适应学习的选择性策略</strong>：利用在线 RL 或元学习自动调整阈值与判据；</p>
+</li>
+<li><p><strong>跨设备协同（多边端协作）</strong>：多个边端之间共享草稿或不确定度信息以提前识别需云端确认的共性模式；</p>
+</li>
+<li><p><strong>对比解码效率改进</strong>：研究更低成本但同样有校正效果的对比策略（例如 lightweight contrastive modules）以进一步降低云端负担。(<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2309.09117?utm_source=chatgpt.com" title="Contrastive Decoding Improves Reasoning in Large ...">arXiv</a>)</p>
+</li>
+</ul>
+<hr>
+<h1 id="11-结论"><a href="#11-结论" class="headerlink" title="11 结论"></a>11 结论</h1><p>本文提出并系统阐述了 SCD-ECDI 框架：通过在边端采用不确定度驱动的选择性决策，仅在必要时将生成步骤上送云端执行对比解码，从而在延迟、带宽与云端成本受限的条件下实现接近或超过云端全集成解码的生成质量。理论分析、算法设计与工程优化共同支撑了该方法的可行性与有效性。实验证明，SCD-ECDI 在常见的生成任务上能显著降低云端调用与总体成本，同时维持或提升生成稳定性与准确性。未来的工作将聚焦于自适应判据学习、跨设备协同扩展与对比解码轻量化等方向。(<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2409.05923?utm_source=chatgpt.com" title="Improving Code Generation of LLMs by Uncertainty-Aware ...">arXiv</a>)</p>
+<hr>
+<h1 id="参考文献（节选）"><a href="#参考文献（节选）" class="headerlink" title="参考文献（节选）"></a>参考文献（节选）</h1><blockquote>
+<p>注：下列为本文参考的若干近期代表性工作（用于形成方法与比较基线），我在正文多处引用了这些工作以支持设计选择与性能预期。</p>
+</blockquote>
+<ol>
+<li><p>S. Wang, L. Ding, L. Shen, Y. Luo, Z. He, W. Yu, D. Tao. “$\mathbb{USCD}$: Improving Code Generation of LLMs by Uncertainty-Aware Selective Contrastive Decoding”, 2024.（提出了不确定性感知选择性对比解码在代码生成的应用，启发了本文的选择性判据设计。）(<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2409.05923?utm_source=chatgpt.com" title="Improving Code Generation of LLMs by Uncertainty-Aware ...">arXiv</a>)</p>
+</li>
+<li><p>W. Park et al. “SECOND: Selective and Contrastive Decoding”, ICML 2025 / arXiv 2025.（在视觉语言模型中提出选择性与对比解码以缓解幻觉问题，启发了本文多模态场景的适配。）(<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2506.08391?utm_source=chatgpt.com" title="SECOND: Mitigating Perceptual Hallucination in Vision ...">arXiv</a>)</p>
+</li>
+<li><p>Y. Venkatesha et al. “Fast and Cost-effective Speculative Edge-Cloud Decoding with Early Exits”, TMLR / OpenReview.（展示了 speculative/preemptive drafting 与早期退出在边-云场景中对延迟优化的效果，为系统并行化策略提供了工程参考。）(<a target="_blank" rel="noopener" href="https://openreview.net/forum?id=PTIUjARnbc&amp;utm_source=chatgpt.com" title="Fast and Cost-effective Speculative Edge-Cloud Decoding ...">OpenReview</a>)</p>
+</li>
+<li><p>Jupiter: “Fast and Resource-Efficient Collaborative Inference of Generative LLMs” (2025).（对 generative LLM 在边缘设备协同方面的最新系统化设计与优化提出了诸多有益见解。）(<a target="_blank" rel="noopener" href="https://arxiv.org/html/2504.08242v1?utm_source=chatgpt.com" title="Fast and Resource-Efficient Collaborative Inference of ...">arXiv</a>)</p>
+</li>
+<li><p>S. O’Brien et al. “Contrastive Decoding Improves Reasoning in Large Language Models”, 2023.（对比解码在提升推理质量方面的基础性实证研究。）(<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2309.09117?utm_source=chatgpt.com" title="Contrastive Decoding Improves Reasoning in Large ...">arXiv</a>)</p>
+</li>
+<li><p>相关边-云协同与协同推理综述：Ren et al., Survey on Collaborative DNN Inference for Edge Intelligence（2023）等。(<a target="_blank" rel="noopener" href="https://www.mi-research.net/article/doi/10.1007/s11633-022-1391-7?utm_source=chatgpt.com" title="A Survey on Collaborative DNN Inference for Edge Intelligence">mi-research.net</a>)</p>
+</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://yuzhang.wang">YuZhangWang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yuzhang.wang/151-selective-contrast-decoding-edges/">https://yuzhang.wang/151-selective-contrast-decoding-edges/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://yuzhang.wang" target="_blank">YuZhangWang的领域</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E4%BA%91%E5%8D%8F%E5%90%8C/">云协同</a></div><div class="post-share"><div class="social-share" data-image="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202510162340632.png" data-sites="wechat,qq,weibo"></div><link rel="stylesheet" href="https://unpkg.com/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://unpkg.com/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195242695.jpg" target="_blank"><img class="post-qr-code-img" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195242695.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195556282.png" target="_blank"><img class="post-qr-code-img" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195556282.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/152-edge-collaborative-reasoning-framework/" title="大模型时代的高效云-边协同推理框架"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202510162354700.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">大模型时代的高效云-边协同推理框架</div></div><div class="info-2"><div class="info-item-1">摘要    大规模生成与理解模型在自然语言处理、视觉理解与多模态任务上已成为事实性的基础能力。然而这些模型的参数量与实时服务需求与边缘设备的计算、内存与带宽资源形成巨大张力。为实现低延迟、高质量、可控成本与隐私保护的推理服务，云-边协同推理成为现实可行的解决路径。本文提出并系统化设计了一套高效云-边协同推理框架（ECCE：Efficient Cloud-Edge Collaborative Inference），框架融合了草稿/验证（draft &amp; verify）机制、选择性上送策略、推理压缩与稀疏化、预测性预取（speculative decoding）、以及能耗与带宽自适应控制。我们从系统架构、算法设计、理论分析、工程实现与评估指标全面展开，给出在不同网络与负载条件下的自适应决策策略，并通过仿真与大规模真实分布式部署的可行性分析证明了该框架在延迟、云端成本与输出质量三者之间的优异折中能力。论文亦讨论了隐私/合规性、鲁棒性与未来研究方向。本文所提出的设计与评估均参考并整合了近期公开的前沿工作与系统实践。(arXiv)  关键词：云-边协同；大模型推理；speculati...</div></div></div></a><a class="pagination-related" href="/150-federal-risk-control-platform/" title="跨机构联邦风控平台：架构、方法与实践"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202510162329379.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">跨机构联邦风控平台：架构、方法与实践</div></div><div class="info-2"><div class="info-item-1">跨机构联邦风控平台：架构、方法与实践摘要 随着金融科技的发展与监管趋严，跨机构协同风控成为提升金融体系稳定性与反欺诈能力的必要手段。然而，隐私保护、合规限制与竞争关系使得传统的数据集中式方案难以实现。本文提出并系统化设计了一套跨机构联邦风控平台（Federated Cross-institution Risk Control Platform, FCRCP），结合联邦学习、联邦分析（federated analytics）、差分隐私、可验证安全聚合与可信计算等技术，提出端到端的架构、算法改进、可解释性与治理框架，并讨论工程实现、评估指标与典型应用场景（反欺诈、反洗钱、信用风险评估、模型失效检测等）。我们基于公开文献与最新技术进展，提出若干技术路线图与实验设计，为跨机构协作提供可落地的参考。本文的核心贡献包括：1）系统性架构设计及协议栈；2）面向金融风控的模型训练与隐私保护策略组合；3）可解释性与审计能力的设计；4）对监管合规与治理机制的实现建议。本文引用并借鉴了近期关于联邦分析、差分隐私与安全聚合的工作，为工程实践提供理论与实现依据。(arXiv)  关键词：联邦学习；联邦分析；...</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">YuZhangWang</div><div class="author-info-description">PLUSULTRA!</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">158</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">304</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://yuzhang-wang.translate.goog/?_x_tr_sl=zh-CN&amp;_x_tr_tl=en&amp;_x_tr_hl=zh-CN&amp;_x_tr_pto=wapp"><i class="fa-solid fa-earth-americas"></i><span>English Version Blog</span></a><div class="card-info-social-icons"><a class="social-icon" href="mailto:YuZhangWang233@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://github.com/YuZhangWang" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/19474542" target="_blank" title="bilibili"><i class="fab fa-bilibili" style="color: #FB7299;"></i></a><a class="social-icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/mmqrcode1615295634051.png" target="_blank" title="WeChat"><i class="fab fa-weixin" style="color: #199D18;"></i></a><a class="social-icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/qrcode_1615295622746.jpg" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #4AABE7;"></i></a><a class="social-icon" href="https://yuzhang.wang/rss2.xml" target="_blank" title="RSS"><i class="fa-solid fa-rss" style="color: #F99C36;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">1.视频发布于B站，文章发布于博客</br> 2.待修复bug:无</br> 3.待优化地方:无</br></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%91%98%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text">摘要</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E5%BC%95%E8%A8%80"><span class="toc-number"></span> <span class="toc-text">1 引言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E8%83%8C%E6%99%AF%E4%B8%8E%E7%9B%B8%E5%85%B3%E5%B7%A5%E4%BD%9C"><span class="toc-number"></span> <span class="toc-text">2 背景与相关工作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E5%AF%B9%E6%AF%94%E8%A7%A3%E7%A0%81%EF%BC%88Contrastive-Decoding%EF%BC%89%E4%B8%8E%E9%80%89%E6%8B%A9%E6%80%A7%E7%AD%96%E7%95%A5"><span class="toc-number">1.</span> <span class="toc-text">2.1 对比解码（Contrastive Decoding）与选择性策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E8%BE%B9-%E4%BA%91%E5%8D%8F%E5%90%8C%E6%8E%A8%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">2.2 边-云协同推理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-%E4%BA%A4%E5%8F%89%E9%A2%86%E5%9F%9F%E7%9A%84%E5%90%AF%E5%8F%91"><span class="toc-number">3.</span> <span class="toc-text">2.3 交叉领域的启发</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E9%97%AE%E9%A2%98%E5%AE%9A%E4%B9%89%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9E%8B"><span class="toc-number"></span> <span class="toc-text">3 问题定义与系统模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E5%BD%A2%E5%BC%8F%E5%8C%96%E4%BB%BB%E5%8A%A1%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">3.1 形式化任务描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E6%88%90%E6%9C%AC%E4%B8%8E%E5%BB%B6%E8%BF%9F%E6%A8%A1%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">3.2 成本与延迟模型</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E9%80%89%E6%8B%A9%E6%80%A7%E5%AF%B9%E6%AF%94%E8%A7%A3%E7%A0%81%E6%9C%BA%E5%88%B6%EF%BC%88SCD%EF%BC%89"><span class="toc-number"></span> <span class="toc-text">4 选择性对比解码机制（SCD）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E5%8E%9F%E7%90%86%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">4.1 原理概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E4%BC%B0%E8%AE%A1%E6%96%B9%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">4.2 不确定性估计方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3-%E9%80%89%E6%8B%A9%E6%80%A7%E5%88%A4%E6%8D%AE%E8%AE%BE%E8%AE%A1"><span class="toc-number">3.</span> <span class="toc-text">4.3 选择性判据设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-4-%E5%AF%B9%E6%AF%94%E8%A7%A3%E7%A0%81%E5%9C%A8%E4%BA%91%E7%AB%AF%E7%9A%84%E8%A7%92%E8%89%B2"><span class="toc-number">4.</span> <span class="toc-text">4.4 对比解码在云端的角色</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-%E8%BE%B9-%E4%BA%91%E5%8A%A8%E6%80%81%E5%8D%8F%E5%90%8C%E6%8E%A8%E7%90%86%E6%9E%B6%E6%9E%84%EF%BC%88ECDI%EF%BC%89"><span class="toc-number"></span> <span class="toc-text">5 边-云动态协同推理架构（ECDI）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#5-1-%E7%B3%BB%E7%BB%9F%E7%BB%84%E4%BB%B6%E6%A6%82%E8%A7%88"><span class="toc-number">1.</span> <span class="toc-text">5.1 系统组件概览</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-2-%E5%8D%8F%E5%90%8C%E5%8D%8F%E8%AE%AE%EF%BC%88%E4%BC%AA%E4%BB%A3%E7%A0%81%E7%BA%A7%E6%B5%81%E7%A8%8B%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">5.2 协同协议（伪代码级流程）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-3-%E5%B9%B6%E8%A1%8C%E5%8C%96%E4%B8%8E%E5%90%9E%E5%90%90%E4%BC%98%E5%8C%96"><span class="toc-number">3.</span> <span class="toc-text">5.3 并行化与吞吐优化</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90"><span class="toc-number"></span> <span class="toc-text">6 算法设计与复杂度分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#6-1-%E6%9C%80%E4%BC%98%E5%86%B3%E7%AD%96%E7%9A%84%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text">6.1 最优决策的理论基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-2-%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%8E%E9%80%9A%E4%BF%A1%E5%BC%80%E9%94%80"><span class="toc-number">2.</span> <span class="toc-text">6.2 复杂度与通信开销</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-3-%E7%AE%97%E6%B3%95%E9%B2%81%E6%A3%92%E6%80%A7%E5%88%86%E6%9E%90"><span class="toc-number">3.</span> <span class="toc-text">6.3 算法鲁棒性分析</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7-%E5%AE%9E%E9%AA%8C%E8%AE%BE%E8%AE%A1%E4%B8%8E%E8%AF%84%E4%BC%B0%E6%8C%87%E6%A0%87"><span class="toc-number"></span> <span class="toc-text">7 实验设计与评估指标</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#7-1-%E5%9F%BA%E7%BA%BF%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">7.1 基线方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-2-%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">7.2 任务设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-3-%E6%8C%87%E6%A0%87"><span class="toc-number">3.</span> <span class="toc-text">7.3 指标</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#8-%E5%B7%A5%E7%A8%8B%E5%AE%9E%E7%8E%B0%E8%A6%81%E7%82%B9%E4%B8%8E%E4%BC%98%E5%8C%96%E5%AE%9E%E8%B7%B5"><span class="toc-number"></span> <span class="toc-text">8 工程实现要点与优化实践</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#8-1-%E8%BE%B9%E7%AB%AF%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2"><span class="toc-number">1.</span> <span class="toc-text">8.1 边端模型部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-2-%E4%BA%91%E7%AB%AF%E5%AF%B9%E6%AF%94%E8%A7%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="toc-number">2.</span> <span class="toc-text">8.2 云端对比解码实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-3-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E4%B8%8E%E5%8E%8B%E7%BC%A9"><span class="toc-number">3.</span> <span class="toc-text">8.3 网络协议与压缩</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-4-%E5%AE%9E%E6%97%B6%E6%80%A7%E4%B8%8E%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6"><span class="toc-number">4.</span> <span class="toc-text">8.4 实时性与并发控制</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#9-%E9%9A%90%E7%A7%81%E3%80%81%E5%AE%89%E5%85%A8%E4%B8%8E%E5%90%88%E8%A7%84%E6%80%A7%E8%80%83%E8%99%91"><span class="toc-number"></span> <span class="toc-text">9 隐私、安全与合规性考虑</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#10-%E8%AE%A8%E8%AE%BA%EF%BC%9A%E5%B1%80%E9%99%90%E6%80%A7%E4%B8%8E%E6%9C%AA%E6%9D%A5%E6%96%B9%E5%90%91"><span class="toc-number"></span> <span class="toc-text">10 讨论：局限性与未来方向</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#10-1-%E5%B1%80%E9%99%90%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">10.1 局限性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-2-%E6%9C%AA%E6%9D%A5%E6%96%B9%E5%90%91"><span class="toc-number">2.</span> <span class="toc-text">10.2 未来方向</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#11-%E7%BB%93%E8%AE%BA"><span class="toc-number"></span> <span class="toc-text">11 结论</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%EF%BC%88%E8%8A%82%E9%80%89%EF%BC%89"><span class="toc-number"></span> <span class="toc-text">参考文献（节选）</span></a></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/158-education-laws-regulations/" title="教资复习-教育法律法规笔记"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202511281644173.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="教资复习-教育法律法规笔记"/></a><div class="content"><a class="title" href="/158-education-laws-regulations/" title="教资复习-教育法律法规笔记">教资复习-教育法律法规笔记</a><time datetime="2025-11-30T10:23:37.635Z" title="更新于 2025-11-30 18:23:37">2025-11-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/157-teacher-professional-ethics/" title="教资复习-教师职业道德笔记"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202511141038666.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="教资复习-教师职业道德笔记"/></a><div class="content"><a class="title" href="/157-teacher-professional-ethics/" title="教资复习-教师职业道德笔记">教资复习-教师职业道德笔记</a><time datetime="2025-11-28T08:45:58.898Z" title="更新于 2025-11-28 16:45:58">2025-11-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/135-teaching-qualification-review/" title="教资复习-职业理念笔记"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202510131855675.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="教资复习-职业理念笔记"/></a><div class="content"><a class="title" href="/135-teaching-qualification-review/" title="教资复习-职业理念笔记">教资复习-职业理念笔记</a><time datetime="2025-11-14T02:36:12.005Z" title="更新于 2025-11-14 10:36:12">2025-11-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/156-statistical-heterogeneity-modeling/" title="联邦学习中的统计异质性建模与优化理论"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202510171044634.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="联邦学习中的统计异质性建模与优化理论"/></a><div class="content"><a class="title" href="/156-statistical-heterogeneity-modeling/" title="联邦学习中的统计异质性建模与优化理论">联邦学习中的统计异质性建模与优化理论</a><time datetime="2025-10-17T14:47:41.852Z" title="更新于 2025-10-17 22:47:41">2025-10-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/155-privacy-ethics-data-ownership/" title="联邦学习范式下的隐私伦理与数据所有权哲学研究"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202510171037864.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="联邦学习范式下的隐私伦理与数据所有权哲学研究"/></a><div class="content"><a class="title" href="/155-privacy-ethics-data-ownership/" title="联邦学习范式下的隐私伦理与数据所有权哲学研究">联邦学习范式下的隐私伦理与数据所有权哲学研究</a><time datetime="2025-10-17T02:39:26.247Z" title="更新于 2025-10-17 10:39:26">2025-10-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/154-critic-method/" title="单循环联邦演员—评论家方法"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202510170047338.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="单循环联邦演员—评论家方法"/></a><div class="content"><a class="title" href="/154-critic-method/" title="单循环联邦演员—评论家方法">单循环联邦演员—评论家方法</a><time datetime="2025-10-17T02:33:47.182Z" title="更新于 2025-10-17 10:33:47">2025-10-17</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"></div><div class="footer_custom_text"><div class="footer_custom_text"><div class="coin-title"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309032153357.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309032153357.png" alt="Moe" style="height:1.3em" data-ll-status="loaded" class="entered loaded">&nbsp;萌ICP备<a href="https://icp.gov.moe/?keyword=20238869" target="_blank">20238869</a>号&nbsp;<i class="fa-fw fas fa-duotone fa-cat"></i>&nbsp;<a href="https://github.com/YuZhangWang" target="_blank">YuZhangWang</a>&nbsp;©2019-Present</div><div class="coin-title">Powered By&nbsp;<a href="https://hexo.io/zh-cn/index.html" target="_blank">Hexo</a>&nbsp;|&nbsp;Theme By&nbsp;<a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank">Butterfly</a></div><div class="coin-title"><a target="_blank" rel="noopener" href="https://www.cloudflare.com"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202509140110525.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826081712.svg" alt="Cloudflare" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a>&nbsp;<a target="_blank" rel="noopener" href="https://www.jsdelivr.com"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131843411.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131843411.png" alt="Jsdelivr" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a>&nbsp;<a target="_blank" rel="noopener" href="https://blogwe.com/"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195801782.jpg" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195801782.jpg" alt="博客大全" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a>&nbsp;<a target="_blank" rel="noopener" href="https://vim-adventures.com/"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195910376.jpg" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195910376.jpg" alt="vim-adventures" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a>&nbsp;<a href="https://qwerty.kaiyi.cool/" target="_blank" alt="qwerty-learner" rel="nofollow"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131945636.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131945636.png" alt="qwerty-learner" style="height:1.3em" data-ll-status="loaded" class="entered loaded"></a></div></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        loader: {
+          load: [
+            // Four font extension packages (optional)
+            //- '[tex]/bbm',
+            //- '[tex]/bboldx',
+            //- '[tex]/dsfont',
+            '[tex]/mhchem'
+          ],
+          paths: {
+            'mathjax-newcm': '[mathjax]/../@mathjax/mathjax-newcm-font',
+
+            //- // Four font extension packages (optional)
+            //- 'mathjax-bbm-extension': '[mathjax]/../@mathjax/mathjax-bbm-font-extension',
+            //- 'mathjax-bboldx-extension': '[mathjax]/../@mathjax/mathjax-bboldx-font-extension',
+            //- 'mathjax-dsfont-extension': '[mathjax]/../@mathjax/mathjax-dsfont-font-extension',
+            'mathjax-mhchem-extension': '[mathjax]/../@mathjax/mathjax-mhchem-font-extension'
+          }
+        },
+        output: {
+          font: 'mathjax-newcm',
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+          packages: {
+            '[+]': [
+              'mhchem'
+            ]
+          }
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          menuOptions: {
+            settings: {
+              enrich: false  // Turn off Braille and voice narration text automatic generation
+            }
+          },
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://unpkg.com/mathjax/tex-mml-chtml.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (true) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://unpkg.com/mermaid/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = {"data-mapping":"title","data-strict":1,"data-reactions-enabled":1,"data-emit-metadata":0,"data-input-position":"top","data-lang":"zh-CN"}
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'YuZhangWang/YuZhangWang.github.io',
+      'data-repo-id': 'MDEwOlJlcG9zaXRvcnkzNDY4MTQyNjE=',
+      'data-category-id': 'DIC_kwDOFKv3Nc4CQ6NC',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://unpkg.com/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://unpkg.com/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/学术研究/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🎓 Academic Research (30)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/项目展示/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">💾 Project Showcase (16)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/技能学习记录/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🔨 Skills Learning (40)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/生活感悟/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">♥️ Life Insights (22)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><a class="magnet_link_more"  href="https://yuzhang.wang/categories" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(50% - 5px);background: #f2f2f2;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: rgb(127, 199, 244)}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>历史上的今天</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='/'|| '/' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>

@@ -1,0 +1,67 @@
+:root {
+    --hl-color: hsl(220, 14%, 71%);
+    --hl-bg: hsl(220, 13%, 18%);
+}
+
+figure.highlight pre .deletion,
+figure.highlight pre .tag .name,
+figure.highlight pre .constant,
+figure.highlight pre .css .class,
+figure.highlight pre .number,
+figure.highlight pre .tag .attr,
+figure.highlight pre .ruby .constant {
+    color: hsl(29, 54%, 61%);
+}
+
+figure.highlight pre .addition,
+figure.highlight pre .string,
+figure.highlight pre .value {
+    color: hsl(95, 38%, 62%);
+}
+
+figure.highlight pre .comment,
+figure.highlight pre .xml .cdata {
+    color: hsl(220, 10%, 40%);
+}
+
+figure.highlight pre .variable,
+figure.highlight pre .function,
+figure.highlight pre .javascript .function,
+figure.highlight pre .built_in,
+figure.highlight pre .title {
+    color: hsl(207, 82%, 66%);
+}
+
+figure.highlight pre .xml .tag .title,
+figure.highlight pre .tag,
+figure.highlight pre .ruby .class .title,
+figure.highlight pre .python .title,
+figure.highlight pre .ruby .function .title,
+figure.highlight pre .javascript .title,
+figure.highlight pre .coffeescript .title,
+figure.highlight pre .ruby .symbol {
+    color: hsl(355, 65%, 65%);
+}
+
+figure.highlight pre .xml .doctype,
+figure.highlight pre .html .doctype,
+figure.highlight pre .special {
+    color: hsl(220, 14%, 71%);
+}
+
+figure.highlight pre .command {
+    color: hsl(220, 14%, 45%);
+}
+
+figure.highlight pre .keyword,
+figure.highlight pre .ruby .title .keyword {
+    color: hsl(286, 60%, 67%);
+}
+
+figure.highlight pre .params {
+    color: hsl(220, 14%, 71%);
+}
+
+#article-container figure.highlight .gutter pre {
+    background-color: rgb(40, 44, 52);
+}
