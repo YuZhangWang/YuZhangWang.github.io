@@ -13292,17 +13292,6 @@ L_i(w) = f_i(w) + \lambda_t \left\| \nabla f_i(w) - \bar{\nabla}^{(t)} \right\|^
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/css/Align-al-elements.css</url>
-    <content><![CDATA[#page .page-title {
-    display: flex;
-    justify-content: center;
-    /* 水平居中对齐 */
-    align-items: center;
-    /* 垂直居中对齐（可选） */
-}]]></content>
-  </entry>
-  <entry>
     <title>简历</title>
     <url>/cv/index.html</url>
     <content><![CDATA[<blockquote>
@@ -13330,60 +13319,58 @@ L_i(w) = f_i(w) + \lambda_t \left\| \nabla f_i(w) - \bar{\nabla}^{(t)} \right\|^
     <url>/css/custom.css</url>
     <content><![CDATA[/* 版权信息下划线去除 */
 #post .post-copyright .post-copyright-info a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* 页脚底部效果优化 */
 #aside-content .card-webinfo .webinfo .webinfo-item {
-    padding: 0 0 0 0
+  padding: 0 0 0 0;
 }
 
 #footer {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    color: #000;
-    background: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #000;
+  background: none;
 }
 
 #footer #footer-wrap,
 #footer #footer-wrap a {
-    color: #333;
+  color: #333;
 }
 
 .fa-heart {
-    color: red
+  color: red;
 }
 
 /* 分类字体调大 */
 #page .category-lists ul {
-    font-size: 22px;
-    ;
+  font-size: 22px;
 }
 
 /* h1-h6颜色优化 */
 #content-inner.layout h1::before {
-    color: #5ec1e0;
+  color: #5ec1e0;
 }
 
 #content-inner.layout h2::before {
-
-    color: #ffbf00;
+  color: #ffbf00;
 }
 
 #content-inner.layout h3::before {
-    color: #57c850;
+  color: #57c850;
 }
 
 #content-inner.layout h4::before {
-    color: #fb7061;
+  color: #fb7061;
 }
 
 #content-inner.layout h5::before {
-    color: #a9e000;
+  color: #a9e000;
 }
 
 #content-inner.layout h6::before {
-    color: #ef50a8;
+  color: #ef50a8;
 }
 
 #content-inner.layout h1:hover,
@@ -13392,32 +13379,33 @@ L_i(w) = f_i(w) + \lambda_t \left\| \nabla f_i(w) - \bar{\nabla}^{(t)} \right\|^
 #content-inner.layout h4:hover,
 #content-inner.layout h5:hover,
 #content-inner.layout h6:hover {
-    color: #49b1f5;
+  color: #49b1f5;
 }
 
 /* 图片下方描述和图片间距调整 */
-.img-alt {}
+.img-alt {
+}
 
 /* 页面标题和文章标题居中显示 */
 #page h1.page-title {
-    text-align: center;
+  text-align: center;
 }
 
 #post-info h1.post-title {
-    text-align: center;
+  text-align: center;
 }
 
 /* 文章顶部信息居中显示 */
 #post-info #post-meta div.meta-firstline {
-    text-align: center;
+  text-align: center;
 }
 
 #post-info #post-meta div.meta-secondline {
-    text-align: center;
+  text-align: center;
 }
 
 #post-info #post-meta {
-    text-align: center;
+  text-align: center;
 }
 
 /* 网页变灰 
@@ -13425,7 +13413,8 @@ html {
     filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
     -webkit-filter: grayscale(100%);
 }
-*/]]></content>
+*/
+]]></content>
   </entry>
   <entry>
     <title></title>
