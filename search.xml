@@ -13456,6 +13456,109 @@ L_i(w) = f_i(w) + \lambda_t \left\| \nabla f_i(w) - \bar{\nabla}^{(t)} \right\|^
   display: none;
 }
 
+/* 简历：PDF 页面预渲染展示与中英文切换 */
+.page.type-resume #article-container .cv-viewer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page.type-resume #article-container .cv-viewer-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 20px;
+}
+
+.page.type-resume #article-container .cv-lang-switch {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--light-grey);
+  border-radius: 999px;
+  background: var(--card-bg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.page.type-resume #article-container .cv-lang-btn {
+  padding: 8px 20px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--font-color);
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.page.type-resume #article-container .cv-lang-btn:hover {
+  background: rgba(73, 177, 245, 0.12);
+  transform: translateY(-1px);
+}
+
+.page.type-resume #article-container .cv-lang-btn.is-active {
+  background: linear-gradient(135deg, #49b1f5, #6ab4f8);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(73, 177, 245, 0.35);
+}
+
+.page.type-resume #article-container .cv-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.page.type-resume #article-container .cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1px solid var(--light-grey);
+  border-radius: 999px;
+  background: var(--card-bg);
+  color: var(--font-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.25s ease, color 0.25s ease, background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.page.type-resume #article-container .cv-download-btn:hover {
+  border-color: #49b1f5;
+  color: #49b1f5;
+  box-shadow: 0 4px 12px rgba(73, 177, 245, 0.2);
+  transform: translateY(-1px);
+}
+
+.page.type-resume #article-container .cv-page-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.page.type-resume #article-container .cv-page-set[hidden] {
+  display: none !important;
+}
+
+.page.type-resume #article-container .cv-page-set img {
+  display: block;
+  width: 100%;
+  max-width: 820px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+  .page.type-resume #article-container .cv-viewer-toolbar {
+    justify-content: center;
+  }
+}
+
 #footer #footer-wrap,
 #footer #footer-wrap a {
   color: #333;
@@ -13596,14 +13699,56 @@ html {
   <entry>
     <title>简历</title>
     <url>/cv/index.html</url>
-    <content><![CDATA[<blockquote>
-<p>本页面可能存在无法在线浏览或者直接下载文件的情况<br>建议使用<a href="https://www.mozilla.org/en-US/firefox/all">FireFox</a>进行观看，效果最好</p>
-</blockquote>
-<div class="pdf-embed">
-  <object data="../cv/cv-en.pdf" type="application/pdf" width="100%" height="550" onerror="this.parentElement.classList.add('pdf-failed')">
-    <p>无法在线预览，请<a href="../cv/cv-en.pdf" download>下载英文版简历</a>。</p>
-  </object>
+    <content><![CDATA[<div class="cv-viewer">
+  <div class="cv-viewer-toolbar">
+    <div class="cv-lang-switch" role="tablist" aria-label="简历语言切换">
+      <button class="cv-lang-btn is-active" type="button" role="tab" aria-selected="true" data-lang="zh">中文</button>
+      <button class="cv-lang-btn" type="button" role="tab" aria-selected="false" data-lang="en">English</button>
+    </div>
+    <div class="cv-downloads">
+      <a class="cv-download-btn cv-download-zh" href="/cv/cv-zh.pdf" download>
+        <i class="fas fa-download fa-fw"></i> 下载中文版
+      </a>
+      <a class="cv-download-btn cv-download-en" href="/cv/cv-en.pdf" download>
+        <i class="fas fa-download fa-fw"></i> 下载英文版
+      </a>
+    </div>
+  </div>
+
+  <div class="cv-pages" data-cv-lang="zh">
+    <div class="cv-page-set" data-lang="zh">
+      <img src="/cv/pages/zh/cv-zh-01.png" alt="中文简历第 1 页">
+      <img src="/cv/pages/zh/cv-zh-02.png" alt="中文简历第 2 页">
+    </div>
+    <div class="cv-page-set" data-lang="en" hidden>
+      <img src="/cv/pages/en/cv-en-01.png" alt="English Resume Page 1">
+      <img src="/cv/pages/en/cv-en-02.png" alt="English Resume Page 2">
+    </div>
+  </div>
 </div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.cv-lang-btn')
+    var sets = document.querySelectorAll('.cv-page-set')
+
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var lang = button.getAttribute('data-lang')
+
+        buttons.forEach(function (item) {
+          var active = item === button
+          item.classList.toggle('is-active', active)
+          item.setAttribute('aria-selected', active ? 'true' : 'false')
+        })
+
+        sets.forEach(function (set) {
+          set.hidden = set.getAttribute('data-lang') !== lang
+        })
+      })
+    })
+  })()
+</script>
 ]]></content>
   </entry>
   <entry>
