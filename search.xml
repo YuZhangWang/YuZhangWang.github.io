@@ -13471,6 +13471,18 @@ L_i(w) = f_i(w) + \lambda_t \left\| \nabla f_i(w) - \bar{\nabla}^{(t)} \right\|^
   margin: 0 0 20px;
 }
 
+.page.type-resume #article-container .cv-lang-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page.type-resume #article-container .cv-lang-label {
+  color: var(--text-highlight-color);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 .page.type-resume #article-container .cv-lang-switch {
   display: inline-flex;
   gap: 4px;
@@ -13506,8 +13518,16 @@ L_i(w) = f_i(w) + \lambda_t \left\| \nabla f_i(w) - \bar{\nabla}^{(t)} \right\|^
 
 .page.type-resume #article-container .cv-downloads {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+  margin-left: auto;
+}
+
+.page.type-resume #article-container .cv-download-label {
+  color: var(--text-highlight-color);
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .page.type-resume #article-container .cv-download-btn {
@@ -13701,16 +13721,24 @@ html {
     <url>/cv/index.html</url>
     <content><![CDATA[<div class="cv-viewer">
   <div class="cv-viewer-toolbar">
-    <div class="cv-lang-switch" role="tablist" aria-label="简历语言切换">
-      <button class="cv-lang-btn is-active" type="button" role="tab" aria-selected="true" data-lang="zh">中文</button>
-      <button class="cv-lang-btn" type="button" role="tab" aria-selected="false" data-lang="en">English</button>
+    <div class="cv-lang-area">
+      <span class="cv-lang-label">切换语言</span>
+      <div class="cv-lang-switch" role="tablist" aria-label="简历语言切换">
+        <button class="cv-lang-btn is-active" type="button" role="tab" aria-selected="true" data-lang="zh">
+          <i class="fas fa-language fa-fw"></i><span>ZH</span>
+        </button>
+        <button class="cv-lang-btn" type="button" role="tab" aria-selected="false" data-lang="en">
+          <i class="fas fa-language fa-fw"></i><span>EN</span>
+        </button>
+      </div>
     </div>
     <div class="cv-downloads">
+      <span class="cv-download-label">下载</span>
       <a class="cv-download-btn cv-download-zh" href="/cv/cv-zh.pdf" download>
-        <i class="fas fa-download fa-fw"></i> 下载中文版
+        <i class="fas fa-download fa-fw"></i><span>ZH</span>
       </a>
       <a class="cv-download-btn cv-download-en" href="/cv/cv-en.pdf" download>
-        <i class="fas fa-download fa-fw"></i> 下载英文版
+        <i class="fas fa-download fa-fw"></i><span>EN</span>
       </a>
     </div>
   </div>

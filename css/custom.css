@@ -104,6 +104,18 @@
   margin: 0 0 20px;
 }
 
+.page.type-resume #article-container .cv-lang-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page.type-resume #article-container .cv-lang-label {
+  color: var(--text-highlight-color);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 .page.type-resume #article-container .cv-lang-switch {
   display: inline-flex;
   gap: 4px;
@@ -139,8 +151,16 @@
 
 .page.type-resume #article-container .cv-downloads {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+  margin-left: auto;
+}
+
+.page.type-resume #article-container .cv-download-label {
+  color: var(--text-highlight-color);
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .page.type-resume #article-container .cv-download-btn {
