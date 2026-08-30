@@ -13064,8 +13064,7 @@ L_i(w) = f_i(w) + \lambda_t \left\| \nabla f_i(w) - \bar{\nabla}^{(t)} \right\|^
 <p><h2 align="center">👋Thank You For Your Visit</h2></p>
 <div align="center">
 <span class="visitor-badge-shell">
-<img class="visitor-badge visitor-badge-fallback" src="/images/visitor-fallback.svg" alt="Visitor Count">
-<img class="visitor-badge visitor-badge-live" data-hit-src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fyuzhang.wang%2Fabout%2F&output=json" alt="Visitor Count" hidden>
+<img class="visitor-badge visitor-badge-live" src="/images/visitor-fallback.svg" data-hit-src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fyuzhang.wang%2Fabout%2F&output=json" alt="Visitor Count">
 </span>
 </div>
 
@@ -13137,8 +13136,6 @@ L_i(w) = f_i(w) + \lambda_t \left\| \nabla f_i(w) - \bar{\nabla}^{(t)} \right\|^
     var badge = document.querySelector('#article-container .visitor-badge-live')
     if (!badge) return
 
-    var shell = badge.closest('.visitor-badge-shell')
-    var fallback = shell ? shell.querySelector('.visitor-badge-fallback') : null
     var contact = document.querySelector('#article-container img[src*="StackOverFlow"]')
     var hitUrl = badge.getAttribute('data-hit-src')
     if (!hitUrl) return
@@ -13181,8 +13178,6 @@ L_i(w) = f_i(w) + \lambda_t \left\| \nabla f_i(w) - \bar{\nabla}^{(t)} \right\|^
         var total = Number(data.total_hits)
         if (!Number.isFinite(total) || total < 0) throw new Error('Bad visitor count')
         badge.src = makeBadgeSvg('VISITORS', String(total))
-        if (fallback) fallback.hidden = true
-        badge.hidden = false
         badge.removeAttribute('data-hit-src')
         syncVisitorHeight()
         setTimeout(syncVisitorHeight, 100)
@@ -13420,13 +13415,14 @@ L_i(w) = f_i(w) + \lambda_t \left\| \nabla f_i(w) - \bar{\nabla}^{(t)} \right\|^
 
 /* 关于页表格仅保留内部排版，不显示表格线 */
 .page.type-about #article-container table {
-  border-top-color: transparent !important;
-  border-left-color: transparent !important;
+  border: none !important;
+  border-spacing: 0 !important;
+  border-collapse: collapse !important;
 }
 
 .page.type-about #article-container th,
 .page.type-about #article-container td {
-  border-color: transparent !important;
+  border: none !important;
 }
 
 /* 关于页徽章改为直角，与 GitHub 主页 README 一致 */
@@ -13604,14 +13600,6 @@ html {
 <p>本页面可能存在无法在线浏览或者直接下载文件的情况<br>建议使用<a href="https://www.mozilla.org/en-US/firefox/all">FireFox</a>进行观看，效果最好</p>
 </blockquote>
 <div class="pdf-embed">
-  <p class="pdf-fallback">如果上方 PDF 没有显示，可以<a href="../cv/cv-zh.pdf" download>下载中文版简历</a>。</p>
-  <object data="../cv/cv-zh.pdf" type="application/pdf" width="100%" height="550" onerror="this.parentElement.classList.add('pdf-failed')">
-    <p>无法在线预览，请<a href="../cv/cv-zh.pdf" download>下载中文版简历</a>。</p>
-  </object>
-</div>
-
-<div class="pdf-embed">
-  <p class="pdf-fallback">如果上方 PDF 没有显示，可以<a href="../cv/cv-en.pdf" download>下载英文版简历</a>。</p>
   <object data="../cv/cv-en.pdf" type="application/pdf" width="100%" height="550" onerror="this.parentElement.classList.add('pdf-failed')">
     <p>无法在线预览，请<a href="../cv/cv-en.pdf" download>下载英文版简历</a>。</p>
   </object>

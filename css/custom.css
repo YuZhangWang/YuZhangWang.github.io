@@ -48,13 +48,14 @@
 
 /* 关于页表格仅保留内部排版，不显示表格线 */
 .page.type-about #article-container table {
-  border-top-color: transparent !important;
-  border-left-color: transparent !important;
+  border: none !important;
+  border-spacing: 0 !important;
+  border-collapse: collapse !important;
 }
 
 .page.type-about #article-container th,
 .page.type-about #article-container td {
-  border-color: transparent !important;
+  border: none !important;
 }
 
 /* 关于页徽章改为直角，与 GitHub 主页 README 一致 */
