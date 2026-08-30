@@ -118,8 +118,8 @@
 
 .page.type-resume #article-container .cv-lang-switch {
   display: inline-flex;
-  gap: 4px;
-  padding: 4px;
+  gap: 3px;
+  padding: 3px;
   border: 1px solid var(--light-grey);
   border-radius: 999px;
   background: var(--card-bg);
@@ -127,14 +127,19 @@
 }
 
 .page.type-resume #article-container .cv-lang-btn {
-  padding: 8px 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 11px;
   border: 0;
   border-radius: 999px;
   background: transparent;
   color: var(--font-color);
   cursor: pointer;
+  font-size: 0.82em;
   font-weight: 600;
   line-height: 1.2;
+  white-space: nowrap;
   transition: color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
@@ -167,13 +172,15 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 16px;
+  padding: 4px 11px;
   border: 1px solid var(--light-grey);
   border-radius: 999px;
   background: var(--card-bg);
   color: var(--font-color);
+  font-size: 0.82em;
   font-weight: 600;
   text-decoration: none;
+  white-space: nowrap;
   transition: border-color 0.25s ease, color 0.25s ease, background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
