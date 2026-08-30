@@ -15,6 +15,79 @@
   background: none;
 }
 
+/* 导航栏不再依赖 JS 添加 .show 后才可见，避免首屏闪烁 */
+#nav {
+  opacity: 1 !important;
+}
+
+/* 禁用首屏位移动画，浏览器卡顿时不会出现排版跳变 */
+#content-inner,
+#footer,
+#page-header:not(.full_page),
+#nav.show {
+  animation: none !important;
+}
+
+/* 访客徽章与下方联系方式徽章统一高度 */
+#article-container .visitor-badge-shell {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0;
+}
+
+#article-container .visitor-badge {
+  height: 22.203px !important;
+  width: auto;
+  vertical-align: middle;
+}
+
+#article-container .visitor-badge-fallback[hidden],
+#article-container .visitor-badge-live[hidden] {
+  display: none !important;
+}
+
+/* 关于页表格仅保留内部排版，不显示表格线 */
+.page.type-about #article-container table {
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
+}
+
+.page.type-about #article-container th,
+.page.type-about #article-container td {
+  border-color: transparent !important;
+}
+
+/* 关于页徽章改为直角，与 GitHub 主页 README 一致 */
+.page.type-about #article-container img {
+  border-radius: 0 !important;
+}
+
+/* 说说页无数据或数据加载失败时避免出现空白区域 */
+.page.type-shuoshuo #article-container .shuoshuo-empty {
+  padding: 48px 12px;
+  color: var(--text-highlight-color);
+  text-align: center;
+  font-size: 1.05em;
+}
+
+/* 简历 PDF 无法内嵌时始终提供下载入口 */
+.page.type-resume .pdf-embed,
+.page.type-resume .pdf-fallback {
+  margin: 0 0 20px;
+}
+
+.page.type-resume .pdf-fallback {
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--font-color);
+  text-align: center;
+}
+
+.page.type-resume .pdf-embed.pdf-failed object {
+  display: none;
+}
+
 #footer #footer-wrap,
 #footer #footer-wrap a {
   color: #333;
