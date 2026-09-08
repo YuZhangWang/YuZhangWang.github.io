@@ -1,0 +1,814 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>职场棋局：内斗、背叛与离场选项的机制分析 | YuZhangWang的领域</title><meta name="author" content="YuZhangWang"><meta name="copyright" content="YuZhangWang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本文不是对任何具体组织、个人或事件的指控。文中出现的场景属于匿名化分析模型，目的是把“内斗”“背叛”“晋升”“离职”这些过于情绪化的词，转成可以检查的证据、机制和选项。文中关于精神健康的内容只讨论压力暴露与风险，不构成医学诊断，也不把任何人的痛苦解释为个人缺陷。  摘要人们谈论职场时，最常用的词往往不是“制度”，而是“人”。谁在背后说了什么，谁被领导偏爱，谁把功劳抢走，谁把同事推到火线上，谁在离">
+<meta property="og:type" content="article">
+<meta property="og:title" content="职场棋局：内斗、背叛与离场选项的机制分析">
+<meta property="og:url" content="https://yuzhang.wang/162-workplace-betrayal-survival/index.html">
+<meta property="og:site_name" content="YuZhangWang的领域">
+<meta property="og:description" content="本文不是对任何具体组织、个人或事件的指控。文中出现的场景属于匿名化分析模型，目的是把“内斗”“背叛”“晋升”“离职”这些过于情绪化的词，转成可以检查的证据、机制和选项。文中关于精神健康的内容只讨论压力暴露与风险，不构成医学诊断，也不把任何人的痛苦解释为个人缺陷。  摘要人们谈论职场时，最常用的词往往不是“制度”，而是“人”。谁在背后说了什么，谁被领导偏爱，谁把功劳抢走，谁把同事推到火线上，谁在离">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/20260908102400-workplace-betrayal-survival.png">
+<meta property="article:published_time" content="2026-09-08T02:25:00.000Z">
+<meta property="article:modified_time" content="2026-09-08T02:28:16.508Z">
+<meta property="article:author" content="YuZhangWang">
+<meta property="article:tag" content="组织行为">
+<meta property="article:tag" content="职场生存">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/20260908102400-workplace-betrayal-survival.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "职场棋局：内斗、背叛与离场选项的机制分析",
+  "url": "https://yuzhang.wang/162-workplace-betrayal-survival/",
+  "image": "https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/20260908102400-workplace-betrayal-survival.png",
+  "datePublished": "2026-09-08T02:25:00.000Z",
+  "dateModified": "2026-09-08T02:28:16.508Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "YuZhangWang",
+      "url": "https://yuzhang.wang"
+    }
+  ]
+}</script><link rel="shortcut icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png"><link rel="canonical" href="https://yuzhang.wang/162-workplace-betrayal-survival/index.html"><link rel="preconnect" href="https://gcore.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2ed9ec904657094072d5645542b35a76";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":400,"highlightFullpage":true,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":500,"languages":{"author":"作者: YuZhangWang","link":"链接: ","source":"来源: YuZhangWang的领域","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://gcore.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '职场棋局：内斗、背叛与离场选项的机制分析',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/custom.css?v=20260908"><link rel="stylesheet" href="/css/font.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="/css/swiper-bundle.min.css"><link rel="stylesheet" href="/css/history-calendar.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/rss2.xml" title="YuZhangWang的领域" type="application/rss+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">162</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">311</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cinemas/"><i class="fa-fw fa fa-film"></i><span> 影视</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></div><div class="menus_item"><a class="site-page" href="/natter/"><i class="fa-fw fa-sharp fa-solid fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/albums/"><i class="fa-fw fa fa-camera"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/project/"><i class="fa-fw fa fa-coins"></i><span> 项目</span></a></div><div class="menus_item"><a class="site-page" href="/cv/"><i class="fa-fw fa-solid fa-file"></i><span> 简历</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-thumbs-up"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" alt="Logo" loading='lazy'><span class="site-name">YuZhangWang的领域</span></a><a class="nav-page-title" href="/"><span class="site-name">职场棋局：内斗、背叛与离场选项的机制分析</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cinemas/"><i class="fa-fw fa fa-film"></i><span> 影视</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></div><div class="menus_item"><a class="site-page" href="/natter/"><i class="fa-fw fa-sharp fa-solid fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/albums/"><i class="fa-fw fa fa-camera"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/project/"><i class="fa-fw fa fa-coins"></i><span> 项目</span></a></div><div class="menus_item"><a class="site-page" href="/cv/"><i class="fa-fw fa-solid fa-file"></i><span> 简历</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-thumbs-up"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">职场棋局：内斗、背叛与离场选项的机制分析</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon fas fa-history"></i><span class="post-meta-label">更新于</span><time datetime="2026-09-08T02:28:16.508Z" title="更新于 2026-09-08 10:28:16">2026-09-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.9w</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>54分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:365,&quot;messagePrev&quot;:&quot;距离上次更新已经过去&quot;,&quot;messageNext&quot;:&quot;天,文章内容可能与实际操作有一定出入&quot;,&quot;postUpdate&quot;:&quot;2026-09-08 10:28:16&quot;}" hidden></div><blockquote>
+<p>本文不是对任何具体组织、个人或事件的指控。文中出现的场景属于匿名化分析模型，目的是把“内斗”“背叛”“晋升”“离职”这些过于情绪化的词，转成可以检查的证据、机制和选项。文中关于精神健康的内容只讨论压力暴露与风险，不构成医学诊断，也不把任何人的痛苦解释为个人缺陷。</p>
+</blockquote>
+<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>人们谈论职场时，最常用的词往往不是“制度”，而是“人”。谁在背后说了什么，谁被领导偏爱，谁把功劳抢走，谁把同事推到火线上，谁在离开前把团队信息带走，谁在领导崩溃时悄悄接管。这种叙事有很强的代入感，却也容易把一个结构问题变成一场道德审判。本文想换一种提问方式：当一间机构同时出现内斗、背叛、晋升混乱、领导耗损和行业退潮时，哪些条件是共同出现的？哪些行为即使没有恶意，也会制造同样的结果？哪些“保全自己”的方法，其实只是把风险推迟到下一个人身上？</p>
+<p>本文的核心判断可以概括为：职场中的多数伤害，不是因为有坏人，而是因为“信息、奖励与风险”三者错位。当信息被控制在小圈子，奖励偏向“被看见”而不是“做对”，风险被转嫁给位置更低的人，组织就会自然发展出内斗与背叛。这不是道德上的必然，而是一种可被干预的均衡。需要注意的是，本文不主张“所有人都自私”，也不主张“只要离开就能解决一切”。相反，“离开”与“留下”都是同一套博弈中的选项，它们在特定条件下各有成本。</p>
+<p>文章使用一个匿名化的教培机构作为外部背景。教培行业经历过明显的政策与市场收缩，也因此成为观察“个人努力如何被行业周期吞没”的合适样本。但本文不会复述任何具体经营数字，也不会把某个人的遭遇写成行业结论。薪资讨论同样被限制在机制层面：我们关心的是“加薪如何被组织解释”“外部 offer 如何影响谈判”“跳槽溢价为什么存在且不总是可持续”，而不是任何人的真实收入。</p>
+<h2 id="机器开始报错"><a href="#机器开始报错" class="headerlink" title="机器开始报错"></a>机器开始报错</h2><p>假设你走进一间办公室，桌面上放着一台不断发出低频报警声的机器。机器表面很新，品牌标识也很亮，说明书上写着“效率优先、客户第一、人才为本”。但你打开侧板，会发现里面的齿轮咬合得并不严实：某条数据线只连到一个人的电脑，某个阀门名义上由三个人共同负责，实际上一旦出问题，所有人都可以相互推诿。报警灯亮起时，没有人去找根因；大家先看谁离灯最近，谁平时和主管走得近，谁最近刚提了加薪，谁刚被划进核心圈。</p>
+<p>在这个隐喻里，机器本身就是组织。内斗不是机器的“噪音”，而是齿轮错位的正常表现。当晋升标准不透明，成员只能用关系、站队和信息垄断来预测未来；当忠诚被反复奖励，成员就会把“是否站在我这边”当成最重要的判断；当领导者自己处于高压之下，他可能把下属的服从误认为能力，把质疑误认为威胁。于是，每一次报警都可能变成一场小型政变：有人借机证明“果然靠不住”，有人借机证明“我能收拾残局”，有人默默保存聊天记录，有人开始更新简历。</p>
+<p>把这样的场景讲成一个故事，很容易产生“谁背叛了谁”的答案。但真正值得追问的是：在什么条件下，一个原本并不想背叛的人会开始考虑背叛？在什么条件下，一个本来想守住底线的人会开始怀疑自己的底线？这些问题不能靠“人品”回答，而要靠规则、信息与激励回答。</p>
+<h2 id="术语表：先把词拆开"><a href="#术语表：先把词拆开" class="headerlink" title="术语表：先把词拆开"></a>术语表：先把词拆开</h2><p>“内斗”听起来是坏事，但在组织分析里，它更接近一种权力再分配过程。内部成员为了职位、资源、评价权或信息权，使用正式与非正式手段争夺影响力。内斗不等于一切冲突；健康组织也有分歧，分歧如果围绕事实、方案与证据展开，反而能提高决策质量。所谓“内斗”，通常指冲突已经脱离事实，转向身份、忠诚、阵营与报复。</p>
+<p>“背叛”则需要区分三种含义。第一种是合同背叛，指承诺被打破，例如领导答应过的晋升没有兑现，员工答应过的项目却半途转手。第二种是情感背叛，指信任关系被利用，例如下属把私下倾诉变成向上汇报的材料。第三种是制度背叛，指组织让成员在无意识中替它承担违规责任，事后又把责任解释为个人行为。三者的共同点是：一方把自己的不确定性转嫁给另一方。</p>
+<p>“晋升”不是对过去劳动的结算，而是对未来控制权的分配。组织给一个人更高的位置，通常不是因为“他做得最多”，而是因为“他让决策者相信，把资源交给他更安全”。这个判断听起来冷酷，却解释了为什么很多能干的人始终在旁边看着。</p>
+<p>“保全自身”也不是“躺平”或“冷漠”。它是指一个人在信息有限、权力不对称、行业不确定的情况下，仍然能够维持劳动能力、专业判断和心理边界。保全与忠诚并不冲突；真正冲突的是“无条件的忠诚”与“可论证的自我保护”。</p>
+<h2 id="权力地图：谁在控制信息"><a href="#权力地图：谁在控制信息" class="headerlink" title="权力地图：谁在控制信息"></a>权力地图：谁在控制信息</h2><p>组织中的权力从不只来自职位。一个人即使职级不高，只要能控制关键信息，也能拥有巨大影响力。可以把权力近似写成：</p>
+<script type="math/tex; mode=display">
+\text{Power}(i) = \alpha_1 \text{Rule}(i) + \alpha_2 \text{Relation}(i) + \alpha_3 \text{Information}(i)</script><p>其中 $\text{Rule}(i)$ 是正式权力，来自职务、预算和签字权；$\text{Relation}(i)$ 是关系权力，来自与决策者的信任、历史贡献和情感联结；$\text{Information}(i)$ 是信息权力，来自谁能最早知道消息、谁能解释数据、谁能让别人相信某个版本。这三项不是总有人同时拥有，但它们会相互放大。</p>
+<p>正式权力高的人，往往可以定义会议议程；关系权力高的人，可以在会议之前就完成说服；信息权力高的人，可以决定“问题是否被看见”。当三者集中在少数人手中，组织就会出现一个信息黑箱。黑箱里的规则不是秘密，而是“谁有权理解事实”。</p>
+<p>下面这张图描述了一种常见的内斗演化路径：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    A[绩效标准模糊] --&gt; B[评价依赖主管印象]</span><br><span class="line">    B --&gt; C[成员开始向主管展示自己]</span><br><span class="line">    C --&gt; D[形成内部小圈子]</span><br><span class="line">    D --&gt; E[圈外成员信息减少]</span><br><span class="line">    E --&gt; F[圈外成员开始怀疑与防御]</span><br><span class="line">    F --&gt; G[内斗升级]</span><br><span class="line">    G --&gt; H[关键项目被裹挟]</span><br><span class="line">    H --&gt; I[信任破裂]</span><br><span class="line">    I --&gt; J[有人离开，有人举报，有人接管]</span><br></pre></td></tr></table></figure>
+<p>这张图并不是说“绩效标准模糊”一定会导致内斗。它只是说明一个必要条件：如果组织没有可检验的评价标准，那么关系与信息就会成为替代评价工具，而替代工具一旦出现，就必然产生竞争。竞争本身没有错；错的是竞争不再由结果决定。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>权力来源</th>
+<th>可见性</th>
+<th>容易被谁利用</th>
+<th>组织风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>正式权力</td>
+<td>高</td>
+<td>职位持有者</td>
+<td>决策集中，缺少制衡</td>
+</tr>
+<tr>
+<td>关系权力</td>
+<td>中</td>
+<td>长期伴行的人</td>
+<td>评价失真，公平感下降</td>
+</tr>
+<tr>
+<td>信息权力</td>
+<td>低</td>
+<td>中间层、助理、信息接口</td>
+<td>黑箱化，异议被过滤</td>
+</tr>
+<tr>
+<td>专业权力</td>
+<td>中</td>
+<td>有稀缺技能的人</td>
+<td>若被政治化，会成为站队工具</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="晋升锦标赛：为什么努力不等于升职"><a href="#晋升锦标赛：为什么努力不等于升职" class="headerlink" title="晋升锦标赛：为什么努力不等于升职"></a>晋升锦标赛：为什么努力不等于升职</h2><p>如果组织像一场考试，那么晋升应当等于分数。可现实中的晋升更像一场锦标赛：参与者不仅要比“能力”，还要比“被看到”、比“被信任”、比“在关键时刻是否站在正确一边”。拉齐尔和罗森提出的锦标赛理论认为，相对排名比绝对水平更能解释晋升——组织并不总是需要知道谁是最适合的人，它只需要区分“赢家”与“输家”。</p>
+<p>这意味着，一个人是否能晋升，取决于他是否进入了一个可被观察的比较序列。若评价指标只有“领导觉得她不错”，那么评价对象就从工作成果变成了领导的主观体验。此时，做得正确但沉默的人，会输给做得一般但会表达的人；帮助同事但从不邀功的人，会输给抢功但会讲故事的人。这不是“职场不公平”的抱怨，而是评价机制的可预测后果。</p>
+<p>晋升博弈还有另一个特点：它会把暂时的高低名次固定下来。第一次站队成功后，人会获得更多信息、更多露脸机会和更多资源；失败者则可能被归入“不稳定”“有情绪”“难合作”的标签中。标签一旦形成，即使后来的表现很好，也很难被重新看见。这就是组织中的“路径依赖”。</p>
+<p>因此，讨论晋升时，不能只问“我够不够好”，还要问：</p>
+<ol>
+<li>评价标准是否写在纸面上，并且可以被第三个人验证？</li>
+<li>评价者是否拥有足够完整的信息，还是只看到了展示出来的那一部分？</li>
+<li>晋升是否与真实成果挂钩，还是与“跟谁站在一起”挂钩？</li>
+<li>失败者是否还有第二次机会，还是第一次站错队就基本出局？</li>
+</ol>
+<p>如果这几个问题的答案大多是“否”，那么个人再努力，也只是在抬高别人的判断成本，而不是在改善自己的位置。最有效的策略不是“更努力”，而是“让正确的信息进入正确的渠道”。</p>
+<h2 id="背叛的类型学：谁在什么时候转身"><a href="#背叛的类型学：谁在什么时候转身" class="headerlink" title="背叛的类型学：谁在什么时候转身"></a>背叛的类型学：谁在什么时候转身</h2><p>说到背叛，人们通常会想到一个人背弃另一个人的信任。但在组织里，背叛往往不是突然发生的，而是从“信息被保留”开始的。一个人先不再分享真实进度，然后开始向更高级别的人汇报，再然后开始把同伴的失败描述为自己预警过的风险。到真正被揭穿时，他已经完成了路径转换。</p>
+<p>可以把背叛分为四类，但请记住：分类不是为了贴标签，而是为了判断干预点。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>背叛类型</th>
+<th>典型动作</th>
+<th>当事人可能感受到的正当理由</th>
+<th>组织后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>信息背叛</td>
+<td>隐瞒风险、选择性汇报、提前告知关键人</td>
+<td>“我只是保护项目”</td>
+<td>决策失真，责任模糊</td>
+</tr>
+<tr>
+<td>功劳背叛</td>
+<td>使用他人的成果，但让成果只与自己关联</td>
+<td>“结果是我统筹出来的”</td>
+<td>激励失效，协作下降</td>
+</tr>
+<tr>
+<td>责任背叛</td>
+<td>让同事背锅，自己成为旁观者</td>
+<td>“我没有参与那一段”</td>
+<td>防御性行为增加</td>
+</tr>
+<tr>
+<td>关系背叛</td>
+<td>利用私下信任获取情报并向上传递</td>
+<td>“组织需要真实情况”</td>
+<td>心理安全崩塌，沉默上升</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>从心理学角度看，背叛者很少把自己定义为背叛者。他们通常会先完成一次“道德重构”：把对方描述为不够可靠，把自己的行为解释为“为了大局”，把保留信息解释为“避免制造冲突”。这个过程并不一定是虚伪的；人的认知系统本来就会为已采取的行为寻找理由。因此，与其追问“他是不是坏人”，不如追问“组织制造了哪些让背叛看起来合理的条件”。</p>
+<p>下属对领导者的背叛，在中文语境里常被描述为“反水”。但下属的“反水”通常也有清晰的时间顺序：先是看不到自己的贡献被承认，接着发现晋升通道被锁死，再后来认为“继续忠诚只会让自己成为垫脚石”。如果组织把忠诚定义为“接受所有安排”而不是“共同创造成果”，那么下属的离开或反击就是一种理性选择。同样，领导者有时也会把下属的独立判断定义为背叛，因为独立意味着失去控制。</p>
+<p>这里有一个反直觉的点：对组织来说，最危险的往往不是公开的背叛，而是被压抑的背叛。公开冲突至少会暴露问题，信息还可能进入决策系统；而暗中的背叛会把真实进度隐藏起来，让所有人都以为一切正常，直到项目已经无法挽回。沉默不是和平，而是延迟暴露。</p>
+<h2 id="领导者的电池：压力如何变成管理风格"><a href="#领导者的电池：压力如何变成管理风格" class="headerlink" title="领导者的电池：压力如何变成管理风格"></a>领导者的电池：压力如何变成管理风格</h2><p>内斗的参与者不只是下属。许多组织的紧张气氛，起点其实在领导层。当一个领导同时承受业绩压力、股东压力、监管风险和团队管理压力时，他的“决策带宽”会迅速下降。他可能没有时间核对事实，只能用直觉判断谁更可靠；他可能没有精力安抚情绪，只能用命令压住分歧；他可能把怀疑当成谨慎，把顺从当成忠诚，把任何反对都解读为“在拆台”。</p>
+<p>这不是说领导天然脆弱，而是说工作压力会改变人的信息加工方式。卡拉斯克的“工作要求—控制”模型指出，心理紧张不仅取决于工作要求的强度，还取决于个体对工作的控制程度。当要求很高、控制很低、支持很少时，人更容易进入持续紧张状态。西格里斯提出的“付出—回报失衡”模型则强调，当个体持续付出大量努力，却得不到工资、尊重、地位或安全感等回报时，长期健康风险会上升。</p>
+<p>可以写作：</p>
+<script type="math/tex; mode=display">
+\text{Risk} \approx \frac{\text{Demand}}{\text{Control} + \text{Support}}</script><p>这里的 $\text{Demand}$ 不是“工作多少”，而是“无法回避的要求”；$\text{Control}$ 不是“管多少人”，而是“能否决定自己的节奏与方法”；$\text{Support}$ 也不是“同事是否友好”，而是“是否存在可信、可用的支持结构”。三者关系告诉我们：仅仅让领导“自我调节”是不够的，还要改变组织的控制结构和资源结构。</p>
+<p>世界卫生组织把“职业倦怠”定义为长期工作压力未成功管理所导致的综合征，并强调它属于职业现象，不应被当作普通疾病或道德缺陷。正如世卫组织所说明的，倦怠的核心维度包括耗竭感、与工作的心理距离、职业效能感下降。这里特别要区分两个层面：一是个体可能因长期压力出现情绪、睡眠、注意力或身体症状；二是组织环境可能正在把这些症状“正常化”，例如把失眠当作敬业，把焦虑当作责任心，把无法休息当作“大家都这样”。</p>
+<p>需要明确指出：本文不把“领导压力大导致精神疾病”当作已证实的因果链条。更准确的说法是：高强度、低控制、低支持、持续被内部政治消耗的环境，会提高情绪困扰、焦虑、抑郁症状和倦怠的风险；它可能加剧个体已有的脆弱性，也可能让原本健康的人开始出现功能下降。个体差异、遗传倾向、既往史、睡眠、社会支持和专业干预都会改变结果。把“精神疾病”直接归因于“压力大”，既过度简化了神经科学，也容易让当事人在没有得到帮助时被贴上“抗压能力差”的标签。</p>
+<p>更值得警惕的是“领导者的情绪外溢”。研究表明，领导者情绪耗竭可能与更多滥用式监督行为有关，从而进一步伤害下属，形成压力传染。一个人在下属面前大吼大叫，可能不是因为他天生暴戾，而是因为他在失去调节资源；但这种解释不会减少下属的伤害。组织需要同时保护领导者和下属：给领导者可信的支持，给下属可用的申诉渠道，而不是让双方都认为“忍一忍就过去了”。</p>
+<h2 id="文化是激励的影子：口号为什么失效"><a href="#文化是激励的影子：口号为什么失效" class="headerlink" title="文化是激励的影子：口号为什么失效"></a>文化是激励的影子：口号为什么失效</h2><p>组织文化常被描述为“大家认同的价值观”。但文化真正起作用的，不是写在墙上的字，而是奖励什么、惩罚什么、容忍什么。如果每天晨会上喊“透明、协作、长期主义”，实际考核却只奖励个人开单量，那么成员很快会学到一件事：口号不是行为规则，真正的规则是“谁能贡献可计数的短期结果”。</p>
+<p>可以用一张表把“宣称文化”与“实际文化”放在一起看：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>宣称文化</th>
+<th>实际激励</th>
+<th>成员学会的行为</th>
+<th>组织的隐性成本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>团队第一</td>
+<td>只考核个人业绩</td>
+<td>隐藏信息、争抢客户</td>
+<td>内部摩擦与重复劳动</td>
+</tr>
+<tr>
+<td>坦诚沟通</td>
+<td>批评者被边缘化</td>
+<td>说漂亮话，不报风险</td>
+<td>决策建立在幻觉上</td>
+</tr>
+<tr>
+<td>尊重人才</td>
+<td>晋升看关系</td>
+<td>发展关系而不是能力</td>
+<td>专业能力流失</td>
+</tr>
+<tr>
+<td>保护学生利益</td>
+<td>家长满意度可以购买</td>
+<td>包装结果、制造焦虑</td>
+<td>信任被透支</td>
+</tr>
+<tr>
+<td>长期主义</td>
+<td>季度数据决定资源</td>
+<td>先做容易出成绩的事</td>
+<td>重要问题被推迟</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>这种错位不是组织“虚伪”，而是“激励设计没有跟上价值观”。组织者可能真的相信团队第一，但只要他每个季度看一次个人排名，成员就会按照排名行动。行为不会听从口号，行为会听从奖惩。要改变文化，第一步不是开一场“价值观工作坊”，而是重新设计评价表：把“是否共享信息”纳入协作指标，把“是否及时暴露风险”纳入管理指标，把“是否帮助新人成长”纳入晋升材料。</p>
+<p>文化扭曲还有一个更深层的后果：它会让成员失去“现实检验”。当大家在会上都在说“我们很好”，没有一个人敢问“数据真的支持吗”，组织便进入了表演状态。表演状态短期能维持对外信心，长期会积压错误。等到错误暴露时，组织最自然的反应不是承认激励有问题，而是寻找“背锅的人”。于是，企业文化扭曲继续被解释为个人问题。</p>
+<p>这里也需要一个反方视角：文化并非万能解释。有些组织文化粗糙，但业务模式简单、反馈直接，依然能运行；有些组织文化精致，但产品已经过时，依然会失败。所以，文化不是“好坏”标签，而是组织适应环境的能力指标。判断文化是否扭曲，要看它是否降低了组织发现错误、修正错误和保留人才的速度。</p>
+<h2 id="行业退潮：教培机构为何成为观察样本"><a href="#行业退潮：教培机构为何成为观察样本" class="headerlink" title="行业退潮：教培机构为何成为观察样本"></a>行业退潮：教培机构为何成为观察样本</h2><p>教培行业经历过一次非常典型的“外部冲击”。2021年，“双减”政策对义务教育阶段学科类校外培训提出严格规范，禁止营利性机构开展相关培训，并强调减轻学生作业负担和校外培训负担。政策之后，不少机构收缩业务、转型素质类或职业教育、裁员或关闭。相关报道显示，头部机构也出现过大规模人员调整，行业整体估值和就业规模显著下降。</p>
+<p>这种变化说明了一个关键问题：个人能力再强，也无法抵御行业周期的快速翻转。当整个行业的“需求—供给—信任”结构同时改变时，个人在组织内的位置会急剧贬值。此时，内斗往往不是变得更多，而是变得更烈：因为资源变少，晋升名额变少，留存时间变短，每个人都必须更早证明自己“值得被保留”。</p>
+<p>教培机构还有一个独特之处：它的交付对象是“人的成长”，但它的收入取决于“家长的购买”。当两者被销售逻辑连接起来，组织就容易把教学效果转化为话术，把续费转化为服务质量，把教师个人魅力转化为可复制的产品。这种错位在行业上行时是增长杠杆，在行业下行时就是信任炸弹。一旦家长发现孩子花了时间却没有进步，组织又无法兑现承诺，退费、投诉、口碑崩塌便会同时发生。</p>
+<p>需要谨慎的是，不要把所有教育与培训机构都描述为“会倒闭的机构”。行业收缩不等于行业消失；素质类、职业教育、成人技能、艺术和体育培训仍有真实需求。本文只是想说明：当一个行业同时面临政策、需求、资金和舆论四重变化时，原本“靠趋势赚钱”的组织会暴露出治理缺陷，原本“靠平台生存”的员工会突然发现平台并不能保护自己。</p>
+<p>对个人而言，行业退潮最直接的影响不是失去一份工作，而是失去“可预期的职业叙事”。一个教师可能原本计划“教几年书、积累口碑、晋升教研负责人”，但当公司开始收缩，这条路径可能在一夜之间消失。此时，如果个人只把职业规划绑定在一家公司上，就会把公司风险等同于个人价值风险。</p>
+<h2 id="薪资不是终点：它是一组被解读的信号"><a href="#薪资不是终点：它是一组被解读的信号" class="headerlink" title="薪资不是终点：它是一组被解读的信号"></a>薪资不是终点：它是一组被解读的信号</h2><p>用户希望讨论薪资提升，但不涉及具体金额。这是一个很好的限制，因为薪资讨论真正有价值的部分，本来就不是数字本身，而是数字背后的信号。</p>
+<p>在劳动力市场上，求职者与雇主之间存在信息不对称：雇主很难直接知道求职者未来会带来多少价值。斯宾塞提出的“信号模型”说明，学历、履历、奖项、外部 offer 等不是能力的直接测量，而是帮助雇主筛选候选人的信号。这会产生一个反直觉后果：一个人可能因为“信号强”而获得更高初始报酬，但这种信号不一定等于长期能力。</p>
+<p>由此可以思考加薪的三种路径：</p>
+<p>第一，内部涨薪。它通常取决于组织对个人“不可替代性”的判断。如果你的工作可以被轻易替代，内部涨薪的动力就弱；如果你掌握稀缺技能、关键数据、稳定客户或不可复制的交付体系，组织就有理由为你保留更高成本。内部涨薪的信号意义在于“组织是否愿意为你的未来下注”。</p>
+<p>第二，外部 offer。外部 offer 的谈判价值，不只是“给你一个更贵的价格”，而是改变你在当前组织中的“替代性叙事”。当雇主知道你存在可行离场选项时，他对你的保留成本会上升。当然，外部 offer 也可能被解读为“这个人不稳定”，因此使用时必须配合清晰的职业动机和专业证据。</p>
+<p>第三，职位转换。当你在原岗位已经把所有可观察成果做满，继续加薪可能遇到天花板；而换一个层级更高、职责更广、评价系统更透明的岗位，即使当前报酬没有立竿见影的变化，也可能获得更大的长期增值空间。这个判断需要区分“名义工资”与“总收益”：名义工资是数字，总收益还包括学习、网络、岗位护城河、风险暴露和未来选择权。</p>
+<p>薪资谈判中有一个常见误区：把“涨薪”当成对自己过去付出的补偿。组织逻辑恰恰相反：涨薪是未来产出的押注。因此，谈判时最有效的证据不是“我做了多少”，而是“如果我不做，组织会损失什么；如果我换一种方式做，组织会多获得什么”。你不需要表演委屈，只需要让对方看到“可验证的稀缺性”。</p>
+<p>这又联系回“找下家”。一个人在内部没有话语权时，外部市场是一面镜子。它照出的不一定是你“应该值多少”，而是你的技能在另一个评价系统里如何被定价。若外部市场给出的信号与内部评价长期偏离，继续留在原地就会形成一种错配：你虽然不是商品，却在用错误的汇率兑换自己的价值。</p>
+<p>还要注意，薪资谈判的时机远比“该不该提”更重要。组织预算紧张时，你再有理由，也可能只得到一句“先记着”；而组织正准备扩张、发现关键岗位无人接替、或竞争对手正在挖人时，同样的理由可能被直接接受。因此，提出涨薪前，可以先观察组织所处周期：是正在招人、准备新项目、还是正在收缩？你的请求若能与组织当下的“需求缺口”对齐，成功率会比单纯强调“我做得久”高很多。同时，谈判不能只问“涨多少”，还要问清楚评价周期、考核方式、兑现条件和职责变化；否则，涨薪可能只是一次把责任变得更重的重新打包。</p>
+<h2 id="找下家的路线：离开不是投降"><a href="#找下家的路线：离开不是投降" class="headerlink" title="找下家的路线：离开不是投降"></a>找下家的路线：离开不是投降</h2><p>很多人把“找下家”理解为“骑驴找马”，也就是在职时偷偷更新简历、参加面试。这种做法很常见，也确实能降低空窗期风险，但它需要被拆开看：什么是有效搜索，什么是无效焦虑。</p>
+<p>格兰诺维特关于“弱关系”的研究提出了一个经典洞察：人们在求职中往往不是通过最亲近的朋友获得机会，而是通过关系较远的人，因为弱关系连接着不同的信息圈。强关系里的人通常和你处于相似行业、相似岗位、相似信息环境，你知道的他们也知道；弱关系则可能把你带到一个新的评价系统。因此，找下家不是“把熟人问一圈”，而是有目的地接触不同职能、不同公司、不同城市、不同业务模式的节点。</p>
+<p>有效的搜索应包含四个维度：</p>
+<ol>
+<li>市场信息：当前岗位在外部如何被命名？类似岗位的职责边界是什么？你掌握的技能在哪种场景里最稀缺？</li>
+<li>证据整理：把项目成果转化为“问题—动作—结果—可验证指标”，而不是写“我负责某项目”。</li>
+<li>风险隔离：不要在任何未确认的沟通里承诺“马上离职”，也不要在公司电脑或工作账号上搜索新机会。</li>
+<li>时机判断：当组织正在扩张、项目正在启动时，你的筹码更高；当组织正在收缩、裁员传言四起时，你的筹码会被低估。</li>
+</ol>
+<p>“找下家”还有一个心理层面：它不只是逃避，而是重新建立“我可以在别处被需要”的确定感。这种确定感可能与金钱无关，却直接影响一个人能否在原有组织里保持自尊和边界。一个长期怀疑自己“离开了这里就完了”的人，最容易接受不合理安排，也最容易被“忠诚”绑架。</p>
+<p>但反方观点同样重要：不是每一次离开都值得。有些组织的问题只是暂时性的，有些领导者的耗损可能被组织修复，有些岗位在经济下行期反而提供稀缺稳定性。把“离开”神化为唯一解药，会让一个人在信息不足时做出不可逆决定。因此，找下家应被当作“评估选项”，而不是“精神出走”。</p>
+<h2 id="保全自身的最低操作规范"><a href="#保全自身的最低操作规范" class="headerlink" title="保全自身的最低操作规范"></a>保全自身的最低操作规范</h2><p>如果把前文的所有机制压缩成一份可执行的清单，它大概长这样：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>领域</th>
+<th>最低操作</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工作证据</td>
+<td>保留项目记录、邮件、日程、沟通版本</td>
+<td>不是为举报，而是防止记忆被改写</td>
+</tr>
+<tr>
+<td>信息边界</td>
+<td>不通过公司设备处理私人事务，不传播未经核实的消息</td>
+<td>保护自己，也减少无意泄露</td>
+</tr>
+<tr>
+<td>口头承诺</td>
+<td>重要承诺要求书面确认</td>
+<td>降低“后来没说清楚”的空间</td>
+</tr>
+<tr>
+<td>关系距离</td>
+<td>区分工作支持与情感依赖</td>
+<td>不把同事当作唯一知情者</td>
+</tr>
+<tr>
+<td>专业维护</td>
+<td>每周至少完成一次可展示的能力积累</td>
+<td>让价值不完全依附于当前岗位</td>
+</tr>
+<tr>
+<td>健康护栏</td>
+<td>睡眠、运动、就医、心理咨询按需要安排</td>
+<td>健康不是工作之外的事</td>
+</tr>
+<tr>
+<td>危机预案</td>
+<td>提前整理一份“如果明天失业”的清单</td>
+<td>降低突发事件中的恐慌与仓促决策</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>这份清单看起来像“自我保护手册”，但它最重要的作用不是教人变得防备，而是让一个人有能力在压力下作出清醒选择。当信息被隐藏、承诺被模糊、风险被转嫁时，证据是唯一不会背叛你的东西。</p>
+<p>需要特别强调：保全自身不等于以邻为壑。真正的保全，是在不伤害他人的前提下，减少自己成为系统的燃料。若一个人为了自保开始捏造证据、转移责任、攻击同事，他只是在把内斗推向更深的循环。最终，他可能在短期“赢”了，却进入一个更加难以信任的生态系统。</p>
+<p>保全的另一个维度是心理边界。如果一个人每天都在想“谁在背后搞我”，说明他的注意力已经被组织政治占满。这时，他需要的不只是一份新的工作，而是一个可以恢复的现实检验：哪些事真的发生，哪些只是猜测？哪些损害可以修复，哪些已经超过个人控制？这不是“想开一点”，而是把观察重新锚定到证据上。</p>
+<h2 id="信息编辑权：谁定义发生了什么"><a href="#信息编辑权：谁定义发生了什么" class="headerlink" title="信息编辑权：谁定义发生了什么"></a>信息编辑权：谁定义发生了什么</h2><p>组织里的“事实”从来不是自然存在的，它需要经过编辑。一次会议可能有三个人同时听到同一句话，但最终留下的只有一份纪要；一次项目失败可能有五个原因，但最终写进复盘报告的只有两个；一次晋升可能同时涉及能力、关系和时机，但最终被解释成“领导认为她更有潜力”。谁掌握编辑权，谁就掌握了对过去的解释权。</p>
+<p>这种权力往往被低估，因为它看起来只是“写文档”。但文档会在下一次会议中被引用，会在绩效评估中被翻阅，会在离职交接时成为别人的起点。一旦一份不准确的记录进入系统，后续的人就会在错误的基础上继续行动。更麻烦的是，错误会在一次次复述中变得像真相：因为大家都看过同一份记录，于是没有人再质疑它。</p>
+<p>信息编辑权有几个关键节点：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>节点</th>
+<th>编辑者</th>
+<th>可能发生的事</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>会议记录</td>
+<td>记录员或主持人</td>
+<td>有意省略异议、弱化反对声音</td>
+<td>决策失去真实反馈</td>
+</tr>
+<tr>
+<td>数据口径</td>
+<td>负责人或分析者</td>
+<td>选择有利区间、更换对照组</td>
+<td>绩效判断被扭曲</td>
+</tr>
+<tr>
+<td>周报月报</td>
+<td>汇报人</td>
+<td>把“协作”写成“个人主导”</td>
+<td>功劳分配失衡</td>
+</tr>
+<tr>
+<td>复盘材料</td>
+<td>项目负责人</td>
+<td>把结构问题写成“个人失误”</td>
+<td>责任被错误归因</td>
+</tr>
+<tr>
+<td>离职交接</td>
+<td>即将离开的人</td>
+<td>选择性移交关键信息</td>
+<td>组织记忆缺口</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>对一个普通员工来说，最好的反制不是“偷偷录音”，而是学会“参与定义”。在公司允许的范围内，尽量让自己的贡献进入可审计的渠道：把口头讨论写成邮件确认，把会议结论发进项目群，把关键节点标注清楚。这并不代表不信任同事，而是让组织在需要复盘时拥有更完整的证据。</p>
+<p>这里也要提出一个反方：过度记录会制造另一种“表演”。如果每个人都把沟通变成邮件、把会议变成书面证明，组织的成本会上升，信任反而可能降低。重要的不是“事事留痕”，而是“关键承诺与关键结论可追溯”。你要保护的，不是所有场景，而是那些一旦被改写就会改变责任认定的场景。</p>
+<h2 id="情绪劳动：管理者和被管理者如何互相消耗"><a href="#情绪劳动：管理者和被管理者如何互相消耗" class="headerlink" title="情绪劳动：管理者和被管理者如何互相消耗"></a>情绪劳动：管理者和被管理者如何互相消耗</h2><p>职场中有一类工作很难被写进绩效表，却无处不在，那就是情绪劳动。下属要对领导表现出“尊重与可沟通”，即使心里已经非常疲惫；领导要表现出“自信与可控”，即使自己对未来一无所知；销售要表现出“热情与确定”，即使产品的真实效果并不确定；教师要表现出“关心学生”，即使自己的睡眠和收入都已经出现问题。</p>
+<p>情绪劳动本身不是坏事。人本来就需要在公共场合调节表达，这是社会化的能力。但当情绪劳动成为唯一可被看见的“工作”，组织就会出现一种奇怪的现象：真正的问题被情绪表演覆盖，真正需要被讨论的风险反而无法出现。</p>
+<p>一个例子是“会议上的沉默”。参会者都知道项目可能延期，但没有人愿意成为“泼冷水的人”，因为泼冷水可能被解读为消极、不稳定、不支持团队。于是大家用微笑、点头和“我建议再同步一下”来维持表面一致。会后，每个人都在私下表达自己的怀疑，却没有人把怀疑写进决策记录。这个过程消耗的是所有人的注意力，却几乎没有产出。</p>
+<p>另一个例子是“表扬的真实性”。领导在公开场合表扬某个人，可能并不是因为这个人真的做得最好，而是为了向其他人传递“走我的路线会被看见”。员工逐渐学会的不是把事情做好，而是让领导“舒服地看到自己”。于是，文化中开始出现一套“正确姿势”：加班要被看见，困难要被讲述，成果必须可被拍照。真正重要的判断反而被排除在外。</p>
+<p>情绪劳动与领导者耗损之间是相互的。领导者需要反复扮演“稳定者”，下属需要反复扮演“支持者”，两者都在压抑自己的真实信号。当这种表演长期持续，人会逐渐失去“我到底感觉如何”的觉察能力。一个领导者可能已经连续三个月没有完整睡过觉，却仍然在会议上说“大家放心”；一个员工可能已经出现明显的回避行为，却仍然在微信里回复“好的，没问题”。</p>
+<p>如果组织希望减少这种消耗，可以做一个简单的实验：在会议开始时，让每个人用一句话说“我现在最担心什么”，并规定“担心”不是评价指标，不需要被解释和防御。这个动作看似简单，却能改变情绪劳动的规则：它允许人把真实状态变成信息，而不是把真实状态当成弱点。当然，这需要长期制度支持；如果只做一次，大家只会认为这是另一个“形式主义”。</p>
+<h2 id="教培从业者的身份漂移：老师如何变成销售"><a href="#教培从业者的身份漂移：老师如何变成销售" class="headerlink" title="教培从业者的身份漂移：老师如何变成销售"></a>教培从业者的身份漂移：老师如何变成销售</h2><p>教培行业最深刻的变化，不是“行业变难了”，而是“职业身份被重新定义”了。在很多机构中，老师的日常已经不只是备课、上课、批改和反馈，还包括打电话、回访、续费跟进、家长会转化、朋友圈展示、试听课成交和生产短视频脚本。一位老师可能白天准备一节课，晚上还要接待家长，周末还要参加续费冲刺。</p>
+<p>这种变化最初看起来像“业务需要”，但如果长期存在，就会形成一种身份漂移：老师不再被评价为“能否让学生学会”，而被评价为“能否让家长继续付钱”。当教学能力与销售能力被放在同一个考核表里，教育者会开始怀疑自己是在教书还是在服务交易。学生进步只是销售故事的一部分，而不是组织运转的核心。</p>
+<p>身份漂移带来的不只是职业倦怠，还有内部冲突。教研部门认为续费话术透支教学质量，销售部门认为教研部门不懂经营；老师认为家长被承诺了做不到的效果，管理者却认为这是“市场竞争的必要手段”。双方都在抱怨，却都没有权力改变评价方式。最终，冲突会演变成信息封锁：教研部门不再告诉销售真实的课程局限，销售部门也不再告诉教研部门家长听到了什么。</p>
+<p>这种结构对“背叛”特别有解释力。当一个老师觉得自己被“教学理想”吸引进来，却被要求成为“销售工具”，他会把这解读为组织背叛了他；当一个管理者觉得自己正在救机构，却被老师背后评价“只认钱”，他会把这解读为团队背叛了经营目标。双方都觉得自己是对的，但双方都无法用同一套评价语言对话。</p>
+<p>更复杂的是外部监管与行业周期。政策收紧后，学科类培训的合规空间变小，机构可能转型素质类、职业教育或成人技能；原本擅长提分教学的老师，需要重新学习新的课程体系，面对新的客户群体。这时候，老师失去的不只是一份工作，还有人设、路径和身份认同。一些人选择继续留在教育行业，一些人转向内容创作、产品研发、企业培训或自由职业。他们的“职业”没有消失，而是被拆成了新的组合。</p>
+<p>这里需要警惕一个常见错误：不要把“教培老师”想象成只有一条路。许多教学能力本质上包括课程设计、学员分层、反馈闭环、内容表达、数据分析和人际沟通，这些能力在成人教育、企业培训、在线内容、知识产品和服务设计等领域都有迁移价值。问题往往不是“没有技能”，而是“没有用外部语言重新描述技能”。</p>
+<h2 id="离职交接的博弈：在职场的最后一课"><a href="#离职交接的博弈：在职场的最后一课" class="headerlink" title="离职交接的博弈：在职场的最后一课"></a>离职交接的博弈：在职场的最后一课</h2><p>当一个人决定离开，很多人会觉得“只要提交辞职信就结束了”，但离职常常是整场博弈最尖锐的部分。组织会在最后阶段判断你是否“体面”，同事会在最后阶段判断你“是否值得继续联系”，继任者会在最后阶段判断你“留下了什么”。这三项判断都可能影响你未来的口碑。</p>
+<p>离职交接的核心不是“交出所有文件”，而是“交出一个可以被验证的过渡”。你需要在有限时间里，让继任者知道：项目当前状态、关键风险、客户/学生关系、责任边界、哪些信息属于保密范围、哪些流程存在历史遗留问题。如果你只交出了成果，却没有交出失败经验，继任者可能在同一个坑里再摔一次；如果你交出太多私人判断，又可能让自己在未来的口碑中显得“不可靠”。</p>
+<p>一个实用原则是：交接时，把“事实”与“评价”分开。事实包括时间、流程、文件、数据、待办事项；评价包括你对某个同事的看法、对某个客户的判断、对某位领导的不信任。前者可以交接，后者最好保留在你自己的记录里。这不仅保护组织，也保护你：你不会因为说过一句话，而在新公司或未来合作中被旧同事引用。</p>
+<p>离职谈判还有一层：很多人在离职前会突然“想清楚”，开始把过去的委屈全部说出来。这当然可能是真实的，但组织不太可能因为离职员工的一番话就改变制度。更常见的结果是，对方礼貌地听，记下“这个人情绪化”的标签，然后在背调或合作中降低对你的评价。因此，若你确实有重要的制度问题需要反映，应该走正式渠道，并保留证据；若只是想表达情绪，可以找朋友、家人或心理咨询师，而不是把最后一份工作变成一场控诉。</p>
+<p>反过来，对于留下的同事而言，离职交接的博弈也很有用。不要因为一个人要离开，就停止合作或提前孤立他。离职者在最后几周往往拥有最多的信息与最多的自由度；如果留下的人能用专业态度换取交接质量，他可能获得一份非常完整的“避免踩坑”清单。现实中的很多教训是：大家用猜忌把离职者推远了，然后在新项目开始时才发现，最重要的文档已经被删除了。</p>
+<h2 id="制度实验：如果必须重开一家机构"><a href="#制度实验：如果必须重开一家机构" class="headerlink" title="制度实验：如果必须重开一家机构"></a>制度实验：如果必须重开一家机构</h2><p>前面分析了大量问题，接下来不妨做一次逆向设计：如果现在必须从零开始重开一家教育机构，并且希望它不像前文描述的机器那样报错，应该怎么设计？</p>
+<p>第一，把“教学结果”与“销售结果”从同一个考核表中拆开。教学团队考核学生进步、课堂反馈、教研产出与教学风险；销售团队考核沟通质量、需求匹配、合同规范与客户反馈。两者可以通过共同服务学生目标协作，但不应共用同一套“开单”指标。这样做的目的不是否定销售，而是让教育者不必为了保护教学而撒谎，也让销售者不必为了完成指标而透支信任。</p>
+<p>第二，把晋升标准写成可检查的“证据链”。一个教研负责人候选人的材料，不应只有“领导推荐”，还应包含：设计过哪些课程、改善过哪些学生问题、培养过哪些新人、如何处理过教学事故、是否有可复用的教研方法。评价者若不是直接上级，也应有交叉评审。</p>
+<p>第三，建立“风险上报”的保护机制。如果一位老师发现某门课程可能存在质量风险，他应能通过匿名渠道提出，而不会立刻被解释为“不配合”；如果一位管理者发现续费目标可能透支用户信任，他应能进入一个非惩罚性讨论。风险上报不应被当作“负面”，而应被当作组织早期预警系统的一部分。</p>
+<p>第四，把“离职”变成可学习的组织资产。每位重要岗位人员离开时，都应完成一次非问责性总结，内容包括：组织哪些制度帮助了他，哪些制度限制了他，未来接替者需要提前掌握什么。这些材料不必公开给所有人，但可以进入管理层的复盘档案。</p>
+<p>第五，为领导者提供“可被依赖的支持结构”，而不是只要求他“带好团队”。领导者的支持结构包括：可谈论真实压力的上级、可信的数据系统、明确的权限边界、被允许说“不”的文化，以及当个人健康出现风险时可以使用的外部资源。公司不能把“领导者的心理健康”完全交给领导者自己。</p>
+<p>这套设计不是“理想主义”，而是风险管理。因为教育行业的真实回报往往来自长期口碑，而不是一次性开单；组织的真实成本，也往往不在工资单上，而在错误决策、信任崩塌、人才流失和监管追责里。把制度设计成“允许问题被看见”，长期看可能比“让人把问题藏起来”更便宜。</p>
+<h2 id="外部市场翻译：把经验变成可迁移的语言"><a href="#外部市场翻译：把经验变成可迁移的语言" class="headerlink" title="外部市场翻译：把经验变成可迁移的语言"></a>外部市场翻译：把经验变成可迁移的语言</h2><p>很多人在找下家时不是没有能力，而是不会说外部市场的语言。你在原组织里叫“负责某学科教学”，外部可能叫“课程产品设计”；你叫“和家长沟通”，外部可能叫“用户需求洞察”；你叫“研发学案”，外部可能叫“内容结构化与标准化”；你叫“带教研团队”，外部可能叫“知识型团队管理与质量闭环”。</p>
+<p>这不是要求一个人把简历写得花哨，而是提醒：同一段经历可以在不同评价体系里被理解。你过去积累的经验本身没有变，变的只是如何把它转换成接收者能验证的证据。比如，不要只写“我教学效果好”，而要写“我负责一个三十人班级，建立了分层测评和错题追踪机制，在一个学期内将班级平均正确率从某个基线提升到某个目标区间，并形成可复用的题库”。数字不是炫耀，而是让未来的评价者能快速判断“这件事有多大”。</p>
+<p>外部市场的翻译也有边界：不能把不确定的成果写成确定事实，不能把别人的贡献写成自己的，不能把“参与了”写成“主导了”。一旦跨过这个边界，你损害的不只是诚信，还可能让新雇主在三个月后失去对你的信任。真实但不夸张的表述，本身就比过度包装更稀缺。</p>
+<p>此外，翻译不仅是写简历，还包括重新判断“我应该去什么样的组织”。如果你在原组织里最痛苦的是“被要求用情怀支付现实成本”，下一家公司不要再只看“它是否有名”，而要看它是否在招聘、晋升、考核中给出可验证的制度。面试时问“失败项目怎么复盘”“异议如何进入会议”“能否看到同级员工的评价标准”，往往比问“公司文化如何”更能得到有用的信息。</p>
+<h2 id="职业安全感的两种模型"><a href="#职业安全感的两种模型" class="headerlink" title="职业安全感的两种模型"></a>职业安全感的两种模型</h2><p>很多职场人把“安全感”等同于“公司没有裁我”。这种理解很容易理解，但它把职业安全寄托在一个自己无法控制的外部变量上。更可靠的安全感，往往来自第二种模型：即使现在这家组织不存在了，我仍然知道自己有哪些技能、哪些成果、哪些人可以信任、哪些问题我能解决。</p>
+<p>第一种安全感是“岗位安全感”，它的来源是合同、资历、领导和组织规模。第二种安全感是“能力安全感”，它的来源是个人长期积累的可迁移知识、可验证成果和外部评价。两者不是对立关系，而是不同层级的保护。岗位安全感可以让你今天安心，却无法保证明天；能力安全感不能替代工资，却能在变化来临时提供选择空间。</p>
+<p>因此，一个务实的建议是：把“我在公司里的位置”和“我离开公司后的位置”分开管理。在公司里，做好该做的事，保存好成果证据；在公司外，每月花一点时间更新自己的项目清单，了解外部招聘信息，认识不同行业的人，整理“如果我重新开始，可以先做什么”。这不是“身在曹营心在汉”，而是把一个不确定的未来提前变成可以评估的选项。</p>
+<p>这种做法还有一个额外的好处：它能让你的判断更清晰。当你知道外部市场存在合理选项时，你就不会因为害怕失业而接受所有安排，也不会因为一时的委屈就匆忙离开。你会开始用“我在这个位置获得的成长，是否值得我付出的时间”来评价工作，而不是用“我是否被老板喜欢”来评价自己。</p>
+<h2 id="内斗的代价为什么总被低估"><a href="#内斗的代价为什么总被低估" class="headerlink" title="内斗的代价为什么总被低估"></a>内斗的代价为什么总被低估</h2><p>内斗的直接代价看似有限：开几次会，吵几轮，最后某人赢了，某人走了。但如果把成本拆开，就会发现它远比表面复杂。第一是时间。每一场内斗都会占用本该用于教学、产品、客户和研发的注意力；这些时间不会立刻显示在报表上，却会以“项目延期”“响应变慢”“创意减少”的方式积累。第二是信息。内斗会让部分人主动隐瞒真实判断，毕竟“说真话”可能成为下一次被攻击的材料；组织因此失去最便宜的纠错机会。第三是人才。真正有能力、也有选择权的人，通常不会在一场长期内斗中陪跑；他们可能不声不响地离开，而留下来的，未必是能力更强的人。第四是信任。一旦成员观察到“努力可以被抹掉”“功劳可以被他人认领”，他们就不会再为组织承担额外的主动责任，而会把工作收缩到“不被挑错”的最低程度。</p>
+<p>这些代价之所以总被低估，是因为它们不会出现在一次会议的结论里。组织往往只看到“这次吵架谁赢了”，很难看到“三个月后谁已经不再提新想法了”。更麻烦的是，内斗常常会被包装成“竞争意识”或“狼性文化”，让破坏性冲突获得某种道德光环。这种包装会让参与者误以为自己在追求卓越，实际上只是把组织内部的协调成本转嫁给了所有人。</p>
+<p>因此，判断组织的健康度，不应只看“有没有冲突”，而要看“冲突是否围绕事实展开”“冲突之后是否形成了决策”“失败者是否仍能继续工作”。制度化的竞争允许有人输，却不允许输的人失去发言权；病态的内斗则相反，它允许有人赢，却不允许事实重新回到棋盘上。</p>
+<h2 id="领导的孤独：被吹捧得越多，反馈越少"><a href="#领导的孤独：被吹捧得越多，反馈越少" class="headerlink" title="领导的孤独：被吹捧得越多，反馈越少"></a>领导的孤独：被吹捧得越多，反馈越少</h2><p>许多领导者不是天生多疑，而是在某个位置待久之后，慢慢失去了“真实信息”。这种变化往往从身边的人开始：下属越来越懂得说领导想听的话，同事越来越少直接指出问题，朋友和家人也可能因为担心“影响工作”而不再追问。于是，领导者的世界变得越来越整洁：几乎没有反对，几乎都是“好的”“收到”“明白了”。但整洁并不等于正确，而更像是信息被过滤后的平整表面。</p>
+<p>这种孤独感在高压组织中尤其明显。领导者不敢暴露自己的不确定，因为他担心一旦显得“不够强”，就会失去权威；他也不敢承认自己需要帮助，因为组织中可能没有人能真正接住他的脆弱。于是，他转而用“我还能扛得住”来维持形象，用“我比你们都懂”来抵抗失控感。问题在于，这种姿态恰恰会让身边的人更不敢提醒他：既然他都说自己懂，谁还敢说自己看到了风险？</p>
+<p>这时，管理者的行为会出现一个悖论：他需要下属忠诚，却因为过度要求忠诚，把下属变成了只提供回声的“信息过滤器”。等真正的问题出现时，他可能发现，自己身边没有一个可以问“你觉得我真的对吗”的人。这个悖论揭示了为什么“领导压力大”不能只靠领导自己解决：领导者需要的是“可被信任的异见”，而不是更多的服从。</p>
+<p>如果组织想要帮助领导者，可以尝试这样一种安排：让领导者定期与一位与自身晋升无关、但了解业务的同事进行非评价性对话；允许他在工作会议中说“我可能错了”；让“指出上级风险”成为被奖励的行为，而不是“不服从”的信号。这些安排不一定保证领导者的心理健康，但至少能减少“独自承担一切”的封闭结构。</p>
+<h2 id="如果内斗真的带来了改变"><a href="#如果内斗真的带来了改变" class="headerlink" title="如果内斗真的带来了改变"></a>如果内斗真的带来了改变</h2><p>一个持异议者可能会说：很多组织的变革正是从内斗开始的。没有挑战者，就没有新方案；没有派系，就没有对旧权威的制约。如果完全没有内部竞争，组织是否反而会陷入僵化？</p>
+<p>这个怀疑值得认真对待。历史与组织中确实存在“建设性冲突”：少数派提出不同观点，可能推动组织看到被忽略的风险；竞争者为了证明自己，可能研发出更优的产品；一个被边缘化的小组，也可能因为争取资源而让组织重新审视战略。问题不在于“竞争是否存在”，而在于“竞争是否与事实挂钩，是否允许异议进入决策”。</p>
+<p>可以用一个维度区分两者：规则是否在冲突之前存在。如果组织先有清晰的评价标准，再让不同方案按相同规则竞争，那么冲突可以产生知识和创新；如果冲突先发生，规则在冲突之后才由赢家定义，那么冲突只会产生权力。前者是竞争促进学习，后者是权力制造叙事。很多组织的问题，不是“没有竞争”，而是“把权力冲突误认为竞争”。</p>
+<p>因此，一个健康组织不需要消除内斗，而是需要把内斗的“战场”转移到可以产生信息的地方：例如让不同团队提交独立方案，让评审者盲审关键材料，让异议者拥有不被报复的表达空间。当组织能够以较低成本获得不同意见时，它就不必依靠“谁吵赢了”来决定答案。真正优秀的制度，不是消灭人性中的竞争欲望，而是让竞争服务于可验证的事实。</p>
+<h2 id="选择前的现实检查"><a href="#选择前的现实检查" class="headerlink" title="选择前的现实检查"></a>选择前的现实检查</h2><p>在真正做出留下或离开的决定之前，可以用最后一份检查单。它不要求你马上回答，但允许你把情绪和理性分开。</p>
+<p>第一个问题是：我正在经历的是“环境伤害”还是“个人低谷”？如果换了组织后，同类问题仍会反复出现，那可能是个人状态或能力结构需要调整；如果问题高度依赖特定的管理者和考核制度，那更可能是环境问题。</p>
+<p>第二个问题是：我的判断有证据吗？如果你只能说出“我觉得大家都不喜欢我”，但说不出具体的时间、事件、影响和重复频率，说明信息还不够。此时，最需要做的不是离职，而是收集更多可观察事实。</p>
+<p>第三个问题是：离开的代价由谁承担？如果离开会直接影响你需要照顾的人，或让家庭在短时间内失去稳定，那么离职需要更长的准备期。这并不意味着你无权离开，而是意味着你要把“选择的代价”算进去。</p>
+<p>第四个问题是：我有没有把“忠诚”和“价值”混为一谈？如果组织希望你无条件接受安排，却在关键时刻没有给出解释，那么你的忠诚可能是单向的。单向忠诚不是美德，而是风险敞口。</p>
+<p>第五个问题是：如果明天突然失去这份工作，我是否还能继续生活？即使答案是否定的，也不必恐慌；关键是先把这个问题从“不可想象”变成“可以准备”。当你开始为最坏情况做计划时，你对当前工作的判断就不会被恐惧绑架。</p>
+<p>第六个问题是：我是否愿意为自己选择的后果负责？无论留下还是离开，都可能带来痛苦；区别在于，你是在主动选择一种代价，还是在被动等待别人替你决定。拥有“选择权”本身，就是一种职场能力。</p>
+<h2 id="幸存者偏差：别把“留下来的人”当成答案"><a href="#幸存者偏差：别把“留下来的人”当成答案" class="headerlink" title="幸存者偏差：别把“留下来的人”当成答案"></a>幸存者偏差：别把“留下来的人”当成答案</h2><p>当组织出现内斗和背叛时，人们常会观察“谁活下来了”。有人会在经历之后说：“你看，坚持下来的人最后都升职了，离开的人反而错过了机会。”这句话听起来有道理，却可能包含严重的幸存者偏差。</p>
+<p>留下来的人并不一定因为“坚持”而成功，也可能因为位置、时机、关系或运气而成功；他们的经历不能自然推出“离开是错的”。同样，离开的人也可能在新的环境中获得了更好的成长，只是他们的故事不会继续出现在原公司的办公室里。我们看到的只是留在牌桌上的人，看不到那些离开后重新洗牌的人。</p>
+<p>因此，不能用“谁最后赢了”来评价“谁当初的选择更聪明”。一个人选择留下，可能是在忍耐中获得了机会，也可能是在消耗中失去了健康；一个人选择离开，可能是在逃避问题，也可能是在止损。真正的判断标准不是“结果最终怎样”，而是“在当时的条件下，这个人是否拥有足够的信息，是否做了符合自己长期价值的决定”。</p>
+<p>这并不意味着“怎么选都可以”。没有证据、没有计划、没有外部选项的离开，和不看风险、不回头的留下，都属于高风险动作。我们要避免的，是拿别人的故事给自己的情绪找借口。每个人的资源、压力、家庭处境和健康状态不同，适用条件也不同。</p>
+<h2 id="结论：棋局可以改变，但不是靠自己赢"><a href="#结论：棋局可以改变，但不是靠自己赢" class="headerlink" title="结论：棋局可以改变，但不是靠自己赢"></a>结论：棋局可以改变，但不是靠自己赢</h2><h2 id="哲学回声：从韩非到加缪"><a href="#哲学回声：从韩非到加缪" class="headerlink" title="哲学回声：从韩非到加缪"></a>哲学回声：从韩非到加缪</h2><p>职场的复杂问题，往往不是管理学的专利。哲学可以提供另一种视角，帮我们看见“规则”和“人”之间的张力。</p>
+<p>韩非子在“法、术、势”的框架中，讨论过君主如何在不完全信任臣下的情况下维持统治。他强调“刑名参同”，也就是让言辞与实际结果相互核对。用现代语言说，这是一种“可验证性”原则：不要让任何人的自我陈述成为唯一证据。韩非并不主张所有人都该互相猜忌，而是指出，当制度不能核对事实时，猜忌会成为理性选择。</p>
+<p>但这不等于接受韩非的全部结论。他的体系把政治稳定放在极高位置，却较少讨论普通人的尊严、情感与公共责任。如果组织只追求“让每个人都可被控制”，就会制造一种制度化不信任。更合理的用法是：用“可验证性”代替“互相监视”，用“结果核对”代替“忠诚测试”。</p>
+<p>庄子则提供了一个几乎相反的方向。在《山木》篇中，一棵大树因为“无用”而免于被砍，一只雁却因为“不能鸣叫”而被杀；庄子面对“有用”与“无用”的两难，给出的回答是“处于材与不材之间”。这个故事不是教人偷懒，而是提醒我们：完全“有用”会被人使用，完全“无用”会被人抛弃；真正难的是在两者之间流动，知道自己何时该突出价值，何时该降低曝光。</p>
+<p>在职场里，这种智慧很实际。一个人如果永远最有价值，可能会被无限使用；一个人如果毫无价值，可能会被最早裁掉。问题不是“要不要努力”，而是“如何让努力服务于自己的长期目标，而不是成为别人随时可以调用的资源”。庄子的视角提醒我们，保全有时不是防守，而是改变自己在系统中的可用性。</p>
+<p>黑格尔的“主奴辩证法”则描述了另一种关系：主人试图通过他人确认自己的地位，奴隶通过劳动和经验获得自我意识。讽刺的是，看似被支配的一方，往往在现实中获得了更多真实知识。职场里的很多管理冲突，也可以这样理解：领导者在会议上得到服从，但下属在项目现场掌握真相；上司决定“谁是对的”，下属决定“明天还能不能做”。真正的权力不一定在头衔手里，而在信息、执行和现实约束手里。</p>
+<p>阿伦特在讨论平庸之恶时提醒我们，普通人可能在没有恶意、甚至认为自己只是在履行职责的情况下，参与造成伤害的系统。这不是为作恶开脱，而是提供一种冷峻的洞察：当规则、分工和语言都预先设定，人们可能不再询问“这件事是否应当做”，只问“是否完成了分配给我的部分”。组织文化扭曲的危险，正在于让成员失去这种质问能力。</p>
+<p>加缪的“荒诞”则给离场选择提供了另一种声音。如果系统不断要求人重复无意义的工作，人可以选择拒绝赋予它虚假的意义，也可以选择在认清限制后继续坚持自己的行动。西西弗斯推石上山的故事不鼓励“苦熬”，它说的是：即使是无法改变的处境，人仍然可以决定自己如何看待它、在何处停顿、在何时转身。对职场人来说，这可能是最接近“保全自身”的哲学表述：你不是一定要相信公司的伟大叙事，但你可以守住自己的行动原则。</p>
+<p>斯多亚学派则把注意力放在“可控与不可控”的区分上。塞涅卡在《论生命之短暂》中批评的不是忙碌本身，而是人们把生命消耗在并不真正重要的事情上。职场中的许多内耗，恰恰不是因为任务太多，而是因为把“别人如何评价我”当成了“我的价值”。当你把注意力从“预测别人”转向“改进自己可控制的部分”，很多焦虑会自然减少。</p>
+<p>还可以提到尼采关于“怨恨”的讨论。当一个群体长期处于弱势、无法通过行动改变处境时，他们可能发明一套道德叙事，把无能解释为善良，把隐忍解释为伟大，把成功者解释为不道德。职场中的“群众正义”有时也会呈现这种结构：大家不讨论方案，而讨论谁“有资格说话”；不比较成果，而比较谁的姿态更正确。这种道德叙事能在短期内凝聚人心，却可能掩盖真正的问题。</p>
+<p>这些哲学视角并不是“职场鸡汤”。它们共同提醒我们：不要只问“我怎么赢”，还要问“我为什么参与这场游戏”；不要只问“谁背叛了我”，还要问“什么条件让背叛成为可能”；不要只问“要不要离开”，还要问“离开之后，我是否仍然拥有自己的判断”。</p>
+<h2 id="反命题：不离开是否更聪明？"><a href="#反命题：不离开是否更聪明？" class="headerlink" title="反命题：不离开是否更聪明？"></a>反命题：不离开是否更聪明？</h2><p>前文频繁讨论“保全”和“离场”，但一个聪明的持异议者会问：离开是不是一种逃避？会不会只是把问题带到下一家公司？会不会让个人在行业下行期失去积累？</p>
+<p>这个问题值得认真对待。第一个反点是：很多组织问题具有跨行业复制性。如果你离开的原因完全是“领导不好”，而没有改变自己的信息处理方式、关系网络和证据意识，那么下一家公司可能仍然出现类似情况。离职不是一次性修复，它只提供一次重新选择环境的机会。</p>
+<p>第二个反点是：离场存在“时点风险”。如果行业整体下行，外部机会减少，你的外部选项可能比内部更差。此时，一个看似稳定的内部岗位，反而可能提供生存所需的现金流、培训和行业连接。把“离开”当作唯一正确答案，可能让你放弃一个可以修复的系统。</p>
+<p>第三个反点是：组织并非一成不变。领导者会换，政策会调整，行业会回暖。教培行业在“双减”后也并未消失，部分机构转型后重新获得市场空间。因此，判断是否离开，不能只看当下的糟糕，还要预测三到六个月的变量变化。</p>
+<p>基于这些反点，本文不主张“内斗就必须走”，而是提出一个更可操作的判断：离开的时机，应当取决于“留在原地的期望收益”与“离开后的期望收益”之差，而不是取决于“我是否感到委屈”。</p>
+<script type="math/tex; mode=display">
+\text{NetExit}(t) = \text{Option}(t) - \text{LockIn}(t)</script><p>其中 $\text{Option}(t)$ 是外部机会、可迁移技能、财务缓冲、心理恢复资源和专业网络的总和；$\text{LockIn}(t)$ 是沉没成本、关系承诺、行业特定技能、家庭责任和心理恐惧的总和。这个公式不是让任何人计算精确数字，而是提醒我们：情绪决定“想不想走”，结构决定“能不能走”，证据决定“什么时候走”。</p>
+<p>还有一个更尖锐的反问：如果留在原地的唯一理由是“害怕”，那么你已经在支付看不见的成本；如果离开的唯一理由是“愤怒”，那么你可能正在用一个不可逆决定解决一个可逆情绪。最好的状态，是让自己在“可以走、但不必走”的位置上做选择。这也是本文说“找下家”比“辞职”更重要的原因。</p>
+<h2 id="离场与留场：最后一张工作单"><a href="#离场与留场：最后一张工作单" class="headerlink" title="离场与留场：最后一张工作单"></a>离场与留场：最后一张工作单</h2><p>现在可以把整篇文章收敛成一张工作单。它不保证成功，也不保证公平，但它至少能让你在混乱中知道自己正在做什么。</p>
+<p>第一步，界定问题。不要写“我被背叛了”，要写“谁在什么时候隐瞒了什么信息，造成了什么可观察后果”。这一步是拒绝精神内耗的开始。</p>
+<p>第二步，校准证据。把所有与问题相关的记录按时间整理：邮件、聊天、项目文档、会议纪要、绩效反馈。整理的目的不是起诉，而是让自己从“别人口中的版本”回到“可以核对的版本”。</p>
+<p>第三步，评估代价。把留下与离开分别列出：短期收益、长期收益、可逆性、健康风险、学习机会、心理成本。不要在情绪最高涨的夜晚做不可逆决定。</p>
+<p>第四步，建立外部连接。不影响当前工作地接触不同圈层的人；让弱关系成为信息渠道。不要等到需要逃跑时才建立网络。</p>
+<p>第五步，设置边界。明确哪些工作可以接受，哪些行为会使你开始重新评估；明确哪些信息可以共享，哪些属于个人判断。边界不是用来威胁别人的，而是用来保持自己的诚实。</p>
+<p>第六步，为身体和情绪保留出口。当一个人长期无法恢复，他对任何选择的判断都会失真。专业帮助、休息、运动、倾诉，不是“软弱”，而是让谈判能力保持在线的基础设施。</p>
+<p>第七步，行动前问自己：我正在做的这件事，是在改善我的处境，还是在满足我的报复？如果我明天得到一份更好的工作，我是否仍愿意用今天的做法对待同事？如果答案是否，那就回到第一步。</p>
+<h2 id="结论：棋局可以改变，但不是靠自己赢-1"><a href="#结论：棋局可以改变，但不是靠自己赢-1" class="headerlink" title="结论：棋局可以改变，但不是靠自己赢"></a>结论：棋局可以改变，但不是靠自己赢</h2><p>如果把职场比作棋局，那么每个人都在棋盘上，而棋盘本身由规则、信息与激励构成。只研究棋子的走法，会让我们以为问题出在“别人太坏”；只研究棋盘结构，又会让我们忽略个人在局中的责任。真正有用的立场，是同时看到两者。</p>
+<p>内斗与背叛不是“人性使然”的宿命。它们出现的条件，是评价模糊、信息垄断、风险转嫁和忠诚被武器化。当这些条件被改变，人仍然可能自私，但自私不再自然地转化为组织伤害。当这些条件没有被改变，即使换一批人，同样的戏码也会重新演一遍。</p>
+<p>晋升不会自动奖励正确的人，它奖励“被正确评价的人”。薪资提升也不只是劳动补偿，它是组织对未来价值的押注。找下家不是对旧组织的否定，而是个人在更广阔的评价系统中校准自己的位置。保全自身也不是放弃共情，而是让共情不再以自我消耗为代价。</p>
+<p>最后，请把“精神疾病”从道德词库里拿出来。不要把压力大到失眠解释为“不够坚强”，也不要把一个领导者的崩溃解释为“能力不行”。压力和倦怠是现实风险，是可以被看见、被讨论、被干预的工作问题。组织若要长期运转，就必须同时保护使用者和被使用者，而不是让任何一方成为系统的燃料。</p>
+<p>一台机器开始报错时，最糟糕的选择不是“继续让噪音响着”，也不是“拆掉机器就当作修好了”。真正值得做的，是检查齿轮、调整参数、更换正确的零件，并在必要时，为自己找到一台更合适的机器。</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
+<li><a target="_blank" rel="noopener" href="http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202107/t20210724_546566.html">中华人民共和国教育部：关于进一步减轻义务教育阶段学生作业负担和校外培训负担的意见</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.straitstimes.com/asia/east-asia/chinas-private-tutoring-firms-emerge-from-the-shadows-after-crackdown">Reuters: China’s private tutoring firms emerge from the shadows after crackdown</a></li>
+<li><a target="_blank" rel="noopener" href="https://finance.yahoo.com/news/oriental-laid-off-60-000-064112309.html">Reuters: New Oriental laid off 60,000 staff after China’s education crackdown, founder says</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.hup.harvard.edu/books/9780674276604">Hirschman, A. O. Exit, Voice, and Loyalty</a></li>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.2307/1882010">Spence, M. Job Market Signaling</a></li>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1086/225469">Granovetter, M. S. The Strength of Weak Ties</a></li>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.2307/2392498">Karasek, R. A. Job Demands, Job Decision Latitude, and Mental Strain</a></li>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1037/1076-8998.1.1.27">Siegrist, J. Adverse Health Effects of High-Effort/Low-Reward Conditions</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon">World Health Organization: Burn-out an Occupational Phenomenon</a></li>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.2307/259200">Morrison, E. W., &amp; Milliken, F. J. Organizational Silence</a></li>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.2307/2666999">Edmondson, A. Psychological Safety and Learning Behavior in Work Teams</a></li>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.2307/1556375">Tepper, B. J. Consequences of Abusive Supervision</a></li>
+<li><a target="_blank" rel="noopener" href="https://sajhrm.co.za/index.php/sajhrm/article/view/1338">Paltu, A., &amp; Brouwers, M. Toxic Leadership: Effects on Job Satisfaction, Commitment, Turnover Intention and Organisational Culture</a></li>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.2307/2393868">Robinson, S. L. Trust and Breach of the Psychological Contract</a></li>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1086/260879">Lazear, E. P., &amp; Rosen, S. Rank-Order Tournaments as Optimum Labor Contracts</a></li>
+<li><a target="_blank" rel="noopener" href="https://ctext.org/han-feizi">中国哲学书电子化计划：韩非子</a></li>
+<li><a target="_blank" rel="noopener" href="https://ctext.org/zhuangzi/tree-on-the-mountain">中国哲学书电子化计划：庄子·山木</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.gutenberg.org/ebooks/1232">Machiavelli, N. The Prince</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.marxists.info/reference/archive/hegel/index.htm">Hegel, G. W. F. The Master-Slave Dialectic</a></li>
+<li><a target="_blank" rel="noopener" href="https://archive.org/details/hannah-arendt-eichmann-en-jerusalen/Hannah%20Arendt%2C%20Eichmann%20en%20Jerusal%C3%A9n">Arendt, H. Eichmann in Jerusalem: A Report on the Banality of Evil</a></li>
+<li><a target="_blank" rel="noopener" href="https://plato.stanford.edu/entries/camus/">Stanford Encyclopedia of Philosophy: Albert Camus</a></li>
+<li><a target="_blank" rel="noopener" href="https://archive.org/details/of_the_shortness_of_life_1102_librivox">Seneca: Of the Shortness of Life</a></li>
+<li><a target="_blank" rel="noopener" href="https://plato.stanford.edu/entries/nietzsche-moral/">Stanford Encyclopedia of Philosophy: Friedrich Nietzsche’s Moral Philosophy</a></li>
+<li><a target="_blank" rel="noopener" href="https://archive.org/details/disciplinepunish0000fouc">Foucault, M. Discipline and Punish</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.moe.gov.cn/srcsite/A29/202212/t20221229_1036959.html">教育部等十三部门：关于规范面向中小学生的非学科类校外培训的意见</a></li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://yuzhang.wang">YuZhangWang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yuzhang.wang/162-workplace-betrayal-survival/">https://yuzhang.wang/162-workplace-betrayal-survival/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://yuzhang.wang" target="_blank">YuZhangWang的领域</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BB%84%E7%BB%87%E8%A1%8C%E4%B8%BA/">组织行为</a><a class="post-meta__tags" href="/tags/%E8%81%8C%E5%9C%BA%E7%94%9F%E5%AD%98/">职场生存</a></div><div class="post-share"><div class="social-share" data-image="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/20260908102400-workplace-betrayal-survival.png" data-sites="wechat,qq,weibo"></div><link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://gcore.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195242695.jpg" target="_blank"><img class="post-qr-code-img" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195242695.jpg" alt="支付宝"/ loading='lazy'></a><div class="post-qr-code-desc">支付宝</div></li><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195556282.png" target="_blank"><img class="post-qr-code-img" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195556282.png" alt="微信"/ loading='lazy'></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/161-childhood-trauma-adult-effects/" title="被忽视的童年：创伤如何塑造成年后的内心世界"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/20260831115530-childhood-trauma-adult-effects.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post" loading='lazy'><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">被忽视的童年：创伤如何塑造成年后的内心世界</div></div><div class="info-2"><div class="info-item-1"> 本文是一篇面向普通读者的学术综述，不构成任何人的医疗建议，也不用于替代精神科、心理治疗或危机干预。文中的“创伤”指可能带来心理冲击的逆境经历，文中讨论的是相关性、机制与可能性，而不是把任何人判定为“天生有病”或“注定无法改变”。  摘要当人们听到“创伤”这个词，常常会想到战争、地震、车祸、严重暴力或重大灾难。这些事件确实可能造成深远的心理影响，但创伤并不只存在于宏大的灾难之中。对于儿童来说，最持续、最隐蔽、也可能最影响未来的，往往是不被回应、被忽视、被拒绝、被误解，以及长期处在没有安全感的关系中。 本文要讨论的核心问题是：为什么一段看似“没有发生什么”的童年经历，会在成年后表现为难以信任、害怕被抛弃、过度敏感、消极解释、回避冲突或反复陷入不健康关系？答案不能简单归结为“性格不好”或“不够坚强”。更合理的解释是，儿童时期形成的内在关系模型，会在成年后的情绪识别、威胁监控、人际边界和压力应对中持续发挥作用。 加博尔·马泰在《正常的神话》中提出一个著名观点：创伤不是发生在一个人身上的事，而是这件事在一个人内部留下的结果。这个观点的重要价值，在于把关注点从“事件是否足够严重”转移到“孩...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/160-gender-ideology-workplace/" title="性别话语的武器化：组织权力、沟通边界与群体认知的机制分析"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/20260831115500-gender-ideology-workplace.png" alt="cover" loading='lazy'><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="fas fa-history fa-fw"></i> 2026-08-31</div><div class="info-item-2">性别话语的武器化：组织权力、沟通边界与群体认知的机制分析</div></div><div class="info-2"><div class="info-item-1"> 本文讨论的是组织情境中可能出现的性别话语武器化现象，不把任何性别群体视为天然的加害者或受害者。文中的“极端”不是对某种性别立场本身的评价，而是指一种持续贬低、排斥对方，并将该行为合理化的组织实践。相关心理机制只能用于解释行为，不能替代精神科诊断。  摘要性别平等本应意味着权利、责任与机会的对称，但在真实组织中，任何关于性别的口号都可以被重新编码为权力工具。本文要处理的问题不是“女权主义是否有害”，而是：当一种性别叙事被用于解释能力、定义忠诚、分配资源和惩罚异议时，它会如何降低组织的信息质量、破坏沟通边界，并让一部分成员在“道德正确”的掩护下获得不对等的控制权。 本文把用户观察到的现象拆成四层。第一层是话语层，表现为用“普信男”这类高度概括的标签替代具体行为评价；第二层是关系层，表现为情绪依赖、任务转嫁、社会孤立与“不能反驳”的沉默结构；第三层是结构层，表现为以性别认同作为晋升、排班、客户分配和小组边界的筛选标准；第四层是认知层，表现为把群体身份与个人道德混同，通过道德优越感屏蔽反证。 这四层机制并不专属于任何一种性别。相似的行为模式在男性主导、女性主导或混合团队中都可能被观察到...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="author-info-name">YuZhangWang</div><div class="author-info-description">PLUSULTRA!</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">162</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">311</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://yuzhang-wang.translate.goog/?_x_tr_sl=zh-CN&amp;_x_tr_tl=en&amp;_x_tr_hl=zh-CN&amp;_x_tr_pto=wapp"><i class="fa-solid fa-earth-americas"></i><span>English Version Blog</span></a><div class="card-info-social-icons"><a class="social-icon" href="mailto:YuZhangWang233@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://github.com/YuZhangWang" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/19474542" target="_blank" title="bilibili"><i class="fab fa-bilibili" style="color: #FB7299;"></i></a><a class="social-icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/mmqrcode1615295634051.png" target="_blank" title="WeChat"><i class="fab fa-weixin" style="color: #199D18;"></i></a><a class="social-icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/qrcode_1615295622746.jpg" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #4AABE7;"></i></a><a class="social-icon" href="https://yuzhang.wang/rss2.xml" target="_blank" title="RSS"><i class="fa-solid fa-rss" style="color: #F99C36;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">1.视频发布于B站，文章发布于博客</br> 2.待修复bug:无</br> 3.待优化地方:无</br></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%91%98%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E5%BC%80%E5%A7%8B%E6%8A%A5%E9%94%99"><span class="toc-number">2.</span> <span class="toc-text">机器开始报错</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AF%E8%AF%AD%E8%A1%A8%EF%BC%9A%E5%85%88%E6%8A%8A%E8%AF%8D%E6%8B%86%E5%BC%80"><span class="toc-number">3.</span> <span class="toc-text">术语表：先把词拆开</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%83%E5%8A%9B%E5%9C%B0%E5%9B%BE%EF%BC%9A%E8%B0%81%E5%9C%A8%E6%8E%A7%E5%88%B6%E4%BF%A1%E6%81%AF"><span class="toc-number">4.</span> <span class="toc-text">权力地图：谁在控制信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%99%8B%E5%8D%87%E9%94%A6%E6%A0%87%E8%B5%9B%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8A%AA%E5%8A%9B%E4%B8%8D%E7%AD%89%E4%BA%8E%E5%8D%87%E8%81%8C"><span class="toc-number">5.</span> <span class="toc-text">晋升锦标赛：为什么努力不等于升职</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%8C%E5%8F%9B%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%AD%A6%EF%BC%9A%E8%B0%81%E5%9C%A8%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E8%BD%AC%E8%BA%AB"><span class="toc-number">6.</span> <span class="toc-text">背叛的类型学：谁在什么时候转身</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%86%E5%AF%BC%E8%80%85%E7%9A%84%E7%94%B5%E6%B1%A0%EF%BC%9A%E5%8E%8B%E5%8A%9B%E5%A6%82%E4%BD%95%E5%8F%98%E6%88%90%E7%AE%A1%E7%90%86%E9%A3%8E%E6%A0%BC"><span class="toc-number">7.</span> <span class="toc-text">领导者的电池：压力如何变成管理风格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E5%8C%96%E6%98%AF%E6%BF%80%E5%8A%B1%E7%9A%84%E5%BD%B1%E5%AD%90%EF%BC%9A%E5%8F%A3%E5%8F%B7%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%B1%E6%95%88"><span class="toc-number">8.</span> <span class="toc-text">文化是激励的影子：口号为什么失效</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%8C%E4%B8%9A%E9%80%80%E6%BD%AE%EF%BC%9A%E6%95%99%E5%9F%B9%E6%9C%BA%E6%9E%84%E4%B8%BA%E4%BD%95%E6%88%90%E4%B8%BA%E8%A7%82%E5%AF%9F%E6%A0%B7%E6%9C%AC"><span class="toc-number">9.</span> <span class="toc-text">行业退潮：教培机构为何成为观察样本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%96%AA%E8%B5%84%E4%B8%8D%E6%98%AF%E7%BB%88%E7%82%B9%EF%BC%9A%E5%AE%83%E6%98%AF%E4%B8%80%E7%BB%84%E8%A2%AB%E8%A7%A3%E8%AF%BB%E7%9A%84%E4%BF%A1%E5%8F%B7"><span class="toc-number">10.</span> <span class="toc-text">薪资不是终点：它是一组被解读的信号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%BE%E4%B8%8B%E5%AE%B6%E7%9A%84%E8%B7%AF%E7%BA%BF%EF%BC%9A%E7%A6%BB%E5%BC%80%E4%B8%8D%E6%98%AF%E6%8A%95%E9%99%8D"><span class="toc-number">11.</span> <span class="toc-text">找下家的路线：离开不是投降</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%9D%E5%85%A8%E8%87%AA%E8%BA%AB%E7%9A%84%E6%9C%80%E4%BD%8E%E6%93%8D%E4%BD%9C%E8%A7%84%E8%8C%83"><span class="toc-number">12.</span> <span class="toc-text">保全自身的最低操作规范</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E7%BC%96%E8%BE%91%E6%9D%83%EF%BC%9A%E8%B0%81%E5%AE%9A%E4%B9%89%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88"><span class="toc-number">13.</span> <span class="toc-text">信息编辑权：谁定义发生了什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%83%85%E7%BB%AA%E5%8A%B3%E5%8A%A8%EF%BC%9A%E7%AE%A1%E7%90%86%E8%80%85%E5%92%8C%E8%A2%AB%E7%AE%A1%E7%90%86%E8%80%85%E5%A6%82%E4%BD%95%E4%BA%92%E7%9B%B8%E6%B6%88%E8%80%97"><span class="toc-number">14.</span> <span class="toc-text">情绪劳动：管理者和被管理者如何互相消耗</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%99%E5%9F%B9%E4%BB%8E%E4%B8%9A%E8%80%85%E7%9A%84%E8%BA%AB%E4%BB%BD%E6%BC%82%E7%A7%BB%EF%BC%9A%E8%80%81%E5%B8%88%E5%A6%82%E4%BD%95%E5%8F%98%E6%88%90%E9%94%80%E5%94%AE"><span class="toc-number">15.</span> <span class="toc-text">教培从业者的身份漂移：老师如何变成销售</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A6%BB%E8%81%8C%E4%BA%A4%E6%8E%A5%E7%9A%84%E5%8D%9A%E5%BC%88%EF%BC%9A%E5%9C%A8%E8%81%8C%E5%9C%BA%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E8%AF%BE"><span class="toc-number">16.</span> <span class="toc-text">离职交接的博弈：在职场的最后一课</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%B6%E5%BA%A6%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%A6%82%E6%9E%9C%E5%BF%85%E9%A1%BB%E9%87%8D%E5%BC%80%E4%B8%80%E5%AE%B6%E6%9C%BA%E6%9E%84"><span class="toc-number">17.</span> <span class="toc-text">制度实验：如果必须重开一家机构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%96%E9%83%A8%E5%B8%82%E5%9C%BA%E7%BF%BB%E8%AF%91%EF%BC%9A%E6%8A%8A%E7%BB%8F%E9%AA%8C%E5%8F%98%E6%88%90%E5%8F%AF%E8%BF%81%E7%A7%BB%E7%9A%84%E8%AF%AD%E8%A8%80"><span class="toc-number">18.</span> <span class="toc-text">外部市场翻译：把经验变成可迁移的语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%81%8C%E4%B8%9A%E5%AE%89%E5%85%A8%E6%84%9F%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%A8%A1%E5%9E%8B"><span class="toc-number">19.</span> <span class="toc-text">职业安全感的两种模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E6%96%97%E7%9A%84%E4%BB%A3%E4%BB%B7%E4%B8%BA%E4%BB%80%E4%B9%88%E6%80%BB%E8%A2%AB%E4%BD%8E%E4%BC%B0"><span class="toc-number">20.</span> <span class="toc-text">内斗的代价为什么总被低估</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%86%E5%AF%BC%E7%9A%84%E5%AD%A4%E7%8B%AC%EF%BC%9A%E8%A2%AB%E5%90%B9%E6%8D%A7%E5%BE%97%E8%B6%8A%E5%A4%9A%EF%BC%8C%E5%8F%8D%E9%A6%88%E8%B6%8A%E5%B0%91"><span class="toc-number">21.</span> <span class="toc-text">领导的孤独：被吹捧得越多，反馈越少</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E5%86%85%E6%96%97%E7%9C%9F%E7%9A%84%E5%B8%A6%E6%9D%A5%E4%BA%86%E6%94%B9%E5%8F%98"><span class="toc-number">22.</span> <span class="toc-text">如果内斗真的带来了改变</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E5%89%8D%E7%9A%84%E7%8E%B0%E5%AE%9E%E6%A3%80%E6%9F%A5"><span class="toc-number">23.</span> <span class="toc-text">选择前的现实检查</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B8%E5%AD%98%E8%80%85%E5%81%8F%E5%B7%AE%EF%BC%9A%E5%88%AB%E6%8A%8A%E2%80%9C%E7%95%99%E4%B8%8B%E6%9D%A5%E7%9A%84%E4%BA%BA%E2%80%9D%E5%BD%93%E6%88%90%E7%AD%94%E6%A1%88"><span class="toc-number">24.</span> <span class="toc-text">幸存者偏差：别把“留下来的人”当成答案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AE%BA%EF%BC%9A%E6%A3%8B%E5%B1%80%E5%8F%AF%E4%BB%A5%E6%94%B9%E5%8F%98%EF%BC%8C%E4%BD%86%E4%B8%8D%E6%98%AF%E9%9D%A0%E8%87%AA%E5%B7%B1%E8%B5%A2"><span class="toc-number">25.</span> <span class="toc-text">结论：棋局可以改变，但不是靠自己赢</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%B2%E5%AD%A6%E5%9B%9E%E5%A3%B0%EF%BC%9A%E4%BB%8E%E9%9F%A9%E9%9D%9E%E5%88%B0%E5%8A%A0%E7%BC%AA"><span class="toc-number">26.</span> <span class="toc-text">哲学回声：从韩非到加缪</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8D%E5%91%BD%E9%A2%98%EF%BC%9A%E4%B8%8D%E7%A6%BB%E5%BC%80%E6%98%AF%E5%90%A6%E6%9B%B4%E8%81%AA%E6%98%8E%EF%BC%9F"><span class="toc-number">27.</span> <span class="toc-text">反命题：不离开是否更聪明？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A6%BB%E5%9C%BA%E4%B8%8E%E7%95%99%E5%9C%BA%EF%BC%9A%E6%9C%80%E5%90%8E%E4%B8%80%E5%BC%A0%E5%B7%A5%E4%BD%9C%E5%8D%95"><span class="toc-number">28.</span> <span class="toc-text">离场与留场：最后一张工作单</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AE%BA%EF%BC%9A%E6%A3%8B%E5%B1%80%E5%8F%AF%E4%BB%A5%E6%94%B9%E5%8F%98%EF%BC%8C%E4%BD%86%E4%B8%8D%E6%98%AF%E9%9D%A0%E8%87%AA%E5%B7%B1%E8%B5%A2-1"><span class="toc-number">29.</span> <span class="toc-text">结论：棋局可以改变，但不是靠自己赢</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Reference"><span class="toc-number">30.</span> <span class="toc-text">Reference</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/162-workplace-betrayal-survival/" title="职场棋局：内斗、背叛与离场选项的机制分析"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/20260908102400-workplace-betrayal-survival.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="职场棋局：内斗、背叛与离场选项的机制分析"/ loading='lazy'></a><div class="content"><a class="title" href="/162-workplace-betrayal-survival/" title="职场棋局：内斗、背叛与离场选项的机制分析">职场棋局：内斗、背叛与离场选项的机制分析</a><time datetime="2026-09-08T02:28:16.508Z" title="更新于 2026-09-08 10:28:16">2026-09-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/161-childhood-trauma-adult-effects/" title="被忽视的童年：创伤如何塑造成年后的内心世界"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/20260831115530-childhood-trauma-adult-effects.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="被忽视的童年：创伤如何塑造成年后的内心世界"/ loading='lazy'></a><div class="content"><a class="title" href="/161-childhood-trauma-adult-effects/" title="被忽视的童年：创伤如何塑造成年后的内心世界">被忽视的童年：创伤如何塑造成年后的内心世界</a><time datetime="2026-08-31T04:09:40.295Z" title="更新于 2026-08-31 12:09:40">2026-08-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/160-gender-ideology-workplace/" title="性别话语的武器化：组织权力、沟通边界与群体认知的机制分析"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/20260831115500-gender-ideology-workplace.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="性别话语的武器化：组织权力、沟通边界与群体认知的机制分析"/ loading='lazy'></a><div class="content"><a class="title" href="/160-gender-ideology-workplace/" title="性别话语的武器化：组织权力、沟通边界与群体认知的机制分析">性别话语的武器化：组织权力、沟通边界与群体认知的机制分析</a><time datetime="2026-08-31T04:09:40.292Z" title="更新于 2026-08-31 12:09:40">2026-08-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/159-tutoring-gray-industry/" title="教培行业为何走向灰色：预收费、税务与组织失范的结构性分析"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/20260831075518-tutoring-gray-industry.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="教培行业为何走向灰色：预收费、税务与组织失范的结构性分析"/ loading='lazy'></a><div class="content"><a class="title" href="/159-tutoring-gray-industry/" title="教培行业为何走向灰色：预收费、税务与组织失范的结构性分析">教培行业为何走向灰色：预收费、税务与组织失范的结构性分析</a><time datetime="2026-08-31T03:30:15.977Z" title="更新于 2026-08-31 11:30:15">2026-08-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/108-markdown-advanced/" title="Markdown高阶语法手册"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202208070533779.7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Markdown高阶语法手册"/ loading='lazy'></a><div class="content"><a class="title" href="/108-markdown-advanced/" title="Markdown高阶语法手册">Markdown高阶语法手册</a><time datetime="2026-08-30T22:59:25.085Z" title="更新于 2026-08-31 06:59:25">2026-08-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/158-education-laws-regulations/" title="教资复习-教育法律法规笔记"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202511281644173.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="教资复习-教育法律法规笔记"/ loading='lazy'></a><div class="content"><a class="title" href="/158-education-laws-regulations/" title="教资复习-教育法律法规笔记">教资复习-教育法律法规笔记</a><time datetime="2026-08-30T22:57:40.521Z" title="更新于 2026-08-31 06:57:40">2026-08-31</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"></div><div class="footer_custom_text"><div class="footer_custom_text"><div class="coin-title"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309032153357.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309032153357.png" alt="Moe" style="height:1.3em" data-ll-status="loaded" class="entered loaded" loading='lazy'>&nbsp;萌ICP备<a href="https://icp.gov.moe/?keyword=20238869" target="_blank">20238869</a>号&nbsp;<i class="fa-fw fas fa-duotone fa-cat"></i>&nbsp;<a href="https://github.com/YuZhangWang" target="_blank">YuZhangWang</a>&nbsp;©2019-Present</div><div class="coin-title">Powered By&nbsp;<a href="https://hexo.io/zh-cn/index.html" target="_blank">Hexo</a>&nbsp;|&nbsp;Theme By&nbsp;<a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank">Butterfly</a></div><div class="coin-title"><a target="_blank" rel="noopener" href="https://www.cloudflare.com"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202509140110525.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826081712.svg" alt="Cloudflare" style="height:1.3em" data-ll-status="loaded" class="entered loaded" loading='lazy'></a>&nbsp;<a target="_blank" rel="noopener" href="https://www.jsdelivr.com"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131843411.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131843411.png" alt="Jsdelivr" style="height:1.3em" data-ll-status="loaded" class="entered loaded" loading='lazy'></a>&nbsp;<a target="_blank" rel="noopener" href="https://blogwe.com/"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195801782.jpg" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195801782.jpg" alt="博客大全" style="height:1.3em" data-ll-status="loaded" class="entered loaded" loading='lazy'></a>&nbsp;<a target="_blank" rel="noopener" href="https://vim-adventures.com/"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195910376.jpg" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195910376.jpg" alt="vim-adventures" style="height:1.3em" data-ll-status="loaded" class="entered loaded" loading='lazy'></a>&nbsp;<a href="https://qwerty.kaiyi.cool/" target="_blank" alt="qwerty-learner" rel="nofollow"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131945636.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131945636.png" alt="qwerty-learner" style="height:1.3em" data-ll-status="loaded" class="entered loaded" loading='lazy'></a></div></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        loader: {
+          load: [
+            // Four font extension packages (optional)
+            //- '[tex]/bbm',
+            //- '[tex]/bboldx',
+            //- '[tex]/dsfont',
+            '[tex]/mhchem'
+          ],
+          paths: {
+            'mathjax-newcm': '[mathjax]/../@mathjax/mathjax-newcm-font',
+
+            //- // Four font extension packages (optional)
+            //- 'mathjax-bbm-extension': '[mathjax]/../@mathjax/mathjax-bbm-font-extension',
+            //- 'mathjax-bboldx-extension': '[mathjax]/../@mathjax/mathjax-bboldx-font-extension',
+            //- 'mathjax-dsfont-extension': '[mathjax]/../@mathjax/mathjax-dsfont-font-extension',
+            'mathjax-mhchem-extension': '[mathjax]/../@mathjax/mathjax-mhchem-font-extension'
+          }
+        },
+        output: {
+          font: 'mathjax-newcm',
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+          packages: {
+            '[+]': [
+              'mhchem'
+            ]
+          }
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          menuOptions: {
+            settings: {
+              enrich: false  // Turn off Braille and voice narration text automatic generation
+            }
+          },
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://gcore.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (true) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://gcore.jsdelivr.net/npm/mermaid@11.12.0/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const hasShuoshuoData = false
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo' && hasShuoshuoData
+  const option = {"data-mapping":"title","data-strict":1,"data-reactions-enabled":1,"data-emit-metadata":0,"data-input-position":"top","data-lang":"zh-CN"}
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'YuZhangWang/YuZhangWang.github.io',
+      'data-repo-id': 'MDEwOlJlcG9zaXRvcnkzNDY4MTQyNjE=',
+      'data-category-id': 'DIC_kwDOFKv3Nc4CQ6NC',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !true) {
+    if (true) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://gcore.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://gcore.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/学术研究/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🎓 Academic Research (34)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/项目展示/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">💾 Project Showcase (16)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/技能学习记录/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🔨 Skills Learning (44)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/生活感悟/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">♥️ Life Insights (22)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><a class="magnet_link_more"  href="https://yuzhang.wang/categories" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(50% - 5px);background: #f2f2f2;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: rgb(127, 199, 244)}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>历史上的今天</span></div><div id="history-baidu" style="min-height:180px;height:180px;overflow:hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height:180px"><div class="swiper-wrapper" id="history_container_wrapper" style="height:100%"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='/'|| '/' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax  src="/js/swiper-bundle.min.js"></script><script data-pjax src="/js/history-calendar.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
