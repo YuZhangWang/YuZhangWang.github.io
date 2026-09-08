@@ -15,8 +15,40 @@
     <atom:link href="https://yuzhang.wang/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>PLUSULTRA!</description>
-    <pubDate>Tue, 08 Sep 2026 02:31:03 GMT</pubDate>
+    <pubDate>Tue, 08 Sep 2026 03:10:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>AI 贪吃蛇：从哈密顿回路到 60 FPS 插值动画的设计演进</title>
+      <link>https://yuzhang.wang/163-ai-snake-smooth-animation/</link>
+      <guid>https://yuzhang.wang/163-ai-snake-smooth-animation/</guid>
+      <pubDate>Tue, 08 Sep 2026 03:15:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文以本地仓库中的 Python 与 Rust 两套 AI 贪吃蛇为研究对象，讨论的是“自动必胜、动画流畅、规则可验证、跨实现可迁移”这一组设计目标，而不是把某个实现推广为所有贪吃蛇 AI</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1/">算法设计</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</category>
+      
+      
+      <comments>https://yuzhang.wang/163-ai-snake-smooth-animation/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>职场棋局：内斗、背叛与离场选项的机制分析</title>
@@ -601,38 +633,6 @@
       
       
       <comments>https://yuzhang.wang/140-tomb-raiders-timeline/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>教资复习-职业理念笔记</title>
-      <link>https://yuzhang.wang/135-teaching-qualification-review/</link>
-      <guid>https://yuzhang.wang/135-teaching-qualification-review/</guid>
-      <pubDate>Sat, 11 Oct 2025 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;blockquote&gt;
-&lt;p&gt;这里将罗列一些教资复习过程中，职业理念这一部分错过的题目笔记。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;教育观&quot;&gt;&lt;a href=&quot;#教育观&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E8%80%83%E8%AF%95%E8%B5%84%E6%96%99/">考试资料</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81/">教师资格证</category>
-      
-      
-      <comments>https://yuzhang.wang/135-teaching-qualification-review/#disqus_thread</comments>
       
     </item>
     

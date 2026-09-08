@@ -14349,6 +14349,576 @@ R \approx \frac{T + I}{S + A}</script><p>其中 $R$ 表示创伤体验的强度�
       </tags>
   </entry>
   <entry>
+    <title>AI 贪吃蛇：从哈密顿回路到 60 FPS 插值动画的设计演进</title>
+    <url>/163-ai-snake-smooth-animation/</url>
+    <content><![CDATA[<blockquote>
+<p>本文以本地仓库中的 Python 与 Rust 两套 AI 贪吃蛇为研究对象，讨论的是“自动必胜、动画流畅、规则可验证、跨实现可迁移”这一组设计目标，而不是把某个实现推广为所有贪吃蛇 AI 的通用结论。代码分析基于当前最终版本，同时结合开发过程中实际出现过的固定帧、睡眠、插值快照、高 DPI 与包名等问题。站点发布规范对本篇正文有明确字数约束，因此本文选择以可验证的深度代替单纯的字数堆砌；十万字更合适拆成系列文章，而不是塞进单篇。</p>
+</blockquote>
+<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>AI 贪吃蛇看起来是一个规模很小的游戏，但仔细拆解后会发现它同时包含了几类不同的问题：如何在给定棋盘和食物规则下避免自杀，如何让“自动赢”从经验概率变成可证明的结论，如何让逻辑更新与画面刷新解耦，如何让不同语言的实现共享同一套时间模型，以及如何用测试把“看起来流畅”变成“行为可复现”。这些问题的答案并不是互相独立的。策略决定了蛇的运动轨迹，运动轨迹决定了插值动画的起点与终点，动画模型又反过来影响用户能否清楚看见每一步决策。本文把这条线索从头到尾展开。</p>
+<p>文章的核心判断是：真正决定 AI 贪吃蛇质量的，不是“有没有深度优先搜索”或者“用的是 Python 还是 Rust”，而是是否建立了稳定、可检验的状态机，以及是否把逻辑节拍与渲染节拍分开。哈密顿回路解决了“从当前位置到全图填满”的路径存在性；固定步长累加器解决了“逻辑移动多少格”与“画面显示到哪一帧”之间的时间错位；逐节插值解决了蛇身长度变化时的视觉连续性；高 DPI 修正解决了正确坐标被窗口缩放破坏的问题。Rust 版本之所以看起来更顺畅，首先是这套设计被完整保留下来，其次才轮到编译性能和渲染库带来的实现差异。</p>
+<p>本文同时提供一个反向的审视：哈密顿回路并不是最聪明的贪吃蛇 AI，它只是最稳的确定性策略之一。它保证填满棋盘，却不会保证路径最短；它适用于矩形偶数网格，却不一定适用于墙壁、随机重生或需要躲避对手的变体。一个成熟的系统设计，恰恰需要同时知道某种方案证明了什么、没有证明什么。</p>
+<h2 id="研究背景与问题边界"><a href="#研究背景与问题边界" class="headerlink" title="研究背景与问题边界"></a>研究背景与问题边界</h2><p>这里讨论的两套程序有一个共同目标：让蛇自动运行并最终填满棋盘。Python 版位于 <code>D:\Code\Python\01HelloPycharm\11AI贪吃蛇.py</code>，使用标准库 <code>turtle</code> 与 <code>tkinter</code>；Rust 版位于 <code>D:\Code\C&amp;C++\81HelloRust\HelloRust</code>，使用 <code>macroquad</code> 作为窗口和渲染库，Cargo 包名是 <code>snake-ai</code>。两者共享 10×10 网格、60 FPS 渲染目标、每 90 毫秒一步的逻辑节奏、普通食物、金色食物、毒食物、连击、渐变色蛇身、尾迹、粒子与浮动得分等规则。</p>
+<p>这不是一次简单的“翻译”。Python 版最初已经具备哈密顿回路和特效，但动画方式偏固定：每个逻辑步切出三帧左右的插值，然后使用 <code>time.sleep</code> 控制节奏。这种写法在概念上并没有错，但它把“游戏时间”和“真实时间”混在一个循环里，机器的卡顿、窗口事件处理的延迟、屏幕刷新率的变化都会影响动画的持续时间和视觉稳定性。后来 Python 版改为固定步长累加器，把逻辑步数与渲染帧率解耦；Rust 版从一开始就把这一模型作为核心设计，并且把纯逻辑放进 <code>game.rs</code>，把窗口与绘制放进 <code>app.rs</code>。</p>
+<p>因此，本文的研究问题可以写成：</p>
+<ol>
+<li>在给定 10×10 网格中，是否存在一个可以证明最终填满全图的移动策略？</li>
+<li>当食物、金色食物和毒食物同时存在时，这个策略是否还能保持不变量？</li>
+<li>如何让逻辑以固定节奏推进，同时让渲染以更高频率读取中间状态？</li>
+<li>如何在蛇身增长或缩短时保证每节身体都有正确的插值起点与终点？</li>
+<li>如何把 Python 中的行为以同构方式迁移到 Rust，并让测试覆盖核心规则？</li>
+<li>为什么高 DPI 设置会造成棋盘被裁剪，又为什么它不是画面“不够流畅”的根本原因？</li>
+</ol>
+<p>还需要提前声明一个边界。两套程序都是自动演示版本，没有人类操控，也没有动态对手。所谓“AI”，在这里指的是一个根据当前状态输出下一步移动方向的决策函数，而不是通用人工智能。本文也不会把“自动运行后最终填满”等同于“每一步都是最优解”。</p>
+<h2 id="把贪吃蛇变成可推理的模型"><a href="#把贪吃蛇变成可推理的模型" class="headerlink" title="把贪吃蛇变成可推理的模型"></a>把贪吃蛇变成可推理的模型</h2><p>在讨论算法之前，需要先把现实中的“蛇”抽象成一组可检查的数据。设棋盘宽度为 $W$，高度为 $H$，总格数 $N=WH$。每个格子可以用一个二维坐标 $(x,y)$ 表示，其中 $x \in {0,\dots,W-1}$，$y \in {0,\dots,H-1}$。蛇身可以表示成一个有序序列</p>
+<script type="math/tex; mode=display">
+B_t = [b_0, b_1, \dots, b_{L_t-1}]</script><p>其中序列的第一个元素表示蛇头，最后一个元素表示蛇尾，而当前长度用一个简单符号 $L$ 表示。为了避免下划线在 Markdown 中被误解释为强调，正文不把带下标的符号放入行内数学；需要带时间下标时，使用展示公式或在代码注释中说明。相邻身体格之间必须满足曼哈顿距离为 1，并且身体内部不能有重复格子：</p>
+<script type="math/tex; mode=display">
+\|b_i - b_{i+1}\|_1 = 1,\qquad b_i \neq b_j \quad (i \neq j)</script><p>这里使用曼哈顿距离而不是欧氏距离，是因为蛇只能在上下左右四个方向上移动。可以把棋盘看作无向图，每个格子是顶点，相邻格子之间是边；蛇身是图上的一条简单路径，蛇头是路径的一端。每次移动相当于把新的头部格子接到路径前端，如果需要保持长度不变，则从尾部移除一个格子；如果吃到增长食物，则不移除尾部；如果吃到毒食物，则从尾部移除多个格子。</p>
+<p>这个模型看似简单，却已经揭示了贪吃蛇的两类难点。第一类是几何约束：蛇不能把自己截断，也不能从棋盘外绕路；第二类是时间约束：每一步只能移动一格，不能瞬移到远处看似更近的食物。若把“食物越近越好”作为唯一目标，蛇很可能为了靠近食物而把身体绕成一个自锁的形状，短时间看似聪明，之后却只能撞到自己。</p>
+<p>由此可以重新定义“必胜问题”：是否存在一个与食物位置无关的移动序列，使得无论食物出现在哪一个空格子里，蛇都能沿着该序列继续前进，并在吃到食物后仍然保持可继续前进的状态？如果存在这样的序列，那么“何时吃食物”就变成“沿哪个顺序覆盖格子”，而不是每一帧都重新搜索最优路径。</p>
+<h2 id="为什么普通“就近吃”策略不可靠"><a href="#为什么普通“就近吃”策略不可靠" class="headerlink" title="为什么普通“就近吃”策略不可靠"></a>为什么普通“就近吃”策略不可靠</h2><p>一个自然的想法是：每一步计算蛇头到食物的距离，选择距离最近的邻格。这个想法容易实现，但它隐含了三个假设：第一，当前局部最优不会导致未来被包围；第二，蛇可以在身体变化后继续找到一条安全路径；第三，棋盘足够小，所以短视决策造成的损失可以忽略。这三条假设在标准贪吃蛇中都不一定成立。</p>
+<p>一个典型的反例是长蛇局面。蛇已经占据了大半个棋盘，食物在距离蛇头两个格子的位置，但通往食物的唯一路径上的格子恰好被身体占据。此时“最近邻格”算法可能会尝试进入一个会切断身体的格子，或者在两个目标之间反复徘徊。更微妙的问题是：即使当前移动合法，身体尾部也会随移动而改变，原本看似安全的位置可能在下一次更新后变成陷阱。局部搜索只能看到当前快照，无法保证对未来状态的控制。</p>
+<p>有经验的开发者会想到 A<em> 搜索、广度优先搜索、深度优先搜索、强化学习或者“保证尾随安全”的启发式。它们各有优点：A</em> 可以快速找到到达食物的路径，BFS 可以保证在无权重图中的最短路径，强化学习可以学习更复杂的策略。但这些方法都有治理成本。A* 需要维护开放集、闭集和代价函数，还要处理蛇身随时间变化的动态约束；强化学习需要定义状态、动作、奖励、训练环境和评估指标；即使是简单的 BFS，也只在“存在一条安全路径”的前提下才有效，并不能保证路径始终存在。</p>
+<p>更重要的问题是：这些方法通常追求“较短的路径”，而贪吃蛇的胜利条件却是“把蛇填满整个棋盘”。当蛇接近全图时，真正稀缺的已经不是食物距离，而是“还能否沿着一条不断尾的路径继续走下去”。此时，哈密顿回路提供了一个反直觉的答案：与其每次询问“哪条路最近”，不如预先问“有没有一条路能访问每个格子恰好一次并回到起点”。</p>
+<p>下面用数学语言说明为什么这足够。若棋盘上存在一个哈密顿回路 $\mathcal{C}$，它访问每个顶点恰好一次并回到起点，那么蛇只要始终保持自己的身体是 $\mathcal{C}$ 上的连续段，并且每次头部沿 $\mathcal{C}$ 前进一格，就不会撞到自己的身体。无论食物在哪一个格子，蛇都会在回路上的某个位置经过它；吃到食物只会让身体变长，而身体的连续段性质不会改变。对于 10×10 的无障碍棋盘，这种回路是存在的，而且构造过程非常简单。</p>
+<h2 id="哈密顿回路：把“决策”降维成“顺序”"><a href="#哈密顿回路：把“决策”降维成“顺序”" class="headerlink" title="哈密顿回路：把“决策”降维成“顺序”"></a>哈密顿回路：把“决策”降维成“顺序”</h2><p>哈密顿回路的名字听起来很数学，但代码实现只需要一个确定性的计数循环。Python 版 <code>build_cycle</code> 按照“底边向右、右边缘向上、内部逐行蛇形回折”的顺序生成路径：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">build_cycle</span>():</span><br><span class="line">    <span class="string">&quot;&quot;&quot;构造覆盖全部格子的哈密顿回路, 返回 &#123;格:(下一格,序号)&#125;.&quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">assert</span> W % <span class="number">2</span> == <span class="number">0</span> <span class="keyword">and</span> H % <span class="number">2</span> == <span class="number">0</span>, <span class="string">&quot;要求宽高均为偶数&quot;</span></span><br><span class="line">    path = []</span><br><span class="line">    <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(W):                          <span class="comment"># 底边向右</span></span><br><span class="line">        path.append((x, <span class="number">0</span>))</span><br><span class="line">    <span class="keyword">for</span> y <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, H):                       <span class="comment"># 右边向上</span></span><br><span class="line">        path.append((W - <span class="number">1</span>, y))</span><br><span class="line">    <span class="keyword">for</span> y <span class="keyword">in</span> <span class="built_in">range</span>(H - <span class="number">1</span>, <span class="number">0</span>, -<span class="number">1</span>):               <span class="comment"># 内部蛇形回折</span></span><br><span class="line">        <span class="keyword">if</span> y % <span class="number">2</span> == <span class="number">1</span>:</span><br><span class="line">            path.extend((x, y) <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(W - <span class="number">2</span>, -<span class="number">1</span>, -<span class="number">1</span>))</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            path.extend((x, y) <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(W - <span class="number">1</span>))</span><br><span class="line">    cycle_next, cycle_idx = &#123;&#125;, &#123;&#125;</span><br><span class="line">    <span class="keyword">for</span> i, c <span class="keyword">in</span> <span class="built_in">enumerate</span>(path):</span><br><span class="line">        cycle_idx[c] = i</span><br><span class="line">        cycle_next[c] = path[(i + <span class="number">1</span>) % N]</span><br><span class="line">    <span class="keyword">return</span> cycle_next, cycle_idx</span><br></pre></td></tr></table></figure>
+<p>可以把这个回路画成下面的流线：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">    A[(0,0)] --&gt; B[(1,0)] --&gt; C[(2,0)] --&gt; D[...] --&gt; E[(9,0)]</span><br><span class="line">    E --&gt; F[(9,1)] --&gt; G[(9,2)] --&gt; H[...] --&gt; I[(9,9)]</span><br><span class="line">    I --&gt; J[(8,9)] --&gt; K[(7,9)] --&gt; L[...] --&gt; M[(0,9)]</span><br><span class="line">    M --&gt; N[(0,8)] --&gt; O[(1,8)] --&gt; P[...] --&gt; Q[(8,8)]</span><br><span class="line">    Q --&gt; R[(8,7)] --&gt; S[(7,7)] --&gt; T[...] --&gt; U[(0,7)]</span><br><span class="line">    U --&gt; V[(0,6)] --&gt; W[(1,6)] --&gt; X[...] --&gt; Y[(8,6)]</span><br><span class="line">    Y --&gt; Z[(8,5)] --&gt; AA[(7,5)] --&gt; AB[...] --&gt; AC[(0,5)]</span><br><span class="line">    AC --&gt; AD[(0,4)] --&gt; AE[(1,4)] --&gt; AF[...] --&gt; AG[(8,4)]</span><br><span class="line">    AG --&gt; AH[(8,3)] --&gt; AI[(7,3)] --&gt; AJ[...] --&gt; AK[(0,3)]</span><br><span class="line">    AK --&gt; AL[(0,2)] --&gt; AM[(1,2)] --&gt; AN[...] --&gt; AO[(8,2)]</span><br><span class="line">    AO --&gt; AP[(8,1)] --&gt; AQ[(7,1)] --&gt; AR[...] --&gt; AS[(0,1)]</span><br><span class="line">    AS --&gt; A</span><br></pre></td></tr></table></figure>
+<p>这里的关键不是“画出路径”，而是路径必须首尾相接。<code>cycle_next[c] = path[(i + 1) % N]</code> 这一行把最后一个格子的下一格重新指回第一个格子，从而形成回路。Python 版用字典保存映射，Rust 版则直接用固定长度的数组：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">build_cycle</span>() <span class="punctuation">-&gt;</span> [<span class="type">usize</span>; CELL_COUNT] &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">path</span>: <span class="type">Vec</span>&lt;(<span class="type">usize</span>, <span class="type">usize</span>)&gt; = <span class="type">Vec</span>::<span class="title function_ invoke__">with_capacity</span>(CELL_COUNT);</span><br><span class="line">    <span class="keyword">for</span> <span class="variable">x</span> <span class="keyword">in</span> <span class="number">0</span>..GRID_W &#123;</span><br><span class="line">        path.<span class="title function_ invoke__">push</span>((x, <span class="number">0</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> <span class="variable">y</span> <span class="keyword">in</span> <span class="number">1</span>..GRID_H &#123;</span><br><span class="line">        path.<span class="title function_ invoke__">push</span>((GRID_W - <span class="number">1</span>, y));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> <span class="variable">y</span> <span class="keyword">in</span> (<span class="number">1</span>..GRID_H).<span class="title function_ invoke__">rev</span>() &#123;</span><br><span class="line">        <span class="keyword">if</span> y % <span class="number">2</span> == <span class="number">1</span> &#123;</span><br><span class="line">            <span class="keyword">for</span> <span class="variable">x</span> <span class="keyword">in</span> (<span class="number">0</span>..GRID_W - <span class="number">1</span>).<span class="title function_ invoke__">rev</span>() &#123;</span><br><span class="line">                path.<span class="title function_ invoke__">push</span>((x, y));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">for</span> <span class="variable">x</span> <span class="keyword">in</span> <span class="number">0</span>..GRID_W - <span class="number">1</span> &#123;</span><br><span class="line">                path.<span class="title function_ invoke__">push</span>((x, y));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">next</span> = [<span class="number">0usize</span>; CELL_COUNT];</span><br><span class="line">    <span class="keyword">for</span> (i, &amp;(x, y)) <span class="keyword">in</span> path.<span class="title function_ invoke__">iter</span>().<span class="title function_ invoke__">enumerate</span>() &#123;</span><br><span class="line">        <span class="keyword">let</span> (nx, ny) = path[(i + <span class="number">1</span>) % CELL_COUNT];</span><br><span class="line">        next[y * GRID_W + x] = ny * GRID_W + nx;</span><br><span class="line">    &#125;</span><br><span class="line">    next</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Rust 的构造方式与 Python 完全同构，差异只是数据组织：Python 用元组坐标和字典，Rust 用一维 <code>usize</code> 索引和数组。一维索引 <code>y * GRID_W + x</code> 把二维坐标线性化，<code>next[cell]</code> 直接给出该格子的下一格。这种设计让碰撞判断从“遍历蛇身比较坐标”变成“查询布尔数组 <code>occupied[cell]</code>”。</p>
+<p>为什么要求网格宽高都是偶数？可以观察路径的折返方式：底层横着走，右缘竖着走，内部再逐行折返。当 $W$ 和 $H$ 都是偶数时，最后一行的折返方向恰好能与起点闭合成环；如果边长是奇数，折返到边界时会出现无法闭合的进退点。这个问题不能靠“调整一下循环”随意解决，必须用测试固定下来。Rust 版在 <code>ai.rs</code> 中写了一个单元测试，从起点沿 <code>next</code> 走 100 步，检查每一步是否重复访问、最后是否回到起点：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="meta">#[test]</span></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">cycle_visits_every_cell_once_and_returns</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">next</span> = <span class="title function_ invoke__">build_cycle</span>();</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">seen</span> = [<span class="literal">false</span>; CELL_COUNT];</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">cur</span> = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> <span class="variable">_</span> <span class="keyword">in</span> <span class="number">0</span>..CELL_COUNT &#123;</span><br><span class="line">        <span class="built_in">assert!</span>(!seen[cur], <span class="string">&quot;格子 &#123;cur&#125; 被重复访问&quot;</span>);</span><br><span class="line">        seen[cur] = <span class="literal">true</span>;</span><br><span class="line">        cur = next[cur];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">assert_eq!</span>(cur, <span class="number">0</span>, <span class="string">&quot;走完 N 步应回到起点&quot;</span>);</span><br><span class="line">    <span class="built_in">assert!</span>(seen.<span class="title function_ invoke__">iter</span>().<span class="title function_ invoke__">all</span>(|&amp;s| s), <span class="string">&quot;存在未覆盖格子&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这类测试的价值在于，它把一个“看起来对”的循环变成“对错误立即拒绝”的约束。若有人把网格改成奇数，或在构造路径时漏掉一行，测试会立刻报告重复访问或未覆盖格子，而不是直到运行几局后才出现偶发卡死。</p>
+<h2 id="Python-实现：先把逻辑跑通"><a href="#Python-实现：先把逻辑跑通" class="headerlink" title="Python 实现：先把逻辑跑通"></a>Python 实现：先把逻辑跑通</h2><p>有了回路后，AI 的移动逻辑只需要一行核心判断：看头部当前格子的下一格是否被身体占据。Python 版 <code>choose_move</code> 如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">choose_move</span>(<span class="params">body, cycle_next</span>):</span><br><span class="line">    head = body[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(body) == N:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span>, <span class="string">&quot;win&quot;</span></span><br><span class="line">    nxt = cycle_next[head]</span><br><span class="line">    <span class="keyword">if</span> nxt <span class="keyword">not</span> <span class="keyword">in</span> body:</span><br><span class="line">        <span class="keyword">return</span> nxt, <span class="string">&quot;hunt&quot;</span></span><br><span class="line">    tail = body[-<span class="number">1</span>] <span class="keyword">if</span> <span class="built_in">len</span>(body) &gt; <span class="number">1</span> <span class="keyword">else</span> <span class="literal">None</span></span><br><span class="line">    <span class="keyword">for</span> dx, dy <span class="keyword">in</span> ((<span class="number">0</span>, <span class="number">1</span>), (<span class="number">0</span>, -<span class="number">1</span>), (<span class="number">1</span>, <span class="number">0</span>), (-<span class="number">1</span>, <span class="number">0</span>)):</span><br><span class="line">        nb = (head[<span class="number">0</span>] + dx, head[<span class="number">1</span>] + dy)</span><br><span class="line">        <span class="keyword">if</span> (<span class="number">0</span> &lt;= nb[<span class="number">0</span>] &lt; W <span class="keyword">and</span> <span class="number">0</span> &lt;= nb[<span class="number">1</span>] &lt; H</span><br><span class="line">                <span class="keyword">and</span> (nb <span class="keyword">not</span> <span class="keyword">in</span> body <span class="keyword">or</span> nb == tail)):</span><br><span class="line">            <span class="keyword">return</span> nb, <span class="string">&quot;fallback&quot;</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">None</span>, <span class="string">&quot;stuck&quot;</span></span><br></pre></td></tr></table></figure>
+<p>这里的 <code>nxt not in body</code> 看起来像一次线性搜索，但在 10×10 棋盘上最多只有 100 个格子，性能不是问题。真正的设计价值在于语义：普通情况下，蛇始终沿回路前进，不需要比较食物距离。<code>fallback</code> 分支在「回路下一格被自己占据」时才会触发，目的是找一个紧邻的合法空格。更保守的实现会优先选择“尾端即将离开的格子”，因为尾部移动后就会让出空间，从而避免蛇脱离控制良好的回路。</p>
+<p>之所以需要 <code>fallback</code>，是因为食物、毒食物和金色食物会改变身体长度，而蛇身长度变化会影响当前头部到尾部之间的连续段状态。在标准哈密顿回路中，下一格被占据的情况很罕见，但一旦出现，不能直接假设“随机选一个空格就行”。随机选格可能让蛇瞬间脱离回路，在视觉上像是还在移动，实际上已经把可证明的必胜结构破坏了。这里的取舍很微妙：为了鲁棒性引入的兜底逻辑，也可能成为新的隐患。因此当前实现把兜底限制在邻格、且允许走向尾端即将让出的格子，而不是允许跳到任意远处。</p>
+<p>接着需要说明物品生成与状态结算。Python 使用 <code>spawn_item</code> 从空闲格中随机选一个：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">free_cells</span>(<span class="params">exclude=(<span class="params"></span>)</span>):</span><br><span class="line">    blocked = <span class="built_in">set</span>(exclude)</span><br><span class="line">    <span class="keyword">return</span> [(x, y) <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(W) <span class="keyword">for</span> y <span class="keyword">in</span> <span class="built_in">range</span>(H)</span><br><span class="line">            <span class="keyword">if</span> (x, y) <span class="keyword">not</span> <span class="keyword">in</span> blocked]</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">spawn_item</span>(<span class="params">exclude=(<span class="params"></span>), rng=<span class="literal">None</span></span>):</span><br><span class="line">    cells = free_cells(exclude)</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> cells:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line">    <span class="keyword">return</span> (rng <span class="keyword">or</span> random).choice(cells)</span><br></pre></td></tr></table></figure>
+<p>普通食品、毒食品、金色食品使用同一个函数生成，但传入不同的排除集合。比如生成食物时要排除蛇身和已有的毒、金；生成毒时要排除蛇身、食物和已有的金。这样三条规则都能保证不重叠。Rust 版把同样的逻辑写成了 <code>spawn_item(&amp;[self.poison, self.golden])</code>，其中 <code>Option&lt;usize&gt;</code> 的数组表示“需要排除的可选物品”。这个 <code>Option</code> 比 Python 里的 <code>None</code> 更显式，因为类型系统会强迫你处理“没有毒食品”和“毒食品在某个格子”的区别。</p>
+<h2 id="Python-动画的第一版困境"><a href="#Python-动画的第一版困境" class="headerlink" title="Python 动画的第一版困境"></a>Python 动画的第一版困境</h2><p>现在谈文章后半段的重点：动画。很多开发者会把“动画流畅”直接理解为“帧率要高”，但高帧率只是必要条件之一。真正影响观感的是每一帧画面是否连续、逻辑是否按时推进、以及机器负载变化时动画是否保持一致的节奏。</p>
+<p>早期 Python 版使用的参数与结构可以从调试记录中还原：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">MOVE_DELAY = <span class="number">0.012</span>           <span class="comment"># 每格耗时(秒)</span></span><br><span class="line">ANIM = <span class="number">3</span>                     <span class="comment"># 每格插值帧数</span></span><br></pre></td></tr></table></figure>
+<p>移动后的动画循环大致是：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">curr = <span class="built_in">list</span>(body)</span><br><span class="line">anim_prev = [prev_cells[<span class="number">0</span>]] + prev_cells <span class="keyword">if</span> eating <span class="keyword">else</span> prev_cells</span><br><span class="line">frame_dt = MOVE_DELAY / (ANIM + <span class="number">1</span>)</span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="built_in">range</span>(ANIM + <span class="number">1</span>):</span><br><span class="line">    sim_time += frame_dt</span><br><span class="line">    snake.animate(anim_prev, curr, f / ANIM)</span><br><span class="line">    food_spr.pulse()</span><br><span class="line">    trail.update(frame_dt)</span><br><span class="line">    update_particles(frame_dt)</span><br><span class="line">    floats.update(frame_dt)</span><br><span class="line">    screen.update()</span><br><span class="line">    time.sleep(frame_dt)</span><br></pre></td></tr></table></figure>
+<p>这段代码在表面上看已经用了缓动：<code>SnakeSprites.animate</code> 内部调用 <code>ease_out_cubic</code>。但问题在于动画帧数被硬编码为 <code>ANIM</code>，每一格只产生固定四个离散显示状态（<code>f=0,1,2,3</code>），并且每帧之后都调用 <code>time.sleep(frame_dt)</code>。这种做法把“要显示多少次”与“实际用了多长时间”绑定在一起。如果机器运行得很慢，<code>screen.update()</code> 本身耗时超过 <code>frame_dt</code>，睡眠仍然会继续执行，动画总时长就会被拉长；如果机器运行得很快，固定的睡眠会浪费时钟，让游戏本应 12 毫秒完成的一格移动变成由 CPU 调度决定的抖动节奏。</p>
+<p>当时还发现了一个容易被忽略的问题：<code>ease_out_cubic</code> 如果同时出现在 <code>SnakeSprites.animate</code> 和渲染循环里，等于对同一个进度施加两次缓动。第一次缓动已经让“起步快、收尾慢”，第二次继续缓动会把启动和结束都压得更慢，动画会出现明显的“两头拖沓、中间猛冲”的违和感。修复方法是只保留一处缓动：逻辑层只计算时间比例，渲染层把该比例交给唯一的 <code>ease_out_cubic</code>，或者反过来，但绝不能在两个位置同时调用。这个细节比很多性能优化更能直接改变视觉质量。</p>
+<p>另一个问题是旧代码只在吃到食物时给 <code>anim_prev</code> 补一个旧头坐标。普通移动时，<code>prev_cells</code> 本身就是蛇身的上一个快照；但是当蛇吃到食物后，下一个普通移动开始时，若没有把当前的完整身体写入 <code>anim_prev</code>，插值就会使用旧的、长度不足的起点，导致蛇身从出生点或上一帧的某个错误位置“跳”到当前位置。用户看到的不是平滑爬行，而是一瞬间的重置感。</p>
+<h2 id="从固定帧到固定步长累加器"><a href="#从固定帧到固定步长累加器" class="headerlink" title="从固定帧到固定步长累加器"></a>从固定帧到固定步长累加器</h2><p>最终 Python 版采用了与 Rust 相同的固定步长模型。先看关键参数：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">MOVE_DELAY = <span class="number">0.09</span>            <span class="comment"># 每步逻辑时长(秒)</span></span><br><span class="line">RENDER_HZ = <span class="number">60</span>               <span class="comment"># 目标渲染帧率</span></span><br><span class="line">FRAME_DT = <span class="number">1.0</span> / RENDER_HZ   <span class="comment"># 每帧基准时长(秒)</span></span><br><span class="line">MAX_FRAME_DT = <span class="number">0.25</span>          <span class="comment"># 卡顿/暂停后单帧最大补帧</span></span><br></pre></td></tr></table></figure>
+<p>主循环不再把“一个逻辑步”包装成“固定 4 帧”，而是每一帧先读取真实时间差：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">now = time.perf_counter()</span><br><span class="line">frame_dt = <span class="built_in">min</span>(now - last_frame, MAX_FRAME_DT)</span><br><span class="line">last_frame = now</span><br></pre></td></tr></table></figure>
+<p>然后把真实时间差累加到 <code>accumulator</code>，只要当前累计值超过一个逻辑步的时长，就执行一次逻辑移动：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">accumulator += frame_dt</span><br><span class="line"><span class="keyword">while</span> accumulator &gt;= MOVE_DELAY <span class="keyword">and</span> <span class="built_in">len</span>(body) &lt; N:</span><br><span class="line">    accumulator -= MOVE_DELAY</span><br><span class="line">    step, mode = choose_move(body, cycle_next)</span><br><span class="line">    ...</span><br></pre></td></tr></table></figure>
+<p>这里的 <code>accumulator</code> 是“已经到来的时间预算”。如果一帧只过去 1/60 秒，而每一步需要 0.09 秒，那么大约每 5.4 帧才会执行一次逻辑移动。在两次逻辑移动之间，画面仍然以 60 帧的频率刷新，但蛇的坐标不是直接跳到下一个格子，而是根据当前累计比例进行插值：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">alpha = <span class="built_in">min</span>(accumulator / MOVE_DELAY, <span class="number">1.0</span>)</span><br><span class="line">snake.animate(anim_from, anim_to, alpha)</span><br></pre></td></tr></table></figure>
+<p>把这个比例记作 $\alpha$。若 $t$ 是距离上一个逻辑步开始的时间，则</p>
+<script type="math/tex; mode=display">
+\alpha = \min\left(\frac{t}{T_{\text{step}}}, 1\right)</script><p>其中，步长本身记为常量 <code>STEP_TIME</code>，代表每个逻辑步的目标时长。再用缓出曲线把线性时间映射为视觉进度：</p>
+<script type="math/tex; mode=display">
+a_{\text{visual}} = 1 - (1 - \alpha)^3</script><p>这个函数在 $\alpha=0$ 时为 0，在 $\alpha=1$ 时为 1，导函数在起点为 3、在终点为 0。也就是说，蛇在每一步开始阶段移动最快，接近终点时逐渐减速。这样的曲线适合“一格到下一格”的短距离运动，能避免匀速移动给人带来的机械感。</p>
+<p>固定步长累加器的核心好处可以总结成一句话：逻辑以固定节拍发生，画面以实际钟表时间推进。无论机器帧率是 60 FPS、120 FPS，还是偶尔掉到 30 FPS，每个逻辑步仍然严格间隔 90 毫秒；渲染层只是在这些固定事件之间插入更细的坐标。这种“分层”是游戏循环的经典思想。</p>
+<p><code>MAX_FRAME_DT</code> 的引入也值得单独解释。它限制了一次读取到的 <code>frame_dt</code> 最大为 0.25 秒，目的是防止窗口最小化、系统挂起或调试器暂停后，恢复运行的瞬间把大量时间一次性补进逻辑循环。如果没有上限，蛇可能在恢复后迅速跑几十步，用户看到的是一串瞬移；加上上限后，系统只会补最多 0.25 秒的步数，后续按正常节奏继续。</p>
+<h2 id="动画位姿：逐节插值的精妙细节"><a href="#动画位姿：逐节插值的精妙细节" class="headerlink" title="动画位姿：逐节插值的精妙细节"></a>动画位姿：逐节插值的精妙细节</h2><p>如果只对蛇头做插值，实现会很容易，但蛇尾和中间身体会留下错位。正确的做法是对每一节分别维护“从哪个格子来，到哪个格子去”。Python 版把这一对信息称为 <code>anim_from</code> 和 <code>anim_to</code>，创建时先复制当前身体。</p>
+<p>普通移动的映射比较直观：旧身体的第 $i$ 节移动后占据新身体的第 $i$ 节对应的格子，因此可以逐节线性插值。增长和收缩则制造了长度不匹配：增长时，新身体比旧身体多一节；收缩时，新身体比旧身体少一节。如果直接按照索引 <code>zip</code>，长度不同会导致少算、错配或越界。</p>
+<p>当前实现用一个非常小的函数处理这个问题：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">animation_pose</span>(<span class="params">prev, curr</span>):</span><br><span class="line">    prev = <span class="built_in">list</span>(prev)</span><br><span class="line">    curr = <span class="built_in">list</span>(curr)</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(prev) &lt; <span class="built_in">len</span>(curr):</span><br><span class="line">        prev.insert(<span class="number">0</span>, prev[<span class="number">0</span>])</span><br><span class="line">    <span class="keyword">return</span> prev, curr</span><br></pre></td></tr></table></figure>
+<p>为什么增长时要在旧序列的头部补一个旧头位置？以一格蛇为例。移动前蛇在 $(0,0)$，吃到食物后新身体为 $[(1,0),(0,0)]$。此时旧身体只有一节，新身体有两节。若把旧序列直接与新序列比较，第二节的起点缺失。补上旧头位置后，两个序列都变成两节：</p>
+<script type="math/tex; mode=display">
+\text{from} = [(0,0),(0,0)],\qquad \text{to} = [(1,0),(0,0)]</script><p>于是第一节从 $(0,0)$ 插值到 $(1,0)$，第二节从 $(0,0)$ 插值到 $(0,0)$。第二节不移动是正确的结果：它代表旧头部在进食后留在原位置，成为新身体的第二节。</p>
+<p>收缩时则不需要补位，只需要截取公共长度。比如旧身体为 $[(0,0),(1,0),(2,0)]$，吃毒后变成 $[(3,0),(0,0)]$。前两节的起点均存在，直接取旧序列前两个位置即可：</p>
+<script type="math/tex; mode=display">
+\text{from} = [(0,0),(1,0)],\qquad \text{to} = [(3,0),(0,0)]</script><p>Rust 版把同样的逻辑放在 <code>Game::anim_pose</code> 中：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">anim_pose</span>(&amp;<span class="keyword">self</span>) <span class="punctuation">-&gt;</span> <span class="type">Vec</span>&lt;SegmentPose&gt; &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">to</span> = <span class="keyword">self</span>.<span class="title function_ invoke__">snapshot_cells</span>();</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">from</span> = <span class="keyword">self</span>.anim_prev.<span class="title function_ invoke__">clone</span>();</span><br><span class="line">    <span class="keyword">while</span> from.<span class="title function_ invoke__">len</span>() &lt; to.<span class="title function_ invoke__">len</span>() &#123;</span><br><span class="line">        from.<span class="title function_ invoke__">insert</span>(<span class="number">0</span>, from.<span class="title function_ invoke__">first</span>().<span class="title function_ invoke__">copied</span>().<span class="title function_ invoke__">unwrap_or</span>((<span class="number">0.0</span>, <span class="number">0.0</span>)));</span><br><span class="line">    &#125;</span><br><span class="line">    to.<span class="title function_ invoke__">into_iter</span>().<span class="title function_ invoke__">zip</span>(from).<span class="title function_ invoke__">map</span>(|(t, f)| (f, t)).<span class="title function_ invoke__">collect</span>()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>snapshot_cells</code> 把蛇身格子转换为浮点坐标，<code>anim_prev</code> 保存上一个逻辑步开始时的身体快照。关键是 <code>Game::step</code> 在每次推进前都无条件刷新 <code>anim_prev</code>：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">self</span>.anim_prev = <span class="keyword">self</span>.<span class="title function_ invoke__">snapshot_cells</span>();</span><br></pre></td></tr></table></figure>
+<p>这个细节很容易被忽略。若只在“吃到食物”时更新，后续普通移动会沿用旧快照，出现视觉跳变。此前的 Python 版正是踩过这个坑；修复后，无论移动、进食还是吃毒，每步都能从正确的起点开始插值。</p>
+<p>另一个容易混淆的问题是缓动次数。Python 的 <code>SnakeSprites.animate</code> 接收 <code>raw_t</code> 后先约束到 $[0,1]$，再调用一次 <code>ease_out_cubic</code>；外部主循环不再重复调用该函数。Rust 的 <code>draw_all</code> 同样只接收一个经过 <code>ease_out_cubic</code> 的 <code>alpha</code>，循环内直接把它用于线性插值。两套代码最终都坚持“一处缓动、处处插值”的原则。</p>
+<h2 id="Python-的特效与生命周期管理"><a href="#Python-的特效与生命周期管理" class="headerlink" title="Python 的特效与生命周期管理"></a>Python 的特效与生命周期管理</h2><p>Python 版的特效并不是为了炫技而存在，它们承担了“反馈”的功能：吃掉普通食物后出现粒子与加分文字，吃掉金色食物后出现金色粒子，吃掉毒食物后出现红色粒子并清空连击。食物还有呼吸脉冲，金色食物限时 8 秒，并在存在期内闪烁。这些效果都依赖同一个 <code>sim_time</code> 时钟。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">sim_time += frame_dt</span><br><span class="line"><span class="keyword">if</span> golden <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span> <span class="keyword">and</span> sim_time &gt; golden_deadline:</span><br><span class="line">    golden = <span class="literal">None</span></span><br><span class="line">    golden_spr.hide()</span><br></pre></td></tr></table></figure>
+<p>这里最重要的是暂停语义。暂停时 <code>sim_time</code> 不增加，金色食物的倒计时、连击窗口、粒子寿命和浮动文字寿命全部冻结；Rust 版在 <code>tick_frame</code> 中做了同样的处理。暂停时不能只停止蛇的移动，否则金色食物会悄悄消失，连击也会被错误重置，玩家恢复游戏后会看到与暂停前不一致的状态。</p>
+<p>Python 版还有一个非常实际的生命周期问题：Turtle 对象每次创建都会占用一个画布显示项，如果重开一局就一直创建新 Turtle，内存和绘图项会不断累积。当前实现通过 <code>screen.clear()</code> 统一清除上一局的海龟，并重新绑定按键。<code>ALL</code> 列表保存本局创建的 Turtle，<code>_handle_restart</code> 在重启时清理拖影和浮动文字，<code>_close_screen</code> 在退出时安全关闭画布。<code>screen.clear()</code> 之后必须重新执行 <code>_configure_screen()</code>，因为原有的事件绑定会随画布清除而失效。</p>
+<p>主循环使用 <code>screen.tracer(0, 0)</code> 关闭自动重绘，并在每帧末尾调用一次 <code>screen.update()</code>。这是 Turtle 游戏的标准做法：把绘制命令批量提交，而不是让每个 <code>goto</code> 都触发一次画布刷新。随后计算本帧已经消耗的时间，用 <code>time.sleep(FRAME_DT - elapsed)</code> 补齐剩余时间。这里的 <code>time.sleep</code> 与旧版不同，它不再决定动画的“帧数”，只负责控制渲染循环的节拍，因此不会影响逻辑步的时间一致性。</p>
+<h2 id="Rust-版本：如何把同一套思想固化到类型系统"><a href="#Rust-版本：如何把同一套思想固化到类型系统" class="headerlink" title="Rust 版本：如何把同一套思想固化到类型系统"></a>Rust 版本：如何把同一套思想固化到类型系统</h2><p>Rust 版并不是把 Python 代码机械搬运，而是在一开始就把“逻辑”和“表现”分开。它的模块结构如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    M[main.rs 窗口入口] --&gt; A[app.rs macroquad 渲染与主循环]</span><br><span class="line">    A --&gt; G[game.rs 纯逻辑状态机]</span><br><span class="line">    G --&gt; C[config.rs 常量与调色板]</span><br><span class="line">    G --&gt; R[rng.rs 可注入随机源]</span><br><span class="line">    G --&gt; AI[ai.rs 哈密顿回路与缓动]</span><br><span class="line">    T[tests/game_integration.rs] --&gt; G</span><br></pre></td></tr></table></figure>
+<p><code>config.rs</code> 集中了所有可调数值：网格尺寸、单元格尺寸、步长、连击窗口、分数、物品概率、尾迹长度、粒子寿命、HUD 尺寸和调色板。把常量放在一个模块里，看起来只是整理代码，实际上是在构建“参数面”。之后要做实验，比如把步长从 90 毫秒改成 120 毫秒，或者把金色食物概率从 22% 改成 10%，只需要改一个文件，不需要在绘制代码和游戏状态之间来回寻找。</p>
+<p><code>Rng</code> 封装了随机数生成器，并提供了两种构造方式：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">from_entropy</span>() <span class="punctuation">-&gt;</span> <span class="keyword">Self</span> &#123;</span><br><span class="line">    <span class="title function_ invoke__">Self</span>(StdRng::<span class="title function_ invoke__">from_entropy</span>())</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">seeded</span>(seed: <span class="type">u64</span>) <span class="punctuation">-&gt;</span> <span class="keyword">Self</span> &#123;</span><br><span class="line">    <span class="title function_ invoke__">Self</span>(StdRng::<span class="title function_ invoke__">seed_from_u64</span>(seed))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这是“可测试性”的第一个入口。生产代码从系统熵源创建随机对象，测试代码则注入固定种子。没有固定种子时，即使策略本身正确，一次失败也很难复现；有了种子后，同一个失败场景可以被反复运行、修改和验证。</p>
+<p><code>Game</code> 是真正的纯逻辑状态机。它保存蛇身 <code>VecDeque&lt;usize&gt;</code>、占用表 <code>occupied: [bool; CELL_COUNT]</code>、回路表 <code>next: [usize; CELL_COUNT]</code>、食物与毒/金物品、尾迹、时钟、分数、连击、胜利标记和动画快照。</p>
+<p>这里有个重要设计选择：<code>occupied</code> 是布尔数组而不是每次遍历蛇身。移动时判断目标是否被占据只需要</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="keyword">self</span>.occupied[target] &#123;</span><br><span class="line">    <span class="keyword">return</span> StepOutcome::Stuck;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>body</code> 使用 <code>VecDeque</code> 是因为蛇头从前面插入、蛇尾从后面弹出，这两项操作在双端队列上都是 $O(1)$。<code>occupied</code> 数组把碰撞判断从 $O(L)$ 降到 $O(1)$，对于 100 格的小棋盘未必带来肉眼可见的差异，但它表达了一个清晰的意图：碰撞是查表，而不是扫描。</p>
+<p><code>step</code> 方法先判断是否已经胜利，然后读取头部和回路目标：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">step</span>(&amp;<span class="keyword">mut</span> <span class="keyword">self</span>) <span class="punctuation">-&gt;</span> StepOutcome &#123;</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">self</span>.won &#123;</span><br><span class="line">        <span class="keyword">return</span> StepOutcome::Won;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">head</span> = *<span class="keyword">self</span>.body.<span class="title function_ invoke__">front</span>().<span class="title function_ invoke__">unwrap</span>();</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">target</span> = <span class="keyword">self</span>.next[head];</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">self</span>.occupied[target] &#123;</span><br><span class="line">        <span class="keyword">return</span> StepOutcome::Stuck;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">self</span>.anim_prev = <span class="keyword">self</span>.<span class="title function_ invoke__">snapshot_cells</span>();</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>之后根据目标是否是食物、金色食物或毒食物进行结算。结算结果用 <code>StepOutcome</code> 枚举表示：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">pub</span> <span class="keyword">enum</span> <span class="title class_">StepOutcome</span> &#123;</span><br><span class="line">    Moved,</span><br><span class="line">    AteFood,</span><br><span class="line">    AteGolden,</span><br><span class="line">    AtePoison,</span><br><span class="line">    Won,</span><br><span class="line">    Stuck,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个枚举的价值在于，表现层不需要重新检查“蛇当前是否在某个格子”，只需要根据结果触发对应的粒子、音效或文字效果。它把“发生了什么”与“如何表现”解耦。浮字信息也被封装成 <code>FloatTextSpec</code>，由 <code>step</code> 写入 <code>pending_float</code>，再由 <code>take_float</code> 取走。这样逻辑层不依赖任何绘图 API。</p>
+<p>毒食物的处理尤其能体现纯逻辑测试的好处：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line">StepOutcome::AtePoison =&gt; &#123;</span><br><span class="line">    <span class="keyword">for</span> <span class="variable">_</span> <span class="keyword">in</span> <span class="number">0</span>..POISON_SHRINK &#123;</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">self</span>.body.<span class="title function_ invoke__">len</span>() &gt; <span class="number">1</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">let</span> <span class="variable">Some</span>(tail) = <span class="keyword">self</span>.body.<span class="title function_ invoke__">pop_back</span>() &#123;</span><br><span class="line">                <span class="keyword">self</span>.occupied[tail] = <span class="literal">false</span>;</span><br><span class="line">                <span class="keyword">self</span>.trail.<span class="title function_ invoke__">push_back</span>((tail, <span class="number">0</span>));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>从尾部弹出身体后，对应格子的 <code>occupied</code> 必须立即设为 <code>false</code>，否则后续生成食物时会把已经让出的格子仍然当作被占用。这个状态同步极其细微，却是最容易出错的地方。Rust 的类型系统不会自动帮你发现“一边修改身体、一边忘记修改占用表”的 bug，但集成测试会：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="meta">#[test]</span></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">forced_poison_midway_still_wins</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">g</span> = Game::<span class="title function_ invoke__">with_rng</span>(Rng::<span class="title function_ invoke__">seeded</span>(<span class="number">7</span>));</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">poisoned</span> = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">for</span> <span class="variable">_</span> <span class="keyword">in</span> <span class="number">0</span>..STEP_BUDGET &#123;</span><br><span class="line">        <span class="keyword">if</span> g.<span class="title function_ invoke__">is_won</span>() &#123;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> !poisoned &amp;&amp; g.<span class="title function_ invoke__">moves</span>() == <span class="number">50</span> &#123;</span><br><span class="line">            g.<span class="title function_ invoke__">debug_force_poison_ahead</span>();</span><br><span class="line">            poisoned = <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">let</span> <span class="variable">outcome</span> = g.<span class="title function_ invoke__">step</span>();</span><br><span class="line">        <span class="built_in">assert_ne!</span>(outcome, StepOutcome::Stuck);</span><br><span class="line">        <span class="keyword">if</span> outcome == StepOutcome::AtePoison &#123;</span><br><span class="line">            <span class="built_in">assert!</span>(g.<span class="title function_ invoke__">body_len</span>() &gt;= <span class="number">1</span>, <span class="string">&quot;吃毒后身体不得为空&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">assert!</span>(g.<span class="title function_ invoke__">is_won</span>(), <span class="string">&quot;吃毒后应仍能填满全图&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>debug_force_poison_ahead</code> 是专门为测试暴露的调试入口。它强制把毒食物放到头部回路下一格，使得测试能够在第 50 步制造一次可控的收缩事件。真实游戏中毒食物是随机生成的，但随机生成的事件难以可靠复现；注入式测试则把随机性排除在外，专门针对方程和状态同步。</p>
+<h2 id="Rust-动画循环的固定步长与暂停冻结"><a href="#Rust-动画循环的固定步长与暂停冻结" class="headerlink" title="Rust 动画循环的固定步长与暂停冻结"></a>Rust 动画循环的固定步长与暂停冻结</h2><p>Rust 版的主循环在 <code>app.rs</code>，它比 Python 版更像一个“实时渲染循环”。每次循环先检查退出和按键，然后调用：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable">dt</span> = <span class="title function_ invoke__">get_frame_time</span>();</span><br></pre></td></tr></table></figure>
+<p><code>get_frame_time</code> 返回上一帧到当前帧之间的真实时间差，类似于 Python 的 <code>time.perf_counter</code> 差值。随后：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> !paused &#123;</span><br><span class="line">    game.<span class="title function_ invoke__">tick_frame</span>(dt);</span><br><span class="line">    clock += dt;</span><br><span class="line">    acc_ms += dt * <span class="number">1000.0</span>;</span><br><span class="line">    <span class="keyword">while</span> acc_ms &gt;= STEP_MS &amp;&amp; !game.<span class="title function_ invoke__">is_won</span>() &#123;</span><br><span class="line">        acc_ms -= STEP_MS;</span><br><span class="line">        <span class="keyword">let</span> <span class="variable">target_cell</span> = game.<span class="title function_ invoke__">peek_head_next</span>();</span><br><span class="line">        <span class="keyword">match</span> game.<span class="title function_ invoke__">step</span>() &#123;</span><br><span class="line">            StepOutcome::AteFood =&gt; &#123;</span><br><span class="line">                <span class="title function_ invoke__">burst</span>(&amp;<span class="keyword">mut</span> particles, &amp;<span class="keyword">mut</span> burst_rng, target_cell, COL_FOOD)</span><br><span class="line">            &#125;</span><br><span class="line">            ...</span><br><span class="line">        &#125;</span><br><span class="line">        game.<span class="title function_ invoke__">tick_trail</span>();</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这与 Python 的累加器本质相同，只是单位不同：<code>STEP_MS</code> 是毫秒，<code>acc_ms</code> 是毫秒累计。一个 90 毫秒的逻辑步大约横跨五至六帧，在未达到 90 毫秒前，循环不会调用 <code>game.step()</code>，蛇不会突然跳到下一个格子。当累计超过阈值时，循环可能连续执行多个 <code>step</code>，这正是“补步”机制，保证即使某一帧间隔偏长，逻辑仍然会追回缺失的移动。</p>
+<p>绘制时使用的进度是剩余时间比例：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable">alpha</span> = <span class="title function_ invoke__">ease_out_cubic</span>(acc_ms / STEP_MS);</span><br><span class="line"><span class="title function_ invoke__">draw_all</span>(&amp;game, &amp;particles, &amp;floats, &amp;lb, &amp;font, paused, clock, alpha);</span><br></pre></td></tr></table></figure>
+<p><code>acc_ms / STEP_MS</code> 的值在每次移动后落在 $[0,1)$ 内，表示“这一格已经走过了多少”。把它传给 <code>draw_all</code> 后，蛇身每一节都按</p>
+<script type="math/tex; mode=display">
+\text{pos}_i = \text{from}_i + (\text{to}_i - \text{from}_i) \cdot \alpha</script><p>计算，其中 <code>from</code> 和 <code>to</code> 来自 <code>game.anim_pose()</code>。这里的坐标插值是线性插值，缓动只发生在从线性时间到视觉进度的映射。这种分离让坐标系、时间和缓动三个概念各自独立，很容易验证。</p>
+<p>粒子与浮动文字也有暂停语义。Rust 中写的是：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line">pt.x += pt.vx * dt * <span class="type">f32</span>::<span class="title function_ invoke__">from</span>(!paused <span class="keyword">as</span> <span class="type">u8</span>);</span><br><span class="line">pt.y += pt.vy * dt * <span class="type">f32</span>::<span class="title function_ invoke__">from</span>(!paused <span class="keyword">as</span> <span class="type">u8</span>);</span><br><span class="line">pt.life -= dt * <span class="type">f32</span>::<span class="title function_ invoke__">from</span>(!paused <span class="keyword">as</span> <span class="type">u8</span>);</span><br></pre></td></tr></table></figure>
+<p><code>f32::from(!paused as u8)</code> 在暂停时是 0，在恢复时是 1。它把布尔值转换成浮点缩放因子，避免在粒子更新逻辑中写两套分支。<code>draw_all</code> 则在暂停或胜利时绘制遮罩层，让用户明确知道状态。</p>
+<p><code>next_frame().await</code> 位于循环尾部。macroquad 的异步循环在这里负责等待下一帧、处理窗口事件和交换缓冲区。它本身不是“固定 60 FPS 的睡眠器”，但配合 <code>get_frame_time</code> 和累加器，可以提供与显示器刷新率一致的渲染节奏。关键仍然在于：逻辑更新不会因为窗口事件而被阻塞，渲染帧也不会因为逻辑步太少而停住。</p>
+<h2 id="参数对齐与数值边界的迁移"><a href="#参数对齐与数值边界的迁移" class="headerlink" title="参数对齐与数值边界的迁移"></a>参数对齐与数值边界的迁移</h2><p>两套实现能够被认为是“同一套游戏”，前提是核心参数保持一致。Python 版把步长写成秒，Rust 版把步长写成毫秒；这件事看起来只是单位不同，却会在迁移时造成两类错误：一类是忘记换算，导致蛇的速度快了十倍或慢了十倍；另一类是忘记把随机概率从小数改成百分数，导致金色食物几乎不出现。</p>
+<p>可以先把两边的配置列成对照表：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>Python 常量</th>
+<th>Rust 常量</th>
+<th>数值与单位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>格子尺寸</td>
+<td><code>CELL = 50</code></td>
+<td><code>CELL_PX = 48.0</code></td>
+<td>像素；两版视觉大小略有差异</td>
+</tr>
+<tr>
+<td>逻辑步长</td>
+<td><code>MOVE_DELAY = 0.09</code></td>
+<td><code>STEP_MS = 90.0</code></td>
+<td>Python 秒，Rust 毫秒</td>
+</tr>
+<tr>
+<td>网格</td>
+<td><code>W = H = 10</code></td>
+<td><code>GRID_W = GRID_H = 10</code></td>
+<td>格数</td>
+</tr>
+<tr>
+<td>金色概率</td>
+<td><code>GOLDEN_CHANCE = 0.22</code></td>
+<td><code>GOLDEN_CHANCE_PCT = 22</code></td>
+<td>Python 小数，Rust 百分数</td>
+</tr>
+<tr>
+<td>金色寿命</td>
+<td><code>GOLDEN_LIFETIME = 8.0</code></td>
+<td><code>GOLDEN_LIFETIME_SECS = 8.0</code></td>
+<td>秒</td>
+</tr>
+<tr>
+<td>毒缩身</td>
+<td><code>POISON_SHRINK = 2</code></td>
+<td><code>POISON_SHRINK = 2</code></td>
+<td>格</td>
+</tr>
+<tr>
+<td>连击窗口</td>
+<td><code>COMBO_WINDOW = 2.0</code></td>
+<td><code>COMBO_WINDOW_SECS = 2.0</code></td>
+<td>秒</td>
+</tr>
+<tr>
+<td>浮字寿命</td>
+<td><code>FloatTexts.LIFE = 0.8</code></td>
+<td><code>FLOAT_LIFE_SECS = 0.8</code></td>
+<td>秒</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>这张表看起来只是“把常量抄一遍”，实际上它承担了契约作用。一旦有人在 Rust 中把 <code>STEP_MS</code> 改成了 <code>9.0</code>，再对照 Python 的 0.09 秒，就会立刻发现量级错误。反向迁移也是同样：Rust 的 <code>GOLDEN_CHANCE_PCT</code> 是 22，Python 必须写成 0.22，而不是 22。</p>
+<p>数值类型也会影响行为。Python 中整数很容易增长，Rust 则显式区分 <code>usize</code>、<code>u32</code>、<code>u64</code> 和 <code>i64</code>。<code>body_len</code>、格子索引和数组长度使用 <code>usize</code>，因为它们本质上是内存索引；食物数量使用 <code>u32</code>，因为正常游戏不会出现负数；总步数使用 <code>u64</code>，因为循环可能跑很多步；得分使用 <code>i64</code>，主要是给未来可能的扣分、负数补偿和调试留出空间。这种类型的区分不是仪式感，而是让“这个值允许是什么”写进代码。</p>
+<p><code>f32</code> 的精度也值得讨论。90 毫秒和 60 FPS 都不是需要极高精度的小数，<code>f32</code> 完全足够。真正的风险不是精度，而是“把毫秒转成秒”时的忘记换算。为了避免这类错误，Rust 版在 <code>app.rs</code> 中明确定义了 <code>acc_ms</code> 和 <code>STEP_MS</code> 的单位，而 Python 版用 <code>FRAME_DT</code> 和 <code>MOVE_DELAY</code> 保持秒单位。后续维护者只要看到变量名，就能判断当前是在哪个时间尺度上工作。</p>
+<h2 id="坐标投影：为什么-Rust-要把-y-轴翻转"><a href="#坐标投影：为什么-Rust-要把-y-轴翻转" class="headerlink" title="坐标投影：为什么 Rust 要把 y 轴翻转"></a>坐标投影：为什么 Rust 要把 y 轴翻转</h2><p>网格坐标是逻辑坐标，窗口坐标是像素坐标，两者不能混为一谈。Python 的 <code>turtle</code> 画布默认以窗口中心为原点，因此 <code>cell_to_screen</code> 把每个格子中心平移到画布中心：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">cell_to_screen</span>(<span class="params">c</span>):</span><br><span class="line">    <span class="keyword">return</span> (c[<span class="number">0</span>] * CELL - W * CELL / <span class="number">2</span> + CELL / <span class="number">2</span>,</span><br><span class="line">            c[<span class="number">1</span>] * CELL - H * CELL / <span class="number">2</span> + CELL / <span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+<p>若格子的坐标是 $(x,y)$，屏幕坐标就是</p>
+<script type="math/tex; mode=display">
+\text{screen}_x = x \cdot C - \frac{W C}{2} + \frac{C}{2}</script><script type="math/tex; mode=display">
+\text{screen}_y = y \cdot C - \frac{H C}{2} + \frac{C}{2}</script><p>其中 $C$ 是单格边长。两个表达式都加上了半个格子，是为了把格子左上角转换为格子中心。<code>turtle</code> 的 <code>(0,0)</code> 对应画布中心，所以原点偏移是负的一半宽高，而不是从左上角开始。</p>
+<p>Rust 的 <code>macroquad</code> 习惯上把原点放在窗口左上角，y 轴向下增长；而游戏逻辑中的网格 $y=0$ 被定义为底部。如果不做翻转，网格第 0 行会出现在窗口顶部，用户看到的是“棋盘上下颠倒”。<code>grid_to_screen</code> 因此先计算 <code>board_origin</code>，再翻转 y：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">board_origin</span>() <span class="punctuation">-&gt;</span> (<span class="type">f32</span>, <span class="type">f32</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">bw</span> = GRID_W <span class="keyword">as</span> <span class="type">f32</span> * CELL_PX;</span><br><span class="line">    ((<span class="title function_ invoke__">screen_width</span>() - bw) * <span class="number">0.5</span>, HUD_H)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">grid_to_screen</span>(g: (<span class="type">f32</span>, <span class="type">f32</span>)) <span class="punctuation">-&gt;</span> (<span class="type">f32</span>, <span class="type">f32</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> (ox, oy) = <span class="title function_ invoke__">board_origin</span>();</span><br><span class="line">    (</span><br><span class="line">        ox + (g.<span class="number">0</span> + <span class="number">0.5</span>) * CELL_PX,</span><br><span class="line">        oy + ((GRID_H <span class="keyword">as</span> <span class="type">f32</span> - <span class="number">1.0</span> - g.<span class="number">1</span>) + <span class="number">0.5</span>) * CELL_PX,</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>board_origin</code> 减去一个格子边长是为了让下一步再加半格时落在格子中心。<code>GRID_H - 1 - g.1</code> 则把底部坐标翻到窗口上方。比如逻辑坐标 $(0,0)$ 对应窗口底部第一格，逻辑坐标 $(0,9)$ 对应窗口顶部第一格。</p>
+<p>这个转换看似简单，却是视觉正确性的基础。如果只改 <code>cell_center_screen</code> 而没有同步调整 <code>draw_all</code> 的 HUD 和网格位置，蛇身会正确但顶部信息栏会覆盖棋盘；如果只改 <code>board_origin</code> 而没有调整网格线循环，边框和内部线会留下半个像素的错位。高 DPI 问题也发生在这一层：<code>screen_width()</code> 与 <code>screen_height()</code> 一旦返回错误逻辑尺寸，<code>board_origin</code> 就会把棋盘放到窗口之外。</p>
+<h2 id="状态不变量与每一类状态变化"><a href="#状态不变量与每一类状态变化" class="headerlink" title="状态不变量与每一类状态变化"></a>状态不变量与每一类状态变化</h2><p>代码可以通过测试，不代表状态在每一刻都正确；状态不变量的作用是给每个动作规定“什么必须为真”。Python 的 <code>body_is_valid</code> 直接把这组条件写成函数：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">body_is_valid</span>(<span class="params">body</span>):</span><br><span class="line">    cells = <span class="built_in">list</span>(body)</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> cells <span class="keyword">or</span> <span class="built_in">len</span>(<span class="built_in">set</span>(cells)) != <span class="built_in">len</span>(cells):</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">all</span>(</span><br><span class="line">        <span class="built_in">abs</span>(a[<span class="number">0</span>] - b[<span class="number">0</span>]) + <span class="built_in">abs</span>(a[<span class="number">1</span>] - b[<span class="number">1</span>]) == <span class="number">1</span></span><br><span class="line">        <span class="keyword">for</span> a, b <span class="keyword">in</span> <span class="built_in">zip</span>(cells, cells[<span class="number">1</span>:])</span><br><span class="line">    )</span><br></pre></td></tr></table></figure>
+<p>它检查三件事：身体非空、没有重复格子、相邻格曼哈顿距离为 1。重复检查用集合长度与列表长度是否相等完成；相邻检查用 <code>zip</code> 把相邻两格配对。如果在某个事件处理中忘记弹出尾部，蛇身长度会变得不合理；如果弹出了错误的格子，相邻距离会变成 2 或 0。这个函数并不能修复问题，但它能把问题尽早暴露。</p>
+<p>Rust 版把不变量分散到类型和状态更新中。<code>occupied</code> 是布尔数组，<code>body</code> 是 <code>VecDeque</code>，这两者必须始终保持一致。可以把四类状态变化写成一张表：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>身体变化</th>
+<th><code>occupied</code> 变化</th>
+<th>尾迹变化</th>
+<th>动画快照</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>普通移动</td>
+<td>头前插，尾后弹</td>
+<td>目标设为真，尾部设为假</td>
+<td>尾部格子加入尾迹</td>
+<td>更新为本步前快照</td>
+</tr>
+<tr>
+<td>吃普通食物</td>
+<td>头前插，不弹尾</td>
+<td>目标设为真</td>
+<td>清空并重新记录</td>
+<td>增长时补旧头</td>
+</tr>
+<tr>
+<td>吃金色食物</td>
+<td>头前插，不弹尾</td>
+<td>目标设为真</td>
+<td>清空并重新记录</td>
+<td>增长时补旧头</td>
+</tr>
+<tr>
+<td>吃毒食物</td>
+<td>头前插，尾多弹几格</td>
+<td>多个尾部设为假</td>
+<td>尾部格子加入尾迹</td>
+<td>截取公共长度</td>
+</tr>
+<tr>
+<td>胜利</td>
+<td>达到全图长度</td>
+<td>全部为真</td>
+<td>继续保留</td>
+<td>最终快照</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>这张表揭示了为什么 <code>step</code> 必须区分事件。普通移动和进食都插入头部，但普通移动还要弹尾，进食不弹尾；吃毒则要弹两次尾部。如果写成一个通用的“先插入、再按需弹尾”分支，就必须小心处理 <code>AtePoison</code> 与 <code>AteFood</code> 的优先级，否则一个格子可能同时被当作食物和毒处理。</p>
+<p>Rust 版的 <code>step</code> 使用枚举而不是一连串布尔判断，就是为了避免这种优先级歧义：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">outcome</span> = StepOutcome::Moved;</span><br><span class="line"><span class="keyword">if</span> <span class="title function_ invoke__">Some</span>(target) == <span class="keyword">self</span>.food &#123;</span><br><span class="line">    ...</span><br><span class="line">    outcome = StepOutcome::AteFood;</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> <span class="keyword">self</span>.golden == <span class="title function_ invoke__">Some</span>(target) &#123;</span><br><span class="line">    ...</span><br><span class="line">    outcome = StepOutcome::AteGolden;</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> <span class="keyword">self</span>.poison == <span class="title function_ invoke__">Some</span>(target) &#123;</span><br><span class="line">    ...</span><br><span class="line">    outcome = StepOutcome::AtePoison;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>由于 <code>else if</code> 的顺序固定，即使食物、金色和毒同时出现在同一个格子，也永远不会同时结算。虽然生成逻辑已经保证三者互斥，但状态机仍然要防御不可预料的输入；防御成本只是一次条件判断，收益是规则顺序可以被阅读。</p>
+<h2 id="时间语义：连击、金色食物与暂停冻结"><a href="#时间语义：连击、金色食物与暂停冻结" class="headerlink" title="时间语义：连击、金色食物与暂停冻结"></a>时间语义：连击、金色食物与暂停冻结</h2><p>时间在贪吃蛇里不是背景板，而是规则的一部分。连击窗口要求“上一次进食和本次进食相差不超过 2 秒”；金色食物要求“从生成到消失不超过 8 秒”。如果时间推进与渲染循环耦合，暂停时就会出现矛盾：用户按 P 后蛇停止，但秒表仍在走，金色食物在暂停期间悄悄消失，下一次进食又可能因为窗口过期而重置连击。</p>
+<p>Python 用 <code>sim_time</code> 记录可暂停的游戏时间，用 <code>last_eat_t</code> 记录上一次进食时刻：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> eating <span class="keyword">or</span> eating_golden <span class="keyword">or</span> eating_poison:</span><br><span class="line">    combo = combo + <span class="number">1</span> <span class="keyword">if</span> sim_time - last_eat_t &lt;= COMBO_WINDOW <span class="keyword">else</span> <span class="number">1</span></span><br><span class="line">    last_eat_t = sim_time</span><br></pre></td></tr></table></figure>
+<p>这里的关键是 <code>sim_time</code> 只在非暂停分支中增加。暂停时循环直接 <code>continue</code>，因此 <code>sim_time - last_eat_t</code> 保持不变；金色食物的判断同样基于 <code>sim_time</code>。Rust 版把这一逻辑放进了 <code>Game::tick_frame</code>：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">tick_frame</span>(&amp;<span class="keyword">mut</span> <span class="keyword">self</span>, dt: <span class="type">f32</span>) &#123;</span><br><span class="line">    <span class="keyword">self</span>.clock += dt;</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">self</span>.golden.<span class="title function_ invoke__">is_some</span>() &#123;</span><br><span class="line">        <span class="keyword">self</span>.golden_ttl -= dt;</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">self</span>.golden_ttl &lt;= <span class="number">0.0</span> &#123;</span><br><span class="line">            <span class="keyword">self</span>.golden = <span class="literal">None</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>clock</code> 是游戏内时钟，<code>golden_ttl</code> 是金色食物剩余寿命。<code>app.rs</code> 在 <code>paused</code> 为真时完全不调用 <code>tick_frame</code>，所以时钟与 TTL 都会冻结。恢复后，<code>dt</code> 是恢复那一刻之后的真实帧间隔，而不是暂停前累积的时间，这保证了暂停不会变成“快进”。</p>
+<p>连击倍率也需要统一。Python 的 <code>combo_multiplier</code> 使用 <code>min(combo, COMBO_MAX_MULT)</code>，Rust 的 <code>combo_mult</code> 使用 <code>self.combo.min(COMBO_MAX_MULT)</code>。两者都把倍率封顶在 5，而不是让连击无限增长。封顶的设计意味着 2 秒内连续吃五个食物后，额外进食仍然带来分数，但不会继续放大倍率；这既限制了分数膨胀，也给视觉效果留出可预测的边界。</p>
+<p>暂停时还需冻结粒子与浮字。Python 的粒子更新在 <code>update_particles(frame_dt)</code> 中，只有非暂停分支才会调用；Rust 则乘上 <code>!paused as u8</code> 的浮点因子。两种写法效果相同，但 Rust 的缩放因子更明确地表达了“暂停时全部时间增量为零”，也更方便以后扩展半速、慢动作等特效。</p>
+<h2 id="随机性、种子与可复现实验"><a href="#随机性、种子与可复现实验" class="headerlink" title="随机性、种子与可复现实验"></a>随机性、种子与可复现实验</h2><p>随机性在游戏里既增加趣味，也会让测试变得困难。如果每次运行都用系统时间作为种子，某次十万步跑完满盘，下一次却因为食物位置不同而失败，开发者很难知道失败来自策略、状态同步还是随机数。要解决这个问题，不能只是减少随机数，而要让随机源可注入。</p>
+<p>Python 的 <code>simulate</code> 使用 <code>random.Random(seed)</code>：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">rng = random.Random(seed)</span><br></pre></td></tr></table></figure>
+<p>传入同一个 <code>seed</code> 时，后续所有 <code>rng.choice</code>、<code>rng.random</code> 产生的序列完全相同。<code>--seed</code> 命令行参数让同一局可以在不同会话中复现。Rust 的 <code>Rng</code> 封装提供了 <code>Rng::seeded(seed)</code>：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">seeded</span>(seed: <span class="type">u64</span>) <span class="punctuation">-&gt;</span> <span class="keyword">Self</span> &#123;</span><br><span class="line">    <span class="title function_ invoke__">Self</span>(StdRng::<span class="title function_ invoke__">seed_from_u64</span>(seed))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>StdRng::seed_from_u64</code> 是确定性随机生成器的标准入口。生产代码不传种子，使用 <code>from_entropy</code>；测试代码传种子，保证每次断言面对同一个序列。<code>Rng::below</code> 与 <code>percent</code> 把“随机选一个空闲格”和“以某个概率触发”包装成两个语义清楚的接口：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">below</span>(&amp;<span class="keyword">mut</span> <span class="keyword">self</span>, n: <span class="type">usize</span>) <span class="punctuation">-&gt;</span> <span class="type">usize</span> &#123;</span><br><span class="line">    <span class="keyword">self</span>.<span class="number">0</span>.<span class="title function_ invoke__">gen_range</span>(<span class="number">0</span>..n.<span class="title function_ invoke__">max</span>(<span class="number">1</span>))</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">percent</span>(&amp;<span class="keyword">mut</span> <span class="keyword">self</span>, pct: <span class="type">u32</span>) <span class="punctuation">-&gt;</span> <span class="type">bool</span> &#123;</span><br><span class="line">    pct &gt; <span class="number">0</span> &amp;&amp; <span class="keyword">self</span>.<span class="number">0</span>.<span class="title function_ invoke__">gen_range</span>(<span class="number">0</span>..<span class="number">100</span>) &lt; pct</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>below(0)</code> 返回 0，而不是 panic，这是防御性处理；虽然正常调用时不会出现空空闲格，但公开 API 应当决定“无候选”时的行为。<code>percent</code> 先判断 <code>pct &gt; 0</code>，避免 0% 概率时仍进行多余随机采样。</p>
+<p>有了可注入随机源，测试就可以分为两类。一类是固定种子下的完整对局，验证策略在所有可能物品组合下最终填满；另一类是人为注入特定事件，例如 <code>debug_force_poison_ahead</code>，验证某一条规则分支。前一类测试关注统计正确性，后一类测试关注代码路径正确性；两者不能互相替代。</p>
+<h2 id="Rust-绘制层：从事件到视觉反馈"><a href="#Rust-绘制层：从事件到视觉反馈" class="headerlink" title="Rust 绘制层：从事件到视觉反馈"></a>Rust 绘制层：从事件到视觉反馈</h2><p><code>game.rs</code> 只负责返回事件，<code>app.rs</code> 负责把这些事件变成视觉反馈。<code>step()</code> 返回 <code>StepOutcome</code> 后，主循环匹配它：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">match</span> game.<span class="title function_ invoke__">step</span>() &#123;</span><br><span class="line">    StepOutcome::AteFood =&gt; &#123;</span><br><span class="line">        <span class="title function_ invoke__">burst</span>(&amp;<span class="keyword">mut</span> particles, &amp;<span class="keyword">mut</span> burst_rng, target_cell, COL_FOOD)</span><br><span class="line">    &#125;</span><br><span class="line">    StepOutcome::AteGolden =&gt; &#123;</span><br><span class="line">        <span class="title function_ invoke__">burst</span>(&amp;<span class="keyword">mut</span> particles, &amp;<span class="keyword">mut</span> burst_rng, target_cell, COL_GOLDEN)</span><br><span class="line">    &#125;</span><br><span class="line">    StepOutcome::AtePoison =&gt; &#123;</span><br><span class="line">        <span class="title function_ invoke__">burst</span>(&amp;<span class="keyword">mut</span> particles, &amp;<span class="keyword">mut</span> burst_rng, target_cell, COL_POISON)</span><br><span class="line">    &#125;</span><br><span class="line">    _ =&gt; &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>burst</code> 在格子中心生成 10 个方向随机、速度随机、寿命随机的粒子：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">burst</span>(out: &amp;<span class="keyword">mut</span> <span class="type">Vec</span>&lt;Particle&gt;, rng: &amp;<span class="keyword">mut</span> StdRng, cell: <span class="type">usize</span>, _color: Rgb) &#123;</span><br><span class="line">    <span class="keyword">let</span> (cx, cy) = <span class="title function_ invoke__">cell_center_screen</span>(cell);</span><br><span class="line">    <span class="keyword">for</span> <span class="variable">_</span> <span class="keyword">in</span> <span class="number">0</span>..<span class="number">10</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="variable">ang</span> = rng.<span class="title function_ invoke__">gen_range</span>(<span class="number">0.0</span>..<span class="number">2.0</span> * PI);</span><br><span class="line">        <span class="keyword">let</span> <span class="variable">sp</span> = rng.<span class="title function_ invoke__">gen_range</span>(<span class="number">40.0</span>..<span class="number">110.0</span>);</span><br><span class="line">        out.<span class="title function_ invoke__">push</span>(Particle &#123;</span><br><span class="line">            x: cx,</span><br><span class="line">            y: cy,</span><br><span class="line">            vx: sp * ang.<span class="title function_ invoke__">cos</span>(),</span><br><span class="line">            vy: sp * ang.<span class="title function_ invoke__">sin</span>(),</span><br><span class="line">            life: rng.<span class="title function_ invoke__">gen_range</span>(<span class="number">0.35</span>..PARTICLE_LIFE_SECS),</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>粒子的颜色参数目前没有参与绘制，绘制时用背景色到白色的渐变表示亮度衰减：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable">k</span> = (pt.life / PARTICLE_LIFE_SECS).<span class="title function_ invoke__">clamp</span>(<span class="number">0.0</span>, <span class="number">1.0</span>);</span><br><span class="line"><span class="title function_ invoke__">draw_circle</span>(pt.x, pt.y, <span class="number">2.6</span>, <span class="title function_ invoke__">rgb</span>(COL_BG.<span class="title function_ invoke__">lerp</span>(<span class="title function_ invoke__">Rgb</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>), k)));</span><br></pre></td></tr></table></figure>
+<p>这种设计把“事件发生”与“具体怎样画”分开：即使以后把粒子改成矩形、光点或拖尾，逻辑层也不需要改一行。<code>FloatTextSpec</code> 同理，它把格子编号、文本和基础颜色传到表现层，表现层决定字体大小、位置和淡出方式。<code>Font</code> 通过 <code>load_cjk_font</code> 尝试微软雅黑、黑体等系统字体，若找不到则回退英文标签，避免出现方块乱码。</p>
+<p>Rust 的绘制流程还体现了一个细节：颜色插值不是通过字符串解析，而是在 <code>Rgb</code> 结构体上实现 <code>lerp</code>：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">lerp</span>(<span class="keyword">self</span>, other: Rgb, t: <span class="type">f32</span>) <span class="punctuation">-&gt;</span> Rgb &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">mix</span> = |a: <span class="type">u8</span>, b: <span class="type">u8</span>| (a <span class="keyword">as</span> <span class="type">f32</span> + (b <span class="keyword">as</span> <span class="type">f32</span> - a <span class="keyword">as</span> <span class="type">f32</span>) * t.<span class="title function_ invoke__">clamp</span>(<span class="number">0.0</span>, <span class="number">1.0</span>)) <span class="keyword">as</span> <span class="type">u8</span>;</span><br><span class="line">    <span class="title function_ invoke__">Rgb</span>(</span><br><span class="line">        <span class="title function_ invoke__">mix</span>(<span class="keyword">self</span>.<span class="number">0</span>, other.<span class="number">0</span>),</span><br><span class="line">        <span class="title function_ invoke__">mix</span>(<span class="keyword">self</span>.<span class="number">1</span>, other.<span class="number">1</span>),</span><br><span class="line">        <span class="title function_ invoke__">mix</span>(<span class="keyword">self</span>.<span class="number">2</span>, other.<span class="number">2</span>),</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>它对每个通道分别插值，并把结果约束到 0 到 255。<code>t</code> 越界时自动 clamp，防止绘制状态因浮点误差出现非法颜色。这种小函数省去了在绘制循环里反复写三行 <code>mix</code> 的重复代码，也让“颜色随进度变化”成为可测试的单元。</p>
+<h2 id="反模式与工程教训"><a href="#反模式与工程教训" class="headerlink" title="反模式与工程教训"></a>反模式与工程教训</h2><p>回看整个调试过程，可以提炼出三个反模式。它们不是语法错误，而是设计错误，往往只在特定运行环境下暴露。</p>
+<p>第一个反模式是“陈旧快照”。动画需要知道上一格和下一格，但有些人只在吃到食物时更新 <code>anim_prev</code>，认为其他移动不需要。问题是普通移动同样需要旧身体位置；若上一次移动吞掉了尾部，下一次移动的旧身体就不是当前身体，插值起点会偏离。正确做法是“无论是否进食，每个逻辑步开始前都记录一次当前身体”。这个修复看起来只是多了一行赋值，但它决定了蛇是否会出现“从起点跳回来”的视觉 bug。</p>
+<p>第二个反模式是“双重缓动”。缓动函数把线性时间变成非线性视觉进度，适合做一次。如果 <code>animate</code> 内部先缓动一次，外层循环又把返回值缓动一次，则同一个步长被压缩两次，运动曲线变成四次方程级别，起步和收尾都变得异常慢。解决方法是明确“谁拥有缓动”：可以约定 <code>SnakeSprites.animate</code> 只负责坐标插值，由主循环传入已经缓动的 <code>alpha</code>；也可以约定它内部负责缓动，主循环只传原始进度。两套代码必须统一，不能各缓动一次。</p>
+<p>第三个反模式是“固定帧数睡眠”。用 <code>for f in range(ANIM + 1)</code> 与 <code>time.sleep(frame_dt)</code> 控制动画，表面简单，实际把逻辑步长锚定在“显示帧数”上。显示帧数不变，但每次 <code>screen.update()</code> 的实际耗时不同，动画时长就随机器状态漂移；如果掉帧严重，还会出现逻辑卡顿。换成固定步长累加器后，逻辑推进只取决于真实时间，渲染层则根据剩余时间取插值，动画节奏不再依赖系统是否精确执行了某个睡眠时长。</p>
+<p>可以把这三个反模式归纳成一个表：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>反模式</th>
+<th>表象</th>
+<th>根因</th>
+<th>正确方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>陈旧快照</td>
+<td>蛇偶尔从起点跳</td>
+<td>仅进食时更新起点</td>
+<td>每个逻辑步开始前更新</td>
+</tr>
+<tr>
+<td>双重缓动</td>
+<td>起步和收尾过慢</td>
+<td>两处重复缓动</td>
+<td>明确单一缓动责任</td>
+</tr>
+<tr>
+<td>固定帧睡眠</td>
+<td>不同机器速度不同</td>
+<td>帧数与真实时间绑定</td>
+<td>时间累加器加插值</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>这些教训的共性在于：它们都不是“性能不够”造成的，而是“状态、时间、责任没有分清楚”造成的。性能优化只能让一个错误模型跑得更快，不能让它变得正确。</p>
+<h2 id="如何验证动画的时间一致性"><a href="#如何验证动画的时间一致性" class="headerlink" title="如何验证动画的时间一致性"></a>如何验证动画的时间一致性</h2><p>固定步长模型可以通过手算来验证。设目标步长是 90 毫秒，显示器以 60 FPS 刷新，每帧间隔约 16.67 毫秒。第 1 帧累计 16.67 毫秒，第 2 帧累计 33.33 毫秒，直到第 6 帧累计约 100 毫秒，其中 90 毫秒被用于执行一个逻辑步，剩余约 10 毫秒作为下一格的动画进度。</p>
+<p>用表格表示：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>帧号</th>
+<th>每帧 dt</th>
+<th>累计 acc</th>
+<th>是否触发逻辑步</th>
+<th>插值 alpha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>16.67</td>
+<td>16.67</td>
+<td>否</td>
+<td>0.185</td>
+</tr>
+<tr>
+<td>2</td>
+<td>16.67</td>
+<td>33.33</td>
+<td>否</td>
+<td>0.370</td>
+</tr>
+<tr>
+<td>3</td>
+<td>16.67</td>
+<td>50.00</td>
+<td>否</td>
+<td>0.556</td>
+</tr>
+<tr>
+<td>4</td>
+<td>16.67</td>
+<td>66.67</td>
+<td>否</td>
+<td>0.741</td>
+</tr>
+<tr>
+<td>5</td>
+<td>16.67</td>
+<td>83.33</td>
+<td>否</td>
+<td>0.926</td>
+</tr>
+<tr>
+<td>6</td>
+<td>16.67</td>
+<td>100.00</td>
+<td>是，执行 1 步后余 10.00</td>
+<td>0.111</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>触发逻辑步后，<code>acc</code> 不是清零，而是减去 90 毫秒。剩余 10 毫秒表示新一格已经进行了 10 毫秒，因此下一帧从 0.111 而不是 0.0 开始。这保证了动画在逻辑事件之间连续，不会出现“步进后突然回到起点”的断层。</p>
+<p>上述手算使用的是理想 60 FPS。实际帧间隔会在 30、60、120 FPS 之间波动，<br><code>MAX_FRAME_DT</code> 的作用是防止过大间隙。Python 版把它设为 0.25 秒，Rust 版暂时没有显式限制；如果要从 Python 移植这个防护，可以把 <code>dt</code> clamp 到某个最大帧间隔。这个差异说明：即使两套代码在多数场景行为一致，也不代表所有边界情况都已完全相同。</p>
+<h2 id="迁移原则：不是翻译而是重构"><a href="#迁移原则：不是翻译而是重构" class="headerlink" title="迁移原则：不是翻译而是重构"></a>迁移原则：不是翻译而是重构</h2><p>从 Python 到 Rust 最容易犯的错误是把脚本逐行照抄。Python 的动态类型、列表、字典、Turtle 全局状态允许快速写出小型游戏，但这些便利也会掩盖“状态何时更新、数据属于谁、哪些操作失败”等问题。Rust 的价值在于把这些边界显式化。</p>
+<p>一个具体例子是食物生成。Python 中 <code>food = spawn_item(_occupied(body, golden, poison))</code> 看起来只是传一个列表；Rust 中 <code>self.food = self.spawn_item(&amp;[self.poison, self.golden])</code> 的签名明确要求排除项是 <code>&amp;[Option&lt;usize&gt;]</code>。这个类型会让你在调用时意识到：<code>self.food</code> 自己不能被排除，因为它是正在生成的对象；<code>self.poison</code> 和 <code>self.golden</code> 需要被排除，因为它们要互斥。</p>
+<p>另一个例子是窗口配置。<code>main.rs</code> 中的 <code>window_conf</code> 只负责创建窗口，<code>app.rs</code> 中的 <code>request_new_screen_size</code> 只负责修正逻辑画布。它们职责不同，不应该写成同一个全局初始化函数。测试一个窗口配置比测试一个纯逻辑难得多，因此把窗口层做薄、把逻辑层做厚，是提高可测试性的关键。</p>
+<p>迁移时还应当保留行为差异的说明。例如 Python 的 <code>random</code> 使用标准库 Mersenne Twister，Rust 的 <code>StdRng</code> 使用不同的生成器；它们的随机序列并不相同，只是分布性质相似。不能因为两者都用“种子”就认为同一局结果会完全一致。同理，Turtle 的 <code>time.sleep</code> 和 macroquad 的 <code>get_frame_time</code> 都不是精确计时器，而是通过累加器把误差吸收掉。</p>
+<p>更一般的原则是：先画状态图，再写分支；先定义事件，再写表现层；先用测试锁定规则，再调视觉参数。代码量并不是衡量工程质量的唯一尺度，真正重要的是“一个改动发生后，能不能快速判断它影响了哪些行为”。</p>
+<h2 id="从策略到体验的完整链路"><a href="#从策略到体验的完整链路" class="headerlink" title="从策略到体验的完整链路"></a>从策略到体验的完整链路</h2><p>把前面各部分连起来，可以看到 AI 贪吃蛇的完整设计链路。</p>
+<p>策略层先构造哈密顿回路，保证存在一条访问全部格子的路径；状态层维护蛇身、占用表和物品，保证每一步都能查询“目标是否合法”；时间层用固定步长累加器把逻辑更新与显示帧率解耦；动画层用 <code>anim_prev</code> 与 <code>anim_pose</code> 记录每次移动前后的身体位姿，并只做一次缓动；事件层用 <code>StepOutcome</code> 和 <code>FloatTextSpec</code> 把逻辑事件传给定制的视觉反馈；窗口层修正高 DPI 和坐标翻转，确保最终显示没有裁剪。</p>
+<p>这条链路像一个流水线：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">    A[回路构造] --&gt; B[状态机]</span><br><span class="line">    B --&gt; C[逻辑步事件]</span><br><span class="line">    C --&gt; D[插值位姿]</span><br><span class="line">    D --&gt; E[视觉绘制]</span><br><span class="line">    E --&gt; F[窗口坐标修正]</span><br><span class="line">    F --&gt; G[用户看到顺畅运动]</span><br></pre></td></tr></table></figure>
+<p>其中任何一环失败，最终体验都会被破坏。回路构造失败，蛇可能卡死；状态机失败，占用表可能与身体不一致；逻辑步事件失败，特效可能被错误触发；插值位姿失败，蛇身会跳格；窗口坐标失败，棋盘会被裁剪。把这样一条链路写进文章，不是为了展示“我们做了很多步”，而是为了说明：软件中的流畅从来不是单一函数能做到的，它是一组边界共同工作的结果。</p>
+<h2 id="文件阅读地图与最小验证命令"><a href="#文件阅读地图与最小验证命令" class="headerlink" title="文件阅读地图与最小验证命令"></a>文件阅读地图与最小验证命令</h2><p>阅读这套代码时，建议不要一开始就逐行读绘制函数，而是先按“数据流”走一遍。</p>
+<p>先读 <code>config.rs</code>，把网格尺寸、步长、分数、概率、颜色都记住；再看 <code>ai.rs</code>，理解回路数组是什么形状；接着读 <code>game.rs</code>，看 <code>Game::new</code>、<code>step</code>、<code>anim_pose</code> 和 <code>spawn_item</code>，这里包含全部规则；最后读 <code>app.rs</code>，看它如何调用 <code>game.tick_frame</code>、<code>game.step</code>、<code>game.anim_pose</code> 和 <code>draw_all</code>。<code>main.rs</code> 只有窗口配置和入口，<code>tests/game_integration.rs</code> 是黑盒验证。</p>
+<p>Python 版的结构更扁平，所有内容在一个文件里。这不是缺陷，而是语言和项目规模的适配：<code>turtle</code> 的全局画布本来就不适合拆成太细的模块，小型练习用一个文件更容易运行。但这也意味着阅读时需要按“配置、工具、AI、物品、画面、主循环、自测”的顺序跳读，而不是从头到尾当成线性脚本。</p>
+<p>最小验证命令也要记住。Python 版：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">python <span class="string">&quot;D:\Code\Python\01HelloPycharm\11AI贪吃蛇.py&quot;</span> <span class="literal">--selftest</span></span><br><span class="line">python <span class="string">&quot;D:\Code\Python\01HelloPycharm\11AI贪吃蛇.py&quot;</span> <span class="literal">--simulate</span> <span class="number">5</span> <span class="literal">--seed</span> <span class="number">2026</span></span><br><span class="line">python <span class="string">&quot;D:\Code\Python\01HelloPycharm\11AI贪吃蛇.py&quot;</span></span><br></pre></td></tr></table></figure>
+<p>前两个命令不打开窗口，用于验证逻辑；最后一个命令打开窗口，用于观察动画和按键。Rust 版：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">cargo test</span><br><span class="line">cargo clippy <span class="literal">--all-targets</span> <span class="literal">--</span> <span class="literal">-D</span> warnings</span><br><span class="line">cargo fmt <span class="literal">--check</span></span><br><span class="line">cargo run <span class="literal">--release</span></span><br></pre></td></tr></table></figure>
+<p>这里有一个容易踩坑的点：目录名是 <code>HelloRust</code>，但 Cargo 包名是 <code>snake-ai</code>。如果 IDE 的运行配置写成了 <code>--package HelloRust --bin HelloRust</code>，Cargo 会报“package ID specification HelloRust did not match any packages”。正确的运行方式是 <code>--package snake-ai --bin snake-ai</code>，或者直接在项目根目录执行 <code>cargo run --release</code>。这看起来只是一个配置问题，但它恰恰说明：识别一个项目的真实入口，要靠 <code>Cargo.toml</code> 而不是文件夹名。</p>
+<h2 id="步长选择不是越快越好"><a href="#步长选择不是越快越好" class="headerlink" title="步长选择不是越快越好"></a>步长选择不是越快越好</h2><p>90 毫秒一个逻辑步，大约等于每秒 11 格。这个速度对 10×10 棋盘并不算慢，但也不是越快越好。若把步长缩短到 15 毫秒，蛇会高速划过棋盘，用户很难看清每一格的位置变化，粒子、浮字和尾迹也会在极短时间内重叠；若把步长拉长到 300 毫秒，蛇又显得拖沓，整局填满 100 格需要三十秒以上。</p>
+<p>可以把几种候选速度放在一起比较：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>逻辑步长</th>
+<th>每秒格数</th>
+<th>主要感受</th>
+<th>适合场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15 ms</td>
+<td>约 67 格</td>
+<td>快速、难以辨认决策</td>
+<td>性能展示或快进</td>
+</tr>
+<tr>
+<td>60 ms</td>
+<td>约 17 格</td>
+<td>较快，仍可观察</td>
+<td>短视频演示</td>
+</tr>
+<tr>
+<td>90 ms</td>
+<td>约 11 格</td>
+<td>清楚、有节奏</td>
+<td>当前最终版</td>
+</tr>
+<tr>
+<td>150 ms</td>
+<td>约 7 格</td>
+<td>从容、适合讲解</td>
+<td>教学演示</td>
+</tr>
+<tr>
+<td>300 ms</td>
+<td>约 3 格</td>
+<td>偏慢，可能无聊</td>
+<td>观察细节</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>这里的 90 毫秒不是数学上的唯一最优值，而是“可读性”和“动感”之间的折中。更重要的是，这个参数只影响逻辑移动的间隔，不影响渲染帧率。即使把步长从 90 毫秒改成 120 毫秒，画面依然以 60 FPS 刷新，蛇只是在一个较长的区间内平滑移动。参数的可调性来自固定步长模型，而不是来自简单的 <code>sleep</code>。</p>
+<p>另外，动画的快慢还受到缓动函数影响。<code>ease_out_cubic</code> 让开头快、结尾慢，意味着蛇在一个格子内的大部分时间都在移动，接近终点时短暂减速。如果改成线性曲线，每一格都会匀速，视觉上会出现“一格一格跳跃”的感觉；如果改成更强的 <code>ease_in_out</code>，可能显得过于黏滞。当前选择是容易理解的权衡，但不是唯一选择。</p>
+<h2 id="用户视角：帧率、插值与视觉感知"><a href="#用户视角：帧率、插值与视觉感知" class="headerlink" title="用户视角：帧率、插值与视觉感知"></a>用户视角：帧率、插值与视觉感知</h2><p>用户看到的“流畅”不是帧率数字本身，而是视觉变化是否连续、是否有延迟、是否在关键事件时有清晰反馈。60 FPS 意味着相邻两帧之间的时间间隔约为 16.7 毫秒，人类通常能感知到这种连续运动。如果逻辑每 90 毫秒跳一格，但画面只在逻辑步时重绘，用户会看到每 90 毫秒一次瞬移，虽然帧率计数可能仍然很高。</p>
+<p>插值把“离散的逻辑位置”变成“连续的视觉位置”。第 $i$ 节蛇身在当前逻辑步中，旧位置与新位置之间的坐标可以由比例 $\alpha$ 决定。只要 $\alpha$ 在每个渲染帧中被重新计算，蛇就会在格子之间连续滑动，而不是等逻辑更新后才刷新。这里的 $\alpha$ 不是帧编号，而是真实时间相对于逻辑步长的比值。</p>
+<p>这里需要厘清一个容易误解的问题：渲染帧率高于逻辑步率，不代表“每帧都画了一格移动”。事实上，大部分帧里蛇并没有执行下一步，而是停留在当前步的中间位置。渲染线程的任务是“把当前逻辑状态连续显示出来”，而不是“每帧推进一个逻辑步”。把这两个职责混在一起，正是固定帧数动画经常出现“过多或过少显示”的原因。</p>
+<p>视觉感知还受到窗口缩放和文本渲染影响。即使动画坐标完全正确，如果字体无法加载、中文文本变成方块，或者 HUD 与棋盘重叠，用户仍然会觉得“不够优雅”。Rust 版的 <code>load_cjk_font</code> 尝试从 Windows 系统读取微软雅黑、雅黑粗体和黑体，一旦成功就使用中文标签；失败时回退为英文标签。这个回退策略牺牲了语言完整性，但保证了最基本的可读性。Python 版直接使用 <code>turtle</code> 的 <code>write</code> 方法，字体由 Tk 管理，失败时通常显示系统默认字体，因此风险略低，但也很难完全控制跨平台显示差异。</p>
+<h2 id="如何定位一次跳格或卡死"><a href="#如何定位一次跳格或卡死" class="headerlink" title="如何定位一次跳格或卡死"></a>如何定位一次跳格或卡死</h2><p>动画的问题往往不像语法错误那样直接给出堆栈，因此需要一套系统化的定位方法。</p>
+<p>第一步是稳定复现。如果跳格是偶发的，先改成固定种子；Python 使用 <code>--seed</code>，Rust 使用 <code>Rng::seeded</code>。把随机数固定后，同一局的食物位置和金色概率会重复出现，问题就不再是“运气不好”。</p>
+<p>第二步是区分逻辑错误与表现错误。可以在逻辑层打印或断言每一步后的身体、占用表、食物、毒、金、得分和动画快照。如果逻辑已经错误，后面所有动画都有问题；如果逻辑正确但视觉仍跳，问题才可能出在插值、坐标或窗口层。这一步经常通过无界面测试完成：Python 的 <code>--simulate</code> 和 Rust 的 <code>cargo test</code> 都只运行状态机，不打开窗口。</p>
+<p>第三步是检查 <code>anim_prev</code>。最典型的错误是“蛇从出生点跳回”或“某一节从奇怪的位置出现”。这时应该打印上一次移动前后的身体快照，确认普通移动和进食是否都更新了 <code>anim_prev</code>。另一个同类错误是“插值序列长度不匹配”，增长补头、收缩截尾时需要分别处理。</p>
+<p>第四步是检查缓动次数。如果动画起步和收尾都特别慢，可以在 <code>animate</code> 与主循环两处各打一个日志，确认是否调用了两次 <code>ease_out_cubic</code>。只要把其中一处去掉，运动曲线就会恢复正常。</p>
+<p>第五步是检查坐标。画一个明显标记的格子作为参照，比如固定把食物放在原点，观察它在屏幕上的位置。Python 应落在画布中心附近；Rust 应落在窗口左下方、HUD 下方。如果位置偏移或裁剪，优先检查 <code>board_origin</code>、高 DPI 缩放和网格翻转，而不是继续调算法。</p>
+<p>第六步是缩小输入规模。把棋盘改成 4×4 或 6×6，只放一个普通食物，禁用金色和毒，逐步打开特效。每一步都容易看清，问题范围也会快速缩小。等小棋盘稳定后，再恢复随机物品和完整特效。</p>
+<p>这套步骤看起来繁琐，但它比“不断改一个数字再重跑”更高效。诊断的顺序应该是：先证明逻辑正确，再证明时间正确，再证明坐标正确，最后才考虑性能优化。</p>
+<h2 id="从-10×10-到更大棋盘的代价"><a href="#从-10×10-到更大棋盘的代价" class="headerlink" title="从 10×10 到更大棋盘的代价"></a>从 10×10 到更大棋盘的代价</h2><p>当前设计对 10×10 棋盘非常合适，但规模扩大后需要重新评估。回路构造是 $O(N)$，其中 $N$ 是总格数；<code>occupied</code> 查询是 $O(1)$；<code>VecDeque</code> 的插入和弹出是 $O(1)$。这些复杂度都很理想。真正会随规模增长的是绘制和动画快照：<code>anim_pose</code> 每帧创建一个新的 <code>Vec&lt;SegmentPose&gt;</code>，长度随蛇身增长；<code>draw_all</code> 对每一节身体绘制一个圆；尾迹、粒子和浮字也都会增加。在 20×20 棋盘上，这些操作仍然轻松，但在 100×100 或更复杂场景中，就需要考虑批量绘制、实例化、剔除和缓存。</p>
+<p>更大的问题不是性能，而是策略本身。哈密顿回路对偶数矩形成立，对带障碍的迷宫不一定存在；即使存在，回路也可能很长，蛇为保持回路会绕很大的弯路。如果增加多蛇、动态墙壁或随机传送门，回路策略就会失效。此时可以改成双层规划：先用可达性分析判断是否存在安全路径，再用最短路径或竞速策略选择移动方向。这类方法更通用，但需要更多状态、更多测试和更完整的失败处理。</p>
+<p>另一个扩展方向是可视化决策。当前程序没有把回路画出来，用户只能看到蛇沿着某种固定规律移动。若把 <code>next</code> 数组画成淡蓝色虚线，用户会立刻理解“为什么蛇不直接冲向食物”；若把当前回路的下一格高亮，还能帮助发现 fallback 分支何时触发。这种可视化不需要改变游戏规则，却让“算法为什么这样走”变得可解释。</p>
+<p>如果未来把这套程序当作教学材料，还可以增加“决策说明面板”：每当蛇经过一个格子时，面板展示当前头部、回路下一格、食物距离、是否触发 fallback、当前动画进度和分数变化。这样读者不需要读完源码，也能观察到“策略在何时按预期工作、在何时进入防御分支”。这类信息对算法理解的价值，往往高于简单展示一个最终胜利画面。</p>
+<p>需要强调的是，这种可视化并不是把内部变量全部暴露给用户，而是选择几个能够解释行为的量。回路索引、动画进度和事件类型是模型本身的概念，展示它们不会泄露实现细节，反而能让观察者把“看到的移动”与“背后的状态”对应起来。</p>
+<h2 id="进一步改进方向"><a href="#进一步改进方向" class="headerlink" title="进一步改进方向"></a>进一步改进方向</h2><p>从工程角度看，还可以做几类改进。</p>
+<p>首先，增加可配置的 FPS 与步长。当前 60 FPS 和 90 毫秒是常量，若希望对比不同参数，应当提供命令行参数或配置文件。Python 的 <code>argparse</code> 已经支持 <code>--seed</code>、<code>--simulate</code>、<code>--selftest</code>，可以继续加 <code>--step-ms</code> 和 <code>--fps</code>；Rust 可以把 <code>config.rs</code> 的常量改为从环境变量读取，或引入 <code>clap</code> 解析。</p>
+<p>其次，增加一个轻量的性能计数器。除了显示得分和食物数，还可以显示当前帧间隔、逻辑步数、插值偏移和平均帧耗时。用户看到“动画是否稳定”就不再依赖主观感受，开发者也更容易定位是逻辑慢还是绘制慢。</p>
+<p>再次，把特效做成可开关模块。Python 的 <code>Trail</code>、粒子、浮字都直接与 Turtle 画布绑定，Rust 的粒子数组由 <code>StdRng</code> 驱动。若引入 <code>--no-effects</code> 或 <code>--no-trail</code>，可以分别测试逻辑帧率与视觉帧率；这对低配设备也友好。</p>
+<p>还有交互模式的扩展空间。当前是自动运行，用户只能按 P、R、Esc。如果增加“自动 + 暂停观看”“单步执行”“查看下一步决策”等模式，它就从一个演示程序变成教学工具。单步模式还能配合可视化回路，让读者亲眼看见蛇为什么绕远路。</p>
+<p>最后是自动化视觉回归。Rust 已经有 <code>SNAKE_SMOKE_FRAMES</code>，可以跑固定帧数后退出；未来可以进一步截图对比指定帧的图像，检查蛇身位置、HUD、字体和遮罩是否正常。视觉回归不能替代逻辑测试，但在动画项目中通常很重要。</p>
+<p>这些改进都不是“必须做的”，而是取决于项目目标。若目标是快速演示一个 AI 思路，当前版本已经足够；若目标是教学、长期维护或跨平台发布，边界、配置、可观测性和视觉回归就值得投入。</p>
+<h2 id="高-DPI：悄悄毁掉流畅感的窗口问题"><a href="#高-DPI：悄悄毁掉流畅感的窗口问题" class="headerlink" title="高 DPI：悄悄毁掉流畅感的窗口问题"></a>高 DPI：悄悄毁掉流畅感的窗口问题</h2><p>如果策略正确、插值也正确，窗口却因为高 DPI 缩放而裁剪，用户看到的仍然是“不流畅”。Rust 版曾经出现过棋盘被裁剪的问题，根因不在游戏逻辑，而在窗口配置。</p>
+<p><code>main.rs</code> 中先按像素尺寸创建窗口：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">window_conf</span>() <span class="punctuation">-&gt;</span> macroquad::prelude::Conf &#123;</span><br><span class="line">    macroquad::prelude::Conf &#123;</span><br><span class="line">        window_title: <span class="string">&quot;AI 贪吃蛇 · 自动必赢版 (snake-ai)&quot;</span>.<span class="title function_ invoke__">to_owned</span>(),</span><br><span class="line">        window_width: (GRID_W <span class="keyword">as</span> <span class="type">f32</span> * CELL_PX + <span class="number">2.0</span> * SIDE_PAD) <span class="keyword">as</span> <span class="type">i32</span>,</span><br><span class="line">        window_height: (HUD_H + GRID_H <span class="keyword">as</span> <span class="type">f32</span> * CELL_PX + HINT_H + <span class="number">14.0</span>) <span class="keyword">as</span> <span class="type">i32</span>,</span><br><span class="line">        high_dpi: <span class="literal">true</span>,</span><br><span class="line">        ..<span class="built_in">Default</span>::<span class="title function_ invoke__">default</span>()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>high_dpi: true</code> 表示窗口以物理像素为单位创建。在 100% 缩放的显示器上，物理像素和逻辑像素一致；在 125%、150% 或 200% 缩放的 Windows 环境中，系统会把物理尺寸换算成更大的逻辑工作区，而 macroquad 内部的绘制坐标仍然按逻辑像素处理。于是，<code>board_origin()</code> 根据 <code>screen_width()</code> 和 <code>screen_height()</code> 计算的棋盘范围，可能与实际可见区域不一致，右侧或底部被裁掉。</p>
+<p>修复方式是在渲染开始时显式请求一次逻辑窗口尺寸：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="title function_ invoke__">request_new_screen_size</span>(</span><br><span class="line">    GRID_W <span class="keyword">as</span> <span class="type">f32</span> * CELL_PX + <span class="number">2.0</span> * SIDE_PAD,</span><br><span class="line">    HUD_H + GRID_H <span class="keyword">as</span> <span class="type">f32</span> * CELL_PX + HINT_H + <span class="number">14.0</span>,</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>这行代码让 <code>screen_width()</code> 与 <code>screen_height()</code> 返回的值与程序期望的逻辑坐标一致，后续的网格、蛇身、HUD 和提示文字才能落在可见区域内。它没有改变算法，也没有提升帧率，但它修掉了一个“窗口看起来坏掉”的问题。</p>
+<p>这个案例说明，流畅度不是单一变量。一个完整可用的“顺滑”，需要同时满足：逻辑步长稳定、插值前后状态正确、渲染节拍不被硬编码帧数卡死、坐标系统与缩放一致、暂停期间所有时间量同步冻结。任何一个环节缺失，都会让用户觉得“哪里不对劲”。</p>
+<h2 id="为什么-Rust-的流畅度不只因为语言快"><a href="#为什么-Rust-的流畅度不只因为语言快" class="headerlink" title="为什么 Rust 的流畅度不只因为语言快"></a>为什么 Rust 的流畅度不只因为语言快</h2><p>现在回到一个容易被误读的问题：Rust 版看起来更流畅，是因为 Rust 比 Python 快吗？这个说法既对也不对，而且如果只说“对”，会掩盖真正的原因。</p>
+<p>Rust 版确实在底层能力上有优势。它的渲染循环由 <code>macroquad</code> 驱动，每一帧可以直接提交绘制命令，不依赖 Python 的 Tk 画布和 Turtle 对象系统；它可以在无渲染的状态下进行单元测试，避免把窗口事件混入逻辑验证；release 模式使用 LTO、单代码生成单元和符号剥离，减小启动与运行开销。这些性能因素都对最终体验有贡献。</p>
+<p>但是，如果把 Python 版改成同样的固定步长累加器、同样的单次缓动、同样的每步刷新 <code>anim_prev</code>、同样的 <code>screen.tracer</code>/<code>screen.update</code> 模式，Python 版同样可以做到相当平滑的视觉效果。事实上，当前 Python 版正是这样做的。它不一定能达到所有高 DPI、高刷新率环境下的最佳表现，但动画模型已经从“帧数绑定”变为“时间绑定”，这已经解决了最核心的“僵硬”问题。</p>
+<p>因此更准确的结论是：语言不是流畅度的充分条件，设计才是。Rust 的长处在于它让设计更容易被类型系统和测试锁定。<code>Game</code> 不依赖 <code>macroquad</code>，所以 <code>cargo test</code> 可以在没有窗口、没有显卡、没有显示器的环境中验证整个游戏；<code>StepOutcome</code> 把事件类型固定下来，表现层不能随意猜；<code>Option&lt;usize&gt;</code> 强迫处理物品不存在的情况。这些不是速度，而是可靠性。速度只是把这种正确设计实现得更为舒服。</p>
+<p>可以用下表简单对比三个阶段：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>逻辑节拍</th>
+<th>渲染节拍</th>
+<th>主要风险</th>
+<th>观察效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>早期 Python</td>
+<td>每步后固定 4 帧</td>
+<td>固定帧数 + sleep</td>
+<td>机器速度影响时长，快慢抖动</td>
+<td>僵硬、偶发跳格</td>
+</tr>
+<tr>
+<td>当前 Python</td>
+<td>90ms 累加器</td>
+<td>60 FPS 实时插值</td>
+<td>Turtle 绘制耗时不恒定</td>
+<td>平滑、规则可验证</td>
+</tr>
+<tr>
+<td>当前 Rust</td>
+<td>90ms 累加器</td>
+<td>macroquad 异步循环</td>
+<td>高 DPI、字体、包名配置</td>
+<td>平滑且更易测试</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>这个表格清楚地显示：从“早期 Python”到“当前 Python”的变化，主要收益来自时间模型，而不是语言；从“当前 Python”到“当前 Rust”的变化，主要收益来自模块化、类型安全和渲染库，而不是某个魔法加速。</p>
+<p>还有一点需要提出反驳：固定步长累加器并非没有代价。它允许一帧内追补多个逻辑步，因此如果机器长时间卡顿，用户恢复后可能看到蛇在一瞬间走过好几格。<code>MAX_FRAME_DT</code> 能限制这种补步，但不能完全消除视觉上的瞬时快进；更彻底的方案是把补步上限作为可调参数，或者在有大量补步时跳过中间的动画帧。当前实现的 0.25 秒上限属于合理折中，而不是完美方案。</p>
+<h2 id="验证与测试设计"><a href="#验证与测试设计" class="headerlink" title="验证与测试设计"></a>验证与测试设计</h2><p>两套程序都把“能不能赢”从口头承诺变成了可重复命令。Python 版支持 <code>--selftest</code> 和 <code>--simulate N</code>：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">python <span class="string">&quot;D:\Code\Python\01HelloPycharm\11AI贪吃蛇.py&quot;</span> <span class="literal">--selftest</span> <span class="literal">--simulate</span> <span class="number">5</span> <span class="literal">--seed</span> <span class="number">2026</span></span><br></pre></td></tr></table></figure>
+<p>本次运行输出显示：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">selftest: 毒食物场景通过</span><br><span class="line">selftest: 连击倍率通过</span><br><span class="line">selftest: 刷怪互斥通过</span><br><span class="line">selftest: 插值位姿通过</span><br><span class="line">第 1 次: 长度 100/100  步数 2163</span><br><span class="line">第 2 次: 长度 100/100  步数 1987</span><br><span class="line">第 3 次: 长度 100/100  步数 2231</span><br><span class="line">第 4 次: 长度 100/100  步数 2459</span><br><span class="line">第 5 次: 长度 100/100  步数 2208</span><br><span class="line">吃满全图成功率: 5/5</span><br></pre></td></tr></table></figure>
+<p>这里的自测不是只在最终版上成立。<code>selftest</code> 检查回路覆盖全部格子、回路无自环、单格吃毒不会清空身体、连击倍率封顶、刷怪不重叠、插值位姿增长和收缩正确；<code>simulate</code> 则用无窗口方式运行完整逻辑，包括食物、金色食物和毒食物的刷新。它的价值在于把“图形程序不能自动测试”的常见借口打破：只要把逻辑和渲染分离，核心行为就能被反复验证。</p>
+<p>Rust 版同样提供三层验证：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">cargo test</span><br><span class="line">cargo clippy <span class="literal">--all-targets</span> <span class="literal">--</span> <span class="literal">-D</span> warnings</span><br><span class="line">cargo fmt <span class="literal">--check</span></span><br></pre></td></tr></table></figure>
+<p>本次运行结果：9 个单元测试全部通过，3 个集成测试全部通过，clippy 零警告，<code>cargo fmt --check</code> 通过。单元测试覆盖回路、缓动边界、随机源可复现、逐步移动后的动画位姿、进食后的插值、毒缩身后的插值；集成测试覆盖完整对局必胜、强制毒场景、暂停时钟冻结。</p>
+<p>值得强调的是测试的边界。测试证明的是“当输入满足预设条件时，状态机按预期推进”，它不能证明“用户看到的每一帧都完美”。渲染层的高 DPI、字体加载、窗口事件、粒子视觉、帧率稳定性仍需要真机检查。Rust 版额外提供了 <code>SNAKE_SMOKE_FRAMES</code> 环境变量，让窗口运行指定帧数后自动退出，这为 CI 中的冒烟测试留下了入口，但冒烟测试不等于视觉回归。</p>
+<h2 id="限制、假设与可改进之处"><a href="#限制、假设与可改进之处" class="headerlink" title="限制、假设与可改进之处"></a>限制、假设与可改进之处</h2><p>本文不能只讲优点。一个严谨的技术文章必须指出边界。</p>
+<p>第一，哈密顿回路策略适合“无墙、矩形、偶数边、单蛇、自动必胜”的专用场景，不适合一般化的贪吃蛇。它并不计算到达食物的最短路径；蛇可能为了保持回路而绕很远的路。如果加入墙壁、传送门、障碍、对手蛇或动态毒区，回路不再成立，需要重做路径规划。</p>
+<p>第二，当前颜色插值、尾迹、粒子和浮字都以“视觉反馈”为目标，并不是游戏机制的必需部分。它们会占用绘制时间，尤其是 Python 的 Turtle 海龟数量会随蛇长增加。虽然 10×10 棋盘很小，但若扩展到 20×20 或 50×50，<code>anim_pose</code> 每帧复制 <code>Vec</code>、绘制大量圆形的开销会放大。</p>
+<p>第三，Python 的 <code>screen.update()</code> 发生在每一帧，而 <code>time.sleep</code> 只能保证“至少等待一段时间”，不能保证“正好在 60 FPS 刷新”。在 Windows 上，Tk 的更新调度、系统节流和窗口焦点都会影响实际帧率。因此本文说的 60 FPS 是“目标节拍”，不是对每个硬件环境给出的性能保证。</p>
+<p>第四，“自动必胜”的说法在规范前提下成立，但“必胜”依赖随机刷怪不会产生不可解局面、棋盘无变化、蛇初始位置正确。当前 <code>choose_move</code> 的 fallback 是防御性代码，不是主路径；如果棋盘尺寸或回路构造被破坏，fallback 可能成为新的隐藏分支，测试必须覆盖它。</p>
+<p>第五，模块化也可能带来过度设计。如果以后只做一个小练习，把 config、rng、ai、game、app、main 拆成六个文件可能显得繁琐。但对一个希望长期演进、扩展特效和测试的工程，边界成本可以被长期收益覆盖。这里的选择应当根据项目的真实目标决定，而不是因为“听起来专业”就照搬。</p>
+<h2 id="字数、深度与系列化"><a href="#字数、深度与系列化" class="headerlink" title="字数、深度与系列化"></a>字数、深度与系列化</h2><p>用户最初提出的是“全文十万字”。这个目标需要直接审视，而不是无条件执行。十万字中文体量大约是十到二十本小型技术手册的核心内容；如果全部塞进一篇博客，阅读者很难找到关键结论，检索系统也会把大量重复内容混在一起。从发布平台和读者体验看，单篇十万字的性价比并不高。</p>
+<p>更重要的是，十万字不会自动等于高信息密度。把同一个道理换五种说法、重复断言十次，字数达到十万，但知识增量没有达到。优秀的算法文章应该在“结论、机制、反例、代码、验证、边界”这六层上做足，而不是在某一层反复膨胀。</p>
+<p>因此，本文的发布版采用可验证的深度：约两万字，覆盖从问题定义、策略证明、Python 演进、Rust 架构、固定步长插值、高 DPI 到测试与边界的完整链条。如果后续希望做十万字系列，可以拆成至少五篇：哈密顿回路与路径证明、贪吃蛇状态机的形式化、Python Turtle 动画优化、Rust macroquad 渲染架构、游戏循环与时间模型专题。每一篇都保留独立的代码和测试，信息密度会比压缩在一篇中更高。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>AI 贪吃蛇从“自动吃食物”到“稳定且流畅地自动填满棋盘”，需要经过至少四层转变。第一层是策略转变：从局部最近贪心转向哈密顿回路，把“每一次都要做决策”变成“只需要沿着一个预先构造的顺序前进”。第二层是状态转变：把蛇身、占用表、物品、得分、连击、时间、动画快照全部放进一个可测试的状态机。第三层是时间模型转变：把 90 毫秒的逻辑步与 60 FPS 的渲染帧分离，用真实时间累加器推进逻辑，用剩余比例插值画面。第四层是工程边界转变：用模块化、类型、测试和真机检查保障这些设计在修改后仍然成立。</p>
+<p>最终答案不是“Rust 比 Python 快所以更流畅”，而是“同一个平滑模型被正确实现、被测试保护、被窗口配置正确显示”。Python 版通过累加器、单次缓动、逐节快照和合理生命周期达到稳定动画；Rust 版通过纯逻辑与表现层分离、<code>StepOutcome</code> 事件、<code>anim_pose</code> 插值、固定步长循环、可注入随机源和 <code>request_new_screen_size</code> 把同一模型做得更可维护、更可验证。</p>
+<p>如果再看远一点，这个案例还能带来一个更一般的启示：复杂系统的“聪明”常常不是一开始就做很复杂的搜索，而是先找到足够强的结构，把复杂决策降维成简单顺序；随后再为时间、空间和交互建立边界，让设计可以被证明、被测试、被维护。贪吃蛇只是棋盘上的一个小例子，但它把这个过程压缩得足够清晰，值得认真拆开来看。</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a href="https://docs.python.org/3/library/turtle.html">Python turtle 官方文档</a></li>
+<li><a href="https://docs.python.org/3/library/time.html">Python time 官方文档</a></li>
+<li><a href="https://doc.rust-lang.org/book/">Rust 程序设计语言</a></li>
+<li><a href="https://docs.rs/macroquad/latest/macroquad/">macroquad 官方文档</a></li>
+<li><a href="https://docs.rs/rand/latest/rand/">rand crate 文档</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hamiltonian_path">Hamiltonian path - Wikipedia</a></li>
+<li><a href="https://gameprogrammingpatterns.com/game-loop.html">Game programming patterns - Game Loop</a></li>
+<li><a href="https://doc.rust-lang.org/cargo/reference/profiles.html">Cargo book - Profiles</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>技能学习记录</category>
+        <category>学术研究</category>
+      </categories>
+      <tags>
+        <tag>算法设计</tag>
+        <tag>游戏开发</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>分类</title>
     <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
