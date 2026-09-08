@@ -233,6 +233,23 @@
   font-size: 22px;
 }
 
+/* 分类页两列布局：桌面端两竖列，小屏自动回退单列 */
+#page .category-lists > ul.category-list {
+  columns: 2;
+  column-gap: 36px;
+}
+
+#page .category-lists .category-list li,
+#page .category-lists .category-list ul {
+  break-inside: avoid;
+}
+
+@media (max-width: 768px) {
+  #page .category-lists > ul.category-list {
+    columns: 1;
+  }
+}
+
 /* h1-h6颜色优化 */
 #content-inner.layout h1::before {
   color: #5ec1e0;
