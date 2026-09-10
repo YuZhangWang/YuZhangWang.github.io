@@ -224,6 +224,48 @@
   color: #333;
 }
 
+/* ------------------------------------------------------------------
+   触屏设备下的导航栏与手机侧边菜单
+
+   1) 长按会锁死 :hover（sticky hover），而主题给侧边菜单项的 hover 加了
+     背景色 + translateX(3px) + 阴影，长按后会出现一块错位的蓝色区域；
+   2) 长按还会触发系统文字选择，而本站 ::selection 正是主题蓝，于是那一栏
+      左侧又叠出一块蓝色高亮。
+
+   处理方式：触屏下不再让 hover 生效（按压反馈改用 :active），同时关闭点击
+   高亮与长按选择/呼出菜单。
+   ------------------------------------------------------------------ */
+@media (hover: none), (max-width: 768px) {
+  #nav a,
+  #nav span.site-page,
+  #sidebar-menus a,
+  #sidebar-menus span.site-page {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /* 顶栏：长按后不残留蓝色下划线 */
+  #nav .site-page:not(.child):hover:after,
+  #nav .site-page:not(.child):active:after {
+    width: 0;
+  }
+
+  /* 手机侧边菜单：取消 hover 位移、阴影与底色 */
+  #sidebar-menus .menus_items .site-page:hover {
+    background: transparent;
+    box-shadow: none;
+    color: var(--font-color);
+    transform: none;
+  }
+
+  /* 按压时只给一层即时反馈，松手即恢复，不会残留 */
+  #sidebar-menus .menus_items .site-page:active {
+    background: var(--text-bg-hover);
+  }
+}
+
 .fa-heart {
   color: red;
 }
