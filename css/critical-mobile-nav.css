@@ -1,0 +1,9 @@
+/* 手机端导航栏关键样式。
+ *
+ * 背景：Butterfly 主题把"≤768px 收起菜单项、只留汉堡按钮"交给 JS 在
+ * DOMContentLoaded 时给 #nav 加 .hide-menu 完成。脚本到达之前导航栏是展开态，
+ * 若此时已经可见（本站 custom.css 里 #nav 强制 opacity:1），首屏就会出现
+ * "所有栏目挤压在最上方"。
+ *
+ * 这里把与 .hide-menu 等价的规则前置到 head 里引用的样式表中，首帧即为移动端布局。
+ * 用独立文件而不是内联 <style>：Hexo 会把 inject 内容当模板渲染，CSS 里的 "
