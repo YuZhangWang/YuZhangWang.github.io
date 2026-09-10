@@ -1,9 +1,30 @@
 /* 手机端导航栏关键样式。
  *
- * 背景：Butterfly 主题把"≤768px 收起菜单项、只留汉堡按钮"交给 JS 在
- * DOMContentLoaded 时给 #nav 加 .hide-menu 完成。脚本到达之前导航栏是展开态，
- * 若此时已经可见（本站 custom.css 里 #nav 强制 opacity:1），首屏就会出现
+ * 背景：Butterfly 主题把"小于等于 768px 时收起菜单项、只留汉堡按钮"交给 JS 在
+ * DOMContentLoaded 时给 nav 元素加 hide-menu 类完成。脚本到达之前导航栏是展开态，
+ * 若此时已经可见（本站 custom.css 强制 nav 的 opacity 为 1），首屏就会出现
  * "所有栏目挤压在最上方"。
  *
- * 这里把与 .hide-menu 等价的规则前置到 head 里引用的样式表中，首帧即为移动端布局。
- * 用独立文件而不是内联 <style>：Hexo 会把 inject 内容当模板渲染，CSS 里的 "
+ * 这里把与 hide-menu 等价的规则前置到 head 引用的样式表里，首帧即为移动端布局。
+ *
+ * 重要：本文件会被 Hexo 的模板流程处理，注释与正文中一律不要出现模板语法用的特殊
+ * 起始符号（大括号紧跟井号、大括号紧跟百分号、以及连续两个大括号），否则从该处起
+ * 的内容会被当作模板注释吞掉，样式截断后页面会直接变黑。2026-09-11 连续踩过两次。
+ */
+@media (max-width: 768px) {
+  #nav .menus_items {
+    display: none !important;
+  }
+
+  #nav #toggle-menu {
+    display: inline-block !important;
+  }
+
+  #nav #toggle-menu .site-page {
+    font-size: inherit;
+  }
+
+  #nav #search-button span:not(.site-page) {
+    display: none !important;
+  }
+}
