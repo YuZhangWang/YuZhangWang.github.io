@@ -15,8 +15,40 @@
     <atom:link href="https://yuzhang.wang/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>PLUSULTRA!</description>
-    <pubDate>Tue, 08 Sep 2026 16:35:01 GMT</pubDate>
+    <pubDate>Thu, 10 Sep 2026 10:47:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>DeepSeek-V4.1-Flash 与 GLM-5.3-Flash 的代码级对照</title>
+      <link>https://yuzhang.wang/165-ds41-vs-glm53f/</link>
+      <guid>https://yuzhang.wang/165-ds41-vs-glm53f/</guid>
+      <pubDate>Thu, 10 Sep 2026 11:05:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文写作于 2026 年 9 月 10 日傍晚。DeepSeek-V4.1-Flash 的权重在同日凌晨（UTC 02:17）才被推到 Hugging Face，GLM-5.3-Flash 发布于 2026 年 8 月 25</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/">开源模型</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90/">代码分析</category>
+      
+      
+      <comments>https://yuzhang.wang/165-ds41-vs-glm53f/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>如果两个月赚到五十万，我接下来会怎么活</title>
@@ -602,35 +634,6 @@
       
       
       <comments>https://yuzhang.wang/146-long-context-processing/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>纳斯达克100指数：宏观架构、历史绩效与个人投资策略的系统研究</title>
-      <link>https://yuzhang.wang/145-Nasdaq100/</link>
-      <guid>https://yuzhang.wang/145-Nasdaq100/</guid>
-      <pubDate>Mon, 13 Oct 2025 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h4 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E7%BA%B3%E6%96%AF%E8%BE%BE%E5%85%8B/">纳斯达克</category>
-      
-      
-      <comments>https://yuzhang.wang/145-Nasdaq100/#disqus_thread</comments>
       
     </item>
     

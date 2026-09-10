@@ -1,0 +1,1087 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>DeepSeek-V4.1-Flash 与 GLM-5.3-Flash 的代码级对照 | YuZhangWang的领域</title><meta name="author" content="YuZhangWang"><meta name="copyright" content="YuZhangWang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本文写作于 2026 年 9 月 10 日傍晚。DeepSeek-V4.1-Flash 的权重在同日凌晨（UTC 02:17）才被推到 Hugging Face，GLM-5.3-Flash 发布于 2026 年 8 月 25 日。文中的性能数字，凡未标注“本地实测”的，全部来自厂商模型卡、官方文档或官方博客，属于自报数据；截至写作时我没有找到可复现的独立第三方评测。本文的比较单位是代码、协议与工">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DeepSeek-V4.1-Flash 与 GLM-5.3-Flash 的代码级对照">
+<meta property="og:url" content="https://yuzhang.wang/165-ds41-vs-glm53f/index.html">
+<meta property="og:site_name" content="YuZhangWang的领域">
+<meta property="og:description" content="本文写作于 2026 年 9 月 10 日傍晚。DeepSeek-V4.1-Flash 的权重在同日凌晨（UTC 02:17）才被推到 Hugging Face，GLM-5.3-Flash 发布于 2026 年 8 月 25 日。文中的性能数字，凡未标注“本地实测”的，全部来自厂商模型卡、官方文档或官方博客，属于自报数据；截至写作时我没有找到可复现的独立第三方评测。本文的比较单位是代码、协议与工">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202609101844-ds41-vs-glm53f.png">
+<meta property="article:published_time" content="2026-09-10T11:05:00.000Z">
+<meta property="article:modified_time" content="2026-09-10T10:47:55.887Z">
+<meta property="article:author" content="YuZhangWang">
+<meta property="article:tag" content="开源模型">
+<meta property="article:tag" content="代码分析">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202609101844-ds41-vs-glm53f.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "DeepSeek-V4.1-Flash 与 GLM-5.3-Flash 的代码级对照",
+  "url": "https://yuzhang.wang/165-ds41-vs-glm53f/",
+  "image": "https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202609101844-ds41-vs-glm53f.png",
+  "datePublished": "2026-09-10T11:05:00.000Z",
+  "dateModified": "2026-09-10T10:47:55.887Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "YuZhangWang",
+      "url": "https://yuzhang.wang"
+    }
+  ]
+}</script><link rel="shortcut icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png"><link rel="canonical" href="https://yuzhang.wang/165-ds41-vs-glm53f/index.html"><link rel="preconnect" href="https://gcore.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2ed9ec904657094072d5645542b35a76";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":400,"highlightFullpage":true,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":500,"languages":{"author":"作者: YuZhangWang","link":"链接: ","source":"来源: YuZhangWang的领域","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://gcore.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'DeepSeek-V4.1-Flash 与 GLM-5.3-Flash 的代码级对照',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/custom.css?v=20260908"><link rel="stylesheet" href="/css/font.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="/css/swiper-bundle.min.css"><link rel="stylesheet" href="/css/history-calendar.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/rss2.xml" title="YuZhangWang的领域" type="application/rss+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">165</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">317</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cinemas/"><i class="fa-fw fa fa-film"></i><span> 影视</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></div><div class="menus_item"><a class="site-page" href="/natter/"><i class="fa-fw fa-sharp fa-solid fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/albums/"><i class="fa-fw fa fa-camera"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/project/"><i class="fa-fw fa fa-coins"></i><span> 项目</span></a></div><div class="menus_item"><a class="site-page" href="/cv/"><i class="fa-fw fa-solid fa-file"></i><span> 简历</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-thumbs-up"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" alt="Logo" loading='lazy'><span class="site-name">YuZhangWang的领域</span></a><a class="nav-page-title" href="/"><span class="site-name">DeepSeek-V4.1-Flash 与 GLM-5.3-Flash 的代码级对照</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cinemas/"><i class="fa-fw fa fa-film"></i><span> 影视</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></div><div class="menus_item"><a class="site-page" href="/natter/"><i class="fa-fw fa-sharp fa-solid fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/albums/"><i class="fa-fw fa fa-camera"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/project/"><i class="fa-fw fa fa-coins"></i><span> 项目</span></a></div><div class="menus_item"><a class="site-page" href="/cv/"><i class="fa-fw fa-solid fa-file"></i><span> 简历</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-thumbs-up"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">DeepSeek-V4.1-Flash 与 GLM-5.3-Flash 的代码级对照</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon fas fa-history"></i><span class="post-meta-label">更新于</span><time datetime="2026-09-10T10:47:55.887Z" title="更新于 2026-09-10 18:47:55">2026-09-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">2.1w</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>67分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:365,&quot;messagePrev&quot;:&quot;距离上次更新已经过去&quot;,&quot;messageNext&quot;:&quot;天,文章内容可能与实际操作有一定出入&quot;,&quot;postUpdate&quot;:&quot;2026-09-10 18:47:55&quot;}" hidden></div><blockquote>
+<p>本文写作于 2026 年 9 月 10 日傍晚。DeepSeek-V4.1-Flash 的权重在同日凌晨（UTC 02:17）才被推到 Hugging Face，GLM-5.3-Flash 发布于 2026 年 8 月 25 日。文中的性能数字，凡未标注“本地实测”的，全部来自厂商模型卡、官方文档或官方博客，属于自报数据；截至写作时我没有找到可复现的独立第三方评测。本文的比较单位是代码、协议与工程约束，不是“谁更聪明”。另外，本文不讨论任何闭源模型的实际体验，也不对权重未来可能变更的许可证条款作法律判断。</p>
+</blockquote>
+<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>把 DeepSeek-V4.1-Flash 和 GLM-5.3-Flash 放在一起谈，最自然的写法是列一张基准分数表，然后宣布某一方胜出。这种做法在工程上几乎没有信息量，原因有三个。第一，两者的发布时间相差两周半，其中一方还在“当天发布”的窗口里，任何榜单都来不及独立复现。第二，两者虽然都叫 Flash，但 Flash 在两个厂牌里的含义完全不同：一个是全新架构路线的最小尺寸首发版本，另一个是同代体系里主打性价比的轻量成员，它们的竞争对手其实是对方家族中的其他成员。第三，也是最关键的一点，决定你今天能不能把模型跑起来的，不是模型卡上那零点几分的差距，而是提示协议的编码方式、推理代码的交付形态、权重的真实体积、缓存的经济性，以及你在评测表格里看不到的脚手架差异。</p>
+<p>因此本文换一个问题：如果只允许阅读仓库里的代码、配置文件和官方文档，我们能从这两个模型身上读出什么？我实际做了三件事：把 DeepSeek 随权重一起发布的提示编码参考实现跑起来并复现它的全部五个黄金测试用例；用本地 Jinja 环境渲染 GLM 的对话模板并与 DeepSeek 的编码产物逐字段对照；读取两个仓库的权重索引元数据，得到真实的权重体积。下面是结果，以及我认为它们对选型的含义。</p>
+<p>核心结论可以提前给出。DeepSeek-V4.1-Flash 代表一种“把工程细节摊开”的交付风格：它给出可读的模型实现、可跑的编码器、带断言的测试用例、明确的缓存字节数，代价是你要自己完成权重转换与推理服务化。GLM-5.3-Flash 代表一种“把生态接好”的交付风格：它不附推理代码，但把 SGLang、vLLM、TokenSpeed、KTransformers、Unsloth 的路径全部铺好，代价是协议语义被封装在一份相当复杂的 Jinja 模板里，任何自研推理栈都必须重新实现这套语义。这不构成优劣判断，但它们决定了两件事的难度分布完全相反。</p>
+<p>文章的展开顺序是：先说明这两个模型为什么不该被放进同一张排行榜，再逐项拆解配置与架构，然后进入提示协议、推理部署、评测可比性与成本模型，最后给出选型建议、工程清单与自我反驳。每一个关键数字都会标注它是厂商声明、我本地复现的结果，还是我基于公开数据做的推演。</p>
+<h2 id="为什么这两个模型不适合放在同一张排行榜上"><a href="#为什么这两个模型不适合放在同一张排行榜上" class="headerlink" title="为什么这两个模型不适合放在同一张排行榜上"></a>为什么这两个模型不适合放在同一张排行榜上</h2><h3 id="版本谱系与被比较对象的错位"><a href="#版本谱系与被比较对象的错位" class="headerlink" title="版本谱系与被比较对象的错位"></a>版本谱系与被比较对象的错位</h3><p>DeepSeek-V4.1-Flash 是 DeepSeek-V4.1 系列里目前唯一开放权重的一档，官方在定价页里明确写着 V4 Pro 会在 2026 年 9 月 14 日中午之后逐步下线、请求转由 V4.1-Flash 承接，直到未来的 V4.1 Pro 发布为止。这句话的信息量很大：厂商自己在用 Flash 版本取代上一代旗舰，同时在等待新的旗舰。也就是说，当前这一刻，V4.1-Flash 既是“小模型”，又是 DeepSeek 事实上的主力接口模型。</p>
+<p>GLM-5.3-Flash 的位置不同。智谱在同一天发布了 GLM-5.3 与 GLM-5.3-Flash 两个权重仓库，前者是文本生成模型、许可证标注为 other，后者是多模态模型、许可证标注为 MIT。模型卡里明确说 Flash 是 GLM-5 系列第一个原生多模态模型，并强调它在多个基准上超过 GLM-5.2、价格只有十分之一。</p>
+<p>这里存在一个容易被忽略的错位：DeepSeek 的对照表里给的 GLM 列是 GLM-5.3，而不是 GLM-5.3-Flash；而智谱的对照表里给的对手是自己上一代的 GLM-5.2 与闭源的 Claude Opus 4.8。两边都在选择对自己有利的对手。这不是造假，但它意味着任何“把两张表拼起来读”的行为都会系统性高估或低估某一方。</p>
+<h3 id="命名里的陷阱"><a href="#命名里的陷阱" class="headerlink" title="命名里的陷阱"></a>命名里的陷阱</h3><p>“Flash”在两家公司里指的不是同一类东西。GLM 的 Flash 是产品分层的产物：同代有更强的非 Flash 版本，Flash 负责低价与高并发。DeepSeek 的 Flash 在当前是架构迭代的产物：它是新结构（因果编码器—解码器）的先行版本，官方称其基准已经超过上一代的 V4 Pro，未来还会有采用同一结构但规模更大的 V4.1 Pro。</p>
+<p>这个区别会直接影响你的部署预期。如果 GLM-5.3-Flash 在某些任务上不如 GLM-5.3，你可以直接换用非 Flash 版本并在同一套提示协议、同一套推理框架里横向升级；而 DeepSeek 当前的升级路径并不存在，你只能等 V4.1 Pro，或者回到已经被官方标记为逐步下线的 V4 Pro 权重。</p>
+<h3 id="证据基线与等级划分"><a href="#证据基线与等级划分" class="headerlink" title="证据基线与等级划分"></a>证据基线与等级划分</h3><p>为了避免把厂商宣传与我的观察混在一起，本文对所有事实做如下分级，并在正文中尽量标注：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">等级</th>
+<th style="text-align:left">含义</th>
+<th style="text-align:left">本文中的例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">A 类</td>
+<td style="text-align:left">我在本机复现或直接从仓库元数据读取的事实</td>
+<td style="text-align:left">五个黄金用例全部通过、权重索引里的真实字节数、模板渲染结果、模板在原生 Jinja 下报错</td>
+</tr>
+<tr>
+<td style="text-align:left">B 类</td>
+<td style="text-align:left">厂商仓库中可机械核对的结构化事实</td>
+<td style="text-align:left"><code>config.json</code> 的层数、专家数、上下文长度、量化配置、许可证标识</td>
+</tr>
+<tr>
+<td style="text-align:left">C 类</td>
+<td style="text-align:left">厂商单方面给出的性能数字与效率倍数</td>
+<td style="text-align:left">基准分数、缓存压缩倍数、每任务成本、注意力计算量对比</td>
+</tr>
+<tr>
+<td style="text-align:left">D 类</td>
+<td style="text-align:left">我基于 A、B 类做的算术推算</td>
+<td style="text-align:left">每参数平均字节数、超长上下文下每序列的缓存体积、每 token 计算量粗估</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>后文的表格会尽量把 C 类与 A、B 类分开。这不是形式主义：C 类数字是唯一会随评测方法大幅波动的部分，而 A、B 类不会。</p>
+<div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+flowchart TB
+  A[&quot;同一段对话与同一组工具定义&quot;] --&gt; B1[&quot;DeepSeek 路线&lt;br&#x2F;&gt;Python 参考编码器&quot;]
+  A --&gt; B2[&quot;GLM 路线&lt;br&#x2F;&gt;Jinja 对话模板&quot;]
+  B1 --&gt; C1[&quot;DSML 标签 + 数值思考预算&quot;]
+  B1 --&gt; C2[&quot;工具结果合并进用户轮&quot;]
+  B2 --&gt; C3[&quot;tool_call XML + 三档思考等级&quot;]
+  B2 --&gt; C4[&quot;observation 轮 + tool_response&quot;]
+  C1 --&gt; D[&quot;同一个语义&lt;br&#x2F;&gt;两套不可互操作的字面协议&quot;]
+  C2 --&gt; D
+  C3 --&gt; D
+  C4 --&gt; D
+</pre></div>
+
+<h2 id="参数与架构配置的逐项对照"><a href="#参数与架构配置的逐项对照" class="headerlink" title="参数与架构配置的逐项对照"></a>参数与架构配置的逐项对照</h2><h3 id="骨干规模与激活参数"><a href="#骨干规模与激活参数" class="headerlink" title="骨干规模与激活参数"></a>骨干规模与激活参数</h3><p>两个模型的骨架都是专家混合（Mixture-of-Experts，MoE），但稀疏化的方式差别很大。</p>
+<p>DeepSeek-V4.1-Flash 的骨干参数是 552B，模型卡明确写出“预填充阶段每 token 激活 8B、解码阶段每 token 激活 16B”。这是一个非常规设计：绝大多数 MoE 模型在预填充与解码阶段激活同一批参数，因为两者的前向计算图基本相同。DeepSeek 的实现方式是采用因果编码器—解码器（Causal Encoder-Decoder，CED）结构，40 层 Transformer 被切成 20 层编码器加 20 层解码器，解码器的全局 KV 缓存由编码器最终隐状态投影而来，而不是由每一层解码器自己的隐状态派生。这解释了为什么“读入”和“生成”可以有不同的激活强度。</p>
+<p>GLM-5.3-Flash 是 320B 总参数、18B 激活参数，模型卡把它描述为“首个把稀疏注意力与线性注意力结合的开放前沿模型”，并强调相比 GLM-5.3 把注意力计算量降到约三分之一、KV 缓存降到约四分之一。这里的 18B 是单一数值，没有区分预填充与解码。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">DeepSeek-V4.1-Flash</th>
+<th style="text-align:left">GLM-5.3-Flash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">总参数</td>
+<td style="text-align:left">552B 骨干（另有 Engram 记忆，见后文）</td>
+<td style="text-align:left">320B</td>
+</tr>
+<tr>
+<td style="text-align:left">每 token 激活</td>
+<td style="text-align:left">预填充 8B、解码 16B</td>
+<td style="text-align:left">18B</td>
+</tr>
+<tr>
+<td style="text-align:left">层数</td>
+<td style="text-align:left">40 层（20 层编码器 + 20 层解码器）</td>
+<td style="text-align:left">45 层</td>
+</tr>
+<tr>
+<td style="text-align:left">隐层维度</td>
+<td style="text-align:left">5120</td>
+<td style="text-align:left">4096</td>
+</tr>
+<tr>
+<td style="text-align:left">注意力头数</td>
+<td style="text-align:left">64</td>
+<td style="text-align:left">64</td>
+</tr>
+<tr>
+<td style="text-align:left">上下文长度</td>
+<td style="text-align:left">1,048,576</td>
+<td style="text-align:left">1,048,576</td>
+</tr>
+<tr>
+<td style="text-align:left">最大输出</td>
+<td style="text-align:left">384K（API 文档）</td>
+<td style="text-align:left">128K（官方文档）</td>
+</tr>
+<tr>
+<td style="text-align:left">精度与量化</td>
+<td style="text-align:left">权重 FP8（动态激活、块大小 32×32、ue8m0 缩放），专家权重 FP4</td>
+<td style="text-align:left">FP8，e4m3，动态激活，另有 1509 个模块不参与量化</td>
+</tr>
+<tr>
+<td style="text-align:left">权重体积（本地读取索引元数据）</td>
+<td style="text-align:left">510,286,023,000 字节，48 个分片</td>
+<td style="text-align:left">328,326,771,576 字节，62 个分片</td>
+</tr>
+<tr>
+<td style="text-align:left">许可证标识</td>
+<td style="text-align:left">MIT</td>
+<td style="text-align:left">MIT（同代非 Flash 版为 other）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>权重的实际体积值得单独说一句。模型卡给出的参数是 552B 骨干加 196B 的 Engram 条件记忆，合计约 748B 参数；如果全部按 FP8 存储，需要约 749 GB。而索引文件里记录的实际总量是 510.29 GB，折合每个参数平均约 0.68 字节。这个数字本身就能反推出配置里的 <code>expert_dtype: fp4</code>：专家权重以 4 比特存储，把平均值拉了下来。GLM 那边 320B 参数配 328.33 GB，平均每参数约 1.03 字节，与“FP8 为主、少量模块保持 BF16”的配置相吻合。这两个数字都可以在你自己的机器上用一份索引文件复算，属于最容易被验证、却最少被引用的公开事实。</p>
+<h3 id="注意力机制：压缩稀疏与线性混合"><a href="#注意力机制：压缩稀疏与线性混合" class="headerlink" title="注意力机制：压缩稀疏与线性混合"></a>注意力机制：压缩稀疏与线性混合</h3><p>DeepSeek-V4.1-Flash 的注意力方案叫压缩稀疏注意力二代（CSA2）。配置里给每个注意力层静态指定三种模式之一：全量、重索引、复用。所谓复用，是让不同的层共享主 KV 与索引器 K，并复用 Top-K 稀疏注意力的索引结果，从而避免每层都重新做一次索引。解码器里再加一层层级化稀疏索引器，把后续索引层的候选池限制在第一个全量层构造的候选集合内，使索引成本不随上下文长度线性增长。此外还有一个滑窗为 128 的局部注意力，以及“SWA 有界重放”机制：通过只重放最近的若干 token 来重建缺失的滑窗 KV 状态，避免把滑窗 KV 持久化到 SSD。</p>
+<p>GLM-5.3-Flash 走的是混合注意力：45 层里 34 层是线性注意力，11 层是稀疏注意力，排布规律是三比一（线性、线性、线性、稀疏）。稀疏层使用 MLA 结构，KV 的低秩维度是 512，查询的低秩维度是 1536，QK 头维度与 V 头维度都为 256，而 RoPE 头维度为 0，也就是配置里 <code>mla_use_nope</code> 为真的含义：位置信息并不通过旋转位置编码注入注意力，而是完全交给线性注意力层的状态建模与稀疏层的选择机制。为了压低超长上下文下的索引开销，它还引入 IndexPool，把四个索引器键向量加权池化成一个。</p>
+<p>两条路线的共同目标是同一个：让百万级上下文下的注意力成本不再随时长平方增长。差别在于，DeepSeek 的做法是在稀疏注意力内部做更激进的复用与分级，GLM 的做法是让绝大多数层根本不参与全局注意力。哪一种更稳，取决于你的工作负载是“长文档一遍读完”还是“长会话反复追加”，而这恰恰是公开评测里最少被区分的场景。</p>
+<h3 id="键值缓存：一个给绝对字节数，一个给相对倍数"><a href="#键值缓存：一个给绝对字节数，一个给相对倍数" class="headerlink" title="键值缓存：一个给绝对字节数，一个给相对倍数"></a>键值缓存：一个给绝对字节数，一个给相对倍数</h3><p>这是两份材料里最值得对照的一处。DeepSeek 给的是绝对值：全局 KV 缓存为每 token 890 字节，约为 V4-Flash 的四分之一，相比初代累计缩小 437 倍；主 KV 采用 FP4 缓存（E2M1 格式，每 16 个通道一个 E4M3 缩放因子）。GLM 给的是相对值：相比 GLM-5.3，KV 缓存缩小 4.44 倍、注意力计算量缩小 3.01 倍，同时明确承认“KV 缓存仍然略大于 Kimi-K3 与 DeepSeek-V4-Flash，还有改进空间”。</p>
+<p>从信息透明度看，DeepSeek 的写法更可取，因为绝对字节数可以直接代入容量规划；从诚实程度看，智谱主动承认自己在某一维度落后于两个同行，这在模型卡里不常见，同样值得肯定。但对读者来说，后果是不对称的：你无法用 GLM 的公开材料算出“一百万上下文到底占多少显存”，只能从框架实测或自行压测中获取。</p>
+<p>用 DeepSeek 的绝对值做一次算术练习。若按每个上下文 token 890 字节计：</p>
+<script type="math/tex; mode=display">
+S_{\text{KV}}(10^6) \approx 890 \times 10^{6}\ \text{字节} \approx 848.7\ \text{MiB}</script><script type="math/tex; mode=display">
+S_{\text{KV}}(2^{20}) \approx 890 \times 1048576\ \text{字节} \approx 933\ \text{MB}</script><p>也就是说，一条百万 token 的会话仅 KV 缓存就要 0.83 到 0.89 GiB；同口径下的 V4-Flash 约为此数的四倍，即 3.3 到 3.6 GiB。这个量级解释了为什么“长上下文”在服务端一直是内存问题而不是计算问题。需要提醒的是，这是我的推算，属于 D 类；厂商没有说明 890 字节是否包含所有层、是否含索引器状态，也没有给出测量脚本。</p>
+<h3 id="专家路由与稀疏结构"><a href="#专家路由与稀疏结构" class="headerlink" title="专家路由与稀疏结构"></a>专家路由与稀疏结构</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">DeepSeek-V4.1-Flash</th>
+<th style="text-align:left">GLM-5.3-Flash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">路由专家数</td>
+<td style="text-align:left">384</td>
+<td style="text-align:left">288</td>
+</tr>
+<tr>
+<td style="text-align:left">共享专家数</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">每 token 选择专家数</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">8</td>
+</tr>
+<tr>
+<td style="text-align:left">专家中间维度</td>
+<td style="text-align:left">2304</td>
+<td style="text-align:left">2048</td>
+</tr>
+<tr>
+<td style="text-align:left">路由打分函数</td>
+<td style="text-align:left">sqrtsoftplus</td>
+<td style="text-align:left">sigmoid</td>
+</tr>
+<tr>
+<td style="text-align:left">Top-K 方法</td>
+<td style="text-align:left">noaux_tc</td>
+<td style="text-align:left">noaux_tc</td>
+</tr>
+<tr>
+<td style="text-align:left">路由缩放系数</td>
+<td style="text-align:left">1.5</td>
+<td style="text-align:left">2.5</td>
+</tr>
+<tr>
+<td style="text-align:left">稠密层位置</td>
+<td style="text-align:left">无独立披露</td>
+<td style="text-align:left">前 3 层为稠密层</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>两个模型都使用了不带辅助损失的 Top-K 路由（noaux_tc），也都保留了一个共享专家来承载通用能力，这说明 2026 年的 MoE 设计在这一层已经收敛。真正的分歧在打分函数和稀疏度：DeepSeek 用 384 选 6，更稀疏、单专家更窄；GLM 用 288 选 8，激活比例更高但专家容量更小。稀疏度影响的是每 token 的计算量与专家并行的通信量，在同样的总参数量下，选 6 通常意味着更低的计算成本与更高的路由不稳定风险。</p>
+<p>另外有一个容易被误读的细节。DeepSeek 的配置里有 <code>compress_ratios</code> 数组，长度为 43，而主干层数是 40。这不是配置错误：同文件里 <code>num_nextn_predict_layers</code> 为 3，多步预测头同样需要压缩比参数，40 加 3 正好对上。读配置时如果只看数组长度，很容易得出“层数写错了”的错误结论。同一份配置里还有 <code>engram_layer_ids: [1, 14]</code>，两张 Engram 表的行数分别是 384,006,168 与 384,016,682，乘以 256 维头维度后合计约 196.6B 参数，与模型卡“Engram 196B 参数”的说法一致——这是一次能自洽的参数核算。</p>
+<p>GLM 的配置里也有类似的“看名字会误解”的地方：文本配置里 <code>indexer_types</code> 全为 full，共 45 项，但同一份配置的 <code>layer_types</code> 明确写着 34 层线性注意力、11 层稀疏注意力。前者描述的是索引器的类型，不描述层类型，两者并不矛盾。</p>
+<h3 id="多模态编码器"><a href="#多模态编码器" class="headerlink" title="多模态编码器"></a>多模态编码器</h3><p>两者的输入侧设计差异比语言侧更大。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">DeepSeek-V4.1-Flash</th>
+<th style="text-align:left">GLM-5.3-Flash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">视觉编码器层数</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">24</td>
+</tr>
+<tr>
+<td style="text-align:left">视觉隐层维度</td>
+<td style="text-align:left">1024</td>
+<td style="text-align:left">1024</td>
+</tr>
+<tr>
+<td style="text-align:left">图块大小</td>
+<td style="text-align:left">14</td>
+<td style="text-align:left">14</td>
+</tr>
+<tr>
+<td style="text-align:left">降采样方式</td>
+<td style="text-align:left">3×3 像素反洗牌（unshuffle）</td>
+<td style="text-align:left">2×2 空间合并（spatial merge）</td>
+</tr>
+<tr>
+<td style="text-align:left">单图最大 token</td>
+<td style="text-align:left">1024</td>
+<td style="text-align:left">8000</td>
+</tr>
+<tr>
+<td style="text-align:left">单图最小 token</td>
+<td style="text-align:left">未披露（最小像素 295936）</td>
+<td style="text-align:left">16</td>
+</tr>
+<tr>
+<td style="text-align:left">视频输入</td>
+<td style="text-align:left">模型卡未描述</td>
+<td style="text-align:left">支持，最大 240000 token，2 帧每秒</td>
+</tr>
+<tr>
+<td style="text-align:left">图文联合训练</td>
+<td style="text-align:left">从语言模型预训练开始就联合处理</td>
+<td style="text-align:left">30T token 多模态语料</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>DeepSeek 的写法是“从零训练的 DeepSeek-ViT，使用二维旋转位置编码与 3×3 像素反洗牌降采样，通过两层 MLP 投影与文本嵌入在预训练的第一步就共同处理”；智谱的写法则放在处理器配置里：视频按每秒 2 帧、时序图块 2 的处理方式送进模型，单条视频最多 240000 个 token。前者强调“原生”，后者强调“覆盖到视频”。</p>
+<p>一个务实的判断：如果你要处理的是界面截图、渲染结果、图表这类静态图像，两者都够用；如果你要处理视频理解与时间轴推理，GLM-5.3-Flash 的公开材料至少给出了完整的采样参数，而 DeepSeek 的模型卡对这一块几乎没有描述。反过来，如果你需要图像定位与稠密文档解析，DeepSeek 给出的 RefCOCO 86.0、DocVQA 95.6 属于 C 类自报数据，但它至少给了具体指标名称。</p>
+<h3 id="训练与后训练流程的公开程度"><a href="#训练与后训练流程的公开程度" class="headerlink" title="训练与后训练流程的公开程度"></a>训练与后训练流程的公开程度</h3><p>DeepSeek 的模型卡写得非常具体：45T token 的多模态语料，稀疏注意力在 64K 序列长度上训练，在累计 34T token 时把上下文扩展到 1M；后训练遵循监督微调、强化学习、在线策略蒸馏的标准范式，算法上没有改动，改动全部在数据侧——大规模自动化合成 agent 任务与环境，并渐进扩大数据、任务与 rollout 的规模。</p>
+<p>GLM 的模型卡给出的是 30T token 的多模态预训练语料、混合注意力架构与流形约束超连接（mHC），训练细节更多放在技术报告里。两家都提到了“用模型本身来造 agent 数据”这件事，DeepSeek 说得更直白，智谱则在服务侧文档里提到“用 GLM-5.3 驱动的基础设施 agent 帮助工程师开发内核、诊断性能瓶颈”，把模型用来优化服务自己的模型。</p>
+<h3 id="位置编码：插值扩展与无位置编码"><a href="#位置编码：插值扩展与无位置编码" class="headerlink" title="位置编码：插值扩展与无位置编码"></a>位置编码：插值扩展与无位置编码</h3><p>两份配置在位置编码上的选择差异极大，而且这个差异比层数、专家数更能解释长上下文行为的区别。</p>
+<p>DeepSeek-V4.1-Flash 的文本配置里，旋转位置编码的基频是 10000，最大位置是 1,048,576，缩放方式是 YaRN，缩放因子 16，原始最大位置 65536，快速与慢速边界参数分别是 32 与 1。模型卡里对应的叙述是：稀疏注意力在 64K 序列长度上训练，在累计 34T token 时把上下文扩展到 1M。两者互相印证——先在小窗口上把注意力模式学稳，再用频率插值把外推能力打开。值得注意的是配置里还有一个独立的 <code>compress_rope_theta</code> 为 160000，属于压缩分支的专用基频，与主干的 10000 相差十六倍。同一份配置里滑窗宽度只有 128。</p>
+<p>这一组数字合起来说明了一件事：在 DeepSeek 的设计里，“近距离”和“远距离”被彻底分开处理。128 的滑窗负责局部连续性，压缩稀疏注意力负责远距离可达性，两者的频率参数也分开设置。代价是实现复杂度，收益是可以分别调优。</p>
+<p>GLM-5.3-Flash 的配置走的是另一个方向。文本配置里 QK 的旋转维度是 0，QK 的非旋转维度是 256，同时 <code>mla_use_nope</code> 为真。也就是说，稀疏注意力层的键与查询本身不带旋转位置编码。位置信息在这样的结构里只能来自两个地方：线性注意力层对序列的状态累积，以及索引器在选择候选时的行为。这解释得通：如果 34 层线性注意力已经把顺序信息编码进状态，剩下的 11 层稀疏注意力只需要在语义空间里做检索，是否再叠加显式位置编码就是一个可选项。</p>
+<p>这条路线的好处是减少了与位置相关的缓存与计算开销，坏处是长上下文外推的行为更难从配置里预先判断。公开材料只给了 1M 的标称窗口，没有给出“超过训练长度后性能如何衰减”的曲线。对于要做超长文档处理的团队，这是一个必须自己压测的点，而且要在真实数据的长度分布上压测，而不是在合成长文本上压测。</p>
+<p>顺带说一句，两家都写了 1,048,576 这个数字，但“支持 1M 上下文”与“在 1M 上下文上保持精度”是两件事。模型卡通常只承诺前者。DeepSeek 至少在基准里给出了 LongBench-V2 的成绩（自报 45.2，属于 C 类），GLM 的公开材料里我没看到对应项目。这也是本文建议“先打通协议、再用自己的数据压测”的原因之一。</p>
+<h3 id="超连接：两家独立收敛到同一组超参"><a href="#超连接：两家独立收敛到同一组超参" class="headerlink" title="超连接：两家独立收敛到同一组超参"></a>超连接：两家独立收敛到同一组超参</h3><p>这是我在读配置时最意外的一处。两家的文本配置里都出现了流形约束超连接（mHC）的超参数，而且数值完全一致：<code>hc_mult</code> 为 4，<code>hc_sinkhorn_iters</code> 为 20，<code>hc_eps</code> 为 1e-6，GLM 侧另有 <code>mhc: true</code> 的开关。</p>
+<p>超连接可以被粗略理解为对残差流的一种泛化：不再只保留一条残差通道，而是维护多条通道并约束它们的混合矩阵落在某个流形上，从而在加深网络时保持信号尺度。Sinkhorn 迭代 20 次意味着每一步都要做 20 轮归一化迭代把矩阵投影回约束集合；这是“用少量额外计算换训练稳定性”的典型交易。两家在互不通信的情况下选择了同一组倍率与迭代次数，说明这条技术路线在 2026 年已经形成了事实标准，也说明这类超参可能已经被社区的经验固定下来，而不是各自调优的结果。</p>
+<p>差异藏在工程处理里。DeepSeek 的模型卡提到“单遍 mHC”与专门的 Mega-mHC 内核，也就是把多次归一化迭代融合进一个内核以降低启动与访存开销；GLM 则在量化配置里把这一类模块整体排除在 FP8 之外。我把 GLM 的 1509 条不参与量化的模块清单做了粗略分类，里面包含 <code>hyper_connection</code>、<code>mlp.gate</code>、<code>conv</code>、<code>indexer</code>、归一化层与 <code>lm_head</code> 等条目。这个清单本身就是一份重要的工程信息：它告诉你模型里哪些部分对数值扰动最敏感。任何打算自己做量化的人，都应该先读这份清单，而不是直接对所有线性层一刀切。</p>
+<h3 id="多步预测与投机解码"><a href="#多步预测与投机解码" class="headerlink" title="多步预测与投机解码"></a>多步预测与投机解码</h3><p>两份配置都包含“额外预测头”，但规模和结构完全不同。</p>
+<p>DeepSeek-V4.1-Flash 配置里的相关参数包括：推测解码层数为 3，块大小为 5，目标层编号为 37、38、39，马尔可夫秩为 256，草稿侧的路由专家数为 128、每 token 选择 3 个专家。模型卡把这一机制命名为 DSpark，描述为“半自回归草稿生成加置信度调度的验证”。用直白的话说：模型不是逐 token 猜下一个词，而是先一次性生成一小块草稿，再用一个置信度规则决定哪些位置值得验证、哪些位置直接丢弃重算。</p>
+<p>GLM-5.3-Flash 配置里的 <code>num_nextn_predict_layers</code> 为 1，并且有一个 <code>index_share_for_mtp_iteration</code> 为真的开关，含义是多步预测迭代时复用索引器的选择结果，避免每一步都重算索引。</p>
+<p>这两种设计的共同目标是降低解码阶段的平均成本，差异在于激进程度与工程风险。DeepSeek 的方案更加复杂，需要额外的草稿专家、马尔可夫低秩投影与三层预测头；GLM 的方案更保守，只加一层预测并复用已有索引。任何投机解码的收益都取决于草稿与目标分布的接受率，而接受率会随任务类型剧烈波动——在格式化输出与代码补全上通常很高，在开放式推理与长链条工具调用上会下降。两家的公开材料都没有给出接受率曲线与端到端加速比。这意味着：模型卡上的“更快”在这件事上几乎不可验证，你只能在自己流量上测。</p>
+<h2 id="词表、停止符与生成参数"><a href="#词表、停止符与生成参数" class="headerlink" title="词表、停止符与生成参数"></a>词表、停止符与生成参数</h2><p>这一节看起来琐碎，但它决定了一个网关能不能正确地停下来。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">DeepSeek-V4.1-Flash</th>
+<th style="text-align:left">GLM-5.3-Flash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">词表大小</td>
+<td style="text-align:left">129280</td>
+<td style="text-align:left">154880</td>
+</tr>
+<tr>
+<td style="text-align:left">句子起始符</td>
+<td style="text-align:left">自定义 BOS，ID 0</td>
+<td style="text-align:left"><code>[gMASK]</code> 与 <code>&lt;sop&gt;</code> 组合</td>
+</tr>
+<tr>
+<td style="text-align:left">结束符</td>
+<td style="text-align:left">单一 EOS，ID 1</td>
+<td style="text-align:left">三个 EOS，ID 分别 154820、154827、154829</td>
+</tr>
+<tr>
+<td style="text-align:left">填充符</td>
+<td style="text-align:left">ID 2</td>
+<td style="text-align:left">154820</td>
+</tr>
+<tr>
+<td style="text-align:left">分词器类型</td>
+<td style="text-align:left"><code>PreTrainedTokenizerFast</code></td>
+<td style="text-align:left"><code>TokenizersBackend</code></td>
+</tr>
+<tr>
+<td style="text-align:left">补边方向</td>
+<td style="text-align:left">未在配置中声明</td>
+<td style="text-align:left">左补边</td>
+</tr>
+<tr>
+<td style="text-align:left">标称最大长度</td>
+<td style="text-align:left">1048576</td>
+<td style="text-align:left">1048576</td>
+</tr>
+<tr>
+<td style="text-align:left">温度与 Top-p 默认</td>
+<td style="text-align:left">无生成配置，文档建议温度 1.0、Top-p 0.95 或 1.0</td>
+<td style="text-align:left">生成配置内写死温度 1.0、Top-p 0.95</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>三个结束符这一条值得展开。当模型有三个合法结束符号时，任何自研推理栈都必须在采样循环里检查三个 ID，任何流式网关都必须在三个符号上触发“结束”事件，任何日志系统都要能区分它们分别代表什么语义。如果只按最常见的一个 ID 判断，就会在某些场景下出现“模型已经给出结束标记但网关继续生成”或者“网关提前截断”的问题。这类 bug 在测试集上往往不出现，因为它只在特定输出路径上触发。</p>
+<p>词表大小的差别也有实际影响。GLM 的词表比 DeepSeek 大 19.7%，在多语言与代码场景下通常意味着更短的序列，但更大的输出头意味着解码阶段每次都要在更多的候选上做归一化与采样，显存占用与访存带宽也随之增加。在 18B 激活参数的规模下，输出头本身可能占到不可忽略的比例，这也是为什么 GLM 把 <code>lm_head</code> 放进不量化清单——量化的收益在它身上有限，而风险不小。</p>
+<p>最后是默认参数的差异。GLM 把温度 1.0 与 Top-p 0.95 写进了生成配置，因此使用 <code>generate()</code> 的默认路径时你不必显式传入；DeepSeek 没有随权重提供生成配置，只在模型卡里给出推荐区间，并且在参考实现里用命令行参数接收温度。对做过服务化的人来说这不算问题，但它解释了为什么同一个模型在不同框架下会被测出不同的“稳定性”——默认参数不同，输出分布就不同。</p>
+<h2 id="提示协议：参考实现与-Jinja-模板的两条工程路线"><a href="#提示协议：参考实现与-Jinja-模板的两条工程路线" class="headerlink" title="提示协议：参考实现与 Jinja 模板的两条工程路线"></a>提示协议：参考实现与 Jinja 模板的两条工程路线</h2><p>这一节是本文最“代码”的部分，也是我认为最容易被模型卡忽略、却最容易在集成时踩坑的部分。</p>
+<h3 id="同一段对话，两种编码产物"><a href="#同一段对话，两种编码产物" class="headerlink" title="同一段对话，两种编码产物"></a>同一段对话，两种编码产物</h3><p>我在本机用 Python 3.12.10 渲染了 GLM 的 <code>chat_template.jinja</code>，同样的对话对 DeepSeek 则直接调用了仓库里的 <code>encoding.py</code>。同一段最小对话（系统提示“You are a helpful assistant.”，用户提问“用 Python 写一个快速排序。”）在两个框架下的产物如下。</p>
+<p>DeepSeek 在思考模式下的产物（已把换行显式写出）：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;｜begin▁of▁sentence｜&gt;&lt;｜System｜&gt;Reasoning Effort: 75 (range 1-100, the higher the value, the more thorough the reasoning)\n\nYou are a helpful assistant.&lt;｜User｜&gt;用 Python 写一个快速排序。&lt;｜Assistant｜&gt;&lt;think&gt;</span><br></pre></td></tr></table></figure>
+<p>GLM 在 <code>reasoning_effort=high</code> 下的产物：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[gMASK]&lt;sop&gt;&lt;|system|&gt;Reasoning Effort: High&lt;|system|&gt;You are a helpful assistant.&lt;|user|&gt;用 Python 写一个快速排序。&lt;|assistant|&gt;&lt;think&gt;</span><br></pre></td></tr></table></figure>
+<p>长度上，前者约 150 个字符，后者约 127 个字符。差异发生在四处。第一，思考预算的表达方式：DeepSeek 是 1 到 100 的整数，并把它作为独立的系统块插在系统提示之前；GLM 是三档英文等级词，渲染成首字母大写的形式，而且我在实测中发现，当传入模板不认识的取值（包括官方文档推荐的 <code>max</code>）时，模板会回落到 <code>Max</code> 这一档，也就是说 <code>max</code> 与任意未知字符串在这里得到同一个结果。第二，角色标记的形式：DeepSeek 用全角竖线包裹的 <code>&lt;｜System｜&gt;</code>、<code>&lt;｜User｜&gt;</code>、<code>&lt;｜Assistant｜&gt;</code>，GLM 用半角的 <code>&lt;|system|&gt;</code>、<code>&lt;|user|&gt;</code>、<code>&lt;|assistant|&gt;</code>，两者字面不兼容。第三，起始标记：GLM 在序列最前面固定输出 <code>[gMASK]&lt;sop&gt;</code>，DeepSeek 输出 <code>&lt;｜begin▁of▁sentence｜&gt;</code>。第四，两者都以 <code>&lt;think&gt;</code> 结束并等待生成，这一点反而是一致的。</p>
+<p>同一段对话换成带工具调用的多轮，产物差异会扩大到场级。下面是我用同一组工具定义（<code>get_weather</code>，参数 <code>location</code> 与 <code>unit</code>）、同一段助手工具调用与工具返回值渲染出的结果片段。</p>
+<p>DeepSeek 的助手工具调用片段：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;｜Assistant｜&gt;&lt;think&gt;需要调用天气工具。&lt;/think&gt;</span><br><span class="line"></span><br><span class="line">&lt;｜DSML｜ calls&gt;</span><br><span class="line">&lt;｜DSML｜ invoke name=&quot;get_weather&quot;&gt;</span><br><span class="line">&lt;｜DSML｜ parameter name=&quot;location&quot; string=&quot;true&quot;&gt;上海&lt;/｜DSML｜ parameter&gt;</span><br><span class="line">&lt;｜DSML｜ parameter name=&quot;unit&quot; string=&quot;true&quot;&gt;celsius&lt;/｜DSML｜ parameter&gt;</span><br><span class="line">&lt;/｜DSML｜ invoke&gt;</span><br><span class="line">&lt;/｜DSML｜ calls&gt;&lt;｜end▁of▁sentence｜&gt;&lt;｜User｜&gt;&lt;tool_result&gt;&#123;&quot;temp&quot;: 27&#125;&lt;/tool_result&gt;&lt;｜Assistant｜&gt;&lt;think&gt;</span><br></pre></td></tr></table></figure>
+<p>GLM 的对应片段：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;|assistant|&gt;&lt;think&gt;需要调用天气工具。&lt;/think&gt;</span><br><span class="line">&lt;tool_call&gt;get_weather&lt;arg_key&gt;location&lt;/arg_key&gt;&lt;arg_value&gt;上海&lt;/arg_value&gt;&lt;arg_key&gt;unit&lt;/arg_key&gt;&lt;arg_value&gt;celsius&lt;/arg_value&gt;&lt;/tool_call&gt;</span><br><span class="line">&lt;|observation|&gt;&lt;tool_response&gt;&#123;&quot;temp&quot;: 27&#125;&lt;/tool_response&gt;&lt;|assistant|&gt;&lt;think&gt;</span><br></pre></td></tr></table></figure>
+<p>两者的共同点是都把工具结果塞回模型可见的上下文，并且都用一种自造的标记语言表示调用。区别是结构性的：DeepSeek 把工具结果包装成 <code>&lt;tool_result&gt;</code> 并合并进用户轮，模型看到的是一个“用户消息里带着工具结果”的对话；GLM 则产出独立的 <code>&lt;|observation|&gt;</code> 轮，工具结果被包在 <code>&lt;tool_response&gt;</code> 里，语义上更接近“观察”这个独立角色。如果两边都支持多工具并行调用，DeepSeek 的编码器会按助手消息中 <code>tool_calls</code> 的顺序对结果排序，GLM 的模板则在工具结果 ID 齐全、无重复、且都能与前面的调用 ID 对应时按调用顺序重排，否则退化为原顺序——这段逻辑写在模板里，靠命名空间变量与循环实现，可读性相当有限。</p>
+<h3 id="工具参数的类型约定并不一致"><a href="#工具参数的类型约定并不一致" class="headerlink" title="工具参数的类型约定并不一致"></a>工具参数的类型约定并不一致</h3><p>这一点是我在实测中发现的第二个硬差异。DeepSeek 的编码器接受两种参数形式：既接受 OpenAI 风格的 JSON 字符串，也接受已经是字典的参数对象，内部统一转成 <code>&lt;｜DSML｜ parameter&gt;</code> 结构。GLM 的模板只接受字典：我用字符串 <code>&#39;&#123;&quot;location&quot;: &quot;上海&quot;&#125;&#39;</code> 渲染时，模板抛出 <code>UndefinedError: &#39;str object&#39; has no attribute &#39;items&#39;</code>。</p>
+<p>这意味着如果你的网关或代理层习惯性地把参数序列化成字符串再透传，走 GLM 这条线会直接失败，而且失败发生在模板渲染阶段，错误信息不会告诉你“参数应该是字典”。反之，如果你的自研服务把参数当成字典存进消息对象，走 DeepSeek 这条线没有问题，但你需要自己保证下游解析器能把 DSML 文本还原成同样的结构。</p>
+<h3 id="可以复现的工程问题"><a href="#可以复现的工程问题" class="headerlink" title="可以复现的工程问题"></a>可以复现的工程问题</h3><p>我把这三条单独列出来，是因为它们都可以在几分钟内被任何人复现，而不是推测。</p>
+<p>第一条，DeepSeek 的参考实现在非 UTF-8 默认编码的系统上会直接崩溃。<code>load_cases</code> 用 <code>json.load(open(path))</code> 读取测试输入，没有显式指定 <code>encoding=&quot;utf-8&quot;</code>。在简体中文 Windows 上默认编码是 GBK，读取包含中文或特殊符号的用例时会抛 <code>UnicodeDecodeError</code>。我在未开启 UTF-8 模式时，五个黄金用例中编号为 3 的用例直接失败；设置 <code>PYTHONUTF8=1</code> 之后，五个用例全部通过。修复只需一行，但这个现象说明“参考实现”与“生产可用”之间往往只差一行编码声明。</p>
+<p>第二条，GLM 的对话模板不能在原生 Jinja2 下运行。模板里使用了 <code>&#123;% break %&#125;</code> 与 <code>tojson(ensure_ascii=False)</code> 两个扩展语法，前者需要 Jinja2 的 <code>loopcontrols</code> 扩展，后者是 Hugging Face 生态里的自定义过滤器，标准 Jinja2 的 <code>tojson</code> 不接受 <code>ensure_ascii</code> 参数。我把扩展打开、并把 <code>tojson</code> 替换成接受该参数的自定义过滤器之后，模板才能正常渲染。在 vLLM、SGLang、Transformers 等框架内部这不是问题，但它们定义了一套事实上的方言：任何打算自己实现这套模板的团队，都必须先把这两个语义补齐。</p>
+<p>第三条，黄金用例的覆盖面比看起来窄。DeepSeek 仓库里的五个用例覆盖了工具调用、多轮对话、双图输入、数值思考预算、以及 V4.1 的标签格式，全部通过；但正如它自己文档里写的，解析函数“只处理格式良好的模型输出”，不做纠错与恢复。当一个模型偶尔生成不完整的标签时，解析失败是预期行为而非缺陷。这一点在自建推理服务时会被放大，因为生产环境里的失败样本几乎不可能被穷举。</p>
+<h3 id="模板与代码的测试成本"><a href="#模板与代码的测试成本" class="headerlink" title="模板与代码的测试成本"></a>模板与代码的测试成本</h3><p>把两条路线放在一起看，会得到一个反直觉的结论：Jinja 模板看起来更“标准”，但它比 Python 参考实现更难测试。原因不难理解。模板语言没有类型系统，参数缺失时往往不会报错，而是静默渲染成空字符串；复杂逻辑必须靠命名空间变量模拟可变状态；条件分支的覆盖率难以用常规测试工具度量。GLM 的模板有九百多行级别的复杂逻辑，仓库里没有随附测试或黄金产物。DeepSeek 的编码器是普通 Python 模块，附带五个输入输出对，任何人可以在五分钟内跑完，也可以在 CI 里挂上。</p>
+<p>不过，这里也要给出反方观点。模板路线的优势在于它与 Hugging Face 的 <code>apply_chat_template</code> 接口天然对齐，任何支持该接口的推理框架都能零成本接入；而 DeepSeek 的 Python 参考实现并不是生产路径，官方另外发布了 Rust 实现（带 Python 绑定）来承担协议解析与请求编码，并且明确说明模型推理、工具执行与 HTTP 传输由调用方负责。换句话说，两边都在用不同方式把“协议”从“引擎”里拆出来：DeepSeek 拆成“参考实现加生产库”，GLM 拆成“模板加框架适配”。哪一种更容易长期维护，取决于你的团队更擅长读 Python 还是调试模板。</p>
+<h2 id="把两套协议折进一套内部表示"><a href="#把两套协议折进一套内部表示" class="headerlink" title="把两套协议折进一套内部表示"></a>把两套协议折进一套内部表示</h2><p>只要你的系统同时接入这两个模型，就一定会遇到“协议归一化”的问题。这一节给出一份可以直接落地的最小方案，也是我在写这篇文章时的实际做法。</p>
+<h3 id="内部表示的选择"><a href="#内部表示的选择" class="headerlink" title="内部表示的选择"></a>内部表示的选择</h3><p>内部表示应当尽量贴近调用方已经熟悉的形式，也就是 OpenAI 风格的消息数组：角色为 system、user、assistant、tool，助手消息里可以有 <code>reasoning_content</code>，工具调用挂在 <code>tool_calls</code> 上，参数以字典存放。选择字典而不是 JSON 字符串作为内部规范，有两个理由：一是 GLM 的模板只接受字典，二是字典可以被序列化成字符串适配 DeepSeek，反之不成立。把约束最严的一方当作规范，通常能省掉一层转换。</p>
+<p>于是协议适配变成两个方向的纯函数：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">方向</th>
+<th style="text-align:left">输入</th>
+<th style="text-align:left">输出</th>
+<th style="text-align:left">关键动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">出站（去 DeepSeek）</td>
+<td style="text-align:left">内部消息数组</td>
+<td style="text-align:left">DSML 文本提示</td>
+<td style="text-align:left">合并工具结果、把思考预算映射为 1 到 100 的整数</td>
+</tr>
+<tr>
+<td style="text-align:left">出站（去 GLM）</td>
+<td style="text-align:left">内部消息数组</td>
+<td style="text-align:left">模板渲染文本</td>
+<td style="text-align:left">传字典参数、决定 clear_thinking、映射三档思考等级</td>
+</tr>
+<tr>
+<td style="text-align:left">入站（从 DeepSeek）</td>
+<td style="text-align:left">模型输出文本</td>
+<td style="text-align:left">结构化助手消息</td>
+<td style="text-align:left">解析 <code>&lt;think&gt;</code> 与 DSML 调用块</td>
+</tr>
+<tr>
+<td style="text-align:left">入站（从 GLM）</td>
+<td style="text-align:left">模型输出文本</td>
+<td style="text-align:left">结构化助手消息</td>
+<td style="text-align:left">解析 <code>&lt;tool_call&gt;</code> 与被截断的思考块</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>出站方向的风险相对可控，因为输入是你自己构造的；入站方向才是真正容易出问题的地方，因为模型输出永远可能不符合格式。</p>
+<h3 id="思考预算与思考开关的归一化"><a href="#思考预算与思考开关的归一化" class="headerlink" title="思考预算与思考开关的归一化"></a>思考预算与思考开关的归一化</h3><p>内部表示里建议只保留一个字段，例如 <code>reasoning_budget</code>，取值域为 1 到 100 的整数，然后用两个映射函数分别适配。</p>
+<p>去 DeepSeek 时，整数可以原样传入；如果要兼容旧代码里已有的 <code>low</code>、<code>high</code>、<code>max</code> 字符串，按官方文档映射为 50、75、100，默认值为 75。这里有一个必须注意的边界：该实现只接受 1 到 100 的整数与三个字符串别名，其余取值（包括 <code>medium</code>、布尔值、浮点数）都会断言失败。网关必须在这一层做校验，否则错误会以底层断言的形式冒出来，日志里看不到原始请求。</p>
+<p>去 GLM 时，把整数按区间折叠成三档：小于 60 映射为 <code>low</code>，60 到 90 映射为 <code>high</code>，其余映射为 <code>max</code>。之所以要显式传入而不依赖默认值，是因为我实测发现模板对未知取值统一回落到最高档，而官方推荐值恰好也是 <code>max</code>——这意味着一个拼错的参数不会报错，只会静默地把成本抬到最高档。对成本敏感的团队应当把这一层映射写在网关里，而不是交给下游模板容错。</p>
+<p>还有一个语义差异需要显式处理：DeepSeek 支持关闭思考，GLM 的接口只支持开启思考。如果调用方要求“不要思考，直接回答”，走 DeepSeek 时可以走非思考模式，走 GLM 时只能接受思考并承担额外输出。这一点在接口契约里应当写清楚，而不是让调用方在两种后端上得到完全不同的延迟与计费体验。</p>
+<h3 id="工具调用的双向转换"><a href="#工具调用的双向转换" class="headerlink" title="工具调用的双向转换"></a>工具调用的双向转换</h3><p>工具调用的转换是整条链路上最容易出错的部分。下面是我用来验证两条协议的最小脚本，它同时也是本文实测产物的来源。注意其中两个必需的兼容处理：Jinja2 需要打开 <code>loopcontrols</code> 扩展才能理解 <code>break</code>，<code>tojson</code> 需要替换成接受 <code>ensure_ascii</code> 参数的实现，否则渲染会在工具定义处直接失败。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> jinja2 <span class="keyword">import</span> Environment</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">build_glm_renderer</span>(<span class="params">template_path: <span class="built_in">str</span></span>):</span><br><span class="line">    env = Environment(extensions=[<span class="string">&quot;jinja2.ext.loopcontrols&quot;</span>])</span><br><span class="line">    env.filters[<span class="string">&quot;tojson&quot;</span>] = <span class="keyword">lambda</span> obj, ensure_ascii=<span class="literal">False</span>: json.dumps(</span><br><span class="line">        obj, ensure_ascii=ensure_ascii</span><br><span class="line">    )</span><br><span class="line">    template = env.from_string(<span class="built_in">open</span>(template_path, encoding=<span class="string">&quot;utf-8&quot;</span>).read())</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">render</span>(<span class="params">messages, tools=<span class="literal">None</span>, reasoning_effort=<span class="string">&quot;max&quot;</span>, clear_thinking=<span class="literal">None</span></span>):</span><br><span class="line">        <span class="keyword">return</span> template.render(</span><br><span class="line">            messages=messages,</span><br><span class="line">            tools=tools,</span><br><span class="line">            add_generation_prompt=<span class="literal">True</span>,</span><br><span class="line">            reasoning_effort=reasoning_effort,</span><br><span class="line">            clear_thinking=clear_thinking,</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> render</span><br></pre></td></tr></table></figure>
+<p>对应的 DeepSeek 侧只需要一次导入调用：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">sys.path.insert(<span class="number">0</span>, <span class="string">&quot;path/to/encoding&quot;</span>)</span><br><span class="line"><span class="keyword">from</span> encoding <span class="keyword">import</span> encode_messages, parse_message_from_completion_text</span><br><span class="line"></span><br><span class="line">prompt, media = encode_messages(</span><br><span class="line">    messages,</span><br><span class="line">    thinking_mode=<span class="string">&quot;thinking&quot;</span>,</span><br><span class="line">    reasoning_effort=<span class="number">75</span>,</span><br><span class="line">    return_multi_modal_data=<span class="literal">True</span>,</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>两个函数放在一起就暴露出一个不对称：GLM 侧只解决“编码”，解码要靠服务框架提供的解析器；DeepSeek 侧编码与解析都在同一个模块里，并且解析函数在遇到缺少结束符的输出时会直接断言失败。做网关的人应当把解析失败视为一级告警：它意味着你在用格式错误的上下文继续多轮对话，而模型对这类上下文的反应是不可预测的。</p>
+<h3 id="图像预算与截断策略"><a href="#图像预算与截断策略" class="headerlink" title="图像预算与截断策略"></a>图像预算与截断策略</h3><p>多模态输入在两个协议下的表示方式不同，预算也不在同一量级。DeepSeek 的做法是在文本提示里插入图像占位符，把图像记录按顺序放在媒体列表里，单图最多 1024 个 token；GLM 的做法是在内容块里插入图像起止标记，单图 token 上限 8000，视频最多 240000。相差接近八倍的图像预算意味着同一个截图任务在两个模型上会有不同的上下文压力：GLM 保留了更多细节，DeepSeek 更早压缩。</p>
+<p>这对网关的意义是明确的：不要用同一套图像缩放策略去服务两个模型。如果按 GLM 的上限缩放图像再送进 DeepSeek，多余的像素会被模型侧的处理器再次降采样，白白消耗带宽与预处理时间；如果按 DeepSeek 的上限缩放再送进 GLM，会直接丢掉 GLM 本来能利用的细节。正确做法是在网关里为每个后端维护独立的图像预处理档位，并把最终的图像 token 数写进请求日志，方便事后做成本归因。</p>
+<h3 id="上线前的检查清单"><a href="#上线前的检查清单" class="headerlink" title="上线前的检查清单"></a>上线前的检查清单</h3><p>综合上面的差异，我会在下线验收前逐条确认以下事项：结束符是否覆盖全部三个 ID；思考内容是否在不需要时被正确剔除（DeepSeek 默认丢弃历史思考，除非存在工具调用）；工具结果是否按调用顺序排列；工具参数在序列化与反序列化之间是否保持了类型；图像 token 数是否被记录；思考预算是否经过映射而不是透传；以及在多轮对话里插入系统消息时，两个后端是否都能接受——DeepSeek 明确支持对话中段的系统消息，GLM 的模板也有单独的 system 分支，但这两种语义并不等价，混合使用时要格外小心。</p>
+<h2 id="推理与部署：自带参考实现与生态集成的取舍"><a href="#推理与部署：自带参考实现与生态集成的取舍" class="headerlink" title="推理与部署：自带参考实现与生态集成的取舍"></a>推理与部署：自带参考实现与生态集成的取舍</h2><h3 id="两个仓库分别交付了什么"><a href="#两个仓库分别交付了什么" class="headerlink" title="两个仓库分别交付了什么"></a>两个仓库分别交付了什么</h3><p>DeepSeek 的仓库里有一个完整的 <code>inference</code> 目录：权重转换脚本、带张量并行支持的生成脚本、视觉编码与图像处理器、Engram 查找、内核实现、shell 启动脚本与依赖清单。文档对它的定位说得很清楚：这是一份“可读的参考实现，而非生产级服务引擎”，模型代码覆盖视觉编码器与对齐器、滑窗加压缩稀疏注意力及其两级索引器、Engram 的 n-gram 查找、MoE、超连接以及 DSpark 前向路径，生成部分就是朴素的自回归采样。它还提供了一个自检入口：直接运行模型文件会用未初始化的权重做一次预填充加 22 步解码，用来验证形状与内核接线，而不是验证数值正确性。</p>
+<p>GLM 的仓库里没有推理代码。模型卡直接给出六个外部框架的入口：SGLang、vLLM、TokenSpeed、Transformers、KTransformers 与 Unsloth，每一个都指向对应的教程或配方页面。要跑起来，你需要先决定用哪个框架，再去读那个框架的文档。</p>
+<p>这两种交付方式的后果非常具体。用 GLM，你大概率在半小时内能看到第一段生成文本；用 DeepSeek，你更可能先花半天读完参考实现，理解权重如何按专家切分到不同张量并行 rank，然后才考虑服务化。反过来，当推理结果异常时，DeepSeek 的仓库允许你把问题定位到具体的内核与前向路径，而 GLM 的路径要求你先判断问题出在模板、框架还是权重。</p>
+<h3 id="权重体积与最小可行部署"><a href="#权重体积与最小可行部署" class="headerlink" title="权重体积与最小可行部署"></a>权重体积与最小可行部署</h3><p>前面读到的是索引元数据里的真实体积，这里把它换算成部署语言。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">模型</th>
+<th style="text-align:left">权重体积</th>
+<th style="text-align:left">分片数</th>
+<th style="text-align:left">单卡 80GB 至少需要</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">DeepSeek-V4.1-Flash</td>
+<td style="text-align:left">510.29 GB</td>
+<td style="text-align:left">48</td>
+<td style="text-align:left">7 张（理论上，不含缓存与激活开销）</td>
+<td style="text-align:left">参考实现默认按 8 路张量并行转换权重</td>
+</tr>
+<tr>
+<td style="text-align:left">GLM-5.3-Flash</td>
+<td style="text-align:left">328.33 GB</td>
+<td style="text-align:left">62</td>
+<td style="text-align:left">5 张（理论上，不含缓存与激活开销）</td>
+<td style="text-align:left">官方推荐路径为外部推理框架，可用量化进一步压缩</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>这张表里的“至少需要”是纯权重的算术下限，实际部署还要加上 KV 缓存、激活、通信缓冲与框架开销。真正有用的信息是量级：两者的权重体积都在 300 到 510 GB 之间，都超出单机单卡的可承受范围，都需要多卡张量并行或专家并行，都需要量化后才有机会进入更小的硬件。GLM 的生态里已经有社区维护的 GGUF 量化版本与 NVFP4 量化版本，下载量在两周内达到数十万次；DeepSeek 这边同样出现了第三方 GGUF 与 NVFP4 转换，但都是发布当天生成、尚未形成经验证的部署路径。</p>
+<p>还有一个不对称的地方在于硬件叙事。智谱在服务文档里专门写了一节“在国产 AI 芯片上大规模服务”，提到在 SGLang 之上自建推理引擎、用 W8A8 量化与 INT8、FP8、BF16 混合缓存量化、层切分以及编码—预填充—解码三阶段分离的架构，把端到端性能提升了三倍，并称在此前一周用匿名代号在 OpenCode 与 OpenRouter 上提供服务。这既是技术披露，也是采购暗示。DeepSeek 的模型卡则完全不谈自家集群用了什么芯片，只给出参考实现里的张量并行与专家精度选项。前者对做国产化替代的团队更有参考价值，后者的信息更适合用来复现。</p>
+<p>权重体积这件事不需要下载几十个分片就能验证，因为分片索引文件里已经写了总量。任何人只要拉取一份索引文件，就能在几秒内复算出来：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">checkpoint_bytes</span>(<span class="params">index_path: <span class="built_in">str</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(index_path, encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> handle:</span><br><span class="line">        index = json.load(handle)</span><br><span class="line">    <span class="keyword">return</span> index[<span class="string">&quot;metadata&quot;</span>][<span class="string">&quot;total_size&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> name, path <span class="keyword">in</span> [</span><br><span class="line">    (<span class="string">&quot;DeepSeek-V4.1-Flash&quot;</span>, <span class="string">&quot;model.safetensors.index.json&quot;</span>),</span><br><span class="line">    (<span class="string">&quot;GLM-5.3-Flash&quot;</span>, <span class="string">&quot;model.safetensors.index.json&quot;</span>),</span><br><span class="line">]:</span><br><span class="line">    total = checkpoint_bytes(path)</span><br><span class="line">    <span class="built_in">print</span>(name, total, <span class="string">f&quot;<span class="subst">&#123;total / <span class="number">1024</span>**<span class="number">3</span>:<span class="number">.1</span>f&#125;</span> GiB&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>这段脚本输出的是十进制字节数与二进制单位下的体积，两者相差约 7.4%，在容量规划时经常造成误解：510 GB 与 476 GiB 指的是同一份权重。采购显存时用的是二进制单位，看模型卡的参数规模时用的是十进制习惯，混用一次就可能少算一张卡。</p>
+<p>同一个文件还可以用来核对参数量。用总字节数除以总参数量，得到平均每参数字节数；如果它明显小于 1，说明有相当比例的权重以 4 比特存储。这个比值是判断“模型卡说的量化方案是否真的落地到权重里”的最快手段，比读文档可靠。</p>
+<h3 id="批处理、预填充与解码分离"><a href="#批处理、预填充与解码分离" class="headerlink" title="批处理、预填充与解码分离"></a>批处理、预填充与解码分离</h3><p>服务化这一层，两家公开的信息深度完全不同，但两侧的线索指向了同一种架构趋势。</p>
+<p>DeepSeek 最特殊的地方不是 552B 的总参数量，而是预填充与解码的激活参数不一样：预填充每 token 激活 8B，解码每 token 激活 16B。常规 MoE 模型在两个阶段的激活量相同，因此服务端可以直接沿用“预填充吃算力、解码吃显存带宽”的经验来分配资源。当解码的激活量是预填充的两倍时，这个经验会失效：解码阶段的计算占比明显上升，最优的预填充与解码资源配比会随之偏移。参考实现里给出的 8 路张量并行与专家精度选项，实际上把权重切分方式的选择权交给了部署方，但没有给出任何生产级调度建议——这是“参考实现”定位带来的必然结果。</p>
+<p>智谱那边披露得更像生产系统的设计文档。它描述的是编码—预填充—解码三阶段分离的架构：多模态编码、提示预填充、逐 token 解码被拆成可以独立扩缩容的工作池，并在此基础上叠加层切分、线性注意力与输出头的节点内张量并行、W8A8 量化以及 INT8、FP8、BF16 混合的缓存量化。它还提到一个叫 ReplaySSM 的组件，作用是在缓存缺失时重放线性注意力的状态。</p>
+<p>ReplaySSM 值得单独解释一句，因为它暴露了线性注意力在服务层的一个固有问题。传统 Transformer 的前缀缓存可以按 token 位置任意截断与复用，因为每个位置的键值都是独立存储的；而线性注意力的“缓存”是一个随序列演进的递归状态，任意位置的状态只能通过从头重放得到。前缀共享、会话分支、缓存驱逐之后重新命中，这些在传统 KV 缓存上很廉价的操作，在状态型模型上都变成了重放成本。智谱选择把重放做成一个专门的组件，说明这种成本在其真实流量里已经大到需要优化。</p>
+<p>有意思的是，DeepSeek 面对的其实是同一类问题，只是发生位置不同。它的滑窗注意力如果完整持久化会占用大量外部存储，于是采用了有界重放：只重放最近若干 token 来重建滑窗状态。换句话说，两家公司在两个不同的组件上，独立选择了“宁可重算一小段，也不把全部状态存下来”的策略。这可能是 2026 年长上下文服务系统最重要的共同经验之一，而它几乎不会出现在任何模型卡的能力描述里。</p>
+<h3 id="量化路径的三种选择"><a href="#量化路径的三种选择" class="headerlink" title="量化路径的三种选择"></a>量化路径的三种选择</h3><p>如果你想用更少的显存承载这两个模型，有三条路径，风险依次上升。</p>
+<p>第一条是直接使用官方发布的 FP8 权重。DeepSeek 与 GLM 的仓库默认都是 FP8，DeepSeek 额外把专家权重压到 FP4，GLM 则把 1509 个数值敏感模块排除在量化之外。这条路径的优点是行为可预测，缺点是体积已经固定：510 GB 与 328 GB。</p>
+<p>第二条是使用社区的低比特量化版本。GLM 的生态里已经出现 GGUF 与 NVFP4 版本，DeepSeek 那边也有第三方在发布当天生成 GGUF、MLX 等转换版本。这条路径能把体积再压缩一半以上，代价是量化误差在 MoE 与稀疏注意力上的影响难以先验估计，尤其是路由器的选择可能对微小扰动非常敏感——智谱把路由门排除在量化之外，本身就是对这类风险的回应。</p>
+<p>第三条是自己做量化感知校准。只有在你有明确的质量基线、且愿意为每个基准重跑评测时才值得考虑。这条路径的隐性成本很高：你需要一套能覆盖工具调用、长上下文与多模态的评测集，否则很容易得到一个“通用基准没掉分但工具调用全崩”的模型。</p>
+<p>无论走哪条路径，都建议先做一件事：用真实流量采样一小批请求，测出在目标量化下工具调用参数的结构错误率，而不只是测困惑度或通用基准。结构化输出的退化往往先于通用能力的退化出现，而且更难被常规评测发现。</p>
+<h3 id="真实部署算例：一次完整换算"><a href="#真实部署算例：一次完整换算" class="headerlink" title="真实部署算例：一次完整换算"></a>真实部署算例：一次完整换算</h3><p>假设你有一个典型的代码 agent 场景：系统提示与工具定义合计 8K token，仓库上下文 200K token，每轮追加 5K token 的工具输出，平均每个任务 20 轮，输出总量 30K token。下面是我用两家公开价格做的成本换算，其中 DeepSeek 取非高峰价格，GLM 取标准价格。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">计费项</th>
+<th style="text-align:left">DeepSeek-V4.1-Flash</th>
+<th style="text-align:left">GLM-5.3-Flash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">输入（缓存未命中）</td>
+<td style="text-align:left">每百万 token 0.15 美元</td>
+<td style="text-align:left">每百万 token 0.15 美元</td>
+</tr>
+<tr>
+<td style="text-align:left">输入（缓存命中）</td>
+<td style="text-align:left">每百万 token 0.003 美元（非高峰）</td>
+<td style="text-align:left">每百万 token 0.03 美元</td>
+</tr>
+<tr>
+<td style="text-align:left">输出</td>
+<td style="text-align:left">每百万 token 0.60 美元（非高峰）</td>
+<td style="text-align:left">每百万 token 0.50 美元</td>
+</tr>
+<tr>
+<td style="text-align:left">并发上限</td>
+<td style="text-align:left">2500</td>
+<td style="text-align:left">官方文档未在该页披露</td>
+</tr>
+<tr>
+<td style="text-align:left">最大输出</td>
+<td style="text-align:left">384K</td>
+<td style="text-align:left">128K</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>如果你把这个场景跑完之后统计 token，会发现成本几乎完全由“命中缓存的输入”决定。假设累计输入 1200 万 token、其中九成命中缓存：</p>
+<script type="math/tex; mode=display">
+C_{\text{DS}} \approx 1.2 \times 10^{7} \times 0.9 \times 0.003 + 1.2 \times 10^{7} \times 0.1 \times 0.15 + 3 \times 10^{4} \times 0.6</script><script type="math/tex; mode=display">
+C_{\text{GLM}} \approx 1.2 \times 10^{7} \times 0.9 \times 0.03 + 1.2 \times 10^{7} \times 0.1 \times 0.15 + 3 \times 10^{4} \times 0.5</script><p>按每百万 token 价格单位计算，前者的缓存部分约 32.4 美元加未命中部分 1.8 美元加输出 0.018 美元，合计约 34.2 美元；后者约 324 美元加 1.8 美元加 0.015 美元，合计约 325.8 美元。差距接近 10 倍，全部来自缓存命中单价的十倍差异。这并不是说 GLM 更贵——如果你开启智谱的折扣时段或订阅套餐，数字会完全不同——而是说：在 agent 工作负载里，比较模型的正确方式是比较缓存策略与缓存命中率，而不是比较“每百万输入 token”的价格标签。两家标称的未命中输入价格完全相同，这一点很容易让人误以为成本结构相同。</p>
+<h3 id="缓存命中率从哪里来"><a href="#缓存命中率从哪里来" class="headerlink" title="缓存命中率从哪里来"></a>缓存命中率从哪里来</h3><p>既然成本由缓存命中主导，就必须问一个更基础的问题：这两套协议分别有多容易命中缓存。</p>
+<p>前缀缓存的基本前提是前缀稳定。只要两次请求共享的那段 token 序列逐字节相同，服务端就可以复用之前算出的状态。任何在历史消息里做“洗牌”的操作都会让缓存失效：在系统提示里插入当前时间戳、把工具结果排序后前移、在每轮重新拼接不同的元数据，都会让本该命中的部分变成未命中。</p>
+<p>在这件事上，两条协议有一处值得注意的差异，就是历史思考内容是否保留。DeepSeek 的编码器默认丢弃最后一条用户消息之前的历史思考内容，但当对话里存在工具调用时，这个丢弃会被自动关闭，理由是工具调用场景需要跨步骤的连贯推理；GLM 的模板则用 <code>clear_thinking</code> 控制，取值为真时只保留最后一条用户消息之后的思考内容。对缓存的影响是直接的：历史中保留多少思考内容，决定了后续每一轮的输入长度，也决定了前一轮的缓存前缀在下一轮是否还能原样命中。保留全部思考意味着更长的输入但更稳定的前缀；丢弃历史思考意味着更短的输入但每轮都要重新构造前缀。</p>
+<p>这里还出现了一处官方文档的不一致，值得记录下来：GLM 的模型卡建议在对话场景显式传入 <code>clear_thinking=true</code>，而同一家的服务文档在推荐参数里写的是建议把 <code>thinking.clear_thinking</code> 设为 <code>false</code>。两处的语义方向相反，我无法判断哪一处代表了最新的意图。对使用方来说，务实的做法是显式传参、用同一批请求分别测两种设置的缓存命中率与答案质量，而不是依赖默认值。</p>
+<h3 id="盈亏平衡点在哪里"><a href="#盈亏平衡点在哪里" class="headerlink" title="盈亏平衡点在哪里"></a>盈亏平衡点在哪里</h3><p>把两档价格代入，可以算出“什么情况下谁更便宜”的解析条件。设输入 token 中命中缓存的比例为 $h$，输出 token 与输入 token 的比例为 $r$，用每百万 token 的美元价格计算。</p>
+<p>DeepSeek 非高峰档相对智谱标准价的差值为：</p>
+<script type="math/tex; mode=display">
+\Delta_{\text{off-peak}} = 0.1r - 0.027h</script><p>当该值为正时 DeepSeek 更贵，因此非高峰档的临界命中率为：</p>
+<script type="math/tex; mode=display">
+h^{*} = 3.70r</script><p>DeepSeek 高峰档的差值为：</p>
+<script type="math/tex; mode=display">
+\Delta_{\text{peak}} = 0.7r + 0.15 - 0.174h</script><p>对应的临界命中率为：</p>
+<script type="math/tex; mode=display">
+h^{*} = 0.862 + 4.02r</script><p>这两条式子给出了非常清晰的判断规则。非高峰档的临界命中率与输出比例成正比：只要 r 不超过 0.27，临界值就落在 100% 以内；而当 r 取常见的 0.03（也就是每 1M 输入对应 30K 输出），临界命中率只有约 11%。也就是说，非高峰时段只要缓存策略正常发挥，DeepSeek 几乎总是更便宜。但在高峰时段，临界命中率高到 86% 以上，除非你的工作负载几乎全是重复前缀，否则在高峰期调用 GLM-5.3-Flash 反而更划算，因为它的输出单价只有 0.50 美元，而 DeepSeek 高峰档的输出单价是 1.20 美元。</p>
+<p>这个结论有一个重要的前提需要说明：它只比较标价，不比较两家可能存在的折扣、订阅套餐、限时免费缓存存储与批量优惠，也没有考虑失败重试带来的额外输出。智谱的文档里提到编码套餐在非高峰时段只消耗 50% 的额度，DeepSeek 则用峰谷计价来引导流量离开高峰。两者的定价策略在这里出现了一个有趣的分岔：一边用时间维度调节，一边用订阅额度调节。如果你的流量在时间上足够弹性，前者的收益更容易被量化。</p>
+<h2 id="评测数字的可比性审计"><a href="#评测数字的可比性审计" class="headerlink" title="评测数字的可比性审计"></a>评测数字的可比性审计</h2><h3 id="同一基准、不同脚手架"><a href="#同一基准、不同脚手架" class="headerlink" title="同一基准、不同脚手架"></a>同一基准、不同脚手架</h3><p>DeepSeek 的模型卡做了一件值得称赞的事：它把同一模型在八种不同 agent 脚手架下的成绩并列出来。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">脚手架</th>
+<th style="text-align:left">DeepSWE v1.1（解决率）</th>
+<th style="text-align:left">Terminal-Bench 2.1（通过率）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Claude Code</td>
+<td style="text-align:left">69.8</td>
+<td style="text-align:left">88.0</td>
+</tr>
+<tr>
+<td style="text-align:left">Codex</td>
+<td style="text-align:left">65.6</td>
+<td style="text-align:left">84.1</td>
+</tr>
+<tr>
+<td style="text-align:left">OpenCode</td>
+<td style="text-align:left">65.5</td>
+<td style="text-align:left">85.0</td>
+</tr>
+<tr>
+<td style="text-align:left">Pi</td>
+<td style="text-align:left">66.2</td>
+<td style="text-align:left">86.1</td>
+</tr>
+<tr>
+<td style="text-align:left">mini-SWE</td>
+<td style="text-align:left">74.2</td>
+<td style="text-align:left">90.3</td>
+</tr>
+<tr>
+<td style="text-align:left">DeepSeek Harness 极简模式</td>
+<td style="text-align:left">72.6</td>
+<td style="text-align:left">90.6</td>
+</tr>
+<tr>
+<td style="text-align:left">DeepSeek Harness 标准模式</td>
+<td style="text-align:left">70.5</td>
+<td style="text-align:left">85.8</td>
+</tr>
+<tr>
+<td style="text-align:left">DeepSeek Harness PTC 模式</td>
+<td style="text-align:left">67.6</td>
+<td style="text-align:left">85.8</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>这张表的含义不是“哪个脚手架更好”，而是：同一个模型、同一个基准，成绩会因为脚手架不同而相差 8 到 9 个百分点，最高分与最低分之比接近 14%。任何跨厂商的“同一基准对比”，如果不锁定脚手架、上下文长度、采样参数与重试次数，实际上比较的是两个系统而不是两个模型。</p>
+<h3 id="同脚手架下的交叉对比"><a href="#同脚手架下的交叉对比" class="headerlink" title="同脚手架下的交叉对比"></a>同脚手架下的交叉对比</h3><p>幸运的是，两家的公开材料里存在两处可以对齐的测量，这是本文唯一愿意给出的跨厂商定量比较。</p>
+<p>第一处在 Terminal-Bench 2.1。DeepSeek 给出了自家模型在 Claude Code 脚手架下的 88.0；智谱的模型卡脚注明确说明其 Terminal-Bench 2.1 是在 Claude Code 2.1.207 下评测，温度为 1.0、最大生成长度 65536、超时 6 小时，成绩为 84.3。两者的脚手架一致，采样参数接近，差距约 3.7 个百分点。</p>
+<p>第二处在 DeepSWE v1.1。DeepSeek 的主表注明该基准使用 mini-SWE 脚手架以对齐官方设定，成绩 74.2；智谱的评测结果文件注明其 DeepSWE 运行方式为 mini-swe-agent、温度 0.95、上下文 400K、超时 6 小时，成绩 63.4。差距约 10.8 个百分点。</p>
+<p>我倾向于认为这两个数字比“各自宣称的 SOTA”更有价值，但仍然要标注四点保留：第一，都没有第三方复现；第二，两者评测日期相差两周，而基准本身可能更新；第三，DeepSeek 用的是 1M 上下文窗口，GLM 是 400K；第四，样本量与重试策略不同，DeepSeek 说明其 DeepSWE 每个任务采样 8 次、Terminal-Bench 采样 3 次，智谱未在公开材料中说明。</p>
+<h3 id="表格里的版本错配"><a href="#表格里的版本错配" class="headerlink" title="表格里的版本错配"></a>表格里的版本错配</h3><p>DeepSeek 的对照表里有一列标注为 GLM-5.3。如果把这一列与智谱公开的数字对照，会发现一个需要注意的情况：该列在 Terminal-Bench 2.1 上是 88.2、DeepSWE v1.1 上是 66.9，量级明显高于 GLM-5.3-Flash 自己公布的 84.3 与 63.4，这与“非 Flash 版本更强”的产品分层一致；但同一列在 AutomationBench 上是 48.8，而智谱文档给出的 GLM-5.3-Flash 在 AutomationBench v1.0.6 上恰好也是 48.8。</p>
+<p>我不打算断言这是错误：同分是可能的，两家也可能在同一个基准上做了不同版本的复测。但这件事本身说明了一个更普遍的问题：在跨厂商的对照表里，模型版本与基准版本的对应关系经常是不够精确的，读者若想认真使用这些数字，必须回溯到每一列的原始出处，而不是相信表格的列标题。</p>
+<h3 id="第三方指数从哪里来"><a href="#第三方指数从哪里来" class="headerlink" title="第三方指数从哪里来"></a>第三方指数从哪里来</h3><p>智谱在服务文档里引用了 Artificial Analysis Intelligence Index v4.1.1 的成绩：57 分，每任务成本 0.045 美元（折扣价），并称这一水平此前只在约十倍成本下才能达到。需要强调的是，这个数字是智谱在自己的文档里对第三方指数的引用，而不是第三方发布的独立评测报告；我也没有找到该指数的完整方法说明与复现脚本。</p>
+<p>DeepSeek 那边完全没有引用第三方指数，所有分数都来自内部评测框架，并且明确写了“同一评估设置下，0.3 分之内的差异视为相当”。这句声明值得尊重，但它同时也提醒读者：分数差异小于 0.3 时不该做任何结论；而当差异大于 0.3 时，你也无法判断有多少来自采样噪声。</p>
+<h3 id="推理类基准与裁判模型"><a href="#推理类基准与裁判模型" class="headerlink" title="推理类基准与裁判模型"></a>推理类基准与裁判模型</h3><p>有两类指标特别容易在跨厂商比较中被误读，值得单独说明。</p>
+<p>第一类是以竞赛形式给出的能力分。DeepSeek 的对照表里给出了 Codeforces 的等效分 3471，这个数字在人类选手的语境里属于顶尖水平。但竞赛分数同时取决于题目集合、比赛场次、提交次数与评分函数，而我在公开材料里没有看到这些设定。更谨慎的理解方式是：它代表“在厂商的模拟协议下，模型达到的等效水平”，而不是“等于某个人类选手的 3471 分”。同理，数学类的 Apex 与数学推理基准在不同实现下的差异也主要来自解题协议，而不是来自模型能力的连续变化。</p>
+<p>第二类是使用语言模型作为裁判的评测。智谱在模型卡里明确写了 HLE 的裁判模型是某一个具体版本的模型，并且把最大上下文、求解策略与是否使用工具都写进了脚注，这一点在透明度上是加分的。但也正因为如此，它与 DeepSeek 的同名指标无法直接对照：DeepSeek 的 HLE 有两个口径，分别是不带工具的 36.8 分（纯文本子集为 39.1 分）与带工具的 63.9 分；智谱给出的是带工具、在指定上下文管理策略与指定裁判模型下的 55.3 分。同一张纸上的三个数字分别对应三种任务定义，它们之间的差距可以用“是否允许上网”来解释，而不是用“模型强不强”来解释。</p>
+<p>由此可以导出一条实用原则：当你在模型卡上看到“某基准 + 某分数”时，至少确认四件事——是否使用工具、上下文长度上限是多少、裁判或评分脚本是什么、采样与重试次数是多少。缺一项，这个数字就不能跨厂商使用。</p>
+<h3 id="两天内可以完成的复现清单"><a href="#两天内可以完成的复现清单" class="headerlink" title="两天内可以完成的复现清单"></a>两天内可以完成的复现清单</h3><p>如果你确实需要在这两个模型之间做决定，下面这份清单是我认为投入产出比最高的验证顺序。它的特点是全部围绕工程约束，而不围绕排行榜。</p>
+<p>第一，协议一致性测试。用二十条覆盖单工具、多工具、带图片、多轮工具结果的请求，分别跑两个模型，统计结构化输出的解析失败率与参数类型错误率。这一项通常能在半天内完成，而且最能暴露集成层的问题。</p>
+<p>第二，前缀缓存命中率与成本归因。在网关里记录每次请求的输入 token 数、缓存命中数、输出 token 数与最终计费，跑一天真实流量，然后回头看前面那两条盈亏平衡公式是否成立。注意要区分高峰与非高峰时段，否则结论会被时间窗口污染。</p>
+<p>第三，长上下文精度衰减。用自己的文档长度分布做「同一问题、不同长度」的扫描，而不是只测最长的一段。你真正需要知道的是精度从哪一段长度开始明显下降，以及下降的斜率。</p>
+<p>第四，量化前后的结构化输出退化。这一项只有在你要自行量化时才需要，但要放在部署前而不是部署后。</p>
+<p>第五，多模态预算校准。把同一批截图按两个模型各自的图像预算处理，对比识别质量与 token 消耗。这一项决定了长截图与密集文档场景里谁能撑住。</p>
+<p>第六，失败重试与超时预算。把超时、断流、解析失败三类事件的额外输出计入成本。投机解码与思考预算让输出长度更难预测，因此这部分开销在多轮任务里并不小。</p>
+<h2 id="开源到什么程度：两份仓库给出的答案"><a href="#开源到什么程度：两份仓库给出的答案" class="headerlink" title="开源到什么程度：两份仓库给出的答案"></a>开源到什么程度：两份仓库给出的答案</h2><p>“开源”在这两个仓库里都不是一个二元状态，梳理它们各自放出了什么、扣下了什么，比争论谁更开放更有用。</p>
+<p>权重是两个仓库都放出的部分，而且都以 FP8 为主。许可证标签上，DeepSeek-V4.1-Flash 是 MIT，GLM-5.3-Flash 也是 MIT，但同一系列里的成员并不一致：DeepSeek 的 V4 Pro 权重标注也是 MIT，而智谱的 GLM-5.3 非 Flash 版本标注为 other。也就是说，如果你想商用最强的那一档，DeepSeek 目前给出的许可证信号更清晰，而智谱在非 Flash 上保留了自定义条款。这不是价值判断，但它会直接影响法务评审的成本与周期。</p>
+<p>训练相关的内容，两家都没有给出完整数据。DeepSeek 给的是语料规模、序列长度、上下文扩展时机与后训练范式的概述；智谱给的是语料规模与架构改动，细节指向技术报告。任何声称“完全可复现”的期待在这两个模型上都不成立，这一点必须说清楚，因为它是研究者与工程师需求分岔的根源：研究者需要的是训练细节，工程师需要的是推理细节，而两份仓库明显更偏向后者。</p>
+<p>评测的开放程度则出现了有趣的互补。DeepSeek 放出了评测复现说明与脚手架补丁，甚至包括把它自己的 agent 脚手架接入第三方评测平台的补丁，但核心的评测数字仍然来自内部框架。智谱把可被机器读取的评测结果文件放在了权重仓库里，每一项都标注了数据集标识、日期与备注，第三方可以直接抓取，但复现步骤没有随附。换句话说，一家给了方法，一家给了数据，两家都没有给完整链路。</p>
+<p>协议层的开放程度差距最大。DeepSeek 把提示编码作为独立组件发布，附带测试与生产级实现；GLM 把协议放在一份 Jinja 模板里，语义完整但可测试性较弱。如果你的业务需要长期维护一套与模型版本解耦的协议层，这个差距会在半年后变得非常明显：前者可以跟随上游更新库版本，后者需要人工比对模板差异。</p>
+<p>最后是推理实现的定位差异。DeepSeek 明确说参考实现不是生产引擎，等于把服务化的责任交还给你；GLM 直接把责任交给外部框架。两者都不是“拿到就能上生产”，只是责任转移的方向不同。</p>
+<h2 id="反向检查：我可能错在哪里"><a href="#反向检查：我可能错在哪里" class="headerlink" title="反向检查：我可能错在哪里"></a>反向检查：我可能错在哪里</h2><p>上面所有判断都建立在公开材料与少量本地实验之上，它们完全可能与真实情况不符。为了让这篇比较经得起日后的检验，我把最可能出错的四个地方写下来。</p>
+<p>第一，我可能高估了协议差异的重要性。如果绝大多数团队最终都通过框架封装来调用模型，那么模板可测试性差、参数类型不统一这些问题，都会被框架层吸收掉，用户根本不会遇到。我之所以仍然把它放在显眼位置，是因为自研网关与私有化部署在中文技术团队里并不罕见，而这些场景恰好绕不开框架封装。如果你的使用方式是通过官方 API 或成熟框架，这一节的实际权重应当调低。</p>
+<p>第二，我可能低估了能力差距的影响。本文的定量比较只覆盖了两个可以对齐的基准，其中 DeepSWE 的差距接近 11 个百分点。如果这个差距在真实仓库任务上被复现，那么选择就很清楚了，其余所有工程细节都只是次要因素。反过来说，如果这个差距主要来自上下文长度与采样策略，那么它就不可复现。在没有第三方复现的情况下，我倾向于把这类差距当作“需要自己验证的线索”，而不是结论。</p>
+<p>第三，我的成本模型可能过于简化。它假设了稳定的缓存命中率、稳定的输入输出比例，并且完全忽略失败重试、并发排队与限流造成的额外成本。在真实的 agent 流量里，同样的任务可能因为重试而多消耗两到三倍的输出 token，这会显著改变盈亏平衡的位置，而且对输出单价更高的那一方更不利。</p>
+<p>第四，我可能把“文档完备”误认为“实现质量高”。一份写得漂亮的模型卡可以掩盖实现上的粗糙，一份简短的模型卡也可能对应非常成熟的代码。我尽可能把判断锚定在可以执行的事实上——索引文件里的字节、编码器能否跑通、模板在同一台机器上渲染出什么——但这仍然只是抽样，不是全面评估。</p>
+<p>把四条放在一起，本篇文章最稳妥的用法是：把它当作一份“检查清单与差异地图”，而不是一份“选型结论”。清单可以直接用，结论必须自己测。</p>
+<h2 id="两个模型各自的失败模式"><a href="#两个模型各自的失败模式" class="headerlink" title="两个模型各自的失败模式"></a>两个模型各自的失败模式</h2><p>如果让我用一句话概括这两个模型在生产环境里最可能出问题的地方，我会说：DeepSeek 的失败更可能出现在解析与显存容量上，GLM 的失败更可能出现在协议与缓存策略上。下面是支撑这个判断的几条具体理由。</p>
+<p>DeepSeek 这边有三处值得提前设计。第一，解析函数基于断言，遇到格式不完整的输出会直接抛异常，而不是尽力恢复。这意味着网关必须把解析失败当作一条独立路径来处理，包括降级、重试与用户可见的提示，而不是让它冒泡成 500 错误。第二，Engram 记忆表的两张表各有约 3.84 亿行、每行 256 维，合计约 196.6B 参数。虽然查表是稀疏的，但这些表的访存量巨大，任何试图把它们全部塞进显存的部署都会挤占本已紧张的容量；把它们放在主机内存或外部存储上又会引入访问延迟。这一部分在模型卡里几乎只是一句话，但它是 510 GB 权重中相当可观的一块。第三，解码阶段激活 16B，意味着单请求的解码计算量比“8B 激活”这个印象更高，在做并发规划时不能按预填充的算力画像去推。</p>
+<p>GLM 这边也有三处。第一，协议语义集中在模板里，任何自研实现都必须精确复刻模板的全部行为，包括工具结果的排序规则、重复 ID 的判定、思考内容的保留策略。第二，1509 个模块不参与量化，会带来混合精度的内核调度复杂度：同一层里既有 FP8 的线性层，又有保持高精度的归一化与门控，对推理框架的融合能力要求更高，这也是为什么官方同时给出多个框架的配方。第三，思考无法关闭，意味着任何一次调用的输出下限都比可关闭思考的模型更高；在简单的分类、抽取、路由这类任务上，这部分输出会变成纯成本。</p>
+<p>需要说明的是，这两组失败模式都不是缺陷，而是设计选择的结果。把它们的代价提前写进系统设计里，比上线之后再回头改架构便宜得多。</p>
+<h2 id="如果今天就要选一个"><a href="#如果今天就要选一个" class="headerlink" title="如果今天就要选一个"></a>如果今天就要选一个</h2><p>把上面所有信息折成一张决策表，会得到下面这样的结论。请注意，这张表的前提是“你确实有能力部署 300 GB 以上的权重”或者“你走 API”；如果你的目标是在单张 24GB 显卡上跑本地模型，这两个模型都不在候选范围内，无论量化到多低。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">你的约束</th>
+<th style="text-align:left">更可能适配的一方</th>
+<th style="text-align:left">理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">需要在自研推理栈里精确复现提示协议</td>
+<td style="text-align:left">DeepSeek</td>
+<td style="text-align:left">有可运行参考实现、黄金测试用例与独立协议库</td>
+</tr>
+<tr>
+<td style="text-align:left">需要尽快在现有框架里跑通</td>
+<td style="text-align:left">GLM</td>
+<td style="text-align:left">六个框架的配方齐备，社区量化版本已存在</td>
+</tr>
+<tr>
+<td style="text-align:left">长会话、重复上下文的 agent 负载</td>
+<td style="text-align:left">DeepSeek</td>
+<td style="text-align:left">缓存命中单价低一个数量级，KV 缓存给出绝对字节数便于容量规划</td>
+</tr>
+<tr>
+<td style="text-align:left">需要处理视频与长时间轴</td>
+<td style="text-align:left">GLM</td>
+<td style="text-align:left">官方文档给出采样参数与最大 token 预算</td>
+</tr>
+<tr>
+<td style="text-align:left">需要用更小硬件承载多模态模型</td>
+<td style="text-align:left">GLM</td>
+<td style="text-align:left">权重体积小约 36%，生态量化路径更多</td>
+</tr>
+<tr>
+<td style="text-align:left">需要把推理结果追溯到内核层</td>
+<td style="text-align:left">DeepSeek</td>
+<td style="text-align:left">参考实现包含注意力索引器、Engram、MoE 与前向路径</td>
+</tr>
+<tr>
+<td style="text-align:left">需要严格的非思考模式</td>
+<td style="text-align:left">DeepSeek</td>
+<td style="text-align:left">官方 API 同时支持思考与非思考；GLM 的接口只支持开启思考</td>
+</tr>
+<tr>
+<td style="text-align:left">需要连续调节推理成本</td>
+<td style="text-align:left">DeepSeek</td>
+<td style="text-align:left">思考预算为 1 到 100 的整数，配合峰谷定价可做精细调度</td>
+</tr>
+<tr>
+<td style="text-align:left">需要一次性能拉满的复杂任务</td>
+<td style="text-align:left">数据不足</td>
+<td style="text-align:left">两者最优成绩来自不同脚手架，无法在公开材料上完成对齐</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>这里必须插入一段反方意见，否则这张表会误导人。上面所有“更可能适配”的判断，都建立在公开文档的完整度上，而不是实测性能上。一个在文档里写得更清楚的厂商，天然会在这种比较中占优势，这与它的模型是否更好无关。如果两周后第三方评测显示 GLM-5.3-Flash 在真实代码仓库任务上明显更强，那么“提示协议更好读”这一优势将不足以弥补能力差距。反过来，如果 DeepSeek 的 V4.1-Flash 在实际服务中出现明显的吞吐问题，那么缓存单价上的十倍优势也会被推理成本吃掉。这两件事现在都无法从公开材料判断。</p>
+<p>还有第三个选项常常被忽略：两个都不用。如果你的任务规模不大，或者你已经在使用别的模型并且没有遇到硬约束，那么引入一个 300 到 510 GB 的权重集合所需要的运维成本，很可能高于它带来的收益。这两个模型真正的目标场景是重度的代码 agent、长文档与多模态流水线，而不是“想试试最新的开源模型”。把这一点想清楚，可以省下很多时间。</p>
+<h2 id="局限与未验证的部分"><a href="#局限与未验证的部分" class="headerlink" title="局限与未验证的部分"></a>局限与未验证的部分</h2><p>写作本文时，我明确没有验证、也无法验证的事情包括以下几类。第一，我没有下载或运行任何一个模型的权重，所有关于运行时行为的陈述要么来自文档，要么来自提示编码与模板渲染这一类轻量组件的实测。第二，我没有做任何 token 级吞吐、首 token 延迟或并发压测；官方给出的“300 到 400 token 每秒”这类社区数字我没有采用，因为它们既没有硬件上下文，也没有可复现脚本。第三，缓存倍数的口径未公开，我无法验证 437 倍、4.44 倍这些数字的测量方法。第四，评测数字全部为自报，我给出的跨厂商对齐只是基于公开脚注的近似，不构成排名。第五，许可证只有仓库标注的 MIT 与 other 两个标签，我没有做条款层面的法律解读。</p>
+<p>还有一类更隐蔽的局限值得指出：本文引用的所有“工程问题”，都来自发布后不到三周的仓库快照。开源仓库会持续更新，编码器里的编码声明、模板里的扩展语法都可能在下一次提交中被修复。因此这些问题的价值不在于“控诉”，而在于说明一件事：当你评估一个开源模型时，仓库的可测试性与更新速度，往往比发布当天的基准分数更能预测三个月后的使用体验。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>如果把两个模型放在显微镜下看代码，会发现它们对“开源”的理解并不相同。DeepSeek 交付的是一套可以读、可以跑、可以复现的工程样本，附带明确的缓存字节数和数值化的推理预算；智谱交付的是一套完整的框架接入路径与产品化能力描述，附带一个被承认的短板（KV 缓存仍略大于两个同行）和一个明确的产品分层。前者更像论文的工程附录，后者更像产品的技术白皮书。</p>
+<p>这两种风格没有高下之分，但它们适合不同的读者。如果你要在一个已有推理平台上做深度定制、把协议接进自研网关、或者需要向团队解释每一字节显存的去向，DeepSeek 的仓库会省下你大量时间。如果你要在一个月内把一个多模态代码 agent 交付上线，且愿意接受框架给出的默认行为，GLM 的路径更短。真正危险的做法是把两者的宣传数字拼成一张表，然后在没有做任何压测的情况下宣布谁是赢家——在 2026 年，开源模型的差距已经小到无法用模型卡分辨，剩下能分辨的部分，几乎全都是工程细节。</p>
+<p>最后一个值得记住的观察是：这篇文章里最有价值的信息，几乎没有一条来自基准分数表。真正影响决策的，是权重索引里的那一串字节数、编码器里缺失的一行编码声明、模板里一个静默回落的参数分支、以及两家在缓存与重放策略上的分歧。这些细节不会出现在发布会的幻灯片上，但它们决定了一个模型在你自己系统里的样子。下次再有人问你“这两个模型哪个更强”，你也许可以先把问题换成“在什么约束下、由谁维护、要跑多久”。</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash">DeepSeek-V4.1-Flash 模型卡（Hugging Face）</a></li>
+<li><a target="_blank" rel="noopener" href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/encoding/encoding.py">DeepSeek-V4.1 提示编码参考实现</a></li>
+<li><a target="_blank" rel="noopener" href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/encoding/README.md">DeepSeek-V4.1 编码器说明与 DSML 格式</a></li>
+<li><a target="_blank" rel="noopener" href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/inference/README.md">DeepSeek-V4.1 最小推理参考实现</a></li>
+<li><a target="_blank" rel="noopener" href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/evaluation/README.md">DeepSeek-V4.1 评测复现说明</a></li>
+<li><a target="_blank" rel="noopener" href="https://api-docs.deepseek.com/quick_start/pricing">DeepSeek 模型与定价文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://api-docs.deepseek.com/">DeepSeek 快速开始与模型别名说明</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/deepseek-ai/deepseek-recipe">deepseek-recipe 协议工具库</a></li>
+<li><a target="_blank" rel="noopener" href="https://huggingface.co/zai-org/GLM-5.3-Flash">GLM-5.3-Flash 模型卡（Hugging Face）</a></li>
+<li><a target="_blank" rel="noopener" href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/chat_template.jinja">GLM-5.3-Flash 对话模板</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.z.ai/guides/llm/glm-5.3-flash">GLM-5.3-Flash 官方模型文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.z.ai/guides/overview/pricing">GLM 系列 API 定价</a></li>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2602.15763">GLM-5 技术报告</a></li>
+<li><a target="_blank" rel="noopener" href="https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3-Flash">SGLang 的 GLM-5.3-Flash 配方</a></li>
+<li><a target="_blank" rel="noopener" href="https://recipes.vllm.ai/zai-org/GLM-5.3-Flash">vLLM 的 GLM-5.3-Flash 配方</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/glm5_next.md">Transformers 的 GLM-5 Next 文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/kvcache-ai/ktransformers/blob/main/doc/en/kt-kernel/GLM-5.3-Flash-Tutorial.md">KTransformers 的 GLM-5.3-Flash 教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://unsloth.ai/docs/models/glm-5.3">Unsloth 的 GLM-5.3 指南</a></li>
+<li><a target="_blank" rel="noopener" href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp">DeepSeek-V4-Flash-Vision-Exp 模型卡</a></li>
+<li><a target="_blank" rel="noopener" href="https://huggingface.co/zai-org/GLM-5.3">GLM-5.3 非 Flash 版本模型卡</a></li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://yuzhang.wang">YuZhangWang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yuzhang.wang/165-ds41-vs-glm53f/">https://yuzhang.wang/165-ds41-vs-glm53f/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://yuzhang.wang" target="_blank">YuZhangWang的领域</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/">开源模型</a><a class="post-meta__tags" href="/tags/%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90/">代码分析</a></div><div class="post-share"><div class="social-share" data-image="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202609101844-ds41-vs-glm53f.png" data-sites="wechat,qq,weibo"></div><link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://gcore.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195242695.jpg" target="_blank"><img class="post-qr-code-img" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195242695.jpg" alt="支付宝"/ loading='lazy'></a><div class="post-qr-code-desc">支付宝</div></li><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195556282.png" target="_blank"><img class="post-qr-code-img" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195556282.png" alt="微信"/ loading='lazy'></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/164-500k-two-months/" title="如果两个月赚到五十万，我接下来会怎么活"><img class="cover" src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202609090010-500k-two-months.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post" loading='lazy'><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">如果两个月赚到五十万，我接下来会怎么活</div></div><div class="info-2"><div class="info-item-1"> 这是一篇假设性思考：假设我在两个月的周期内合法地、可复现地赚到了五十万元，并假设这笔钱已经真正进入我的可控账户。它不是投资建议，也不是对任何收入来源的承诺；它只是一个人拿着这笔钱，认真问自己接下来该怎么活。所有数字都是用来帮助思考的，不是用来替我做决定的。  先承认拿到钱的那一刻有点慌很多人会在想象里把“突然有钱”描绘成一种纯粹的快乐：短信提示到账，余额数字上升，心里那块一直悬着的石头终于落地。可真实经历往往不是这样的。五十万不是一笔小钱，但也不是一笔大到足以改变人生结构的钱。它更像是你原本站在一楼，忽然被电梯送到十五楼，周围还是那栋楼，只是视角变了，你开始看见以前看不见的东西，也开始怀疑自己是不是站在一块悬空的平台上。 我首先想做的，不是买什么，而是把这句话写下来：这笔钱是“两个月”的产物，还是“我一个人能够稳定生成”的产物？这两个问题在表面上很像，实际上差得很远。前者描述的是运气和窗口期，后者描述的是能力和系统。如果我只是恰好在两个月的风口里做成了一件事，那么这笔钱的意义就不是“我从此有钱”，而是“我刚好参与了一次短暂的正反馈”。如果我能把它拆解成方法、渠道、产品和复购，那...</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202210171416164.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="author-info-name">YuZhangWang</div><div class="author-info-description">PLUSULTRA!</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">165</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">317</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://yuzhang-wang.translate.goog/?_x_tr_sl=zh-CN&amp;_x_tr_tl=en&amp;_x_tr_hl=zh-CN&amp;_x_tr_pto=wapp"><i class="fa-solid fa-earth-americas"></i><span>English Version Blog</span></a><div class="card-info-social-icons"><a class="social-icon" href="mailto:YuZhangWang233@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://github.com/YuZhangWang" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/19474542" target="_blank" title="bilibili"><i class="fab fa-bilibili" style="color: #FB7299;"></i></a><a class="social-icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/mmqrcode1615295634051.png" target="_blank" title="WeChat"><i class="fab fa-weixin" style="color: #199D18;"></i></a><a class="social-icon" href="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative_pictures01@main/2021/03/09/qrcode_1615295622746.jpg" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #4AABE7;"></i></a><a class="social-icon" href="https://yuzhang.wang/rss2.xml" target="_blank" title="RSS"><i class="fa-solid fa-rss" style="color: #F99C36;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">1.视频发布于B站，文章发布于博客</br> 2.待修复bug:无</br> 3.待优化地方:无</br></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%91%98%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E4%B8%A4%E4%B8%AA%E6%A8%A1%E5%9E%8B%E4%B8%8D%E9%80%82%E5%90%88%E6%94%BE%E5%9C%A8%E5%90%8C%E4%B8%80%E5%BC%A0%E6%8E%92%E8%A1%8C%E6%A6%9C%E4%B8%8A"><span class="toc-number">2.</span> <span class="toc-text">为什么这两个模型不适合放在同一张排行榜上</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%88%E6%9C%AC%E8%B0%B1%E7%B3%BB%E4%B8%8E%E8%A2%AB%E6%AF%94%E8%BE%83%E5%AF%B9%E8%B1%A1%E7%9A%84%E9%94%99%E4%BD%8D"><span class="toc-number">2.1.</span> <span class="toc-text">版本谱系与被比较对象的错位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E5%90%8D%E9%87%8C%E7%9A%84%E9%99%B7%E9%98%B1"><span class="toc-number">2.2.</span> <span class="toc-text">命名里的陷阱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%81%E6%8D%AE%E5%9F%BA%E7%BA%BF%E4%B8%8E%E7%AD%89%E7%BA%A7%E5%88%92%E5%88%86"><span class="toc-number">2.3.</span> <span class="toc-text">证据基线与等级划分</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E4%B8%8E%E6%9E%B6%E6%9E%84%E9%85%8D%E7%BD%AE%E7%9A%84%E9%80%90%E9%A1%B9%E5%AF%B9%E7%85%A7"><span class="toc-number">3.</span> <span class="toc-text">参数与架构配置的逐项对照</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AA%A8%E5%B9%B2%E8%A7%84%E6%A8%A1%E4%B8%8E%E6%BF%80%E6%B4%BB%E5%8F%82%E6%95%B0"><span class="toc-number">3.1.</span> <span class="toc-text">骨干规模与激活参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6%EF%BC%9A%E5%8E%8B%E7%BC%A9%E7%A8%80%E7%96%8F%E4%B8%8E%E7%BA%BF%E6%80%A7%E6%B7%B7%E5%90%88"><span class="toc-number">3.2.</span> <span class="toc-text">注意力机制：压缩稀疏与线性混合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%AE%E5%80%BC%E7%BC%93%E5%AD%98%EF%BC%9A%E4%B8%80%E4%B8%AA%E7%BB%99%E7%BB%9D%E5%AF%B9%E5%AD%97%E8%8A%82%E6%95%B0%EF%BC%8C%E4%B8%80%E4%B8%AA%E7%BB%99%E7%9B%B8%E5%AF%B9%E5%80%8D%E6%95%B0"><span class="toc-number">3.3.</span> <span class="toc-text">键值缓存：一个给绝对字节数，一个给相对倍数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%93%E5%AE%B6%E8%B7%AF%E7%94%B1%E4%B8%8E%E7%A8%80%E7%96%8F%E7%BB%93%E6%9E%84"><span class="toc-number">3.4.</span> <span class="toc-text">专家路由与稀疏结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E6%A8%A1%E6%80%81%E7%BC%96%E7%A0%81%E5%99%A8"><span class="toc-number">3.5.</span> <span class="toc-text">多模态编码器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%AD%E7%BB%83%E4%B8%8E%E5%90%8E%E8%AE%AD%E7%BB%83%E6%B5%81%E7%A8%8B%E7%9A%84%E5%85%AC%E5%BC%80%E7%A8%8B%E5%BA%A6"><span class="toc-number">3.6.</span> <span class="toc-text">训练与后训练流程的公开程度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%8D%E7%BD%AE%E7%BC%96%E7%A0%81%EF%BC%9A%E6%8F%92%E5%80%BC%E6%89%A9%E5%B1%95%E4%B8%8E%E6%97%A0%E4%BD%8D%E7%BD%AE%E7%BC%96%E7%A0%81"><span class="toc-number">3.7.</span> <span class="toc-text">位置编码：插值扩展与无位置编码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B6%85%E8%BF%9E%E6%8E%A5%EF%BC%9A%E4%B8%A4%E5%AE%B6%E7%8B%AC%E7%AB%8B%E6%94%B6%E6%95%9B%E5%88%B0%E5%90%8C%E4%B8%80%E7%BB%84%E8%B6%85%E5%8F%82"><span class="toc-number">3.8.</span> <span class="toc-text">超连接：两家独立收敛到同一组超参</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E6%AD%A5%E9%A2%84%E6%B5%8B%E4%B8%8E%E6%8A%95%E6%9C%BA%E8%A7%A3%E7%A0%81"><span class="toc-number">3.9.</span> <span class="toc-text">多步预测与投机解码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%8D%E8%A1%A8%E3%80%81%E5%81%9C%E6%AD%A2%E7%AC%A6%E4%B8%8E%E7%94%9F%E6%88%90%E5%8F%82%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">词表、停止符与生成参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E7%A4%BA%E5%8D%8F%E8%AE%AE%EF%BC%9A%E5%8F%82%E8%80%83%E5%AE%9E%E7%8E%B0%E4%B8%8E-Jinja-%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%B8%A4%E6%9D%A1%E5%B7%A5%E7%A8%8B%E8%B7%AF%E7%BA%BF"><span class="toc-number">5.</span> <span class="toc-text">提示协议：参考实现与 Jinja 模板的两条工程路线</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E4%B8%80%E6%AE%B5%E5%AF%B9%E8%AF%9D%EF%BC%8C%E4%B8%A4%E7%A7%8D%E7%BC%96%E7%A0%81%E4%BA%A7%E7%89%A9"><span class="toc-number">5.1.</span> <span class="toc-text">同一段对话，两种编码产物</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7%E5%8F%82%E6%95%B0%E7%9A%84%E7%B1%BB%E5%9E%8B%E7%BA%A6%E5%AE%9A%E5%B9%B6%E4%B8%8D%E4%B8%80%E8%87%B4"><span class="toc-number">5.2.</span> <span class="toc-text">工具参数的类型约定并不一致</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E4%BB%A5%E5%A4%8D%E7%8E%B0%E7%9A%84%E5%B7%A5%E7%A8%8B%E9%97%AE%E9%A2%98"><span class="toc-number">5.3.</span> <span class="toc-text">可以复现的工程问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E6%9D%BF%E4%B8%8E%E4%BB%A3%E7%A0%81%E7%9A%84%E6%B5%8B%E8%AF%95%E6%88%90%E6%9C%AC"><span class="toc-number">5.4.</span> <span class="toc-text">模板与代码的测试成本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%8A%E4%B8%A4%E5%A5%97%E5%8D%8F%E8%AE%AE%E6%8A%98%E8%BF%9B%E4%B8%80%E5%A5%97%E5%86%85%E9%83%A8%E8%A1%A8%E7%A4%BA"><span class="toc-number">6.</span> <span class="toc-text">把两套协议折进一套内部表示</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E9%83%A8%E8%A1%A8%E7%A4%BA%E7%9A%84%E9%80%89%E6%8B%A9"><span class="toc-number">6.1.</span> <span class="toc-text">内部表示的选择</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%80%83%E9%A2%84%E7%AE%97%E4%B8%8E%E6%80%9D%E8%80%83%E5%BC%80%E5%85%B3%E7%9A%84%E5%BD%92%E4%B8%80%E5%8C%96"><span class="toc-number">6.2.</span> <span class="toc-text">思考预算与思考开关的归一化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7%E8%B0%83%E7%94%A8%E7%9A%84%E5%8F%8C%E5%90%91%E8%BD%AC%E6%8D%A2"><span class="toc-number">6.3.</span> <span class="toc-text">工具调用的双向转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F%E9%A2%84%E7%AE%97%E4%B8%8E%E6%88%AA%E6%96%AD%E7%AD%96%E7%95%A5"><span class="toc-number">6.4.</span> <span class="toc-text">图像预算与截断策略</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8A%E7%BA%BF%E5%89%8D%E7%9A%84%E6%A3%80%E6%9F%A5%E6%B8%85%E5%8D%95"><span class="toc-number">6.5.</span> <span class="toc-text">上线前的检查清单</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A8%E7%90%86%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%9A%E8%87%AA%E5%B8%A6%E5%8F%82%E8%80%83%E5%AE%9E%E7%8E%B0%E4%B8%8E%E7%94%9F%E6%80%81%E9%9B%86%E6%88%90%E7%9A%84%E5%8F%96%E8%88%8D"><span class="toc-number">7.</span> <span class="toc-text">推理与部署：自带参考实现与生态集成的取舍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E4%B8%AA%E4%BB%93%E5%BA%93%E5%88%86%E5%88%AB%E4%BA%A4%E4%BB%98%E4%BA%86%E4%BB%80%E4%B9%88"><span class="toc-number">7.1.</span> <span class="toc-text">两个仓库分别交付了什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%83%E9%87%8D%E4%BD%93%E7%A7%AF%E4%B8%8E%E6%9C%80%E5%B0%8F%E5%8F%AF%E8%A1%8C%E9%83%A8%E7%BD%B2"><span class="toc-number">7.2.</span> <span class="toc-text">权重体积与最小可行部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%B9%E5%A4%84%E7%90%86%E3%80%81%E9%A2%84%E5%A1%AB%E5%85%85%E4%B8%8E%E8%A7%A3%E7%A0%81%E5%88%86%E7%A6%BB"><span class="toc-number">7.3.</span> <span class="toc-text">批处理、预填充与解码分离</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8F%E5%8C%96%E8%B7%AF%E5%BE%84%E7%9A%84%E4%B8%89%E7%A7%8D%E9%80%89%E6%8B%A9"><span class="toc-number">7.4.</span> <span class="toc-text">量化路径的三种选择</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9C%9F%E5%AE%9E%E9%83%A8%E7%BD%B2%E7%AE%97%E4%BE%8B%EF%BC%9A%E4%B8%80%E6%AC%A1%E5%AE%8C%E6%95%B4%E6%8D%A2%E7%AE%97"><span class="toc-number">7.5.</span> <span class="toc-text">真实部署算例：一次完整换算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%93%E5%AD%98%E5%91%BD%E4%B8%AD%E7%8E%87%E4%BB%8E%E5%93%AA%E9%87%8C%E6%9D%A5"><span class="toc-number">7.6.</span> <span class="toc-text">缓存命中率从哪里来</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%88%E4%BA%8F%E5%B9%B3%E8%A1%A1%E7%82%B9%E5%9C%A8%E5%93%AA%E9%87%8C"><span class="toc-number">7.7.</span> <span class="toc-text">盈亏平衡点在哪里</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%84%E6%B5%8B%E6%95%B0%E5%AD%97%E7%9A%84%E5%8F%AF%E6%AF%94%E6%80%A7%E5%AE%A1%E8%AE%A1"><span class="toc-number">8.</span> <span class="toc-text">评测数字的可比性审计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E4%B8%80%E5%9F%BA%E5%87%86%E3%80%81%E4%B8%8D%E5%90%8C%E8%84%9A%E6%89%8B%E6%9E%B6"><span class="toc-number">8.1.</span> <span class="toc-text">同一基准、不同脚手架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E8%84%9A%E6%89%8B%E6%9E%B6%E4%B8%8B%E7%9A%84%E4%BA%A4%E5%8F%89%E5%AF%B9%E6%AF%94"><span class="toc-number">8.2.</span> <span class="toc-text">同脚手架下的交叉对比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC%E9%87%8C%E7%9A%84%E7%89%88%E6%9C%AC%E9%94%99%E9%85%8D"><span class="toc-number">8.3.</span> <span class="toc-text">表格里的版本错配</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%96%B9%E6%8C%87%E6%95%B0%E4%BB%8E%E5%93%AA%E9%87%8C%E6%9D%A5"><span class="toc-number">8.4.</span> <span class="toc-text">第三方指数从哪里来</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E7%90%86%E7%B1%BB%E5%9F%BA%E5%87%86%E4%B8%8E%E8%A3%81%E5%88%A4%E6%A8%A1%E5%9E%8B"><span class="toc-number">8.5.</span> <span class="toc-text">推理类基准与裁判模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E5%A4%A9%E5%86%85%E5%8F%AF%E4%BB%A5%E5%AE%8C%E6%88%90%E7%9A%84%E5%A4%8D%E7%8E%B0%E6%B8%85%E5%8D%95"><span class="toc-number">8.6.</span> <span class="toc-text">两天内可以完成的复现清单</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E6%BA%90%E5%88%B0%E4%BB%80%E4%B9%88%E7%A8%8B%E5%BA%A6%EF%BC%9A%E4%B8%A4%E4%BB%BD%E4%BB%93%E5%BA%93%E7%BB%99%E5%87%BA%E7%9A%84%E7%AD%94%E6%A1%88"><span class="toc-number">9.</span> <span class="toc-text">开源到什么程度：两份仓库给出的答案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8D%E5%90%91%E6%A3%80%E6%9F%A5%EF%BC%9A%E6%88%91%E5%8F%AF%E8%83%BD%E9%94%99%E5%9C%A8%E5%93%AA%E9%87%8C"><span class="toc-number">10.</span> <span class="toc-text">反向检查：我可能错在哪里</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%A4%E4%B8%AA%E6%A8%A1%E5%9E%8B%E5%90%84%E8%87%AA%E7%9A%84%E5%A4%B1%E8%B4%A5%E6%A8%A1%E5%BC%8F"><span class="toc-number">11.</span> <span class="toc-text">两个模型各自的失败模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E4%BB%8A%E5%A4%A9%E5%B0%B1%E8%A6%81%E9%80%89%E4%B8%80%E4%B8%AA"><span class="toc-number">12.</span> <span class="toc-text">如果今天就要选一个</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B1%80%E9%99%90%E4%B8%8E%E6%9C%AA%E9%AA%8C%E8%AF%81%E7%9A%84%E9%83%A8%E5%88%86"><span class="toc-number">13.</span> <span class="toc-text">局限与未验证的部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-number">14.</span> <span class="toc-text">结语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Reference"><span class="toc-number">15.</span> <span class="toc-text">Reference</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/165-ds41-vs-glm53f/" title="DeepSeek-V4.1-Flash 与 GLM-5.3-Flash 的代码级对照"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202609101844-ds41-vs-glm53f.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DeepSeek-V4.1-Flash 与 GLM-5.3-Flash 的代码级对照"/ loading='lazy'></a><div class="content"><a class="title" href="/165-ds41-vs-glm53f/" title="DeepSeek-V4.1-Flash 与 GLM-5.3-Flash 的代码级对照">DeepSeek-V4.1-Flash 与 GLM-5.3-Flash 的代码级对照</a><time datetime="2026-09-10T10:47:55.887Z" title="更新于 2026-09-10 18:47:55">2026-09-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/164-500k-two-months/" title="如果两个月赚到五十万，我接下来会怎么活"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202609090010-500k-two-months.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如果两个月赚到五十万，我接下来会怎么活"/ loading='lazy'></a><div class="content"><a class="title" href="/164-500k-two-months/" title="如果两个月赚到五十万，我接下来会怎么活">如果两个月赚到五十万，我接下来会怎么活</a><time datetime="2026-09-08T16:35:01.726Z" title="更新于 2026-09-09 00:35:01">2026-09-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/163-ai-snake-smooth-animation/" title="AI 贪吃蛇：从哈密顿回路到 60 FPS 插值动画的设计演进"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/20260908111200-ai-snake-smooth-animation.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AI 贪吃蛇：从哈密顿回路到 60 FPS 插值动画的设计演进"/ loading='lazy'></a><div class="content"><a class="title" href="/163-ai-snake-smooth-animation/" title="AI 贪吃蛇：从哈密顿回路到 60 FPS 插值动画的设计演进">AI 贪吃蛇：从哈密顿回路到 60 FPS 插值动画的设计演进</a><time datetime="2026-09-08T03:10:15.414Z" title="更新于 2026-09-08 11:10:15">2026-09-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/162-workplace-betrayal-survival/" title="职场棋局：内斗、背叛与离场选项的机制分析"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/20260908102400-workplace-betrayal-survival.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="职场棋局：内斗、背叛与离场选项的机制分析"/ loading='lazy'></a><div class="content"><a class="title" href="/162-workplace-betrayal-survival/" title="职场棋局：内斗、背叛与离场选项的机制分析">职场棋局：内斗、背叛与离场选项的机制分析</a><time datetime="2026-09-08T02:31:03.436Z" title="更新于 2026-09-08 10:31:03">2026-09-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/161-childhood-trauma-adult-effects/" title="被忽视的童年：创伤如何塑造成年后的内心世界"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/20260831115530-childhood-trauma-adult-effects.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="被忽视的童年：创伤如何塑造成年后的内心世界"/ loading='lazy'></a><div class="content"><a class="title" href="/161-childhood-trauma-adult-effects/" title="被忽视的童年：创伤如何塑造成年后的内心世界">被忽视的童年：创伤如何塑造成年后的内心世界</a><time datetime="2026-08-31T04:09:40.295Z" title="更新于 2026-08-31 12:09:40">2026-08-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/160-gender-ideology-workplace/" title="性别话语的武器化：组织权力、沟通边界与群体认知的机制分析"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/20260831115500-gender-ideology-workplace.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="性别话语的武器化：组织权力、沟通边界与群体认知的机制分析"/ loading='lazy'></a><div class="content"><a class="title" href="/160-gender-ideology-workplace/" title="性别话语的武器化：组织权力、沟通边界与群体认知的机制分析">性别话语的武器化：组织权力、沟通边界与群体认知的机制分析</a><time datetime="2026-08-31T04:09:40.292Z" title="更新于 2026-08-31 12:09:40">2026-08-31</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"></div><div class="footer_custom_text"><div class="footer_custom_text"><div class="coin-title"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309032153357.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202309032153357.png" alt="Moe" style="height:1.3em" data-ll-status="loaded" class="entered loaded" loading='lazy'>&nbsp;萌ICP备<a href="https://icp.gov.moe/?keyword=20238869" target="_blank">20238869</a>号&nbsp;<i class="fa-fw fas fa-duotone fa-cat"></i>&nbsp;<a href="https://github.com/YuZhangWang" target="_blank">YuZhangWang</a>&nbsp;©2019-Present</div><div class="coin-title">Powered By&nbsp;<a href="https://hexo.io/zh-cn/index.html" target="_blank">Hexo</a>&nbsp;|&nbsp;Theme By&nbsp;<a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank">Butterfly</a></div><div class="coin-title"><a target="_blank" rel="noopener" href="https://www.cloudflare.com"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202509140110525.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures01@main/img/20210826081712.svg" alt="Cloudflare" style="height:1.3em" data-ll-status="loaded" class="entered loaded" loading='lazy'></a>&nbsp;<a target="_blank" rel="noopener" href="https://www.jsdelivr.com"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131843411.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131843411.png" alt="Jsdelivr" style="height:1.3em" data-ll-status="loaded" class="entered loaded" loading='lazy'></a>&nbsp;<a target="_blank" rel="noopener" href="https://blogwe.com/"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195801782.jpg" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195801782.jpg" alt="博客大全" style="height:1.3em" data-ll-status="loaded" class="entered loaded" loading='lazy'></a>&nbsp;<a target="_blank" rel="noopener" href="https://vim-adventures.com/"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195910376.jpg" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02/2022/04/18/20220418195910376.jpg" alt="vim-adventures" style="height:1.3em" data-ll-status="loaded" class="entered loaded" loading='lazy'></a>&nbsp;<a href="https://qwerty.kaiyi.cool/" target="_blank" alt="qwerty-learner" rel="nofollow"><img src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131945636.png" data-lazy-src="https://gcore.jsdelivr.net/gh/YuZhangWang/Creative-pictures02@master/img/202305131945636.png" alt="qwerty-learner" style="height:1.3em" data-ll-status="loaded" class="entered loaded" loading='lazy'></a></div></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        loader: {
+          load: [
+            // Four font extension packages (optional)
+            //- '[tex]/bbm',
+            //- '[tex]/bboldx',
+            //- '[tex]/dsfont',
+            '[tex]/mhchem'
+          ],
+          paths: {
+            'mathjax-newcm': '[mathjax]/../@mathjax/mathjax-newcm-font',
+
+            //- // Four font extension packages (optional)
+            //- 'mathjax-bbm-extension': '[mathjax]/../@mathjax/mathjax-bbm-font-extension',
+            //- 'mathjax-bboldx-extension': '[mathjax]/../@mathjax/mathjax-bboldx-font-extension',
+            //- 'mathjax-dsfont-extension': '[mathjax]/../@mathjax/mathjax-dsfont-font-extension',
+            'mathjax-mhchem-extension': '[mathjax]/../@mathjax/mathjax-mhchem-font-extension'
+          }
+        },
+        output: {
+          font: 'mathjax-newcm',
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+          packages: {
+            '[+]': [
+              'mhchem'
+            ]
+          }
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          menuOptions: {
+            settings: {
+              enrich: false  // Turn off Braille and voice narration text automatic generation
+            }
+          },
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://gcore.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (true) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('/js/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const hasShuoshuoData = false
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo' && hasShuoshuoData
+  const option = {"data-mapping":"title","data-strict":1,"data-reactions-enabled":1,"data-emit-metadata":0,"data-input-position":"top","data-lang":"zh-CN"}
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'YuZhangWang/YuZhangWang.github.io',
+      'data-repo-id': 'MDEwOlJlcG9zaXRvcnkzNDY4MTQyNjE=',
+      'data-category-id': 'DIC_kwDOFKv3Nc4CQ6NC',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !true) {
+    if (true) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://gcore.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://gcore.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/学术研究/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🎓 Academic Research (36)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/项目展示/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">💾 Project Showcase (16)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/技能学习记录/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🔨 Skills Learning (46)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://yuzhang.wang/categories/生活感悟/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">♥️ Life Insights (23)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><a class="magnet_link_more"  href="https://yuzhang.wang/categories" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(50% - 5px);background: #f2f2f2;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: rgb(127, 199, 244)}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>历史上的今天</span></div><div id="history-baidu" style="min-height:180px;height:180px;overflow:hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height:180px"><div class="swiper-wrapper" id="history_container_wrapper" style="height:100%"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='/'|| '/' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax  src="/js/swiper-bundle.min.js"></script><script data-pjax src="/js/history-calendar.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
