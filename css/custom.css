@@ -358,3 +358,50 @@ html {
     -webkit-filter: grayscale(100%);
 }
 */
+
+/* ------------------------------------------------------------------
+   触屏设备：干掉菜单项图标上的长按残留
+
+   主题的菜单项结构是 a.site-page 里面放 i 图标 + span 文字。手机内核在长按
+   时会对"手指真正压到的那个子节点"单独画高亮或选中框，父元素的设置不一定
+   继承下去，于是图标位置会冒出一小块半透明蓝框。
+
+   这里做三件事：
+   1) 把不选中、不高亮、不呼出菜单的设置覆盖到菜单容器内的所有后代节点；
+   2) 让图标与文字不接收指针事件，触摸目标始终是 a.site-page 本身；
+   3) 万一内核仍然发生了选中，也让选中高亮完全透明，看不见。
+   ------------------------------------------------------------------ */
+@media (hover: none), (max-width: 820px) {
+  #nav .menus_items,
+  #nav .menus_items *,
+  #sidebar-menus .menus_items,
+  #sidebar-menus .menus_items *,
+  #sidebar-menus .site-data,
+  #sidebar-menus .site-data * {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  #nav .menus_items .site-page > i,
+  #nav .menus_items .site-page > span,
+  #sidebar-menus .menus_items .site-page > i,
+  #sidebar-menus .menus_items .site-page > span {
+    pointer-events: none;
+  }
+
+  #nav .menus_items ::selection,
+  #sidebar-menus .menus_items ::selection,
+  #sidebar-menus .site-data ::selection {
+    background: transparent;
+    color: inherit;
+  }
+
+  #nav .site-page:focus:not(:focus-visible),
+  #sidebar-menus .site-page:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
