@@ -15,8 +15,38 @@
     <atom:link href="https://yuzhang.wang/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>PLUSULTRA!</description>
-    <pubDate>Thu, 10 Sep 2026 10:47:55 GMT</pubDate>
+    <pubDate>Sun, 22 Nov 2026 20:08:14 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>黎曼猜想“被证明”之后：AI、人工手稿与数学验证危机</title>
+      <link>https://yuzhang.wang/166-riemann-ai-proof-crisis/</link>
+      <guid>https://yuzhang.wang/166-riemann-ai-proof-crisis/</guid>
+      <pubDate>Sun, 22 Nov 2026 20:20:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文写于 2026 年 11 月 23 日凌晨，讨论的是仍在快速变化的事件。截至目前，Levent Alpöge 与 Claude 合作产生的形式证明，已经由 Lean 与 Mathlib</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E6%95%B0%E5%AD%A6/">数学</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</category>
+      
+      
+      <comments>https://yuzhang.wang/166-riemann-ai-proof-crisis/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>DeepSeek-V4.1-Flash 与 GLM-5.3-Flash 的代码级对照</title>
@@ -603,37 +633,6 @@
       
       
       <comments>https://yuzhang.wang/147-quantization-enhanced-reinforcement-learning/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>基于ATTENDRE模型的长上下文处理突破：记忆管理与注意力机制的协同进化</title>
-      <link>https://yuzhang.wang/146-long-context-processing/</link>
-      <guid>https://yuzhang.wang/146-long-context-processing/</guid>
-      <pubDate>Tue, 14 Oct 2025 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E9%95%BF%E4%B8%8A%E4%B8%8B%E6%96%87%E5%A4%84%E7%90%86/">长上下文处理</category>
-      
-      <category domain="https://yuzhang.wang/tags/ATTENDRE/">ATTENDRE</category>
-      
-      
-      <comments>https://yuzhang.wang/146-long-context-processing/#disqus_thread</comments>
       
     </item>
     
