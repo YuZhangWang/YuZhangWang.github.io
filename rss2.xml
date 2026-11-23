@@ -15,8 +15,38 @@
     <atom:link href="https://yuzhang.wang/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>PLUSULTRA!</description>
-    <pubDate>Sun, 22 Nov 2026 20:08:14 GMT</pubDate>
+    <pubDate>Mon, 23 Nov 2026 08:30:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>阿斯伯格之后：自闭症谱系与被误读的“高功能”</title>
+      <link>https://yuzhang.wang/167-asperger-autism-spectrum/</link>
+      <guid>https://yuzhang.wang/167-asperger-autism-spectrum/</guid>
+      <pubDate>Mon, 23 Nov 2026 08:30:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文讨论诊断史、术语、支持需求与公共叙事，不提供远程诊断，也不能替代面对面的专业评估。自闭症谱系障碍的正式名称、社群称呼和个人身份选择并不完全等同；有人习惯称“自闭症者”，有人更喜欢“自闭症谱系人士”或“孤独症者”。本文使用多种称呼时会尽量尊重语境</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E8%87%AA%E9%97%AD%E7%97%87/">自闭症</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E7%A5%9E%E7%BB%8F%E5%A4%9A%E6%A0%B7%E6%80%A7/">神经多样性</category>
+      
+      
+      <comments>https://yuzhang.wang/167-asperger-autism-spectrum/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>黎曼猜想“被证明”之后：AI、人工手稿与数学验证危机</title>
@@ -604,35 +634,6 @@
       
       
       <comments>https://yuzhang.wang/148-language-model-training-human-feedback/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>量化增强强化学习（QeRL）：突破大语言模型训练效率与性能的新范式</title>
-      <link>https://yuzhang.wang/147-quantization-enhanced-reinforcement-learning/</link>
-      <guid>https://yuzhang.wang/147-quantization-enhanced-reinforcement-learning/</guid>
-      <pubDate>Tue, 14 Oct 2025 01:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/QeRL/">QeRL</category>
-      
-      
-      <comments>https://yuzhang.wang/147-quantization-enhanced-reinforcement-learning/#disqus_thread</comments>
       
     </item>
     
