@@ -15,8 +15,68 @@
     <atom:link href="https://yuzhang.wang/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>PLUSULTRA!</description>
-    <pubDate>Mon, 23 Nov 2026 08:30:16 GMT</pubDate>
+    <pubDate>Thu, 26 Nov 2026 15:43:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>一个总想把一切理顺的人</title>
+      <link>https://yuzhang.wang/169-need-for-order/</link>
+      <guid>https://yuzhang.wang/169-need-for-order/</guid>
+      <pubDate>Thu, 26 Nov 2026 15:52:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;这是一篇自我观察，不是心理诊断，也不试图用某一种经历解释全部人格。文中只保留能够说明性格的低风险生活细节，不披露学生、家长、同事、家庭成员、亲密关系或任何可识别个人的信息。我写下这些，不是为了证明自己经历过什么，而是为了承认自己如何理解秩序、控制、</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/">生活感悟</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E8%87%AA%E6%88%91%E8%AE%A4%E7%9F%A5/">自我认知</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E8%87%AA%E7%99%BD/">自白</category>
+      
+      
+      <comments>https://yuzhang.wang/169-need-for-order/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>把重复交给系统，把判断留给自己</title>
+      <link>https://yuzhang.wang/168-systems-and-judgment/</link>
+      <guid>https://yuzhang.wang/168-systems-and-judgment/</guid>
+      <pubDate>Thu, 26 Nov 2026 15:45:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;这是一篇关于近期工作方式的阶段记录，不是效率工具广告，也不是对任何职业、机构或群体的普遍判断。文中不会出现学生、家长、同事及其他可识别个人的信息；部分数字只用于说明工作量结构，不代表长期稳定的收入或绩效承诺。工具可以参与整理与生成，但事实核对、教学</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yuzhang.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/">生活感悟</category>
+      
+      
+      <category domain="https://yuzhang.wang/tags/%E5%B7%A5%E4%BD%9C%E6%96%B9%E6%B3%95/">工作方法</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E9%98%B6%E6%AE%B5%E5%A4%8D%E7%9B%98/">阶段复盘</category>
+      
+      
+      <comments>https://yuzhang.wang/168-systems-and-judgment/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>阿斯伯格之后：自闭症谱系与被误读的“高功能”</title>
@@ -260,9 +320,9 @@
       <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
       
       
-      <category domain="https://yuzhang.wang/tags/%E6%80%A7%E5%88%AB%E8%AE%AE%E9%A2%98/">性别议题</category>
-      
       <category domain="https://yuzhang.wang/tags/%E7%BB%84%E7%BB%87%E8%A1%8C%E4%B8%BA/">组织行为</category>
+      
+      <category domain="https://yuzhang.wang/tags/%E6%80%A7%E5%88%AB%E8%AE%AE%E9%A2%98/">性别议题</category>
       
       
       <comments>https://yuzhang.wang/160-gender-ideology-workplace/#disqus_thread</comments>
@@ -576,64 +636,6 @@
       
       
       <comments>https://yuzhang.wang/150-federal-risk-control-platform/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>人体微生态与宿主的交互调控机制：从共生稳态到精准干预</title>
-      <link>https://yuzhang.wang/149-human-microbiome-host-interaction/</link>
-      <guid>https://yuzhang.wang/149-human-microbiome-host-interaction/</guid>
-      <pubDate>Wed, 15 Oct 2025 01:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E4%BA%BA%E4%BD%93%E5%BE%AE%E7%94%9F%E6%80%81/">人体微生态</category>
-      
-      
-      <comments>https://yuzhang.wang/149-human-microbiome-host-interaction/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>基于人类反馈的语言模型训练：技术前沿、挑战与未来展望</title>
-      <link>https://yuzhang.wang/148-language-model-training-human-feedback/</link>
-      <guid>https://yuzhang.wang/148-language-model-training-human-feedback/</guid>
-      <pubDate>Wed, 15 Oct 2025 00:08:08 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://yuzhang.wang/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">技能学习记录</category>
-      
-      <category domain="https://yuzhang.wang/categories/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/">学术研究</category>
-      
-      
-      <category domain="https://yuzhang.wang/tags/%E4%BA%BA%E7%B1%BB%E5%8F%8D%E9%A6%88/">人类反馈</category>
-      
-      
-      <comments>https://yuzhang.wang/148-language-model-training-human-feedback/#disqus_thread</comments>
       
     </item>
     
